@@ -1,4 +1,4 @@
-��PharoTopic new
+PharoTopic new
 	name: 'Better Message Browser';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse / B. van Ryseghem';
