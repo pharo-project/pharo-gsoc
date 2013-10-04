@@ -47,7 +47,7 @@ PharoTopic new
 	keywords: 'tools spec ui';
 	context: 'Identifying the dependencies between packages is a tedious but really important task.';
 	goal: 'The goal of this project is to build a package browser that support a good navigation to understand how a package is used and uses other packages.';
-	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM'07: Proceedings of the IEEE International Conference on Software Maintenance, 94 103, 2007.';
+	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM 07: Proceedings of the IEEE International Conference on Software Maintenance, 94 103, 2007.';
 	yourself.
 
 PharoTopic new
@@ -376,10 +376,10 @@ The idea of this project is to see how we can port the idea of stereotypes to a 
 
 Keywords: Code analysis, tools, Pharo, spec, roassal
 Links:
-                - Alhindawi, N., Maletic, J.I., Dragan, N., Collard, M.L., "Improving Feature Location by Enhancing Source Code with Stereotypes", in the Proceedings of the 29th IEEE International Conference on Software Maintenance (ICSM 13), Eindhoven, The Netherlands, Sept. 22-28, pp. (10 pages).
-                - Dragan, N., Collard, M.L., Hammad, M., Maletic, J. I., "Categorizing Commits Based on Method Stereotypes", in the Proceedings of the 27th IEEE International Conference on Software Maintenance (ICSM'11), Williamsburg, VA, USA, Sept 25 - Oct 1, 2011, pp. 520-523.
+                - Alhindawi, N., Maletic, J.I., Dragan, N., Collard, M.L., Improving Feature Location by Enhancing Source Code with Stereotypes, in the Proceedings of the 29th IEEE International Conference on Software Maintenance (ICSM 13), Eindhoven, The Netherlands, Sept. 22-28, pp. (10 pages).
+                - Dragan, N., Collard, M.L., Hammad, M., Maletic, J. I., Categorizing Commits Based on Method Stereotypes, in the Proceedings of the 27th IEEE International Conference on Software Maintenance (ICSM'11), Williamsburg, VA, USA, Sept 25 - Oct 1, 2011, pp. 520-523.
                 - Ver�nica Uquillas G�mez, St�phane Ducasse and Theo D'Hondt, Visually Supporting Source Code Changes Integration: the Torch Dashboard, Proceedings of the 17th Working Conference on Reverse Engineering (WCRE'10), 55-64, 2010.
-                - Dragan, N., Collard, M.L., Maletic, J. I., "Automatic Identification of Class Stereotypes", in the Proceedings of the IEEE 26th IEEE International Conference on Software Maintenance (ICSM'10), Timisoara, Romania, Sept 12 - 18, 2010.
+                - Dragan, N., Collard, M.L., Maletic, J. I., Automatic Identification of Class Stereotypes, in the Proceedings of the IEEE 26th IEEE International Conference on Software Maintenance (ICSM'10), Timisoara, Romania, Sept 12 - 18, 2010.
                 - Romain Robbes, St�phane Ducasse and Michele Lanza, Microprints: A Pixel-based Semantically Rich Visualization of Methods, Proceedings of 13th International Smalltalk Conference, 131 157, 2005.
 
 "
