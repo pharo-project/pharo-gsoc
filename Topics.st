@@ -3,8 +3,8 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse / B. van Ryseghem';
 	keywords: 'tools ui spec';
-	context: 'The browser showing results of senders and implementor messages do not let well navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
-	goal: 'The goal of the project is to define a tools to support message browsing.';
+	context: 'The browser showing results of senders and implementors won't help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
+	goal: 'The goal of the project is to define a tool to support message browsing.';
 	yourself.
 	
 PharoTopic new
@@ -12,7 +12,7 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou';
 	keywords: 'tools ui spec web';
-	context: 'Fixing Pharo is very tedious, even for small changes. If you see a typo in a comment for example, you have to open a new issue on the tracker, fix the typo in an image, create a slice in monticello, select the package that changed, commit the slice to the inbox, and mark the issue as "Resolved (Review needed)". For such fixes I want to push just 1 button and be done with it. ';
+	context: 'Fixing Pharo is very tedious, even for small changes. If you see a typo in a comment for example, you have to open a new issue on the tracker, fix the typo in an image, create a slice in monticello, select the package that changed, commit the slice to the inbox, and mark the issue as "Resolved (Review needed)". Then, a reviewer must merge your slice in his image and mark the issue as "Resolved (Fix to include)". Finally, an integrator has to merge your slice and mark the issue as "Resolved (Fix integrated)". For such fixes I want that all these guys do their work in just one click. ';
 	goal: 'The goal of this project is to implement the button that will make reporting such fixes as simple as possible. The integration of such fixes must be as simple. This project will probably require implementing a web interface that Pharo integrators can use to accept/reject these fixes.';
 	yourself.
 
@@ -25,7 +25,7 @@ PharoTopic new
 	goal: 'The goal of the project is to
 	        - define which metrics and information is relevant to show
 	        - implement them in SmalltalkHub.
-			Potential information can be: most active project, recently created project, most donwloaded project this week, active committers. Possible web to analyze: https://npmjs.org, http://rubygems.org';
+			Potential information can be: most active project, recently created project, most donwloaded project this week, active committers. Possible websites to analyze: https://npmjs.org, http://rubygems.org, http://ohloh.net';
 	yourself.
 
 PharoTopic new
@@ -34,8 +34,8 @@ PharoTopic new
 	supervisors: 'S. Ducasse';
 	keywords: 'tools spec ui';
 	context: 'Identifying the dependencies between packages is a tedious but really important task.';
-	goal: 'The goal of this project is to build a package browser that support a good navigation to understand how a package is used and uses other packages.';
-	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM''07: Proceedings of the IEEE International Conference on Software Maintenance, 94 103, 2007.';
+	goal: 'The goal of this project is to build a package browser that supports a good navigation to understand how a package is used and uses other packages.';
+	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM''07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.';
 	yourself.
 
 PharoTopic new
@@ -44,14 +44,14 @@ PharoTopic new
 	supervisors: 'S. Ducasse and N. Anquetil';
 	keywords: 'bugs modeling tools moose analyses';
 	context: 'Moose (http://www.moosetechnology.org) is a well-know and successful platform to support data and software analysis development.';
-	goal: 'Moose can be connected with a JIRA bug tracker database. The goals of the projects are
+	goal: 'Moose can be connected with a JIRA bug tracker database. The goals of the project are:
 	        - revisit the bug metamodel
-	        - improve the bug to code mapping heuristics (How do we know that a method was touch by a bug)
-	        - add different bugtrackers as input to Moose (Fogbugz, Trac, Redmine)
+	        - improve the bug to code mapping heuristics (How do we know that a method was touched by a bug)
+	        - add different bugtrackers as input to Moose (e.g., Fogbugz, Trac, Redmine)
 	        - Enhance the visualizations proposed in Moose.';
-	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM 07: Proceedings of the IEEE International Conference on Software Maintenance, 94 103, 2007.
+	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM 07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.
 
-Andre Hora, Nicolas Anquetil, St�phane Ducasse, Muhammad Bhatti, Cesar Couto, Marco Tulio Valente and Julio Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012' ;
+A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012' ;
 	yourself.
 
 PharoTopic new
@@ -60,7 +60,7 @@ PharoTopic new
 	supervisors: 'S. Ducasse and (R. Minelli)';
 	keywords: 'recommander tools rules analyses';
 	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
-	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules should adapt probably by taking into account the choices of the programmer.';
+	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer.';
 	yourself.
 	
 PharoTopic new
@@ -69,9 +69,9 @@ PharoTopic new
 	supervisors: 'S. Ducasse and  (H. Verjus - M.P. Huget)';
 	keywords: 'Expert systems';
 	context: 'There is a need for an expert system framework on top of Pharo.
-	Several projects could benefitted from it: recommander, moose, robotics, drgeo.';
+	Several projects could benefit from it: recommander, moose, robotics, drgeo.';
 	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension';
-	links: 'look at NeoPus could be interesting since it proposed to use objects for fact.';
+	links: 'look at NeoPus (it proposes to use objects for fact).';
 	yourself.		
 		
 PharoTopic new
@@ -79,8 +79,8 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
-	context: 'Automatic formatting code is really important.';
-	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to one reformat after each space, or . A possible path is to see if this is possible to use the possible followers (in terms of petit parser) to complement the ast.';
+	context: 'Automatic formatting of code is really important.';
+	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of petit parser) to complement the AST.';
 	yourself.
 
 PharoTopic new
@@ -97,8 +97,8 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and E. Lorenzano';
 	keywords: 'formating AST PetitParser SmaCC';
-	context: 'Automatic formatting code is really important. The current code formatter defines already many hooks';
-	goal: 'The goal of the project is identify several configuration of the formatter and to propose a default one. Improving the edge cases is also part of the project';
+	context: 'Automatic formatting code is really important. The current code formatter already defines many hooks';
+	goal: 'The goal of the project is to identify several configurations of the formatter and to propose a default one. Improving the edge cases is also part of the project';
 	yourself.
 
 PharoTopic new
@@ -385,6 +385,7 @@ More to come:
 	Benchmark Server
 	Revisiting RBEnvironments S. Ducasse / Bruni
 	Metacello validation
+        A visual code browser (Damien C)
 
 
 ==================================================================================
