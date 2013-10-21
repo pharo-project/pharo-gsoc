@@ -3,7 +3,7 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse / B. van Ryseghem';
 	keywords: 'tools ui spec';
-	context: 'The browser showing results of senders and implementors won't help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
+	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
 	goal: 'The goal of the project is to define a tool to support message browsing.';
 	yourself.
 	
