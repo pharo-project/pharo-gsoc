@@ -1,23 +1,29 @@
+{
+
 PharoTopic new
-	name: 'Better Message Browser';
+	title: 'Better Message Browser';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse / B. van Ryseghem';
 	keywords: 'tools ui spec';
 	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
 	goal: 'The goal of the project is to define a tool to support message browsing.';
-	yourself.
+	yourself
+	
+	.
 	
 PharoTopic new
-	name: '"Fixing Pharo" for the dummies';
+	title: '"Fixing Pharo" for the dummies';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou';
 	keywords: 'tools ui spec web';
 	context: 'Fixing Pharo is very tedious, even for small changes. If you see a typo in a comment for example, you have to open a new issue on the tracker, fix the typo in an image, create a slice in monticello, select the package that changed, commit the slice to the inbox, and mark the issue as "Resolved (Review needed)". Then, a reviewer must merge your slice in his image and mark the issue as "Resolved (Fix to include)". Finally, an integrator has to merge your slice and mark the issue as "Resolved (Fix integrated)". For such fixes I want that all these guys do their work in just one click. ';
 	goal: 'The goal of this project is to implement the button that will make reporting such fixes as simple as possible. The integration of such fixes must be as simple. This project will probably require implementing a web interface that Pharo integrators can use to accept/reject these fixes.';
-	yourself.
+	yourself
+	
+}
 
 PharoTopic new
-	name: 'SmalltalkHub better activity dashboard';
+	title: 'SmalltalkHub better activity dashboard';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and N. Petton';
 	keywords: 'Smalltalkhub ui amber web voyage';
@@ -29,7 +35,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Package Dependency Browser';
+	title: 'Package Dependency Browser';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'tools spec ui';
@@ -39,7 +45,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Bug Importer for Moose';
+	title: 'Bug Importer for Moose';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and N. Anquetil';
 	keywords: 'bugs modeling tools moose analyses';
@@ -55,7 +61,7 @@ A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. M
 	yourself.
 
 PharoTopic new
-	name: 'A Hot Recommander for Pharo';
+	title: 'A Hot Recommander for Pharo';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and (R. Minelli)';
 	keywords: 'recommander tools rules analyses';
@@ -64,7 +70,7 @@ PharoTopic new
 	yourself.
 	
 PharoTopic new
-	name: 'An Expert System Framework';
+	title: 'An Expert System Framework';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and  (H. Verjus - M.P. Huget)';
 	keywords: 'Expert systems';
@@ -75,7 +81,7 @@ PharoTopic new
 	yourself.		
 		
 PharoTopic new
-	name: 'Format as you type';
+	title: 'Format as you type';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
@@ -84,7 +90,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'ARM AMSJIT';
+	title: 'ARM AMSJIT';
 	contact: 'igor.stasenko@inria.fr';
 	supervisors: 'I. Stasenko and D. Pollet';
 	keywords: 'assembly arm';
@@ -93,7 +99,7 @@ PharoTopic new
 		yourself.
 
 PharoTopic new
-	name: 'Improving the code formatter';
+	title: 'Improving the code formatter';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and E. Lorenzano';
 	keywords: 'formating AST PetitParser SmaCC';
@@ -102,7 +108,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Omnipresent Code Manager';
+	title: 'Omnipresent Code Manager';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and M. Dias';
 	keywords: 'code representation change history browsing';
@@ -115,7 +121,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Support for code review';
+	title: 'Support for code review';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and M. Dias';
 	keywords: 'code representation change history browsing spec';
@@ -128,7 +134,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Improving Strings manipulation';
+	title: 'Improving Strings manipulation';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and C. Bruni';
 	keywords: 'string API';
@@ -141,7 +147,7 @@ and how to get from http://smalltalkhub.com/mc/Pharo/XMLWriter/main to ttp://sma
 	yourself.
 
 PharoTopic new
-	name: 'Stepping Interpreter';
+	title: 'Stepping Interpreter';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'Clement Bera and Marcus Denker and Stephane Ducasse';
 	keywords: 'AST interpreter';
@@ -150,7 +156,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'New Collections for Pharo';
+	title: 'New Collections for Pharo';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'Stephane Ducasse';
 	keywords: 'Collection DataStructure Benchmarks';
@@ -169,7 +175,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'Thread based programming';
+	title: 'Thread based programming';
 	contact: 'esteban.lorenzano@inria.fr';
 	supervisors: 'Esteban Lorenzano';
 	keywords: 'process';
@@ -188,7 +194,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'Test to Fix first';
+	title: 'Test to Fix first';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and N. Anquetil';
 	keywords: 'tools tests';
@@ -197,7 +203,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'From BNF to PetitParser';
+	title: 'From BNF to PetitParser';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and who wants';
 	keywords: 'parsing';
@@ -206,7 +212,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'Line level test coverage and which test to run';
+	title: 'Line level test coverage and which test to run';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and who wants';
 	keywords: 'testing';
@@ -215,7 +221,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'Merlin in Spec';
+	title: 'Merlin in Spec';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and B. van Ryseghem';
 	keywords: 'Wizard spec';
@@ -224,7 +230,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'Better pointer explorer';
+	title: 'Better pointer explorer';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and I. Stasenko and B. van Ryseghem';
 	keywords: 'ui spec';
@@ -233,7 +239,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Memory profiler';
+	title: 'Memory profiler';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and A. Bergel and (J.-F. Lefevre)';
 	keywords: 'ui tool spec';
@@ -242,7 +248,7 @@ PharoTopic new
 yourself.
 
 PharoTopic new
-	name: 'Epub generator for Pier';
+	title: 'Epub generator for Pier';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and N. Petton';
 	keywords: 'Smalltalkhub ui amber web voyage';
@@ -251,7 +257,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Epub generator for Pier';
+	title: 'Epub generator for Pier';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pier epub Document tree visitor';
@@ -260,7 +266,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Better Latex and PDF exporter';
+	title: 'Better Latex and PDF exporter';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pier Latex HTML Document tree visitor';
@@ -269,7 +275,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'ParseTree Rewriter Improvements';
+	title: 'ParseTree Rewriter Improvements';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'G. Decussi, C. Teruel and S. Ducasse';
 	keywords: 'AST tree visitor';
@@ -279,7 +285,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Git Library for Pharo in Pharo';
+	title: 'Git Library for Pharo in Pharo';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'C. Bruni and D. Cassou';
 	keywords: 'Protocol GIT';
@@ -288,7 +294,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Git integration for Pharo';
+	title: 'Git integration for Pharo';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'C. Bruni and D. Cassou';
 	keywords: 'Protocol GIT';
@@ -300,7 +306,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Taking advantage of roel Typer in tools';
+	title: 'Taking advantage of roel Typer in tools';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'type inferencer tool';
@@ -309,7 +315,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'OpenStreet Smart viewer in Pharo';
+	title: 'OpenStreet Smart viewer in Pharo';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'svg open street visualisation';
@@ -318,7 +324,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'OpenStreet Smart viewer in Pharo';
+	title: 'OpenStreet Smart viewer in Pharo';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'svg open street visualisation';
@@ -327,7 +333,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Web OpenStreet map manager';
+	title: 'Web OpenStreet map manager';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'svg open street visualisation web amber seaside';
@@ -336,7 +342,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Sokoban';
+	title: 'Sokoban';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: ' games SameGame Miner Sokoban';
@@ -346,7 +352,7 @@ via a model that can then be displayed graphically. Right now the logic of the g
 	yourself.
 
 PharoTopic new
-	name: 'SameGame';
+	title: 'SameGame';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: ' games SameGame Miner Sokoban';
@@ -356,7 +362,7 @@ PharoTopic new
 	yourself.
 
 PharoTopic new
-	name: 'Tetris';
+	title: 'Tetris';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: ' games SameGame Miner Sokoban';
@@ -366,7 +372,7 @@ PharoTopic new
 	yourself.
 	
 PharoTopic new
-	name: 'Miner';
+	title: 'Miner';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'Game SameGame Miner Sokoban';
