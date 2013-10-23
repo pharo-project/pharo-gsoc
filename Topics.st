@@ -9,7 +9,7 @@ PharoTopic new
 	goal: 'The goal of the project is to define a tool to support message browsing.';
 	yourself
 	
-	.
+.
 	
 PharoTopic new
 	title: '"Fixing Pharo" for the dummies';
@@ -20,7 +20,7 @@ PharoTopic new
 	goal: 'The goal of this project is to implement the button that will make reporting such fixes as simple as possible. The integration of such fixes must be as simple. This project will probably require implementing a web interface that Pharo integrators can use to accept/reject these fixes.';
 	yourself
 	
-}
+.
 
 PharoTopic new
 	title: 'SmalltalkHub better activity dashboard';
@@ -32,7 +32,9 @@ PharoTopic new
 	        - define which metrics and information is relevant to show
 	        - implement them in SmalltalkHub.
 			Potential information can be: most active project, recently created project, most donwloaded project this week, active committers. Possible websites to analyze: https://npmjs.org, http://rubygems.org, http://ohloh.net';
-	yourself.
+	yourself
+	
+.	
 
 PharoTopic new
 	title: 'Package Dependency Browser';
@@ -40,9 +42,11 @@ PharoTopic new
 	supervisors: 'S. Ducasse';
 	keywords: 'tools spec ui';
 	context: 'Identifying the dependencies between packages is a tedious but really important task.';
-	goal: 'The goal of this project is to build a package browser that supports a good navigation to understand how a package is used and uses other packages.';
-	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM''07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.';
-	yourself.
+	goal: 'The goal of this project is to build a package browser that supports a good navigation to understand how a package is used and uses other packages.
+	The following links can be interesting: S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM''07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.';
+	yourself
+	
+.	
 
 PharoTopic new
 	title: 'Bug Importer for Moose';
@@ -54,11 +58,13 @@ PharoTopic new
 	        - revisit the bug metamodel
 	        - improve the bug to code mapping heuristics (How do we know that a method was touched by a bug)
 	        - add different bugtrackers as input to Moose (e.g., Fogbugz, Trac, Redmine)
-	        - Enhance the visualizations proposed in Moose.';
-	links: 'S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM 07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.
+	        - Enhance the visualizations proposed in Moose.
+	Links: S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM 07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.
 
 A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012' ;
-	yourself.
+	yourself
+
+.
 
 PharoTopic new
 	title: 'A Hot Recommander for Pharo';
@@ -67,7 +73,9 @@ PharoTopic new
 	keywords: 'recommander tools rules analyses';
 	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
 	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer.';
-	yourself.
+	yourself
+	
+.
 	
 PharoTopic new
 	title: 'An Expert System Framework';
@@ -76,9 +84,11 @@ PharoTopic new
 	keywords: 'Expert systems';
 	context: 'There is a need for an expert system framework on top of Pharo.
 	Several projects could benefit from it: recommander, moose, robotics, drgeo.';
-	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension';
-	links: 'look at NeoPus (it proposes to use objects for fact).';
-	yourself.		
+	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension.
+	Links: look at NeoPus (it proposes to use objects for fact).';
+	yourself
+
+.
 		
 PharoTopic new
 	title: 'Format as you type';
@@ -87,7 +97,9 @@ PharoTopic new
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Automatic formatting of code is really important.';
 	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of petit parser) to complement the AST.';
-	yourself.
+	yourself
+	
+.	
 
 PharoTopic new
 	title: 'ARM AMSJIT';
@@ -96,7 +108,9 @@ PharoTopic new
 	keywords: 'assembly arm';
 	context: 'ASMJIT is a key part of the Pharo infrastructure. It supports the generation of assembly code for X86.';
 	goal: 'The goal of the project is to continue to work on the generation of ARM code from the Pharo image using the same approach as ASMJIT. This project is also important for NativeBoost the FFI library based on ASMJIT';
-		yourself.
+		yourself
+		
+.		
 
 PharoTopic new
 	title: 'Improving the code formatter';
@@ -105,7 +119,9 @@ PharoTopic new
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Automatic formatting code is really important. The current code formatter already defines many hooks';
 	goal: 'The goal of the project is to identify several configurations of the formatter and to propose a default one. Improving the edge cases is also part of the project';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Omnipresent Code Manager';
@@ -118,7 +134,9 @@ PharoTopic new
 	        - improve the infrastucture around Epicea. For example we should be able to take a monticello repository and import all the changes into a local source manager.
 	        - build tool to navigate version in the source manager.
 	        - develop a service that supports the creation of a local or remote source manager. We could imagine that all the pharo programmers can have access to a remote source manager and that locally they can define local changes and that when a change is not found locally it is looked up over the internet. The design of the storage of the Epicea format should support that already.';
-	yourself.
+	yourself
+	
+.	
 
 PharoTopic new
 	title: 'Support for code review';
@@ -131,7 +149,9 @@ PharoTopic new
 		        - study Epicea (the new change model)
 		        - define a tool to annotate changes and share annotations between different developers.
 		        - build heuristics to identify changes that represents a unit (for example split methods and push up or push down).';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Improving Strings manipulation';
@@ -144,7 +164,9 @@ PharoTopic new
 		- build a set of example: how to get Soup out of ConfigurationOfSoup and ConfigurationOf
 and how to get from http://smalltalkhub.com/mc/Pharo/XMLWriter/main to ttp://smalltalkhub.com/#!/~Pharo/XMLWriter
 		- look at other collections protocols.';
-	yourself.
+	yourself
+	
+.	
 
 PharoTopic new
 	title: 'Stepping Interpreter';
@@ -153,7 +175,9 @@ PharoTopic new
 	keywords: 'AST interpreter';
 	context: 'Since Pharo 30, an AST interpreter is available in Pharo. It is really interesting since we use it to build a test coverage tool in a couple of hours.';
 	goal: 'Now the Pharo interpreter design prevents us to build a debugger (with a step by step behavior). The goal of this project is to transform the interpreter into an interpreter using an explicit stack so that the stack can be used to implement step by step program execution. The Amber interpreter is ';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'New Collections for Pharo';
@@ -167,12 +191,14 @@ PharoTopic new
 	        - double linked list
 	        - circular list
 	        - immutable list, set, array
-	        - Quadtree, Btree, Trie';
-	Link:
-'- Camillo Bruni master contains a chapter on how to benchmark for collections	        http://scg.unibe.ch/archive/masters/Brun11a.pdf
+	        - Quadtree, Btree, Trie
+	Links:
+- Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf
 - http://source.lukas-renggli.ch/container started to implement some new collections for Pharo.
 - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'Thread based programming';
@@ -187,11 +213,12 @@ PharoTopic new
 	- serialization/materialization of tasks (again, Fuel can help here)
 	So, the idea is to have in Pharo the same infrastructure as Stackless Python [1][2] provides.
 
-	What is this useful for? To allow an elegant way to deal with massive amounts of tasks (typical in games, for instance).';
-	Link:
-'http://www.stackless.com 
+	What is this useful for? To allow an elegant way to deal with massive amounts of tasks (typical in games, for instance).
+	Link: http://www.stackless.com 
  http://www.slideshare.net/guest162fd90/stackless-python-101';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'Test to Fix first';
@@ -200,7 +227,9 @@ PharoTopic new
 	keywords: 'tools tests';
 	context: 'When a bunch of tests are failing this is always a problem to know which one to fix first. In his PhD Markus Gaelli proposed a nice way to build a test fingerprint (based on which methods where invoked in a test) and to sort them.';
 	goal: 'The goal of this project is to apply the idea of Gaelli and to propose a tool to help deciding which tests to fix';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'From BNF to PetitParser';
@@ -209,7 +238,9 @@ PharoTopic new
 	keywords: 'parsing';
 	context: 'Petit Parser is a cool framework to build parsers and composed them but it lacks a way to import existing grammars defined in BNF.';
 	goal: 'The goal of the project is to support the creation of parsers based on BNF description. Deep into Pharo contains a tutorial on PetitParser';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'Line level test coverage and which test to run';
@@ -218,7 +249,9 @@ PharoTopic new
 	keywords: 'testing';
 	context: 'In some languages it is possible to know the tests that exercised on specific line of code.';
 	goal: 'The goal of the project is to bring such kind of functionality to Pharo. The student should have a look at the current AST annotation facilities and at the reflexive AST level frameworks such reflectivity or bifrost and use them to build a tool that help understanding with tests passed into a given path. A simple test coverage browser was developed by clement bera and it should be looked at.';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'Merlin in Spec';
@@ -227,7 +260,9 @@ PharoTopic new
 	keywords: 'Wizard spec';
 	context: 'Merlin is a good framework for building wizards. However, it was developed before Spec.';
 	goal: 'The goal of the project is to make sure that Merlin is now based on Spec. It will make sure that Merlin can work on different UI framework.';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'Better pointer explorer';
@@ -236,7 +271,9 @@ PharoTopic new
 	keywords: 'ui spec';
 	context: 'Understanding how objects points to each other is important to spot memory leaks.';
 	goal: 'To understand how objects point to each other, Pharo offers the pointTo: methods. However it is a bit rudimentary. The goal of the project is to enhance the current pointer explorer to provide better information.';
-	yourself.
+	yourself
+	
+	.
 
 PharoTopic new
 	title: 'Memory profiler';
@@ -245,7 +282,9 @@ PharoTopic new
 	keywords: 'ui tool spec';
 	context: 'Understanding how which method execution produces a lot of objects is important to spot design problem or cause of slowdown.';
 	goal: 'The goal of the project is to develop an approach to measure and reflect memory cost. One idea is to use a kind of partial evaluation using an interpreter and redefine the primitives to collect the number of created objects. Pharo 30 already has a fully working interpreter that can be used for such tasks.';
-yourself.
+yourself
+
+.
 
 PharoTopic new
 	title: 'Epub generator for Pier';
@@ -254,7 +293,9 @@ PharoTopic new
 	keywords: 'Smalltalkhub ui amber web voyage';
 	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. There is a prototype that converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
 	goal: 'The goal of this project is to improve this prototype with an export to the ePub format, used by e-readers.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Epub generator for Pier';
@@ -263,7 +304,9 @@ PharoTopic new
 	keywords: 'Pier epub Document tree visitor';
 	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
 	goal: 'The goal of this project is to add to Guternber  an export to the ePub format, used by e-readers.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Better Latex and PDF exporter';
@@ -272,7 +315,9 @@ PharoTopic new
 	keywords: 'Pier Latex HTML Document tree visitor';
 	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. There is a prototype that converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
 	goal: 'The goal of this project is to improve Gutenberg Latex and PDF exporter.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'ParseTree Rewriter Improvements';
@@ -282,7 +327,9 @@ PharoTopic new
 	context: 'The Parse tree rewriter is a powerful engine. It is used to support automatic rewriting of program and it is the basis of the refactoring engine. It is based on a unification algorithm that unifies
 	trees with meta variables to abstract syntax trees.' ;
 	goal: 'The goal of this project is to revisit the API of the Parse Tree Rewriter to help people build better tools. Reading the Flamel GSOC project and the new book chapter on such tools is a good start.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Git Library for Pharo in Pharo';
@@ -291,7 +338,9 @@ PharoTopic new
 	keywords: 'Protocol GIT';
 	context: 'Git is becoming the defacto standard for managing source code and versioning them.' ;
 	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started);';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Git integration for Pharo';
@@ -303,7 +352,9 @@ PharoTopic new
 		- a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started);
 		- a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories.
 	To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Taking advantage of roel Typer in tools';
@@ -312,7 +363,9 @@ PharoTopic new
 	keywords: 'type inferencer tool';
 	context: 'Getting the type of variables and expression is a useful information.';
 	goal: 'The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'OpenStreet Smart viewer in Pharo';
@@ -321,7 +374,9 @@ PharoTopic new
 	keywords: 'svg open street visualisation';
 	context: '	OpenStreet is an open source standard for high-quality maps.';
 	goal: 'The goal of this project is to build a smart viewer of map using Athens the new canvas of Pharo. One of the challenge is to redraw only the part of the map when zooming in.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'OpenStreet Smart viewer in Pharo';
@@ -330,7 +385,9 @@ PharoTopic new
 	keywords: 'svg open street visualisation';
 	context: '	OpenStreet is an open source standard for high-quality maps.';
 	goal: 'The goal of this project is to build a smart viewer of map using Athens the new canvas of Pharo. One of the challenge is to redraw only the part of the map when zooming in.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'Web OpenStreet map manager';
@@ -339,7 +396,8 @@ PharoTopic new
 	keywords: 'svg open street visualisation web amber seaside';
 	context: '	OpenStreet is an open source standard for high-quality maps.';
 	goal: 'The goal of this project is to build a simple web application that let users managing their own maps like googlemap but in a better way. An example could be http://umap.openstreetmap.fr/';
-	yourself.
+	yourself
+.
 
 PharoTopic new
 	title: 'Sokoban';
@@ -349,7 +407,9 @@ PharoTopic new
 	context: 'There is an implementation of the Sokoban game in Pharo.  However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
 via a model that can then be displayed graphically. Right now the logic of the game is mixed with its graphical representation.';
-	yourself.
+	yourself
+	
+.
 
 PharoTopic new
 	title: 'SameGame';
@@ -359,7 +419,8 @@ PharoTopic new
 	context: 'There is an implementation of the SameGame game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
 	via a model that can then be displayed graphically using different ways.';
-	yourself.
+	yourself
+.
 
 PharoTopic new
 	title: 'Tetris';
@@ -369,7 +430,8 @@ PharoTopic new
 	context: 'There is an implementation of the Tetris game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
 	via a model that can then be displayed graphically using different ways.';
-	yourself.
+	yourself
+.
 	
 PharoTopic new
 	title: 'Miner';
@@ -379,7 +441,9 @@ PharoTopic new
 	context: 'There is an implementation of the Miner game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
 	via a model that can then be displayed graphically using different ways.';
-	yourself.	
+	yourself
+	
+}	
 
 "
 More to come:
