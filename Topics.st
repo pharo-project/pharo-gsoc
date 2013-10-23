@@ -286,16 +286,6 @@ yourself
 
 .
 
-PharoTopic new
-	title: 'Epub generator for Pier';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and N. Petton';
-	keywords: 'Smalltalkhub ui amber web voyage';
-	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. There is a prototype that converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
-	goal: 'The goal of this project is to improve this prototype with an export to the ePub format, used by e-readers.';
-	yourself
-	
-.
 
 PharoTopic new
 	title: 'Epub generator for Pier';
@@ -303,7 +293,7 @@ PharoTopic new
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pier epub Document tree visitor';
 	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
-	goal: 'The goal of this project is to add to Guternber  an export to the ePub format, used by e-readers.';
+	goal: 'The goal of this project is to add to Gutenberg an export to the ePub format, used by e-readers.';
 	yourself
 	
 .
@@ -363,17 +353,6 @@ PharoTopic new
 	keywords: 'type inferencer tool';
 	context: 'Getting the type of variables and expression is a useful information.';
 	goal: 'The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.';
-	yourself
-	
-.
-
-PharoTopic new
-	title: 'OpenStreet Smart viewer in Pharo';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
-	keywords: 'svg open street visualisation';
-	context: '	OpenStreet is an open source standard for high-quality maps.';
-	goal: 'The goal of this project is to build a smart viewer of map using Athens the new canvas of Pharo. One of the challenge is to redraw only the part of the map when zooming in.';
 	yourself
 	
 .
