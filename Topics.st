@@ -55,12 +55,12 @@ PharoTopic new
 	keywords: 'bugs modeling tools moose analyses';
 	context: 'Moose (http://www.moosetechnology.org) is a well-know and successful platform to support data and software analysis development.';
 	goal: 'Moose can be connected with a JIRA bug tracker database. The goals of the project are:
-	        - revisit the bug metamodel
-	        - improve the bug to code mapping heuristics (How do we know that a method was touched by a bug)
-	        - add different bugtrackers as input to Moose (e.g., Fogbugz, Trac, Redmine)
-	        - Enhance the visualizations proposed in Moose.
-	Links: S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM 07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.
-
+	        (1) learn or/and revisit the bug metamodel
+	        (2) improve the bug to code mapping heuristics - How do we know that a method was touched by a bug. Probably we will have to develop a set of strategies that can cope with the practices of different communities and bugtrackers.
+	        (3) add different bugtrackers as input to Moose (e.g., Fogbugz, Trac, Redmine). The idea is to build a library of importers so that we can import bug information from different bugs trackers.
+	        (4) Enhance the visualizations and tools proposed in Moose.
+	Note that contacting Tommaso del Sasso from Lugano can be a good idea since he is doing his PhD on bugs and building a dashboard for Pharo bug activity. tommaso.dal.sasso@usi.ch
+	Links: 
 A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012' ;
 	yourself
 
@@ -117,8 +117,10 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and E. Lorenzano';
 	keywords: 'formating AST PetitParser SmaCC';
-	context: 'Automatic formatting code is really important. The current code formatter already defines many hooks';
-	goal: 'The goal of the project is to identify several configurations of the formatter and to propose a default one. Improving the edge cases is also part of the project';
+	context: 'Automatic formatting code is really important. The current code formatter already defines many hooks and is based on a box model.';
+	goal: 'The goal of the project is to identify several configurations of the formatter and to propose a default one. 
+	The tasks are: (1) start to understand the code formatter, (2) Write some tests to characterize specific version, (3) Improving the edge cases is also part of the project. For example when we have really lengthy selectors.';
+	level: 'Bachelor or Master';
 	yourself
 	
 .
@@ -158,12 +160,16 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and C. Bruni';
 	keywords: 'string API';
-	context: 'Pharo offers several good libraries to manipulate collections. However the Strings API could benefit from a new look and redesign.';
-	goal: 'The goal of the project is to help rethinking the String manipulation API of Pharo.Here are some tasks to be performed.
-		- look at Ruby library
-		- build a set of example: how to get Soup out of ConfigurationOfSoup and ConfigurationOf
-and how to get from http://smalltalkhub.com/mc/Pharo/XMLWriter/main to ttp://smalltalkhub.com/#!/~Pharo/XMLWriter
-		- look at other collections protocols.';
+	context: 'Pharo offers several good libraries to manipulate collections. However, the Strings API could benefit from a new study and redesign or enhancements.';
+	goal: 'The goal of the project is to help rethinking the String manipulation API of Pharo. Here are some tasks to be performed.
+		(0) Identify the elementary operations on Strings.
+		(1) Look at Ruby library and Python library
+		(2) Study the current Pharo string library.  
+		(3) Build a set of examples. For example, how to get ''Soup'' out of ''ConfigurationOfSoup'' or 
+how to transform from ''http://smalltalkhub.com/mc/Pharo/XMLWriter/main'' to ''http://smalltalkhub.com/#!/~Pharo/XMLWriter''. The student is invited to ask the community for their needs too.
+		(4) Propose some new messages to enhance or replace current Pharo
+		(5) The work could also include writing a nice chapter for a future Pharo book';
+	level: 'Bachelor or Master';
 	yourself
 	
 .	
@@ -271,6 +277,7 @@ PharoTopic new
 	keywords: 'ui spec';
 	context: 'Understanding how objects points to each other is important to spot memory leaks.';
 	goal: 'To understand how objects point to each other, Pharo offers the pointTo: methods. However it is a bit rudimentary. The goal of the project is to enhance the current pointer explorer to provide better information.';
+	level: 'Bachelor';
 	yourself
 	
 	.
@@ -292,8 +299,9 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pier epub Document tree visitor';
-	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
-	goal: 'The goal of this project is to add to Gutenberg an export to the ePub format, used by e-readers.';
+	context: 'Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
+	goal: 'The goal of this project is to add to Gutenberg an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
+	level: 'Bachelor';
 	yourself
 	
 .
@@ -303,8 +311,9 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pier Latex HTML Document tree visitor';
-	context: '	Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. There is a prototype that converts Pier syntax to HTML and LaTeX (to produce PDFs).' ;
-	goal: 'The goal of this project is to improve Gutenberg Latex and PDF exporter.';
+	context: 'Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
+	goal: 'The goal of this project is to improve Gutenberg LaTeX and HTML exporter.';
+	level: 'Bachelor';
 	yourself
 	
 .
@@ -382,22 +391,26 @@ PharoTopic new
 	title: 'Sokoban';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
-	keywords: ' games SameGame Miner Sokoban';
+	keywords: ' Games SameTile Miner Sokoban';
 	context: 'There is an implementation of the Sokoban game in Pharo.  However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
-via a model that can then be displayed graphically. Right now the logic of the game is mixed with its graphical representation.';
+via a model that can then be displayed graphically. Right now the logic of the game is mixed with its graphical representation. 	The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
+	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
+	level: 'Beginner or Bachelor';
 	yourself
 	
 .
 
 PharoTopic new
-	title: 'SameGame';
+	title: 'SameTile';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
-	keywords: ' games SameGame Miner Sokoban';
+	keywords: 'Games SameTile Miner Sokoban';
 	context: 'There is an implementation of the SameGame game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
-	via a model that can then be displayed graphically using different ways.';
+	via a model that can then be displayed graphically using different ways.  The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
+	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
+	level: 'Beginner or Bachelor';
 	yourself
 .
 
@@ -405,10 +418,11 @@ PharoTopic new
 	title: 'Tetris';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
-	keywords: ' games SameGame Miner Sokoban';
+	keywords: ' games SameTile Miner Sokoban';
 	context: 'There is an implementation of the Tetris game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
-	via a model that can then be displayed graphically using different ways.';
+	via a model that can then be displayed graphically using different ways.  The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
+	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
 	yourself
 .
 	
@@ -419,7 +433,8 @@ PharoTopic new
 	keywords: 'Game SameGame Miner Sokoban';
 	context: 'There is an implementation of the Miner game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
 	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
-	via a model that can then be displayed graphically using different ways.';
+	via a model that can then be displayed graphically using different ways. The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
+	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
 	yourself
 	
 }	
@@ -429,7 +444,6 @@ More to come:
 	Game frameworks	
 	Revisiting OS Process
 	Distribution Validation
-	Game framework
 	Python Moose Importer
 	Benchmark Server
 	Revisiting RBEnvironments S. Ducasse / Bruni
