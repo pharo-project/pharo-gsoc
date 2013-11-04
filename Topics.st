@@ -7,6 +7,7 @@ PharoTopic new
 	keywords: 'tools ui spec';
 	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
 	goal: 'The goal of the project is to define a tool to support message browsing.';
+	level: 'Intermediate';
 	yourself
 	
 .
@@ -16,8 +17,9 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou';
 	keywords: 'tools ui spec web';
-	context: 'Fixing Pharo is very tedious, even for small changes. If you see a typo in a comment for example, you have to open a new issue on the tracker, fix the typo in an image, create a slice in monticello, select the package that changed, commit the slice to the inbox, and mark the issue as "Resolved (Review needed)". Then, a reviewer must merge your slice in his image and mark the issue as "Resolved (Fix to include)". Finally, an integrator has to merge your slice and mark the issue as "Resolved (Fix integrated)". For such fixes I want that all these guys do their work in just one click. ';
+	context: 'Fixing Pharo is very tedious, even for small changes. If you see a typo in a comment for example, you have to open a new issue on the tracker, fix the typo in an image, create a slice in Monticello, select the package that changed, commit the slice to the inbox, and mark the issue as "Resolved (Review needed)". Then, a reviewer must merge your slice in his image and mark the issue as "Resolved (Fix to include)". Finally, an integrator has to merge your slice and mark the issue as "Resolved (Fix integrated)". For such fixes I want that all these guys do their work in just one click. ';
 	goal: 'The goal of this project is to implement the button that will make reporting such fixes as simple as possible. The integration of such fixes must be as simple. This project will probably require implementing a web interface that Pharo integrators can use to accept/reject these fixes.';
+	level: 'Intermediate';
 	yourself
 	
 .
@@ -82,10 +84,7 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and  (H. Verjus - M.P. Huget)';
 	keywords: 'Expert systems';
-	context: 'There is a need for an expert system framework on top of Pharo.
-	Several projects could benefit from it: recommander, moose, robotics, drgeo.';
-	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension.
-	Links: look at NeoPus (it proposes to use objects for fact).';
+	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for fact).';
 	yourself
 
 .
@@ -96,7 +95,8 @@ PharoTopic new
 	supervisors: 'S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Automatic formatting of code is really important.';
-	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of petit parser) to complement the AST.';
+	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.';
+	level: 'Advanced';
 	yourself
 	
 .	
@@ -108,9 +108,11 @@ PharoTopic new
 	keywords: 'assembly arm';
 	context: 'ASMJIT is a key part of the Pharo infrastructure. It supports the generation of assembly code for X86.';
 	goal: 'The goal of the project is to continue to work on the generation of ARM code from the Pharo image using the same approach as ASMJIT. This project is also important for NativeBoost the FFI library based on ASMJIT';
-		yourself
-		
-.		
+	level: 'Advanced';
+	yourself
+
+.	
+
 
 PharoTopic new
 	title: 'Improving the code formatter';
@@ -120,7 +122,7 @@ PharoTopic new
 	context: 'Automatic formatting code is really important. The current code formatter already defines many hooks and is based on a box model.';
 	goal: 'The goal of the project is to identify several configurations of the formatter and to propose a default one. 
 	The tasks are: (1) start to understand the code formatter, (2) Write some tests to characterize specific version, (3) Improving the edge cases is also part of the project. For example when we have really lengthy selectors.';
-	level: 'Bachelor or Master';
+	level: 'Intermediate';
 	yourself
 	
 .
@@ -141,16 +143,14 @@ PharoTopic new
 .	
 
 PharoTopic new
-	title: 'Support for code review';
+	title: 'Support for change code review';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and M. Dias';
 	keywords: 'code representation change history browsing spec';
 	context: 'Pharo manages well source versions and modification. However it is tedious to understand changes made by other developers. Often during a programming session we split, changes existing code and we would like to be able to have feedback by other programmers. However giving a simple a list of changes can be really tedious for the reviewer: he will see that a method was changed and another was added for example.
  The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.';
-	goal: 'The goal of the project is to help building a tools to support code reviewing. In detail, here are some tasks to be performed.
-		        - study Epicea (the new change model)
-		        - define a tool to annotate changes and share annotations between different developers.
-		        - build heuristics to identify changes that represents a unit (for example split methods and push up or push down).';
+	goal: 'The goal of the project is to help building a tools to support code reviewing. In detail, here are some tasks to be performed: (1) study Epicea (the new change model), (2) define a tool to annotate changes and share annotations between different developers, (3) build heuristics to identify changes that represents a unit (for example split methods and push up or push down).';
+	level: 'Intermediate';
 	yourself
 	
 .
@@ -180,7 +180,8 @@ PharoTopic new
 	supervisors: 'Clement Bera and Marcus Denker and Stephane Ducasse';
 	keywords: 'AST interpreter';
 	context: 'Since Pharo 30, an AST interpreter is available in Pharo. It is really interesting since we use it to build a test coverage tool in a couple of hours.';
-	goal: 'Now the Pharo interpreter design prevents us to build a debugger (with a step by step behavior). The goal of this project is to transform the interpreter into an interpreter using an explicit stack so that the stack can be used to implement step by step program execution. The Amber interpreter is ';
+	goal: 'Now the Pharo interpreter design prevents us to build a debugger (with a step by step behavior). The goal of this project is to transform the interpreter into an interpreter using an explicit stack so that the stack can be used to implement step by step program execution. The Amber interpreter is a stepping interpreter and a good source of inspiration.';
+	level: 'Advanced';
 	yourself
 	
 .
@@ -193,15 +194,12 @@ PharoTopic new
 	context: 'Since Pharo 30, an AST interpreter is available in Pharo. It is really interesting since we use it to build a test coverage tool in a couple of hours.';
 	goal: 'Smalltalk is proud of its collection hierarchy. However some collections are missing.
 	The goal of this project is to select, implement and tests some missing collections.
-	For example, we can think of:
-	        - double linked list
-	        - circular list
-	        - immutable list, set, array
-	        - Quadtree, Btree, Trie
+	For example, we can think of: (1) double linked lists, (2) circular list, (3) immutable list, set, array, (3) quadtree, Btree, Trie
 	Links:
 - Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf
 - http://source.lukas-renggli.ch/container started to implement some new collections for Pharo.
 - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/';
+	level: 'Advanced';
 yourself
 
 .
@@ -231,8 +229,9 @@ PharoTopic new
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'S. Ducasse and N. Anquetil';
 	keywords: 'tools tests';
-	context: 'When a bunch of tests are failing this is always a problem to know which one to fix first. In his PhD Markus Gaelli proposed a nice way to build a test fingerprint (based on which methods where invoked in a test) and to sort them.';
+	context: 'When a bunch of tests are failing this is always a problem to know which one to fix first. In his PhD Markus Gaelli proposed a nice way to build a test fingerprint (based on which methods were invoked in a test) and to sort them.';
 	goal: 'The goal of this project is to apply the idea of Gaelli and to propose a tool to help deciding which tests to fix';
+	level: 'Intermadiate';
 yourself
 
 .
@@ -326,6 +325,7 @@ PharoTopic new
 	context: 'The Parse tree rewriter is a powerful engine. It is used to support automatic rewriting of program and it is the basis of the refactoring engine. It is based on a unification algorithm that unifies
 	trees with meta variables to abstract syntax trees.' ;
 	goal: 'The goal of this project is to revisit the API of the Parse Tree Rewriter to help people build better tools. Reading the Flamel GSOC project and the new book chapter on such tools is a good start.';
+	level: 'Advanced';
 	yourself
 	
 .
@@ -336,7 +336,8 @@ PharoTopic new
 	supervisors: 'C. Bruni and D. Cassou';
 	keywords: 'Protocol GIT';
 	context: 'Git is becoming the defacto standard for managing source code and versioning them.' ;
-	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started);';
+	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started). The first task will be look at the current effort and then study the python implementation as well as reading the specification.';
+	level: 'Intermediate';
 	yourself
 	
 .
@@ -347,21 +348,20 @@ PharoTopic new
 	supervisors: 'C. Bruni and D. Cassou';
 	keywords: 'Protocol GIT';
 	context: 'Git is becoming the defacto standard for source code versioning.';
-	goal: 'The goal of this project is to continue the development of FileTree and GitTree two projects that offer the possibilities to store Git sources in Git. The goal of this project is to integrate Git within Pharo. The Git object model has already been implemented. The student will have to develop: 
-		- a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started);
-		- a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories.
-	To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
+	goal: 'The goal of this project is to continue the development of FileTree and GitTree two projects that offer the possibilities to store Git sources in Git. The goal of this project is to integrate Git within Pharo. The Git object model has already been implemented. The student will have to develop: (1) a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started); (2) a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories. To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
+	level: 'Advanced';
 	yourself
 	
 .
 
 PharoTopic new
-	title: 'Taking advantage of roel Typer in tools';
+	title: 'Taking advantage of Roel Typer in Tools';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'type inferencer tool';
 	context: 'Getting the type of variables and expression is a useful information.';
 	goal: 'The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.';
+	level: 'Intermediate';
 	yourself
 	
 .
@@ -443,6 +443,10 @@ PharoTopic new
 More to come:
 	Game frameworks	
 	Revisiting OS Process
+	type inferencer
+	Mercury
+	Code review
+	
 	Distribution Validation
 	Python Moose Importer
 	Benchmark Server
