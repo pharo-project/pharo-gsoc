@@ -322,31 +322,6 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'Git Library for Pharo in Pharo';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'C. Bruni and D. Cassou';
-	keywords: 'Protocol GIT';
-	context: 'Git is becoming the defacto standard for managing source code and versioning them.' ;
-	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started);';
-	yourself
-	
-.
-
-PharoTopic new
-	title: 'Git integration for Pharo';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'C. Bruni and D. Cassou';
-	keywords: 'Protocol GIT';
-	context: 'Git is becoming the defacto standard for source code versioning.';
-	goal: 'The goal of this project is to continue the development of FileTree and GitTree two projects that offer the possibilities to store Git sources in Git. The goal of this project is to integrate Git within Pharo. The Git object model has already been implemented. The student will have to develop: 
-		- a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started);
-		- a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories.
-	To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
-	yourself
-	
-.
-
-PharoTopic new
 	title: 'Taking advantage of roel Typer in tools';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
