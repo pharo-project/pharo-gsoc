@@ -102,7 +102,7 @@ PharoTopic new
 .	
 
 PharoTopic new
-	title: 'ARM AMSJIT';
+	title: 'ARM ASMJIT';
 	contact: 'igor.stasenko@inria.fr';
 	supervisors: 'I. Stasenko and D. Pollet';
 	keywords: 'assembly arm';
@@ -355,7 +355,7 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'Taking advantage of Roel Typer in Tools';
+	title: 'Taking advantage of roel Typer in tools';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'type inferencer tool';
