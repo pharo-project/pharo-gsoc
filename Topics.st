@@ -74,7 +74,8 @@ PharoTopic new
 	supervisors: 'S. Ducasse and (R. Minelli)';
 	keywords: 'recommander tools rules analyses';
 	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
-	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer.';
+	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly ';
+	candidate: 'Facundo Mainere fmmainere@gmail.com from Uni. National Quilmes under supervision of G. Arevalo';
 	yourself
 	
 .
@@ -85,6 +86,7 @@ PharoTopic new
 	supervisors: 'S. Ducasse and  (H. Verjus - M.P. Huget)';
 	keywords: 'Expert systems';
 	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for fact).';
+	level: 'Intermediate';
 	yourself
 
 .
@@ -320,7 +322,7 @@ PharoTopic new
 PharoTopic new
 	title: 'ParseTree Rewriter Improvements';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'G. Decussi, C. Teruel and S. Ducasse';
+	supervisors: 'G. Decuzzi, C. Teruel and S. Ducasse';
 	keywords: 'AST tree visitor';
 	context: 'The Parse tree rewriter is a powerful engine. It is used to support automatic rewriting of program and it is the basis of the refactoring engine. It is based on a unification algorithm that unifies
 	trees with meta variables to abstract syntax trees.' ;
