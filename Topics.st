@@ -2,6 +2,43 @@
 
 PharoTopic new
 	title: 'Better Message Browser';
+	contact: 'alexandre.bergel@objectprofile.com';
+	supervisors: 'Alexandre Bergel';
+	keywords: 'Roassal data visualization visualization';
+	context: 'Calender Heatmap is an efficient way to associate metrics to a calender. This is a commonly used representation of a metric variation over a long period of time. Supporting this in Roassal will add a useful visual representation.';
+	goal: 'Calendar heatmap';
+	level: 'Beginner';
+	yourself
+
+.
+
+
+PharoTopic new
+	title: 'Better Message Browser';
+	contact: 'alexandre.bergel@objectprofile.com';
+	supervisors: 'Alexandre Bergel';
+	keywords: 'Roassal data visualization visualization';
+	context: 'Currently Roassal has a minimal support for animation. For example, animations are depends on the amount of refresh, therefore dependent on the machine speed, which should not be. This project is about proposing a set of animations for Roassal that only depend on the passing time.';
+	goal: 'Animation support for Roassal';
+	level: 'Beginner';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Better Message Browser';
+	contact: 'alexandre.bergel@objectprofile.com';
+	supervisors: 'Alexandre Bergel';
+	keywords: 'Roassal data visualization';
+	context: 'Voronoi is a diagram for spacial optimization. By using an organic distribution of the space, Voronoi are particularly adapted to partition space. This topic is about implementing Voronoi in the Roassal visualization engine. Look for Roassal and Voronoi on google';
+	goal: 'Making Roassal support Voronoi diagrams';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Better Message Browser';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse / B. van Ryseghem';
 	keywords: 'tools ui spec';
