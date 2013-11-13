@@ -195,6 +195,20 @@ PharoTopic new
 .
 
 PharoTopic new
+	title: 'Reorganizing Changes';
+	contact: 'damien.cassou@inria.fr';
+	supervisors: 'D. Cassou and M. Dias';
+	keywords: 'code representation change history browsing spec';
+	context: 'After some time programming on a system, a developer might realize he has made quite a few unrelated changes to the system: for example, he has fixed a bug, improved the documentation and finished implementing a new feature. Now, the developer would like to share (i.e., commit) these improvements separately to facilitate code review and later bug fixing. Current tools (e.g., git add --interactive) let developers select which files and lines to commit first.';
+	goal: 'The goal of this project is to go way beyond existing tools (such as git): The tools must help developers create branches out of their changes, e.g., by extrapolating the dependencies and by facilitating manual reorganizations of the changes. The tools must also verify that each branch is correct, e.g., by compiling the code in each branch and running the tests. Martin Dias, a PhD student in the RMoD research group, will be associated to the internship and has already implemented a change model named Epicea that the project will leverage.';
+	level: 'Intermediate';
+	yourself
+	
+.
+
+
+
+PharoTopic new
 	title: 'Improving Strings manipulation';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and C. Bruni';
