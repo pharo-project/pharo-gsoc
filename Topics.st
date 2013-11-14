@@ -496,7 +496,7 @@ PharoTopic new
 	contact: 'camille.teruel@inria.fr';
 	supervisors: 'C. Teruel';
 	keywords: 'AST IDE annotation social-coding';
-	context: 'Pharo sources are currently stored in a separated file. Bonsai, the future system for persistant and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additionnal comments, discussions, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).';
+	context: 'Pharo sources are currently stored in a separated file. Bonsai, the future system for persistant and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additionnal comments, discussions, false positive critics, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).';
 	goal: 'All these annotations would take too much space in the image. Moreover, not all of them are needed by all developpers. The goal of Baobab is to store these annotations on remote repositories so that teams of developpers can share and edit them.';
 	level: 'intermediate';
 	yourself
