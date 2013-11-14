@@ -409,8 +409,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Taking advantage of roel Typer in tools';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
+	contact: 'stephane.ducasse@inria.fr, camille.teruel@inria.fr';
+	supervisors: 'S. Ducasse, C.Teruel';
 	keywords: 'type inferencer tool';
 	context: 'Getting the type of variables and expression is a useful information.';
 	goal: 'The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.';
@@ -489,8 +489,19 @@ PharoTopic new
 	via a model that can then be displayed graphically using different ways. The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
 	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
 	yourself
-	
-}	
+.
+
+PharoTopic new
+	title: 'Baobab';
+	contact: 'camille.teruel@inria.fr';
+	supervisors: 'C. Teruel';
+	keywords: 'AST IDE annotation social-coding';
+	context: 'Pharo sources are currently stored in a separated file. Bonsai, the future system for persistant and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additionnal comments, discussions, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).';
+	goal: 'All these annotations would take too much space in the image. Moreover, not all of them are needed by all developpers. The goal of Baobab is to store these annotations on remote repositories so that teams of developpers can share and edit them.';
+	level: 'intermediate';
+	yourself
+.
+}
 
 "
 More to come:
