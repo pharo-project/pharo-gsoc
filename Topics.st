@@ -134,8 +134,9 @@ PharoTopic new
 	supervisors: 'S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Automatic formatting of code is really important.';
-	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.';
-	level: 'Advanced';
+	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.
+(1) Studying the default static formatter of Pharo, (2) Studying Petit Parser, (3) Adding a special error handling to Petit Parser, (4) Experiment and selecting heuristics';
+	level: 'Advanced';,
 	yourself
 	
 .	
@@ -412,8 +413,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Taking advantage of roel Typer in tools';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
+	contact: 'stephane.ducasse@inria.fr, camille.teruel@inria.fr';
+	supervisors: 'S. Ducasse, C.Teruel';
 	keywords: 'type inferencer tool';
 	context: 'Getting the type of variables and expression is a useful information.';
 	goal: 'The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.';
@@ -492,8 +493,34 @@ PharoTopic new
 	via a model that can then be displayed graphically using different ways. The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
 	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
 	yourself
-	
-}	
+.
+
+PharoTopic new
+	title: 'Baobab';
+	contact: 'camille.teruel@inria.fr';
+	supervisors: 'C. Teruel';
+	keywords: 'AST IDE annotation social-coding';
+	context: 'Pharo sources are currently stored in a separated file. Bonsai, the future system for persistent and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additional comments, discussions, false positive critics, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).';
+	goal: 'All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.';
+	level: 'intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Baobab';
+	contact: 'camille.teruel@inria.fr';
+	supervisors: 'C. Teruel and S. Ducasse';
+	keywords: 'Module';
+	context: 'Typically a package declares the other packages it uses. While this is the normal way to think about packages, there are alternatives approaches as the one of Units in DrScheme [Unit] and now Newspeak developed by Gilad Bracha. In addition, Java new version will integrate a visibility mechanism to packages with a notion of modules. We distinguish modules from packages in the sense that a package does not automatically includes a visibility mechanism (often implemented as a namespace). Subsystem was a proposal to design a somehow traditional module system for Smalltalk [Subsystem]. Bergel et al offer an overview of advanced module system but do not propose a concrete, scalable module system for a powerful dynamically typed language.';
+	goal: 'The goal of the project is to design a module system for Pharo and study the impact on the system. In particular we want to have method extensions to be only visible from the importing packages. 
+(1) Studying some related works (2) Implement the model proposed by C. Teruel (3)  Apply the module system on some real cases
+(4) Experiment and study the impact on the existing system';
+	level: 'intermediate';
+	yourself
+
+
+}
 
 "
 More to come:
