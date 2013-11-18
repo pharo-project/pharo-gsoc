@@ -202,6 +202,7 @@ PharoTopic new
 	context: 'After some time programming on a system, a developer might realize he has made quite a few unrelated changes to the system: for example, he has fixed a bug, improved the documentation and finished implementing a new feature. Now, the developer would like to share (i.e., commit) these improvements separately to facilitate code review and later bug fixing. Current tools (e.g., git add --interactive) let developers select which files and lines to commit first.';
 	goal: 'The goal of this project is to go way beyond existing tools (such as git): The tools must help developers create branches out of their changes, e.g., by extrapolating the dependencies and by facilitating manual reorganizations of the changes. The tools must also verify that each branch is correct, e.g., by compiling the code in each branch and running the tests. Martin Dias, a PhD student in the RMoD research group, will be associated to the internship and has already implemented a change model named Epicea that the project will leverage.';
 	level: 'Intermediate';
+        candidate: 'Lucas Godoy';
 	yourself
 	
 .
@@ -391,6 +392,7 @@ PharoTopic new
 	context: 'Git is becoming the defacto standard for managing source code and versioning them.' ;
 	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started). The first task will be look at the current effort and then study the python implementation as well as reading the specification.';
 	level: 'Intermediate';
+        candidate: 'Max Leske';
 	yourself
 	
 .
@@ -403,6 +405,7 @@ PharoTopic new
 	context: 'Git is becoming the defacto standard for source code versioning.';
 	goal: 'The goal of this project is to continue the development of FileTree and GitTree two projects that offer the possibilities to store Git sources in Git. The goal of this project is to integrate Git within Pharo. The Git object model has already been implemented. The student will have to develop: (1) a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started); (2) a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories. To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
 	level: 'Advanced';
+        candidate: 'Max Leske';
 	yourself
 	
 .
