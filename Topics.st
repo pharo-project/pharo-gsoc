@@ -495,6 +495,20 @@ PharoTopic new
 	yourself
 .
 
+
+PharoTopic new
+	title: 'Trustworthy refactorings';
+	contact: 'damien.cassou@inria.fr';
+	supervisors: 'D. Cassou';
+	keywords: 'Refactorings';
+	context: 'Modern development environments (e.g., Eclipse) propose refactorings. Some studies show that complex refactorings are rarely used. This reluctance to use complex refactorings comes from the fact that developers do not really understand how these refactorings will affect their source code. Additionally, complex refactorings require the developers to answer many questions before being applied.';
+	goal: 'Above-mentioned studies propose small refactorings that are much easier to understand and that can be easily composed to form complex refactorings that developers can trust. The goal of this project is to implement these refactorings in Pharo and to remove the most complex ones.';
+	level: 'intermediate';
+	yourself
+
+.
+
+
 PharoTopic new
 	title: 'Baobab';
 	contact: 'camille.teruel@inria.fr';
@@ -504,6 +518,8 @@ PharoTopic new
 	goal: 'All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.';
 	level: 'intermediate';
 	yourself
+
+
 
 .
 
@@ -518,7 +534,6 @@ PharoTopic new
 (4) Experiment and study the impact on the existing system';
 	level: 'intermediate';
 	yourself
-
 
 }
 
