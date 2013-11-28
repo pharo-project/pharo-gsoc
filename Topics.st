@@ -567,14 +567,6 @@ Keywords: Framework, games, SameGame, Miner, Sokoban
 
 ==================================================================================
 
-Trustworthy refactorings
-
-Modern IDEs propose refactorings, some of them very complex. Some studies (see ECOOP'13 articles) tend to show that complex refactorings are underused because developers do not really understand how such refactorings will affect source code. These studies propose smaller refactorings that are much easier to understand and that can be easily composed to form complex refactorings that developers can trust. The goal of this project is to implement these refactorings in Pharo and to remove the most complex ones.
-
-Keywords: Refactorings
-Technology: Pharo
-Contact: Damien Cassou
-==================================================================================
 Trashing mechanism
 
 Desktop operating systems all offer a trash mechanism that allows one to recover a deleted file. Some desktop applications written in Pharo may benefit from this facility. The goal of this project is to let Pharo send files to the trashes of the supported operating systems (Linux, Mac OS X and Windows).
