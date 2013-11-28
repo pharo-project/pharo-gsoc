@@ -497,7 +497,7 @@ PharoTopic new
 
 
 PharoTopic new
-	title: 'Trustworthy refactorings';
+	title: 'Elementary refactorings';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou';
 	keywords: 'Refactorings';
