@@ -356,6 +356,7 @@ PharoTopic new
 	context: 'Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
 	goal: 'The goal of this project is to add to Gutenberg an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
 	level: 'Bachelor';
+        candidate: 'Dmitry Shamanaev';
 	yourself
 	
 .
