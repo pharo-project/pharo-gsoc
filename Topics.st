@@ -136,7 +136,7 @@ PharoTopic new
 	context: 'Automatic formatting of code is really important.';
 	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.
 (1) Studying the default static formatter of Pharo, (2) Studying Petit Parser, (3) Adding a special error handling to Petit Parser, (4) Experiment and selecting heuristics';
-	level: 'Advanced';,
+	level: 'Advanced';
 	yourself
 	
 .	
