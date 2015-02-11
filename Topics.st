@@ -2,8 +2,8 @@
 
 PharoTopic new
 	title: 'Better Palette Support';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse, Damien Pollet and Alexandre Bergel';
+	contact: 'damien.pollet@inria.fr';
+	supervisors: 'Damien Pollet and Alexandre Bergel';
 	keywords: 'Color palette visualization';
 	context: 'CubeHelix is a way to compute intensity of color that is important for color blind people. It was introduced in Pharo recently. Now we should revisit the color palette to offer some predefined palette and better support for Colors.';
 	goal: 'The objectives is to revisit and build a new palette behavior';
@@ -14,8 +14,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Rethinking OSProcess Integration';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse, Damien Pollet and Esteban Lorenzano';
+	contact: 'esteban.lorenzano@inria.fr';
+	supervisors: 'Esteban Lorenzano (and Damien Pollet)';
 	keywords: 'OS VM';
 	context: 'We need a way to invoke OS low-level functionality from the language. This will let programmers develop scripts in Pharo and integrate better with the OSes';
 	level: 'Advanced';
@@ -25,8 +25,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Enhancing file ownership';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse, Damien Cassou and Esteban Lorenzano';
+	contact: 'jean-christophe.bach@inria.fr';
+	supervisors: 'Jean-Christophe Bach, Damien Cassou and Esteban Lorenzano';
 	keywords: 'OS VM';
 	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, Mac OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.';
 	level: 'Advanced';
@@ -35,8 +35,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Better Message Browser';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse / Johan Fabry';
+	contact: 'jfabry@dcc.uchile.cl';
+	supervisors: 'Johan Fabry / S. Ducasse';
 	keywords: 'tools ui spec';
 	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
 	goal: 'The goal of the project is to define a tool to support message browsing.';
@@ -47,8 +47,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Bug Importer for Moose';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and N. Anquetil';
+	contact: 'nicolas.anquetil@inria.fr';
+	supervisors: 'N. Anquetil';
 	keywords: 'bugs modeling tools moose analyses';
 	context: 'Moose (http://www.moosetechnology.org) is a well-know and successful platform to support data and software analysis development.';
 	goal: 'Moose can be connected with a JIRA bug tracker database. The goals of the project are:
@@ -65,8 +65,8 @@ A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. M
 
 PharoTopic new
 	title: 'A Hot Recommander for Pharo';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and (R. Minelli)';
+	contact: 'Yuriy Tymchuk <yuriy.tymchuk@usi.ch>';
+	supervisors: 'Yuriy Timchuk';
 	keywords: 'recommander tools rules analyses';
 	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
 	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly ';
@@ -88,8 +88,8 @@ PharoTopic new
 		
 PharoTopic new
 	title: 'Format as you type';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
+	contact: 'marcus.denker@inria.fr';
+	supervisors: 'Marcus Denker and S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Automatic formatting of code is really important.';
 	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.
@@ -101,8 +101,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Improving the code formatter';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
+	contact: 'marcus.denker@inria.fr';
+	supervisors: 'Marcus Denker';
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Code formatting is really important.';
 	goal: 'The goal of the project is to enhance the current code formatter.
@@ -114,8 +114,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'ARM ASMJIT';
-	contact: 'igor.stasenko@inria.fr';
-	supervisors: 'I. Stasenko and D. Pollet';
+	contact: 'siguctua@gmail.com';
+	supervisors: 'I. Stasenko';
 	keywords: 'assembly arm';
 	context: 'ASMJIT is a key part of the Pharo infrastructure. It supports the generation of assembly code for X86.';
 	goal: 'The goal of the project is to continue to work on the generation of ARM code from the Pharo image using the same approach as ASMJIT. It should use the Virtual CPU. This project is also important for NativeBoost the FFI library based on ASMJIT';
@@ -140,8 +140,8 @@ it can do better.';
 
 PharoTopic new
 	title: 'Omnipresent Code Manager';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and M. Dias';
+	contact: 'martin.dias@inria.fr';
+	supervisors: ' M. Dias and S. Ducasse';
 	keywords: 'code representation change history browsing';
 	context: 'Being able to look at all the versions of a method, class or package is an important feature. Right now Pharo contains a limited amount versions because the changes are condensed from time to time. The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.';
 	goal: 'The goal of the project is to help defining a source code manager. The goal of the project is to
@@ -155,8 +155,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Support for change code review';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and M. Dias';
+	contact: 'martin.dias@inria.fr';
+	supervisors: ' M. Dias and S. Ducasse';
 	keywords: 'code representation change history browsing spec';
 	context: 'Pharo manages well source versions and modification. However it is tedious to understand changes made by other developers. Often during a programming session we split, changes existing code and we would like to be able to have feedback by other programmers. However giving a simple a list of changes can be really tedious for the reviewer: he will see that a method was changed and another was added for example.
  The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.';
@@ -187,8 +187,8 @@ how to transform from ''http://smalltalkhub.com/mc/Pharo/XMLWriter/main'' to ''h
 
 PharoTopic new
 	title: 'Stepping Interpreter';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Clement Bera and Marcus Denker and Stephane Ducasse';
+	contact: 'clement.bera@inria.fr';
+	supervisors: 'Clement Bera and Marcus Denker';
 	keywords: 'AST interpreter';
 	context: 'Since Pharo 30, an AST interpreter is available in Pharo. It is really interesting since we use it to build a test coverage tool in a couple of hours.';
 	goal: 'Now the Pharo interpreter design prevents us to build a debugger (with a step by step behavior). The goal of this project is to transform the interpreter into an interpreter using an explicit stack so that the stack can be used to implement step by step program execution. The Amber interpreter is a stepping interpreter and a good source of inspiration.';
@@ -250,7 +250,7 @@ yourself
 PharoTopic new
 	title: 'From BNF to PetitParser';
 	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'S. Ducasse and who wants';
+	supervisors: 'who wants';
 	keywords: 'parsing';
 	context: 'Petit Parser is a cool framework to build parsers and composed them but it lacks a way to import existing grammars defined in BNF.';
 	goal: 'The goal of the project is to support the creation of parsers based on BNF description. Deep into Pharo contains a tutorial on PetitParser';
@@ -261,7 +261,7 @@ yourself
 PharoTopic new
 	title: 'Line level test coverage and which test to run';
 	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'S. Ducasse and who wants';
+	supervisors: 'who wants';
 	keywords: 'testing';
 	context: 'In some languages it is possible to know the tests that exercised on specific line of code.';
 	goal: 'The goal of the project is to bring such kind of functionality to Pharo. The student should have a look at the current AST annotation facilities and at the reflexive AST level frameworks such reflectivity or bifrost and use them to build a tool that help understanding with tests passed into a given path. A simple test coverage browser was developed by clement bera and it should be looked at.';
@@ -272,7 +272,7 @@ yourself
 PharoTopic new
 	title: 'Merlin in Spec';
 	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'S. Ducasse and B. van Ryseghem';
+	supervisors: 'S. Ducasse and Johan Fabry';
 	keywords: 'Wizard spec';
 	context: 'Merlin is a good framework for building wizards. However, it was developed before Spec.';
 	goal: 'The goal of the project is to make sure that Merlin is now based on Spec. It will make sure that Merlin can work on different UI framework.';
@@ -284,7 +284,7 @@ PharoTopic new
 PharoTopic new
 	title: 'Better pointer explorer';
 	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'S. Ducasse and I. Stasenko and B. van Ryseghem';
+	supervisors: 'S. Ducasse';
 	keywords: 'ui spec';
 	context: 'Understanding how objects points to each other is important to spot memory leaks.';
 	goal: 'To understand how objects point to each other, Pharo offers the pointTo: methods. However it is a bit rudimentary. The goal of the project is to enhance the current pointer explorer to provide better information.';
@@ -296,7 +296,7 @@ PharoTopic new
 PharoTopic new
 	title: 'Memory profiler';
 	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'S. Ducasse and A. Bergel and (J.-F. Lefevre)';
+	supervisors: 'A. Bergel and S. Ducasse';
 	keywords: 'ui tool spec';
 	context: 'Understanding how which method execution produces a lot of objects is important to spot design problem or cause of slowdown.';
 	goal: 'The goal of the project is to develop an approach to measure and reflect memory cost. One idea is to use a kind of partial evaluation using an interpreter and redefine the primitives to collect the number of created objects. Pharo 30 already has a fully working interpreter that can be used for such tasks.';
@@ -361,7 +361,7 @@ PharoTopic new
 PharoTopic new
 	title: 'Git Library for Pharo in Pharo';
 	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou';
+	supervisors: 'D. Cassou and Max Leske';
 	keywords: 'Protocol GIT';
 	context: 'Git is becoming the defacto standard for managing source code and versioning them.' ;
 	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started). The first task will be look at the current effort and then study the python implementation as well as reading the specification.';
@@ -374,7 +374,7 @@ PharoTopic new
 PharoTopic new
 	title: 'Git integration for Pharo';
 	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou';
+	supervisors: 'D. Cassou and Max Leske';
 	keywords: 'Protocol GIT';
 	context: 'Git is becoming the defacto standard for source code versioning.';
 	goal: 'The goal of this project is to continue the development of FileTree and GitTree two projects that offer the possibilities to store Git sources in Git. The goal of this project is to integrate Git within Pharo. The Git object model has already been implemented. The student will have to develop: (1) a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started); (2) a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories. To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
@@ -398,8 +398,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'OpenStreet Smart viewer in Pharo';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
+	contact: '';
+	supervisors: '';
 	keywords: 'svg open street visualisation';
 	context: '	OpenStreet is an open source standard for high-quality maps.';
 	goal: 'The goal of this project is to build a smart viewer of map using Athens the new canvas of Pharo. One of the challenge is to redraw only the part of the map when zooming in.';
@@ -409,8 +409,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Web OpenStreet map manager';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
+	contact: '';
+	supervisors: '';
 	keywords: 'svg open street visualisation web amber seaside';
 	context: '	OpenStreet is an open source standard for high-quality maps.';
 	goal: 'The goal of this project is to build a simple web application that let users managing their own maps like googlemap but in a better way. An example could be http://umap.openstreetmap.fr/';
@@ -517,21 +517,6 @@ PharoTopic new
 	goal: 'The goal of the project is to build tool support for Conch. In particular we want to have method extensions to be only visible from the importing packages. A module or class browser should reflect this behavior. We should take Pharo and turn the packages into their Conch counterpart to see how it feels.';
 	level: 'intermediate';
 	yourself
-
-. 
-
-PharoTopic new
-	title: 'Baobab';
-	contact: 'camille.teruel@inria.fr';
-	supervisors: 'C. Teruel and S. Ducasse';
-	keywords: 'Module';
-	context: 'Typically a package declares the other packages it uses. While this is the normal way to think about packages, there are alternatives approaches as the one of Units in DrScheme [Unit] and now Newspeak developed by Gilad Bracha. In addition, Java new version will integrate a visibility mechanism to packages with a notion of modules. We distinguish modules from packages in the sense that a package does not automatically includes a visibility mechanism (often implemented as a namespace). Subsystem was a proposal to design a somehow traditional module system for Smalltalk [Subsystem]. Bergel et al offer an overview of advanced module system but do not propose a concrete, scalable module system for a powerful dynamically typed language.';
-	goal: 'The goal of the project is to design a module system for Pharo and study the impact on the system. In particular we want to have method extensions to be only visible from the importing packages. 
-(1) Studying some related works (2) Implement the model proposed by C. Teruel (3)  Apply the module system on some real cases
-(4) Experiment and study the impact on the existing system';
-	level: 'intermediate';
-	yourself
-	
 
 . 
 
