@@ -1,46 +1,41 @@
 {
 
 PharoTopic new
-	title: 'Better Message Browser';
-	contact: 'alexandre.bergel@objectprofile.com';
-	supervisors: 'Alexandre Bergel';
-	keywords: 'Roassal data visualization visualization';
-	context: 'Calender Heatmap is an efficient way to associate metrics to a calender. This is a commonly used representation of a metric variation over a long period of time. Supporting this in Roassal will add a useful visual representation.';
-	goal: 'Calendar heatmap';
-	level: 'Beginner';
-	yourself
-
-.
-
-
-PharoTopic new
-	title: 'Better Message Browser';
-	contact: 'alexandre.bergel@objectprofile.com';
-	supervisors: 'Alexandre Bergel';
-	keywords: 'Roassal data visualization visualization';
-	context: 'Currently Roassal has a minimal support for animation. For example, animations are depends on the amount of refresh, therefore dependent on the machine speed, which should not be. This project is about proposing a set of animations for Roassal that only depend on the passing time.';
-	goal: 'Animation support for Roassal';
+	title: 'Better Palette Support';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'Stephane Ducasse, Damien Pollet and Alexandre Bergel';
+	keywords: 'Color palette visualization';
+	context: 'CubeHelix is a way to compute intensity of color that is important for color blind people. It was introduced in Pharo recently. Now we should revisit the color palette to offer some predefined palette and better support for Colors.';
+	goal: 'The objectives is to revisit and build a new palette behavior';
 	level: 'Beginner';
 	yourself
 
 .
 
 PharoTopic new
-	title: 'Better Message Browser';
-	contact: 'alexandre.bergel@objectprofile.com';
-	supervisors: 'Alexandre Bergel';
-	keywords: 'Roassal data visualization';
-	context: 'Voronoi is a diagram for spacial optimization. By using an organic distribution of the space, Voronoi are particularly adapted to partition space. This topic is about implementing Voronoi in the Roassal visualization engine. Look for Roassal and Voronoi on google';
-	goal: 'Making Roassal support Voronoi diagrams';
-	level: 'Intermediate';
+	title: 'Rethinking OSProcess Integration';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'Stephane Ducasse, Damien Pollet and Esteban Lorenzano';
+	keywords: 'OS VM';
+	context: 'We need a way to invoke OS low-level functionality from the language. This will let programmers develop scripts in Pharo and integrate better with the OSes';
+	level: 'Advanced';
 	yourself
+.
 
+PharoTopic new
+	title: 'Rethinking File onwership ';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'Stephane Ducasse, Damien Cassou and Esteban Lorenzano';
+	keywords: 'OS VM';
+	context: 'We should enhance the support for file ownership and in particular to take into non posix and windows platform or attributes. Looking at Nio from Java can be a way to see how we could model it.';
+	level: 'Advanced';
+	yourself
 .
 
 PharoTopic new
 	title: 'Better Message Browser';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse / B. van Ryseghem';
+	supervisors: 'S. Ducasse / Johan Fabry';
 	keywords: 'tools ui spec';
 	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
 	goal: 'The goal of the project is to define a tool to support message browsing.';
@@ -49,43 +44,6 @@ PharoTopic new
 	
 .
 	
-PharoTopic new
-	title: '"Fixing Pharo" for the dummies';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou';
-	keywords: 'tools ui spec web';
-	context: 'Fixing Pharo is very tedious, even for small changes. If you see a typo in a comment for example, you have to open a new issue on the tracker, fix the typo in an image, create a slice in Monticello, select the package that changed, commit the slice to the inbox, and mark the issue as "Resolved (Review needed)". Then, a reviewer must merge your slice in his image and mark the issue as "Resolved (Fix to include)". Finally, an integrator has to merge your slice and mark the issue as "Resolved (Fix integrated)". For such fixes I want that all these guys do their work in just one click. ';
-	goal: 'The goal of this project is to implement the button that will make reporting such fixes as simple as possible. The integration of such fixes must be as simple. This project will probably require implementing a web interface that Pharo integrators can use to accept/reject these fixes.';
-	level: 'Intermediate';
-	yourself
-	
-.
-
-PharoTopic new
-	title: 'SmalltalkHub better activity dashboard';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and N. Petton';
-	keywords: 'Smalltalkhub ui amber web voyage';
-	context: 'SmalltalkHub (http://www.smalltalkhub.com/) is becoming a central element of the Pharo community. However it lacks functionality to see the activity of the community.';
-	goal: 'The goal of the project is to
-	        - define which metrics and information is relevant to show
-	        - implement them in SmalltalkHub.
-			Potential information can be: most active project, recently created project, most donwloaded project this week, active committers. Possible websites to analyze: https://npmjs.org, http://rubygems.org, http://ohloh.net';
-	yourself
-	
-.	
-
-PharoTopic new
-	title: 'Package Dependency Browser';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
-	keywords: 'tools spec ui';
-	context: 'Identifying the dependencies between packages is a tedious but really important task.';
-	goal: 'The goal of this project is to build a package browser that supports a good navigation to understand how a package is used and uses other packages.
-	The following links can be interesting: S. Ducasse, D. Pollet, M. Suen, H. Abdeen and I. Alloui, Package Surface Blueprints: Visually Supporting the Understanding of Package Relationships, ICSM''07: Proceedings of the IEEE International Conference on Software Maintenance, 2007.';
-	yourself
-	
-.	
 
 PharoTopic new
 	title: 'Bug Importer for Moose';
@@ -120,7 +78,7 @@ PharoTopic new
 PharoTopic new
 	title: 'An Expert System Framework';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and  (H. Verjus - M.P. Huget)';
+	supervisors: 'S. Ducasse';
 	keywords: 'Expert systems';
 	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for fact).';
 	level: 'Intermediate';
@@ -142,12 +100,25 @@ PharoTopic new
 .	
 
 PharoTopic new
+	title: 'Improving the code formatter';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'S. Ducasse';
+	keywords: 'formating AST PetitParser SmaCC';
+	context: 'Code formatting is really important.';
+	goal: 'The goal of the project is to enhance the current code formattere. 
+(1) Studying the default static formatter of Pharo, (2) Extending it to take into account selector length, (3) Write some tests to characterize specific version, (4) Improving the edge cases is also part of the project.';
+	level: 'Intermediate';
+	yourself
+	
+.	
+
+PharoTopic new
 	title: 'ARM ASMJIT';
 	contact: 'igor.stasenko@inria.fr';
 	supervisors: 'I. Stasenko and D. Pollet';
 	keywords: 'assembly arm';
 	context: 'ASMJIT is a key part of the Pharo infrastructure. It supports the generation of assembly code for X86.';
-	goal: 'The goal of the project is to continue to work on the generation of ARM code from the Pharo image using the same approach as ASMJIT. This project is also important for NativeBoost the FFI library based on ASMJIT';
+	goal: 'The goal of the project is to continue to work on the generation of ARM code from the Pharo image using the same approach as ASMJIT. It should use the Virtual CPU. This project is also important for NativeBoost the FFI library based on ASMJIT';
 	level: 'Advanced';
 	yourself
 
@@ -155,13 +126,13 @@ PharoTopic new
 
 
 PharoTopic new
-	title: 'Improving the code formatter';
+	title: 'Improving the code completion';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and E. Lorenzano';
-	keywords: 'formating AST PetitParser SmaCC';
-	context: 'Automatic formatting code is really important. The current code formatter already defines many hooks and is based on a box model.';
-	goal: 'The goal of the project is to identify several configurations of the formatter and to propose a default one. 
-	The tasks are: (1) start to understand the code formatter, (2) Write some tests to characterize specific version, (3) Improving the edge cases is also part of the project. For example when we have really lengthy selectors.';
+	keywords: 'completion';
+	context: 'Automatic completion is really important. The current code completion already defines some good behavior but 
+it can do better.';
+	goal: 'The goal of the project is to improve the ecompletion infrastructure: The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, (3) Improve the noise introdced by the Symbol table usage. (4) build more heuristics.';
 	level: 'Intermediate';
 	yourself
 	
@@ -245,7 +216,7 @@ yourself
 .
 
 PharoTopic new
-	title: 'Thread based programming';
+	title: 'Thread-based programming';
 	contact: 'esteban.lorenzano@inria.fr';
 	supervisors: 'Esteban Lorenzano';
 	keywords: 'process';
@@ -334,14 +305,14 @@ yourself
 
 
 PharoTopic new
-	title: 'Epub generator for Pier';
+	title: 'Epub generator for Pillar';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pier epub Document tree visitor';
-	context: 'Pier (a Content Management System, or CMS) has a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
-	goal: 'The goal of this project is to add to Gutenberg an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
+	goal: 'The goal of this project is to add to Pillar an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
 	level: 'Bachelor';
-        candidate: '';
+	candidate: '';
 	yourself
 	
 .
@@ -349,7 +320,7 @@ PharoTopic new
 PharoTopic new
 	title: 'ParseTree Rewriter Improvements';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'G. Decuzzi, C. Teruel and S. Ducasse';
+	supervisors: 'C. Teruel and S. Ducasse';
 	keywords: 'AST tree visitor';
 	context: 'The Parse tree rewriter is a powerful engine. It is used to support automatic rewriting of program and it is the basis of the refactoring engine. It is based on a unification algorithm that unifies
 	trees with meta variables to abstract syntax trees.' ;
@@ -510,6 +481,18 @@ PharoTopic new
 .
 
 PharoTopic new
+	title: 'Tools for the Counch Module System';
+	contact: 'camille.teruel@inria.fr';
+	supervisors: 'C. Teruel and S. Ducasse';
+	keywords: 'Module';
+	context: 'C. Teruel designed and implemented Conch a new module system for Pharo. In Conch class extensions are local to the classes defining them. ';
+	goal: 'The goal of the project is to build tool support for Conch. In particular we want to have method extensions to be only visible from the importing packages. A module or class browser should reflect this behavior. We should take Pharo and turn the packages into their Conch counterpart to see how it feels.';
+	level: 'intermediate';
+	yourself
+
+. 
+
+PharoTopic new
 	title: 'Baobab';
 	contact: 'camille.teruel@inria.fr';
 	supervisors: 'C. Teruel and S. Ducasse';
@@ -520,7 +503,34 @@ PharoTopic new
 (4) Experiment and study the impact on the existing system';
 	level: 'intermediate';
 	yourself
+	
 
+. 
+
+PharoTopic new
+	title: 'New generation finder';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'C. Teruel and S. Ducasse';
+	keywords: 'Finder';
+	context: 'The finder is a nice tool that let us find the messages based on the receiver and arguments. While really powerful its implementation should be revisited because ';
+	goal: 'The actual implementation of the finder is based on static arrays to describe methods. This implementation is static. We should revisit this implementation. Methods may be tagged with Finder information.';
+	level: 'intermediate';
+	yourself
+	
+. 
+
+PharoTopic new
+	title: 'Revisiting Environments';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'S. Ducasse and Yuriy Timchuk';
+	keywords: 'environments scoping ';
+	context: 'In Pharo we have three ways to scope queries: RBEnvironment, SystemNavigation, and SystemDictionary. We should revisit the environments (to scope classes in the system)';
+	goal: 'The goal of this project is to design a new environment to support system querying.  The tasks are 
+(1) Studying RBEnvironment, SystemDictionary and SystemNavigation(2) Implement a new environment hierarchy, (SystemDictionary could be a leave in the hierarchy.  Write many tests and experiment with scenario.
+(3) Experiment and study the impact on the existing system';
+	level: 'intermediate';
+	yourself	
+	
 }
 
 "
