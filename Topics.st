@@ -2,8 +2,8 @@
 
 PharoTopic new
 	title: 'Better Palette Support';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse, Damien Pollet and Alexandre Bergel';
+	contact: 'damien.pollet@inria.fr';
+	supervisors: 'Damien Pollet and Alexandre Bergel';
 	keywords: 'Color palette visualization';
 	context: 'CubeHelix is a way to compute intensity of color that is important for color blind people. It was introduced in Pharo recently. Now we should revisit the color palette to offer some predefined palette and better support for Colors.';
 	goal: 'The objectives is to revisit and build a new palette behavior';
@@ -14,8 +14,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Rethinking OSProcess Integration';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse, Damien Pollet and Esteban Lorenzano';
+	contact: 'esteban.lorenzano@inria.fr';
+	supervisors: 'Esteban Lorenzano (and Damien Pollet)';
 	keywords: 'OS VM';
 	context: 'We need a way to invoke OS low-level functionality from the language. This will let programmers develop scripts in Pharo and integrate better with the OSes';
 	level: 'Advanced';
@@ -25,8 +25,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Enhancing file ownership ';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse, Damien Cassou and Esteban Lorenzano';
+	contact: 'damien.cassou@inria.fr';
+	supervisors: 'Damien Cassou and Esteban Lorenzano';
 	keywords: 'OS VM';
 	context: 'We should enhance the support for file ownership and in particular to take into non posix and windows platform or attributes. Looking at Nio from Java can be a way to see how we could model it.';
 	level: 'Advanced';
@@ -35,8 +35,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Better Message Browser';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse / Johan Fabry';
+	contact: 'jfabry@dcc.uchile.cl';
+	supervisors: 'Johan Fabry / S. Ducasse';
 	keywords: 'tools ui spec';
 	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
 	goal: 'The goal of the project is to define a tool to support message browsing.';
