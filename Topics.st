@@ -28,7 +28,7 @@ PharoTopic new
 	contact: 'jean-christophe.bach@inria.fr';
 	supervisors: 'Jean-Christophe Bach, Damien Cassou and Esteban Lorenzano';
 	keywords: 'OS VM';
-	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, Mac OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.';
+	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, Mac OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.  http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html';
 	level: 'Advanced';
 	yourself
 .
@@ -310,9 +310,9 @@ PharoTopic new
 	title: 'Epub generator for Pillar';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
-	keywords: 'Pillar epub Document tree visitor';
-	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pier has been used to generate the seaside book available on http://book.seaside.st' ;
-	goal: 'The goal of this project is to add to Pillar an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
+	keywords: 'Pillar epub document tree visitor';
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)' ;
+	goal: 'The goal of this project is to add the ePub export format (used by e-readers).';
 	level: 'Beginner';
 	candidate: '';
 	yourself
@@ -325,8 +325,8 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pillar epub Document tree visitor';
-	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Pillar converts Pillar syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
-	goal: 'The goal of this project is to enhance Pillar with many behavior. Damien has a long list of feature request.';
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)' ;
+	goal: 'The goal of this project is to enhance Pillar with many behavior. Damien has a long list of feature requests.';
 	level: 'Beginner';
 	candidate: '';
 	yourself	
@@ -337,7 +337,7 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Launcher is a cool tool to launch and organize images';
-	context: 'Launcher is an important for newcomers. Launcher needs to get improved to synchronise the images on the disc and its view and many other features. Damien has a long list of cool features. 
+	context: 'Launcher is important for all both new and advances Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. 
 ';
 	level: 'Beginner';
 	candidate: '';
@@ -471,8 +471,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Clean Debian packaging';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou';
+	contact: 'mfritsche@reauktion.de';
+	supervisors: 'Markus Fritsche';
 	keywords: 'packaging debian linux';
 	context: 'Debian is a well-known and free Operating System (OS) consisting of tens of thousands of packages.';
 	goal: 'The goal of this project is to improve current packaging of Pharo for Debian and to follow the new Debian maintainer process to get Pharo included in Debian.';
@@ -480,19 +480,6 @@ PharoTopic new
 	yourself
 
 .
-
-PharoTopic new
-	title: 'Elementary refactorings';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou';
-	keywords: 'Refactorings';
-	context: 'Modern development environments (e.g., Eclipse) propose refactorings. Some studies show that complex refactorings are rarely used. This reluctance to use complex refactorings comes from the fact that developers do not really understand how these refactorings will affect their source code. Additionally, complex refactorings require the developers to answer many questions before being applied.';
-	goal: 'Above-mentioned studies propose small refactorings that are much easier to understand and that can be easily composed to form complex refactorings that developers can trust. The goal of this project is to implement these refactorings in Pharo and to remove the most complex ones.';
-	level: 'intermediate';
-	yourself
-
-.
-
 
 PharoTopic new
 	title: 'Baobab';
@@ -573,27 +560,6 @@ Keywords: Moose, Refactoring Browser, Program transformation
 SmallLint Assessment
 
 Keywords: Framework, games, SameGame, Miner, Sokoban
-
-==================================================================================
-
-Trashing mechanism
-
-Desktop operating systems all offer a trash mechanism that allows one to recover a deleted file. Some desktop applications written in Pharo may benefit from this facility. The goal of this project is to let Pharo send files to the trashes of the supported operating systems (Linux, Mac OS X and Windows).
-
-Keywords: Trash, OS
-Technology: Pharo
-Contact: Damien Cassou
-
-==================================================================================
-File-permission handling
-
-Pharo does not handle file permissions. For example, a developer can not be sure that a file is writable before trying to write to it (the #isWritable method does not take the current user into account to answer). The goal of this project is to write a set of methods to read and write file permissions.
-
-Discussion about the topic: http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html
-
-Keywords: File System, OS
-Technology: Pharo
-Contact: Damien Cassou
 
 ==================================================================================
 Supporting code stereotypes in Pharo
