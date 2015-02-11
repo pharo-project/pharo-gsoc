@@ -20,10 +20,11 @@ PharoTopic new
 	context: 'We need a way to invoke OS low-level functionality from the language. This will let programmers develop scripts in Pharo and integrate better with the OSes';
 	level: 'Advanced';
 	yourself
+	
 .
 
 PharoTopic new
-	title: 'Rethinking File onwership ';
+	title: 'Enhancing file ownership ';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'Stephane Ducasse, Damien Cassou and Esteban Lorenzano';
 	keywords: 'OS VM';
@@ -44,7 +45,6 @@ PharoTopic new
 	
 .
 	
-
 PharoTopic new
 	title: 'Bug Importer for Moose';
 	contact: 'stephane.ducasse@inria.fr';
@@ -276,7 +276,8 @@ PharoTopic new
 	keywords: 'Wizard spec';
 	context: 'Merlin is a good framework for building wizards. However, it was developed before Spec.';
 	goal: 'The goal of the project is to make sure that Merlin is now based on Spec. It will make sure that Merlin can work on different UI framework.';
-yourself
+	level: 'Intermediate';
+	yourself
 
 .
 
@@ -287,7 +288,7 @@ PharoTopic new
 	keywords: 'ui spec';
 	context: 'Understanding how objects points to each other is important to spot memory leaks.';
 	goal: 'To understand how objects point to each other, Pharo offers the pointTo: methods. However it is a bit rudimentary. The goal of the project is to enhance the current pointer explorer to provide better information.';
-	level: 'Bachelor';
+	level: 'Intermediate';
 	yourself
 	
 	.
@@ -299,6 +300,7 @@ PharoTopic new
 	keywords: 'ui tool spec';
 	context: 'Understanding how which method execution produces a lot of objects is important to spot design problem or cause of slowdown.';
 	goal: 'The goal of the project is to develop an approach to measure and reflect memory cost. One idea is to use a kind of partial evaluation using an interpreter and redefine the primitives to collect the number of created objects. Pharo 30 already has a fully working interpreter that can be used for such tasks.';
+	level: 'Intermediate';
 yourself
 
 .
@@ -308,10 +310,36 @@ PharoTopic new
 	title: 'Epub generator for Pillar';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
-	keywords: 'Pier epub Document tree visitor';
-	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Gutenberg converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
+	keywords: 'Pillar epub Document tree visitor';
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Pillar converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
 	goal: 'The goal of this project is to add to Pillar an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
-	level: 'Bachelor';
+	level: 'Beginner';
+	candidate: '';
+	yourself
+	
+.
+
+
+PharoTopic new
+	title: 'Enhancing Pillar';
+	contact: 'damien.cassou@inria.fr';
+	supervisors: 'D. Cassou and S. Ducasse';
+	keywords: 'Pillar epub Document tree visitor';
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Pillar converts Pillar syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
+	goal: 'The goal of this project is to enhance Pillar with many behavior. Damien has a long list of feature request.';
+	level: 'Beginner';
+	candidate: '';
+	yourself	
+.
+
+PharoTopic new
+	title: 'Improving Launcher';
+	contact: 'damien.cassou@inria.fr';
+	supervisors: 'D. Cassou and S. Ducasse';
+	keywords: 'Launcher is a cool tool to launch and organize images';
+	context: 'Launcher is an important for newcomers. Launcher needs to get improved to synchronise the images on the disc and its view and many other features. Damien has a long list of cool features. 
+';
+	level: 'Beginner';
 	candidate: '';
 	yourself
 	
