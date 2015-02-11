@@ -24,11 +24,11 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'Enhancing file ownership ';
+	title: 'Enhancing file ownership';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'Stephane Ducasse, Damien Cassou and Esteban Lorenzano';
 	keywords: 'OS VM';
-	context: 'We should enhance the support for file ownership and in particular to take into non posix and windows platform or attributes. Looking at Nio from Java can be a way to see how we could model it.';
+	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, Mac OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.';
 	level: 'Advanced';
 	yourself
 .
@@ -44,7 +44,7 @@ PharoTopic new
 	yourself
 	
 .
-	
+
 PharoTopic new
 	title: 'Bug Importer for Moose';
 	contact: 'stephane.ducasse@inria.fr';
@@ -52,9 +52,9 @@ PharoTopic new
 	keywords: 'bugs modeling tools moose analyses';
 	context: 'Moose (http://www.moosetechnology.org) is a well-know and successful platform to support data and software analysis development.';
 	goal: 'Moose can be connected with a JIRA bug tracker database. The goals of the project are:
-	        (1) learn or/and revisit the bug metamodel
+	        (1) learn and/or revisit the bug metamodel
 	        (2) improve the bug to code mapping heuristics - How do we know that a method was touched by a bug. Probably we will have to develop a set of strategies that can cope with the practices of different communities and bugtrackers.
-	        (3) add different bugtrackers as input to Moose (e.g., Fogbugz, Trac, Redmine). The idea is to build a library of importers so that we can import bug information from different bugs trackers.
+	        (3) add different bug trackers as input to Moose (e.g., Fogbugz, Trac, Redmine). The idea is to build a library of importers so that we can import bug information from different bug trackers.
 	        (4) Enhance the visualizations and tools proposed in Moose.
 	Note that contacting Tommaso del Sasso from Lugano can be a good idea since he is doing his PhD on bugs and building a dashboard for Pharo bug activity. tommaso.dal.sasso@usi.ch
 	Links: 
@@ -80,7 +80,7 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse';
 	keywords: 'Expert systems';
-	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for fact).';
+	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for facts).';
 	level: 'Intermediate';
 	yourself
 
@@ -92,7 +92,7 @@ PharoTopic new
 	supervisors: 'S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Automatic formatting of code is really important.';
-	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to  reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.
+	goal: 'The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.
 (1) Studying the default static formatter of Pharo, (2) Studying Petit Parser, (3) Adding a special error handling to Petit Parser, (4) Experiment and selecting heuristics';
 	level: 'Advanced';
 	yourself
@@ -105,8 +105,8 @@ PharoTopic new
 	supervisors: 'S. Ducasse';
 	keywords: 'formating AST PetitParser SmaCC';
 	context: 'Code formatting is really important.';
-	goal: 'The goal of the project is to enhance the current code formattere. 
-(1) Studying the default static formatter of Pharo, (2) Extending it to take into account selector length, (3) Write some tests to characterize specific version, (4) Improving the edge cases is also part of the project.';
+	goal: 'The goal of the project is to enhance the current code formatter.
+(1) Studying the default static formatter of Pharo, (2) Extending it to take into account selector length, (3) Write some tests to characterize specific versions, (4) Improving the edge cases.';
 	level: 'Intermediate';
 	yourself
 	
@@ -126,13 +126,13 @@ PharoTopic new
 
 
 PharoTopic new
-	title: 'Improving the code completion';
+	title: 'Improving code completion';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and E. Lorenzano';
 	keywords: 'completion';
 	context: 'Automatic completion is really important. The current code completion already defines some good behavior but 
 it can do better.';
-	goal: 'The goal of the project is to improve the ecompletion infrastructure: The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, (3) Improve the noise introdced by the Symbol table usage. (4) build more heuristics.';
+	goal: 'The goal of the project is to improve the ecompletion infrastructure: The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, (3) Improve the noise introduced by the Symbol table usage. (4) build more heuristics.';
 	level: 'Intermediate';
 	yourself
 	
@@ -167,7 +167,7 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'Improving Strings manipulation';
+	title: 'Improving String manipulation';
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'S. Ducasse and D. Pollet';
 	keywords: 'string API';
@@ -175,7 +175,7 @@ PharoTopic new
 	goal: 'The goal of the project is to help rethinking the String manipulation API of Pharo. Here are some tasks to be performed.
 		(0) Identify the elementary operations on Strings.
 		(1) Look at Ruby library and Python library
-		(2) Study the current Pharo string library.  
+		(2) Study the current Pharo string library.
 		(3) Build a set of examples. For example, how to get ''Soup'' out of ''ConfigurationOfSoup'' or 
 how to transform from ''http://smalltalkhub.com/mc/Pharo/XMLWriter/main'' to ''http://smalltalkhub.com/#!/~Pharo/XMLWriter''. The student is invited to ask the community for their needs too.
 		(4) Propose some new messages to enhance or replace current Pharo
@@ -311,7 +311,7 @@ PharoTopic new
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou and S. Ducasse';
 	keywords: 'Pillar epub Document tree visitor';
-	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. This document tree can be visited a visitor. Pillar converts Pier syntax to HTML and LaTeX (to produce PDFs). Pier has been used to generate the seaside book available on http://book.seaside.st' ;
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pier has been used to generate the seaside book available on http://book.seaside.st' ;
 	goal: 'The goal of this project is to add to Pillar an export to the ePub format used by e-readers. The tasks can be: (1) start to write a markdown exporter to get familiar with the visitor, (2) emit epub';
 	level: 'Beginner';
 	candidate: '';
