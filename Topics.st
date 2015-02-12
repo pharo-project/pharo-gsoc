@@ -65,8 +65,8 @@ A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. M
 
 PharoTopic new
 	title: 'A Hot Recommander for Pharo';
-	contact: 'Yuriy Tymchuk <yuriy.tymchuk@usi.ch>';
-	supervisors: 'Yuriy Timchuk';
+	contact: 'yuriy.tymchuk@usi.ch';
+	supervisors: 'Yuriy Tymchuk';
 	keywords: 'recommander tools rules analyses';
 	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
 	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly ';
@@ -520,9 +520,21 @@ PharoTopic new
 . 
 
 PharoTopic new
+	title: 'SUnit compiler';
+	contact: 'yuriy.tymchuk@usi.ch';
+	supervisors: 'Yuriy Tymchuk';
+	keywords: 'opal sunit';
+	context: 'Pharo is a modern pure object-oriented language and a live programming environment inspired by Smalltalk. This project is focused on two frameworks of Pharo: Opal and SUnit. First one is a modular compiler which can be easily extended. Because Pharo is very flexible one can define a specific compiler for a class, which will be used to compile all methods of the class. SUnit is a unit-testing framework (which is also first in its kind). Pharo's syntax is very simple and can fit on a post card. To achieve this, language was designed in a way that focuses only on the core concepts of object-oriented programming. For example there are no direct field accessors as they break the whole concept of encapsulation. While this is good for software design, some parts like unit tests may benefit from direct access to the state of an object.';
+	goal: 'subclass the default compiler and add an expression(s) to access internal state of an object. Then use this functionality to demonstrate how unit tests can be written in a way that uses direct access to the internal state of an object.';
+	level: 'intermediate';
+	yourself
+	
+. 
+
+PharoTopic new
 	title: 'Revisiting Environments';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and Yuriy Timchuk';
+	supervisors: 'S. Ducasse and Yuriy Tymchuk';
 	keywords: 'environments scoping ';
 	context: 'In Pharo we have three ways to scope queries: RBEnvironment, SystemNavigation, and SystemDictionary. We should revisit the environments (to scope classes in the system)';
 	goal: 'The goal of this project is to design a new environment to support system querying.  The tasks are 
