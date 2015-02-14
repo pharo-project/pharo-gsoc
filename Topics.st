@@ -1,6 +1,18 @@
 {
 
 PharoTopic new
+	title: 'Statistics Library';
+	contact: 'serge DOT stinckwich AT ird DOT fr';
+	supervisors: 'Serge Stinckwich';
+	keywords: 'statistic mathematics science';
+	context: 'Sci-Smalltalk is an existing Pharo library for doing scientific computing.';
+	goal: 'Add some statistics function to Sci-Smalltalk.';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
 	title: 'Better Palette Support';
 	contact: 'damien.pollet@inria.fr';
 	supervisors: 'Damien Pollet and Alexandre Bergel';
