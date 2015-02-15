@@ -1,6 +1,150 @@
 {
 
 PharoTopic new
+	title: '7GUIs implementation';
+	contact: '';
+	supervisors: '';
+	keywords: 'GUI learning-curve';
+	context: 'Benchmarking how hard easy is to implement GUIs in a given platform is probably a decisive factor on how good the opportunities this plattform has to offer. The 7GUIs benchmark is a nice research on GUI building usability and having a Pharo implementation will illlustrate the power of this platform. Ref: https://github.com/eugenkiss/7guis/wiki';
+	goal: 'Be able to see a Pharo implementation for 7GUIs';
+	level: 'Intermediate';
+	yourself
+.
+
+PharoTopic new
+	title: 'Pro-tips site';
+	contact: '';
+	supervisors: '';
+	keywords: 'social web-site';
+	context: 'It might spark the beginning of a mentoring ecosystem. StackOverflow is great but at the same time for a niche like Smalltalk it might not be enough to show the problem-solving potential of the platform. A site dedicated to share pro tips centered on Pharo would slowly a steady show the platform’s value. The site has to be social friendly. Each tip should have an author that can set there StackOverflow, LinkedIn, facebook, twitter or any social profile she wants. Requires nice branding and UX/UI design. Optional variation of the same idea: make it for any Smalltalk dialect instead of only Pharo.';
+	goal: 'Be able to sign up, compose tips, publish and share on social media';
+	level: 'Intermediate';
+	yourself
+.
+
+PharoTopic new
+	title: 'GUI builder';
+	contact: '';
+	supervisors: '';
+	keywords: 'GUI tooling';
+	context: 'If whatever you are doing you cannot make it visual easily, people cannot perceive it easily. Due to evolutionary reasons, our brain has unfair bias towards visual processing. Lets make something that allows Pharo to create visual things easier. Something like PARTS or Dolphin Smalltalk GUI builder would be huge.';
+	goal: 'Be able to create composable widgets for Pharo programs';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'REPL IDE';
+	contact: '';
+	supervisors: '';
+	keywords: 'REPL IDE tooling';
+	context: 'Smalltalkers are used to very powerful IDEs. What if we have to put Pharo in a really underpowered or monitorless device? Having a powerful REPL IDE that can evaluate expressions, inspect and debug, would empower users to still do things in mini-devices during the incoming tide wave of internet-of-things.';
+	goal: 'Be able to evaluate expressions, inspect and debug Pharo programs using a REPL and a terminal';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Cross platform native GUI';
+	contact: '';
+	supervisors: '';
+	keywords: 'GUI';
+	context: 'The web is fantastic but at the same time there is a big pressure to create great native applications due to the improved User Experience that the native widgets can provide. Making Pharo to create them via things like wxWidgets (https://www.wxwidgets.org/about/screenshots/) would instantly create opportunities to develop fast applications with a great UX.';
+	goal: 'Be able to create and model native GUI from Pharo for OS X, Linux and Windows';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Hadoop';
+	contact: '';
+	supervisors: '';
+	keywords: 'big-data';
+	context: 'Apache Hadoop can scale from single server to thousands of servers. The explosion of sensors, drones and mobile devices and printed devices with sensors are going to generate incredible amounts of data to process and model. Hadoop is a good fit for that and Pharo can empower faster modelling and orchestration of what to do with all that information stored in this widely adopted Hadoop technology.
+http://wiki.apache.org/hadoop/PoweredBy';
+	goal: 'Be able to use Hadoop from Pharo';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Deep learning';
+	contact: '';
+	supervisors: '';
+	keywords: 'deep-learning';
+	context: 'Robotics, drones and the internet of things will gather data from sensors that will need interpretation and modelling. All sorts of AI will use deep learning techniques and Pharo would be a great orchestrator of that modelling.
+http://www.quora.com/What-is-the-best-deep-learning-library-at-the-current-stage-for-working-on-large-data';
+	goal: 'Be able to orchestrate deep learning operations from Pharo';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Mobile';
+	contact: '';
+	supervisors: '';
+	keywords: 'mobile vm';
+	context: 'Is not that mobile is a growing market, is more like mobile is going supernova (http://a16z.com/2014/10/28/mobile-is-eating-the-world/). The power of Pharo and its libraries on mobile devices is currently perhaps one of its biggest opportunities to create a really productive environment in mobile.';
+	goal: 'Opening Pharo images on a new mobile plattform';
+	level: 'Advanced';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Remote Environments';
+	contact: '';
+	supervisors: '';
+	keywords: 'distribution tooling';
+	context: 'Remote Environments for Pharo being able to inspect, browse and debug reliably a server Pharo image from a client Pharo image would spark countless possibilities. Some of them: server maintenance; hot debug on GUI-less servers in production; live develop or debug remotely mobile devices that doesn’t have a server. Hot changes in Pharo powered drones and robots.';
+	goal: 'Have an working version of remote tooling for Pharo';
+	level: 'Advanced';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'SQL Alchemy in Pharo';
+	contact: '';
+	supervisors: '';
+	keywords: 'persistence database sql relational dsl';
+	context: 'Big-data is a growing market that is easy to mine with a tool like Python’s SQL Alchemy. A Pharo version of such powerful tool would open this market opportunity for people wanting to offer Pharo-based solutions in this segment. Smalltalk’s syntax and tooling superiority could provide a significant push forward in this technology competitiveness because they might empower Pharo users to deliver solutions faster (ref: http://www.sqlalchemy.org/)';
+	goal: 'Have a beta working version of a SQL Alchemy like framework in Pharo';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'SQLServer client';
+	contact: '';
+	supervisors: '';
+	keywords: 'persistence database';
+	context: 'Some Smalltalk applications that have SQLServer as dependency needs to extend and modernize features and while Pharo is a great platform to do that it is challenged by not having a practical SQLServer client that is suitable for production.';
+	goal: 'Have a beta working version SQLServer client in Pharo';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'VOSS';
+	contact: 'john.clapperton@ntlworld.com';
+	supervisors: 'John Clapperton';
+	keywords: 'persistence OODB';
+	context: 'VOSS is a completely object oriented database industry proven that can have an open sourced release empowering Pharo users and startups to stay object oriented even when persisting data. VOSS has dual license commercial and GPLv3, and John (https://www.linkedin.com/in/johnclapperton), VOSS author already offered himself to mentor porters.';
+	goal: 'Have a beta working version of VOSS on Pharo';
+	level: 'Intermediate';
+	yourself
+
+.
+
+PharoTopic new
 	title: 'Statistics Library';
 	contact: 'serge DOT stinckwich AT ird DOT fr';
 	supervisors: 'Serge Stinckwich';
