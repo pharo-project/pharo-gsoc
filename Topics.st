@@ -491,9 +491,9 @@ PharoTopic new
 PharoTopic new
 	title: 'Improving Launcher';
 	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and S. Ducasse';
+	supervisors: 'D. Cassou, B. Coman and S. Ducasse';
 	keywords: 'Launcher is a cool tool to launch and organize images';
-	context: 'Launcher is important for all both new and advances Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. 
+	context: 'Launcher is important for all both new and advances Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. Demonstration: https://www.youtube.com/watch?v=fNim2Yxs320.
 ';
 	level: 'Beginner';
 	candidate: '';
