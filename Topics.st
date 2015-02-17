@@ -1,5 +1,3 @@
-{
-
 PharoTopic new
 	title: '7GUIs implementation';
 	contact: '';
@@ -63,8 +61,7 @@ PharoTopic new
 	contact: '';
 	supervisors: '';
 	keywords: 'big-data';
-	context: 'Apache Hadoop can scale from single server to thousands of servers. The explosion of sensors, drones and mobile devices and printed devices with sensors are going to generate incredible amounts of data to process and model. Hadoop is a good fit for that and Pharo can empower faster modelling and orchestration of what to do with all that information stored in this widely adopted Hadoop technology.
-http://wiki.apache.org/hadoop/PoweredBy';
+	context: 'Apache Hadoop can scale from single server to thousands of servers. The explosion of sensors, drones and mobile devices and printed devices with sensors are going to generate incredible amounts of data to process and model. Hadoop is a good fit for that and Pharo can empower faster modelling and orchestration of what to do with all that information stored in this widely adopted Hadoop technology. http://wiki.apache.org/hadoop/PoweredBy';
 	goal: 'Be able to use Hadoop from Pharo';
 	level: 'Intermediate';
 	yourself
@@ -76,8 +73,7 @@ PharoTopic new
 	contact: '';
 	supervisors: '';
 	keywords: 'deep-learning';
-	context: 'Robotics, drones and the internet of things will gather data from sensors that will need interpretation and modelling. All sorts of AI will use deep learning techniques and Pharo would be a great orchestrator of that modelling.
-http://www.quora.com/What-is-the-best-deep-learning-library-at-the-current-stage-for-working-on-large-data';
+	context: 'Robotics, drones and the internet of things will gather data from sensors that will need interpretation and modelling. All sorts of AI will use deep learning techniques and Pharo would be a great orchestrator of that modelling. http://www.quora.com/What-is-the-best-deep-learning-library-at-the-current-stage-for-working-on-large-data';
 	goal: 'Be able to orchestrate deep learning operations from Pharo';
 	level: 'Intermediate';
 	yourself
@@ -113,7 +109,7 @@ PharoTopic new
 	contact: '';
 	supervisors: '';
 	keywords: 'persistence database sql relational dsl';
-	context: 'Big-data is a growing market that is easy to mine with a tool like Python’s SQL Alchemy. A Pharo version of such powerful tool would open this market opportunity for people wanting to offer Pharo-based solutions in this segment. Smalltalk’s syntax and tooling superiority could provide a significant push forward in this technology competitiveness because they might empower Pharo users to deliver solutions faster (ref: http://www.sqlalchemy.org/)';
+	context: 'Big-data is a growing market that is easy to mine with a tool like Python''s SQL Alchemy. A Pharo version of such powerful tool would open this market opportunity for people wanting to offer Pharo-based solutions in this segment. Smalltalk''s syntax and tooling superiority could provide a significant push forward in this technology competitiveness because they might empower Pharo users to deliver solutions faster (ref: http://www.sqlalchemy.org/)';
 	goal: 'Have a beta working version of a SQL Alchemy like framework in Pharo';
 	level: 'Intermediate';
 	yourself
@@ -383,7 +379,6 @@ PharoTopic new
 	- communication between tasks
 	- serialization/materialization of tasks (again, Fuel can help here)
 	So, the idea is to have in Pharo the same infrastructure as Stackless Python [1][2] provides.
-
 	What is this useful for? To allow an elegant way to deal with massive amounts of tasks (typical in games, for instance).
 	Link: http://www.stackless.com 
  http://www.slideshare.net/guest162fd90/stackless-python-101';
@@ -698,48 +693,4 @@ PharoTopic new
 (3) Experiment and study the impact on the existing system';
 	level: 'intermediate';
 	yourself	
-	
-}
-
-"
-More to come:
-	Game frameworks	
-	Revisiting OS Process
-	type inferencer
-	Mercury
-	Code review
-	
-	Distribution Validation
-	Python Moose Importer
-	Benchmark Server
-	Revisiting RBEnvironments S. Ducasse / Bruni
-	Metacello validation
-        A visual code browser (Damien C)
-
-
-==================================================================================
-FAMIXAST Unification
-
-
-
-Keywords: Moose, Refactoring Browser, Program transformation
-
-==================================================================================
-SmallLint Assessment
-
-Keywords: Framework, games, SameGame, Miner, Sokoban
-
-==================================================================================
-Supporting code stereotypes in Pharo
-
-Code stereotypes are information encoder representing certain method properties (accessing state, accessor, accessing other objects...). They act as a fingerprints of methods and classes.
-The idea of this project is to see how we can port the idea of stereotypes to a dynamic language like Pharo or Moose.
-
-Keywords: Code analysis, tools, Pharo, spec, roassal
-Links:
-                - Alhindawi, N., Maletic, J.I., Dragan, N., Collard, M.L., Improving Feature Location by Enhancing Source Code with Stereotypes, in the Proceedings of the 29th IEEE International Conference on Software Maintenance (ICSM 13), Eindhoven, The Netherlands, Sept. 22-28, pp. (10 pages).
-                - Dragan, N., Collard, M.L., Hammad, M., Maletic, J. I., Categorizing Commits Based on Method Stereotypes, in the Proceedings of the 27th IEEE International Conference on Software Maintenance (ICSM'11), Williamsburg, VA, USA, Sept 25 - Oct 1, 2011, pp. 520-523.
-                - Ver�nica Uquillas G�mez, St�phane Ducasse and Theo D'Hondt, Visually Supporting Source Code Changes Integration: the Torch Dashboard, Proceedings of the 17th Working Conference on Reverse Engineering (WCRE'10), 55-64, 2010.
-                - Dragan, N., Collard, M.L., Maletic, J. I., Automatic Identification of Class Stereotypes, in the Proceedings of the IEEE 26th IEEE International Conference on Software Maintenance (ICSM'10), Timisoara, Romania, Sept 12 - 18, 2010.
-                - Romain Robbes, St�phane Ducasse and Michele Lanza, Microprints: A Pixel-based Semantically Rich Visualization of Methods, Proceedings of 13th International Smalltalk Conference, 131 157, 2005.
-"
+.	
