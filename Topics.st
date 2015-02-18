@@ -710,10 +710,10 @@ PharoTopic new
 	title: 'GLL to the rescue';
 	contact: 'thierry.goubier@cea.fr';
 	supervisors: 'T. Goubier';
-	keywords: 'parsing, PetitParser';
-	context: 'PetitParser is a parsing expression grammar based parser, making it easy to write and combine parsers. However, Parser theory has improved a lot since then, and PetitParser should be improved to handle general grammars.';
-	goal: 'Make PetitParser a GLL (Generalised Left Linear) parser';
-	level: 'intermediate';
+	keywords: 'parsing, SmaCC';
+	context: 'SmaCC (the Smalltalk Compiler Compiler) is a lexer, parser generator and general code rewriting infrastructure developped by John Brant and Don Roberts, of refactoring browser fame. It handles LR(1), LALR(1) and GLR, but could be improved with alternatives parsing techniques.';
+	goal: 'Add a GLL (Generalised Left-toRight Leftmost) parsing technique to SmaCC';
+	level: 'advanced';
 	yourself	
 .
 
