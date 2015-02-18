@@ -10,6 +10,28 @@ PharoTopic new
 .
 
 PharoTopic new
+	title: 'desktop application for offline text search';
+	contact: 'mbaehr+pharo@iaeste.at';
+	supervisors: 'Martin Bähr';
+	keywords: 'desktop gui spec';
+	context: 'exploring spec and fulltext search capabilities. http://labs.fossasia.org/projects/smalltalk-search-app/';
+	goal: 'a working application and documentation that allows others to learn how to build applications with spec';
+	level: 'Beginner';
+	yourself
+.
+
+PharoTopic new
+	title: 'server control panel';
+	contact: 'mbaehr+pharo@iaeste.at';
+	supervisors: 'Martin Bähr';
+	keywords: 'gui server-management asset-management';
+	context: 'file editor and asset and server manager solution, http://labs.fossasia.org/projects/smalltalk-file-editor/';
+	goal: 'a tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk';
+	level: 'Beginner';
+	yourself
+.
+
+PharoTopic new
 	title: 'Pro-tips site';
 	contact: '';
 	supervisors: '';
