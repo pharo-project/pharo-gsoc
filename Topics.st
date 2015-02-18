@@ -739,3 +739,26 @@ PharoTopic new
 	yourself	
 .
 
+PharoTopic new
+	title: 'Protobuf support';
+	contact: '';
+	supervisors: '';
+	keywords: 'interactions,external,API,protobuf';
+	context: 'There is no support for Protobuf in Pharo and it hinders integration.';
+	goal: 'Protobuf compiler and client for Pharo';
+	level: 'advanced';
+	yourself
+.
+
+
+PharoTopic new
+	title: 'RethinkDB support';
+	contact: '';
+	supervisors: '';
+	keywords: 'persistence, nosql, protobuf';
+	context: 'RethinkDB is great for notifications etc. But there is no Pharo client.';
+	goal: 'Get a RethinkDB client for Pharo';
+	level: 'Intermediate';
+	yourself
+.
+
