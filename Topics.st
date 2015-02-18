@@ -694,3 +694,26 @@ PharoTopic new
 	level: 'intermediate';
 	yourself	
 .	
+
+PharoTopic new
+	title: 'Do not hack, Refactor!';
+	contact: 'thierry.goubier@cea.fr';
+	supervisors: 'T. Goubier';
+	keywords: 'refactoring, IDE, GUI';
+	context: 'Pharo is a premier environment for refactoring, with the refactoring browser and associated tools all well implemented. However, traces of developers actions show little use of refactorings apart from renamings, and in general, the developper community makes little use of the power of refactorings. I suspect that support and awareness of refactorings in IDEs is lacking and does not bring a developper to refactor, or have trust in refactorings.';
+	goal: 'The goal of this project is to extend the AltBrowser IDE and GUI with strong refactoring integration, ensuring that most developpers actions are refactorings, fully shown: effect on code, code affected, undo capability, refactorings history. Related projects that should be considered are: Epicea (Martin Dias), Rewrite Rule Browser (Mark Rizun)';
+	level: 'intermediate';
+	yourself	
+.
+
+PharoTopic new
+	title: 'GLL to the rescue';
+	contact: 'thierry.goubier@cea.fr';
+	supervisors: 'T. Goubier';
+	keywords: 'parsing, SmaCC';
+	context: 'SmaCC (the Smalltalk Compiler Compiler) is a lexer, parser generator and general code rewriting infrastructure developped by John Brant and Don Roberts, of refactoring browser fame. It handles LR(1), LALR(1) and GLR, but could be improved with alternatives parsing techniques.';
+	goal: 'Add a GLL (Generalised Left-toRight Leftmost) parsing technique to SmaCC';
+	level: 'advanced';
+	yourself	
+.
+
