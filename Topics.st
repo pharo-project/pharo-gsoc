@@ -1,4 +1,14 @@
 PharoTopic new
+	title: 'Mailing List Application in Brick';
+	contact: 'stephan@stack.nl';
+	supervisors: 'Stephan Eggermont';
+	keywords: 'Tools';
+	context: 'Making it possible to access and search the relevant mailing lists from inside any image provides a better feedback loop, especially for new smalltalkers';
+	goal: 'Have a spotter-like search for the mailing list archives, make it easy to read and answer questions. Implement using Brick.';
+	level: 'Intermediate';
+	yourself
+.
+PharoTopic new
 	title: '7GUIs implementation';
 	contact: '';
 	supervisors: '';
