@@ -762,3 +762,35 @@ PharoTopic new
 	yourself
 .
 
+PharoTopic new
+	title: 'Athens for the Pi';
+	contact: 'thierry.goubier@cea.fr';
+	supervisors: 'T. Goubier';
+	keywords: 'GUI, Graphics, Roassal, Raspberry Pi';
+	context: 'Roassal rely on Athens for its graphics, and Athens uses NativeBoost to talk to Cairo: this makes it x86 only, leaving Pi users wanting nice graphics in the cold.';
+	goal: 'Implement a solution for the Pi: either Athens using bitblt, or a FFI link to Cairo on the Raspberry Pi. Bonus: see if the anti-aliasing bitblt of Cuis could be used.';
+	level: 'Intermediate';
+	yourself
+.
+
+PharoTopic new
+	title: 'Roassal HTML5 export for OpenStreetMap';
+	contact: 'thierry.goubier@cea.fr';
+	supervisors: 'T. Goubier';
+	keywords: 'GUI, Graphics, Roassal, OpenStreetMap, Javascript';
+	context: 'Roassal can't export to HTML visualisations using OpenStreetMap';
+	goal: 'Implement a solution, probably with some javascript, to export interactive Roassal visualisations and animations with OpenStreetMap backgrounds.';
+	level: 'Intermediate';
+	yourself
+.
+
+PharoTopic new
+	title: 'Process networks in Pharo';
+	contact: 'thierry.goubier@cea.fr';
+	supervisors: 'T. Goubier';
+	keywords: 'Process Networks, Dataflow, Slots, FRP';
+	context: 'Pharo 4.0 introduced Slots as a generalisation of instance variables, offering plenty of possibilities for active instance variables. And, for expressing parallel, complex interdependent code, we have a very powerfull concept in dataflows or process networks. Now, what about combining both?';
+	goal: 'Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.';
+	level: 'Intermediate';
+	yourself
+.
