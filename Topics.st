@@ -1,4 +1,54 @@
 PharoTopic new
+	title: 'Distributed Issue Tracker';
+	contact: 'stephan@stack.nl';
+	supervisors: 'Stephan Eggermont, Diego Lont';
+	keywords: 'P2P Tools GUI';
+	context: 'Technical Details
+
+The recent decision by Google to deprecate and stop its API for the Google Issue Tracker used by a.o. the Pharo, Seaside, MOOSE and Metacello projects makes it necessary for those projects to select a different issue tracker. The timespan before this decision has to be made is too short for the development of a new issue tracker from scratch. 
+
+Now most development in Smalltalk uses distributed version control systems, either Monticello or Git, the question arises why these projects still would want to use a centralized issue tracker. The long-standing problems in keeping squeaksource up-and-running are only one example of the problems of depending on centralized infrastructure. Other examples are the move of Lukas' repository and the number of times where the Pharo CI infrastructure was not available, especially on holidays and weekends.
+
+The currently used issue trackers cannot work disconnected. Integrating the issue tracker in the CI workflow of the projects is crucial.
+
+The goals of the persona should be translated into a storymap. Delivery should be iterative and incremental, driven by value to the community and technical risk. The student is expected to be active on the mailing list and discuss development there. This includes handling (source) contributions by others.
+
+There is a small prototype available. 
+
+Benefits to the Student
+
+getting to know the difficulties of issue tracking/the workflow of open source projects
+experience with distributed systems
+experience an agile open source environment
+Benefits to the Community
+
+better integrated workflow
+native issue tracker, accessible both in-image, web and automated
+showcase for productive environment  ';
+	goal: 'A native smalltalk distributed issue tracker. It should have basic issue tracking functionality including attaching files/pictures/code. It should have a native interface, a web interface and a scripting API. Primary development is in Pharo.
+
+Issue trackers have different kind of users. To make clear that different users have different needs, persona can be helpful. 
+
+Isabelle is an information technology student looking for an interesting language and environment to learn. She wants to contribute to and learn from a smart community and needs interesting experiences on her cv. She has already learned the basics of a few mainstream languages and feels ready to try something more exotic. Smalltalk seems interesting as the origin of many inventions.
+
+Yann is the major developer of a web-based platform based on Pharo and Seaside. He needs to ensure the platform keeps working smoothly and is updated regularly with the latest changes. In production he uses the released versions. He fears the major clean-ups Pharo is making make it difficult for him to keep up. He is dependent on a few old unmaintained squeaksource packages.
+
+Janine just found an interesting old package on squeaksource. It was last changed in 2007. She has been using smalltalk for a few years, so knows what to expect when trying to load an unmaintained package. There are some missing classes that still exist in squeak.
+
+Tony is the developer of a package that is used with nearly all smalltalks. He mainly works with a commercial smalltalk and keeps just enough contact with the Pharo community to keep his package working. He has complained about some changes that made it necessary for him to change his package structure. He mainly updates the Pharo version on his way to and from the office in the train. 
+
+Eve maintains a few of the crucial Pharo kernel packages. They are under heavy development and once in a while everything breaks, leading to a flood of issues. They mostly come from outsiders, as she talks daily with the Pharo core team. She has to close a lot of them as duplicates. She also has to review code that gets attached in one form or another to the issue.
+
+Daniel is a maintainer of the vm that forms the basis for the Pharo vm. The vm is used by many more projects.
+
+Lara is a release manager for a well known linux distribution. Pharo is just one of 30 languages that are included in the distribution. Before doing a release she scans the issue tracker for any show stoppers. She had to stop including environments because of security issues.
+
+Thabo has been using Excel to track bugs and issues internally in his company and would like to move to a new distributed tracking system built in Pharo. Apart from all the usual inputs and outputs, he needs to be able to import his massive excel spreedsheat, as perhaps csv, into the new tracking system.
+';
+	level: 'Advanced';
+	yourself
+
+PharoTopic new
 	title: '7GUIs implementation';
 	contact: '';
 	supervisors: '';
