@@ -1,4 +1,34 @@
 PharoTopic new
+	title: 'Two-way synchronized code changes, better support for cross-platform co-development ';
+	contact: 'stephan@stack.nl';
+	supervisors: 'Stephan Eggermont, Diego Lont';
+	keywords: '';
+	context: Glorp is originally maintained in VisualWorks. We now have a version 
+in Pharo that is forked. It would be nice if we could make sure that 
+changes can be synchronized. The rewriting engine is available 
+on both platforms, and Glorp has a large number of unit tests. 
+If we can describe both migrations with refactorings, 
+we should be able to create builds in ci for both that show 
+when changes break things and otherwise synchronize two-way. 
+
+This might also be beneficial for Roassal2 and Seaside, that 
+currently use a compatibility layer. 
+
+Another place where this rewriting can be useful would be 
+in maintaining compatibility between Squeak and Pharo, 
+and in making it easier keeping older code alive. 
+
+Marcel Taeumel has written a number of interesting applications 
+(UIBuilder, Widgets, XPForums) using a 'signals' style 
+communication. In Pharo it would make sense to have them 
+use Announcements. 
+';
+	goal: 'Two-way synchronized code changes, 1st target: GLORP';
+	level: 'Advanced';
+	yourself
+.
+
+PharoTopic new
 	title: 'Mailing List Application in Brick';
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont';
