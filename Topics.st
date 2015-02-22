@@ -4,7 +4,7 @@ contact: 'eliot.miranda@gmail.com';
 supervisors: 'Bert Freudenberg, Eliot Miranda';
 keywords: 'Pharo ImageSegments Spur';
 context: 'ImageSegments are a fast binary storage and loading facility for Pharo.  
-They are supported directly by the virtual machine and use the garbage collector'' tracing machinery 
+They are supported directly by the virtual machine and use the garbage collector''s tracing machinery 
 to construct the objects to be saved.  They also contain objects in the native heap format of the virtual machine.  
 Amongst other things, ImageSegments have been used for eToys to store student projects.  
 There are literally thousands of eToys projects stored in ImageSegments in the format of the current VM.  
@@ -23,7 +23,7 @@ PharoTopic new
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont, Diego Lont';
 	keywords: '';
-	context: Glorp is originally maintained in VisualWorks. We now have a version 
+	context: 'Glorp is originally maintained in VisualWorks. We now have a version 
 in Pharo that is forked. It would be nice if we could make sure that 
 changes can be synchronized. The rewriting engine is available 
 on both platforms, and Glorp has a large number of unit tests. 
@@ -39,7 +39,7 @@ in maintaining compatibility between Squeak and Pharo,
 and in making it easier keeping older code alive. 
 
 Marcel Taeumel has written a number of interesting applications 
-(UIBuilder, Widgets, XPForums) using a 'signals' style 
+(UIBuilder, Widgets, XPForums) using a ''signals'' style 
 communication. In Pharo it would make sense to have them 
 use Announcements. 
 ';
@@ -53,8 +53,10 @@ PharoTopic new
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont';
 	keywords: 'Tools';
-	context: 'Making it possible to access and search the relevant mailing lists from inside any image provides a better feedback loop, especially for new smalltalkers';
-	goal: 'Have a spotter-like search for the mailing list archives, make it easy to read and answer questions. Implement using Brick.';
+	context: 'Making it possible to access and search the relevant mailing lists from inside any image 
+	provides a better feedback loop, especially for new smalltalkers';
+	goal: 'Have a spotter-like search for the mailing list archives, 
+	make it easy to read and answer questions. Implement using Brick.';
 	level: 'Intermediate';
 	yourself
 .
