@@ -2,9 +2,9 @@ PharoTopic new
 title: 'Loading V3 ImageSegments in Spur';
 contact: 'eliot.miranda@gmail.com';
 supervisors: 'Bert Freudenberg, Eliot Miranda';
-keywords: 'Pharo ImageSegments Spur;
+keywords: 'Pharo ImageSegments Spur';
 context: 'ImageSegments are a fast binary storage and loading facility for Pharo.  
-They are supported directly by the virtual machine and use the garbage collector tracing machinery 
+They are supported directly by the virtual machine and use the garbage collector'' tracing machinery 
 to construct the objects to be saved.  They also contain objects in the native heap format of the virtual machine.  
 Amongst other things, ImageSegments have been used for eToys to store student projects.  
 There are literally thousands of eToys projects stored in ImageSegments in the format of the current VM.  
