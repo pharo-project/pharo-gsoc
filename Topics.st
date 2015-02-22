@@ -2,15 +2,18 @@ PharoTopic new
 title: 'Loading V3 ImageSegments in Spur';
 contact: 'eliot.miranda@gmail.com';
 supervisors: 'Bert Freudenberg, Eliot Miranda';
-keywords: 'Squeak Pharo ImageSegments Spur;
-context: 'ImageSegments are a fast binary storage and loading facility for Squeak and Pharo.  
-They are supported directly by the virtual machine and use the garbage collector''s tracing machinery 
+keywords: 'Pharo ImageSegments Spur;
+context: 'ImageSegments are a fast binary storage and loading facility for Pharo.  
+They are supported directly by the virtual machine and use the garbage collector tracing machinery 
 to construct the objects to be saved.  They also contain objects in the native heap format of the virtual machine.  
 Amongst other things, ImageSegments have been used for eToys to store student projects.  
 There are literally thousands of eToys projects stored in ImageSegments in the format of the current VM.  
 Spur is a new object representation for the Squeak and Pharo V M that offers more functionality and approximately 
 twice the performance than the existing VM.';
-goal: 'The goal is to allow ImageSegments written by the current VM version, or older VM versions, to be loaded into a system running on the Spur VM.  The project would be written entirely in Smalltalk, without VM support, and have the goal of being able to load old projects in this faster system.';
+goal: 'The goal is to allow ImageSegments written by the current VM version, or older VM versions, 
+to be loaded into a system running on the Spur VM.  
+The project would be written entirely in Smalltalk, without VM support, 
+and have the goal of being able to load old projects in this faster system.';
 level: 'Advanced';
 yourself
 .
