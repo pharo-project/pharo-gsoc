@@ -78,11 +78,11 @@ PharoTopic new
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont, Diego Lont';
 	keywords: 'P2P Tools GUI';
-	context: 'Technical Details
+  	context: 'Technical Details
 
 The recent decision by Google to deprecate and stop its API for the Google Issue Tracker used by a.o. the Pharo, Seaside, MOOSE and Metacello projects makes it necessary for those projects to select a different issue tracker. The timespan before this decision has to be made is too short for the development of a new issue tracker from scratch. 
 
-Now most development in Smalltalk uses distributed version control systems, either Monticello or Git, the question arises why these projects still would want to use a centralized issue tracker. The long-standing problems in keeping squeaksource up-and-running are only one example of the problems of depending on centralized infrastructure. Other examples are the move of Lukas' repository and the number of times where the Pharo CI infrastructure was not available, especially on holidays and weekends.
+Now most development in Smalltalk uses distributed version control systems, either Monticello or Git, the question arises why these projects still would want to use a centralized issue tracker. The long-standing problems in keeping squeaksource up-and-running are only one example of the problems of depending on centralized infrastructure. Other examples are the move of Lukas'' repository and the number of times where the Pharo CI infrastructure was not available, especially on holidays and weekends.
 
 The currently used issue trackers cannot work disconnected. Integrating the issue tracker in the CI workflow of the projects is crucial.
 
@@ -122,6 +122,8 @@ Thabo has been using Excel to track bugs and issues internally in his company an
 ';
 	level: 'Advanced';
 	yourself
+
+.
 
 PharoTopic new
 	title: '7GUIs implementation';
@@ -903,7 +905,7 @@ PharoTopic new
 	contact: 'thierry.goubier@cea.fr';
 	supervisors: 'T. Goubier';
 	keywords: 'GUI, Graphics, Roassal, OpenStreetMap, Javascript';
-	context: 'Roassal can't export to HTML visualisations using OpenStreetMap';
+	context: 'Roassal can''t export to HTML visualisations using OpenStreetMap';
 	goal: 'Implement a solution, probably with some javascript, to export interactive Roassal visualisations and animations with OpenStreetMap backgrounds.';
 	level: 'Intermediate';
 	yourself
