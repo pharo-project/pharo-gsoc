@@ -8,6 +8,7 @@ goal: 'The goal is to allow ImageSegments written by the current VM version, or 
 level: 'Advanced';
 yourself
 .
+
 PharoTopic new
 	title: 'Two-way synchronized code changes, better support for cross-platform co-development ';
 	contact: 'stephan@stack.nl';
