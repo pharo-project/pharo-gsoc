@@ -279,7 +279,7 @@ PharoTopic new
 
 PharoTopic new
 	title: 'VOSS';
-	contact: 'john.clapperton@ntlworld.com';
+	contact: 'jc@logicarts.com';
 	supervisors: 'John Clapperton';
 	keywords: 'persistence OODB';
 	context: 'VOSS is a completely object oriented database industry proven that can have an open sourced release empowering Pharo users and startups to stay object oriented even when persisting data. VOSS has dual license commercial and GPLv3, and John (https://www.linkedin.com/in/johnclapperton), VOSS author already offered himself to mentor porters.';
