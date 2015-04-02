@@ -536,18 +536,6 @@ yourself
 .
 
 PharoTopic new
-	title: 'Test to Fix first';
-	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'S. Ducasse and N. Anquetil';
-	keywords: 'tools tests';
-	context: 'When a bunch of tests are failing this is always a problem to know which one to fix first. In his PhD Markus Gaelli proposed a nice way to build a test fingerprint (based on which methods were invoked in a test) and to sort them.';
-	goal: 'The goal of this project is to apply the idea of Gaelli and to propose a tool to help deciding which tests to fix';
-	level: 'Intermadiate';
-yourself
-
-.
-
-PharoTopic new
 	title: 'From BNF to PetitParser';
 	contact: 'Stephane.Ducasse@inria.fr';
 	supervisors: 'who wants';
