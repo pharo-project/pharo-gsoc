@@ -66,7 +66,7 @@ PharoTopic new
 	contact: 'stephan@stack.nl';
 	supervisors: '';
 	keywords: 'P2P';
-	context: 'It is time to stop depending on centralized infrastructure. We need too be able to use our DVCS the way it is meant to be used' ;
+	context: 'It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used' ;
 	goal: 'Integrate the library, in a similar way to the way libGit is (to be) integrated. Add a monticello repository type ';
 	level: 'Intermediate';
         candidate: '';
