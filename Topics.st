@@ -326,10 +326,10 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Enhancing file ownership';
-	contact: 'jean-christophe.bach@inria.fr';
-	supervisors: 'Jean-Christophe Bach, Damien Cassou and Esteban Lorenzano';
+	contact: 'damien.cassou@inria.fr';
+	supervisors: 'Damien Cassou and Mariano Martinez Peck';
 	keywords: 'OS VM';
-	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, Mac OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.  http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html';
+	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.  http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html';
 	level: 'Advanced';
 	yourself
 .
@@ -597,7 +597,7 @@ yourself
 PharoTopic new
 	title: 'Epub generator for Pillar';
 	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and S. Ducasse';
+	supervisors: 'Damien Cassou and Stéphane Ducasse';
 	keywords: 'Pillar epub document tree visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)' ;
 	goal: 'The goal of this project is to add the ePub export format (used by e-readers).';
@@ -607,27 +607,27 @@ PharoTopic new
 	
 .
 
-
 PharoTopic new
-	title: 'Enhancing Pillar';
+	title: 'OpenDocument generator for Pillar';
 	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and S. Ducasse';
-	keywords: 'Pillar epub Document tree visitor';
+	supervisors: 'Damien Cassou and Stéphane Ducasse';
+	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)' ;
-	goal: 'The goal of this project is to enhance Pillar with many behavior. Damien has a long list of feature requests.';
+	goal: 'The goal of this project is to add the standard OpenDocument export format (used by LibreOffice and OpenDocument).';
 	level: 'Beginner';
 	candidate: '';
-	yourself	
+	yourself
+	
 .
 
 PharoTopic new
 	title: 'Improving Launcher';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'D. Cassou, B. Coman and S. Ducasse';
-	keywords: 'Launcher is a cool tool to launch and organize images';
-	context: 'Launcher is important for all both new and advances Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. Demonstration: https://www.youtube.com/watch?v=fNim2Yxs320.
+	keywords: 'Launcher is a cool tool to launch and organize Pharo images';
+	context: 'Launcher is important for both new and advanced Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. Demonstration: https://www.youtube.com/watch?v=fNim2Yxs320.
 ';
-	level: 'Beginner';
+	level: 'Intermediate';
 	candidate: '';
 	yourself
 	
@@ -642,32 +642,6 @@ PharoTopic new
 	trees with meta variables to abstract syntax trees.' ;
 	goal: 'The goal of this project is to revisit the API of the Parse Tree Rewriter to help people build better tools. Reading the Flamel GSOC project and the new book chapter on such tools is a good start.';
 	level: 'Advanced';
-	yourself
-	
-.
-
-PharoTopic new
-	title: 'Git Library for Pharo in Pharo';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and Max Leske';
-	keywords: 'Protocol GIT';
-	context: 'Git is becoming the defacto standard for managing source code and versioning them.' ;
-	goal: 'The goal of this project is to continue the development of the git library that can let Pharo talk directly to a git server.  The student will have to implement what is missing, that is to say: the Git network protocol with good unit-tests (already started). The first task will be look at the current effort and then study the python implementation as well as reading the specification.';
-	level: 'Intermediate';
-        candidate: 'Max Leske';
-	yourself
-	
-.
-
-PharoTopic new
-	title: 'Git integration for Pharo';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou and Max Leske';
-	keywords: 'Protocol GIT';
-	context: 'Git is becoming the defacto standard for source code versioning.';
-	goal: 'The goal of this project is to continue the development of FileTree and GitTree two projects that offer the possibilities to store Git sources in Git. The goal of this project is to integrate Git within Pharo. The Git object model has already been implemented. The student will have to develop: (1) a new back-end for Monticello (Pharo''s revision control system) that fetches from and saves to a Git repository (already started); (2) a simple graphical user interface (written in the Spec GUI framework) to manipulate Git repositories. To fulfill the project''s goal, the student will first have to learn Pharo, Git (and its underlying network protocol) and Spec.';
-	level: 'Advanced';
-        candidate: 'Max Leske';
 	yourself
 	
 .
