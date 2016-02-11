@@ -1,4 +1,20 @@
 PharoTopic new
+title: 'CDB for Pharo in Pharo';
+contact: 'stephane.ducasse@inria.fr';
+supervisors: 'stephane.ducasse@inria.fr';
+keywords: 'CDB database';
+context: '
+- http://cr.yp.to/cdb.html
+- https://github.com/spotify/sparkey
+- http://www.unixuser.org/~euske/doc/cdbinternals/
+';
+level: 'Normal';
+yourself
+
+.
+
+
+PharoTopic new
 title: 'Loading V3 ImageSegments in Spur';
 contact: 'eliot.miranda@gmail.com';
 supervisors: 'Bert Freudenberg, Eliot Miranda';
