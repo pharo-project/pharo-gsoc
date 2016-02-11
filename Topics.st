@@ -612,8 +612,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Taking advantage of roel Typer in tools';
-	contact: 'stephane.ducasse@inria.fr, camille.teruel@inria.fr';
-	supervisors: 'S. Ducasse, C.Teruel';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'S. Ducasse, P, Tesone';
 	keywords: 'type inferencer tool';
 	context: 'Getting the type of variables and expression is a useful information.';
 	goal: 'The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.';
@@ -621,7 +621,6 @@ PharoTopic new
 	yourself
 	
 .
-
 
 
 PharoTopic new
@@ -707,8 +706,6 @@ PharoTopic new
 	goal: 'All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.';
 	level: 'intermediate';
 	yourself
-
-
 
 .
 
