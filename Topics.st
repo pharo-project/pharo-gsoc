@@ -146,7 +146,7 @@ PharoTopic new
 
 PharoTopic new
 	title: 'libTorrent Library for Pharo';
-	contact: 'stephan@stack.nl';
+	contact: 'stephan@stack.nl jdelgado@cs.upc.edu';
 	supervisors: '';
 	keywords: 'P2P';
 	context: 'It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used' ;
@@ -290,8 +290,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Deep learning';
-	contact: '';
-	supervisors: '';
+	contact: 'jdelgado@cs.upc.edu';
+	supervisors: 'Jordi Delgado';
 	keywords: 'deep-learning';
 	context: 'Robotics, drones and the internet of things will gather data from sensors that will need interpretation and modelling. All sorts of AI will use deep learning techniques and Pharo would be a great orchestrator of that modelling. http://www.quora.com/What-is-the-best-deep-learning-library-at-the-current-stage-for-working-on-large-data';
 	goal: 'Be able to orchestrate deep learning operations from Pharo';
