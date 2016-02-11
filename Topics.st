@@ -127,17 +127,17 @@ Thabo has been using Excel to track bugs and issues internally in his company an
 
 PharoTopic new
 	title: '7GUIs implementation';
-	contact: '';
+	contact: 'Alain Plantec';
 	supervisors: '';
 	keywords: 'GUI learning-curve';
 	context: 'Benchmarking how hard easy is to implement GUIs in a given platform is probably a decisive factor on how good the opportunities this plattform has to offer. The 7GUIs benchmark is a nice research on GUI building usability and having a Pharo implementation will illlustrate the power of this platform. Ref: https://github.com/eugenkiss/7guis/wiki';
-	goal: 'Be able to see a Pharo implementation for 7GUIs';
+	goal: 'Be able to see a Pharo implementation for 7GUIs on top of Brick the new widgets layer of Pharo.';
 	level: 'Intermediate';
 	yourself
 .
 
 PharoTopic new
-	title: 'desktop application for offline text search';
+	title: 'Desktop application for offline text search';
 	contact: 'mbaehr+pharo@iaeste.at';
 	supervisors: 'Martin Bähr';
 	keywords: 'desktop gui spec';
@@ -148,24 +148,13 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'server control panel';
+	title: 'Server control panel';
 	contact: 'mbaehr+pharo@iaeste.at';
 	supervisors: 'Martin Bähr';
 	keywords: 'gui server-management asset-management';
 	context: 'file editor and asset and server manager solution, http://labs.fossasia.org/projects/smalltalk-file-editor/';
 	goal: 'a tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk';
 	level: 'Beginner';
-	yourself
-.
-
-PharoTopic new
-	title: 'Pro-tips site';
-	contact: '';
-	supervisors: '';
-	keywords: 'social web-site';
-	context: 'It might spark the beginning of a mentoring ecosystem. StackOverflow is great but at the same time for a niche like Smalltalk it might not be enough to show the problem-solving potential of the platform. A site dedicated to share pro tips centered on Pharo would slowly a steady show the platform’s value. The site has to be social friendly. Each tip should have an author that can set there StackOverflow, LinkedIn, facebook, twitter or any social profile she wants. Requires nice branding and UX/UI design. Optional variation of the same idea: make it for any Smalltalk dialect instead of only Pharo.';
-	goal: 'Be able to sign up, compose tips, publish and share on social media';
-	level: 'Intermediate';
 	yourself
 .
 
@@ -178,7 +167,6 @@ PharoTopic new
 	goal: 'Be able to create composable widgets for Pharo programs';
 	level: 'Intermediate';
 	yourself
-
 .
 
 PharoTopic new
@@ -236,18 +224,6 @@ PharoTopic new
 	keywords: 'mobile vm';
 	context: 'Is not that mobile is a growing market, is more like mobile is going supernova (http://a16z.com/2014/10/28/mobile-is-eating-the-world/). The power of Pharo and its libraries on mobile devices is currently perhaps one of its biggest opportunities to create a really productive environment in mobile.';
 	goal: 'Opening Pharo images on a new mobile plattform';
-	level: 'Advanced';
-	yourself
-
-.
-
-PharoTopic new
-	title: 'Remote Environments';
-	contact: '';
-	supervisors: '';
-	keywords: 'distribution tooling';
-	context: 'Remote Environments for Pharo being able to inspect, browse and debug reliably a server Pharo image from a client Pharo image would spark countless possibilities. Some of them: server maintenance; hot debug on GUI-less servers in production; live develop or debug remotely mobile devices that doesn’t have a server. Hot changes in Pharo powered drones and robots.';
-	goal: 'Have an working version of remote tooling for Pharo';
 	level: 'Advanced';
 	yourself
 
@@ -314,17 +290,6 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'Rethinking OSProcess Integration';
-	contact: 'esteban.lorenzano@inria.fr';
-	supervisors: 'Esteban Lorenzano (and Damien Pollet)';
-	keywords: 'OS VM';
-	context: 'We need a way to invoke OS low-level functionality from the language. This will let programmers develop scripts in Pharo and integrate better with the OSes';
-	level: 'Advanced';
-	yourself
-	
-.
-
-PharoTopic new
 	title: 'Enhancing file ownership';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'Damien Cassou and Mariano Martinez Peck';
@@ -371,7 +336,6 @@ PharoTopic new
 	keywords: 'recommander tools rules analyses';
 	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
 	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly ';
-	candidate: 'Facundo Mainere fmmainere@gmail.com from Uni. National Quilmes under supervision of G. Arevalo';
 	yourself
 	
 .
@@ -549,7 +513,7 @@ yourself
 PharoTopic new
 	title: 'Line level test coverage and which test to run';
 	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'who wants';
+	supervisors: 'Stephane.Ducasse@inria.fr';
 	keywords: 'testing';
 	context: 'In some languages it is possible to know the tests that exercised on specific line of code.';
 	goal: 'The goal of the project is to bring such kind of functionality to Pharo. The student should have a look at the current AST annotation facilities and at the reflexive AST level frameworks such reflectivity or bifrost and use them to build a tool that help understanding with tests passed into a given path. A simple test coverage browser was developed by clement bera and it should be looked at.';
@@ -658,16 +622,7 @@ PharoTopic new
 	
 .
 
-PharoTopic new
-	title: 'OpenStreet Smart viewer in Pharo';
-	contact: '';
-	supervisors: '';
-	keywords: 'svg open street visualisation';
-	context: '	OpenStreet is an open source standard for high-quality maps.';
-	goal: 'The goal of this project is to build a smart viewer of map using Athens the new canvas of Pharo. One of the challenge is to redraw only the part of the map when zooming in.';
-	yourself
-	
-.
+
 
 PharoTopic new
 	title: 'Web OpenStreet map manager';
@@ -772,7 +727,7 @@ PharoTopic new
 PharoTopic new
 	title: 'New generation finder';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'C. Teruel and S. Ducasse';
+	supervisors: 'S. Ducasse';
 	keywords: 'Finder';
 	context: 'The finder is a nice tool that let us find the messages based on the receiver and arguments. While really powerful its implementation should be revisited because ';
 	goal: 'The actual implementation of the finder is based on static arrays to describe methods. This implementation is static. We should revisit this implementation. Methods may be tagged with Finder information.';
