@@ -145,12 +145,12 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'libTorrent Library for Pharo';
+	title: 'Torrent Library for Pharo';
 	contact: 'stephan@stack.nl jdelgado@cs.upc.edu';
 	supervisors: '';
 	keywords: 'P2P';
-	context: 'It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used' ;
-	goal: 'Integrate the library, in a similar way to the way libGit is (to be) integrated. Add a monticello repository type ';
+	context: 'It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used. On smalltalkhub BitDevTalk/BitTalk there is an implementation of the torrent protocol. Some parts (DHT) are not finished. On top of that, we want to be able to distribute our build artifacts and publish our public source.  ' ;
+	goal: 'Finish and extend the library. Add a monticello repository type ';
 	level: 'Intermediate';
         candidate: '';
 	yourself
