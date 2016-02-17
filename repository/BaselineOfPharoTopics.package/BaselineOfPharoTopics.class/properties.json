@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfPharoTopics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfPharoTopics",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
