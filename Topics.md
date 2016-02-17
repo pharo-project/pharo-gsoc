@@ -77,6 +77,8 @@ how IPFS can be used with Pharo. For example, extend the launcher to load images
 access to resources via IPFS.
 ###Level: Normal
 
+***
+
 ##Title: CDB for Pharo in Pharo
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: stephane.ducasse@inria.fr
@@ -96,6 +98,8 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 ###Goal
 The goal of this project is to develop a Pharo implementation of CDB.
 ###Level: Normal
+
+***
 
 ##Title: Scrapping Data: Enhancing User Experience
 ###Contact: stephane.ducasse@inria.fr
@@ -133,6 +137,8 @@ Smalltalk would have an edge, since these tutorial could be in the form of Prof 
 
 ###Level: Normal
 
+***
+
 ##Title: Loading V3 ImageSegments in Spur
 ###Contact: eliot.miranda@gmail.com
 ###Supervisors: Bert Freudenberg, Eliot Miranda
@@ -151,6 +157,8 @@ to be loaded into a system running on the Spur VM.
 The project would be written entirely in Smalltalk, without VM support, 
 and have the goal of being able to load old projects in this faster system.
 ###Level: Advanced
+
+***
 
 ##Title: Two-way synchronized code changes, better support for cross-platform co-development 
 ###Contact: stephan@stack.nl
@@ -181,6 +189,8 @@ use Announcements.
 Two-way synchronized code changes, 1st target: GLORP
 ###Level: Advanced
 
+***
+
 ##Title: Mailing List Application in Brick
 ###Contact: stephan@stack.nl
 ###Supervisors: Stephan Eggermont
@@ -193,6 +203,8 @@ Have a spotter-like search for the mailing list archives,
 	make it easy to read and answer questions. Implement using Brick.
 ###Level: Intermediate
 
+***
+
 ##Title: Torrent Library for Pharo
 ###Contact: stephan@stack.nl jdelgado@cs.upc.edu
 ###Supervisors: 
@@ -202,6 +214,8 @@ It is time to stop depending on centralized infrastructure. We need to be able t
 ###Goal
 Finish and extend the library. Add a monticello repository type 
 ###Level: Intermediate
+
+***
 
 ##Title: Distributed Issue Tracker
 ###Contact: stephan@stack.nl
@@ -253,6 +267,8 @@ Thabo has been using Excel to track bugs and issues internally in his company an
 
 ###Level: Advanced
 
+***
+
 ##Title: 7GUIs implementation
 ###Contact: Alain Plantec
 ###Supervisors: 
@@ -262,6 +278,8 @@ Benchmarking how hard easy is to implement GUIs in a given platform is probably 
 ###Goal
 Be able to see a Pharo implementation for 7GUIs on top of Brick the new widgets layer of Pharo.
 ###Level: Intermediate
+
+***
 
 ##Title: Desktop application for offline text search
 ###Contact: mbaehr+pharo@iaeste.at
@@ -273,6 +291,8 @@ exploring spec and fulltext search capabilities. http://labs.fossasia.org/projec
 a working application and documentation that allows others to learn how to build applications with spec
 ###Level: Beginner
 
+***
+
 ##Title: Server control panel
 ###Contact: mbaehr+pharo@iaeste.at
 ###Supervisors: Martin Bähr
@@ -282,6 +302,8 @@ file editor and asset and server manager solution, http://labs.fossasia.org/proj
 ###Goal
 a tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk
 ###Level: Beginner
+
+***
 
 ##Title: GUI builder
 ###Contact: 
@@ -293,6 +315,8 @@ If whatever you are doing you cannot make it visual easily, people cannot percei
 Be able to create composable widgets for Pharo programs
 ###Level: Intermediate
 
+***
+
 ##Title: REPL IDE
 ###Contact: 
 ###Supervisors: 
@@ -302,6 +326,8 @@ Smalltalkers are used to very powerful IDEs. What if we have to put Pharo in a r
 ###Goal
 Be able to evaluate expressions, inspect and debug Pharo programs using a REPL and a terminal
 ###Level: Intermediate
+
+***
 
 ##Title: Cross platform native GUI
 ###Contact: 
@@ -313,6 +339,8 @@ The web is fantastic but at the same time there is a big pressure to create grea
 Be able to create and model native GUI from Pharo for OS X, Linux and Windows
 ###Level: Intermediate
 
+***
+
 ##Title: Hadoop
 ###Contact: 
 ###Supervisors: 
@@ -322,6 +350,8 @@ Apache Hadoop can scale from single server to thousands of servers. The explosio
 ###Goal
 Be able to use Hadoop from Pharo
 ###Level: Intermediate
+
+***
 
 ##Title: Deep learning
 ###Contact: jdelgado@cs.upc.edu
@@ -333,6 +363,8 @@ Robotics, drones and the internet of things will gather data from sensors that w
 Be able to orchestrate deep learning operations from Pharo
 ###Level: Intermediate
 
+***
+
 ##Title: Mobile
 ###Contact: 
 ###Supervisors: 
@@ -342,6 +374,8 @@ Is not that mobile is a growing market, is more like mobile is going supernova (
 ###Goal
 Opening Pharo images on a new mobile plattform
 ###Level: Advanced
+
+***
 
 ##Title: SQL Alchemy in Pharo
 ###Contact: 
@@ -353,6 +387,8 @@ Big-data is a growing market that is easy to mine with a tool like Python's SQL 
 Have a beta working version of a SQL Alchemy like framework in Pharo
 ###Level: Intermediate
 
+***
+
 ##Title: SQLServer client
 ###Contact: 
 ###Supervisors: 
@@ -362,6 +398,8 @@ Some Smalltalk applications that have SQLServer as dependency needs to extend an
 ###Goal
 Have a beta working version SQLServer client in Pharo
 ###Level: Intermediate
+
+***
 
 ##Title: VOSS
 ###Contact: jc@logicarts.com
@@ -373,6 +411,8 @@ VOSS is a completely object oriented database industry proven that can have an o
 Have a beta working version of VOSS on Pharo
 ###Level: Intermediate
 
+***
+
 ##Title: Statistics Library
 ###Contact: serge DOT stinckwich AT ird DOT fr
 ###Supervisors: Serge Stinckwich
@@ -382,6 +422,8 @@ Sci-Smalltalk is an existing Pharo library for doing scientific computing.
 ###Goal
 Add some statistics function to Sci-Smalltalk.
 ###Level: Intermediate
+
+***
 
 ##Title: Better Palette Support
 ###Contact: damien.pollet@inria.fr
@@ -393,6 +435,8 @@ CubeHelix is a way to compute intensity of color that is important for color bli
 The objectives is to revisit and build a new palette behavior
 ###Level: Beginner
 
+***
+
 ##Title: Enhancing file ownership
 ###Contact: damien.cassou@inria.fr
 ###Supervisors: Damien Cassou and Mariano Martinez Peck
@@ -403,6 +447,8 @@ We should enhance the support for file permissions: to answer, e.g., can the cur
 
 ###Level: Advanced
 
+***
+
 ##Title: Better Message Browser
 ###Contact: jfabry@dcc.uchile.cl
 ###Supervisors: Johan Fabry / S. Ducasse
@@ -412,6 +458,8 @@ The browser showing results of senders and implementors won't help you navigate 
 ###Goal
 The goal of the project is to define a tool to support message browsing.
 ###Level: Intermediate
+
+***
 
 ##Title: Bug Importer for Moose
 ###Contact: nicolas.anquetil@inria.fr
@@ -430,6 +478,8 @@ Moose can be connected with a JIRA bug tracker database. The goals of the projec
 A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012
 ###Level: Currently undefined, we are working on it.
 
+***
+
 ##Title: Improving code completion
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse and E. Lorenzano
@@ -440,6 +490,8 @@ it can do better.
 ###Goal
 The goal of the project is to improve the ecompletion infrastructure: The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, (3) Improve the noise introduced by the Symbol table usage. (4) build more heuristics.
 ###Level: Intermediate
+
+***
 
 ##Title: Support for change code review
 ###Contact: martin.dias@inria.fr
@@ -452,6 +504,8 @@ Pharo manages well source versions and modification. However it is tedious to un
 The goal of the project is to help building a tools to support code reviewing. In detail, here are some tasks to be performed: (1) study Epicea (the new change model), (2) define a tool to annotate changes and share annotations between different developers, (3) build heuristics to identify changes that represents a unit (for example split methods and push up or push down).
 ###Level: Intermediate
 
+***
+
 ##Title: Stepping Interpreter
 ###Contact: clement.bera@inria.fr
 ###Supervisors: Clement Bera and Marcus Denker
@@ -461,6 +515,8 @@ Since Pharo 30, an AST interpreter is available in Pharo. It is really interesti
 ###Goal
 Now the Pharo interpreter design prevents us to build a debugger (with a step by step behavior). The goal of this project is to transform the interpreter into an interpreter using an explicit stack so that the stack can be used to implement step by step program execution. The Amber interpreter is a stepping interpreter and a good source of inspiration.
 ###Level: Advanced
+
+***
 
 ##Title: New Collections for Pharo
 ###Contact: stephane.ducasse@inria.fr
@@ -477,6 +533,8 @@ Smalltalk is proud of its collection hierarchy. However some collections are mis
 - http://source.lukas-renggli.ch/container started to implement some new collections for Pharo.
 - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/
 ###Level: Advanced
+
+***
 
 ##Title: Thread-based programming
 ###Contact: esteban.lorenzano@inria.fr
@@ -496,6 +554,8 @@ Now there is small support for "thread based programming". What does it means? W
  http://www.slideshare.net/guest162fd90/stackless-python-101
 ###Level: Currently undefined, we are working on it.
 
+***
+
 ##Title: From BNF to PetitParser
 ###Contact: Stephane.Ducasse@inria.fr
 ###Supervisors: who wants
@@ -505,6 +565,8 @@ Petit Parser is a cool framework to build parsers and composed them but it lacks
 ###Goal
 The goal of the project is to support the creation of parsers based on BNF description. Deep into Pharo contains a tutorial on PetitParser
 ###Level: Currently undefined, we are working on it.
+
+***
 
 ##Title: Line level test coverage and which test to run
 ###Contact: Stephane.Ducasse@inria.fr
@@ -516,6 +578,8 @@ In some languages it is possible to know the tests that exercised on specific li
 The goal of the project is to bring such kind of functionality to Pharo. The student should have a look at the current AST annotation facilities and at the reflexive AST level frameworks such reflectivity or bifrost and use them to build a tool that help understanding with tests passed into a given path. A simple test coverage browser was developed by clement bera and it should be looked at.
 ###Level: Currently undefined, we are working on it.
 
+***
+
 ##Title: Merlin in Spec
 ###Contact: Stephane.Ducasse@inria.fr
 ###Supervisors: S. Ducasse and Johan Fabry
@@ -525,6 +589,8 @@ Merlin is a good framework for building wizards. However, it was developed befor
 ###Goal
 The goal of the project is to make sure that Merlin is now based on Spec. It will make sure that Merlin can work on different UI framework.
 ###Level: Intermediate
+
+***
 
 ##Title: Memory profiler
 ###Contact: Stephane.Ducasse@inria.fr
@@ -536,6 +602,8 @@ Understanding how which method execution produces a lot of objects is important 
 The goal of the project is to develop an approach to measure and reflect memory cost. One idea is to use a kind of partial evaluation using an interpreter and redefine the primitives to collect the number of created objects. Pharo 30 already has a fully working interpreter that can be used for such tasks.
 ###Level: Intermediate
 
+***
+
 ##Title: Epub generator for Pillar
 ###Contact: damien.cassou@inria.fr
 ###Supervisors: Damien Cassou and Stéphane Ducasse
@@ -546,6 +614,8 @@ Pillar is a markup syntax that is easy to use and learn. This markup syntax gene
 The goal of this project is to add the ePub export format (used by e-readers).
 ###Level: Beginner
 
+***
+
 ##Title: OpenDocument generator for Pillar
 ###Contact: damien.cassou@inria.fr
 ###Supervisors: Damien Cassou and Stéphane Ducasse
@@ -555,6 +625,8 @@ Pillar is a markup syntax that is easy to use and learn. This markup syntax gene
 ###Goal
 The goal of this project is to add the standard OpenDocument export format (used by LibreOffice and OpenDocument).
 ###Level: Beginner
+
+***
 
 ##Title: Improving Launcher
 ###Contact: damien.cassou@inria.fr
@@ -567,6 +639,8 @@ Launcher is important for both new and advanced Pharo users. Launcher needs to g
 
 ###Level: Intermediate
 
+***
+
 ##Title: ParseTree Rewriter Improvements
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: C. Teruel and S. Ducasse
@@ -578,6 +652,8 @@ The Parse tree rewriter is a powerful engine. It is used to support automatic re
 The goal of this project is to revisit the API of the Parse Tree Rewriter to help people build better tools. Reading the Flamel GSOC project and the new book chapter on such tools is a good start.
 ###Level: Advanced
 
+***
+
 ##Title: Taking advantage of roel Typer in tools
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse, P, Tesone
@@ -588,6 +664,8 @@ Getting the type of variables and expression is a useful information.
 The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.
 ###Level: Intermediate
 
+***
+
 ##Title: Web OpenStreet map manager
 ###Contact: 
 ###Supervisors: 
@@ -597,6 +675,8 @@ The goal of this project is to see tools can take benefit of type information pr
 ###Goal
 The goal of this project is to build a simple web application that let users managing their own maps like googlemap but in a better way. An example could be http://umap.openstreetmap.fr/
 ###Level: Currently undefined, we are working on it.
+
+***
 
 ##Title: Sokoban
 ###Contact: stephane.ducasse@inria.fr
@@ -610,6 +690,8 @@ via a model that can then be displayed graphically. Right now the logic of the g
 	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games
 ###Level: Beginner or Bachelor
 
+***
+
 ##Title: SameTile
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse
@@ -621,6 +703,8 @@ The goal of this project is to revisit the implementation to make sure that the 
 	via a model that can then be displayed graphically using different ways.  The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
 	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games
 ###Level: Beginner or Bachelor
+
+***
 
 ##Title: Miner
 ###Contact: stephane.ducasse@inria.fr
@@ -634,6 +718,8 @@ The goal of this project is to revisit the implementation to make sure that the 
 	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games
 ###Level: Currently undefined, we are working on it.
 
+***
+
 ##Title: Clean Debian packaging
 ###Contact: mfritsche@reauktion.de
 ###Supervisors: Markus Fritsche
@@ -643,6 +729,8 @@ Debian is a well-known and free Operating System (OS) consisting of tens of thou
 ###Goal
 The goal of this project is to improve current packaging of Pharo for Debian and to follow the new Debian maintainer process to get Pharo included in Debian.
 ###Level: Beginner
+
+***
 
 ##Title: Baobab
 ###Contact: camille.teruel@inria.fr
@@ -654,6 +742,8 @@ Pharo sources are currently stored in a separated file. Bonsai, the future syste
 All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.
 ###Level: intermediate
 
+***
+
 ##Title: Do not hack, Refactor!
 ###Contact: thierry.goubier@cea.fr
 ###Supervisors: T. Goubier
@@ -663,6 +753,8 @@ Pharo is a premier environment for refactoring, with the refactoring browser and
 ###Goal
 The goal of this project is to extend the AltBrowser IDE and GUI with strong refactoring integration, ensuring that most developpers actions are refactorings, fully shown: effect on code, code affected, undo capability, refactorings history. Related projects that should be considered are: Epicea (Martin Dias), Rewrite Rule Browser (Mark Rizun)
 ###Level: intermediate
+
+***
 
 ##Title: GLL to the rescue
 ###Contact: thierry.goubier@cea.fr
@@ -674,6 +766,8 @@ SmaCC (the Smalltalk Compiler Compiler) is a lexer, parser generator and general
 Add a GLL (Generalised Left-toRight Leftmost) parsing technique to SmaCC
 ###Level: advanced
 
+***
+
 ##Title: Protobuf support
 ###Contact: 
 ###Supervisors: 
@@ -683,6 +777,8 @@ There is no support for Protobuf in Pharo and it hinders integration.
 ###Goal
 Protobuf compiler and client for Pharo
 ###Level: advanced
+
+***
 
 ##Title: RethinkDB support
 ###Contact: 
@@ -694,6 +790,8 @@ RethinkDB is great for notifications etc. But there is no Pharo client.
 Get a RethinkDB client for Pharo
 ###Level: Intermediate
 
+***
+
 ##Title: Athens for the Pi
 ###Contact: thierry.goubier@cea.fr
 ###Supervisors: T. Goubier
@@ -703,6 +801,8 @@ Roassal rely on Athens for its graphics, and Athens uses NativeBoost to talk to 
 ###Goal
 Implement a solution for the Pi: either Athens using bitblt, or a FFI link to Cairo on the Raspberry Pi. Bonus: see if the anti-aliasing bitblt of Cuis could be used.
 ###Level: Intermediate
+
+***
 
 ##Title: Roassal HTML5 export for OpenStreetMap
 ###Contact: thierry.goubier@cea.fr
@@ -714,6 +814,8 @@ Roassal can't export to HTML visualisations using OpenStreetMap
 Implement a solution, probably with some javascript, to export interactive Roassal visualisations and animations with OpenStreetMap backgrounds.
 ###Level: Intermediate
 
+***
+
 ##Title: Process networks in Pharo
 ###Contact: thierry.goubier@cea.fr
 ###Supervisors: T. Goubier
@@ -723,6 +825,8 @@ Pharo 4.0 introduced Slots as a generalisation of instance variables, offering p
 ###Goal
 Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.
 ###Level: Intermediate
+
+***
 
 ##Title: Visual Debugger
 ###Contact: alexandre.bergel@me.com
@@ -734,6 +838,8 @@ The visual interface of code debugger have always been designed as a set of text
 Bridge Roassal with GTDebugger and offer the infrastructure to define specific and visual debuggers
 ###Level: Intermediate
 
+***
+
 ##Title: Roassal 3D
 ###Contact: alexandre.bergel@me.com
 ###Supervisors: Alexandre Bergel
@@ -743,6 +849,8 @@ Roassal is a successful 2D visualization engine. A first implementation of Roass
 ###Goal
 Improve Roassal 3D with text support and implement Matrix Cube in it (https://hal.inria.fr/hal-00931911v1/document).
 ###Level: Intermediate
+
+***
 
 ##Title: GitPharo
 ###Contact: thierry.goubier@gmail.com
@@ -754,4 +862,6 @@ Pharo is building some gui support, either via GitFileTree or libcgit integratio
 Implement a GUI to manipulate and control a git repository from inside Pharo.
 ###Level: Intermediate
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T11:36:02.144015+01:00 by Pharo5.0 of 16 April 2015 update 50585</p>
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T11:39:31.553566+01:00 by Pharo5.0 of 16 April 2015 update 50585</p>
