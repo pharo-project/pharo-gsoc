@@ -36,9 +36,9 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 The goal of this project is to develop a Pharo implementation of CDB.
 ### Level: Normal
 
-##title: 'Scrapping Data: Enhancing User Experience';
-###contact: 'stephane.ducasse@inria.fr';
-###supervisors: 'stephane.ducasse@inria.fr';
+##title: Scrapping Data: Enhancing User Experience
+###contact: stephane.ducasse@inria.fr
+###supervisors: stephane.ducasse@inria.fr
 ###keywords: 'CVS ';
 ###goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
 a CSV, and have a number of heuristics, such as:
@@ -66,7 +66,7 @@ Another thing which would be useful is support for linear algebra, leveraging na
 
 Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. Here I think
 Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
-###level: 'Normal';
+###level: Normal
 
 ## Title: Loading V3 ImageSegments in Spur
 ### Contact: eliot.miranda@gmail.com
@@ -87,11 +87,12 @@ The project would be written entirely in Smalltalk, without VM support,
 and have the goal of being able to load old projects in this faster system.';
 ## Level: Advanced
 
-	title: 'Two-way synchronized code changes, better support for cross-platform co-development ';
-	contact: 'stephan@stack.nl';
-	supervisors: 'Stephan Eggermont, Diego Lont';
-	keywords: '';
-	context: 'Glorp is originally maintained in VisualWorks. We now have a version 
+## Title: Two-way synchronized code changes, better support for cross-platform co-development
+### Contact: stephan@stack.nl
+### Supervisors: Stephan Eggermont, Diego Lont
+### Keywords: 
+### Context:
+GLORP is originally maintained in VisualWorks. We now have a version 
 in Pharo that is forked. It would be nice if we could make sure that 
 changes can be synchronized. The rewriting engine is available 
 on both platforms, and Glorp has a large number of unit tests. 
@@ -110,11 +111,9 @@ Marcel Taeumel has written a number of interesting applications
 (UIBuilder, Widgets, XPForums) using a ''signals'' style 
 communication. In Pharo it would make sense to have them 
 use Announcements. 
-';
-	goal: 'Two-way synchronized code changes, 1st target: GLORP';
-	level: 'Advanced';
-	yourself
-.
+### Goal:
+Two-way synchronized code changes, 1st target: GLORP
+### Level: Advanced
 
 PharoTopic new
 	title: 'Mailing List Application in Brick';
