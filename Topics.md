@@ -902,37 +902,31 @@ PharoTopic new
 	goal: 'Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.';
 	level: 'Intermediate';
 	yourself
-.
+	
+# Title: Visual Debugger
+### Contact: alexandre.bergel@me.com
+### Supervisors: 'Andrei Chis Alexandre Bergel
+### Keywords: Debugging Roassal
+### Context:
+The visual interface of code debugger have always been designed as a set of textual widgets. Although Pharo debugger is famed for its flexibility and ease of use, it unfortunately stick to a poor and restricted support to convey information. Visual Debugger is a project to combine Roassal with GTDebugger to offer a whole range of new debuggers to expose object state history, and message recording.
+### Goal:
+Bridge Roassal with GTDebugger and offer the infrastructure to define specific and visual debuggers.
+### Level: Intermediate
 
-PharoTopic new
-	title: 'Visual Debugger';
-	contact: 'alexandre.bergel@me.com';
-	supervisors: 'Andrei Chis Alexandre Bergel';
-	keywords: 'Debugging Roassal';
-	context: 'The visual interface of code debugger have always been designed as a set of textual widgets. Although Pharo debugger is famed for its flexibility and ease of use, it unfortunately stick to a poor and restricted support to convey information. Visual Debugger is a project to combine Roassal with GTDebugger to offer a whole range of new debuggers to expose object state history, and message recording.';
-	goal: 'Bridge Roassal with GTDebugger and offer the infrastructure to define specific and visual debuggers';
-	level: 'Intermediate';
-	yourself
-.
+# Title: Roassal 3D
+### Contact: alexandre.bergel@me.com
+### Supervisors: Alexandre Bergel
+### Keywords: Roassal 3d
+### Context: Roassal is a successful 2D visualization engine. A first implementation of Roassal 3D has been produced on top of Woden, a bridge between OpenGL and Pharo. However this initial implementation of Roassal 3D is far from being complete (e.g., text is not correctly supported) and examples are compelling missing.
+### Goal:
+Improve Roassal 3D with text support and implement Matrix Cube in it (https://hal.inria.fr/hal-00931911v1/document).
+### Level: Intermediate
 
-PharoTopic new
-	title: 'Roassal 3D';
-	contact: 'alexandre.bergel@me.com';
-	supervisors: 'Alexandre Bergel';
-	keywords: 'Roassal 3d';
-	context: 'Roassal is a successful 2D visualization engine. A first implementation of Roassal 3D has been produced on top of Woden, a bridge between OpenGL and Pharo. However this initial implementation of Roassal 3D is far from being complete (e.g., text is not correctly supported) and examples are compelling missing.';
-	goal: 'Improve Roassal 3D with text support and implement Matrix Cube in it (https://hal.inria.fr/hal-00931911v1/document).';
-	level: 'Intermediate';
-	yourself
-.
-
-PharoTopic new
-	title: 'GitPharo';
-	contact: 'thierry.goubier@gmail.com';
-	supervisors: 'Thierry Goubier';
-	keywords: 'Pharo Git';
-	context: 'Pharo is building some gui support, either via GitFileTree or libcgit integration, but GUI tools inside Pharo show little of the change.';
-	goal: 'Implement a GUI to manipulate and control a git repository from inside Pharo.'
-	level: 'Intermediate';
-	yourself
-.
+# Title: GitPharo
+### Contact: thierry.goubier@gmail.com
+### Supervisors: Thierry Goubier
+### Keywords: Pharo Git
+### Context: 
+Pharo is building some gui support, either via GitFileTree or libcgit integration, but GUI tools inside Pharo show little of the change.
+### goal: 'Implement a GUI to manipulate and control a git repository from inside Pharo.
+### Level: Intermediate
