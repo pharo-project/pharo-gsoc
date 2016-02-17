@@ -17,7 +17,6 @@ More information:
 The goal of this Project is to implement a IPFS client library using the API to communicate with the existing server and start to experiment how IPFS can be used with Pharo. For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide access to resources via IPFS.
 ###Level: Normal
 
-
 ## Title: CDB for Pharo in Pharo
 ### Contact: stephane.ducasse@inria.fr
 ### Supervisors: stephane.ducasse@inria.fr
@@ -332,33 +331,24 @@ PharoTopic new
 	level: 'Intermediate';
 	yourself
 
-.
+## Title: Statistics Library
+### Contact: 'serge DOT stinckwich AT ird DOT fr
+### Supervisors: 'Serge Stinckwich
+### Keywords: 'statistic mathematics science';
+### Context: 'Sci-Smalltalk is an existing Pharo library for doing scientific computing.';
+### Goal: 'Add some statistics function to Sci-Smalltalk.';
+### Level: 'Intermediate';
 
-PharoTopic new
-	title: 'Statistics Library';
-	contact: 'serge DOT stinckwich AT ird DOT fr';
-	supervisors: 'Serge Stinckwich';
-	keywords: 'statistic mathematics science';
-	context: 'Sci-Smalltalk is an existing Pharo library for doing scientific computing.';
-	goal: 'Add some statistics function to Sci-Smalltalk.';
-	level: 'Intermediate';
-	yourself
+## Title: Better Palette Support
+### Contact: damien.pollet@inria.fr
+### Supervisors: Damien Pollet and Alexandre Bergel
+### Keywords: Color palette visualization';
+### Context:
+CubeHelix is a way to compute intensity of color that is important for color blind people. It was introduced in Pharo recently. Now we should revisit the color palette to offer some predefined palette and better support for Colors.
+### Goal:
+The objectives is to revisit and build a new palette behavior
+### Level: Beginner
 
-.
-
-PharoTopic new
-	title: 'Better Palette Support';
-	contact: 'damien.pollet@inria.fr';
-	supervisors: 'Damien Pollet and Alexandre Bergel';
-	keywords: 'Color palette visualization';
-	context: 'CubeHelix is a way to compute intensity of color that is important for color blind people. It was introduced in Pharo recently. Now we should revisit the color palette to offer some predefined palette and better support for Colors.';
-	goal: 'The objectives is to revisit and build a new palette behavior';
-	level: 'Beginner';
-	yourself
-
-.
-
-PharoTopic new
 	title: 'Enhancing file ownership';
 	contact: 'damien.cassou@inria.fr';
 	supervisors: 'Damien Cassou and Mariano Martinez Peck';
