@@ -36,11 +36,12 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 The goal of this project is to develop a Pharo implementation of CDB.
 ### Level: Normal
 
-##title: Scrapping Data: Enhancing User Experience
-###contact: stephane.ducasse@inria.fr
-###supervisors: stephane.ducasse@inria.fr
-###keywords: 'CVS ';
-###goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
+## Title: Scrapping Data: Enhancing User Experience
+### Contact: stephane.ducasse@inria.fr
+### Supervisors: stephane.ducasse@inria.fr
+### Keywords: CVS
+### Goal:
+To analyze data, you need to get data in first. So, one may want to read - say -
 a CSV, and have a number of heuristics, such as:
 - autodetection of encoding
 - autodetection of quotes and delimiter
@@ -115,20 +116,18 @@ use Announcements.
 Two-way synchronized code changes, 1st target: GLORP
 ### Level: Advanced
 
-PharoTopic new
-	title: 'Mailing List Application in Brick';
-	contact: 'stephan@stack.nl';
-	supervisors: 'Stephan Eggermont';
-	keywords: 'Tools';
-	context: 'Making it possible to access and search the relevant mailing lists from inside any image 
-	provides a better feedback loop, especially for new smalltalkers';
-	goal: 'Have a spotter-like search for the mailing list archives, 
-	make it easy to read and answer questions. Implement using Brick.';
-	level: 'Intermediate';
-	yourself
-.
+### Title: Mailing List Application in Brick
+## Contact: stephan@stack.nl
+## Supervisors: Stephan Eggermont
+## Keywords: Tools
+## Context:
+Making it possible to access and search the relevant mailing lists from inside any image 
+provides a better feedback loop, especially for new smalltalkers';
+### Goal:
+Have a spotter-like search for the mailing list archives, 
+make it easy to read and answer questions. Implement using Brick.
+### Level: Intermediate
 
-PharoTopic new
 	title: 'Torrent Library for Pharo';
 	contact: 'stephan@stack.nl jdelgado@cs.upc.edu';
 	supervisors: '';
@@ -136,11 +135,8 @@ PharoTopic new
 	context: 'It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used. On smalltalkhub BitDevTalk/BitTalk there is an implementation of the torrent protocol. Some parts (DHT) are not finished. On top of that, we want to be able to distribute our build artifacts and publish our public source.  ' ;
 	goal: 'Finish and extend the library. Add a monticello repository type ';
 	level: 'Intermediate';
-        candidate: '';
-	yourself
-.
 
-PharoTopic new
+
 	title: 'Distributed Issue Tracker';
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont, Diego Lont';
