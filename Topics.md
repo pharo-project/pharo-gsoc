@@ -18,12 +18,11 @@ The goal of this Project is to implement a IPFS client library using the API to 
 ###Level: Normal
 
 
-PharoTopic new
-title: 'CDB for Pharo in Pharo';
-contact: 'stephane.ducasse@inria.fr';
-supervisors: 'stephane.ducasse@inria.fr';
-keywords: 'CDB database';
-context: '
+## Title: CDB for Pharo in Pharo
+### Contact: stephane.ducasse@inria.fr
+### Supervisors: stephane.ducasse@inria.fr
+### Keywords: CDB database
+### Context:
 cdb is a fast, reliable, simple package for creating and reading constant databases. Its database structure provides several features:
 Fast lookups: A successful lookup in a large database normally takes just two disk accesses. An unsuccessful lookup takes only one.
 Low overhead: A database uses 2048 bytes, plus 24 bytes per record, plus the space for keys and data.
@@ -33,12 +32,10 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 - http://cr.yp.to/cdb.html
 - https://github.com/spotify/sparkey
 - http://www.unixuser.org/~euske/doc/cdbinternals/
-';
-goal: 'The goal of this project is to develop a Pharo implementation of CDB.'; 
-level: 'Normal';
-yourself
 
-.
+###Goal:
+The goal of this project is to develop a Pharo implementation of CDB.
+### Level: Normal
 
 PharoTopic new
 title: 'Scrapping Data: Enhancing User Experience';
