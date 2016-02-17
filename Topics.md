@@ -55,6 +55,7 @@
 * [Visual Debugger](#title-visual-debugger)
 * [Roassal 3D](#title-roassal-3d)
 * [GitPharo](#title-gitpharo)
+* [Poppy for phratch](#title-poppy-for-phratch)
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
@@ -864,4 +865,16 @@ Implement a GUI to manipulate and control a git repository from inside Pharo.
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T11:39:31.553566+01:00 by Pharo5.0 of 16 April 2015 update 50585</p>
+##Title: Poppy for phratch
+###Contact: jannik.laval@univ-lyon2.fr
+###Supervisors: Jannik Laval
+###Keywords: robotics smalltalk visual programming
+###Context
+phratch is a visual programming language on top of Pharo (http://www.phratch.com/). We want an interface to control a Poppy robot (https://www.poppy-project.org/).
+###Goal
+The goal is to provide an phratch API to control the whole Poppy robot ecosystem. As Poppy can be modular, we have to consider the feature.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T11:41:23.89464+01:00 by Pharo5.0 of 16 April 2015 update 50585</p>
