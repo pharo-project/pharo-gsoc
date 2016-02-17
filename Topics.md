@@ -37,12 +37,11 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 The goal of this project is to develop a Pharo implementation of CDB.
 ### Level: Normal
 
-PharoTopic new
-title: 'Scrapping Data: Enhancing User Experience';
-contact: 'stephane.ducasse@inria.fr';
-supervisors: 'stephane.ducasse@inria.fr';
-keywords: 'CVS ';
-goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
+##title: 'Scrapping Data: Enhancing User Experience';
+###contact: 'stephane.ducasse@inria.fr';
+###supervisors: 'stephane.ducasse@inria.fr';
+###keywords: 'CVS ';
+###goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
 a CSV, and have a number of heuristics, such as:
 - autodetection of encoding
 - autodetection of quotes and delimiter
@@ -68,33 +67,27 @@ Another thing which would be useful is support for linear algebra, leveraging na
 
 Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. Here I think
 Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
-';
-level: 'Normal';
-yourself
+###level: 'Normal';
 
-.
-
-PharoTopic new
-title: 'Loading V3 ImageSegments in Spur';
-contact: 'eliot.miranda@gmail.com';
-supervisors: 'Bert Freudenberg, Eliot Miranda';
-keywords: 'Pharo ImageSegments Spur';
-context: 'ImageSegments are a fast binary storage and loading facility for Pharo.  
+## Title: Loading V3 ImageSegments in Spur
+### Contact: eliot.miranda@gmail.com
+### Supervisors: Bert Freudenberg, Eliot Miranda
+### Keywords: Pharo ImageSegments Spur
+### Context: 
+ImageSegments are a fast binary storage and loading facility for Pharo.  
 They are supported directly by the virtual machine and use the garbage collector''s tracing machinery 
 to construct the objects to be saved.  They also contain objects in the native heap format of the virtual machine.  
 Amongst other things, ImageSegments have been used for eToys to store student projects.  
 There are literally thousands of eToys projects stored in ImageSegments in the format of the current VM.  
 Spur is a new object representation for the Squeak and Pharo V M that offers more functionality and approximately 
-twice the performance than the existing VM.';
-goal: 'The goal is to allow ImageSegments written by the current VM version, or older VM versions, 
+twice the performance than the existing VM.
+### Goal:
+The goal is to allow ImageSegments written by the current VM version, or older VM versions, 
 to be loaded into a system running on the Spur VM.  
 The project would be written entirely in Smalltalk, without VM support, 
 and have the goal of being able to load old projects in this faster system.';
-level: 'Advanced';
-yourself
-.
+## Level: Advanced
 
-PharoTopic new
 	title: 'Two-way synchronized code changes, better support for cross-platform co-development ';
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont, Diego Lont';
