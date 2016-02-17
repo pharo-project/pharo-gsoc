@@ -877,4 +877,4 @@ The goal is to provide an phratch API to control the whole Poppy robot ecosystem
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T16:40:46.605822+00:00 by Pharo5.0 of 16 April 2015 update 50586</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T16:52:15.618609+00:00 by Pharo5.0 of 16 April 2015 update 50586</p>
