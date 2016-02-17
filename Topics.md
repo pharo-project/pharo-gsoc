@@ -2,9 +2,9 @@
 
 * [IPFS for Pharo](#title-ipfs-for-pharo)
 * [CDB for Pharo in Pharo](#title-cdb-for-pharo-in-pharo)
-* [Scrapping Data: Enhancing User Experience](#title-scrapping-data:-enhancing-user-experience)
+* [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
 * [Loading V3 ImageSegments in Spur](#title-loading-v3-imagesegments-in-spur)
-* [Two-way synchronized code changes, better support for cross-platform co-development ](#title-two-way-synchronized-code-changes,-better-support-for-cross-platform-co-development-)
+* [Two-way synchronized code changes, better support for cross-platform co-development ](#title-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development)
 * [Mailing List Application in Brick](#title-mailing-list-application-in-brick)
 * [Torrent Library for Pharo](#title-torrent-library-for-pharo)
 * [Distributed Issue Tracker](#title-distributed-issue-tracker)
@@ -45,7 +45,7 @@
 * [Miner](#title-miner)
 * [Clean Debian packaging](#title-clean-debian-packaging)
 * [Baobab](#title-baobab)
-* [Do not hack, Refactor!](#title-do-not-hack,-refactor!)
+* [Do not hack, Refactor!](#title-do-not-hack-refactor)
 * [GLL to the rescue](#title-gll-to-the-rescue)
 * [Protobuf support](#title-protobuf-support)
 * [RethinkDB support](#title-rethinkdb-support)
@@ -754,4 +754,4 @@ Pharo is building some gui support, either via GitFileTree or libcgit integratio
 Implement a GUI to manipulate and control a git repository from inside Pharo.
 ###Level: Intermediate
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T11:30:52.868563+01:00 by Pharo5.0 of 16 April 2015 update 50585</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T11:36:02.144015+01:00 by Pharo5.0 of 16 April 2015 update 50585</p>
