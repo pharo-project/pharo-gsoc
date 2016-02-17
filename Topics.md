@@ -31,8 +31,7 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 - http://cr.yp.to/cdb.html
 - https://github.com/spotify/sparkey
 - http://www.unixuser.org/~euske/doc/cdbinternals/
-
-###Goal:
+### Goal:
 The goal of this project is to develop a Pharo implementation of CDB.
 ### Level: Normal
 
@@ -116,11 +115,11 @@ use Announcements.
 Two-way synchronized code changes, 1st target: GLORP
 ### Level: Advanced
 
-### Title: Mailing List Application in Brick
-## Contact: stephan@stack.nl
-## Supervisors: Stephan Eggermont
-## Keywords: Tools
-## Context:
+## Title: Mailing List Application in Brick
+### Contact: stephan@stack.nl
+### Supervisors: Stephan Eggermont
+### Keywords: Tools
+### Context:
 Making it possible to access and search the relevant mailing lists from inside any image 
 provides a better feedback loop, especially for new smalltalkers';
 ### Goal:
@@ -128,20 +127,21 @@ Have a spotter-like search for the mailing list archives,
 make it easy to read and answer questions. Implement using Brick.
 ### Level: Intermediate
 
-	title: 'Torrent Library for Pharo';
-	contact: 'stephan@stack.nl jdelgado@cs.upc.edu';
-	supervisors: '';
-	keywords: 'P2P';
-	context: 'It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used. On smalltalkhub BitDevTalk/BitTalk there is an implementation of the torrent protocol. Some parts (DHT) are not finished. On top of that, we want to be able to distribute our build artifacts and publish our public source.  ' ;
-	goal: 'Finish and extend the library. Add a monticello repository type ';
-	level: 'Intermediate';
+## Title: Torrent Library for Pharo
+### Contact: stephan@stack.nl jdelgado@cs.upc.edu
+### Supervisors:
+### Keywords: P2P
+### Context: 
+It is time to stop depending on centralized infrastructure. We need to be able to use our DVCS the way it is meant to be used. On smalltalkhub BitDevTalk/BitTalk there is an implementation of the torrent protocol. Some parts (DHT) are not finished. On top of that, we want to be able to distribute our build artifacts and publish our public source.
+### Goal:
+Finish and extend the library. Add a monticello repository type.
+### Level: Intermediate
 
-
-	title: 'Distributed Issue Tracker';
-	contact: 'stephan@stack.nl';
-	supervisors: 'Stephan Eggermont, Diego Lont';
-	keywords: 'P2P Tools GUI';
-  	context: 'Technical Details
+## Title: 'Distributed Issue Tracker';
+contact: 'stephan@stack.nl';
+supervisors: 'Stephan Eggermont, Diego Lont';
+keywords: 'P2P Tools GUI';
+context: 'Technical Details
 
 The recent decision by Google to deprecate and stop its API for the Google Issue Tracker used by a.o. the Pharo, Seaside, MOOSE and Metacello projects makes it necessary for those projects to select a different issue tracker. The timespan before this decision has to be made is too short for the development of a new issue tracker from scratch. 
 
