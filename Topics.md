@@ -891,18 +891,19 @@ PharoTopic new
 	goal: 'Implement a solution, probably with some javascript, to export interactive Roassal visualisations and animations with OpenStreetMap backgrounds.';
 	level: 'Intermediate';
 
-title: 'Process networks in Pharo';
-contact: 'thierry.goubier@cea.fr';
-supervisors: 'T. Goubier';
-keywords: 'Process Networks, Dataflow, Slots, FRP';
-context: 
-Pharo 4.0 introduced Slots as a generalisation of instance variables, offering plenty of possibilities for active instance variables. And, for expressing parallel, complex interdependent code, we have a very powerfull concept in dataflows or process networks. Now, what about combining both?';
-goal: 'Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.';
-level: Intermediate
+# Title: Process networks in Pharo
+###contact: thierry.goubier@cea.fr
+###supervisors: T. Goubier
+###keywords: Process Networks, Dataflow, Slots, FRP
+###context: 
+Pharo 4.0 introduced Slots as a generalisation of instance variables, offering plenty of possibilities for active instance variables. And, for expressing parallel, complex interdependent code, we have a very powerfull concept in dataflows or process networks. Now, what about combining both?
+### Goal:
+Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.
+### Level: Intermediate
 
 # Title: Visual Debugger
 ### Contact: alexandre.bergel@me.com
-### Supervisors: 'Andrei Chis Alexandre Bergel
+### Supervisors: Andrei Chis, Alexandre Bergel
 ### Keywords: Debugging Roassal
 ### Context:
 The visual interface of code debugger have always been designed as a set of textual widgets. Although Pharo debugger is famed for its flexibility and ease of use, it unfortunately stick to a poor and restricted support to convey information. Visual Debugger is a project to combine Roassal with GTDebugger to offer a whole range of new debuggers to expose object state history, and message recording.
@@ -914,7 +915,8 @@ Bridge Roassal with GTDebugger and offer the infrastructure to define specific a
 ### Contact: alexandre.bergel@me.com
 ### Supervisors: Alexandre Bergel
 ### Keywords: Roassal 3d
-### Context: Roassal is a successful 2D visualization engine. A first implementation of Roassal 3D has been produced on top of Woden, a bridge between OpenGL and Pharo. However this initial implementation of Roassal 3D is far from being complete (e.g., text is not correctly supported) and examples are compelling missing.
+### Context:
+Roassal is a successful 2D visualization engine. A first implementation of Roassal 3D has been produced on top of Woden, a bridge between OpenGL and Pharo. However this initial implementation of Roassal 3D is far from being complete (e.g., text is not correctly supported) and examples are compelling missing.
 ### Goal:
 Improve Roassal 3D with text support and implement Matrix Cube in it (https://hal.inria.fr/hal-00931911v1/document).
 ### Level: Intermediate
