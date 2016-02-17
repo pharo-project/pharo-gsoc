@@ -947,7 +947,7 @@ PharoTopic new
 	supervisors: 'Thierry Goubier';
 	keywords: 'Pharo Git';
 	context: 'Pharo is building some gui support, either via GitFileTree or libcgit integration, but GUI tools inside Pharo show little of the change.';
-	goal: 'Implement a GUI to manipulate and control a git repository from inside Pharo.'
+	goal: 'Implement a GUI to manipulate and control a git repository from inside Pharo.';
 	level: 'Intermediate';
 	yourself
 .
