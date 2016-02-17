@@ -972,6 +972,6 @@ PharoTopic new
        supervisors: 'Jannik Laval';
        keywords: 'robotics smalltalk visual programming';
        context: 'phratch is a visual programming language on top of Pharo (http://www.phratch.com/). We want an interface to control a Poppy robot (https://www.poppy-project.org/).';
-       goal: 'The goal is to provide an phratch API to control the whole Poppy robot ecosystem. As Poppy can be modular, we have to consider the feature.';
+       goal: 'The goal is to provide an phratch API to control the whole Poppy robot ecosystem. As Poppy can be modular, we have to consider the feature.'
        level: 'Intermediate';
        yourself.
