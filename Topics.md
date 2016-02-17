@@ -890,19 +890,16 @@ PharoTopic new
 	context: 'Roassal can''t export to HTML visualisations using OpenStreetMap';
 	goal: 'Implement a solution, probably with some javascript, to export interactive Roassal visualisations and animations with OpenStreetMap backgrounds.';
 	level: 'Intermediate';
-	yourself
-.
 
-PharoTopic new
-	title: 'Process networks in Pharo';
-	contact: 'thierry.goubier@cea.fr';
-	supervisors: 'T. Goubier';
-	keywords: 'Process Networks, Dataflow, Slots, FRP';
-	context: 'Pharo 4.0 introduced Slots as a generalisation of instance variables, offering plenty of possibilities for active instance variables. And, for expressing parallel, complex interdependent code, we have a very powerfull concept in dataflows or process networks. Now, what about combining both?';
-	goal: 'Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.';
-	level: 'Intermediate';
-	yourself
-	
+title: 'Process networks in Pharo';
+contact: 'thierry.goubier@cea.fr';
+supervisors: 'T. Goubier';
+keywords: 'Process Networks, Dataflow, Slots, FRP';
+context: 
+Pharo 4.0 introduced Slots as a generalisation of instance variables, offering plenty of possibilities for active instance variables. And, for expressing parallel, complex interdependent code, we have a very powerfull concept in dataflows or process networks. Now, what about combining both?';
+goal: 'Reuse a pre-existing process network simulation framework and implement communications in that simulation with slots and active variables, creating a nice and fluid API.';
+level: Intermediate
+
 # Title: Visual Debugger
 ### Contact: alexandre.bergel@me.com
 ### Supervisors: 'Andrei Chis Alexandre Bergel
@@ -928,5 +925,6 @@ Improve Roassal 3D with text support and implement Matrix Cube in it (https://ha
 ### Keywords: Pharo Git
 ### Context: 
 Pharo is building some gui support, either via GitFileTree or libcgit integration, but GUI tools inside Pharo show little of the change.
-### goal: 'Implement a GUI to manipulate and control a git repository from inside Pharo.
+### Goal:
+Implement a GUI to manipulate and control a git repository from inside Pharo.
 ### Level: Intermediate
