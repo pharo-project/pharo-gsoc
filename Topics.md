@@ -386,29 +386,26 @@ PharoTopic new
 A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012' ;
 	yourself
 
-.
 
-PharoTopic new
-	title: 'A Hot Recommander for Pharo';
-	contact: 'yuriy.tymchuk@usi.ch';
-	supervisors: 'Yuriy Tymchuk';
-	keywords: 'recommander tools rules analyses';
-	context: 'Applying SmallLint rules is a task that often arrives late in the development process.';
-	goal: 'The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly ';
-	yourself
+## Title: A Hot Recommander for Pharo
+### Contact: yuriy.tymchuk@usi.ch
+### Supervisors: Yuriy Tymchuk
+### Keywords: recommander tools rules analyses
+### Context:
+Applying SmallLint rules is a task that often arrives late in the development process.
+### Goal
+The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly.
 	
-.
-	
-PharoTopic new
-	title: 'An Expert System Framework';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
-	keywords: 'Expert systems';
-	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for facts).';
-	level: 'Intermediate';
-	yourself
+## Title: An Expert System Framework'
+### Contact: stephane.ducasse@inria.fr
+### Supervisors: S. Ducasse
+### Keywords: Expert systems
+### Context:
+There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.
+### Goal:
+The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for facts).
+### Level: Intermediate
 
-.
 		
 PharoTopic new
 	title: 'Format as you type';
