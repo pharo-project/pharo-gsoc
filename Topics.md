@@ -1,10 +1,10 @@
 
 
-#Title: IPFS for Pharo
-#Contact: marcus.denker@inria.fr
-#Supervisors: marcus.denker@inria.fr
-#Keywords: 'peer to peer file systems'
-#Context
+##Title: IPFS for Pharo
+###Contact: marcus.denker@inria.fr
+###Supervisors: marcus.denker@inria.fr
+###Keywords: 'peer to peer file systems'
+###Context
 IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices with the same system of files. In some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, exchanging objects within one Git repository. In other words, IPFS provides a high throughput content-addressed block storage model, with content-addressed hyperlinks. This forms a generalized Merkle DAG, a data structure upon which one can build versioned file systems, blockchains, and even a Permanent Web. IPFS combines a distributed hashtable, an incentivized block exchange, and a self-certifying namespace. IPFS has no single point of failure, and nodes do not need to trust each other.
 IPFS right now is implemented as a server process in Go and allows the global file system to be mounted as a user space filesystem. In addition, the server provides an API.
 A real integration of IPFS with Pharo would require a complete implementation of IPFS in Pharo (projects are already in early stages to implement it in JavaScript and Python).
@@ -13,9 +13,9 @@ More information:
 
 	https://ipfs.io
 
-#Goal
+###Goal
 The goal of this Project is to implement a IPFS client library using the API to communicate with the existing server and start to experiment how IPFS can be used with Pharo. For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide access to resources via IPFS.
-#Level: Normal
+###Level: Normal
 
 
 PharoTopic new
