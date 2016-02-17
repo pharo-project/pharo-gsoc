@@ -1,4 +1,4 @@
-##Title: IPFS for Pharo
+#Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
 ###Supervisors: marcus.denker@inria.fr
 ###Keywords: 'peer to peer file systems'
@@ -15,7 +15,9 @@ More information:
 The goal of this Project is to implement a IPFS client library using the API to communicate with the existing server and start to experiment how IPFS can be used with Pharo. For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide access to resources via IPFS.
 ###Level: Normal
 
-## Title: CDB for Pharo in Pharo
+***
+
+# Title: CDB for Pharo in Pharo
 ### Contact: stephane.ducasse@inria.fr
 ### Supervisors: stephane.ducasse@inria.fr
 ### Keywords: CDB database
@@ -29,11 +31,14 @@ Fast database dumps: cdbdump prints the contents of a database in cdbmake-compat
 - http://cr.yp.to/cdb.html
 - https://github.com/spotify/sparkey
 - http://www.unixuser.org/~euske/doc/cdbinternals/
+
 ### Goal:
 The goal of this project is to develop a Pharo implementation of CDB.
 ### Level: Normal
 
-## Title: Scrapping Data: Enhancing User Experience
+***
+
+# Title: Scrapping Data: Enhancing User Experience
 ### Contact: stephane.ducasse@inria.fr
 ### Supervisors: stephane.ducasse@inria.fr
 ### Keywords: CVS
@@ -66,7 +71,9 @@ Ideally, I would include also some tutorials, for instance for dealing with stan
 Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
 ###level: Normal
 
-## Title: Loading V3 ImageSegments in Spur
+***
+
+# Title: Loading V3 ImageSegments in Spur
 ### Contact: eliot.miranda@gmail.com
 ### Supervisors: Bert Freudenberg, Eliot Miranda
 ### Keywords: Pharo ImageSegments Spur
@@ -85,7 +92,9 @@ The project would be written entirely in Smalltalk, without VM support,
 and have the goal of being able to load old projects in this faster system.';
 ### Level: Advanced
 
-## Title: Two-way synchronized code changes, better support for cross-platform co-development
+***
+
+# Title: Two-way synchronized code changes, better support for cross-platform co-development
 ### Contact: stephan@stack.nl
 ### Supervisors: Stephan Eggermont, Diego Lont
 ### Keywords: 
@@ -113,7 +122,9 @@ use Announcements.
 Two-way synchronized code changes, 1st target: GLORP
 ### Level: Advanced
 
-## Title: Mailing List Application in Brick
+***
+
+# Title: Mailing List Application in Brick
 ### Contact: stephan@stack.nl
 ### Supervisors: Stephan Eggermont
 ### Keywords: Tools
@@ -125,7 +136,9 @@ Have a spotter-like search for the mailing list archives,
 make it easy to read and answer questions. Implement using Brick.
 ### Level: Intermediate
 
-## Title: Torrent Library for Pharo
+***
+
+# Title: Torrent Library for Pharo
 ### Contact: stephan@stack.nl jdelgado@cs.upc.edu
 ### Supervisors:
 ### Keywords: P2P
@@ -135,7 +148,9 @@ It is time to stop depending on centralized infrastructure. We need to be able t
 Finish and extend the library. Add a monticello repository type.
 ### Level: Intermediate
 
-## Title: 'Distributed Issue Tracker';
+***
+
+# Title: 'Distributed Issue Tracker';
 contact: 'stephan@stack.nl';
 supervisors: 'Stephan Eggermont, Diego Lont';
 keywords: 'P2P Tools GUI';
@@ -161,7 +176,9 @@ Benefits to the Community
 better integrated workflow
 native issue tracker, accessible both in-image, web and automated
 showcase for productive environment  ';
-	goal: 'A native smalltalk distributed issue tracker. It should have basic issue tracking functionality including attaching files/pictures/code. It should have a native interface, a web interface and a scripting API. Primary development is in Pharo.
+
+### Goal
+A native smalltalk distributed issue tracker. It should have basic issue tracking functionality including attaching files/pictures/code. It should have a native interface, a web interface and a scripting API. Primary development is in Pharo.
 
 Issue trackers have different kind of users. To make clear that different users have different needs, persona can be helpful. 
 
@@ -180,75 +197,81 @@ Daniel is a maintainer of the vm that forms the basis for the Pharo vm. The vm i
 Lara is a release manager for a well known linux distribution. Pharo is just one of 30 languages that are included in the distribution. Before doing a release she scans the issue tracker for any show stoppers. She had to stop including environments because of security issues.
 
 Thabo has been using Excel to track bugs and issues internally in his company and would like to move to a new distributed tracking system built in Pharo. Apart from all the usual inputs and outputs, he needs to be able to import his massive excel spreedsheat, as perhaps csv, into the new tracking system.
-';
-	level: 'Advanced';
-	yourself
 
-.
+###Level: 'Advanced'
 
-PharoTopic new
-	title: '7GUIs implementation';
-	contact: 'Alain Plantec';
-	supervisors: '';
-	keywords: 'GUI learning-curve';
-	context: 'Benchmarking how hard easy is to implement GUIs in a given platform is probably a decisive factor on how good the opportunities this plattform has to offer. The 7GUIs benchmark is a nice research on GUI building usability and having a Pharo implementation will illlustrate the power of this platform. Ref: https://github.com/eugenkiss/7guis/wiki';
-	goal: 'Be able to see a Pharo implementation for 7GUIs on top of Brick the new widgets layer of Pharo.';
-	level: 'Intermediate';
+***
 
-## Title: Desktop application for offline text search
+# Title: '7GUIs implementation'
+###Contact: 'Alain Plantec'
+###Supervisors: ''
+###Keywords: 'GUI learning-curve'
+###Context
+Benchmarking how hard easy is to implement GUIs in a given platform is probably a decisive factor on how good the opportunities this plattform has to offer. The 7GUIs benchmark is a nice research on GUI building usability and having a Pharo implementation will illlustrate the power of this platform. Ref: https://github.com/eugenkiss/7guis/wiki
+###Goal
+Be able to see a Pharo implementation for 7GUIs on top of Brick the new widgets layer of Pharo.
+###Level: 'Intermediate'
+
+***
+
+# Title: Desktop application for offline text search
 ### Contact: 'mbaehr+pharo@iaeste.at
 ### Supervisors: Martin Bähr
 ### Keywords: desktop gui spec
 ### Context:
 Exploring spec and fulltext search capabilities. http://labs.fossasia.org/projects/smalltalk-search-app/
 ### Goal: 
-Aworking application and documentation that allows others to learn how to build applications with spec
+A working application and documentation that allows others to learn how to build applications with spec
 ### Level: Beginner
 
-	title: 'Server control panel';
-	contact: 'mbaehr+pharo@iaeste.at';
-	supervisors: 'Martin Bähr';
-	keywords: 'gui server-management asset-management';
-	context: 'file editor and asset and server manager solution, http://labs.fossasia.org/projects/smalltalk-file-editor/';
-	goal: 'a tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk';
-	level: 'Beginner';
-	yourself
-.
+***
 
-PharoTopic new
-	title: 'GUI builder';
-	contact: '';
-	supervisors: '';
-	keywords: 'GUI tooling';
-	context: 'If whatever you are doing you cannot make it visual easily, people cannot perceive it easily. Due to evolutionary reasons, our brain has unfair bias towards visual processing. Lets make something that allows Pharo to create visual things easier. Something like PARTS or Dolphin Smalltalk GUI builder would be huge.';
-	goal: 'Be able to create composable widgets for Pharo programs';
-	level: 'Intermediate';
-	yourself
-.
+#TItle: 'Server control panel'
+###Contact: 'mbaehr+pharo@iaeste.at'
+###Supervisors: 'Martin Bähr'
+###Keywords: 'gui server-management asset-management'
+###Context: [file editor and asset and server manager solution](http://labs.fossasia.org/projects/smalltalk-file-editor/)
+###Goal
+A tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk
+###Level: 'Beginner'
 
-PharoTopic new
-	title: 'REPL IDE';
-	contact: '';
-	supervisors: '';
-	keywords: 'REPL IDE tooling';
-	context: 'Smalltalkers are used to very powerful IDEs. What if we have to put Pharo in a really underpowered or monitorless device? Having a powerful REPL IDE that can evaluate expressions, inspect and debug, would empower users to still do things in mini-devices during the incoming tide wave of internet-of-things.';
-	goal: 'Be able to evaluate expressions, inspect and debug Pharo programs using a REPL and a terminal';
-	level: 'Intermediate';
-	yourself
+***
 
-.
+#Title: 'GUI builder'
+###Contact: ''
+###Supervisors: ''
+###Keywords: 'GUI tooling'
+###Context
+If whatever you are doing you cannot make it visual easily, people cannot perceive it easily. Due to evolutionary reasons, our brain has unfair bias towards visual processing. Lets make something that allows Pharo to create visual things easier. Something like PARTS or Dolphin Smalltalk GUI builder would be huge.
+###Goal
+Be able to create composable widgets for Pharo programs
+###Level: 'Intermediate'
 
-PharoTopic new
-	title: 'Cross platform native GUI';
-	contact: '';
-	supervisors: '';
-	keywords: 'GUI';
-	context: 'The web is fantastic but at the same time there is a big pressure to create great native applications due to the improved User Experience that the native widgets can provide. Making Pharo to create them via things like wxWidgets (https://www.wxwidgets.org/about/screenshots/) would instantly create opportunities to develop fast applications with a great UX.';
-	goal: 'Be able to create and model native GUI from Pharo for OS X, Linux and Windows';
-	level: 'Intermediate';
-	yourself
+***
 
-.
+#Title: 'REPL IDE'
+###Contact: ''
+###Supervisors: ''
+###Keywords: 'REPL IDE tooling'
+###Context
+Smalltalkers are used to very powerful IDEs. What if we have to put Pharo in a really underpowered or monitorless device? Having a powerful REPL IDE that can evaluate expressions, inspect and debug, would empower users to still do things in mini-devices during the incoming tide wave of internet-of-things.
+###Goal
+Be able to evaluate expressions, inspect and debug Pharo programs using a REPL and a terminal
+###Level: 'Intermediate'
+
+***
+
+#Title: 'Cross platform native GUI'
+###Contact: ''
+###Supervisors: ''
+###Keywords: 'GUI'
+###Context
+The web is fantastic but at the same time there is a big pressure to create great native applications due to the improved User Experience that the native widgets can provide. Making Pharo to create them via things like [wxWidgets](https://www.wxwidgets.org/about/screenshots/) would instantly create opportunities to develop fast applications with a great UX.
+###Goal
+Be able to create and model native GUI from Pharo for OS X, Linux and Windows
+###Level: 'Intermediate'
+
+***
 
 PharoTopic new
 	title: 'Hadoop';
