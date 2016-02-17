@@ -49,6 +49,7 @@ title: 'Scrapping Data: Enhancing User Experience';
 contact: 'stephane.ducasse@inria.fr';
 supervisors: 'stephane.ducasse@inria.fr';
 keywords: 'CVS ';
+context: '';
 goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
 a CSV, and have a number of heuristics, such as:
 - autodetection of encoding
