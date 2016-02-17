@@ -379,6 +379,7 @@ PharoTopic new
 	supervisors: 'Damien Cassou and Mariano Martinez Peck';
 	keywords: 'OS VM';
 	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.  http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html';
+	goal: '';
 	level: 'Advanced';
 	yourself
 .
@@ -675,6 +676,7 @@ PharoTopic new
 	keywords: 'Launcher is a cool tool to launch and organize Pharo images';
 	context: 'Launcher is important for both new and advanced Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. Demonstration: https://www.youtube.com/watch?v=fNim2Yxs320.
 ';
+	goal: '';
 	level: 'Intermediate';
 	candidate: '';
 	yourself
