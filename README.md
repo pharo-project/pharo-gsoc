@@ -14,17 +14,17 @@ If you are looking for list of topics for GSOC 2016 please see http://gsoc.pharo
 Please propose your own project by following the following template. You can edit the list on github here: https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st and send a pull request.
 
 ```smalltalk
-     PharoTopic new
-       title: 'The name of your project;
-       contact: 'email address';
-       supervisors: 'Supervisors names';
-       keywords: 'keywords separated by spaces;
-       context: 'a description of the context of the project';
-       goal: 'description of the goal';
-       level: 'Beginner or Intermediate or Advanced';
-       yourself
+PharoTopic new
+	title: 'The name of your project';
+	contact: 'email address';
+	supervisors: 'Supervisors names';
+	keywords: 'keywords separated by spaces';
+	context: 'a description of the context of the project';
+	goal: 'description of the goal';
+	level: 'Beginner or Intermediate or Advanced';
+	yourself
 
-	   .
+	.
 
 ```
 
