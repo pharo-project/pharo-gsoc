@@ -1,5 +1,5 @@
 tests
 testBuildMd
 	PharoTopicsMdPageTool new
-		dataFromFile: 'Topics.st' asFileReference;
+		dataFromFile: self home / 'Topics.st';
 		generatePageFile: 'Topics.md'

@@ -1,5 +1,5 @@
 tests
 testBuildHtml
 	PharoTopicsPageTool new
-		dataFromFile: 'Topics.st' asFileReference;
+		dataFromFile: self home / 'Topics.st';
 		generatePageFile: 'Topics.html'
