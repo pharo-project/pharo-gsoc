@@ -15,8 +15,8 @@ setup-git() {
 deploy() {
 	git clone --quiet --branch=gh-pages "https://${GH_TOKEN}@github.com/$USER/$REPO.git" gh-pages > /dev/null
 	cd gh-pages
-	cp $HOME/Topics.index index.html
-	cp $HOME/Topics.md .
+	cp $SMALLTALK_CI_BUILD/Topics.html index.html
+	cp $SMALLTALK_CI_BUILD/Topics.md .
 	git add .
 	git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
 	git push -fq origin gh-pages > /dev/null
@@ -28,5 +28,5 @@ main() {
 }
 
 #if [[ "$TRAVIS_BRANCH" == "master" ]] && [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
-	main
+main
 #fi

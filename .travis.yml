@@ -1,19 +1,15 @@
-language: bash
+language: smalltalk
 sudo: false
+
+os:
+  - linux
 
 env:
   global:
     secure: "PTuZ5CxHAYX4QTUJqUwMdDzoPwszu8OufQHKxrYVoFNTTQbtlE6b+yBI1cl7he98emlEKwQC5td6ABlO9wHual8clrElfnERrW9xh1KHVVN6+z8DQ6G40bEfYSiJHRBSg2Vu/wkc9F3Hs33dkicFD+RFvd+wIS5HbkuDi9y3y78="
 
-install:
-  - wget --quiet -O - get.pharo.org/50+vm | bash
-  - ./pharo Pharo.image config http://smalltalkhub.com/mc/Pharo/PharoPeople/main ConfigurationOfPharoPeople --install=bleedingEdge
-
-script:
-  - |-
-      ./pharo Pharo.image eval "PharoTopicsPageTool new dataFromFile: 'Topics.st'; generatePageFile: 'Topics.html'"
-  - |-
-      ./pharo Pharo.image eval "PharoTopicsMdPageTool new dataFromFile: 'Topics.st'; generatePageFile: 'Topics.md'"
+smalltalk:
+  - Pharo-5.0
 
 after_success:
   - ./update-gh-pages.sh
