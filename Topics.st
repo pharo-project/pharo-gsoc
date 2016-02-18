@@ -856,6 +856,38 @@ PharoTopic new
 .
 
 PharoTopic new
+	title: 'Weather/Meteo for OpenStreetMap in Roassal';
+	contact: 'onil.goubier@gmail.com';
+	supervisors: 'O. Goubier';
+	keywords: 'Grib,  OpenStreetMaps, Roassal';
+	context: '
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
+visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!';
+	goal: '
+The goal of this project is to add a support for importing Grib data sets (https://en.wikipedia.org/wiki/GRIB) in Roassal. Those
+datasets give access to weather information and predictions from many sources, and we need a support to import such files into
+Pharo and Roassal';
+	level: 'intermediate';
+	yourself	
+.
+
+PharoTopic new
+	title: 'GRASS integration with Pharoo/Roassal';
+	contact: 'onil.goubier@gmail.com';
+	supervisors: 'O. Goubier';
+	keywords: 'GIS, GRASS, Roassal';
+	context: '
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
+visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!';
+	goal: '
+The goal of this project is to integrate GRASS (https://grass.osgeo.org/) with Pharo. GRASS provides an extensive set of
+advanced GIS functions (modeling, simulations, data import, projections, etc...) and should be integrated inside Pharo,
+first as a set of external commands (with a Pharo-based GUI front-end), and maybe as a FFI interface.';
+	level: 'intermediate';
+	yourself	
+.
+
+PharoTopic new
 	title: 'GLL to the rescue';
 	contact: 'thierry.goubier@cea.fr';
 	supervisors: 'T. Goubier';
@@ -885,17 +917,6 @@ PharoTopic new
 	keywords: 'persistence, nosql, protobuf';
 	context: 'RethinkDB is great for notifications etc. But there is no Pharo client.';
 	goal: 'Get a RethinkDB client for Pharo';
-	level: 'Intermediate';
-	yourself
-.
-
-PharoTopic new
-	title: 'Athens for the Pi';
-	contact: 'thierry.goubier@cea.fr';
-	supervisors: 'T. Goubier';
-	keywords: 'GUI, Graphics, Roassal, Raspberry Pi';
-	context: 'Roassal rely on Athens for its graphics, and Athens uses NativeBoost to talk to Cairo: this makes it x86 only, leaving Pi users wanting nice graphics in the cold.';
-	goal: 'Implement a solution for the Pi: either Athens using bitblt, or a FFI link to Cairo on the Raspberry Pi. Bonus: see if the anti-aliasing bitblt of Cuis could be used.';
 	level: 'Intermediate';
 	yourself
 .
