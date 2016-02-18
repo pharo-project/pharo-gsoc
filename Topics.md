@@ -46,10 +46,11 @@
 * [Clean Debian packaging](#title-clean-debian-packaging)
 * [Baobab](#title-baobab)
 * [Do not hack, Refactor!](#title-do-not-hack-refactor)
+* [Weather/Meteo for OpenStreetMap in Roassal](#title-weathermeteo-for-openstreetmap-in-roassal)
+* [GRASS integration with Pharoo/Roassal](#title-grass-integration-with-pharooroassal)
 * [GLL to the rescue](#title-gll-to-the-rescue)
 * [Protobuf support](#title-protobuf-support)
 * [RethinkDB support](#title-rethinkdb-support)
-* [Athens for the Pi](#title-athens-for-the-pi)
 * [Roassal HTML5 export for OpenStreetMap](#title-roassal-html5-export-for-openstreetmap)
 * [Process networks in Pharo](#title-process-networks-in-pharo)
 * [Visual Debugger](#title-visual-debugger)
@@ -757,6 +758,40 @@ The goal of this project is to extend the AltBrowser IDE and GUI with strong ref
 
 ***
 
+##Title: Weather/Meteo for OpenStreetMap in Roassal
+###Contact: onil.goubier@gmail.com
+###Supervisors: O. Goubier
+###Keywords: Grib,  OpenStreetMaps, Roassal
+###Context
+
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
+visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!
+###Goal
+
+The goal of this project is to add a support for importing Grib data sets (https://en.wikipedia.org/wiki/GRIB) in Roassal. Those
+datasets give access to weather information and predictions from many sources, and we need a support to import such files into
+Pharo and Roassal
+###Level: intermediate
+
+***
+
+##Title: GRASS integration with Pharoo/Roassal
+###Contact: onil.goubier@gmail.com
+###Supervisors: O. Goubier
+###Keywords: GIS, GRASS, Roassal
+###Context
+
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
+visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!
+###Goal
+
+The goal of this project is to integrate GRASS (https://grass.osgeo.org/) with Pharo. GRASS provides an extensive set of
+advanced GIS functions (modeling, simulations, data import, projections, etc...) and should be integrated inside Pharo,
+first as a set of external commands (with a Pharo-based GUI front-end), and maybe as a FFI interface.
+###Level: intermediate
+
+***
+
 ##Title: GLL to the rescue
 ###Contact: thierry.goubier@cea.fr
 ###Supervisors: T. Goubier
@@ -789,18 +824,6 @@ Protobuf compiler and client for Pharo
 RethinkDB is great for notifications etc. But there is no Pharo client.
 ###Goal
 Get a RethinkDB client for Pharo
-###Level: Intermediate
-
-***
-
-##Title: Athens for the Pi
-###Contact: thierry.goubier@cea.fr
-###Supervisors: T. Goubier
-###Keywords: GUI, Graphics, Roassal, Raspberry Pi
-###Context
-Roassal rely on Athens for its graphics, and Athens uses NativeBoost to talk to Cairo: this makes it x86 only, leaving Pi users wanting nice graphics in the cold.
-###Goal
-Implement a solution for the Pi: either Athens using bitblt, or a FFI link to Cairo on the Raspberry Pi. Bonus: see if the anti-aliasing bitblt of Cuis could be used.
 ###Level: Intermediate
 
 ***
@@ -877,4 +900,4 @@ The goal is to provide an phratch API to control the whole Poppy robot ecosystem
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-17T17:03:34.470506+00:00 by Pharo5.0 of 16 April 2015 update 50586</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-18T15:39:18.716786+00:00 by Pharo5.0 of 16 April 2015 update 50588</p>
