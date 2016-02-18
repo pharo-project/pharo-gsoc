@@ -56,7 +56,7 @@
 * [Visual Debugger](#title-visual-debugger)
 * [Roassal 3D](#title-roassal-3d)
 * [GitPharo](#title-gitpharo)
-* [Poppy for phratch](#title-poppy-for-phratch)
+* [In-image WYSIWYG documentation system in Bloc](#title-in-image-wysiwyg-documentation-system-in-bloc)
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
@@ -888,16 +888,104 @@ Implement a GUI to manipulate and control a git repository from inside Pharo.
 
 ***
 
-##Title: Poppy for phratch
-###Contact: jannik.laval@univ-lyon2.fr
-###Supervisors: Jannik Laval
-###Keywords: robotics smalltalk visual programming
+##Title: In-image WYSIWYG documentation system in Bloc
+###Contact: stephan@stack.nl
+###Supervisors: Stephan Eggermont
+###Keywords: GUI TeX Framemaker
 ###Context
-phratch is a visual programming language on top of Pharo (http://www.phratch.com/). We want an interface to control a Poppy robot (https://www.poppy-project.org/).
+The current documentation model for Pharo is Pillar.
+Pillar is the document model from the Pier CMS and
+provides exports to (a.o) html and LaTeX. It is a
+simplified form of the LaTeX document model
+without a WYSIWYG UI.
+
+In the research world two documentation systems
+dominate: LaTeX and Word. Word and its clones
+dominate areas where ease of use for small papers
+without maths are important, LaTeX the other fields.
+
+From personal experience I know that the lack of
+abstraction in Word and clones makes it very expensive
+to create large, consistently formatted documents.
+In addition, the typographical quality of the resulting
+documents is much lower than that achievable with
+LaTeX.
+
+On the other hand, repurposing LaTeX to generate
+anything other than PDF/paper documentation is
+difficult because of the underlying language that
+LaTeX is written in, and there is no easy to use
+WYSIWYG UI for LaTeX.
+
+It pains me to see the return of text based formatting
+with primitive formats like markdown. At least in LaTeX
+you can preserve semantics level content, in markdown
+we are back at html 1.0.
+
+The program I liked best for creating longer documents
+was Framemaker. That provided the needed abstractions
+in an efficient WYSIWYG UI. Framemaker was sold
+from 1986, so the performance of current hardware
+should be enough to run something similar in smalltalk.
+I used versions 5.5 and 6, and had to abandon it when
+Adobe stopped development and it was never migrated
+from PowerPC.
+
+Framemaker was fast enough to create books with
+hundreds and even thousands of pages. It had working
+versions of the long document features Word claimed to
+have.
+
+With Athens, Rubric and TxText we now have low level
+abstractions for dealing with cursor and selection, fonts,
+rendering glyphs and having both on-screen and 
+PDF output. Bloc provvides the abstractions for an advanced GUI.
+
+Consider the following model:
+
+A book consists of a number of named documents.
+This is essential for dealing with longer material, as
+in a wysiwyg system we want to avoid having to re-layout
+too much after a key is pressed. Across documents we only
+need to remember the starting page/section numbers.
+
+Each document consists of pages. On a page there can be fixed
+content and content that is dependent on the text flow.
+Most pages of a document have a similar layout, so each page
+refers to a masterpage that defines the default content.
+A document can have separate masterpages for
+first, left and right pages, and rotated or extra large ones. 
+A masterpage can define fixed items and calculated ones
+(pagenumbers and current chapter). A textframedefinition
+describes the textframes and the textflow for each textframe.
+
+The text (and other in-line contents) of the document are stored
+in paragraphs, which are stored in textflows.
+The paragraphstyle of a paragraph knows how to layout it in
+a textframe, and how to deal with the end of a textframe.
+The paragraphstyle knows how to paginate, how to number
+or provide other autotext at the beginning of a paragraph and
+if the paragraph text should be part of a table of contents.
+A textframe is  a (rectangular) area on a page.
+The characterstyle of a paragraph is responsible for the font family,
+size and style. The characterstyle can be overridden
+by a specific paragraph or by a textrange.
+
+With a model like this (and adding maths, tables, notes, figures
+and references) we should be able to use Pharo to create both
+high-quality documentation, and write research articles
+(and books) in-image.
+
+This model maps well to but is an extension of the cocoa and gnustep 
+text model that use textstorage, textcontainer, typesetter, layoutmanager, 
+glyphgenerator, textview and textinput. 
+
 ###Goal
-The goal is to provide an phratch API to control the whole Poppy robot ecosystem. As Poppy can be modular, we have to consider the feature.
-###Level: Intermediate
+Build a prototype WYSIWYG editor for documentation in Pharo. 
+Create the basic datastructures to work as described in the context,
+driven by tests. Use TeX-like linebreaking and hypenation.
+###Level: Advanced
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-18T15:39:18.716786+00:00 by Pharo5.0 of 16 April 2015 update 50588</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-18T15:47:02.2446+00:00 by Pharo5.0 of 16 April 2015 update 50588</p>
