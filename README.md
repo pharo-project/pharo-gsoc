@@ -6,7 +6,7 @@ You can see the list also in markdown format: [Topics.md](https://github.com/pha
 
 ## GSOC 2016
 
-If you are looking for list of topics for GSOC 2016 please see http://gsoc.pharo.org/ or [Topics.md](https://github.com/pharo-project/pharo-project-proposals/blob/gh-pages/Topics.md).
+If you are looking for list of topics for GSOC 2016 please see [gsoc.pharo.org](http://gsoc.pharo.org/) or [Topics.md](https://github.com/pharo-project/pharo-project-proposals/blob/gh-pages/Topics.md).
 
 
 ## Adding a Proposal
@@ -22,11 +22,6 @@ PharoTopic new
 	context: 'a description of the context of the project';
 	goal: 'description of the goal';
 	level: 'Beginner or Intermediate or Advanced';
-	yourself
-
-	.
-
+	yourself.
 ```
-
-Do not use a dynamic array, **Separate objects with a dot on a line on its own**.
 
