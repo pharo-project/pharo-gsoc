@@ -1125,3 +1125,24 @@ driven by tests. Use TeX-like linebreaking and hypenation.';
 level: 'Advanced';
 yourself
 .
+
+PharoTopic new
+	title: 'DPI-awareness in Pharo';
+	contact: 'corrodi@inf.unibe.ch';
+	supervisors: 'Claudio Corrodi, Yuriy Tymchuk';
+	keywords: 'GUI, usability, vm'; 
+	context: 'Due to the rise of high-resolution displays in recent years, user interfaces that use fixed pixel-sizes for drawing certain elements tend to become too small to read. While operating systems can scale them up to some degree, the results are often blurry. Instead, programmers should write code that does not rely on fixed sizes, but instead draw elements depending on the DPI values of the current screen in order to ensure readable interfaces on every display.';
+	goal: 'Pharo is currently not DPI aware. The goal of this project is to change this and add proper support for high-resolution displays to Pharo. This project may include both work on the Pharo virtual machine and within the image.';
+	level: 'Advanced';
+	yourself.
+
+
+PharoTopic new
+	title: 'Pharo WM';
+	contact: 'corrodi@inf.unibe.ch';
+	supervisors: 'Claudio Corrodi, Yuriy Tymchuk';
+	keywords: 'tools, GUI, window managers, usability';
+	context: 'Pharo comes with a window manager that is responsible for drawing and placing windows and their contents. Outside of Pharo, a large variety of window managers exist that implement different styles and methodologies.';
+	goal: 'The goal of this project is to explore the possibility of alternate window mangers for Pharo by investigating existing implementations, exploring ideas for different ways of managing windows, and implementing such a window manager either from scratch or on top of existing work.';
+	level: 'Intermediate';
+	yourself.
