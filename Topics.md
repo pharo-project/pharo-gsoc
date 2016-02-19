@@ -988,4 +988,4 @@ driven by tests. Use TeX-like linebreaking and hypenation.
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-18T15:47:02.2446+00:00 by Pharo5.0 of 16 April 2015 update 50588</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-19T11:03:06.495747+00:00 by Pharo5.0 of 16 April 2015 update 50592</p>
