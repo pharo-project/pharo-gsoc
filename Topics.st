@@ -316,7 +316,7 @@ PharoTopic new
 PharoTopic new
 	title: 'SQL Alchemy in Pharo';
 	contact: '';
-	supervisors: '';
+	supervisors: ''
 	keywords: 'persistence database sql relational dsl';
 	context: 'Big-data is a growing market that is easy to mine with a tool like Python''s SQL Alchemy. A Pharo version of such powerful tool would open this market opportunity for people wanting to offer Pharo-based solutions in this segment. Smalltalk''s syntax and tooling superiority could provide a significant push forward in this technology competitiveness because they might empower Pharo users to deliver solutions faster (ref: http://www.sqlalchemy.org/)';
 	goal: 'Have a beta working version of a SQL Alchemy like framework in Pharo';
