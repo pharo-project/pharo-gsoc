@@ -25,14 +25,22 @@
 * [Enhancing file ownership](#title-enhancing-file-ownership)
 * [Better Message Browser](#title-better-message-browser)
 * [Bug Importer for Moose](#title-bug-importer-for-moose)
+* [A Hot Recommander for Pharo](#title-a-hot-recommander-for-pharo)
+* [An Expert System Framework](#title-an-expert-system-framework)
+* [Format as you type](#title-format-as-you-type)
+* [Improving the code formatter](#title-improving-the-code-formatter)
+* [ARM ASMJIT](#title-arm-asmjit)
 * [Improving code completion](#title-improving-code-completion)
+* [Omnipresent Code Manager](#title-omnipresent-code-manager)
 * [Support for change code review](#title-support-for-change-code-review)
+* [Improving String manipulation](#title-improving-string-manipulation)
 * [Stepping Interpreter](#title-stepping-interpreter)
 * [New Collections for Pharo](#title-new-collections-for-pharo)
 * [Thread-based programming](#title-thread-based-programming)
 * [From BNF to PetitParser](#title-from-bnf-to-petitparser)
 * [Line level test coverage and which test to run](#title-line-level-test-coverage-and-which-test-to-run)
 * [Merlin in Spec](#title-merlin-in-spec)
+* [Better pointer explorer](#title-better-pointer-explorer)
 * [Memory profiler](#title-memory-profiler)
 * [Epub generator for Pillar](#title-epub-generator-for-pillar)
 * [OpenDocument generator for Pillar](#title-opendocument-generator-for-pillar)
@@ -42,9 +50,14 @@
 * [Web OpenStreet map manager](#title-web-openstreet-map-manager)
 * [Sokoban](#title-sokoban)
 * [SameTile](#title-sametile)
+* [Tetris](#title-tetris)
 * [Miner](#title-miner)
 * [Clean Debian packaging](#title-clean-debian-packaging)
 * [Baobab](#title-baobab)
+* [Tools for the Counch Module System](#title-tools-for-the-counch-module-system)
+* [New generation finder](#title-new-generation-finder)
+* [SUnit compiler](#title-sunit-compiler)
+* [Revisiting Environments](#title-revisiting-environments)
 * [Do not hack, Refactor!](#title-do-not-hack-refactor)
 * [Weather/Meteo for OpenStreetMap in Roassal](#title-weathermeteo-for-openstreetmap-in-roassal)
 * [GRASS integration with Pharoo/Roassal](#title-grass-integration-with-pharooroassal)
@@ -56,7 +69,13 @@
 * [Visual Debugger](#title-visual-debugger)
 * [Roassal 3D](#title-roassal-3d)
 * [GitPharo](#title-gitpharo)
+* [Arduino for phratch](#title-arduino-for-phratch)
+* [Interactive Test Coverage Assistance](#title-interactive-test-coverage-assistance)
+* [GitHubcello Configuration Loader](#title-githubcello-configuration-loader)
+* [External-Properties-Aware Diff](#title-external-properties-aware-diff)
+* [Poppy for phratch](#title-poppy-for-phratch)
 * [In-image WYSIWYG documentation system in Bloc](#title-in-image-wysiwyg-documentation-system-in-bloc)
+* [DPI-awareness in Pharo](#title-dpi-awareness-in-pharo)
 * [Pharo WM](#title-pharo-wm)
 
 ##Title: IPFS for Pharo
@@ -483,6 +502,68 @@ A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. M
 
 ***
 
+##Title: A Hot Recommander for Pharo
+###Contact: yuriy.tymchuk@usi.ch
+###Supervisors: Yuriy Tymchuk
+###Keywords: recommander tools rules analyses
+###Context
+Applying SmallLint rules is a task that often arrives late in the development process.
+###Goal
+The goal of this project is to build a recommander system that can execute after each compilation a set of rules on the edited code. The set of rules may adapt by taking into account the choices of the programmer. The tasks for this project could be: (1) add a menu (so that the system stay modular) to execute rules from the MonticelloBrowser, (2) build a recommander that executes a set of rules (3) taking into account the manifest of the package to filter out rules, (4) make sure that we can open the critics browser on the results. (5) Offer a way to select the rules that are executed on the fly 
+###Level: Currently undefined, we are working on it.
+
+***
+
+##Title: An Expert System Framework
+###Contact: stephane.ducasse@inria.fr
+###Supervisors: S. Ducasse
+###Keywords: Expert systems
+###Context
+There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.
+###Goal
+The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for facts).
+###Level: Intermediate
+
+***
+
+##Title: Format as you type
+###Contact: marcus.denker@inria.fr
+###Supervisors: Marcus Denker and S. Ducasse
+###Keywords: formating AST PetitParser SmaCC
+###Context
+Automatic formatting of code is really important.
+###Goal
+The goal of the project is to build a code formatter that will work when we type the code. One of the problem is how to deal with incomplete code. One idea is to use heuristics to propose some nodes to make the AST well-formed. One idea could be to reformat after each space or dot. A possible path is to see if this is possible to use the potential followers (in terms of Petit Parser) to complement the AST.
+(1) Studying the default static formatter of Pharo, (2) Studying Petit Parser, (3) Adding a special error handling to Petit Parser, (4) Experiment and selecting heuristics
+###Level: Advanced
+
+***
+
+##Title: Improving the code formatter
+###Contact: marcus.denker@inria.fr
+###Supervisors: Marcus Denker
+###Keywords: formating AST PetitParser SmaCC
+###Context
+Code formatting is really important.
+###Goal
+The goal of the project is to enhance the current code formatter.
+(1) Studying the default static formatter of Pharo, (2) Extending it to take into account selector length, (3) Write some tests to characterize specific versions, (4) Improving the edge cases.
+###Level: Intermediate
+
+***
+
+##Title: ARM ASMJIT
+###Contact: siguctua@gmail.com
+###Supervisors: I. Stasenko
+###Keywords: assembly arm
+###Context
+ASMJIT is a key part of the Pharo infrastructure. It supports the generation of assembly code for X86.
+###Goal
+The goal of the project is to continue to work on the generation of ARM code from the Pharo image using the same approach as ASMJIT. It should use the Virtual CPU. This project is also important for NativeBoost the FFI library based on ASMJIT
+###Level: Advanced
+
+***
+
 ##Title: Improving code completion
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse and E. Lorenzano
@@ -496,6 +577,22 @@ The goal of the project is to improve the ecompletion infrastructure: The tasks 
 
 ***
 
+##Title: Omnipresent Code Manager
+###Contact: martin.dias@inria.fr
+###Supervisors:  M. Dias and S. Ducasse
+###Keywords: code representation change history browsing
+###Context
+Being able to look at all the versions of a method, class or package is an important feature. Right now Pharo contains a limited amount versions because the changes are condensed from time to time. The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.
+###Goal
+The goal of the project is to help defining a source code manager. The goal of the project is to
+	        - study Epicea (the new change model)
+	        - improve the infrastucture around Epicea. For example we should be able to take a monticello repository and import all the changes into a local source manager.
+	        - build tool to navigate version in the source manager.
+	        - develop a service that supports the creation of a local or remote source manager. We could imagine that all the pharo programmers can have access to a remote source manager and that locally they can define local changes and that when a change is not found locally it is looked up over the internet. The design of the storage of the Epicea format should support that already.
+###Level: Currently undefined, we are working on it.
+
+***
+
 ##Title: Support for change code review
 ###Contact: martin.dias@inria.fr
 ###Supervisors:  M. Dias and S. Ducasse
@@ -506,6 +603,25 @@ Pharo manages well source versions and modification. However it is tedious to un
 ###Goal
 The goal of the project is to help building a tools to support code reviewing. In detail, here are some tasks to be performed: (1) study Epicea (the new change model), (2) define a tool to annotate changes and share annotations between different developers, (3) build heuristics to identify changes that represents a unit (for example split methods and push up or push down).
 ###Level: Intermediate
+
+***
+
+##Title: Improving String manipulation
+###Contact: stephane.ducasse@inria.fr
+###Supervisors: S. Ducasse and D. Pollet
+###Keywords: string API
+###Context
+Pharo offers several good libraries to manipulate collections. However, the Strings API could benefit from a new study and redesign or enhancements.
+###Goal
+The goal of the project is to help rethinking the String manipulation API of Pharo. Here are some tasks to be performed.
+		(0) Identify the elementary operations on Strings.
+		(1) Look at Ruby library and Python library
+		(2) Study the current Pharo string library.
+		(3) Build a set of examples. For example, how to get 'Soup' out of 'ConfigurationOfSoup' or 
+how to transform from 'http://smalltalkhub.com/mc/Pharo/XMLWriter/main' to 'http://smalltalkhub.com/#!/~Pharo/XMLWriter'. The student is invited to ask the community for their needs too.
+		(4) Propose some new messages to enhance or replace current Pharo
+		(5) The work could also include writing a nice chapter for a future Pharo book
+###Level: Bachelor or Master
 
 ***
 
@@ -591,6 +707,18 @@ The goal of the project is to bring such kind of functionality to Pharo. The stu
 Merlin is a good framework for building wizards. However, it was developed before Spec.
 ###Goal
 The goal of the project is to make sure that Merlin is now based on Spec. It will make sure that Merlin can work on different UI framework.
+###Level: Intermediate
+
+***
+
+##Title: Better pointer explorer
+###Contact: Stephane.Ducasse@inria.fr
+###Supervisors: S. Ducasse
+###Keywords: ui spec
+###Context
+Understanding how objects points to each other is important to spot memory leaks.
+###Goal
+To understand how objects point to each other, Pharo offers the pointTo: methods. However it is a bit rudimentary. The goal of the project is to enhance the current pointer explorer to provide better information.
 ###Level: Intermediate
 
 ***
@@ -709,6 +837,20 @@ The goal of this project is to revisit the implementation to make sure that the 
 
 ***
 
+##Title: Tetris
+###Contact: stephane.ducasse@inria.fr
+###Supervisors: S. Ducasse
+###Keywords:  games SameTile Miner Sokoban
+###Context
+There is an implementation of the Tetris game in Pharo. However there is not a clear separation between the game model and its graphical representation.
+###Goal
+The goal of this project is to revisit the implementation to make sure that the game is defined
+	via a model that can then be displayed graphically using different ways.  The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
+	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games
+###Level: Currently undefined, we are working on it.
+
+***
+
 ##Title: Miner
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse
@@ -743,6 +885,56 @@ The goal of this project is to improve current packaging of Pharo for Debian and
 Pharo sources are currently stored in a separated file. Bonsai, the future system for persistent and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additional comments, discussions, false positive critics, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).
 ###Goal
 All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.
+###Level: intermediate
+
+***
+
+##Title: Tools for the Counch Module System
+###Contact: camille.teruel@inria.fr
+###Supervisors: C. Teruel and S. Ducasse
+###Keywords: Module
+###Context
+C. Teruel designed and implemented Conch a new module system for Pharo. In Conch class extensions are local to the classes defining them. 
+###Goal
+The goal of the project is to build tool support for Conch. In particular we want to have method extensions to be only visible from the importing packages. A module or class browser should reflect this behavior. We should take Pharo and turn the packages into their Conch counterpart to see how it feels.
+###Level: intermediate
+
+***
+
+##Title: New generation finder
+###Contact: stephane.ducasse@inria.fr
+###Supervisors: S. Ducasse
+###Keywords: Finder
+###Context
+The finder is a nice tool that let us find the messages based on the receiver and arguments. While really powerful its implementation should be revisited because 
+###Goal
+The actual implementation of the finder is based on static arrays to describe methods. This implementation is static. We should revisit this implementation. Methods may be tagged with Finder information.
+###Level: intermediate
+
+***
+
+##Title: SUnit compiler
+###Contact: yuriy.tymchuk@usi.ch
+###Supervisors: Yuriy Tymchuk
+###Keywords: opal sunit
+###Context
+Pharo is a modern pure object-oriented language and a live programming environment inspired by Smalltalk. This project is focused on two frameworks of Pharo: Opal and SUnit. First one is a modular compiler which can be easily extended. Because Pharo is very flexible one can define a specific compiler for a class, which will be used to compile all methods of the class. SUnit is a unit-testing framework (which is also first in its kind). Pharo's syntax is very simple and can fit on a post card. To achieve this, language was designed in a way that focuses only on the core concepts of object-oriented programming. For example there are no direct field accessors as they break the whole concept of encapsulation. While this is good for software design, some parts like unit tests may benefit from direct access to the state of an object.
+###Goal
+subclass the default compiler and add an expression(s) to access internal state of an object. Then use this functionality to demonstrate how unit tests can be written in a way that uses direct access to the internal state of an object.
+###Level: intermediate
+
+***
+
+##Title: Revisiting Environments
+###Contact: stephane.ducasse@inria.fr
+###Supervisors: S. Ducasse and Yuriy Tymchuk
+###Keywords: environments scoping 
+###Context
+In Pharo we have three ways to scope queries: RBEnvironment, SystemNavigation, and SystemDictionary. We should revisit the environments (to scope classes in the system)
+###Goal
+The goal of this project is to design a new environment to support system querying.  The tasks are 
+(1) Studying RBEnvironment, SystemDictionary and SystemNavigation(2) Implement a new environment hierarchy, (SystemDictionary could be a leave in the hierarchy.  Write many tests and experiment with scenario.
+(3) Experiment and study the impact on the existing system
 ###Level: intermediate
 
 ***
@@ -889,6 +1081,66 @@ Implement a GUI to manipulate and control a git repository from inside Pharo.
 
 ***
 
+##Title: Arduino for phratch
+###Contact: jannik.laval@univ-lyon2.fr
+###Supervisors: Jannik Laval
+###Keywords: robotics smalltalk visual programming
+###Context
+phratch is a visual programming language on top of Pharo (http://www.phratch.com/). We want an interface to control an arduino card.
+###Goal
+The goal is to provide an phratch API to control the whole Arduino features. From the direct control to the compilation of the source code.
+###Level: Intermediate
+
+***
+
+##Title: Interactive Test Coverage Assistance
+###Contact: tymchuk@inf.unibe.ch
+###Supervisors: Yuriy Tymchuk, Claudio Corrodi
+###Keywords: testing, tools, asistance, ia, heuristics
+###Context
+Tests help developers to ensure that the functionality is there. Let’s help developers to ensure that their functionality has tests.
+###Goal
+The vision of this project is to provide a testing assistant that will help you to test your code, and test your code with the available tests. Possible direction include: test linkage to tested entities, guiding assistance for test cteation, test inference fro runtime.
+###Level: Advanced
+
+***
+
+##Title: GitHubcello Configuration Loader
+###Contact: tymchuk@inf.unibe.ch
+###Supervisors: Yuriy Tymchuk, Claudio Corrodi
+###Keywords: vesioning, GUI, mining
+###Context
+For years Pharo developers were using Monticello versioning system and Metacello configuration manager. But nowadays more and more developers switch to git which makes versioning mush easier. However it’s still complicated to load a project because of Metacello configurations burden.
+###Goal
+The goal of this project is to provide developers with tool to easily load a project if they know a GitHub url, username, etc…
+###Level: Entry-Intermediate
+
+***
+
+##Title: External-Properties-Aware Diff
+###Contact: tymchuk@inf.unibe.ch
+###Supervisors: Yuriy Tymchuk, Claudio Corrodi
+###Keywords: tools, code quality, GUI
+###Context
+Developers use diff view to understand the changes between two versions of code. While diff focuses mainly on textual changes, software itself is not about text.
+###Goal
+The idea of this project is to integrate already available information about external properties of software (such as code quality critics) into a diff view.
+###Level: Intermediate
+
+***
+
+##Title: Poppy for phratch
+###Contact: jannik.laval@univ-lyon2.fr
+###Supervisors: Jannik Laval
+###Keywords: robotics smalltalk visual programming
+###Context
+phratch is a visual programming language on top of Pharo (http://www.phratch.com/). We want an interface to control a Poppy robot (https://www.poppy-project.org/).
+###Goal
+The goal is to provide an phratch API to control the whole Poppy robot ecosystem. As Poppy can be modular, we have to consider the feature.
+###Level: Intermediate
+
+***
+
 ##Title: In-image WYSIWYG documentation system in Bloc
 ###Contact: stephan@stack.nl
 ###Supervisors: Stephan Eggermont
@@ -989,6 +1241,18 @@ driven by tests. Use TeX-like linebreaking and hypenation.
 
 ***
 
+##Title: DPI-awareness in Pharo
+###Contact: corrodi@inf.unibe.ch
+###Supervisors: Claudio Corrodi, Yuriy Tymchuk
+###Keywords: GUI, usability, vm
+###Context
+Due to the rise of high-resolution displays in recent years, user interfaces that use fixed pixel-sizes for drawing certain elements tend to become too small to read. While operating systems can scale them up to some degree, the results are often blurry. Instead, programmers should write code that does not rely on fixed sizes, but instead draw elements depending on the DPI values of the current screen in order to ensure readable interfaces on every display.
+###Goal
+Pharo is currently not DPI aware. The goal of this project is to change this and add proper support for high-resolution displays to Pharo. This project may include both work on the Pharo virtual machine and within the image.
+###Level: Advanced
+
+***
+
 ##Title: Pharo WM
 ###Contact: corrodi@inf.unibe.ch
 ###Supervisors: Claudio Corrodi, Yuriy Tymchuk
@@ -1001,4 +1265,4 @@ The goal of this project is to explore the possibility of alternate window mange
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-19T16:25:14.811843+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-19T17:22:42.240321+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
