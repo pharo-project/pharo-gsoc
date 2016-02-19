@@ -57,6 +57,7 @@
 * [Roassal 3D](#title-roassal-3d)
 * [GitPharo](#title-gitpharo)
 * [In-image WYSIWYG documentation system in Bloc](#title-in-image-wysiwyg-documentation-system-in-bloc)
+* [Pharo WM](#title-pharo-wm)
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
@@ -988,4 +989,16 @@ driven by tests. Use TeX-like linebreaking and hypenation.
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-19T11:03:06.495747+00:00 by Pharo5.0 of 16 April 2015 update 50592</p>
+##Title: Pharo WM
+###Contact: corrodi@inf.unibe.ch
+###Supervisors: Claudio Corrodi, Yuriy Tymchuk
+###Keywords: tools, GUI, window managers, usability
+###Context
+Pharo comes with a window manager that is responsible for drawing and placing windows and their contents. Outside of Pharo, a large variety of window managers exist that implement different styles and methodologies.
+###Goal
+The goal of this project is to explore the possibility of alternate window mangers for Pharo by investigating existing implementations, exploring ideas for different ways of managing windows, and implementing such a window manager either from scratch or on top of existing work.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-19T16:25:14.811843+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
