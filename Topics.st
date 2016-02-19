@@ -985,7 +985,36 @@ PharoTopic new
        goal: 'The goal is to provide an phratch API to control the whole Arduino features. From the direct control to the compilation of the source code.';
        level: 'Intermediate';
        yourself.
+       
+PharoTopic new
+       title: 'Interactive Test Coverage Assistance';
+       contact: 'tymchuk@inf.unibe.ch';
+       supervisors: 'Yuriy Tymchuk, Claudio Corrodi';
+       keywords: 'testing, tools, asistance, ia, heuristics';
+       context: 'Tests help developers to ensure that the functionality is there. Let’s help developers to ensure that their functionality has tests.';
+       goal: 'The vision of this project is to provide a testing assistant that will help you to test your code, and test your code with the available tests. Possible direction include: test linkage to tested entities, guiding assistance for test cteation, test inference fro runtime.';
+       level: 'Advanced';
+       yourself.
 	   
+PharoTopic new
+       title: 'GitHubcello Configuration Loader';
+       contact: 'tymchuk@inf.unibe.ch';
+       supervisors: 'Yuriy Tymchuk, Claudio Corrodi';
+       keywords: 'vesioning, GUI, mining';
+       context: 'For years Pharo developers were using Monticello versioning system and Metacello configuration manager. But nowadays more and more developers switch to git which makes versioning mush easier. However it’s still complicated to load a project because of Metacello configurations burden.';
+       goal: 'The goal of this project is to provide developers with tool to easily load a project if they know a GitHub url, username, etc…';
+       level: 'Entry-Intermediate';
+       yourself.
+	   
+PharoTopic new
+       title: 'External-Properties-Aware Diff';
+       contact: 'tymchuk@inf.unibe.ch';
+       supervisors: 'Yuriy Tymchuk, Claudio Corrodi';
+       keywords: 'tools, code quality, GUI';
+       context: 'Developers use diff view to understand the changes between two versions of code. While diff focuses mainly on textual changes, software itself is not about text.';
+       goal: 'The idea of this project is to integrate already available information about external properties of software (such as code quality critics) into a diff view.';
+       level: 'Intermediate';
+       yourself.
 	   
 PharoTopic new
        title: 'Poppy for phratch';
