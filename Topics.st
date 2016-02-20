@@ -1166,3 +1166,24 @@ PharoTopic new
 	goal: 'The goal of this project is to explore the possibility of alternate window mangers for Pharo by investigating existing implementations, exploring ideas for different ways of managing windows, and implementing such a window manager either from scratch or on top of existing work.';
 	level: 'Intermediate';
 	yourself.
+
+
+PharoTopic new
+	title: 'MongoTalk Replication';
+	contact: 'phil@highoctane.be';
+	supervisors: 'Philippe Back';
+	keywords: 'nosql, availability, mongodb';
+	context: 'MongoDB support is not fully supported in Pharo.';
+	goal: 'MongoDB is supported in Pharo through MongoTalk but there is no support for replication. This makes it unsuited for highly available applications. This project is about making MongoTalk support replication.';
+	level: 'Intermediate';
+	yourself.
+
+PharoTopic new
+	title: 'MongoTalk GridFS';
+	contact: 'phil@highoctane.be';
+	supervisors: 'Philippe Back';
+	keywords: 'nosql, gridfs, mongodb';
+	context: 'MongoDB GridFS support is inexistent in Pharo. This limits the usage scenarios of MongoDB in the environment';
+	goal: 'MongoDB is supported in Pharo through MongoTalk but there is no support for GridFS. This project is about making MongoTalk support GridFS.';
+	level: 'Intermediate';
+	yourself.
