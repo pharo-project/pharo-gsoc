@@ -81,6 +81,7 @@
 * [Pharo WM](#title-pharo-wm)
 * [MongoTalk Replication](#title-mongotalk-replication)
 * [MongoTalk GridFS](#title-mongotalk-gridfs)
+* [DTrace support](#title-dtrace-support)
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
@@ -1317,4 +1318,16 @@ MongoDB is supported in Pharo through MongoTalk but there is no support for Grid
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-20T14:03:31.084065+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
+##Title: DTrace support
+###Contact: phil@highoctane.be
+###Supervisors: Philippe Back
+###Keywords: dtrace, system
+###Context
+DTrace support helps in seeing what happens at the system level.
+###Goal
+Add DTrace probes to PharoVM. See http://www.adrian-lienhard.ch/blog?dialog=smalltak-meets-dtrace for existing efforts in Squeak.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-20T14:42:53.668294+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
