@@ -79,6 +79,8 @@
 * [In-image WYSIWYG documentation system in Bloc](#title-in-image-wysiwyg-documentation-system-in-bloc)
 * [DPI-awareness in Pharo](#title-dpi-awareness-in-pharo)
 * [Pharo WM](#title-pharo-wm)
+* [MongoTalk Replication](#title-mongotalk-replication)
+* [MongoTalk GridFS](#title-mongotalk-gridfs)
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
@@ -1291,4 +1293,28 @@ The goal of this project is to explore the possibility of alternate window mange
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-19T18:54:39.717607+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
+##Title: MongoTalk Replication
+###Contact: phil@highoctane.be
+###Supervisors: Philippe Back
+###Keywords: nosql, availability, mongodb
+###Context
+MongoDB support is not fully supported in Pharo.
+###Goal
+MongoDB is supported in Pharo through MongoTalk but there is no support for replication. This makes it unsuited for highly available applications. This project is about making MongoTalk support replication.
+###Level: Intermediate
+
+***
+
+##Title: MongoTalk GridFS
+###Contact: phil@highoctane.be
+###Supervisors: Philippe Back
+###Keywords: nosql, gridfs, mongodb
+###Context
+MongoDB GridFS support is inexistent in Pharo. This limits the usage scenarios of MongoDB in the environment
+###Goal
+MongoDB is supported in Pharo through MongoTalk but there is no support for GridFS. This project is about making MongoTalk support GridFS.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-20T14:03:31.084065+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
