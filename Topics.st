@@ -1187,3 +1187,16 @@ PharoTopic new
 	goal: 'MongoDB is supported in Pharo through MongoTalk but there is no support for GridFS. This project is about making MongoTalk support GridFS.';
 	level: 'Intermediate';
 	yourself.
+
+
+PharoTopic new
+	title: 'DTrace support';
+	contact: 'phil@highoctane.be';
+	supervisors: 'Philippe Back';
+	keywords: 'dtrace, system';
+	context: 'DTrace support helps in seeing what happens at the system level.';
+	goal: 'Add DTrace probes to PharoVM. See http://www.adrian-lienhard.ch/blog?dialog=smalltak-meets-dtrace for existing efforts in Squeak.';
+	level: 'Intermediate';
+	yourself.
+
+
