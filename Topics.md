@@ -1330,4 +1330,4 @@ Add DTrace probes to PharoVM. See http://www.adrian-lienhard.ch/blog?dialog=smal
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2016-02-20T14:42:53.668294+00:00 by Pharo5.0 of 16 April 2015 update 50594</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-01-22T16:05:58.525815+00:00 by Pharo5.0 of 16 April 2015 update 50765</p>
