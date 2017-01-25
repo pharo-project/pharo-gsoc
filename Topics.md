@@ -1,59 +1,44 @@
 #Pharo GSOC Topics
 
 * [IPFS for Pharo](#title-ipfs-for-pharo)
-* [CDB for Pharo in Pharo](#title-cdb-for-pharo-in-pharo)
+* [Make for Pharo in Pharo](#title-make-for-pharo-in-pharo)
 * [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
 * [Loading V3 ImageSegments in Spur](#title-loading-v3-imagesegments-in-spur)
 * [Two-way synchronized code changes, better support for cross-platform co-development ](#title-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development-)
 * [Mailing List Application in Brick](#title-mailing-list-application-in-brick)
 * [Torrent Library for Pharo](#title-torrent-library-for-pharo)
 * [Distributed Issue Tracker](#title-distributed-issue-tracker)
-* [7GUIs implementation](#title-7guis-implementation)
 * [Desktop application for offline text search](#title-desktop-application-for-offline-text-search)
 * [Server control panel](#title-server-control-panel)
-* [GUI builder](#title-gui-builder)
 * [REPL IDE](#title-repl-ide)
 * [Cross platform native GUI](#title-cross-platform-native-gui)
 * [Hadoop](#title-hadoop)
 * [Deep learning](#title-deep-learning)
-* [Mobile](#title-mobile)
 * [SQL Alchemy in Pharo](#title-sql-alchemy-in-pharo)
 * [SQLServer client](#title-sqlserver-client)
 * [VOSS](#title-voss)
 * [Statistics Library](#title-statistics-library)
 * [Better Palette Support](#title-better-palette-support)
-* [Enhancing file ownership](#title-enhancing-file-ownership)
-* [Better Message Browser](#title-better-message-browser)
 * [Bug Importer for Moose](#title-bug-importer-for-moose)
-* [An Expert System Framework](#title-an-expert-system-framework)
 * [Format as you type](#title-format-as-you-type)
 * [Improving the code formatter](#title-improving-the-code-formatter)
 * [ARM ASMJIT](#title-arm-asmjit)
 * [Improving code completion](#title-improving-code-completion)
-* [Omnipresent Code Manager](#title-omnipresent-code-manager)
-* [Support for change code review](#title-support-for-change-code-review)
 * [Improving String manipulation](#title-improving-string-manipulation)
 * [Stepping Interpreter](#title-stepping-interpreter)
 * [New Collections for Pharo](#title-new-collections-for-pharo)
-* [Thread-based programming](#title-thread-based-programming)
-* [From BNF to PetitParser](#title-from-bnf-to-petitparser)
 * [Line level test coverage and which test to run](#title-line-level-test-coverage-and-which-test-to-run)
 * [Merlin in Spec](#title-merlin-in-spec)
 * [Better pointer explorer](#title-better-pointer-explorer)
 * [Memory profiler](#title-memory-profiler)
-* [Epub generator for Pillar](#title-epub-generator-for-pillar)
 * [OpenDocument generator for Pillar](#title-opendocument-generator-for-pillar)
 * [Improving Launcher](#title-improving-launcher)
-* [ParseTree Rewriter Improvements](#title-parsetree-rewriter-improvements)
 * [Taking advantage of roel Typer in tools](#title-taking-advantage-of-roel-typer-in-tools)
-* [Web OpenStreet map manager](#title-web-openstreet-map-manager)
 * [Sokoban](#title-sokoban)
 * [SameTile](#title-sametile)
-* [Tetris](#title-tetris)
 * [Miner](#title-miner)
 * [Clean Debian packaging](#title-clean-debian-packaging)
-* [Baobab](#title-baobab)
-* [Tools for the Counch Module System](#title-tools-for-the-counch-module-system)
+* [Tools for the new Module System](#title-tools-for-the-new-module-system)
 * [New generation finder](#title-new-generation-finder)
 * [SUnit compiler](#title-sunit-compiler)
 * [Revisiting Environments](#title-revisiting-environments)
@@ -67,14 +52,11 @@
 * [Process networks in Pharo](#title-process-networks-in-pharo)
 * [Visual Debugger](#title-visual-debugger)
 * [Roassal 3D](#title-roassal-3d)
-* [GitPharo](#title-gitpharo)
 * [Arduino for phratch](#title-arduino-for-phratch)
 * [Interactive Test Coverage Assistance](#title-interactive-test-coverage-assistance)
-* [GitHubcello Configuration Loader](#title-githubcello-configuration-loader)
 * [External-Properties-Aware Diff](#title-external-properties-aware-diff)
 * [ViDI v2 (Visual Design Inspector Reborn)](#title-vidi-v2-visual-design-inspector-reborn)
 * [API Evolution Mining Service](#title-api-evolution-mining-service)
-* [YAPaCaMo (Yet Another Pharo Changes Model)](#title-yapacamo-yet-another-pharo-changes-model)
 * [Poppy for phratch](#title-poppy-for-phratch)
 * [In-image WYSIWYG documentation system in Bloc](#title-in-image-wysiwyg-documentation-system-in-bloc)
 * [DPI-awareness in Pharo](#title-dpi-awareness-in-pharo)
@@ -106,24 +88,23 @@ access to resources via IPFS.
 
 ***
 
-##Title: CDB for Pharo in Pharo
+##Title: Make for Pharo in Pharo
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: stephane.ducasse@inria.fr
-###Keywords: CDB database
+###Keywords: Make graph
 ###Context
 
-cdb is a fast, reliable, simple package for creating and reading constant databases. Its database structure provides several features:
-Fast lookups: A successful lookup in a large database normally takes just two disk accesses. An unsuccessful lookup takes only one.
-Low overhead: A database uses 2048 bytes, plus 24 bytes per record, plus the space for keys and data.
-No random limits: cdb can handle any database up to 4 gigabytes. There are no other restrictions; records don't even have to fit into memory. Databases are stored in a machine-independent format.
-Fast atomic database replacement: cdbmake can rewrite an entire database two orders of magnitude faster than other hashing packages.
-Fast database dumps: cdbdump prints the contents of a database in cdbmake-compatible format.
-- http://cr.yp.to/cdb.html
-- https://github.com/spotify/sparkey
-- http://www.unixuser.org/~euske/doc/cdbinternals/
+Make is a unix tool to express dependencies between task. Now it is not really cross-platform. Python has a library that implements make on 
+top of a graph library. It would be really nice to have a solution for Pharo using the same idea.
+- http://aosabook.org/en/500L/contingent-a-fully-dynamic-build-system.html
+MCHttpRepository
+	location: 'http://smalltalkhub.com/mc/CipT/MelcGraph/main'
+	user: ''
+	password: ''
+
 
 ###Goal
-The goal of this project is to develop a Pharo implementation of CDB.
+The goal of this project is to develop a make like implementation in Pharo using the graph library MelcGraph developed by C. Teodorov.
 ###Level: Normal
 
 ***
@@ -296,18 +277,6 @@ Thabo has been using Excel to track bugs and issues internally in his company an
 
 ***
 
-##Title: 7GUIs implementation
-###Contact: Alain Plantec
-###Supervisors: 
-###Keywords: GUI learning-curve
-###Context
-Benchmarking how hard easy is to implement GUIs in a given platform is probably a decisive factor on how good the opportunities this plattform has to offer. The 7GUIs benchmark is a nice research on GUI building usability and having a Pharo implementation will illlustrate the power of this platform. Ref: https://github.com/eugenkiss/7guis/wiki
-###Goal
-Be able to see a Pharo implementation for 7GUIs on top of Brick the new widgets layer of Pharo.
-###Level: Intermediate
-
-***
-
 ##Title: Desktop application for offline text search
 ###Contact: mbaehr+pharo@iaeste.at
 ###Supervisors: Martin Bähr
@@ -329,18 +298,6 @@ file editor and asset and server manager solution, http://labs.fossasia.org/proj
 ###Goal
 a tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk
 ###Level: Beginner
-
-***
-
-##Title: GUI builder
-###Contact: 
-###Supervisors: 
-###Keywords: GUI tooling
-###Context
-If whatever you are doing you cannot make it visual easily, people cannot perceive it easily. Due to evolutionary reasons, our brain has unfair bias towards visual processing. Lets make something that allows Pharo to create visual things easier. Something like PARTS or Dolphin Smalltalk GUI builder would be huge.
-###Goal
-Be able to create composable widgets for Pharo programs
-###Level: Intermediate
 
 ***
 
@@ -389,18 +346,6 @@ Robotics, drones and the internet of things will gather data from sensors that w
 ###Goal
 Be able to orchestrate deep learning operations from Pharo
 ###Level: Intermediate
-
-***
-
-##Title: Mobile
-###Contact: 
-###Supervisors: 
-###Keywords: mobile vm
-###Context
-Is not that mobile is a growing market, is more like mobile is going supernova (http://a16z.com/2014/10/28/mobile-is-eating-the-world/). The power of Pharo and its libraries on mobile devices is currently perhaps one of its biggest opportunities to create a really productive environment in mobile.
-###Goal
-Opening Pharo images on a new mobile plattform
-###Level: Advanced
 
 ***
 
@@ -464,30 +409,6 @@ The objectives is to revisit and build a new palette behavior
 
 ***
 
-##Title: Enhancing file ownership
-###Contact: damien.cassou@inria.fr
-###Supervisors: Damien Cassou and Mariano Martinez Peck
-###Keywords: OS VM
-###Context
-We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.  http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html
-###Goal
-
-###Level: Advanced
-
-***
-
-##Title: Better Message Browser
-###Contact: jfabry@dcc.uchile.cl
-###Supervisors: Johan Fabry / S. Ducasse
-###Keywords: tools ui spec
-###Context
-The browser showing results of senders and implementors won't help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.
-###Goal
-The goal of the project is to define a tool to support message browsing.
-###Level: Intermediate
-
-***
-
 ##Title: Bug Importer for Moose
 ###Contact: nicolas.anquetil@inria.fr
 ###Supervisors: N. Anquetil
@@ -504,18 +425,6 @@ Moose can be connected with a JIRA bug tracker database. The goals of the projec
 	Links: 
 A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. Martins, BugMaps: A Tool for the Visual Exploration and Analysis of Bugs, Proceedings of the 16th European Conference on Software Maintenance and Reengineering (CSMR12) - Tool Demonstration Track, 2012
 ###Level: Currently undefined, we are working on it.
-
-***
-
-##Title: An Expert System Framework
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: S. Ducasse
-###Keywords: Expert systems
-###Context
-There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.
-###Goal
-The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for facts).
-###Level: Intermediate
 
 ***
 
@@ -570,35 +479,6 @@ The goal of the project is to improve the ecompletion infrastructure: The tasks 
 
 ***
 
-##Title: Omnipresent Code Manager
-###Contact: martin.dias@inria.fr
-###Supervisors:  M. Dias and S. Ducasse
-###Keywords: code representation change history browsing
-###Context
-Being able to look at all the versions of a method, class or package is an important feature. Right now Pharo contains a limited amount versions because the changes are condensed from time to time. The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.
-###Goal
-The goal of the project is to help defining a source code manager. The goal of the project is to
-	        - study Epicea (the new change model)
-	        - improve the infrastucture around Epicea. For example we should be able to take a monticello repository and import all the changes into a local source manager.
-	        - build tool to navigate version in the source manager.
-	        - develop a service that supports the creation of a local or remote source manager. We could imagine that all the pharo programmers can have access to a remote source manager and that locally they can define local changes and that when a change is not found locally it is looked up over the internet. The design of the storage of the Epicea format should support that already.
-###Level: Currently undefined, we are working on it.
-
-***
-
-##Title: Support for change code review
-###Contact: martin.dias@inria.fr
-###Supervisors:  M. Dias and S. Ducasse
-###Keywords: code representation change history browsing spec
-###Context
-Pharo manages well source versions and modification. However it is tedious to understand changes made by other developers. Often during a programming session we split, changes existing code and we would like to be able to have feedback by other programmers. However giving a simple a list of changes can be really tedious for the reviewer: he will see that a method was changed and another was added for example.
- The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.
-###Goal
-The goal of the project is to help building a tools to support code reviewing. In detail, here are some tasks to be performed: (1) study Epicea (the new change model), (2) define a tool to annotate changes and share annotations between different developers, (3) build heuristics to identify changes that represents a unit (for example split methods and push up or push down).
-###Level: Intermediate
-
-***
-
 ##Title: Improving String manipulation
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse and D. Pollet
@@ -645,38 +525,6 @@ Smalltalk is proud of its collection hierarchy. However some collections are mis
 - http://source.lukas-renggli.ch/container started to implement some new collections for Pharo.
 - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/
 ###Level: Advanced
-
-***
-
-##Title: Thread-based programming
-###Contact: esteban.lorenzano@inria.fr
-###Supervisors: Esteban Lorenzano
-###Keywords: process
-###Context
-Actually, in Pharo there is already an infrastructure for running thousand of process (green treads).
-###Goal
-Now there is small support for "thread based programming". What does it means? We do not have an easy way to: 
-	- define tasks (probably Job class and around can help there)
-	- scheduling tasks in a proper way (a.k.a. Round Robin)
-	- communication between tasks
-	- serialization/materialization of tasks (again, Fuel can help here)
-	So, the idea is to have in Pharo the same infrastructure as Stackless Python [1][2] provides.
-	What is this useful for? To allow an elegant way to deal with massive amounts of tasks (typical in games, for instance).
-	Link: http://www.stackless.com 
- http://www.slideshare.net/guest162fd90/stackless-python-101
-###Level: Currently undefined, we are working on it.
-
-***
-
-##Title: From BNF to PetitParser
-###Contact: Stephane.Ducasse@inria.fr
-###Supervisors: who wants
-###Keywords: parsing
-###Context
-Petit Parser is a cool framework to build parsers and composed them but it lacks a way to import existing grammars defined in BNF.
-###Goal
-The goal of the project is to support the creation of parsers based on BNF description. Deep into Pharo contains a tutorial on PetitParser
-###Level: Currently undefined, we are working on it.
 
 ***
 
@@ -728,21 +576,9 @@ The goal of the project is to develop an approach to measure and reflect memory 
 
 ***
 
-##Title: Epub generator for Pillar
-###Contact: damien.cassou@inria.fr
-###Supervisors: Damien Cassou and Stéphane Ducasse
-###Keywords: Pillar epub document tree visitor
-###Context
-Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)
-###Goal
-The goal of this project is to add the ePub export format (used by e-readers).
-###Level: Beginner
-
-***
-
 ##Title: OpenDocument generator for Pillar
-###Contact: damien.cassou@inria.fr
-###Supervisors: Damien Cassou and Stéphane Ducasse
+###Contact: stephane.ducasse@inria.fr
+###Supervisors:  Stéphane Ducasse
 ###Keywords: Pillar OpenDocument LibreOffice OpenOffice document tree visitor
 ###Context
 Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)
@@ -753,8 +589,8 @@ The goal of this project is to add the standard OpenDocument export format (used
 ***
 
 ##Title: Improving Launcher
-###Contact: damien.cassou@inria.fr
-###Supervisors: D. Cassou, B. Coman and S. Ducasse
+###Contact: stephane.ducasse@inria.fr and guillermo.polito@inria.fr
+###Supervisors: G. Polito and S. Ducasse
 ###Keywords: Launcher is a cool tool to launch and organize Pharo images
 ###Context
 Launcher is important for both new and advanced Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. Demonstration: https://www.youtube.com/watch?v=fNim2Yxs320.
@@ -762,19 +598,6 @@ Launcher is important for both new and advanced Pharo users. Launcher needs to g
 ###Goal
 
 ###Level: Intermediate
-
-***
-
-##Title: ParseTree Rewriter Improvements
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: C. Teruel and S. Ducasse
-###Keywords: AST tree visitor
-###Context
-The Parse tree rewriter is a powerful engine. It is used to support automatic rewriting of program and it is the basis of the refactoring engine. It is based on a unification algorithm that unifies
-	trees with meta variables to abstract syntax trees.
-###Goal
-The goal of this project is to revisit the API of the Parse Tree Rewriter to help people build better tools. Reading the Flamel GSOC project and the new book chapter on such tools is a good start.
-###Level: Advanced
 
 ***
 
@@ -787,18 +610,6 @@ Getting the type of variables and expression is a useful information.
 ###Goal
 The goal of this project is to see tools can take benefit of type information provided by RoelTyper. For example we can have a pane with the instance variable type annotations, rules can check the use of a variable across multiple methods.
 ###Level: Intermediate
-
-***
-
-##Title: Web OpenStreet map manager
-###Contact: 
-###Supervisors: 
-###Keywords: svg open street visualisation web amber seaside
-###Context
-	OpenStreet is an open source standard for high-quality maps.
-###Goal
-The goal of this project is to build a simple web application that let users managing their own maps like googlemap but in a better way. An example could be http://umap.openstreetmap.fr/
-###Level: Currently undefined, we are working on it.
 
 ***
 
@@ -830,20 +641,6 @@ The goal of this project is to revisit the implementation to make sure that the 
 
 ***
 
-##Title: Tetris
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: S. Ducasse
-###Keywords:  games SameTile Miner Sokoban
-###Context
-There is an implementation of the Tetris game in Pharo. However there is not a clear separation between the game model and its graphical representation.
-###Goal
-The goal of this project is to revisit the implementation to make sure that the game is defined
-	via a model that can then be displayed graphically using different ways.  The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
-	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games
-###Level: Currently undefined, we are working on it.
-
-***
-
 ##Title: Miner
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse
@@ -870,24 +667,12 @@ The goal of this project is to improve current packaging of Pharo for Debian and
 
 ***
 
-##Title: Baobab
-###Contact: camille.teruel@inria.fr
-###Supervisors: C. Teruel
-###Keywords: AST IDE annotation social-coding
-###Context
-Pharo sources are currently stored in a separated file. Bonsai, the future system for persistent and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additional comments, discussions, false positive critics, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).
-###Goal
-All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.
-###Level: intermediate
-
-***
-
-##Title: Tools for the Counch Module System
-###Contact: camille.teruel@inria.fr
-###Supervisors: C. Teruel and S. Ducasse
+##Title: Tools for the new Module System
+###Contact: Guillermo.Polito@inria.fr
+###Supervisors: Guillermo Polito and S. Ducasse and Luc Fabresse
 ###Keywords: Module
 ###Context
-C. Teruel designed and implemented Conch a new module system for Pharo. In Conch class extensions are local to the classes defining them. 
+G. Polito designed and implemented  a new module system for Pharo. In Conch class extensions are local to the classes defining them. 
 ###Goal
 The goal of the project is to build tool support for Conch. In particular we want to have method extensions to be only visible from the importing packages. A module or class browser should reflect this behavior. We should take Pharo and turn the packages into their Conch counterpart to see how it feels.
 ###Level: intermediate
@@ -1040,7 +825,7 @@ Reuse a pre-existing process network simulation framework and implement communic
 
 ##Title: Visual Debugger
 ###Contact: alexandre.bergel@me.com
-###Supervisors: Andrei Chis Alexandre Bergel
+###Supervisors: Andrei Chis and Alexandre Bergel
 ###Keywords: Debugging Roassal
 ###Context
 The visual interface of code debugger have always been designed as a set of textual widgets. Although Pharo debugger is famed for its flexibility and ease of use, it unfortunately stick to a poor and restricted support to convey information. Visual Debugger is a project to combine Roassal with GTDebugger to offer a whole range of new debuggers to expose object state history, and message recording.
@@ -1058,18 +843,6 @@ Bridge Roassal with GTDebugger and offer the infrastructure to define specific a
 Roassal is a successful 2D visualization engine. A first implementation of Roassal 3D has been produced on top of Woden, a bridge between OpenGL and Pharo. However this initial implementation of Roassal 3D is far from being complete (e.g., text is not correctly supported) and examples are compelling missing.
 ###Goal
 Improve Roassal 3D with text support and implement Matrix Cube in it (https://hal.inria.fr/hal-00931911v1/document).
-###Level: Intermediate
-
-***
-
-##Title: GitPharo
-###Contact: thierry.goubier@gmail.com
-###Supervisors: Thierry Goubier
-###Keywords: Pharo Git
-###Context
-Pharo is building some gui support, either via GitFileTree or libcgit integration, but GUI tools inside Pharo show little of the change.
-###Goal
-Implement a GUI to manipulate and control a git repository from inside Pharo.
 ###Level: Intermediate
 
 ***
@@ -1095,18 +868,6 @@ Tests help developers to ensure that the functionality is there. Let’s help de
 ###Goal
 The vision of this project is to provide a testing assistant that will help you to test your code, and test your code with the available tests. Possible direction include: test linkage to tested entities, guiding assistance for test cteation, test inference fro runtime.
 ###Level: Advanced
-
-***
-
-##Title: GitHubcello Configuration Loader
-###Contact: tymchuk@inf.unibe.ch
-###Supervisors: Yuriy Tymchuk, Claudio Corrodi
-###Keywords: vesioning, GUI, mining
-###Context
-For years Pharo developers were using Monticello versioning system and Metacello configuration manager. But nowadays more and more developers switch to git which makes versioning mush easier. However it’s still complicated to load a project because of Metacello configurations burden.
-###Goal
-The goal of this project is to provide developers with tool to easily load a project if they know a GitHub url, username, etc…
-###Level: Entry-Intermediate
 
 ***
 
@@ -1143,18 +904,6 @@ API Evolution Miner si an existing tool that mines a project history to detect A
 ###Goal
 The goal of this project is to create a continuous integration service that will allow to easily register your projects and will provide rules to you in a semi-intrusive way when they are ready.
 ###Level: Entry-Intermediate
-
-***
-
-##Title: YAPaCaMo (Yet Another Pharo Changes Model)
-###Contact: tymchuk@inf.unibe.ch
-###Supervisors: Yuriy Tymchuk, Claudio Corrodi
-###Keywords: OOD, model, tool
-###Context
-Software development process is all about evolution. Source code is changing during development, memory is changing during an execution. And one of the most trivial ways to understand a change between two entities is a DiffView: two textual versions are compared to identify which lines have been changed.
-###Goal
-The goal of this project is to create a high level definition of a change based on the requirements of multiple projects (and implement some concrete models to prove the concept). The model may refer not only to source code, but to all types of objects (take a look at the debugger for failing test).
-###Level: Intermediate
 
 ***
 
@@ -1330,4 +1079,4 @@ Add DTrace probes to PharoVM. See http://www.adrian-lienhard.ch/blog?dialog=smal
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-01-22T16:05:58.525815+00:00 by Pharo5.0 of 16 April 2015 update 50765</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-01-25T08:22:24.296742+00:00 by Pharo5.0 of 16 April 2015 update 50766</p>
