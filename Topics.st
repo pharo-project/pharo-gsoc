@@ -23,22 +23,21 @@ yourself
 
 
 PharoTopic new
-title: 'CDB for Pharo in Pharo';
+title: 'Make for Pharo in Pharo';
 contact: 'stephane.ducasse@inria.fr';
 supervisors: 'stephane.ducasse@inria.fr';
-keywords: 'CDB database';
+keywords: 'Make graph';
 context: '
-cdb is a fast, reliable, simple package for creating and reading constant databases. Its database structure provides several features:
-Fast lookups: A successful lookup in a large database normally takes just two disk accesses. An unsuccessful lookup takes only one.
-Low overhead: A database uses 2048 bytes, plus 24 bytes per record, plus the space for keys and data.
-No random limits: cdb can handle any database up to 4 gigabytes. There are no other restrictions; records don''t even have to fit into memory. Databases are stored in a machine-independent format.
-Fast atomic database replacement: cdbmake can rewrite an entire database two orders of magnitude faster than other hashing packages.
-Fast database dumps: cdbdump prints the contents of a database in cdbmake-compatible format.
-- http://cr.yp.to/cdb.html
-- https://github.com/spotify/sparkey
-- http://www.unixuser.org/~euske/doc/cdbinternals/
+Make is a unix tool to express dependencies between task. Now it is not really cross-platform. Python has a library that implements make on 
+top of a graph library. It would be really nice to have a solution for Pharo using the same idea.
+- http://aosabook.org/en/500L/contingent-a-fully-dynamic-build-system.html
+MCHttpRepository
+	location: ''http://smalltalkhub.com/mc/CipT/MelcGraph/main''
+	user: ''''
+	password: ''''
+
 ';
-goal: 'The goal of this project is to develop a Pharo implementation of CDB.'; 
+goal: 'The goal of this project is to develop a make like implementation in Pharo using the graph library MelcGraph developed by C. Teodorov.'; 
 level: 'Normal';
 yourself
 
@@ -210,17 +209,6 @@ Thabo has been using Excel to track bugs and issues internally in his company an
 .
 
 PharoTopic new
-	title: '7GUIs implementation';
-	contact: 'Alain Plantec';
-	supervisors: '';
-	keywords: 'GUI learning-curve';
-	context: 'Benchmarking how hard easy is to implement GUIs in a given platform is probably a decisive factor on how good the opportunities this plattform has to offer. The 7GUIs benchmark is a nice research on GUI building usability and having a Pharo implementation will illlustrate the power of this platform. Ref: https://github.com/eugenkiss/7guis/wiki';
-	goal: 'Be able to see a Pharo implementation for 7GUIs on top of Brick the new widgets layer of Pharo.';
-	level: 'Intermediate';
-	yourself
-.
-
-PharoTopic new
 	title: 'Desktop application for offline text search';
 	contact: 'mbaehr+pharo@iaeste.at';
 	supervisors: 'Martin Bähr';
@@ -239,17 +227,6 @@ PharoTopic new
 	context: 'file editor and asset and server manager solution, http://labs.fossasia.org/projects/smalltalk-file-editor/';
 	goal: 'a tool to manage websites with eg. zinc, control running services, overview and edit assets such as static files in the image or on disk';
 	level: 'Beginner';
-	yourself
-.
-
-PharoTopic new
-	title: 'GUI builder';
-	contact: '';
-	supervisors: '';
-	keywords: 'GUI tooling';
-	context: 'If whatever you are doing you cannot make it visual easily, people cannot perceive it easily. Due to evolutionary reasons, our brain has unfair bias towards visual processing. Lets make something that allows Pharo to create visual things easier. Something like PARTS or Dolphin Smalltalk GUI builder would be huge.';
-	goal: 'Be able to create composable widgets for Pharo programs';
-	level: 'Intermediate';
 	yourself
 .
 
@@ -299,17 +276,6 @@ PharoTopic new
 	level: 'Intermediate';
 	yourself
 
-.
-
-PharoTopic new
-	title: 'Mobile';
-	contact: '';
-	supervisors: '';
-	keywords: 'mobile vm';
-	context: 'Is not that mobile is a growing market, is more like mobile is going supernova (http://a16z.com/2014/10/28/mobile-is-eating-the-world/). The power of Pharo and its libraries on mobile devices is currently perhaps one of its biggest opportunities to create a really productive environment in mobile.';
-	goal: 'Opening Pharo images on a new mobile plattform';
-	level: 'Advanced';
-	yourself
 
 .
 
@@ -374,29 +340,6 @@ PharoTopic new
 .
 
 PharoTopic new
-	title: 'Enhancing file ownership';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'Damien Cassou and Mariano Martinez Peck';
-	keywords: 'OS VM';
-	context: 'We should enhance the support for file permissions: to answer, e.g., can the current VM read this file? The new mechanism must work on all currently supported platforms (Linux, OS X, Windows). Other platforms such as Java and Ruby might provide inspiration.  http://forum.world.st/Pharo-dev-FileSystem-Permissions-td4696735.html';
-	goal: '';
-	level: 'Advanced';
-	yourself
-.
-
-PharoTopic new
-	title: 'Better Message Browser';
-	contact: 'jfabry@dcc.uchile.cl';
-	supervisors: 'Johan Fabry / S. Ducasse';
-	keywords: 'tools ui spec';
-	context: 'The browser showing results of senders and implementors won''t help you navigate in the call chain. Often we want to perform a sender on a message and would like to see if there are senders of the senders. This is typically interesting when doing cleaning.';
-	goal: 'The goal of the project is to define a tool to support message browsing.';
-	level: 'Intermediate';
-	yourself
-	
-.
-
-PharoTopic new
 	title: 'Bug Importer for Moose';
 	contact: 'nicolas.anquetil@inria.fr';
 	supervisors: 'N. Anquetil';
@@ -413,17 +356,6 @@ A. Hora, N. Anquetil, S. Ducasse, M. Bhatti, C. Couto, M. Tulio Valente and J. M
 	yourself
 
 	
-.
-	
-PharoTopic new
-	title: 'An Expert System Framework';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
-	keywords: 'Expert systems';
-	context: 'There is a need for an expert system framework on top of Pharo. Several projects could benefit from it: recommander, moose, robotics, drgeo.';	goal: 'The goal of the project is to develop (with a strong test coverage) an expert system and some applications to evaluate the point of extension. Links: look at NeoPus (it proposes to use objects for facts).';
-	level: 'Intermediate';
-	yourself
-
 .
 		
 PharoTopic new
@@ -478,33 +410,6 @@ it can do better.';
 	
 .
 
-PharoTopic new
-	title: 'Omnipresent Code Manager';
-	contact: 'martin.dias@inria.fr';
-	supervisors: ' M. Dias and S. Ducasse';
-	keywords: 'code representation change history browsing';
-	context: 'Being able to look at all the versions of a method, class or package is an important feature. Right now Pharo contains a limited amount versions because the changes are condensed from time to time. The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.';
-	goal: 'The goal of the project is to help defining a source code manager. The goal of the project is to
-	        - study Epicea (the new change model)
-	        - improve the infrastucture around Epicea. For example we should be able to take a monticello repository and import all the changes into a local source manager.
-	        - build tool to navigate version in the source manager.
-	        - develop a service that supports the creation of a local or remote source manager. We could imagine that all the pharo programmers can have access to a remote source manager and that locally they can define local changes and that when a change is not found locally it is looked up over the internet. The design of the storage of the Epicea format should support that already.';
-	yourself
-	
-.	
-
-PharoTopic new
-	title: 'Support for change code review';
-	contact: 'martin.dias@inria.fr';
-	supervisors: ' M. Dias and S. Ducasse';
-	keywords: 'code representation change history browsing spec';
-	context: 'Pharo manages well source versions and modification. However it is tedious to understand changes made by other developers. Often during a programming session we split, changes existing code and we would like to be able to have feedback by other programmers. However giving a simple a list of changes can be really tedious for the reviewer: he will see that a method was changed and another was added for example.
- The RMOD team is working on a new change model named Epicea and building tools on top. Epicea defines entities that represent changes as well as refactorings.';
-	goal: 'The goal of the project is to help building a tools to support code reviewing. In detail, here are some tasks to be performed: (1) study Epicea (the new change model), (2) define a tool to annotate changes and share annotations between different developers, (3) build heuristics to identify changes that represents a unit (for example split methods and push up or push down).';
-	level: 'Intermediate';
-	yourself
-	
-.
 
 PharoTopic new
 	title: 'Improving String manipulation';
@@ -555,35 +460,6 @@ yourself
 
 .
 
-PharoTopic new
-	title: 'Thread-based programming';
-	contact: 'esteban.lorenzano@inria.fr';
-	supervisors: 'Esteban Lorenzano';
-	keywords: 'process';
-	context: 'Actually, in Pharo there is already an infrastructure for running thousand of process (green treads).';
-	goal: 'Now there is small support for "thread based programming". What does it means? We do not have an easy way to: 
-	- define tasks (probably Job class and around can help there)
-	- scheduling tasks in a proper way (a.k.a. Round Robin)
-	- communication between tasks
-	- serialization/materialization of tasks (again, Fuel can help here)
-	So, the idea is to have in Pharo the same infrastructure as Stackless Python [1][2] provides.
-	What is this useful for? To allow an elegant way to deal with massive amounts of tasks (typical in games, for instance).
-	Link: http://www.stackless.com 
- http://www.slideshare.net/guest162fd90/stackless-python-101';
-yourself
-
-.
-
-PharoTopic new
-	title: 'From BNF to PetitParser';
-	contact: 'Stephane.Ducasse@inria.fr';
-	supervisors: 'who wants';
-	keywords: 'parsing';
-	context: 'Petit Parser is a cool framework to build parsers and composed them but it lacks a way to import existing grammars defined in BNF.';
-	goal: 'The goal of the project is to support the creation of parsers based on BNF description. Deep into Pharo contains a tutorial on PetitParser';
-yourself
-
-.
 
 PharoTopic new
 	title: 'Line level test coverage and which test to run';
@@ -634,22 +510,9 @@ yourself
 
 
 PharoTopic new
-	title: 'Epub generator for Pillar';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'Damien Cassou and Stéphane Ducasse';
-	keywords: 'Pillar epub document tree visitor';
-	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)' ;
-	goal: 'The goal of this project is to add the ePub export format (used by e-readers).';
-	level: 'Beginner';
-	candidate: '';
-	yourself
-	
-.
-
-PharoTopic new
 	title: 'OpenDocument generator for Pillar';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'Damien Cassou and Stéphane Ducasse';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: ' Stéphane Ducasse';
 	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. Pillar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects (http://www.smalltalkhub.com/#!/~Pier/Pillar)' ;
 	goal: 'The goal of this project is to add the standard OpenDocument export format (used by LibreOffice and OpenDocument).';
@@ -661,27 +524,14 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Improving Launcher';
-	contact: 'damien.cassou@inria.fr';
-	supervisors: 'D. Cassou, B. Coman and S. Ducasse';
+	contact: 'stephane.ducasse@inria.fr and guillermo.polito@inria.fr';
+	supervisors: 'G. Polito and S. Ducasse';
 	keywords: 'Launcher is a cool tool to launch and organize Pharo images';
 	context: 'Launcher is important for both new and advanced Pharo users. Launcher needs to get improved in several areas: configuration management, image storage, friendliness. Damien has a long list of important features to implement. Demonstration: https://www.youtube.com/watch?v=fNim2Yxs320.
 ';
 	goal: '';
 	level: 'Intermediate';
 	candidate: '';
-	yourself
-	
-.
-
-PharoTopic new
-	title: 'ParseTree Rewriter Improvements';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'C. Teruel and S. Ducasse';
-	keywords: 'AST tree visitor';
-	context: 'The Parse tree rewriter is a powerful engine. It is used to support automatic rewriting of program and it is the basis of the refactoring engine. It is based on a unification algorithm that unifies
-	trees with meta variables to abstract syntax trees.' ;
-	goal: 'The goal of this project is to revisit the API of the Parse Tree Rewriter to help people build better tools. Reading the Flamel GSOC project and the new book chapter on such tools is a good start.';
-	level: 'Advanced';
 	yourself
 	
 .
@@ -696,17 +546,6 @@ PharoTopic new
 	level: 'Intermediate';
 	yourself
 	
-.
-
-
-PharoTopic new
-	title: 'Web OpenStreet map manager';
-	contact: '';
-	supervisors: '';
-	keywords: 'svg open street visualisation web amber seaside';
-	context: '	OpenStreet is an open source standard for high-quality maps.';
-	goal: 'The goal of this project is to build a simple web application that let users managing their own maps like googlemap but in a better way. An example could be http://umap.openstreetmap.fr/';
-	yourself
 .
 
 PharoTopic new
@@ -736,17 +575,6 @@ PharoTopic new
 	yourself
 .
 
-PharoTopic new
-	title: 'Tetris';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse';
-	keywords: ' games SameTile Miner Sokoban';
-	context: 'There is an implementation of the Tetris game in Pharo. However there is not a clear separation between the game model and its graphical representation.';
-	goal: 'The goal of this project is to revisit the implementation to make sure that the game is defined
-	via a model that can then be displayed graphically using different ways.  The tasks can be: (1)	Understand the actual implementation, (1) start to see how we could have a model that does not depend on Morphic, (3) implement this new game. 
-	A nice following project would be to see how we can create a framework to build games such as Same Tile, Miners and that would make easier the definition of board games';
-	yourself
-.
 	
 PharoTopic new
 	title: 'Miner';
@@ -773,24 +601,13 @@ PharoTopic new
 
 .
 
-PharoTopic new
-	title: 'Baobab';
-	contact: 'camille.teruel@inria.fr';
-	supervisors: 'C. Teruel';
-	keywords: 'AST IDE annotation social-coding';
-	context: 'Pharo sources are currently stored in a separated file. Bonsai, the future system for persistent and compressed ASTs will replace this file to store all the sources in the image. Moreover, the nodes of the ASTs can be annotated with various informations (bindings, additional comments, discussions, false positive critics, debugging code, typing information for various pluggable type systems, statistics like code coverage, etc...).';
-	goal: 'All these annotations would take too much space in the image. Moreover, not all of them are needed by all developers. The goal of Baobab is to store these annotations on remote repositories so that teams of developers can share and edit them.';
-	level: 'intermediate';
-	yourself
-
-.
 
 PharoTopic new
-	title: 'Tools for the Counch Module System';
-	contact: 'camille.teruel@inria.fr';
-	supervisors: 'C. Teruel and S. Ducasse';
+	title: 'Tools for the new Module System';
+	contact: 'Guillermo.Polito@inria.fr';
+	supervisors: 'Guillermo Polito and S. Ducasse and Luc Fabresse';
 	keywords: 'Module';
-	context: 'C. Teruel designed and implemented Conch a new module system for Pharo. In Conch class extensions are local to the classes defining them. ';
+	context: 'G. Polito designed and implemented  a new module system for Pharo. In Conch class extensions are local to the classes defining them. ';
 	goal: 'The goal of the project is to build tool support for Conch. In particular we want to have method extensions to be only visible from the importing packages. A module or class browser should reflect this behavior. We should take Pharo and turn the packages into their Conch counterpart to see how it feels.';
 	level: 'intermediate';
 	yourself
@@ -936,7 +753,7 @@ PharoTopic new
 PharoTopic new
 	title: 'Visual Debugger';
 	contact: 'alexandre.bergel@me.com';
-	supervisors: 'Andrei Chis Alexandre Bergel';
+	supervisors: 'Andrei Chis and Alexandre Bergel';
 	keywords: 'Debugging Roassal';
 	context: 'The visual interface of code debugger have always been designed as a set of textual widgets. Although Pharo debugger is famed for its flexibility and ease of use, it unfortunately stick to a poor and restricted support to convey information. Visual Debugger is a project to combine Roassal with GTDebugger to offer a whole range of new debuggers to expose object state history, and message recording.';
 	goal: 'Bridge Roassal with GTDebugger and offer the infrastructure to define specific and visual debuggers';
@@ -955,16 +772,6 @@ PharoTopic new
 	yourself
 .
 
-PharoTopic new
-	title: 'GitPharo';
-	contact: 'thierry.goubier@gmail.com';
-	supervisors: 'Thierry Goubier';
-	keywords: 'Pharo Git';
-	context: 'Pharo is building some gui support, either via GitFileTree or libcgit integration, but GUI tools inside Pharo show little of the change.';
-	goal: 'Implement a GUI to manipulate and control a git repository from inside Pharo.';
-	level: 'Intermediate';
-	yourself
-.
 
 PharoTopic new
        title: 'Arduino for phratch';
@@ -984,17 +791,10 @@ PharoTopic new
        context: 'Tests help developers to ensure that the functionality is there. Let’s help developers to ensure that their functionality has tests.';
        goal: 'The vision of this project is to provide a testing assistant that will help you to test your code, and test your code with the available tests. Possible direction include: test linkage to tested entities, guiding assistance for test cteation, test inference fro runtime.';
        level: 'Advanced';
-       yourself.
+       yourself
+       
+.
 	   
-PharoTopic new
-       title: 'GitHubcello Configuration Loader';
-       contact: 'tymchuk@inf.unibe.ch';
-       supervisors: 'Yuriy Tymchuk, Claudio Corrodi';
-       keywords: 'vesioning, GUI, mining';
-       context: 'For years Pharo developers were using Monticello versioning system and Metacello configuration manager. But nowadays more and more developers switch to git which makes versioning mush easier. However it’s still complicated to load a project because of Metacello configurations burden.';
-       goal: 'The goal of this project is to provide developers with tool to easily load a project if they know a GitHub url, username, etc…';
-       level: 'Entry-Intermediate';
-       yourself.
 	   
 PharoTopic new
        title: 'External-Properties-Aware Diff';
@@ -1004,7 +804,8 @@ PharoTopic new
        context: 'Developers use diff view to understand the changes between two versions of code. While diff focuses mainly on textual changes, software itself is not about text.';
        goal: 'The idea of this project is to integrate already available information about external properties of software (such as code quality critics) into a diff view.';
        level: 'Intermediate';
-       yourself.
+       yourself
+.
 	   
 PharoTopic new
        title: 'ViDI v2 (Visual Design Inspector Reborn)';
@@ -1026,15 +827,6 @@ PharoTopic new
        level: 'Entry-Intermediate';
        yourself.
        
-PharoTopic new
-       title: 'YAPaCaMo (Yet Another Pharo Changes Model)';
-       contact: 'tymchuk@inf.unibe.ch';
-       supervisors: 'Yuriy Tymchuk, Claudio Corrodi';
-       keywords: 'OOD, model, tool';
-       context: 'Software development process is all about evolution. Source code is changing during development, memory is changing during an execution. And one of the most trivial ways to understand a change between two entities is a DiffView: two textual versions are compared to identify which lines have been changed.';
-       goal: 'The goal of this project is to create a high level definition of a change based on the requirements of multiple projects (and implement some concrete models to prove the concept). The model may refer not only to source code, but to all types of objects (take a look at the debugger for failing test).';
-       level: 'Intermediate';
-       yourself.
 
 PharoTopic new
        title: 'Poppy for phratch';
@@ -1144,6 +936,8 @@ Create the basic datastructures to work as described in the context,
 driven by tests. Use TeX-like linebreaking and hypenation.';
 level: 'Advanced';
 yourself
+
+
 .
 
 PharoTopic new
