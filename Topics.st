@@ -142,7 +142,7 @@ PharoTopic new
 	contact: 'stephane.ducasse@inria.fr';
 	supervisors: 'Stephane Ducasse';
 	keywords: 'Collection DataStructure Benchmarks';
-	context:: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
+	context: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
 with around 100 classes. But new collections exist such as BTree, QuadTree, SkipList, Trie, …
 
 Containers is an existing effort to gather many of the existing collection developed individually and externally to Pharo into a single umbrella. The idea is to create a modular collection library for Pharo users. Containers’s goals is to develop new efficient, well-tested, well documented collections. 
