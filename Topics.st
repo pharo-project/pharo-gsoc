@@ -220,6 +220,11 @@ The student will learn from this project:
   - Core parts of the Pharo language such as the File library
   - How to interact with a big open source community
   - Basic sw engineering practices
+  
+Resources:
+  - Pharo Command Line Handlers: https://github.com/guillep/pharo-core/tree/master/src/System-CommandLineHandler.package
+  - Clap: https://github.com/cdlm/clap-st
+  - Scale: https://github.com/guillep/Scale
 '; 
 level: 'Normal';
 yourself.
