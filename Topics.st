@@ -131,9 +131,8 @@ The student will
 	- start designing a first write barrier frameworks
 Resources:
 - https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/';
-	 'The goal of the project is to improve the ecompletion infrastructure: The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, (3) Improve the noise introduced by the Symbol table usage. (4) build more heuristics.';
-	level: 'Intermediate';
-	yourself
+  level: 'Intermediate';
+  yourself
     
 
 . 
