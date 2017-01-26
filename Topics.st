@@ -197,4 +197,29 @@ PharoTopic new
     - One subgoal of this project is to add the standard OpenDocument export format (used by LibreOffice and OpenDocument).';
 	level: 'Beginner';
 	candidate: '';
-	yourself
+	yourself.
+	
+PharoTopic new
+  title: 'Enhance Pharo Command Line Interface';
+  contact: 'guillermopolito@gmail.com';
+  supervisors: 'guillermopolito@gmail.com';
+  keywords: 'terminal commandline bash scripting';
+  context: 'The command line handler framework is the most used alternative for command line interaction with Pharo applications. Several default command line handlers come defined in the framework for interacting with the environment (evaluate code, install packages, etc.). Users can also extend this framework to introduce application specific command line behaviours in Pharo. Additionally to this development effort, the Scale library (https://github.com/guillep/Scale) has been developed to allow using Pharo from the command line for scripting purposes.
+These tools proved useful to the pharo community, as they are used in many projects for e.g., building, deploying or testing. But also, they pushed the pharo infrastructure and took to the surface several problems present in the underlying core libraries that difficults the deployment and usage in typical unix-like environments.';
+  goal: 'The main goal of this project is to enhance the command line management in pharo to enhance the user experience in unix-like environments. We identify several tasks for the student, that should be accomplished in the 12 week lapse:
+  - Complete, Test and integrate a better alternative for command line parsing such as Clap (https://github.com/cdlm/clap-st)
+  - fix working directory (pwd): today pharo uses the image directory as working directory, causing several glitches when the image is used from a differen directory.
+  - fix logging: pharo logs nowadays in the directory where the image is. We should be capable to define wether the logging should happen depending on the distribution or the environment (e.g., /var/log).
+  - fix general file management: pharo wrongly reads and writes files relative to its `working` directory.
+
+In general terms these development tasks include implicitly their integration into the main development branch of Pharo. This means that the student will also communicate with the Pharo open source community and follow the community''s quality guidelines and process of integration and validation.
+
+The student will learn from this project:
+  - Basics of scripting
+  - Good practices of deployment and building applications
+  - Core parts of the Pharo language such as the File library
+  - How to interact with a big open source community
+  - Basic sw engineering practices
+'; 
+level: 'Normal';
+yourself.
