@@ -1,6 +1,10 @@
 #Pharo GSOC Topics
 
-* [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
+* [Distributed Issue Tracker](#title-distributed-issue-tracker)
+* [Weather/Meteo for OpenStreetMap in Roassal](#title-weathermeteo-for-openstreetmap-in-roassal)
+* [GRASS integration with Pharoo/Roassal](#title-grass-integration-with-pharooroassal)
+* [Statistics Library with Polymath](#title-statistics-library-with-polymath)
+* [Two-way synchronized code changes, better support for cross-platform co-development ](#title-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development-)
 * [IPFS for Pharo](#title-ipfs-for-pharo)
 * [Make for Pharo in Pharo](#title-make-for-pharo-in-pharo)
 * [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
@@ -10,36 +14,132 @@
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
 
-##Title: Scrapping Data: Enhancing User Experience
-###Contact: serge.stinckwich@gmail.com
-###Supervisors: serge.stinckwich@gmail.com
-###Keywords: CVS 
+##Title: Distributed Issue Tracker
+###Contact: stephan@stack.nl
+###Supervisors: Stephan Eggermont, Diego Lont
+###Keywords: P2P Tools GUI
+###Context
+Technical Details
+
+The recent decision by Google to deprecate and stop its API for the Google Issue Tracker used by a.o. the Pharo, Seaside, MOOSE and Metacello projects makes it necessary for those projects to select a different issue tracker. The timespan before this decision has to be made is too short for the development of a new issue tracker from scratch. 
+
+Now most development in Smalltalk uses distributed version control systems, either Monticello or Git, the question arises why these projects still would want to use a centralized issue tracker. The long-standing problems in keeping squeaksource up-and-running are only one example of the problems of depending on centralized infrastructure. Other examples are the move of Lukas' repository and the number of times where the Pharo CI infrastructure was not available, especially on holidays and weekends.
+
+The currently used issue trackers cannot work disconnected. Integrating the issue tracker in the CI workflow of the projects is crucial.
+
+The goals of the persona should be translated into a storymap. Delivery should be iterative and incremental, driven by value to the community and technical risk. The student is expected to be active on the mailing list and discuss development there. This includes handling (source) contributions by others.
+
+There is a small prototype available. 
+
+Benefits to the Student
+
+getting to know the difficulties of issue tracking/the workflow of open source projects
+experience with distributed systems
+experience an agile open source environment
+Benefits to the Community
+
+better integrated workflow
+native issue tracker, accessible both in-image, web and automated
+showcase for productive environment  
+###Goal
+A native smalltalk distributed issue tracker. It should have basic issue tracking functionality including attaching files/pictures/code. It should have a native interface, a web interface and a scripting API. Primary development is in Pharo.
+
+Issue trackers have different kind of users. To make clear that different users have different needs, persona can be helpful. 
+
+Isabelle is an information technology student looking for an interesting language and environment to learn. She wants to contribute to and learn from a smart community and needs interesting experiences on her cv. She has already learned the basics of a few mainstream languages and feels ready to try something more exotic. Smalltalk seems interesting as the origin of many inventions.
+
+Yann is the major developer of a web-based platform based on Pharo and Seaside. He needs to ensure the platform keeps working smoothly and is updated regularly with the latest changes. In production he uses the released versions. He fears the major clean-ups Pharo is making make it difficult for him to keep up. He is dependent on a few old unmaintained squeaksource packages.
+
+Janine just found an interesting old package on squeaksource. It was last changed in 2007. She has been using smalltalk for a few years, so knows what to expect when trying to load an unmaintained package. There are some missing classes that still exist in squeak.
+
+Tony is the developer of a package that is used with nearly all smalltalks. He mainly works with a commercial smalltalk and keeps just enough contact with the Pharo community to keep his package working. He has complained about some changes that made it necessary for him to change his package structure. He mainly updates the Pharo version on his way to and from the office in the train. 
+
+Eve maintains a few of the crucial Pharo kernel packages. They are under heavy development and once in a while everything breaks, leading to a flood of issues. They mostly come from outsiders, as she talks daily with the Pharo core team. She has to close a lot of them as duplicates. She also has to review code that gets attached in one form or another to the issue.
+
+Daniel is a maintainer of the vm that forms the basis for the Pharo vm. The vm is used by many more projects.
+
+Lara is a release manager for a well known linux distribution. Pharo is just one of 30 languages that are included in the distribution. Before doing a release she scans the issue tracker for any show stoppers. She had to stop including environments because of security issues.
+
+Thabo has been using Excel to track bugs and issues internally in his company and would like to move to a new distributed tracking system built in Pharo. Apart from all the usual inputs and outputs, he needs to be able to import his massive excel spreedsheat, as perhaps csv, into the new tracking system.
+
+###Level: Advanced
+
+***
+
+##Title: Weather/Meteo for OpenStreetMap in Roassal
+###Contact: onil.goubier@gmail.com
+###Supervisors: O. Goubier
+###Keywords: Grib,  OpenStreetMaps, Roassal
 ###Context
 
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
+visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!
 ###Goal
-To analyze data, you need to get data in first. So, one may want to read - say -
-a CSV, and have a number of heuristics, such as:
-- autodetection of encoding
-- autodetection of quotes and delimiter
-- autodetection of columns containing numbers or dates
-- the possibility to indicate that some markers, such as "N/A",
-represent missing values
-- the possibility to indicate a replacement for missing values, such
-as 0, or "", or the average or the minimum of the other values in the
-colums
-See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
-It may be worth to consider making this into a sequence that is read and processed lazily, to deal with CSV files bigger than memory.
-When data is finally in, usually the first task is doing some processing, inspection or visualization. The Smalltalk collections are
-good for processing (although some lazy variants might help), and Roassal and the inspectors are perfect for visualization and browsing.
-It could be extended as follows: The second part comes the time when one wants to run some algorithm. While there is no need to have the fanciest ones, there should be some
-of the basics, such as:
-- some form or regression (linear, logistic...)
-- some form of clustering (kmeans, dbscan, canopy...)
-Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
-Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. Here I think
-Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
 
-###Level: Normal
+The goal of this project is to add a support for importing Grib data sets (https://en.wikipedia.org/wiki/GRIB) in Roassal. Those
+datasets give access to weather information and predictions from many sources, and we need a support to import such files into
+Pharo and Roassal
+###Level: intermediate
+
+***
+
+##Title: GRASS integration with Pharoo/Roassal
+###Contact: onil.goubier@gmail.com
+###Supervisors: O. Goubier
+###Keywords: GIS, GRASS, Roassal
+###Context
+
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
+visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!
+###Goal
+
+The goal of this project is to integrate GRASS (https://grass.osgeo.org/) with Pharo. GRASS provides an extensive set of
+advanced GIS functions (modeling, simulations, data import, projections, etc...) and should be integrated inside Pharo,
+first as a set of external commands (with a Pharo-based GUI front-end), and maybe as a FFI interface.
+###Level: intermediate
+
+***
+
+##Title: Statistics Library with Polymath
+###Contact: serge DOT stinckwich AT ird DOT fr
+###Supervisors: Serge Stinckwich
+###Keywords: statistic mathematics science
+###Context
+PolyMath is an existing Pharo library for doing scientific computing.
+###Goal
+Add some statistics function to Sci-Smalltalk.
+###Level: Intermediate
+
+***
+
+##Title: Two-way synchronized code changes, better support for cross-platform co-development 
+###Contact: stephan@stack.nl
+###Supervisors: Stephan Eggermont, Diego Lont
+###Keywords: 
+###Context
+Glorp is originally maintained in VisualWorks. We now have a version 
+in Pharo that is forked. It would be nice if we could make sure that 
+changes can be synchronized. The rewriting engine is available 
+on both platforms, and Glorp has a large number of unit tests. 
+If we can describe both migrations with refactorings, 
+we should be able to create builds in ci for both that show 
+when changes break things and otherwise synchronize two-way. 
+
+This might also be beneficial for Roassal2 and Seaside, that 
+currently use a compatibility layer. 
+
+Another place where this rewriting can be useful would be 
+in maintaining compatibility between Squeak and Pharo, 
+and in making it easier keeping older code alive. 
+
+Marcel Taeumel has written a number of interesting applications 
+(UIBuilder, Widgets, XPForums) using a 'signals' style 
+communication. In Pharo it would make sense to have them 
+use Announcements. 
+
+###Goal
+Two-way synchronized code changes, 1st target: GLORP
+###Level: Advanced
 
 ***
 
@@ -84,8 +184,8 @@ The goal of this project is to develop a make like implementation in Pharo using
 ***
 
 ##Title: Scrapping Data: Enhancing User Experience
-###Contact: stephane.ducasse@inria.fr (and sven?) (and alexandre bergel)
-###Supervisors: stephane.ducasse@inria.fr
+###Contact: alexandre.bergel@me.com 
+###Supervisors: alexandre.bergel@me.com 
 ###Keywords: CVS 
 ###Context
 
@@ -254,4 +354,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T16:09:28.025921+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T16:19:51.068073+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
