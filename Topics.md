@@ -105,9 +105,10 @@ first as a set of external commands (with a Pharo-based GUI front-end), and mayb
 ###Supervisors: Serge Stinckwich
 ###Keywords: statistic mathematics science
 ###Context
-PolyMath is an existing Pharo library for doing scientific computing.
+PolyMath is a new Smalltalk project, similar to existing scientific libraries like NumPy, SciPy for Python or SciRuby for Ruby. PolyMath already provide the following basic functionalities:
+	complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, numerical methods, Ordinary Differential Equation (ODE) solvers.
 ###Goal
-Add some statistics function to Sci-Smalltalk.
+Add some statistics functions to PolyMath.
 ###Level: Intermediate
 
 ***
@@ -354,4 +355,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T16:19:51.068073+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T16:30:58.336458+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
