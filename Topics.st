@@ -104,8 +104,10 @@ PharoTopic new
 	contact: 'serge DOT stinckwich AT ird DOT fr';
 	supervisors: 'Serge Stinckwich';
 	keywords: 'statistic mathematics science';
-	context: 'PolyMath is an existing Pharo library for doing scientific computing.';
-	goal: 'Add some statistics function to Sci-Smalltalk.';
+	context: 'PolyMath is a new Smalltalk project, similar to existing scientific libraries like NumPy, SciPy for Python or SciRuby for Ruby. PolyMath already provide the following basic functionalities:
+	complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, Didier Besset's numerical methods, Ordinary Differential Equation (ODE) solvers.
+ ';
+	goal: 'Add some statistics functions to PolyMath.';
 	level: 'Intermediate';
 	yourself
 
