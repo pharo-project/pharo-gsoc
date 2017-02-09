@@ -267,8 +267,8 @@ Resources:
 
 PharoTopic new
 	title: 'New Collections for Pharo';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stephane Ducasse';
+	contact: 'Juan Pablo Sandoval Alcocer <juampiboy@gmail.com>';
+	supervisors: 'Juan Pablo Sandoval Alcocer';
 	keywords: 'Collection DataStructure Benchmarks';
 	context: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
 with around 100 classes. But new collections exist such as BTree, QuadTree, SkipList, Trie, …
