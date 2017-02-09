@@ -355,4 +355,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T16:32:37.794855+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T17:46:36.87846+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
