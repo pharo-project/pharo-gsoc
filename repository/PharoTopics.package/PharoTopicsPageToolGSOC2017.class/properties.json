@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "PharoTopicsPageTool",
 	"category" : "PharoTopics",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PharoTopicsTest",
+	"name" : "PharoTopicsPageToolGSOC2017",
 	"type" : "normal"
 }
