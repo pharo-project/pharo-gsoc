@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
 * [IPFS for Pharo](#title-ipfs-for-pharo)
 * [Make for Pharo in Pharo](#title-make-for-pharo-in-pharo)
 * [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
@@ -8,6 +9,39 @@
 * [New Collections for Pharo](#title-new-collections-for-pharo)
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
+
+##Title: Scrapping Data: Enhancing User Experience
+###Contact: serge.stinckwich@gmail.com
+###Supervisors: serge.stinckwich@gmail.com
+###Keywords: CVS 
+###Context
+
+###Goal
+To analyze data, you need to get data in first. So, one may want to read - say -
+a CSV, and have a number of heuristics, such as:
+- autodetection of encoding
+- autodetection of quotes and delimiter
+- autodetection of columns containing numbers or dates
+- the possibility to indicate that some markers, such as "N/A",
+represent missing values
+- the possibility to indicate a replacement for missing values, such
+as 0, or "", or the average or the minimum of the other values in the
+colums
+See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
+It may be worth to consider making this into a sequence that is read and processed lazily, to deal with CSV files bigger than memory.
+When data is finally in, usually the first task is doing some processing, inspection or visualization. The Smalltalk collections are
+good for processing (although some lazy variants might help), and Roassal and the inspectors are perfect for visualization and browsing.
+It could be extended as follows: The second part comes the time when one wants to run some algorithm. While there is no need to have the fanciest ones, there should be some
+of the basics, such as:
+- some form or regression (linear, logistic...)
+- some form of clustering (kmeans, dbscan, canopy...)
+Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
+Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. Here I think
+Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
+
+###Level: Normal
+
+***
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
@@ -220,4 +254,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-01-26T09:47:42.674923+00:00 by Pharo5.0 of 16 April 2015 update 50766</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T16:09:28.025921+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
