@@ -105,8 +105,7 @@ PharoTopic new
 	supervisors: 'Serge Stinckwich';
 	keywords: 'statistic mathematics science';
 	context: 'PolyMath is a new Smalltalk project, similar to existing scientific libraries like NumPy, SciPy for Python or SciRuby for Ruby. PolyMath already provide the following basic functionalities:
-	complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, Didier Besset's numerical methods, Ordinary Differential Equation (ODE) solvers.
- ';
+	complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, numerical methods, Ordinary Differential Equation (ODE) solvers.';
 	goal: 'Add some statistics functions to PolyMath.';
 	level: 'Intermediate';
 	yourself
