@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Jupyter Support for Pharo](#title-jupyter-support-for-pharo)
 * [Distributed Issue Tracker](#title-distributed-issue-tracker)
 * [Weather/Meteo for OpenStreetMap in Roassal](#title-weathermeteo-for-openstreetmap-in-roassal)
 * [GRASS integration with Pharoo/Roassal](#title-grass-integration-with-pharooroassal)
@@ -13,6 +14,18 @@
 * [New Collections for Pharo](#title-new-collections-for-pharo)
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
+
+##Title: Jupyter Support for Pharo
+###Contact: serge.stinckwich@ird.fr , nikolaos.papoulias@ird.fr
+###Supervisors: Serge Stinckwich, Nick Papoulias
+###Keywords: Live coding, UI, Notebook, Interoperability, Literate Programming
+###Context
+Jupyter is a web notebook that supports an interactive form of literate programming. It is written in python but other languages can be integrated to its workflow through custom "jupyter kernels". The goal of this project will be to integrate Pharo with Jupyter allowing easy experimentation, exploration and documentation of Pharo examples (for Roasall, Polymath etc) on the web.
+###Goal
+Add Pharo support for Jupyter
+###Level: Intermediate
+
+***
 
 ##Title: Distributed Issue Tracker
 ###Contact: stephan@stack.nl
@@ -355,4 +368,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-09T19:34:00.312481+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-10T10:48:04.933712+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
