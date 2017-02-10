@@ -15,6 +15,23 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+title: 'Grafoscopio: Literate computing and reproducible research for Pharo';
+contact: 'serge.stinckwich@ird.fr';
+supervisors: 'Serge Stinckwich';
+keywords: 'Live coding, UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization';
+context: 'Literate computing is a way of mixing text, code, data and visualizations for making data
+based storytelling, experimentation, exploration and documentation in diverse broad fields like 
+academia, journalism, research and activism, or Pharo specific themes (for Roasall, Polymath etc).
+Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation
+of structured interactive notebooks in a tree-like programmable document metaphor.';
+goal: 'Improve user experience (UX), the interaction with external tools 
+(pandoc, fossil), code quality and test coverage for Grafoscopio.';
+level: 'Normal, Intermediate';
+candidate: 'Offray V. Luna Cardenas'
+
+.
+
+PharoTopic new
 title: 'Jupyter Support for Pharo';
 contact: 'serge.stinckwich@ird.fr , nikolaos.papoulias@ird.fr';
 supervisors: 'Serge Stinckwich, Nick Papoulias';
@@ -74,7 +91,7 @@ Pharo and Roassal';
 .
 
 PharoTopic new
-	title: 'GRASS integration with Pharoo/Roassal';
+	title: 'GRASS integration with Pharo/Roassal';
 	contact: 'onil.goubier@gmail.com';
 	supervisors: 'O. Goubier';
 	keywords: 'GIS, GRASS, Roassal';
