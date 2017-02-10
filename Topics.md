@@ -222,9 +222,9 @@ The goal of the project is to improve the ecompletion infrastructure: The tasks 
 ***
 
 ##Title: Taking Advantage of Immutable Objects
-###Contact: clement.bera@inria.fr and Stephane.ducasse@inria.fr
-###Supervisors: C. Bera and S. Ducasse
-###Keywords: completion
+###Contact: clement.bera@inria.fr
+###Supervisors: C. Bera
+###Keywords: Write barrier
 ###Context
 Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
 as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
@@ -296,7 +296,7 @@ Resources:
 
 ##Title: Enhancing Pillar
 ###Contact: stephane.ducasse@inria.fr
-###Supervisors:  Stéphane Ducasse
+###Supervisors: Stéphane Ducasse
 ###Keywords: Pillar OpenDocument LibreOffice OpenOffice document tree visitor
 ###Context
 Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
@@ -346,4 +346,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-10T18:16:10.89525+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-10T18:18:09.628902+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
