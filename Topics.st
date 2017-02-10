@@ -15,6 +15,18 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+title: 'Jupyter Support for Pharo';
+contact: 'serge.stinckwich@ird.fr , nikolaos.papoulias@ird.fr';
+supervisors: 'Serge Stinckwich, Nick Papoulias';
+keywords: 'Live coding, UI, Notebook, Interoperability, Literate Programming';
+context: 'Jupyter is a web notebook that supports an interactive form of literate programming. It is written in python but other languages can be integrated to its workflow through custom "jupyter kernels". The goal of this project will be to integrate Pharo with Jupyter allowing easy experimentation, exploration and documentation of Pharo examples (for Roasall, Polymath etc) on the web.';
+goal: 'Add Pharo support for Jupyter';
+level: 'Intermediate';
+candidate: 'Topic still free'
+
+.
+
+PharoTopic new
 	title: 'Distributed Issue Tracker';
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont, Diego Lont';
