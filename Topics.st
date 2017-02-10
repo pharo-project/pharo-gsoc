@@ -222,9 +222,9 @@ it can do better.';
 
 PharoTopic new
 	title: 'Taking Advantage of Immutable Objects';
-	contact: 'clement.bera@inria.fr and Stephane.ducasse@inria.fr';
-	supervisors: 'C. Bera and S. Ducasse';
-	keywords: 'completion';
+	contact: 'clement.bera@inria.fr';
+	supervisors: 'C. Bera';
+	keywords: 'Write barrier';
 	context: 'Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
 as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
 
@@ -300,7 +300,7 @@ yourself
 PharoTopic new
 	title: 'Enhancing Pillar';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: ' Stéphane Ducasse';
+	supervisors: 'Stéphane Ducasse';
 	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
     illar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects 
