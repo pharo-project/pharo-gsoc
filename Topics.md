@@ -1,9 +1,10 @@
 #Pharo GSOC Topics
 
+* [Grafoscopio: Literate computing and reproducible research for Pharo](#title-grafoscopio-literate-computing-and-reproducible-research-for-pharo)
 * [Jupyter Support for Pharo](#title-jupyter-support-for-pharo)
 * [Distributed Issue Tracker](#title-distributed-issue-tracker)
 * [Weather/Meteo for OpenStreetMap in Roassal](#title-weathermeteo-for-openstreetmap-in-roassal)
-* [GRASS integration with Pharoo/Roassal](#title-grass-integration-with-pharooroassal)
+* [GRASS integration with Pharo/Roassal](#title-grass-integration-with-pharoroassal)
 * [Statistics Library with Polymath](#title-statistics-library-with-polymath)
 * [Two-way synchronized code changes, better support for cross-platform co-development ](#title-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development-)
 * [IPFS for Pharo](#title-ipfs-for-pharo)
@@ -14,6 +15,23 @@
 * [New Collections for Pharo](#title-new-collections-for-pharo)
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
+
+##Title: Grafoscopio: Literate computing and reproducible research for Pharo
+###Contact: serge.stinckwich@ird.fr
+###Supervisors: Serge Stinckwich
+###Keywords: Live coding, UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization
+###Context
+Literate computing is a way of mixing text, code, data and visualizations for making data
+based storytelling, experimentation, exploration and documentation in diverse broad fields like 
+academia, journalism, research and activism, or Pharo specific themes (for Roasall, Polymath etc).
+Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation
+of structured interactive notebooks in a tree-like programmable document metaphor.
+###Goal
+Improve user experience (UX), the interaction with external tools 
+(pandoc, fossil), code quality and test coverage for Grafoscopio.
+###Level: Normal, Intermediate
+
+***
 
 ##Title: Jupyter Support for Pharo
 ###Contact: serge.stinckwich@ird.fr , nikolaos.papoulias@ird.fr
@@ -74,7 +92,7 @@ Pharo and Roassal
 
 ***
 
-##Title: GRASS integration with Pharoo/Roassal
+##Title: GRASS integration with Pharo/Roassal
 ###Contact: onil.goubier@gmail.com
 ###Supervisors: O. Goubier
 ###Keywords: GIS, GRASS, Roassal
@@ -346,4 +364,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-10T18:18:09.628902+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-12T13:53:50.550372+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
