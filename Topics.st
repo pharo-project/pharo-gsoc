@@ -18,7 +18,7 @@ PharoTopic new
 title: 'Grafoscopio: Literate computing and reproducible research for Pharo';
 contact: 'serge.stinckwich@ird.fr';
 supervisors: 'Serge Stinckwich';
-keywords: 'Live coding, UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization';
+keywords: 'Live coding, UX/UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization';
 context: 'Literate computing is a way of mixing text, code, data and visualizations for making data
 based storytelling, experimentation, exploration and documentation in diverse broad fields like 
 academia, journalism, research and activism, or Pharo specific themes (for Roasall, Polymath etc).
