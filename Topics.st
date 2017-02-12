@@ -15,18 +15,31 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
-	title: 'Jupyter Support for Pharo';
-	contact: 'serge.stinckwich@ird.fr , nikolaos.papoulias@ird.fr';
-	supervisors: 'Serge Stinckwich, Nick Papoulias';
-	keywords: 'Live coding, UI, Notebook, Interoperability, Literate Programming';
-	context: 'Jupyter is a web notebook that supports an interactive form of literate programming. 
-It is written in python but other languages can be integrated to its workflow through custom "jupyter kernels". 
-The goal of this project will be to integrate Pharo with Jupyter allowing easy experimentation, 
-exploration and documentation of Pharo examples (for Roasall, Polymath etc) on the web.';
-	goal: 'Add Pharo support for Jupyter';
-	level: 'Intermediate';
-	candidate: 'Topic still free'
+title: 'Grafoscopio: Literate computing and reproducible research for Pharo';
+contact: 'serge.stinckwich@ird.fr';
+supervisors: 'Serge Stinckwich';
+keywords: 'Live coding, UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization';
+context: 'Literate computing is a way of mixing text, code, data and visualizations for making data
+based storytelling, experimentation, exploration and documentation in diverse broad fields like 
+academia, journalism, research and activism, or Pharo specific themes (for Roasall, Polymath etc).
+Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation
+of structured interactive notebooks in a tree-like programmable document metaphor.';
+goal: 'Improve user experience (UX), the interaction with external tools 
+(pandoc, fossil), code quality and test coverage for Grafoscopio.';
+level: 'Normal, Intermediate';
+candidate: 'Offray V. Luna Cardenas'
 
+.
+
+PharoTopic new
+title: 'Jupyter Support for Pharo';
+contact: 'serge.stinckwich@ird.fr , nikolaos.papoulias@ird.fr';
+supervisors: 'Serge Stinckwich, Nick Papoulias';
+keywords: 'Live coding, UI, Notebook, Interoperability, Literate Programming';
+context: 'Jupyter is a web notebook that supports an interactive form of literate programming. It is written in python but other languages can be integrated to its workflow through custom "jupyter kernels". The goal of this project will be to integrate Pharo with Jupyter allowing easy experimentation, exploration and documentation of Pharo examples (for Roasall, Polymath etc) on the web.';
+goal: 'Add Pharo support for Jupyter';
+level: 'Intermediate';
+candidate: 'Topic still free'
 .
 
 PharoTopic new
@@ -38,8 +51,8 @@ PharoTopic new
 Most development in Smalltalk uses distributed version control systems, either Monticello or Git.
 But the current issue tracker is web based and cannot work disconnected. 
 Integrating the issue tracker in the CI workflow of the projects is crucial.
-
 There is a small prototype available. 
+
 
 **Benefits to the Student
 getting to know the difficulties of issue tracking/the workflow of open source projects;
@@ -81,7 +94,7 @@ such files into Pharo and Roassal';
 .
 
 PharoTopic new
-	title: 'GRASS integration with Pharoo/Roassal';
+	title: 'GRASS integration with Pharo/Roassal';
 	contact: 'onil.goubier@gmail.com';
 	supervisors: 'O. Goubier';
 	keywords: 'GIS, GRASS, Roassal';
@@ -252,9 +265,9 @@ The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some t
 
 PharoTopic new
 	title: 'Taking Advantage of Immutable Objects';
-	contact: 'clement.bera@inria.fr and Stephane.ducasse@inria.fr';
-	supervisors: 'C. Bera and S. Ducasse';
-	keywords: 'completion';
+	contact: 'clement.bera@inria.fr';
+	supervisors: 'C. Bera';
+	keywords: 'Write barrier';
 	context: 'Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
 as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
 
@@ -334,7 +347,7 @@ yourself
 PharoTopic new
 	title: 'Enhancing Pillar';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: ' Stéphane Ducasse';
+	supervisors: 'Stéphane Ducasse';
 	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
     illar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects 
