@@ -19,7 +19,7 @@
 ##Title: Grafoscopio: Literate computing and reproducible research for Pharo
 ###Contact: serge.stinckwich@ird.fr
 ###Supervisors: Serge Stinckwich
-###Keywords: Live coding, UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization
+###Keywords: Live coding, UX/UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization
 ###Context
 Literate computing is a way of mixing text, code, data and visualizations for making data
 based storytelling, experimentation, exploration and documentation in diverse broad fields like 
@@ -394,4 +394,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-12T13:58:33.369558+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-12T16:17:32.504641+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
