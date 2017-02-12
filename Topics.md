@@ -50,26 +50,28 @@ Add Pharo support for Jupyter
 ###Supervisors: Stephan Eggermont, Diego Lont
 ###Keywords: P2P Tools GUI
 ###Context
-Technical Details
 
-The recent decision by Google to deprecate and stop its API for the Google Issue Tracker used by a.o. the Pharo, Seaside, MOOSE and Metacello projects makes it necessary for those projects to select a different issue tracker. The timespan before this decision has to be made is too short for the development of a new issue tracker from scratch. 
+Most development in Smalltalk uses distributed version control systems, either Monticello or Git.
+But the current issue tracker is web based and cannot work disconnected. 
+Integrating the issue tracker in the CI workflow of the projects is crucial.
+There is a small prototype available. 
 
-Now most development in Smalltalk uses distributed version control systems, either Monticello or Git, the question arises why these projects still would want to use a centralized issue tracker. 
 
-Benefits to the Student
+**Benefits to the Student
+getting to know the difficulties of issue tracking/the workflow of open source projects;
+experience with distributed systems;
+experience an agile open source environment;
 
-getting to know the difficulties of issue tracking/the workflow of open source projects
-experience with distributed systems
-experience an agile open source environment
-Benefits to the Community
-
-better integrated workflow
+**Benefits to the Community
+bring new developers into the community
+better integrated workflow;
 native issue tracker, accessible both in-image, web and automated
-showcase for productive environment  
-###Goal
-A native smalltalk distributed issue tracker. It should have basic issue tracking functionality including attaching files/pictures/code. It should have a native interface, a web interface and a scripting API. Primary development is in Pharo.
 
-Issue trackers have different kind of users. Supporting their different needs in a balanced way is important for the success of the project.
+###Goal
+A native smalltalk distributed issue tracker. 
+It should have basic issue tracking functionality including attaching files/pictures/code. 
+It should have a native interface, a web interface and a scripting API. 
+Primary development is in Pharo.
 
 ###Level: Advanced
 
@@ -81,13 +83,14 @@ Issue trackers have different kind of users. Supporting their different needs in
 ###Keywords: Grib,  OpenStreetMaps, Roassal
 ###Context
 
-With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
-visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, 
+interactive, geo-referenced visualisations. 
+Now, there is a lot of external data sources to use and integrate with Roassal!
 ###Goal
 
-The goal of this project is to add a support for importing Grib data sets (https://en.wikipedia.org/wiki/GRIB) in Roassal. Those
-datasets give access to weather information and predictions from many sources, and we need a support to import such files into
-Pharo and Roassal
+The goal of this project is to add a support for importing Grib data sets (https://en.wikipedia.org/wiki/GRIB) in Roassal. 
+Those datasets give access to weather information and predictions from many sources, and we need a support to import 
+such files into Pharo and Roassal
 ###Level: intermediate
 
 ***
@@ -98,12 +101,14 @@ Pharo and Roassal
 ###Keywords: GIS, GRASS, Roassal
 ###Context
 
-With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, interactive, geo-referenced
-visualisations. Now, there is a lot of external data sources to use and integrate with Roassal!
+With Roassal and OpenStreetMap, it is possible to explore geo-referenced data sets and easily script complex, 
+interactive, geo-referenced visualisations. 
+Now, there is a lot of external data sources to use and integrate with Roassal!
 ###Goal
 
-The goal of this project is to integrate GRASS (https://grass.osgeo.org/) with Pharo. GRASS provides an extensive set of
-advanced GIS functions (modeling, simulations, data import, projections, etc...) and should be integrated inside Pharo,
+The goal of this project is to integrate GRASS (https://grass.osgeo.org/) with Pharo. 
+GRASS provides an extensive set of advanced GIS functions (modeling, simulations, data import, projections, etc...) 
+and should be integrated inside Pharo,
 first as a set of external commands (with a Pharo-based GUI front-end), and maybe as a FFI interface.
 ###Level: intermediate
 
@@ -114,8 +119,10 @@ first as a set of external commands (with a Pharo-based GUI front-end), and mayb
 ###Supervisors: Serge Stinckwich
 ###Keywords: statistic mathematics science
 ###Context
-PolyMath is a new Smalltalk project, similar to existing scientific libraries like NumPy, SciPy for Python or SciRuby for Ruby. PolyMath already provide the following basic functionalities:
-	complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, numerical methods, Ordinary Differential Equation (ODE) solvers.
+PolyMath is a new Smalltalk project, similar to existing scientific libraries like NumPy, 
+SciPy for Python or SciRuby for Ruby. PolyMath already provide the following basic functionalities:
+complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, numerical methods, 
+Ordinary Differential Equation (ODE) solvers.
 ###Goal
 Add some statistics functions to PolyMath.
 ###Level: Intermediate
@@ -158,16 +165,27 @@ Two-way synchronized code changes, 1st target: GLORP
 ###Supervisors: marcus.denker@inria.fr
 ###Keywords: peer to peer file systems
 ###Context
- IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices with the same system of files. In some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, exchanging objects within one Git repository. In other words, IPFS provides a high throughput content-addressed block storage model, with content-addressed hyperlinks. This forms a generalized Merkle DAG, a data structure upon which one can build versioned file systems, blockchains, and even a Permanent Web. IPFS combines a distributed hashtable, an incentivized block exchange, and a self-certifying namespace. IPFS has no single point of failure, and nodes do not need to trust each other.
-IPFS right now is implemented as a server process in Go and allows the global file system to be mounted as a user space filesystem. In addition, the server provides an API.
-A real integration of IPFS with Pharo would require a complete implementation of IPFS in Pharo (projects are already in early stages to implement it in JavaScript and Python).
+ IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
+with the same system of files. 
+In some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, 
+exchanging objects within one Git repository. 
+In other words, IPFS provides a high throughput content-addressed block storage model, with content-addressed hyperlinks. 
+This forms a generalized Merkle DAG, a data structure upon which one can build versioned file systems, blockchains, 
+and even a Permanent Web. 
+IPFS combines a distributed hashtable, an incentivized block exchange, and a self-certifying namespace. 
+IPFS has no single point of failure, and nodes do not need to trust each other.
+IPFS right now is implemented as a server process in Go and allows the global file system to be mounted as a user 
+space filesystem. In addition, the server provides an API.
+A real integration of IPFS with Pharo would require a complete implementation of IPFS in Pharo 
+(projects are already in early stages to implement it in JavaScript and Python).
 But the client API allows us already now to do experiments and assess the usefulness of IPFS in the context of Pharo. 
 More information:
 	https://ipfs.io
 
 ###Goal
-The goal of this Project is to implement a IPFS client library using the API to communicate with the existing server and start to experiment
-how IPFS can be used with Pharo. For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide
+The goal of this Project is to implement a IPFS client library using the API to communicate with 
+the existing server and start to experiment how IPFS can be used with Pharo. 
+For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide
 access to resources via IPFS.
 ###Level: Normal
 
@@ -179,8 +197,9 @@ access to resources via IPFS.
 ###Keywords: Make graph
 ###Context
 
-Make is a unix tool to express dependencies between task. Now it is not really cross-platform. Python has a library that implements make on 
-top of a graph library. It would be really nice to have a solution for Pharo using the same idea.
+Make is a unix tool to express dependencies between task. Now it is not really cross-platform. 
+Python has a library that implements make on top of a graph library. 
+It would be really nice to have a solution for Pharo using the same idea.
 - http://aosabook.org/en/500L/contingent-a-fully-dynamic-build-system.html
 MCHttpRepository
 	location: 'http://smalltalkhub.com/mc/CipT/MelcGraph/main'
@@ -188,7 +207,8 @@ MCHttpRepository
 	password: ''
 
 ###Goal
-The goal of this project is to develop a make like implementation in Pharo using the graph library MelcGraph developed by C. Teodorov.
+The goal of this project is to develop a make like implementation in Pharo using the graph 
+library MelcGraph developed by C. Teodorov.
 ###Level: Normal
 
 ***
@@ -211,16 +231,20 @@ represent missing values
 as 0, or "", or the average or the minimum of the other values in the
 colums
 See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
-It may be worth to consider making this into a sequence that is read and processed lazily, to deal with CSV files bigger than memory.
-When data is finally in, usually the first task is doing some processing, inspection or visualization. The Smalltalk collections are
-good for processing (although some lazy variants might help), and Roassal and the inspectors are perfect for visualization and browsing.
-It could be extended as follows: The second part comes the time when one wants to run some algorithm. While there is no need to have the fanciest ones, there should be some
+It may be worth to consider making this into a sequence that is read and processed lazily, 
+to deal with CSV files bigger than memory.
+When data is finally in, usually the first task is doing some processing, inspection or visualization. 
+The Smalltalk collections are good for processing (although some lazy variants might help), 
+and Roassal and the inspectors are perfect for visualization and browsing.
+It could be extended as follows: The second part comes the time when one wants to run some algorithm. 
+While there is no need to have the fanciest ones, there should be some
 of the basics, such as:
 - some form or regression (linear, logistic...)
 - some form of clustering (kmeans, dbscan, canopy...)
 Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
-Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. Here I think
-Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
+Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. 
+Here I think Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. 
+Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
 
 ###Level: Normal
 
@@ -231,10 +255,12 @@ Smalltalk would have an edge, since these tutorial could be in the form of Prof 
 ###Supervisors: S. Ducasse and E. Lorenzano
 ###Keywords: completion
 ###Context
-Automatic completion is really important. The current code completion already defines some good behavior but 
-it can do better.
+Automatic completion is really important. The current code completion already defines some good 
+behavior but it can do better.
 ###Goal
-The goal of the project is to improve the ecompletion infrastructure: The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, (3) Improve the noise introduced by the Symbol table usage. (4) build more heuristics.
+The goal of the project is to improve the ecompletion infrastructure: 
+The tasks are: (1) study the existing approaches (NOC and NEC), (2) Write some tests to characterize specific behavior, 
+(3) Improve the noise introduced by the Symbol table usage. (4) build more heuristics.
 ###Level: Intermediate
 
 ***
@@ -248,14 +274,18 @@ Pharo since its version 60 supports object immutability primitives at the Virtua
 as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
 
 It means that once marked as immutable objects cannot be modified and raise an error. 
-For deep Virtual machine optimisations that fold stack elements, having strings as immutable objects is key. Now the core Pharo libraries may still use some mutable strings.
+For deep Virtual machine optimisations that fold stack elements, having strings as immutable objects is key. 
+Now the core Pharo libraries may still use some mutable strings.
 Therefore the core libraries of Pharo should be revisited to identify use of mutable structures.
 
 Now we face several challenges:
 	- Identification of part thats can be migrated to immutable objects.
 	- Identification of patterns of potential problems.
 
-In addition, there is a need to propose to the Pharo developers a way to take advantage of immutability. A typical example is the use of write barrier (to identify objects that changes and therefore should be committed to database). We need to explore the design of a frameworks to let the developer expresses what should be done when an immutable object detects an attempt to modify it.  
+In addition, there is a need to propose to the Pharo developers a way to take advantage of immutability. 
+A typical example is the use of write barrier (to identify objects that changes and therefore should be 
+committed to database). We need to explore the design of a frameworks to let the developer expresses what 
+should be done when an immutable object detects an attempt to modify it.  
 
 ###Goal
 Tasks: Here is a possible outline of work:
@@ -364,4 +394,4 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-12T13:53:50.550372+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-12T13:58:33.369558+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
