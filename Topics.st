@@ -392,3 +392,17 @@ Resources:
 '; 
 level: 'Normal';
 yourself.
+
+ PharoTopic new
+       title: 'Pharoya';
+       contact: 'phil@highoctane.be';
+       supervisors: 'Philippe Back';
+       keywords: 'Hadoop Cluster Distributed computing Big data REST Kerberos GSSAPI Polymath Zookeeper';
+       context: 'Pharoya stands for Pharo on YARN. YARN, the underlying system under Hadoop, allows one to write distributed
+       applications running in YARN containers on (lots of) compute nodes.
+       This project is meant to run Pharo instances on such containers and report back to the Pharo Application Manager.
+       Integration with Polymath is desirable. This project will be able to run run on a 1200+ core/4TB RAM/50TB Storage system.
+       Pharo images are smaller than Java UberJars and will use less cluster resources for more results.';
+       goal: 'Make Pharo a first class citizen on Hadoop clusters as a YARN application';
+       level: 'Intermediate to Advanced';
+       yourself.
