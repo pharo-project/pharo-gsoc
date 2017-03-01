@@ -15,6 +15,7 @@
 * [New Collections for Pharo](#title-new-collections-for-pharo)
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
+* [Pharoya](#title-pharoya)
 
 ##Title: Grafoscopio: Literate computing and reproducible research for Pharo
 ###Contact: serge.stinckwich@ird.fr
@@ -394,4 +395,20 @@ Resources:
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-02-12T16:17:32.504641+00:00 by Pharo5.0 of 16 April 2015 update 50768</p>
+##Title: Pharoya
+###Contact: phil@highoctane.be
+###Supervisors: Philippe Back
+###Keywords: Hadoop Cluster Distributed computing Big data REST Kerberos GSSAPI Polymath Zookeeper
+###Context
+Pharoya stands for Pharo on YARN. YARN, the underlying system under Hadoop, allows one to write distributed
+       applications running in YARN containers on (lots of) compute nodes.
+       This project is meant to run Pharo instances on such containers and report back to the Pharo Application Manager.
+       Integration with Polymath is desirable. This project will be able to run run on a 1200+ core/4TB RAM/50TB Storage system.
+       Pharo images are smaller than Java UberJars and will use less cluster resources for more results.
+###Goal
+Make Pharo a first class citizen on Hadoop clusters as a YARN application
+###Level: Intermediate to Advanced
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-03-01T15:37:51.505668+00:00 by Pharo5.0 of 16 April 2015 update 50770</p>
