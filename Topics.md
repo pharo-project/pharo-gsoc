@@ -16,6 +16,7 @@
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
 * [Pharoya](#title-pharoya)
+* [Renraku](#title-renraku)
 
 ##Title: Grafoscopio: Literate computing and reproducible research for Pharo
 ###Contact: serge.stinckwich@ird.fr
@@ -411,4 +412,16 @@ Make Pharo a first class citizen on Hadoop clusters as a YARN application
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-03-01T15:37:51.505668+00:00 by Pharo5.0 of 16 April 2015 update 50770</p>
+##Title: Renraku
+###Contact: uko@unikernel.net
+###Supervisors: Yuriy Tymchuk
+###Keywords: code quality static analysis assistant tools
+###Context
+Renraku is the model which manages all the quality tools and analysis in Pharo. Althought it had a great success allready, there is still a lot of work which has to be dome. Read more about it here: http://yuriy.tymch.uk/Renraku/
+###Goal
+The student should start by comverting availalbe SmallLint rules into Renraku rules to familiarize with the project, and understand the value that it brings. Then the student is expected to work on the most currently important features suck as the advanced error handlind, and more flexible toggling of the analysis. Then depending on the student's prefferences the projects may continue towards a model-based validation or a tooling for rule developemnt. The roadmap of Renraku godes beyond the Google Summer of Code timeframe and is available here: http://yuriy.tymch.uk/Renraku/roadmap/. 
+###Level: Intermediate to Advanced
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-03-03T12:04:35.178458+00:00 by Pharo5.0 of 16 April 2015 update 50770</p>
