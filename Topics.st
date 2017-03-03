@@ -406,3 +406,13 @@ yourself.
        goal: 'Make Pharo a first class citizen on Hadoop clusters as a YARN application';
        level: 'Intermediate to Advanced';
        yourself.
+
+ PharoTopic new
+       title: 'Renraku';
+       contact: 'uko@unikernel.net';
+       supervisors: 'Yuriy Tymchuk';
+       keywords: 'code quality static analysis assistant tools';
+       context: 'Renraku is the model which manages all the quality tools and analysis in Pharo. Althought it had a great success allready, there is still a lot of work which has to be dome. Read more about it here: http://yuriy.tymch.uk/Renraku/';
+       goal: 'The student should start by comverting availalbe SmallLint rules into Renraku rules to familiarize with the project, and understand the value that it brings. Then the student is expected to work on the most currently important features suck as the advanced error handlind, and more flexible toggling of the analysis. Then depending on the student''s prefferences the projects may continue towards a model-based validation or a tooling for rule developemnt. The roadmap of Renraku godes beyond the Google Summer of Code timeframe and is available here: http://yuriy.tymch.uk/Renraku/roadmap/. ';
+       level: 'Intermediate to Advanced';
+       yourself.
