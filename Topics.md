@@ -18,6 +18,7 @@
 * [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
 * [Pharoya](#title-pharoya)
 * [Renraku](#title-renraku)
+* [MQTT support for Pharo](#title-mqtt-support-for-pharo)
 
 ##Title: Grafoscopio: Literate computing and reproducible research for Pharo
 ###Contact: serge.stinckwich@ird.fr
@@ -461,4 +462,18 @@ The student should start by converting availalbe SmallLint rules into Renraku ru
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-03-19T15:51:25.226923+00:00 by Pharo5.0 of 16 April 2015 update 50770</p>
+##Title: MQTT support for Pharo
+###Contact: sven@stfx.eu, juraj.kubelka@icloud.com
+###Supervisors: Sven Van Caekenberghe, Juraj Kubelka
+###Keywords: mqtt, internet, protocol, client
+###Context
+MQTT is a proven ISO standard machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium. See http://mqtt.org for more details or "Using MQTT in Real-World M2M Communication” talk that explains MQTT protocol and covers common scenarios: https://www.youtube.com/watch?v=r6HEQVhgnP8.
+
+Pharo project already supports MQTT protocol (https://github.com/svenvc/mqtt/) including clients and use cases (https://github.com/JurajKubelka/MQTTCallbackClient or https://github.com/JurajKubelka/MQTTChat).
+###Goal
+The goal of this project is to improve existing code (MQTT, callback client, chat). Namely add more test cases in order to cover common scenarios, improve documentation, and add support for large files inspired by the talk mentioned above.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-03-30T14:14:50.563215+00:00 by Pharo5.0 of 16 April 2015 update 50771</p>
