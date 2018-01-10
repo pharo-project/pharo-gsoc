@@ -12,7 +12,7 @@ If you are a student looking for list of topics and their details for GSoC 2018 
 
 Also, join the chat forums on discord or mailing lists ([forum.world.st/Pharo-f1294836.html](http://forum.world.st/Pharo-f1294836.html)) to engage in discussions with the mentors and Pharo developers/users.
 
-Previous work done by students from the Pharo community for Google Summer of Code 2017 can be viewed here: [youtube.com/pharo-project/GSoC-2017](https://www.youtube.com/watch?v=e2atTDclrog&list=PL4actYd6bfnzoYJYjSRxLezkYOoLhku09)
+Previous work done by students from the Pharo community for Google Summer of Code 2017 can be viewed here: [summerofcode.withgoogle.com/archive/2017/organizations/5691803940421632/](https://summerofcode.withgoogle.com/archive/2017/organizations/5691803940421632/)
 
 
 ## Adding a Proposal
