@@ -1,4 +1,126 @@
-<html><head><meta charset="utf-8"><title>Pharo GSOC 2017<br>Ideas List</title><style>body{  color:#74706f;  font-size:18px;  background:#f7f7f7;  background-repeat:repeat-x;  background-position:top center;  background-image:url(http://files.pharo.org/media/pharoBackground.png);  font-family:"Myriad Pro","Lucida Grande","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;}p {   line-height:1.4em;  padding: 1em;}h1 {  font-size:5em;  color:#0d64af;  color:rgba(13,100,175,0.9);  padding:18px;}img {  display: block;  margin-left: auto;  margin-right: auto;}table {  border-collapse:collapse;  border-spacing:0;  font-size:100%;  font:inherit;  width:100%;}table td {  border:1px solid #ccc;  padding:6px 13px;}table tr {  border-top:1px solid #ccc;  background-color:#fff;}span.cn {   font-weight:bold;  color:black;}p.footer {   font-size:0.75em;  text-align:center;  font-style:italic;}</style></head><body><h1>Pharo GSOC 2017<br>Ideas List</h1>    <a href="http://www.pharo.org"><img src="http://www.pharo.org/files/pharo.png"/></a>		<p><a href="http://www.pharo.org">Pharo</a>      is a pure object-oriented programming      language and a powerful environment, focused on simplicity and      immediate feedback (think IDE and OS rolled into one).</p><h2>Table of Contents</h2><ul>	<li><a href="#guidelines">Guidelines</a>		<ul>			<li><a href="#for-students">Information for Students</a></li>			<li><a href="#adding-a-proposal">Adding a Proposal</a></li>			<li><a href="#admin">Administration</a></li>		</ul>		<li><a href="#topics"><b>List of Topics</b></a></li>	</li></ul>    <h2 id="guidelines">Guidelines</h2>    <h3 id="for-students">Information for Students</h3>    <p>    These ideas were contributed by our developers and users. They are    sometimes vague or incomplete. If you wish to submit a proposal based    on these ideas, you may wish to contact the developers and find out    more about the particular suggestion you're looking at.    </p>    <p>    Being accepted as a Google Summer of Code student is quite    competitive. Accepted students typically have thoroughly researched    the technologies of their proposed project and have been in frequent    contact with potential mentors. Simply copying and pasting an idea    here will not work. On the other hand, creating a completely new idea    without first consulting potential mentors is unlikely to work out.    </p>    <p>    If there is no specific contact given you can ask questions on the    general Pharo development list    <a href="mailto:pharo-dev@lists.pharo.org">pharo-dev@lists.pharo.org</a>. See the    <a href="http://pharo.org/community">Pharo community page</a>    for information on available mailing lists and how to subscribe.    </p>        <h3 id="adding-a-proposal">Adding a Proposal</h3>    <p>Please propose your own project by following the following template.      You can edit the list on github here:      <a href="https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st">https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st</a> and send a pull request.</p>    <code><pre>     PharoTopic new       title: 'The name of your project';       contact: 'email address';       supervisors: 'Supervisors names';       keywords: 'keywords separated by spaces';       context: 'a description of the context of the project';       goal: 'description of the goal';       level: 'Beginner or Intermediate or Advanced';       yourself.    </pre></code>    <h3 id="admin">Administration</h3>        <p>      Do not hesitate to ask questions. Administrators of this year’s      application are <a href="mailto:serge.stinckwich@gmail.com">Serge Stinckwich</a>, <a href="mailto:alexandre.bergel@me.com">Alexandre Bergel</a>, <a href="mailto:grover.jigyasa1@gmail.com">Jigyasa Grover</a>, <a href="mailto:ukodrag@gmail.com">Yuriy Tymchuk</a>.    </p><h2 id="topics">Pharo GSOC Topics</h2><ul><li><a href="#topic-ipfs-for-pharo">IPFS for Pharo</a></li><li><a href="#topic-distributed-issue-tracker">Distributed Issue Tracker</a></li><li><a href="#topic-enhance-pharo-command-line-interface">Enhance Pharo Command Line Interface</a></li><li><a href="#topic-weathermeteo-for-openstreetmap-in-roassal">Weather/Meteo for OpenStreetMap in Roassal</a></li><li><a href="#topic-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development-">Two-way synchronized code changes, better support for cross-platform co-development </a></li><li><a href="#topic-renraku">Renraku</a></li><li><a href="#topic-jupyter-support-for-pharo">Jupyter Support for Pharo</a></li><li><a href="#topic-pharoya">Pharoya</a></li><li><a href="#topic-scrapping-data-enhancing-user-experience">Scrapping Data: Enhancing User Experience</a></li><li><a href="#topic-mqtt-support-for-pharo">MQTT support for Pharo</a></li><li><a href="#topic-make-for-pharo-in-pharo">Make for Pharo in Pharo</a></li><li><a href="#topic-new-collections-for-pharo">New Collections for Pharo</a></li><li><a href="#topic-grass-integration-with-pharoroassal">GRASS integration with Pharo/Roassal</a></li><li><a href="#topic-improving-code-completion">Improving code completion</a></li><li><a href="#topic-improving-the-vm-profiler">Improving the VM profiler</a></li><li><a href="#topic-enhancing-pillar">Enhancing Pillar</a></li><li><a href="#topic-grafoscopio-literate-computing-and-reproducible-research-for-pharo">Grafoscopio: Literate computing and reproducible research for Pharo</a></li><li><a href="#topic-taking-advantage-of-immutable-objects">Taking Advantage of Immutable Objects</a></li><li><a href="#topic-statistics-library-with-polymath">Statistics Library with Polymath</a></li></ul><a name="ipfsforpharo"><p><table><colgroup><col style="text-align:left;width:25%;"/><col style="text-align:left;"/></colgroup><tr><td>Title</td><td><span class="cn" id="topic-ipfs-for-pharo">IPFS for Pharo</span></td></tr><tr><td>Email</td><td><a href="mailto:%6D%61%72%63%75%73%2E%64%65%6E%6B%65%72%40%69%6E%72%69%61%2E%66%72"><span>m</span><span>a</span><span>r</span><span>c</span><span>u</span><span>s</span><span>.</span><span>d</span><span>e</span><span>n</span><span>k</span><span>e</span><span>r</span><span>@</span><span>i</span><span>n</span><span>r</span><span>i</span><span>a</span><span>.</span><span>f</span><span>r</span></a></td></tr><tr><td>Supervisors </td><td>marcus.denker@inria.fr</td></tr><tr><td>Keywords</td><td>peer to peer file systems</td></tr><tr><td>Context</td><td> IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
+<html><head><meta charset="utf-8"><title>Pharo GSOC 2018<br>Ideas List</title><style>
+body{
+  color:#74706f;
+  font-size:18px;
+  background:#f7f7f7;
+  background-repeat:repeat-x;
+  background-position:top center;
+  background-image:url(http://files.pharo.org/media/pharoBackground.png);
+  font-family:"Myriad Pro","Lucida Grande","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+p { 
+  line-height:1.4em;
+  padding: 1em;
+}
+h1 {
+  font-size:5em;
+  color:#0d64af;
+  color:rgba(13,100,175,0.9);
+  padding:18px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+  font-size:100%;
+  font:inherit;
+  width:100%;
+}
+table td {
+  border:1px solid #ccc;
+  padding:6px 13px;
+}
+table tr {
+  border-top:1px solid #ccc;
+  background-color:#fff;
+}
+span.cn { 
+  font-weight:bold;
+  color:black;
+}
+p.footer { 
+  font-size:0.75em;
+  text-align:center;
+  font-style:italic;
+}
+</style></head><body><h1>Pharo GSOC 2018<br>Ideas List</h1>
+    <a href="http://www.pharo.org"><img src="http://www.pharo.org/files/pharo.png"/></a>
+	
+	<p><a href="http://www.pharo.org">Pharo</a>
+      is a pure object-oriented programming
+      language and a powerful environment, focused on simplicity and
+      immediate feedback (think IDE and OS rolled into one).</p>
+
+<h2>Table of Contents</h2>
+
+<ul>
+	<li><a href="#guidelines">Guidelines</a>
+		<ul>
+			<li><a href="#for-students">Information for Students</a></li>
+			<li><a href="#adding-a-proposal">Adding a Proposal</a></li>
+			<li><a href="#admin">Administration</a></li>
+		</ul>
+		<li><a href="#topics"><b>List of Topics</b></a></li>
+	</li>
+</ul>
+
+    <h2 id="guidelines">Guidelines</h2>
+
+    <h3 id="for-students">Information for Students</h3>
+
+    <p>
+    These ideas were contributed by our developers and users. They are
+    sometimes vague or incomplete. If you wish to submit a proposal based
+    on these ideas, you may wish to contact the developers and find out
+    more about the particular suggestion you're looking at.
+    </p>
+    <p>
+    Being accepted as a Google Summer of Code student is quite
+    competitive. Accepted students typically have thoroughly researched
+    the technologies of their proposed project and have been in frequent
+    contact with potential mentors. Simply copying and pasting an idea
+    here will not work. On the other hand, creating a completely new idea
+    without first consulting potential mentors is unlikely to work out.
+    </p>
+    <p>
+    If there is no specific contact given you can ask questions on the
+    general Pharo development list
+    <a href="mailto:pharo-dev@lists.pharo.org">pharo-dev@lists.pharo.org</a>. See the
+    <a href="http://pharo.org/community">Pharo community page</a>
+    for information on available mailing lists and how to subscribe.
+    </p>
+    
+    <h3 id="adding-a-proposal">Adding a Proposal</h3>
+
+    <p>Please propose your own project by following the following template.
+      You can edit the list on github here:
+      <a href="https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st">https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st</a> and send a pull request.</p>
+
+    <code><pre>
+     PharoTopic new
+       title: 'The name of your project';
+       contact: 'email address';
+       supervisors: 'Supervisors names';
+       keywords: 'keywords separated by spaces';
+       context: 'a description of the context of the project';
+       goal: 'description of the goal';
+       level: 'Beginner or Intermediate or Advanced';
+       yourself.
+    </pre></code>
+
+    <h3 id="admin">Administration</h3>
+    
+    <p>
+      Do not hesitate to ask questions. Administrators of this year’s
+      application are <a href="mailto:serge.stinckwich@gmail.com">Serge Stinckwich</a>, <a href="mailto:alexandre.bergel@me.com">Alexandre Bergel</a>, <a href="mailto:grover.jigyasa1@gmail.com">Jigyasa Grover</a>, <a href="mailto:ukodrag@gmail.com">Yuriy Tymchuk</a>.
+    </p>
+
+<h2 id="topics">Pharo GSOC Topics</h2>
+<ul><li><a href="#topic-ipfs-for-pharo">IPFS for Pharo</a></li><li><a href="#topic-distributed-issue-tracker">Distributed Issue Tracker</a></li><li><a href="#topic-enhance-pharo-command-line-interface">Enhance Pharo Command Line Interface</a></li><li><a href="#topic-weathermeteo-for-openstreetmap-in-roassal">Weather/Meteo for OpenStreetMap in Roassal</a></li><li><a href="#topic-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development-">Two-way synchronized code changes, better support for cross-platform co-development </a></li><li><a href="#topic-renraku">Renraku</a></li><li><a href="#topic-jupyter-support-for-pharo">Jupyter Support for Pharo</a></li><li><a href="#topic-pharoya">Pharoya</a></li><li><a href="#topic-scrapping-data-enhancing-user-experience">Scrapping Data: Enhancing User Experience</a></li><li><a href="#topic-mqtt-support-for-pharo">MQTT support for Pharo</a></li><li><a href="#topic-make-for-pharo-in-pharo">Make for Pharo in Pharo</a></li><li><a href="#topic-new-collections-for-pharo">New Collections for Pharo</a></li><li><a href="#topic-grass-integration-with-pharoroassal">GRASS integration with Pharo/Roassal</a></li><li><a href="#topic-improving-code-completion">Improving code completion</a></li><li><a href="#topic-improving-the-vm-profiler">Improving the VM profiler</a></li><li><a href="#topic-enhancing-pillar">Enhancing Pillar</a></li><li><a href="#topic-grafoscopio-literate-computing-and-reproducible-research-for-pharo">Grafoscopio: Literate computing and reproducible research for Pharo</a></li><li><a href="#topic-taking-advantage-of-immutable-objects">Taking Advantage of Immutable Objects</a></li><li><a href="#topic-statistics-library-with-polymath">Statistics Library with Polymath</a></li></ul><a name="ipfsforpharo"><p><table><colgroup><col style="text-align:left;width:25%;"/><col style="text-align:left;"/></colgroup><tr><td>Title</td><td><span class="cn" id="topic-ipfs-for-pharo">IPFS for Pharo</span></td></tr><tr><td>Email</td><td><a href="mailto:%6D%61%72%63%75%73%2E%64%65%6E%6B%65%72%40%69%6E%72%69%61%2E%66%72"><span>m</span><span>a</span><span>r</span><span>c</span><span>u</span><span>s</span><span>.</span><span>d</span><span>e</span><span>n</span><span>k</span><span>e</span><span>r</span><span>@</span><span>i</span><span>n</span><span>r</span><span>i</span><span>a</span><span>.</span><span>f</span><span>r</span></a></td></tr><tr><td>Supervisors </td><td>marcus.denker@inria.fr</td></tr><tr><td>Keywords</td><td>peer to peer file systems</td></tr><tr><td>Context</td><td> IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
 with the same system of files. 
 In some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, 
 exchanging objects within one Git repository. 
