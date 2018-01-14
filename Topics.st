@@ -13,21 +13,95 @@ PharoTopic new
 don't forget to separate topics as statements with periods
 
 "
+PharoTopic new
+	title: 'Taking Advantage of Immutable Objects';
+	contact: 'clement.bera@inria.fr';
+	supervisors: 'C. Bera';
+	keywords: 'Write barrier';
+	context: 'Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
+as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
+
+It means that once marked as immutable objects cannot be modified and raise an error. 
+For deep Virtual machine optimisations that fold stack elements, having strings as immutable objects is key. 
+Now the core Pharo libraries may still use some mutable strings.
+Therefore the core libraries of Pharo should be revisited to identify use of mutable structures.
+
+Now we face several challenges:
+	- Identification of part thats can be migrated to immutable objects.
+	- Identification of patterns of potential problems.
+
+In addition, there is a need to propose to the Pharo developers a way to take advantage of immutability. 
+A typical example is the use of write barrier (to identify objects that changes and therefore should be 
+committed to database). We need to explore the design of a frameworks to let the developer expresses what 
+should be done when an immutable object detects an attempt to modify it.  
+';
+	goal:
+'Tasks: Here is a possible outline of work:
+
+The student will 
+	- study current Pharo libraries for use of literal objects such as strings
+	- define solution to avoid the use of mutable objects (in particular strings)
+	- present the results to the core development team
+	- iterate and help integrating the good results :)
+	- start designing a first write barrier frameworks
+Resources:
+- https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/';
+  	level: 'Intermediate';
+  	yourself 
+. 
 
 PharoTopic new
-title: 'Grafoscopio: Literate computing and reproducible research for Pharo';
-contact: 'serge.stinckwich@ird.fr';
-supervisors: 'Serge Stinckwich';
-keywords: 'Live coding, UX/UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization';
-context: 'Literate computing is a way of mixing text, code, data and visualizations for making data
-based storytelling, experimentation, exploration and documentation in diverse broad fields like 
-academia, journalism, research and activism, or Pharo specific themes (for Roassal, Polymath etc).
-Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation
-of structured interactive notebooks in a tree-like programmable document metaphor.';
-goal: 'Improve user experience (UX), the interaction with external tools 
-(pandoc, fossil), code quality and test coverage for Grafoscopio.';
-level: 'Normal, Intermediate';
-candidate: 'Offray V. Luna Cardenas'
+	title: 'Finder 2.0: Reimplementing Example Based Query';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'stephane.ducasse@inria.fr';
+	keywords: 'example finder';
+	context: '
+Pharo comes with a super nice tools: the finder. The finder les you gives objects i.e. 11 .2 .5, meaning 
+what is the message that sent to 11 with 2 as argument will return 5. 
+';
+	goal: 'The goal of this project is to revisit completely the design of the tool. In particular
+we should not use global tables but each class should be able to declare the methods that can be found or not this way. 
+In addition adding tests and rethinking the core functionality is part of the project.
+The project will have an impact on all the pharoers because this tool is super cool but needs some love.'; 
+	level: 'Normal';
+	yourself
+
+.
+
+PharoTopic new
+	title: 'Scrapping Data: Enhancing User Experience';
+	contact: 'alexandre.bergel@me.com ';
+	supervisors: 'alexandre.bergel@me.com ';
+	keywords: 'CVS DataFrame';
+	context: '';
+	goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
+a CSV, and have a number of heuristics, such as:
+- autodetection of encoding
+- autodetection of quotes and delimiter
+- autodetection of columns containing numbers or dates
+- the possibility to indicate that some markers, such as "N/A",
+represent missing values
+- the possibility to indicate a replacement for missing values, such
+as 0, or "", or the average or the minimum of the other values in the
+colums
+See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
+It may be worth to consider making this into a sequence that is read and processed lazily, 
+to deal with CSV files bigger than memory.
+When data is finally in, usually the first task is doing some processing, inspection or visualization. 
+The Smalltalk collections are good for processing (although some lazy variants might help), 
+and Roassal and the inspectors are perfect for visualization and browsing.
+It could be extended as follows: The second part comes the time when one wants to run some algorithm. 
+While there is no need to have the fanciest ones, there should be some
+of the basics, such as:
+- some form or regression (linear, logistic...)
+- some form of clustering (kmeans, dbscan, canopy...)
+Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
+Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. 
+Here I think Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. 
+Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
+';
+	level: 'Normal';
+	yourself
 
 .
 
@@ -77,7 +151,6 @@ Primary development is in Pharo.
 	yourself
 
 .
-
 
 PharoTopic new
 	title: 'Weather/Meteo for OpenStreetMap in Roassal';
@@ -173,67 +246,10 @@ access to resources via IPFS.';
 	level: 'Normal';
 	yourself
 
-.
-
-
-PharoTopic new
-	title: 'Make for Pharo in Pharo';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'stephane.ducasse@inria.fr';
-	keywords: 'Make graph';
-	context: '
-Make is a unix tool to express dependencies between task. Now it is not really cross-platform. 
-Python has a library that implements make on top of a graph library. 
-It would be really nice to have a solution for Pharo using the same idea.
-- http://aosabook.org/en/500L/contingent-a-fully-dynamic-build-system.html
-MCHttpRepository
-	location: ''http://smalltalkhub.com/mc/CipT/MelcGraph/main''
-	user: ''''
-	password: ''''
-';
-	goal: 'The goal of this project is to develop a make like implementation in Pharo using the graph 
-library MelcGraph developed by C. Teodorov.'; 
-	level: 'Normal';
-	yourself
 
 .
 
-PharoTopic new
-	title: 'Scrapping Data: Enhancing User Experience';
-	contact: 'alexandre.bergel@me.com ';
-	supervisors: 'alexandre.bergel@me.com ';
-	keywords: 'CVS ';
-	context: '';
-	goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
-a CSV, and have a number of heuristics, such as:
-- autodetection of encoding
-- autodetection of quotes and delimiter
-- autodetection of columns containing numbers or dates
-- the possibility to indicate that some markers, such as "N/A",
-represent missing values
-- the possibility to indicate a replacement for missing values, such
-as 0, or "", or the average or the minimum of the other values in the
-colums
-See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
-It may be worth to consider making this into a sequence that is read and processed lazily, 
-to deal with CSV files bigger than memory.
-When data is finally in, usually the first task is doing some processing, inspection or visualization. 
-The Smalltalk collections are good for processing (although some lazy variants might help), 
-and Roassal and the inspectors are perfect for visualization and browsing.
-It could be extended as follows: The second part comes the time when one wants to run some algorithm. 
-While there is no need to have the fanciest ones, there should be some
-of the basics, such as:
-- some form or regression (linear, logistic...)
-- some form of clustering (kmeans, dbscan, canopy...)
-Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
-Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. 
-Here I think Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. 
-Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
-';
-	level: 'Normal';
-	yourself
 
-.
 
 PharoTopic new
 	title: 'Improving code completion';
@@ -251,45 +267,6 @@ The tasks are:
 	level: 'Intermediate';
 	yourself
     
-. 
-
-PharoTopic new
-	title: 'Taking Advantage of Immutable Objects';
-	contact: 'clement.bera@inria.fr';
-	supervisors: 'C. Bera';
-	keywords: 'Write barrier';
-	context: 'Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
-as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
-
-It means that once marked as immutable objects cannot be modified and raise an error. 
-For deep Virtual machine optimisations that fold stack elements, having strings as immutable objects is key. 
-Now the core Pharo libraries may still use some mutable strings.
-Therefore the core libraries of Pharo should be revisited to identify use of mutable structures.
-
-Now we face several challenges:
-	- Identification of part thats can be migrated to immutable objects.
-	- Identification of patterns of potential problems.
-
-In addition, there is a need to propose to the Pharo developers a way to take advantage of immutability. 
-A typical example is the use of write barrier (to identify objects that changes and therefore should be 
-committed to database). We need to explore the design of a frameworks to let the developer expresses what 
-should be done when an immutable object detects an attempt to modify it.  
-';
-	goal:
-'Tasks: Here is a possible outline of work:
-
-The student will 
-	- study current Pharo libraries for use of literal objects such as strings
-	- define solution to avoid the use of mutable objects (in particular strings)
-	- present the results to the core development team
-	- iterate and help integrating the good results :)
-	- start designing a first write barrier frameworks
-Resources:
-- https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/';
-  	level: 'Intermediate';
-  	yourself
-    
-
 . 
 
 PharoTopic new
@@ -321,14 +298,12 @@ With such important primitives two tasks can be performed:
 - Design and implement new collections such as 
 	-- BTree, QuadTrees, 
 	-- Immutable list, set, array
-
-
 Resources:
 - Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf 
 - http://source.lukas-renggli.ch/container started to implement some new collections for Pharo. 
 - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/
-- Barry Hayes, Proceedings OOPSLA ''97, ACM SIGPLAN Notices, Ephemerons: A new finalization mechanism, 1997'
-
+- Barry Hayes, Proceedings OOPSLA ''97, ACM SIGPLAN Notices, Ephemerons: A new finalization mechanism, 1997';
+	
 yourself
 
 
