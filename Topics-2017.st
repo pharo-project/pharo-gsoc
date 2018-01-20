@@ -452,6 +452,53 @@ yourself.
        level: 'Intermediate to Advanced';
        yourself.
 
+
+PharoTopic new
+title: 'Zeppelin Support for Pharo';
+contact: 'phil@highoctane.be';
+supervisors: 'Philippe Back';
+keywords: 'Live coding, UI, Notebook, Interoperability, Literate Programming, Integration, Polyglot programming';
+context: 'Zeppelin is a Web-based notebook that enables data-driven, interactive data analytics and collaborative documents. https://github.com/apache/zeppelin. Zeppelin Server is in Java and Interpreters are using some way to connect to other languages for notebook paragraphs (network socket, library, ...).
+The goal of this project is to integrate Pharo with Zeppelin and delivering initial examples in Pharo.';
+goal: 'Add a Pharo Zeppelin Interpreter to Zeppelin';
+level: 'Intermediate';
+candidate: 'Topic still free'
+.
+
+PharoTopic new
+	title: 'Distributed Issue Tracker';
+	contact: 'stephan@stack.nl';
+	supervisors: 'Stephan Eggermont, Diego Lont';
+	keywords: 'P2P Tools GUI';
+  	context: '
+Most development in Smalltalk uses distributed version control systems, either Monticello or Git.
+But the current issue tracker is web-based and cannot work disconnected. 
+Integrating the issue tracker in the CI workflow of the projects is crucial.
+There is a small prototype available. 
+
+
+**Benefits to the Student
+getting to know the difficulties of issue tracking/the workflow of open source projects;
+experience with distributed systems;
+experience an agile open source environment;
+
+**Benefits to the Community
+bring new developers into the community
+better integrated workflow;
+native issue tracker, accessible both in-image, web and automated
+';
+
+	goal: 'A native smalltalk distributed issue tracker. 
+It should have basic issue tracking functionality including attaching files/pictures/code. 
+It should have a native interface, a web interface and a scripting API. 
+Primary development is in Pharo.
+';
+	level: 'Advanced';
+	yourself
+
+.
+
+
 PharoTopic new
        title: 'MQTT support for Pharo';
        contact: 'sven@stfx.eu, juraj.kubelka@icloud.com';
