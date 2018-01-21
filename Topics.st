@@ -13,6 +13,22 @@ PharoTopic new
 don't forget to separate topics as statements with periods
 
 "
+
+PharoTopic new
+    title: 'freeCAD: 3D CAD with Motion Simulation';
+    contact: 'askoh@askoh.com';
+    supervisors: 'Aik-Siong Koh';
+    keywords: 'Motion Simulation Multibody Dynamics';
+    context: 'freeCAD is a basic 3D CAD with advanced Motion Simulation capabilities. 
+    Originally written in VisualWorks Smalltalk, a port to Pharo will make it completely open source for a greater audience. 
+    Its motion simulation capabilities are comparable to the best and can provide accurate answers to engineers and 
+    scientists in diverse fields. Educators, students and new engineers will find it ideal for the teaching and 
+    learning of geometry, kinematics, dynamics, vibrations, mechanisms, linkages, cams, machine design and physics. 
+    http://www.ar-cad.com/freecad/index.html';
+    goal: 'To use the power of Pharo to create a killer Computer Aided Design and Engineering tool for all';
+    level: 'Intermediate';
+    yourself.
+
 PharoTopic new
 	title: 'Taking Advantage of Immutable Objects';
 	contact: 'clement.bera@inria.fr';
