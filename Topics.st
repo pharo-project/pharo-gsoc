@@ -120,6 +120,26 @@ candidate: 'Topic still free'
 .
 
 PharoTopic new
+	title: 'Hacking Pharo in Your Web Browser';
+	contact: 'luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr';
+	supervisors: 'L. Fabresse and Damien Pollet';
+	keywords: 'Docker, Virtual machine';
+	context: 'There is a need to be able to execute Pharo on a web server. However this execution should 
+	not expose the file system and machine resources. The idea of this problem is to run Pharo in a container
+	and expose it in a web application. 
+';
+	goal:
+'Tasks: Possible tasks are 
+- Have a look at http://www.tech.io 
+- Learn Docker
+- Make a first version
+- Build a little webfront end.
+';
+  	level: 'Intermediate';
+  	yourself 
+. 
+
+PharoTopic new
 	title: 'Distributed Issue Tracker';
 	contact: 'stephan@stack.nl';
 	supervisors: 'Stephan Eggermont, Diego Lont';
