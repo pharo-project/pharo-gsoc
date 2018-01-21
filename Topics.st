@@ -342,6 +342,21 @@ PharoTopic new
        level: 'Intermediate to Advanced';
        yourself.
 
+
+ PharoTopic new
+	title: 'Zeppelin Support for Pharo';
+	contact: 'phil@highoctane.be';
+	supervisors: 'Philippe Back';
+	keywords: 'Live coding, UI, Notebook, Interoperability, Literate Programming, Integration, Polyglot programming';
+	context: 'Zeppelin is a Web-based notebook that enables data-driven, interactive data analytics and collaborative documents. https://github.com/apache/zeppelin. Zeppelin Server is in Java and Interpreters are using some way to connect to other languages for notebook paragraphs (network socket, library, ...).
+The goal of this project is to integrate Pharo with Zeppelin and delivering initial examples in Pharo.';
+	goal: 'Add a Pharo Zeppelin Interpreter to Zeppelin';
+	level: 'Intermediate';
+	candidate: 'Topic still free';
+	yourself
+	.
+
+
  PharoTopic new
        title: 'Renraku';
        contact: 'uko@unikernel.net';
