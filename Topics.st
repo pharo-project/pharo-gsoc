@@ -13,6 +13,22 @@ PharoTopic new
 don't forget to separate topics as statements with periods
 
 "
+
+PharoTopic new
+    title: 'freeCAD: 3D CAD with Motion Simulation';
+    contact: 'askoh@askoh.com';
+    supervisors: 'Aik-Siong Koh';
+    keywords: 'Motion Simulation Multibody Dynamics';
+    context: 'freeCAD is a basic 3D CAD with advanced Motion Simulation capabilities. 
+    Originally written in VisualWorks Smalltalk, a port to Pharo will make it completely open source for a greater audience. 
+    Its motion simulation capabilities are comparable to the best and can provide accurate answers to engineers and 
+    scientists in diverse fields. Educators, students and new engineers will find it ideal for the teaching and 
+    learning of geometry, kinematics, dynamics, vibrations, mechanisms, linkages, cams, machine design and physics. 
+    http://www.ar-cad.com/freecad/index.html';
+    goal: 'To use the power of Pharo to create a killer Computer Aided Design and Engineering tool for all';
+    level: 'Intermediate';
+    yourself.
+
 PharoTopic new
 	title: 'Taking Advantage of Immutable Objects';
 	contact: 'clement.bera@inria.fr';
@@ -401,5 +417,30 @@ PharoTopic new
 
 Pharo project already supports MQTT protocol (https://github.com/svenvc/mqtt/) including clients and use cases (https://github.com/JurajKubelka/MQTTCallbackClient or https://github.com/JurajKubelka/MQTTChat).';
        goal: 'The goal of this project is to improve existing code (MQTT, callback client, chat). Namely add more test cases in order to cover common scenarios, improve documentation, and add support for large files inspired by the talk mentioned above.';
+       level: 'Intermediate';
+       yourself.
+       
+PharoTopic new
+       title: 'Pharo Launcher command line interface';
+       contact: 'guillermopolito@gmail.com';
+       supervisors: 'Guillermo Polito, Christophe Demarey';
+       keywords: 'image management, command line interface, virtualization';
+       context: 'The pharo launcher is an application that allows the management of pharo images. In a "docker style", you can download images from templates, install them, list your installed images, and launch them. All this is done through a visual user interface in a desktop application.';
+       goal: 'The goal of this project is to implement a command line interface for the Pharo launcher, to be able to manipulate it on servers as we do with docker. For example:
+       
+       $ phlauncher list
+       $ phlauncher templates
+       $ phlauncher install X
+       $ phlauncher run X';
+       level: 'Intermediate';
+       yourself.
+
+PharoTopic new
+       title: 'Next Generation Unit Testing';
+       contact: 'guillermopolito@gmail.com';
+       supervisors: 'Guillermo Polito';
+       keywords: 'unit testing, parallelization, configuration';
+       context: 'SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.';
+       goal: 'The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.';
        level: 'Intermediate';
        yourself.
