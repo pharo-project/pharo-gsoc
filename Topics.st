@@ -122,15 +122,12 @@ candidate: 'Topic still free'
 PharoTopic new
 	title: 'Hacking Pharo in Your Web Browser';
 	contact: 'luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr';
-	supervisors: 'L. Fabresse and Damien Pollet';
+	supervisors: 'Luc Fabresse and Damien Pollet';
 	keywords: 'Docker, Virtual machine';
-	context: 'There is a need to be able to execute Pharo on a web server. However this execution should 
-	not expose the file system and machine resources. The idea of this problem is to run Pharo in a container
-	and expose it in a web application. 
-';
+	context: 'There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.';
 	goal:
-'Tasks: Possible tasks are 
-- Have a look at http://www.tech.io 
+'Possible tasks are:
+- Have a look at http://www.tech.io / https://www.pythonanywhere.com / http://jupyter.org
 - Learn Docker
 - Make a first version
 - Build a little webfront end.
