@@ -1,39 +1,132 @@
 #Pharo GSOC Topics
 
-* [Grafoscopio: Literate computing and reproducible research for Pharo](#title-grafoscopio-literate-computing-and-reproducible-research-for-pharo)
+* [freeCAD: 3D CAD with Motion Simulation](#title-freecad-3d-cad-with-motion-simulation)
+* [Taking Advantage of Immutable Objects](#title-taking-advantage-of-immutable-objects)
+* [Finder 2.0: Reimplementing Example Based Query](#title-finder-20-reimplementing-example-based-query)
+* [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
 * [Jupyter Support for Pharo](#title-jupyter-support-for-pharo)
+* [Hacking Pharo in Your Web Browser](#title-hacking-pharo-in-your-web-browser)
 * [Distributed Issue Tracker](#title-distributed-issue-tracker)
 * [Weather/Meteo for OpenStreetMap in Roassal](#title-weathermeteo-for-openstreetmap-in-roassal)
 * [GRASS integration with Pharo/Roassal](#title-grass-integration-with-pharoroassal)
-* [Statistics Library with Polymath](#title-statistics-library-with-polymath)
 * [Two-way synchronized code changes, better support for cross-platform co-development ](#title-two-way-synchronized-code-changes-better-support-for-cross-platform-co-development-)
 * [IPFS for Pharo](#title-ipfs-for-pharo)
-* [Make for Pharo in Pharo](#title-make-for-pharo-in-pharo)
-* [Scrapping Data: Enhancing User Experience](#title-scrapping-data-enhancing-user-experience)
 * [Improving code completion](#title-improving-code-completion)
-* [Improving the VM profiler](#title-improving-the-vm-profiler)
-* [Taking Advantage of Immutable Objects](#title-taking-advantage-of-immutable-objects)
 * [New Collections for Pharo](#title-new-collections-for-pharo)
 * [Enhancing Pillar](#title-enhancing-pillar)
-* [Enhance Pharo Command Line Interface](#title-enhance-pharo-command-line-interface)
 * [Pharoya](#title-pharoya)
+* [Zeppelin Support for Pharo](#title-zeppelin-support-for-pharo)
 * [Renraku](#title-renraku)
 * [MQTT support for Pharo](#title-mqtt-support-for-pharo)
+* [Pharo Launcher command line interface](#title-pharo-launcher-command-line-interface)
+* [Next Generation Unit Testing](#title-next-generation-unit-testing)
 
-##Title: Grafoscopio: Literate computing and reproducible research for Pharo
-###Contact: serge.stinckwich@ird.fr
-###Supervisors: Serge Stinckwich
-###Keywords: Live coding, UX/UI, Notebook, reproducible research, Literate Computing, data storytelling, data visualization
+##Title: freeCAD: 3D CAD with Motion Simulation
+###Contact: askoh@askoh.com
+###Supervisors: Aik-Siong Koh
+###Keywords: Motion Simulation Multibody Dynamics
 ###Context
-Literate computing is a way of mixing text, code, data and visualizations for making data
-based storytelling, experimentation, exploration and documentation in diverse broad fields like 
-academia, journalism, research and activism, or Pharo specific themes (for Roassal, Polymath etc).
-Grafoscopio is a tool that brings literate computing to the Pharo environment by allowing the creation
-of structured interactive notebooks in a tree-like programmable document metaphor.
+freeCAD is a basic 3D CAD with advanced Motion Simulation capabilities. 
+    Originally written in VisualWorks Smalltalk, a port to Pharo will make it completely open source for a greater audience. 
+    Its motion simulation capabilities are comparable to the best and can provide accurate answers to engineers and 
+    scientists in diverse fields. Educators, students and new engineers will find it ideal for the teaching and 
+    learning of geometry, kinematics, dynamics, vibrations, mechanisms, linkages, cams, machine design and physics. 
+    http://www.ar-cad.com/freecad/index.html
 ###Goal
-Improve user experience (UX), the interaction with external tools 
-(pandoc, fossil), code quality and test coverage for Grafoscopio.
-###Level: Normal, Intermediate
+To use the power of Pharo to create a killer Computer Aided Design and Engineering tool for all
+###Level: Intermediate
+
+***
+
+##Title: Taking Advantage of Immutable Objects
+###Contact: clement.bera@inria.fr
+###Supervisors: C. Bera
+###Keywords: Write barrier
+###Context
+Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
+as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
+
+It means that once marked as immutable objects cannot be modified and raise an error. 
+For deep Virtual machine optimisations that fold stack elements, having strings as immutable objects is key. 
+Now the core Pharo libraries may still use some mutable strings.
+Therefore the core libraries of Pharo should be revisited to identify use of mutable structures.
+
+Now we face several challenges:
+	- Identification of part thats can be migrated to immutable objects.
+	- Identification of patterns of potential problems.
+
+In addition, there is a need to propose to the Pharo developers a way to take advantage of immutability. 
+A typical example is the use of write barrier (to identify objects that changes and therefore should be 
+committed to database). We need to explore the design of a frameworks to let the developer expresses what 
+should be done when an immutable object detects an attempt to modify it.  
+
+###Goal
+Tasks: Here is a possible outline of work:
+
+The student will 
+	- study current Pharo libraries for use of literal objects such as strings
+	- define solution to avoid the use of mutable objects (in particular strings)
+	- present the results to the core development team
+	- iterate and help integrating the good results :)
+	- start designing a first write barrier frameworks
+Resources:
+- https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/
+###Level: Intermediate
+
+***
+
+##Title: Finder 2.0: Reimplementing Example Based Query
+###Contact: stephane.ducasse@inria.fr
+###Supervisors: stephane.ducasse@inria.fr
+###Keywords: example finder
+###Context
+
+Pharo comes with a super nice tools: the finder. The finder les you gives objects i.e. 11 .2 .5, meaning 
+what is the message that sent to 11 with 2 as argument will return 5. 
+
+###Goal
+The goal of this project is to revisit completely the design of the tool. In particular
+we should not use global tables but each class should be able to declare the methods that can be found or not this way. 
+In addition adding tests and rethinking the core functionality is part of the project.
+The project will have an impact on all the pharoers because this tool is super cool but needs some love.
+###Level: Normal
+
+***
+
+##Title: Scrapping Data: Enhancing User Experience
+###Contact: alexandre.bergel@me.com 
+###Supervisors: alexandre.bergel@me.com 
+###Keywords: CVS DataFrame
+###Context
+
+###Goal
+To analyze data, you need to get data in first. So, one may want to read - say -
+a CSV, and have a number of heuristics, such as:
+- autodetection of encoding
+- autodetection of quotes and delimiter
+- autodetection of columns containing numbers or dates
+- the possibility to indicate that some markers, such as "N/A",
+represent missing values
+- the possibility to indicate a replacement for missing values, such
+as 0, or "", or the average or the minimum of the other values in the
+colums
+See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
+It may be worth to consider making this into a sequence that is read and processed lazily, 
+to deal with CSV files bigger than memory.
+When data is finally in, usually the first task is doing some processing, inspection or visualization. 
+The Smalltalk collections are good for processing (although some lazy variants might help), 
+and Roassal and the inspectors are perfect for visualization and browsing.
+It could be extended as follows: The second part comes the time when one wants to run some algorithm. 
+While there is no need to have the fanciest ones, there should be some
+of the basics, such as:
+- some form or regression (linear, logistic...)
+- some form of clustering (kmeans, dbscan, canopy...)
+Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
+Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. 
+Here I think Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. 
+Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
+
+###Level: Normal
 
 ***
 
@@ -48,6 +141,26 @@ The goal of this project will be to integrate Pharo with Jupyter allowing easy e
 exploration and documentation of Pharo examples (for Roassal, Polymath etc) on the web.
 ###Goal
 Add Pharo support for Jupyter
+###Level: Intermediate
+
+***
+
+##Title: Hacking Pharo in Your Web Browser
+###Contact: luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr
+###Supervisors: L. Fabresse and Damien Pollet
+###Keywords: Docker, Virtual machine
+###Context
+There is a need to be able to execute Pharo on a web server. However this execution should 
+	not expose the file system and machine resources. The idea of this problem is to run Pharo in a container
+	and expose it in a web application. 
+
+###Goal
+Tasks: Possible tasks are 
+- Have a look at http://www.tech.io 
+- Learn Docker
+- Make a first version
+- Build a little webfront end.
+
 ###Level: Intermediate
 
 ***
@@ -121,21 +234,6 @@ first as a set of external commands (with a Pharo-based GUI front-end), and mayb
 
 ***
 
-##Title: Statistics Library with Polymath
-###Contact: serge DOT stinckwich AT ird DOT fr
-###Supervisors: Serge Stinckwich
-###Keywords: statistic mathematics science
-###Context
-PolyMath is a new Smalltalk project, similar to existing scientific libraries like NumPy, 
-SciPy for Python or SciRuby for Ruby. PolyMath already provide the following basic functionalities:
-complex and quaternions extensions, random number generators, fuzzy algorithms, KDE-trees, numerical methods, 
-Ordinary Differential Equation (ODE) solvers.
-###Goal
-Add some statistics functions to PolyMath.
-###Level: Intermediate
-
-***
-
 ##Title: Two-way synchronized code changes, better support for cross-platform co-development 
 ###Contact: stephan@stack.nl
 ###Supervisors: Stephan Eggermont, Diego Lont
@@ -198,65 +296,6 @@ access to resources via IPFS.
 
 ***
 
-##Title: Make for Pharo in Pharo
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: stephane.ducasse@inria.fr
-###Keywords: Make graph
-###Context
-
-Make is a unix tool to express dependencies between task. Now it is not really cross-platform. 
-Python has a library that implements make on top of a graph library. 
-It would be really nice to have a solution for Pharo using the same idea.
-- http://aosabook.org/en/500L/contingent-a-fully-dynamic-build-system.html
-MCHttpRepository
-	location: 'http://smalltalkhub.com/mc/CipT/MelcGraph/main'
-	user: ''
-	password: ''
-
-###Goal
-The goal of this project is to develop a make like implementation in Pharo using the graph 
-library MelcGraph developed by C. Teodorov.
-###Level: Normal
-
-***
-
-##Title: Scrapping Data: Enhancing User Experience
-###Contact: alexandre.bergel@me.com 
-###Supervisors: alexandre.bergel@me.com 
-###Keywords: CVS 
-###Context
-
-###Goal
-To analyze data, you need to get data in first. So, one may want to read - say -
-a CSV, and have a number of heuristics, such as:
-- autodetection of encoding
-- autodetection of quotes and delimiter
-- autodetection of columns containing numbers or dates
-- the possibility to indicate that some markers, such as "N/A",
-represent missing values
-- the possibility to indicate a replacement for missing values, such
-as 0, or "", or the average or the minimum of the other values in the
-colums
-See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
-It may be worth to consider making this into a sequence that is read and processed lazily, 
-to deal with CSV files bigger than memory.
-When data is finally in, usually the first task is doing some processing, inspection or visualization. 
-The Smalltalk collections are good for processing (although some lazy variants might help), 
-and Roassal and the inspectors are perfect for visualization and browsing.
-It could be extended as follows: The second part comes the time when one wants to run some algorithm. 
-While there is no need to have the fanciest ones, there should be some
-of the basics, such as:
-- some form or regression (linear, logistic...)
-- some form of clustering (kmeans, dbscan, canopy...)
-Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
-Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. 
-Here I think Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. 
-Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
-
-###Level: Normal
-
-***
-
 ##Title: Improving code completion
 ###Contact: stephane.ducasse@inria.fr
 ###Supervisors: S. Ducasse and E. Lorenzano
@@ -271,65 +310,6 @@ The tasks are:
 (2) Write some tests to characterize specific behavior, 
 (3) Improve the noise introduced by the Symbol table usage, 
 (4) build more heuristics.
-###Level: Intermediate
-
-***
-
-##Title: Improving the VM profiler
-###Contact: clement.bera@inria.fr
-###Supervisors: C.Bera and E. Miranda
-###Keywords: VM profiling
-###Context
-The current VM profiler is a sampling profiler cadenced at 1.3GHz tracking down where the time is spent 
-    in the C code of the VM (for the interpreter and the GC) and in the machine code zone (for the code generated by the JIT). 
-    When profiling the machine code zone, the profiler tracks down in which method but not in which part of the method the time is spent.
-
- 	The problem is important currently in large methods and methods including closures 
-	(we cannot know if the time is spent in a closure or in the method). 
-	This problem is also becoming more significant as we are adding new optimisations such as speculative inlining 
-	(We cannot know if the time is spent in the mehtod or one inlined method).
-
-	The JIT features an API to map machine code instruction pointer to bytecode program counter, used for debugging. 
-	Using this API, it should be possible to map the profiling sample to a range of bytecode inside the method.
-###Goal
-The goal is to improve the current VM profiler so when profiling code generated by the JIT, the profiler shows where in the method the time is spent instead of just telling in which method the time is spent.
-###Level: Advanced
-
-***
-
-##Title: Taking Advantage of Immutable Objects
-###Contact: clement.bera@inria.fr
-###Supervisors: C. Bera
-###Keywords: Write barrier
-###Context
-Pharo since its version 60 supports object immutability primitives at the Virtual Machine level
-as explained here https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/.
-
-It means that once marked as immutable objects cannot be modified and raise an error. 
-For deep Virtual machine optimisations that fold stack elements, having strings as immutable objects is key. 
-Now the core Pharo libraries may still use some mutable strings.
-Therefore the core libraries of Pharo should be revisited to identify use of mutable structures.
-
-Now we face several challenges:
-	- Identification of part thats can be migrated to immutable objects.
-	- Identification of patterns of potential problems.
-
-In addition, there is a need to propose to the Pharo developers a way to take advantage of immutability. 
-A typical example is the use of write barrier (to identify objects that changes and therefore should be 
-committed to database). We need to explore the design of a frameworks to let the developer expresses what 
-should be done when an immutable object detects an attempt to modify it.  
-
-###Goal
-Tasks: Here is a possible outline of work:
-
-The student will 
-	- study current Pharo libraries for use of literal objects such as strings
-	- define solution to avoid the use of mutable objects (in particular strings)
-	- present the results to the core development team
-	- iterate and help integrating the good results :)
-	- start designing a first write barrier frameworks
-Resources:
-- https://clementbera.wordpress.com/2016/01/24/introducing-immutability-in-the-cog-vm/
 ###Level: Intermediate
 
 ***
@@ -363,8 +343,6 @@ Tasks:
 - Design and implement new collections such as 
 	-- BTree, QuadTrees, 
 	-- Immutable list, set, array
-
-
 Resources:
 - Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf 
 - http://source.lukas-renggli.ch/container started to implement some new collections for Pharo. 
@@ -394,38 +372,6 @@ The goal of the project is to do help in the development of the new iteration of
 
 ***
 
-##Title: Enhance Pharo Command Line Interface
-###Contact: guillermopolito@gmail.com
-###Supervisors: guillermopolito@gmail.com
-###Keywords: terminal commandline bash scripting
-###Context
-The command line handler framework is the most used alternative for command line interaction with Pharo applications. Several default command line handlers come defined in the framework for interacting with the environment (evaluate code, install packages, etc.). Users can also extend this framework to introduce application specific command line behaviours in Pharo. Additionally to this development effort, the Scale library (https://github.com/guillep/Scale) has been developed to allow using Pharo from the command line for scripting purposes.
-These tools proved useful to the pharo community, as they are used in many projects for e.g., building, deploying or testing. But also, they pushed the pharo infrastructure and took to the surface several problems present in the underlying core libraries that difficults the deployment and usage in typical unix-like environments.
-###Goal
-The main goal of this project is to enhance the command line management in pharo to enhance the user experience in unix-like environments. We identify several tasks for the student, that should be accomplished in the 12 week lapse:
-  - Complete, Test and integrate a better alternative for command line parsing such as Clap (https://github.com/cdlm/clap-st)
-  - fix working directory (pwd): today pharo uses the image directory as working directory, causing several glitches when the image is used from a differen directory.
-  - fix logging: pharo logs nowadays in the directory where the image is. We should be capable to define wether the logging should happen depending on the distribution or the environment (e.g., /var/log).
-  - fix general file management: pharo wrongly reads and writes files relative to its `working` directory.
-
-In general terms these development tasks include implicitly their integration into the main development branch of Pharo. This means that the student will also communicate with the Pharo open source community and follow the community's quality guidelines and process of integration and validation.
-
-The student will learn from this project:
-  - Basics of scripting
-  - Good practices of deployment and building applications
-  - Core parts of the Pharo language such as the File library
-  - How to interact with a big open source community
-  - Basic sw engineering practices
-  
-Resources:
-  - Pharo Command Line Handlers: https://github.com/guillep/pharo-core/tree/master/src/System-CommandLineHandler.package
-  - Clap: https://github.com/cdlm/clap-st
-  - Scale: https://github.com/guillep/Scale
-
-###Level: Normal
-
-***
-
 ##Title: Pharoya
 ###Contact: phil@highoctane.be
 ###Supervisors: Philippe Back
@@ -439,6 +385,19 @@ Pharoya stands for Pharo on YARN. YARN, the underlying system under Hadoop, allo
 ###Goal
 Make Pharo a first class citizen on Hadoop clusters as a YARN application
 ###Level: Intermediate to Advanced
+
+***
+
+##Title: Zeppelin Support for Pharo
+###Contact: phil@highoctane.be
+###Supervisors: Philippe Back
+###Keywords: Live coding, UI, Notebook, Interoperability, Literate Programming, Integration, Polyglot programming
+###Context
+Zeppelin is a Web-based notebook that enables data-driven, interactive data analytics and collaborative documents. https://github.com/apache/zeppelin. Zeppelin Server is in Java and Interpreters are using some way to connect to other languages for notebook paragraphs (network socket, library, ...).
+The goal of this project is to integrate Pharo with Zeppelin and delivering initial examples in Pharo.
+###Goal
+Add a Pharo Zeppelin Interpreter to Zeppelin
+###Level: Intermediate
 
 ***
 
@@ -476,4 +435,33 @@ The goal of this project is to improve existing code (MQTT, callback client, cha
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2017-03-30T14:14:50.563215+00:00 by Pharo5.0 of 16 April 2015 update 50771</p>
+##Title: Pharo Launcher command line interface
+###Contact: guillermopolito@gmail.com
+###Supervisors: Guillermo Polito, Christophe Demarey
+###Keywords: image management, command line interface, virtualization
+###Context
+The pharo launcher is an application that allows the management of pharo images. In a "docker style", you can download images from templates, install them, list your installed images, and launch them. All this is done through a visual user interface in a desktop application.
+###Goal
+The goal of this project is to implement a command line interface for the Pharo launcher, to be able to manipulate it on servers as we do with docker. For example:
+       
+       $ phlauncher list
+       $ phlauncher templates
+       $ phlauncher install X
+       $ phlauncher run X
+###Level: Intermediate
+
+***
+
+##Title: Next Generation Unit Testing
+###Contact: guillermopolito@gmail.com
+###Supervisors: Guillermo Polito
+###Keywords: unit testing, parallelization, configuration
+###Context
+SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.
+###Goal
+The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-22T16:48:10.011347+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
