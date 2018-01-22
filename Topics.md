@@ -147,16 +147,13 @@ Add Pharo support for Jupyter
 
 ##Title: Hacking Pharo in Your Web Browser
 ###Contact: luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr
-###Supervisors: L. Fabresse and Damien Pollet
+###Supervisors: Luc Fabresse and Damien Pollet
 ###Keywords: Docker, Virtual machine
 ###Context
-There is a need to be able to execute Pharo on a web server. However this execution should 
-	not expose the file system and machine resources. The idea of this problem is to run Pharo in a container
-	and expose it in a web application. 
-
+There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.
 ###Goal
-Tasks: Possible tasks are 
-- Have a look at http://www.tech.io 
+Possible tasks are:
+- Have a look at http://www.tech.io / https://www.pythonanywhere.com / http://jupyter.org
 - Learn Docker
 - Make a first version
 - Build a little webfront end.
@@ -464,4 +461,4 @@ The goal of this project is to redesign the SUnit framework to be extensible. Th
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-22T16:48:10.011347+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-22T17:37:02.191056+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
