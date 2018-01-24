@@ -444,3 +444,13 @@ PharoTopic new
        goal: 'The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.';
        level: 'Intermediate';
        yourself.
+
+PharoTopic new
+	title: 'DataFrame';
+	contact: 'oleks@ucu.edu.ua';
+	supervisors: 'Oleksandr Zaytsev, Serge Stinckwich';
+	keywords: 'data science, data analysis, dataframe, tabular data, statistics';
+	context: 'DataFrame was introduced to Pharo during the previous GSoC (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
+	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
+	level: 'Intermediate';
+	yourself.
