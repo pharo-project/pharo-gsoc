@@ -20,6 +20,7 @@
 * [MQTT support for Pharo](#title-mqtt-support-for-pharo)
 * [Pharo Launcher command line interface](#title-pharo-launcher-command-line-interface)
 * [Next Generation Unit Testing](#title-next-generation-unit-testing)
+* [DataFrame](#title-dataframe)
 
 ##Title: freeCAD: 3D CAD with Motion Simulation
 ###Contact: askoh@askoh.com
@@ -461,4 +462,16 @@ The goal of this project is to redesign the SUnit framework to be extensible. Th
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-22T17:37:02.191056+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+##Title: DataFrame
+###Contact: oleks@ucu.edu.ua
+###Supervisors: Oleksandr Zaytsev, Serge Stinckwich
+###Keywords: data science, data analysis, dataframe, tabular data, statistics
+###Context
+DataFrame was introduced to Pharo during the previous GSoC (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.
+###Goal
+The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-24T08:55:34.169799+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
