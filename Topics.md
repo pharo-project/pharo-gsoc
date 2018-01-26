@@ -16,7 +16,6 @@
 * [Enhancing Pillar](#title-enhancing-pillar)
 * [Pharoya](#title-pharoya)
 * [Zeppelin Support for Pharo](#title-zeppelin-support-for-pharo)
-* [Renraku](#title-renraku)
 * [MQTT support for Pharo](#title-mqtt-support-for-pharo)
 * [Pharo Launcher command line interface](#title-pharo-launcher-command-line-interface)
 * [Next Generation Unit Testing](#title-next-generation-unit-testing)
@@ -399,26 +398,6 @@ Add a Pharo Zeppelin Interpreter to Zeppelin
 
 ***
 
-##Title: Renraku
-###Contact: uko@unikernel.net
-###Supervisors: Yuriy Tymchuk
-###Keywords: code quality static analysis assistant tools
-###Context
-Renraku is the model which manages all the quality tools and analysis in Pharo. 
-       Althought it already had a great success, there is still a lot of work which has to be done.
-       Read more about it here: http://yuriy.tymch.uk/Renraku/
-###Goal
-The student should start by converting availalbe SmallLint rules into Renraku rules to familiarize with the project, 
-       and understand the value that it brings. 
-       Then the student is expected to work on the most currently important features 
-       such as the advanced error handlind, and more flexible toggling of the analysis. 
-       Then, depending on the student's preferences, the projects may continue towards a model-based validation 
-       or a tooling for rule development. 
-       The roadmap of Renraku godes beyond the Google Summer of Code timeframe and is available here: http://yuriy.tymch.uk/Renraku/roadmap/. 
-###Level: Intermediate to Advanced
-
-***
-
 ##Title: MQTT support for Pharo
 ###Contact: sven@stfx.eu, juraj.kubelka@icloud.com
 ###Supervisors: Sven Van Caekenberghe, Juraj Kubelka
@@ -474,4 +453,4 @@ The goal of this project is to introduce new functionality to DataFrame (for exa
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-24T08:55:34.169799+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-26T15:03:03.710425+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
