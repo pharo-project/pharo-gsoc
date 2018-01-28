@@ -434,3 +434,13 @@ PharoTopic new
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
 	level: 'Intermediate';
 	yourself.
+
+PharoTopic new
+	title: 'Material Design Lite';
+	contact: 'cyril@ferlicot.me';
+	supervisors: 'Cyril Ferlicot-Delbecque';
+	keywords: 'material design lite, material-ui, seaside, web, components';
+	context: 'Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google''s Material Design guidelines.';
+	goal: 'The goal of this project is to create new components, use these components to create more complexe components and potentialy add tests to the existing components.';
+	level: 'Beginner to Intermediate';
+	yourself.
