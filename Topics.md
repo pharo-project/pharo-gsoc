@@ -20,6 +20,7 @@
 * [Pharo Launcher command line interface](#title-pharo-launcher-command-line-interface)
 * [Next Generation Unit Testing](#title-next-generation-unit-testing)
 * [DataFrame](#title-dataframe)
+* [Material Design Lite](#title-material-design-lite)
 
 ##Title: freeCAD: 3D CAD with Motion Simulation
 ###Contact: askoh@askoh.com
@@ -453,4 +454,16 @@ The goal of this project is to introduce new functionality to DataFrame (for exa
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-26T15:03:03.710425+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+##Title: Material Design Lite
+###Contact: cyril@ferlicot.me
+###Supervisors: Cyril Ferlicot-Delbecque
+###Keywords: material design lite, material-ui, seaside, web, components
+###Context
+Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google's Material Design guidelines.
+###Goal
+The goal of this project is to create new components, use these components to create more complexe components and potentialy add tests to the existing components.
+###Level: Beginner to Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-28T20:39:21.031135+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
