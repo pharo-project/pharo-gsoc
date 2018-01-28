@@ -15,6 +15,16 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+    title: 'Keras for Pharo';
+    contact: 'alexandre.bergel@m.com';
+    supervisors: 'Alexandre Bergel';
+    keywords: 'Artificial Intelligence';
+    context: 'a description of the context of the project';
+    goal: 'The goal of this project is implement the necessary in Pharo to be able to access the main functionalities of Keras. The first phase of the effort is to use Python3Generator to interact with Python. The second phase is to wrap a representative set of Keras functionalities. As a third phase, is to design a set of compeling examples.';
+    level: 'Beginner';
+    yourself.
+
+PharoTopic new
     title: 'freeCAD: 3D CAD with Motion Simulation';
     contact: 'askoh@askoh.com';
     supervisors: 'Aik-Siong Koh';
@@ -81,44 +91,6 @@ In addition adding tests and rethinking the core functionality is part of the pr
 The project will have an impact on all the pharoers because this tool is super cool but needs some love.'; 
 	level: 'Normal';
 	yourself
-
-.
-
-PharoTopic new
-	title: 'Scrapping Data: Enhancing User Experience';
-	contact: 'alexandre.bergel@me.com ';
-	supervisors: 'alexandre.bergel@me.com ';
-	keywords: 'CVS DataFrame';
-	context: '';
-	goal: 'To analyze data, you need to get data in first. So, one may want to read - say -
-a CSV, and have a number of heuristics, such as:
-- autodetection of encoding
-- autodetection of quotes and delimiter
-- autodetection of columns containing numbers or dates
-- the possibility to indicate that some markers, such as "N/A",
-represent missing values
-- the possibility to indicate a replacement for missing values, such
-as 0, or "", or the average or the minimum of the other values in the
-colums
-See http://pandas.pydata.org/pandas-docs/version/0.15.2/io.html#csv-text-files for some examples.
-It may be worth to consider making this into a sequence that is read and processed lazily, 
-to deal with CSV files bigger than memory.
-When data is finally in, usually the first task is doing some processing, inspection or visualization. 
-The Smalltalk collections are good for processing (although some lazy variants might help), 
-and Roassal and the inspectors are perfect for visualization and browsing.
-It could be extended as follows: The second part comes the time when one wants to run some algorithm. 
-While there is no need to have the fanciest ones, there should be some
-of the basics, such as:
-- some form or regression (linear, logistic...)
-- some form of clustering (kmeans, dbscan, canopy...)
-Another thing which would be useful is support for linear algebra, leveraging native libraries such as BLAS or LAPACK.
-Ideally, I would include also some tutorials, for instance for dealing with standard problems such as Kaggle competitions. 
-Here I think Smalltalk would have an edge, since these tutorial could be in the form of Prof Stef. 
-Still, it would be nice if some form of the tutorials was also on the web, which makes it discoverable.
-';
-	level: 'Normal';
-	yourself
-
 .
 
 PharoTopic new
