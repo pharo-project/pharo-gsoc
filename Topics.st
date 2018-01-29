@@ -259,7 +259,7 @@ access to resources via IPFS.';
 PharoTopic new
 	title: 'Improving code completion';
 	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse and E. Lorenzano';
+	supervisors: 'S. Ducasse, E. Lorenzano and Juan Pablo Sandoval A.';
 	keywords: 'completion';
 	context: 'Automatic completion is really important. The current code completion already defines some good 
 behavior but it can do better.';
