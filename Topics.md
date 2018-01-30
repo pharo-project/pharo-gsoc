@@ -271,7 +271,7 @@ access to resources via IPFS.
 
 ##Title: Improving code completion
 ###Contact: stephane.ducasse@inria.fr
-###Supervisors: S. Ducasse and E. Lorenzano
+###Supervisors: S. Ducasse, E. Lorenzano and Juan Pablo Sandoval A.
 ###Keywords: completion
 ###Context
 Automatic completion is really important. The current code completion already defines some good 
@@ -441,4 +441,4 @@ The goal of this project is to create new components, use these components to cr
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-28T20:40:11.184756+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-01-30T06:58:00.077004+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
