@@ -406,6 +406,26 @@ PharoTopic new
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
 	level: 'Intermediate';
 	yourself.
+	
+ PharoTopic new
+       title: 'Liberated Pixel Cup native support in Pharo';
+       contact: 'bera.clement@gmail.com';
+       supervisors: 'Clement Bera, Stephane Ducasse ?';
+       keywords: 'Cairo SDL 2D';
+       context: 'It is now possible to build quite good 2D native applications in Pharo using Cairo and SDL, which led to experimental video games (article in Linux Mag of April 2018, https://github.com/clementbera/wizard-battle-arena). On the other hand, projects such as The Liberated Pixel Cup supported by the Mozzila Foundation and other large groups develop huge graphic ressources available under open source licenses (http://lpc.opengameart.org/). Note the student is strongly advised to use a Linux machine for this work.';
+       goal: 'The first goal is to create a library to easily import and display LPC characters generated from website like this one (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/) into the Pharo stack (SDL, Cairo & Pharo). Second goal is to build a minimal video game framework on top of it with a game. Lastly, the third goal is to improve packaging & deployment of such native applications in Pharo, as well as evaluating the integration with other frameworks (Bloc to display GUI for example). The third goal has to be clearly detailled in the student proposal - we won't accept topics not improving the Core Pharo system. In addition, the demo game created should be submitted to this year LPC event (competition from June 1st to July 31st) to show Pharo to other communities.';
+       level: 'Beginner to Intermediate';
+       yourself.
+       
+ PharoTopic new
+       title: 'Vector instructions in Pharo';
+       contact: 'bera.clement@gmail.com';
+       supervisors: 'Clement Bera';
+       keywords: 'AVX MMX vector';
+       context: 'On the one hand, recent work has allowed the Pharo bytecode set to be extended relatively easily to use more low-level operations. On the other hand, the Sci Smalltalk community is developping on top of Pharo and the Maths/Matrix librares would greatly benefit from native vector instruction usage.';
+       goal: 'Going bottoms up, the student would need first to implement support for AVX-256 x64 double-floating pointer instructions in the compiler back-end, with tests showing that they actually work. Second, he needs to leverage these instructions to the bytecode level designing a small DSL with a micro-compiler compiling from the DSL to bytecode. Lastly, he needs to build a small Matrix or Maths libraries using those instructions and evaluate the performance.';
+       level: 'Advanced';
+       yourself.
 
 PharoTopic new
 	title: 'Material Design Lite';
