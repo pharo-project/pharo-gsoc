@@ -32,7 +32,7 @@
 ###Context
 Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.
 ###Goal
-The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij.
+The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/pharo-project/pharo-project-proposals/blob/master/refactoring.md for a detailed list of tasks.
 ###Level: Beginner
 
 ***
@@ -480,4 +480,4 @@ The goal of this project is to create new components, use these components to cr
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-06-08T15:20:35.714259+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-06-08T15:21:57.827463+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
