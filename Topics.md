@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Better and more refactorings for Pharo](#title-better-and-more-refactorings-for-pharo)
 * [Keras for Pharo](#title-keras-for-pharo)
 * [freeCAD: 3D CAD with Motion Simulation](#title-freecad-3d-cad-with-motion-simulation)
 * [Taking Advantage of Immutable Objects](#title-taking-advantage-of-immutable-objects)
@@ -23,6 +24,18 @@
 * [Liberated Pixel Cup native support in Pharo](#title-liberated-pixel-cup-native-support-in-pharo)
 * [Vector instructions in Pharo](#title-vector-instructions-in-pharo)
 * [Material Design Lite](#title-material-design-lite)
+
+##Title: Better and more refactorings for Pharo
+###Contact: christophe.demarey@inria.fr
+###Supervisors: Anyone
+###Keywords: Refactoring IDE
+###Context
+Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.
+###Goal
+The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij.
+###Level: Beginner
+
+***
 
 ##Title: Keras for Pharo
 ###Contact: alexandre.bergel@m.com
@@ -467,4 +480,4 @@ The goal of this project is to create new components, use these components to cr
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-02-05T16:18:24.03312+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-06-08T15:17:57.167939+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
