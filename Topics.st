@@ -15,6 +15,16 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+    title: 'Better and more refactorings for Pharo';
+    contact: 'christophe.demarey@inria.fr';
+    supervisors: 'Anyone';
+    keywords: 'Refactoring IDE';
+    context: 'Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.';
+    goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij.';
+    level: 'Beginner';
+    yourself.
+
+PharoTopic new
     title: 'Keras for Pharo';
     contact: 'alexandre.bergel@m.com';
     supervisors: 'Alexandre Bergel';
