@@ -480,4 +480,4 @@ The goal of this project is to create new components, use these components to cr
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-06-08T15:17:57.167939+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2018-06-08T15:20:35.714259+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
