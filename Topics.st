@@ -13,3 +13,203 @@ PharoTopic new
 don't forget to separate topics as statements with periods
 
 "
+
+PharoTopic new
+    title: 'Better and more refactorings for Pharo';
+    contact: 'christophe.demarey@inria.fr';
+    supervisors: 'Anyone';
+    keywords: 'Refactoring IDE';
+    context: 'Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.';
+    goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/pharo-project/pharo-project-proposals/blob/master/refactoring.md for a detailed list of tasks.';
+    level: 'Beginner';
+    yourself
+	
+.
+
+PharoTopic new
+	title: 'Material Design Lite';
+	contact: 'cyril@ferlicot.me';
+	supervisors: 'Cyril Ferlicot-Delbecque';
+	keywords: 'material design lite, material-ui, seaside, web, components';
+	context: 'Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google''s Material Design guidelines.';
+	goal: 'The goal of this project is to create new components, use these components to create more complexe components and potentialy add tests to the existing components.';
+	level: 'Beginner to Intermediate';
+	yourself.
+
+	
+PharoTopic new
+	title: 'Hacking Pharo in Your Web Browser';
+	contact: 'luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr';
+	supervisors: 'Luc Fabresse and Damien Pollet';
+	keywords: 'Docker, Virtual machine';
+	context: 'There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.';
+	goal:
+'Possible tasks are:
+- Have a look at http://www.tech.io / https://www.pythonanywhere.com / http://jupyter.org
+- Learn Docker
+- Make a first version
+- Build a little webfront end.
+';
+  	level: 'Intermediate';
+  	yourself 
+.
+
+PharoTopic new
+	title: 'IPFS for Pharo';
+	contact: 'marcus.denker@inria.fr';
+	supervisors: 'marcus.denker@inria.fr';
+	keywords: 'peer to peer file systems';
+	context: ' IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
+with the same system of files. 
+In some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, 
+exchanging objects within one Git repository. 
+In other words, IPFS provides a high throughput content-addressed block storage model, with content-addressed hyperlinks. 
+This forms a generalized Merkle DAG, a data structure upon which one can build versioned file systems, blockchains, 
+and even a Permanent Web. 
+IPFS combines a distributed hashtable, an incentivized block exchange, and a self-certifying namespace. 
+IPFS has no single point of failure, and nodes do not need to trust each other.
+IPFS right now is implemented as a server process in Go and allows the global file system to be mounted as a user 
+space filesystem. In addition, the server provides an API.
+A real integration of IPFS with Pharo would require a complete implementation of IPFS in Pharo 
+(projects are already in early stages to implement it in JavaScript and Python).
+But the client API allows us already now to do experiments and assess the usefulness of IPFS in the context of Pharo. 
+More information:
+	https://ipfs.io
+';
+	goal: 'The goal of this Project is to implement a IPFS client library using the API to communicate with 
+the existing server and start to experiment how IPFS can be used with Pharo. 
+For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide
+access to resources via IPFS.'; 
+	level: 'Normal';
+	yourself
+
+.
+
+
+
+PharoTopic new
+	title: 'Improving code completion';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'S. Ducasse, E. Lorenzano and Juan Pablo Sandoval A.';
+	keywords: 'completion';
+	context: 'Automatic completion is really important. The current code completion already defines some good 
+behavior but it can do better.';
+	goal: 'The goal of the project is to improve the ecompletion infrastructure: 
+The tasks are: 
+(1) study the existing approaches (NOC and NEC), 
+(2) Write some tests to characterize specific behavior, 
+(3) Improve the noise introduced by the Symbol table usage, 
+(4) build more heuristics.';
+	level: 'Intermediate';
+	yourself
+    
+. 
+
+PharoTopic new
+	title: 'New Collections for Pharo';
+	contact: 'Juan Pablo Sandoval Alcocer <juampiboy@gmail.com>';
+	supervisors: 'Juan Pablo Sandoval Alcocer';
+	keywords: 'Collection DataStructure Benchmarks';
+	context: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
+with around 100 classes. But new collections exist such as BTree, QuadTree, SkipList, Trie, …
+
+Containers is an existing effort to gather many of the existing collection developed individually and externally to Pharo into a single umbrella. The idea is to create a modular collection library for Pharo users. Containers’s goals is to develop new efficient, well-tested, well documented collections. 
+Containers contains already Tree, Grid, SkipList, LinkedList, OrderedDictionary but there is a need to revisit them. 
+
+Finally Pharo 6.0 comes with two powerful primitives: new object immutability primitives as well as ephemerons [Hayes97].
+
+With such important primitives two tasks can be performed: 
+	- design new weak collections taking advantage of ephemerons.
+	- revisit and design new concurrent collections taking advantage of immutability.
+	Links:
+- Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf
+- http://source.lukas-renggli.ch/container started to implement some new collections for Pharo.
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/';
+	level: 'Advanced';
+    goal: 'Tasks:
+- The student will study current Collections of Pharo (See http://books.pharo.org/ PharoByExample Collections chapter) for an overview.
+- He will study the new collections in the project named Containers on Smalltalkhub.
+	http://smalltalkhub.com/#!/~StephaneDucasse/Containers
+- Migrate some existing projects to Containers (adding tests, comments).
+- Design and implement new collections such as 
+	-- BTree, QuadTrees, 
+	-- Immutable list, set, array
+Resources:
+- Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf 
+- http://source.lukas-renggli.ch/container started to implement some new collections for Pharo. 
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/
+- Barry Hayes, Proceedings OOPSLA ''97, ACM SIGPLAN Notices, Ephemerons: A new finalization mechanism, 1997';
+	
+yourself
+
+.
+
+PharoTopic new
+	title: 'Enhancing Pillar';
+	contact: 'stephane.ducasse@inria.fr';
+	supervisors: 'Stéphane Ducasse';
+	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
+	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
+    illar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects 
+    (http://www.smalltalkhub.com/#!/~Pier/Pillar) and most of the pharo books and mooc' ;
+	goal: 'The goal of the project is to do help in the development of the new iteration of Pillar. Previous development effort introduced a better 
+    architecture but there are still some points to improve. 
+    - Documenting certain classes
+    - Improving the archetype design
+    - Separating command-line into object configurators and command-line
+    - Producing a new version of ectastic http://guillep.github.io/ecstatic/ that uses the lastest version of pillar. 
+    - One subgoal of this project is to add the standard OpenDocument export format (used by LibreOffice and OpenDocument).';
+	level: 'Beginner';
+	candidate: '';
+	yourself
+.
+
+PharoTopic new
+       title: 'Pharo Launcher command line interface';
+       contact: 'guillermopolito@gmail.com';
+       supervisors: 'Guillermo Polito, Christophe Demarey';
+       keywords: 'image management, command line interface, virtualization';
+       context: 'The pharo launcher is an application that allows the management of pharo images. In a "docker style", you can download images from templates, install them, list your installed images, and launch them. All this is done through a visual user interface in a desktop application.';
+       goal: 'The goal of this project is to implement a command line interface for the Pharo launcher, to be able to manipulate it on servers as we do with docker. For example:
+       
+       $ phlauncher list
+       $ phlauncher templates
+       $ phlauncher install X
+       $ phlauncher run X';
+       level: 'Intermediate';
+       yourself.
+
+PharoTopic new
+       title: 'Next Generation Unit Testing';
+       contact: 'guillermopolito@gmail.com';
+       supervisors: 'Guillermo Polito';
+       keywords: 'unit testing, parallelization, configuration';
+       context: 'SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.';
+       goal: 'The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.';
+       level: 'Intermediate';
+       yourself
+	   
+	   .
+
+PharoTopic new
+	title: 'DataFrame';
+	contact: 'oleks@ucu.edu.ua';
+	supervisors: 'Oleksandr Zaytsev, Serge Stinckwich';
+	keywords: 'data science, data analysis, dataframe, tabular data, statistics';
+	context: 'DataFrame was introduced to Pharo during the previous GSoC (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
+	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
+	level: 'Intermediate';
+	yourself.
+	
+	
+ PharoTopic new
+       title: 'Liberated Pixel Cup native support in Pharo';
+       contact: 'stephane.ducasse@inria.fr';
+       supervisors: 'Stephane Ducasse';
+       keywords: 'Cairo SDL 2D';
+       context: 'It is now possible to build quite good 2D native applications in Pharo using Cairo and SDL, which led to experimental video games (article in Linux Mag of April 2018, https://github.com/clementbera/wizard-battle-arena). On the other hand, projects such as The Liberated Pixel Cup supported by the Mozzila Foundation and other large groups develop huge graphic ressources available under open source licenses (http://lpc.opengameart.org/). Note the student is strongly advised to use a Linux machine for this work.';
+       goal: 'The first goal is to create a library to easily import and display LPC characters generated from website like this one (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/) into the Pharo stack (SDL, Cairo & Pharo). Second goal is to build a minimal video game framework on top of it with a game. Lastly, the third goal is to improve packaging & deployment of such native applications in Pharo, as well as evaluating the integration with other frameworks (Bloc to display GUI for example). The third goal has to be clearly detailled in the student proposal - we will not accept topics not improving the Core Pharo system. In addition, the demo game created should be submitted to this year LPC event (competition from June 1st to July 31st) to show Pharo to other communities.';
+       level: 'Beginner to Intermediate';
+       yourself.
+       	
+	
