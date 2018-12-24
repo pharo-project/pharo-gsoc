@@ -1,14 +1,14 @@
 # Pharo Project - Proposals [![Build Status](https://travis-ci.org/pharo-project/pharo-project-proposals.svg?branch=master)](https://travis-ci.org/pharo-project/pharo-project-proposals)
 
-[topics.pharo.org](http://topics.pharo.org) contains a list of projects which have been proposed to improve [Pharo](http://pharo.org). These projects are also being considered for the upcoming Google Summer of Code 2018. Visit: [gsoc.pharo.org](http://gsoc.pharo.org/)
+[topics.pharo.org](http://topics.pharo.org) contains a list of projects which have been proposed to improve [Pharo](http://pharo.org). These projects are also being considered for the upcoming Google Summer of Code 2019. Visit: [gsoc.pharo.org](http://gsoc.pharo.org/)
 
 The list of topics can be viewed in markdown format ([topics.pharo.org](https://github.com/pharo-project/pharo-project-proposals/blob/gh-pages/Topics.md), no need to update this file manually, it will be regenerated)
 
-## Google Summer of Code 2018
+## Google Summer of Code 2019
 
 [Google Summer of Code](https://summerofcode.withgoogle.com/) is a global program focused on introducing students to open source software development. Students work on a 3 month programming project with an open source organization during their break from university. 
 
-If you are a student looking for list of topics and their details for GSoC 2018 please see [gsoc.pharo.org](http://gsoc.pharo.org/) or [Topics.md](https://github.com/pharo-project/pharo-project-proposals/blob/gh-pages/Topics.md).
+If you are a student looking for list of topics and their details for GSoC 2019 please see [gsoc.pharo.org](http://gsoc.pharo.org/) or [Topics.md](https://github.com/pharo-project/pharo-project-proposals/blob/gh-pages/Topics.md).
 
 Also, join the chat forums on discord or mailing lists ([forum.world.st/Pharo-f1294836.html](http://forum.world.st/Pharo-f1294836.html)) to engage in discussions with the mentors and Pharo developers/users.
 
