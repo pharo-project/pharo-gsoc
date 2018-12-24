@@ -1,3 +1,3 @@
 constants
 title
-	^ 'Pharo GSOC ', Date today year asString, '<br>Ideas List'
+	^ 'Pharo GSOC 2019 <br>Ideas List'
