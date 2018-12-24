@@ -17,7 +17,7 @@ Previous work done by students from the Pharo community for Google Summer of Cod
 
 ## Adding a Proposal
 
-For mentors, please propose a fresh project of your own, especially for GSoC 2018 by following the following template. You can edit the list on github here: https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st and send a pull request.
+For mentors, please propose a fresh project of your own, especially for GSoC 2019 by following the following template. You can edit the list on github here: https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st and send a pull request.
 
 ```smalltalk
 PharoTopic new
