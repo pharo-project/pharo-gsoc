@@ -14,6 +14,7 @@ don't forget to separate topics as statements with periods
 
 "
 
+
 PharoTopic new
     title: 'Better and more refactorings for Pharo';
     contact: 'christophe.demarey@inria.fr';
