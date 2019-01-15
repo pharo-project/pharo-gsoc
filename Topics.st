@@ -212,5 +212,14 @@ PharoTopic new
        goal: 'The first goal is to create a library to easily import and display LPC characters generated from website like this one (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/) into the Pharo stack (SDL, Cairo & Pharo). Second goal is to build a minimal video game framework on top of it with a game. Lastly, the third goal is to improve packaging & deployment of such native applications in Pharo, as well as evaluating the integration with other frameworks (Bloc to display GUI for example). The third goal has to be clearly detailled in the student proposal - we will not accept topics not improving the Core Pharo system. In addition, the demo game created should be submitted to this year LPC event (competition from June 1st to July 31st) to show Pharo to other communities.';
        level: 'Beginner to Intermediate';
        yourself.
-       	
-	
+
+		
+PharoTopic new
+    title: 'Iceberg UI: Providing a commit graph visualization';
+    contact: 'juampiboy@gmail.com';
+    supervisors: 'Juan Pablo Sandoval Alcocer';
+    keywords: 'commit, visualization, iceberg';
+    context: 'Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.';
+    goal: 'The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken).';
+    level: 'Beginner to Intermediate';
+    yourself.
