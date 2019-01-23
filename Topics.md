@@ -221,9 +221,9 @@ The first goal is to create a library to easily import and display LPC character
 ###Context
 In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.
 ###Goal
-Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible based on the Grammar of Graphics. It can be built on top of Pharo's Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.
+Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo's Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.
 ###Level: Intermediate or Advanced
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-01-23T03:31:46.583742+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-01-23T03:34:36.696737+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
