@@ -223,4 +223,13 @@ PharoTopic new
        goal: 'Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo''s Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.';
        level: 'Intermediate or Advanced';
        yourself.
-	
+		
+ PharoTopic new
+       title: 'NLP Library';
+       contact: 'olk.zaytsev@gmail.com';
+       supervisors: 'Oleksandr Zaytsev';
+       keywords: 'Natural Language Processing, Statistics, Data Science';
+       context: 'Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.';
+       goal: 'We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.';
+       level: 'Intermediate or Advanced';
+       yourself.
