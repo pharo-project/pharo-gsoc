@@ -12,6 +12,7 @@
 * [DataFrame](#title-dataframe)
 * [Liberated Pixel Cup native support in Pharo](#title-liberated-pixel-cup-native-support-in-pharo)
 * [Charting library](#title-charting-library)
+* [NLP Library](#title-nlp-library)
 
 ##Title: Better and more refactorings for Pharo
 ###Contact: christophe.demarey@inria.fr
@@ -226,4 +227,16 @@ Build an easy-to-use framework for visualizing data with charts, similar to matp
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-01-23T03:34:36.696737+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+##Title: NLP Library
+###Contact: olk.zaytsev@gmail.com
+###Supervisors: Oleksandr Zaytsev
+###Keywords: Natural Language Processing, Statistics, Data Science
+###Context
+Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.
+###Goal
+We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.
+###Level: Intermediate or Advanced
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-01-23T03:46:11.893475+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
