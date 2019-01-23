@@ -194,12 +194,12 @@ PharoTopic new
 
 PharoTopic new
 	title: 'DataFrame';
-	contact: 'oleks@ucu.edu.ua';
-	supervisors: 'Oleksandr Zaytsev, Serge Stinckwich';
-	keywords: 'data science, data analysis, dataframe, tabular data, statistics';
-	context: 'DataFrame was introduced to Pharo during the previous GSoC (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
+	contact: 'olk.zaytsev@gmail.com';
+	supervisors: 'Oleksandr Zaytsev and Serge Stinckwich';
+	keywords: 'Data Science, Data Analysis, DataFrame, Tabular Data, Statistics';
+	context: 'DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
-	level: 'Intermediate';
+	level: 'Beginner or Intermediate';
 	yourself.
 	
 	
@@ -213,4 +213,14 @@ PharoTopic new
        level: 'Beginner to Intermediate';
        yourself.
        	
+		
+ PharoTopic new
+       title: 'Charting library';
+       contact: 'cyril@ferlicot.me and julien.delplanque@inria.fr and olk.zaytsev@gmail.com';
+       supervisors: 'Cyril Ferlicot-Delbecque and Julien Delplanque and Oleksandr Zaytsev';
+       keywords: 'Data Visualization, Data Science, Plotting, Grammar of Graphics';
+       context: 'In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.';
+       goal: 'Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible based on the Grammar of Graphics. It can be built on top of Pharo''s Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.';
+       level: 'Intermediate or Advanced';
+       yourself.
 	
