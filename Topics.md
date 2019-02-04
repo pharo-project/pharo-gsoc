@@ -57,7 +57,7 @@ Possible tasks are:
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
-###Supervisors: marcus.denker@inria.fr
+###Supervisors: Marcus Denekr
 ###Keywords: peer to peer file systems
 ###Context
  IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
@@ -239,4 +239,4 @@ We need a natural language processing (NLP) library entirely written in Pharo wi
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-01-23T03:46:11.893475+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-04T03:18:50.40109+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
