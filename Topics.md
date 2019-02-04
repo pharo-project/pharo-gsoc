@@ -16,7 +16,7 @@
 
 ##Title: Better and more refactorings for Pharo
 ###Contact: christophe.demarey@inria.fr
-###Supervisors: Anyone
+###Supervisors: Christophe Demarey
 ###Keywords: Refactoring IDE
 ###Context
 Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.
@@ -239,4 +239,4 @@ We need a natural language processing (NLP) library entirely written in Pharo wi
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-04T03:22:40.499785+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-04T17:43:53.210962+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
