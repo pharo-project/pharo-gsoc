@@ -233,3 +233,13 @@ PharoTopic new
        goal: 'We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.';
        level: 'Intermediate or Advanced';
        yourself.
+
+PharoTopic new
+       title: 'Authoring and exploring scientific models in Pharo';
+       contact: 'konrad.hinsen@cnrs.fr';
+       supervisors: 'Konrad Hinsen and Serge Stinckwich';
+       keywords: 'scientific models';
+       context: 'Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.';
+       goal: 'Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton''s equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.';
+       level: 'Intermediate;
+       yourself.
