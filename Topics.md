@@ -13,6 +13,7 @@
 * [Liberated Pixel Cup native support in Pharo](#title-liberated-pixel-cup-native-support-in-pharo)
 * [Charting library](#title-charting-library)
 * [NLP Library](#title-nlp-library)
+* [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
 
 ##Title: Better and more refactorings for Pharo
 ###Contact: christophe.demarey@inria.fr
@@ -239,4 +240,16 @@ We need a natural language processing (NLP) library entirely written in Pharo wi
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-04T17:43:53.210962+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+##Title: Authoring and exploring scientific models in Pharo
+###Contact: konrad.hinsen@cnrs.fr
+###Supervisors: Konrad Hinsen and Serge Stinckwich
+###Keywords: scientific models
+###Context
+Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.
+###Goal
+Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton's equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.
+###Level: Intermediate
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-06T17:34:36.368045+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
