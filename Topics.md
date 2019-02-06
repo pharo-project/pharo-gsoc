@@ -11,6 +11,7 @@
 * [Next Generation Unit Testing](#title-next-generation-unit-testing)
 * [DataFrame](#title-dataframe)
 * [Liberated Pixel Cup native support in Pharo](#title-liberated-pixel-cup-native-support-in-pharo)
+* [Iceberg UI: Providing a commit graph visualization](#title-iceberg-ui-providing-a-commit-graph-visualization)
 * [Charting library](#title-charting-library)
 * [NLP Library](#title-nlp-library)
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
@@ -216,6 +217,18 @@ The first goal is to create a library to easily import and display LPC character
 
 ***
 
+##Title: Iceberg UI: Providing a commit graph visualization
+###Contact: juampiboy@gmail.com
+###Supervisors: Juan Pablo Sandoval Alcocer
+###Keywords: commit, visualization, iceberg
+###Context
+Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.
+###Goal
+The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken).
+###Level: Beginner to Intermediate
+
+***
+
 ##Title: Charting library
 ###Contact: cyril@ferlicot.me and julien.delplanque@inria.fr and olk.zaytsev@gmail.com
 ###Supervisors: Cyril Ferlicot-Delbecque and Julien Delplanque and Oleksandr Zaytsev
@@ -252,4 +265,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-06T17:34:36.368045+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-02-06T17:37:07.434762+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
