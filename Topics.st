@@ -18,7 +18,7 @@ don't forget to separate topics as statements with periods
 PharoTopic new
     title: 'Better and more refactorings for Pharo';
     contact: 'christophe.demarey@inria.fr';
-    supervisors: 'Anyone';
+    supervisors: 'Christophe Demarey';
     keywords: 'Refactoring IDE';
     context: 'Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.';
     goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/pharo-project/pharo-project-proposals/blob/master/refactoring.md for a detailed list of tasks.';
@@ -58,7 +58,7 @@ PharoTopic new
 PharoTopic new
 	title: 'IPFS for Pharo';
 	contact: 'marcus.denker@inria.fr';
-	supervisors: 'marcus.denker@inria.fr';
+	supervisors: 'Marcus Denker';
 	keywords: 'peer to peer file systems';
 	context: ' IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
 with the same system of files. 
@@ -188,18 +188,16 @@ PharoTopic new
        context: 'SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.';
        goal: 'The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.';
        level: 'Intermediate';
-       yourself
+       yourself.
 	   
-	   .
-
 PharoTopic new
 	title: 'DataFrame';
-	contact: 'oleks@ucu.edu.ua';
-	supervisors: 'Oleksandr Zaytsev, Serge Stinckwich';
-	keywords: 'data science, data analysis, dataframe, tabular data, statistics';
-	context: 'DataFrame was introduced to Pharo during the previous GSoC (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
+	contact: 'olk.zaytsev@gmail.com';
+	supervisors: 'Oleksandr Zaytsev and Serge Stinckwich';
+	keywords: 'Data Science, Data Analysis, DataFrame, Tabular Data, Statistics';
+	context: 'DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
-	level: 'Intermediate';
+	level: 'Beginner or Intermediate';
 	yourself.
 	
 	
@@ -213,7 +211,6 @@ PharoTopic new
        level: 'Beginner to Intermediate';
        yourself.
 
-		
 PharoTopic new
     title: 'Iceberg UI: Providing a commit graph visualization';
     contact: 'juampiboy@gmail.com';
@@ -223,3 +220,33 @@ PharoTopic new
     goal: 'The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken).';
     level: 'Beginner to Intermediate';
     yourself.
+       		
+ PharoTopic new
+       title: 'Charting library';
+       contact: 'cyril@ferlicot.me and julien.delplanque@inria.fr and olk.zaytsev@gmail.com';
+       supervisors: 'Cyril Ferlicot-Delbecque and Julien Delplanque and Oleksandr Zaytsev';
+       keywords: 'Data Visualization, Data Science, Plotting, Grammar of Graphics';
+       context: 'In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.';
+       goal: 'Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo''s Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.';
+       level: 'Intermediate or Advanced';
+       yourself.
+		
+ PharoTopic new
+       title: 'NLP Library';
+       contact: 'olk.zaytsev@gmail.com';
+       supervisors: 'Oleksandr Zaytsev';
+       keywords: 'Natural Language Processing, Statistics, Data Science';
+       context: 'Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.';
+       goal: 'We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.';
+       level: 'Intermediate or Advanced';
+       yourself.
+
+PharoTopic new
+       title: 'Authoring and exploring scientific models in Pharo';
+       contact: 'konrad.hinsen@cnrs.fr';
+       supervisors: 'Konrad Hinsen and Serge Stinckwich';
+       keywords: 'scientific models';
+       context: 'Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.';
+       goal: 'Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton''s equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.';
+       level: 'Intermediate';
+       yourself.
