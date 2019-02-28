@@ -29,8 +29,8 @@ PharoTopic new
 
 PharoTopic new
 	title: 'Material Design Lite';
-	contact: 'cyril (a) ferlicot.me and guillaume.larcheveque (a) gmail.com';
-	supervisors: 'Cyril Ferlicot-Delbecque and Guillaume Larchevêque';
+	contact: 'cyril (a) ferlicot.me, guillaume.larcheveque (a) gmail.com and yannlesag (a) gmail.com';
+	supervisors: 'Cyril Ferlicot-Delbecque, Guillaume Larchevêque and Yann Lesage';
 	keywords: 'material design lite, material-ui, seaside, web, components';
 	context: 'Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google''s Material Design guidelines.';
 	goal: 'We have multiple ideas to improve the project. (They are just ideas. Students can choose what they prefer)
@@ -39,7 +39,8 @@ PharoTopic new
 - Add functional tests with Parasol (Selenium integration for Seaside)
 - Creation of a tutorial on how to create a simple Seaside/MDL application
 - Writting of documentation
-- Improve integration of custom widgets with javascript';
+- Improve integration of custom widgets with javascript
+- Integration with the Willow stack';
 	level: 'Beginner to Intermediate';
 	yourself.
 
