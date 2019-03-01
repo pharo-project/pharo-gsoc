@@ -29,13 +29,20 @@ The goal of this project is to provide Pharo developers a good refactoring suppo
 ***
 
 ##Title: Material Design Lite
-###Contact: cyril@ferlicot.me
-###Supervisors: Cyril Ferlicot-Delbecque
+###Contact: cyril (a) ferlicot.me, guillaume.larcheveque (a) gmail.com and yannlesag (a) gmail.com
+###Supervisors: Cyril Ferlicot-Delbecque, Guillaume Larchevêque and Yann Lesage
 ###Keywords: material design lite, material-ui, seaside, web, components
 ###Context
 Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google's Material Design guidelines.
 ###Goal
-The goal of this project is to create new components, use these components to create more complexe components and potentialy add tests to the existing components.
+We have multiple ideas to improve the project. (They are just ideas. Students can choose what they prefer)
+- Improve the brigde with the meta-description framework that is Magritte
+- Add new widgets such as TreeTables, Miller Columns, etc with tests and demos
+- Add functional tests with Parasol (Selenium integration for Seaside)
+- Creation of a tutorial on how to create a simple Seaside/MDL application
+- Writting of documentation
+- Improve integration of custom widgets with javascript
+- Integration with the Willow stack
 ###Level: Beginner to Intermediate
 
 ***
@@ -265,4 +272,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-01T10:30:14.676673+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-01T10:52:48.071225+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
