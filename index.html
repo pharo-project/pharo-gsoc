@@ -1,4 +1,127 @@
-<html><head><meta charset="utf-8"><title>Pharo GSOC 2019 <br>Ideas List</title><style>body{  color:#74706f;  font-size:18px;  background:#f7f7f7;  background-repeat:repeat-x;  background-position:top center;  background-image:url(http://files.pharo.org/media/pharoBackground.png);  font-family:"Myriad Pro","Lucida Grande","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;}p {   line-height:1.4em;  padding: 1em;}h1 {  font-size:5em;  color:#0d64af;  color:rgba(13,100,175,0.9);  padding:18px;}img {  display: block;  margin-left: auto;  margin-right: auto;}table {  border-collapse:collapse;  border-spacing:0;  font-size:100%;  font:inherit;  width:100%;}table td {  border:1px solid #ccc;  padding:6px 13px;}table tr {  border-top:1px solid #ccc;  background-color:#fff;}span.cn {   font-weight:bold;  color:black;}p.footer {   font-size:0.75em;  text-align:center;  font-style:italic;}</style></head><body><h1>Pharo GSOC 2019 <br>Ideas List</h1>    <a href="http://www.pharo.org"><img src="http://www.pharo.org/files/pharo.png"/></a>		<p><a href="http://www.pharo.org">Pharo</a>      is a pure object-oriented programming      language and a powerful environment, focused on simplicity and      immediate feedback (think IDE and OS rolled into one).</p><h2>Table of Contents</h2><ul>	<li><a href="#guidelines">Guidelines</a>		<ul>			<li><a href="#for-students">Information for Students</a></li>			<li><a href="#adding-a-proposal">Adding a Proposal</a></li>			<li><a href="#admin">Administration</a></li>		</ul>		<li><a href="#topics"><b>List of Topics</b></a></li>	</li></ul>    <h2 id="guidelines">Guidelines</h2>    <h3 id="for-students">Information for Students</h3>    <p>    These ideas were contributed by our developers and users. They are    sometimes vague or incomplete. If you wish to submit a proposal based    on these ideas, you may wish to contact the developers and find out    more about the particular suggestion you're looking at.    </p>    <p>    Being accepted as a Google Summer of Code student is quite    competitive. Accepted students typically have thoroughly researched    the technologies of their proposed project and have been in frequent    contact with potential mentors. Simply copying and pasting an idea    here will not work. On the other hand, creating a completely new idea    without first consulting potential mentors is unlikely to work out.    </p>    <p>    If there is no specific contact given you can ask questions on the    general Pharo development list    <a href="mailto:pharo-dev@lists.pharo.org">pharo-dev@lists.pharo.org</a>. See the    <a href="http://pharo.org/community">Pharo community page</a>    for information on available mailing lists and how to subscribe.    </p>        <h3 id="adding-a-proposal">Adding a Proposal</h3>    <p>Please propose your own project by following the following template.      You can edit the list on github here:      <a href="https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st">https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st</a> and send a pull request.</p>    <code><pre>     PharoTopic new       title: 'The name of your project';       contact: 'email address';       supervisors: 'Supervisors names';       keywords: 'keywords separated by spaces';       context: 'a description of the context of the project';       goal: 'description of the goal';       level: 'Beginner or Intermediate or Advanced';       yourself.    </pre></code>    <h3 id="admin">Administration</h3>        <p>      Do not hesitate to ask questions. Administrators of this year’s      application are <a href="mailto:grover.jigyasa1@gmail.com">Jigyasa Grover</a>, <a href="mailto:olk.zaytsev@gmail.com">Oleksandr Zaytsev</a>, <a href="mailto:serge.stinckwich@gmail.com">Serge Stinckwich</a>.    </p><h2 id="topics">Pharo GSOC Topics</h2><ul><li><a href="#topic-nlp-library">NLP Library</a></li><li><a href="#topic-hacking-pharo-in-your-web-browser">Hacking Pharo in Your Web Browser</a></li><li><a href="#topic-new-collections-for-pharo">New Collections for Pharo</a></li><li><a href="#topic-liberated-pixel-cup-native-support-in-pharo">Liberated Pixel Cup native support in Pharo</a></li><li><a href="#topic-authoring-and-exploring-scientific-models-in-pharo">Authoring and exploring scientific models in Pharo</a></li><li><a href="#topic-ipfs-for-pharo">IPFS for Pharo</a></li><li><a href="#topic-next-generation-unit-testing">Next Generation Unit Testing</a></li><li><a href="#topic-enhancing-pillar">Enhancing Pillar</a></li><li><a href="#topic-dataframe">DataFrame</a></li><li><a href="#topic-pharo-launcher-command-line-interface">Pharo Launcher command line interface</a></li><li><a href="#topic-material-design-lite">Material Design Lite</a></li><li><a href="#topic-charting-library">Charting library</a></li><li><a href="#topic-iceberg-ui-providing-a-commit-graph-visualization">Iceberg UI: Providing a commit graph visualization</a></li><li><a href="#topic-better-and-more-refactorings-for-pharo">Better and more refactorings for Pharo</a></li><li><a href="#topic-improving-code-completion">Improving code completion</a></li></ul><a name="nlplibrary"><p><table><colgroup><col style="text-align:left;width:25%;"/><col style="text-align:left;"/></colgroup><tr><td>Title</td><td><span class="cn" id="topic-nlp-library">NLP Library</span></td></tr><tr><td>Email</td><td><a href="mailto:%6F%6C%6B%2E%7A%61%79%74%73%65%76%40%67%6D%61%69%6C%2E%63%6F%6D"><span>o</span><span>l</span><span>k</span><span>.</span><span>z</span><span>a</span><span>y</span><span>t</span><span>s</span><span>e</span><span>v</span><span>@</span><span>g</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span></a></td></tr><tr><td>Supervisors </td><td>Oleksandr Zaytsev</td></tr><tr><td>Keywords</td><td>Natural Language Processing, Statistics, Data Science</td></tr><tr><td>Context</td><td>Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.</td></tr><tr><td>Goal</td><td>We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.</td></tr><tr><td>Level</td><td>Intermediate or Advanced</td></tr><tr><td>Candidate</td><td>Topic still free</td></tr></table></p></a>
+<html><head><meta charset="utf-8"><title>Pharo GSOC 2019 <br>Ideas List</title><style>
+body{
+  color:#74706f;
+  font-size:18px;
+  background:#f7f7f7;
+  background-repeat:repeat-x;
+  background-position:top center;
+  background-image:url(http://files.pharo.org/media/pharoBackground.png);
+  font-family:"Myriad Pro","Lucida Grande","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+p { 
+  line-height:1.4em;
+  padding: 1em;
+}
+h1 {
+  font-size:5em;
+  color:#0d64af;
+  color:rgba(13,100,175,0.9);
+  padding:18px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+  font-size:100%;
+  font:inherit;
+  width:100%;
+}
+table td {
+  border:1px solid #ccc;
+  padding:6px 13px;
+  white-space: pre-line;
+}
+table tr {
+  border-top:1px solid #ccc;
+  background-color:#fff;
+}
+span.cn { 
+  font-weight:bold;
+  color:black;
+}
+p.footer { 
+  font-size:0.75em;
+  text-align:center;
+  font-style:italic;
+}
+</style></head><body><h1>Pharo GSOC 2019 <br>Ideas List</h1>
+    <a href="http://www.pharo.org"><img src="http://www.pharo.org/files/pharo.png"/></a>
+	
+	<p><a href="http://www.pharo.org">Pharo</a>
+      is a pure object-oriented programming
+      language and a powerful environment, focused on simplicity and
+      immediate feedback (think IDE and OS rolled into one).</p>
+
+<h2>Table of Contents</h2>
+
+<ul>
+	<li><a href="#guidelines">Guidelines</a>
+		<ul>
+			<li><a href="#for-students">Information for Students</a></li>
+			<li><a href="#adding-a-proposal">Adding a Proposal</a></li>
+			<li><a href="#admin">Administration</a></li>
+		</ul>
+		<li><a href="#topics"><b>List of Topics</b></a></li>
+	</li>
+</ul>
+
+    <h2 id="guidelines">Guidelines</h2>
+
+    <h3 id="for-students">Information for Students</h3>
+
+    <p>
+    These ideas were contributed by our developers and users. They are
+    sometimes vague or incomplete. If you wish to submit a proposal based
+    on these ideas, you may wish to contact the developers and find out
+    more about the particular suggestion you're looking at.
+    </p>
+    <p>
+    Being accepted as a Google Summer of Code student is quite
+    competitive. Accepted students typically have thoroughly researched
+    the technologies of their proposed project and have been in frequent
+    contact with potential mentors. Simply copying and pasting an idea
+    here will not work. On the other hand, creating a completely new idea
+    without first consulting potential mentors is unlikely to work out.
+    </p>
+    <p>
+    If there is no specific contact given you can ask questions on the
+    general Pharo development list
+    <a href="mailto:pharo-dev@lists.pharo.org">pharo-dev@lists.pharo.org</a>. See the
+    <a href="http://pharo.org/community">Pharo community page</a>
+    for information on available mailing lists and how to subscribe.
+    </p>
+    
+    <h3 id="adding-a-proposal">Adding a Proposal</h3>
+
+    <p>Please propose your own project by following the following template.
+      You can edit the list on github here:
+      <a href="https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st">https://github.com/pharo-project/pharo-project-proposals/blob/master/Topics.st</a> and send a pull request.</p>
+
+    <code><pre>
+     PharoTopic new
+       title: 'The name of your project';
+       contact: 'email address';
+       supervisors: 'Supervisors names';
+       keywords: 'keywords separated by spaces';
+       context: 'a description of the context of the project';
+       goal: 'description of the goal';
+       level: 'Beginner or Intermediate or Advanced';
+       yourself.
+    </pre></code>
+
+    <h3 id="admin">Administration</h3>
+    
+    <p>
+      Do not hesitate to ask questions. Administrators of this year’s
+      application are <a href="mailto:grover.jigyasa1@gmail.com">Jigyasa Grover</a>, <a href="mailto:olk.zaytsev@gmail.com">Oleksandr Zaytsev</a>, <a href="mailto:serge.stinckwich@gmail.com">Serge Stinckwich</a>.
+    </p>
+
+<h2 id="topics">Pharo GSOC Topics</h2>
+<ul><li><a href="#topic-nlp-library">NLP Library</a></li><li><a href="#topic-hacking-pharo-in-your-web-browser">Hacking Pharo in Your Web Browser</a></li><li><a href="#topic-new-collections-for-pharo">New Collections for Pharo</a></li><li><a href="#topic-liberated-pixel-cup-native-support-in-pharo">Liberated Pixel Cup native support in Pharo</a></li><li><a href="#topic-authoring-and-exploring-scientific-models-in-pharo">Authoring and exploring scientific models in Pharo</a></li><li><a href="#topic-ipfs-for-pharo">IPFS for Pharo</a></li><li><a href="#topic-next-generation-unit-testing">Next Generation Unit Testing</a></li><li><a href="#topic-enhancing-pillar">Enhancing Pillar</a></li><li><a href="#topic-dataframe">DataFrame</a></li><li><a href="#topic-pharo-launcher-command-line-interface">Pharo Launcher command line interface</a></li><li><a href="#topic-material-design-lite">Material Design Lite</a></li><li><a href="#topic-charting-library">Charting library</a></li><li><a href="#topic-iceberg-ui-providing-a-commit-graph-visualization">Iceberg UI: Providing a commit graph visualization</a></li><li><a href="#topic-better-and-more-refactorings-for-pharo">Better and more refactorings for Pharo</a></li><li><a href="#topic-improving-code-completion">Improving code completion</a></li></ul><a name="nlplibrary"><p><table><colgroup><col style="text-align:left;width:25%;"/><col style="text-align:left;"/></colgroup><tr><td>Title</td><td><span class="cn" id="topic-nlp-library">NLP Library</span></td></tr><tr><td>Email</td><td><a href="mailto:%6F%6C%6B%2E%7A%61%79%74%73%65%76%40%67%6D%61%69%6C%2E%63%6F%6D"><span>o</span><span>l</span><span>k</span><span>.</span><span>z</span><span>a</span><span>y</span><span>t</span><span>s</span><span>e</span><span>v</span><span>@</span><span>g</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span></a></td></tr><tr><td>Supervisors </td><td>Oleksandr Zaytsev</td></tr><tr><td>Keywords</td><td>Natural Language Processing, Statistics, Data Science</td></tr><tr><td>Context</td><td>Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.</td></tr><tr><td>Goal</td><td>We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.</td></tr><tr><td>Level</td><td>Intermediate or Advanced</td></tr><tr><td>Candidate</td><td>Topic still free</td></tr></table></p></a>
 <a name="hackingpharoinyourwebbrowser"><p><table><colgroup><col style="text-align:left;width:25%;"/><col style="text-align:left;"/></colgroup><tr><td>Title</td><td><span class="cn" id="topic-hacking-pharo-in-your-web-browser">Hacking Pharo in Your Web Browser</span></td></tr><tr><td>Email</td><td><a href="mailto:%6C%75%63%2E%66%61%62%72%65%73%73%65%40%69%6D%74%2D%6C%69%6C%6C%65%2D%64%6F%75%61%69%2E%66%72%20%61%6E%64%20%44%61%6D%69%65%6E%2E%70%6F%6C%6C%65%74%40%69%6E%72%69%61%2E%66%72"><span>l</span><span>u</span><span>c</span><span>.</span><span>f</span><span>a</span><span>b</span><span>r</span><span>e</span><span>s</span><span>s</span><span>e</span><span>@</span><span>i</span><span>m</span><span>t</span><span>-</span><span>l</span><span>i</span><span>l</span><span>l</span><span>e</span><span>-</span><span>d</span><span>o</span><span>u</span><span>a</span><span>i</span><span>.</span><span>f</span><span>r</span><span> </span><span>a</span><span>n</span><span>d</span><span> </span><span>D</span><span>a</span><span>m</span><span>i</span><span>e</span><span>n</span><span>.</span><span>p</span><span>o</span><span>l</span><span>l</span><span>e</span><span>t</span><span>@</span><span>i</span><span>n</span><span>r</span><span>i</span><span>a</span><span>.</span><span>f</span><span>r</span></a></td></tr><tr><td>Supervisors </td><td>Luc Fabresse and Damien Pollet</td></tr><tr><td>Keywords</td><td>Docker, Virtual machine</td></tr><tr><td>Context</td><td>There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.</td></tr><tr><td>Goal</td><td>Possible tasks are:
 - Have a look at http://www.tech.io / https://www.pythonanywhere.com / http://jupyter.org
 - Learn Docker
