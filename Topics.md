@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Dependency Graph in the System Browser](#title-dependency-graph-in-the-system-browser)
 * [Better and more refactorings for Pharo](#title-better-and-more-refactorings-for-pharo)
 * [Material Design Lite](#title-material-design-lite)
 * [Hacking Pharo in Your Web Browser](#title-hacking-pharo-in-your-web-browser)
@@ -14,6 +15,18 @@
 * [Charting library](#title-charting-library)
 * [NLP Library](#title-nlp-library)
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
+
+##Title: Dependency Graph in the System Browser
+###Contact: alexandre.bergel@me.com, akevalion@gmail.com
+###Supervisors: Alexandre Bergel, Milton Mamani
+###Keywords: Visualization, Software Engineering, Roassal
+###Context
+Making the dependencies between software components explicit is known to be efficient at improving the quality of source code. Visualizations are commonly employed to represent dependencies between packages, classes, and methods.
+###Goal
+This project is about embedding a visualization within Calypso, the Pharo code browser, that represents dependencies between projects, packages, classes, and methods.
+###Level: Intermediate
+
+***
 
 ##Title: Better and more refactorings for Pharo
 ###Contact: christophe.demarey@inria.fr, pablo.tesone@inria.fr
@@ -259,4 +272,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T10:35:12.921082+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T14:21:02.443536+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
