@@ -15,14 +15,17 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
-    title: 'Dependency Graph in the System Browser';
-    contact: 'alexandre.bergel@me.com, akevalion@gmail.com';
-    supervisors: 'Alexandre Bergel, Milton Mamani';
-    keywords: 'Visualization, Software Engineering, Roassal';
-    context: 'Making the dependencies between software components explicit is known to be efficient at improving the quality of source code. Visualizations are commonly employed to represent dependencies between packages, classes, and methods.';
-    goal: 'This project is about embedding a visualization within Calypso, the Pharo code browser, that represents dependencies between projects, packages, classes, and methods.';
+    title: 'Projectional Editor for Advanced Pharo Debuggers';
+    contact: 'steven.costiou@inria.fr, vincent.aranega@inria.fr';
+    supervisors: 'Steven Costiou, Vincent Aranega';
+    keywords: 'Debugging Editor IDE AST';
+    context: 'Currently in Pharo, the Abstract Syntax Tree (AST) is generated from the source code, and stored into a cache. Each modification of the source code invalidates the cache and triggers the generation of a new AST object. Every annotation of the AST is lost in the process.';
+    goal: 'Projectional editors make possible to edit different representation of the same underlying model. This project aims at building a projectional editor which manipulates an AST model instead of source code. With this tool, it will be possible to maintain a permanent representation of the system as an AST, and to new tools directly based on it, such as new debugging tools.';
     level: 'Intermediate';
-    yourself.
+    yourself
+	
+.
+
 
 PharoTopic new
     title: 'Better and more refactorings for Pharo';
@@ -102,7 +105,7 @@ access to resources via IPFS.';
 
 PharoTopic new
 	title: 'Improving code completion';
-	contact: 'stephane.ducasse@inria.fr, olk.zaytsev@gmail.com, esteban.lorenzano@inria.fr, juampiboy@gmail.com';
+	contact: 'stephane.ducasse@inria.fr, oleksandr.zaitsev@inria.fr, esteban.lorenzano@inria.fr, juampiboy@gmail.com';
 	supervisors: 'Stéphane Ducasse, Oleksanrd Zaitsev, Esteban Lorenzano, Juan Pablo Sandoval Alcocer';
 	keywords: 'completion';
 	context: 'Automatic completion is really important. The current code completion already defines some good 
@@ -202,7 +205,7 @@ PharoTopic new
 	   
 PharoTopic new
 	title: 'DataFrame';
-	contact: 'olk.zaytsev@gmail.com, serge.stinckwich@gmail.com';
+	contact: 'oleksandr.zaitsev@inria.fr, serge.stinckwich@gmail.com';
 	supervisors: 'Oleksandr Zaytsev and Serge Stinckwich';
 	keywords: 'Data Science, Data Analysis, DataFrame, Tabular Data, Statistics';
 	context: 'DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
@@ -222,8 +225,8 @@ PharoTopic new
        		
  PharoTopic new
        title: 'Charting library';
-       contact: 'cyril@ferlicot.me, julien.delplanque@inria.fr, olk.zaytsev@gmail.com, alexandre.bergel@me.com';
-       supervisors: 'Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaytsev, Alexandre Bergel';
+       contact: 'cyril@ferlicot.me, julien.delplanque@inria.fr, oleksandr.zaitsev@inria.fr';
+       supervisors: 'Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaytsev';
        keywords: 'Data Visualization, Data Science, Plotting, Grammar of Graphics';
        context: 'In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.';
        goal: 'Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo''s Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.';
@@ -232,8 +235,8 @@ PharoTopic new
 		
  PharoTopic new
        title: 'NLP Library';
-       contact: 'olk.zaytsev@gmail.com, alexandre.bergel@me.com';
-       supervisors: 'Oleksandr Zaytsev, Alexandre Bergel';
+       contact: 'oleksandr.zaitsev@inria.fr';
+       supervisors: 'Oleksandr Zaytsev';
        keywords: 'Natural Language Processing, Statistics, Data Science';
        context: 'Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.';
        goal: 'We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.';
