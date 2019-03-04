@@ -17,8 +17,8 @@ don't forget to separate topics as statements with periods
 
 PharoTopic new
     title: 'Better and more refactorings for Pharo';
-    contact: 'christophe.demarey@inria.fr';
-    supervisors: 'Christophe Demarey';
+    contact: 'christophe.demarey@inria.fr, pablo.tesone@inria.fr';
+    supervisors: 'Christophe Demarey, Pablo Tesone';
     keywords: 'Refactoring IDE';
     context: 'Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.';
     goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/pharo-project/pharo-project-proposals/blob/master/refactoring.md for a detailed list of tasks.';
@@ -47,8 +47,8 @@ PharoTopic new
 	
 PharoTopic new
 	title: 'Hacking Pharo in Your Web Browser';
-	contact: 'luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr';
-	supervisors: 'Luc Fabresse and Damien Pollet';
+	contact: 'luc.fabresse@imt-lille-douai.fr, Damien.pollet@inria.fr';
+	supervisors: 'Luc Fabresse, Damien Pollet';
 	keywords: 'Docker, Virtual machine';
 	context: 'There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.';
 	goal:
@@ -89,16 +89,12 @@ the existing server and start to experiment how IPFS can be used with Pharo.
 For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide
 access to resources via IPFS.'; 
 	level: 'Normal';
-	yourself
-
-.
-
-
+	yourself.
 
 PharoTopic new
 	title: 'Improving code completion';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'S. Ducasse, E. Lorenzano and Juan Pablo Sandoval A.';
+	contact: 'stephane.ducasse@inria.fr, oleksandr.zaitsev@inria.fr, esteban.lorenzano@inria.fr, juampiboy@gmail.com';
+	supervisors: 'Stéphane Ducasse, Oleksanrd Zaitsev, Esteban Lorenzano, Juan Pablo Sandoval Alcocer';
 	keywords: 'completion';
 	context: 'Automatic completion is really important. The current code completion already defines some good 
 behavior but it can do better.';
@@ -109,13 +105,11 @@ The tasks are:
 (3) Improve the noise introduced by the Symbol table usage, 
 (4) build more heuristics.';
 	level: 'Intermediate';
-	yourself
-    
-. 
+	yourself. 
 
 PharoTopic new
 	title: 'New Collections for Pharo';
-	contact: 'Juan Pablo Sandoval Alcocer <juampiboy@gmail.com>';
+	contact: 'juampiboy@gmail.com';
 	supervisors: 'Juan Pablo Sandoval Alcocer';
 	keywords: 'Collection DataStructure Benchmarks';
 	context: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
@@ -154,8 +148,8 @@ yourself
 
 PharoTopic new
 	title: 'Enhancing Pillar';
-	contact: 'stephane.ducasse@inria.fr';
-	supervisors: 'Stéphane Ducasse';
+	contact: 'stephane.ducasse@inria.fr, guillermopolito@gmail.com';
+	supervisors: 'Stéphane Ducasse, Guillermo Polito';
 	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
     illar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects 
@@ -174,7 +168,7 @@ PharoTopic new
 
 PharoTopic new
        title: 'Pharo Launcher command line interface';
-       contact: 'guillermopolito@gmail.com';
+       contact: 'guillermopolito@gmail.com, christophe.demarey@inria.fr';
        supervisors: 'Guillermo Polito, Christophe Demarey';
        keywords: 'image management, command line interface, virtualization';
        context: 'The pharo launcher is an application that allows the management of pharo images. In a "docker style", you can download images from templates, install them, list your installed images, and launch them. All this is done through a visual user interface in a desktop application.';
@@ -189,8 +183,8 @@ PharoTopic new
 
 PharoTopic new
        title: 'Next Generation Unit Testing';
-       contact: 'guillermopolito@gmail.com';
-       supervisors: 'Guillermo Polito';
+       contact: 'guillermopolito@gmail.com, julien.delplanque@inria.fr';
+       supervisors: 'Guillermo Polito, Julien Delplanque';
        keywords: 'unit testing, parallelization, configuration';
        context: 'SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.';
        goal: 'The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.';
@@ -199,24 +193,13 @@ PharoTopic new
 	   
 PharoTopic new
 	title: 'DataFrame';
-	contact: 'olk.zaytsev@gmail.com';
+	contact: 'oleksandr.zaitsev@inria.fr, serge.stinckwich@gmail.com';
 	supervisors: 'Oleksandr Zaytsev and Serge Stinckwich';
 	keywords: 'Data Science, Data Analysis, DataFrame, Tabular Data, Statistics';
 	context: 'DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
 	level: 'Beginner or Intermediate';
 	yourself.
-	
-	
- PharoTopic new
-       title: 'Liberated Pixel Cup native support in Pharo';
-       contact: 'stephane.ducasse@inria.fr';
-       supervisors: 'Stephane Ducasse';
-       keywords: 'Cairo SDL 2D';
-       context: 'It is now possible to build quite good 2D native applications in Pharo using Cairo and SDL, which led to experimental video games (article in Linux Mag of April 2018, https://github.com/clementbera/wizard-battle-arena). On the other hand, projects such as The Liberated Pixel Cup supported by the Mozzila Foundation and other large groups develop huge graphic ressources available under open source licenses (http://lpc.opengameart.org/). Note the student is strongly advised to use a Linux machine for this work.';
-       goal: 'The first goal is to create a library to easily import and display LPC characters generated from website like this one (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/) into the Pharo stack (SDL, Cairo & Pharo). Second goal is to build a minimal video game framework on top of it with a game. Lastly, the third goal is to improve packaging & deployment of such native applications in Pharo, as well as evaluating the integration with other frameworks (Bloc to display GUI for example). The third goal has to be clearly detailled in the student proposal - we will not accept topics not improving the Core Pharo system. In addition, the demo game created should be submitted to this year LPC event (competition from June 1st to July 31st) to show Pharo to other communities.';
-       level: 'Beginner to Intermediate';
-       yourself.
 
 PharoTopic new
     title: 'Iceberg UI: Providing a commit graph visualization';
@@ -230,8 +213,8 @@ PharoTopic new
        		
  PharoTopic new
        title: 'Charting library';
-       contact: 'cyril@ferlicot.me and julien.delplanque@inria.fr and olk.zaytsev@gmail.com';
-       supervisors: 'Cyril Ferlicot-Delbecque and Julien Delplanque and Oleksandr Zaytsev';
+       contact: 'cyril@ferlicot.me, julien.delplanque@inria.fr, oleksandr.zaitsev@inria.fr';
+       supervisors: 'Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaytsev';
        keywords: 'Data Visualization, Data Science, Plotting, Grammar of Graphics';
        context: 'In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.';
        goal: 'Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo''s Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.';
@@ -240,7 +223,7 @@ PharoTopic new
 		
  PharoTopic new
        title: 'NLP Library';
-       contact: 'olk.zaytsev@gmail.com';
+       contact: 'oleksandr.zaitsev@inria.fr';
        supervisors: 'Oleksandr Zaytsev';
        keywords: 'Natural Language Processing, Statistics, Data Science';
        context: 'Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.';
@@ -250,8 +233,8 @@ PharoTopic new
 
 PharoTopic new
        title: 'Authoring and exploring scientific models in Pharo';
-       contact: 'konrad.hinsen@cnrs.fr';
-       supervisors: 'Konrad Hinsen and Serge Stinckwich';
+       contact: 'konrad.hinsen@cnrs.fr, serge.stinckwich@gmail.com';
+       supervisors: 'Konrad Hinsen, Serge Stinckwich';
        keywords: 'scientific models';
        context: 'Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.';
        goal: 'Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton''s equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.';
