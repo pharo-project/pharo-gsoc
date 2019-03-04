@@ -139,8 +139,8 @@ The tasks are:
 ***
 
 ##Title: New Collections for Pharo
-###Contact: juampiboy@gmail.com
-###Supervisors: Juan Pablo Sandoval Alcocer
+###Contact: juampiboy@gmail.com, stephane.ducasse@inria.fr
+###Supervisors: Juan Pablo Sandoval Alcocer, Stéphane Ducasse
 ###Keywords: Collection DataStructure Benchmarks
 ###Context
 Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
@@ -227,7 +227,7 @@ The goal of this project is to redesign the SUnit framework to be extensible. Th
 
 ##Title: DataFrame
 ###Contact: olk.zaytsev@gmail.com, serge.stinckwich@gmail.com
-###Supervisors: Oleksandr Zaytsev and Serge Stinckwich
+###Supervisors: Oleksandr Zaytsev, Serge Stinckwich
 ###Keywords: Data Science, Data Analysis, DataFrame, Tabular Data, Statistics
 ###Context
 DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.
@@ -238,8 +238,8 @@ The goal of this project is to introduce new functionality to DataFrame (for exa
 ***
 
 ##Title: Iceberg UI: Providing a commit graph visualization
-###Contact: juampiboy@gmail.com
-###Supervisors: Juan Pablo Sandoval Alcocer
+###Contact: juampiboy@gmail.com, guillermopolito@gmail.com
+###Supervisors: Juan Pablo Sandoval Alcocer, Guillermo Polito
 ###Keywords: commit, visualization, iceberg
 ###Context
 Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.
@@ -285,4 +285,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T16:13:05.476746+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T16:28:35.405112+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
