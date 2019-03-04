@@ -15,6 +15,16 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+    title: 'Projectional Editor for Advanced Pharo Debuggers';
+    contact: 'steven.costiou@inria.fr, vincent.aranega@inria.fr';
+    supervisors: 'Steven Costiou, Vincent Aranega';
+    keywords: 'Debugging Editor IDE AST';
+    context: 'Currently in Pharo, the Abstract Syntax Tree (AST) is generated from the source code, and stored into a cache. Each modification of the source code invalidates the cache and triggers the generation of a new AST object. Every annotation of the AST is lost in the process.';
+    goal: 'Projectional editors make possible to edit different representation of the same underlying model. This project aims at building a projectional editor which manipulates an AST model instead of source code. With this tool, it will be possible to maintain a permanent representation of the system as an AST, and to new tools directly based on it, as new debugging tools.';
+    level: 'Intermediate';
+    yourself.
+
+PharoTopic new
     title: 'Dependency Graph in the System Browser';
     contact: 'alexandre.bergel@me.com, akevalion@gmail.com';
     supervisors: 'Alexandre Bergel, Milton Mamani';
