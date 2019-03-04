@@ -108,7 +108,7 @@ access to resources via IPFS.
 ***
 
 ##Title: Improving code completion
-###Contact: stephane.ducasse@inria.fr, oleksandr.zaitsev@inria.fr, esteban.lorenzano@inria.fr, juampiboy@gmail.com
+###Contact: stephane.ducasse@inria.fr, olk.zaytsev@gmail.com, esteban.lorenzano@inria.fr, juampiboy@gmail.com
 ###Supervisors: Stéphane Ducasse, Oleksanrd Zaitsev, Esteban Lorenzano, Juan Pablo Sandoval Alcocer
 ###Keywords: completion
 ###Context
@@ -213,7 +213,7 @@ The goal of this project is to redesign the SUnit framework to be extensible. Th
 ***
 
 ##Title: DataFrame
-###Contact: oleksandr.zaitsev@inria.fr, serge.stinckwich@gmail.com
+###Contact: olk.zaytsev@gmail.com, serge.stinckwich@gmail.com
 ###Supervisors: Oleksandr Zaytsev and Serge Stinckwich
 ###Keywords: Data Science, Data Analysis, DataFrame, Tabular Data, Statistics
 ###Context
@@ -237,8 +237,8 @@ The goal of this project is to provide a commit graph visualization for improvin
 ***
 
 ##Title: Charting library
-###Contact: cyril@ferlicot.me, julien.delplanque@inria.fr, oleksandr.zaitsev@inria.fr
-###Supervisors: Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaytsev
+###Contact: cyril@ferlicot.me, julien.delplanque@inria.fr, olk.zaytsev@gmail.com, alexandre.bergel@me.com
+###Supervisors: Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaytsev, Alexandre Bergel
 ###Keywords: Data Visualization, Data Science, Plotting, Grammar of Graphics
 ###Context
 In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.
@@ -249,8 +249,8 @@ Build an easy-to-use framework for visualizing data with charts, similar to matp
 ***
 
 ##Title: NLP Library
-###Contact: oleksandr.zaitsev@inria.fr
-###Supervisors: Oleksandr Zaytsev
+###Contact: olk.zaytsev@gmail.com, alexandre.bergel@me.com
+###Supervisors: Oleksandr Zaytsev, Alexandre Bergel
 ###Keywords: Natural Language Processing, Statistics, Data Science
 ###Context
 Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.
@@ -272,4 +272,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T14:21:02.443536+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T14:30:51.842428+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
