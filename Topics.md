@@ -10,15 +10,14 @@
 * [Pharo Launcher command line interface](#title-pharo-launcher-command-line-interface)
 * [Next Generation Unit Testing](#title-next-generation-unit-testing)
 * [DataFrame](#title-dataframe)
-* [Liberated Pixel Cup native support in Pharo](#title-liberated-pixel-cup-native-support-in-pharo)
 * [Iceberg UI: Providing a commit graph visualization](#title-iceberg-ui-providing-a-commit-graph-visualization)
 * [Charting library](#title-charting-library)
 * [NLP Library](#title-nlp-library)
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
 
 ##Title: Better and more refactorings for Pharo
-###Contact: christophe.demarey@inria.fr
-###Supervisors: Christophe Demarey
+###Contact: christophe.demarey@inria.fr, pablo.tesone@inria.fr
+###Supervisors: Christophe Demarey, Pablo Tesone
 ###Keywords: Refactoring IDE
 ###Context
 Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.
@@ -48,8 +47,8 @@ We have multiple ideas to improve the project. (They are just ideas. Students ca
 ***
 
 ##Title: Hacking Pharo in Your Web Browser
-###Contact: luc.fabresse@imt-lille-douai.fr and Damien.pollet@inria.fr
-###Supervisors: Luc Fabresse and Damien Pollet
+###Contact: luc.fabresse@imt-lille-douai.fr, Damien.pollet@inria.fr
+###Supervisors: Luc Fabresse, Damien Pollet
 ###Keywords: Docker, Virtual machine
 ###Context
 There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.
@@ -96,8 +95,8 @@ access to resources via IPFS.
 ***
 
 ##Title: Improving code completion
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: S. Ducasse, E. Lorenzano and Juan Pablo Sandoval A.
+###Contact: stephane.ducasse@inria.fr, oleksandr.zaitsev@inria.fr, esteban.lorenzano@inria.fr, juampiboy@gmail.com
+###Supervisors: Stéphane Ducasse, Oleksanrd Zaitsev, Esteban Lorenzano, Juan Pablo Sandoval Alcocer
 ###Keywords: completion
 ###Context
 Automatic completion is really important. The current code completion already defines some good 
@@ -114,7 +113,7 @@ The tasks are:
 ***
 
 ##Title: New Collections for Pharo
-###Contact: Juan Pablo Sandoval Alcocer <juampiboy@gmail.com>
+###Contact: juampiboy@gmail.com
 ###Supervisors: Juan Pablo Sandoval Alcocer
 ###Keywords: Collection DataStructure Benchmarks
 ###Context
@@ -152,8 +151,8 @@ Resources:
 ***
 
 ##Title: Enhancing Pillar
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: Stéphane Ducasse
+###Contact: stephane.ducasse@inria.fr, guillermopolito@gmail.com
+###Supervisors: Stéphane Ducasse, Guillermo Polito
 ###Keywords: Pillar OpenDocument LibreOffice OpenOffice document tree visitor
 ###Context
 Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
@@ -172,7 +171,7 @@ The goal of the project is to do help in the development of the new iteration of
 ***
 
 ##Title: Pharo Launcher command line interface
-###Contact: guillermopolito@gmail.com
+###Contact: guillermopolito@gmail.com, christophe.demarey@inria.fr
 ###Supervisors: Guillermo Polito, Christophe Demarey
 ###Keywords: image management, command line interface, virtualization
 ###Context
@@ -189,8 +188,8 @@ The goal of this project is to implement a command line interface for the Pharo 
 ***
 
 ##Title: Next Generation Unit Testing
-###Contact: guillermopolito@gmail.com
-###Supervisors: Guillermo Polito
+###Contact: guillermopolito@gmail.com, julien.delplanque@inria.fr
+###Supervisors: Guillermo Polito, Julien Delplanque
 ###Keywords: unit testing, parallelization, configuration
 ###Context
 SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.
@@ -201,7 +200,7 @@ The goal of this project is to redesign the SUnit framework to be extensible. Th
 ***
 
 ##Title: DataFrame
-###Contact: olk.zaytsev@gmail.com
+###Contact: oleksandr.zaitsev@inria.fr, serge.stinckwich@gmail.com
 ###Supervisors: Oleksandr Zaytsev and Serge Stinckwich
 ###Keywords: Data Science, Data Analysis, DataFrame, Tabular Data, Statistics
 ###Context
@@ -209,18 +208,6 @@ DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyM
 ###Goal
 The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)
 ###Level: Beginner or Intermediate
-
-***
-
-##Title: Liberated Pixel Cup native support in Pharo
-###Contact: stephane.ducasse@inria.fr
-###Supervisors: Stephane Ducasse
-###Keywords: Cairo SDL 2D
-###Context
-It is now possible to build quite good 2D native applications in Pharo using Cairo and SDL, which led to experimental video games (article in Linux Mag of April 2018, https://github.com/clementbera/wizard-battle-arena). On the other hand, projects such as The Liberated Pixel Cup supported by the Mozzila Foundation and other large groups develop huge graphic ressources available under open source licenses (http://lpc.opengameart.org/). Note the student is strongly advised to use a Linux machine for this work.
-###Goal
-The first goal is to create a library to easily import and display LPC characters generated from website like this one (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/) into the Pharo stack (SDL, Cairo & Pharo). Second goal is to build a minimal video game framework on top of it with a game. Lastly, the third goal is to improve packaging & deployment of such native applications in Pharo, as well as evaluating the integration with other frameworks (Bloc to display GUI for example). The third goal has to be clearly detailled in the student proposal - we will not accept topics not improving the Core Pharo system. In addition, the demo game created should be submitted to this year LPC event (competition from June 1st to July 31st) to show Pharo to other communities.
-###Level: Beginner to Intermediate
 
 ***
 
@@ -237,8 +224,8 @@ The goal of this project is to provide a commit graph visualization for improvin
 ***
 
 ##Title: Charting library
-###Contact: cyril@ferlicot.me and julien.delplanque@inria.fr and olk.zaytsev@gmail.com
-###Supervisors: Cyril Ferlicot-Delbecque and Julien Delplanque and Oleksandr Zaytsev
+###Contact: cyril@ferlicot.me, julien.delplanque@inria.fr, oleksandr.zaitsev@inria.fr
+###Supervisors: Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaytsev
 ###Keywords: Data Visualization, Data Science, Plotting, Grammar of Graphics
 ###Context
 In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.
@@ -249,7 +236,7 @@ Build an easy-to-use framework for visualizing data with charts, similar to matp
 ***
 
 ##Title: NLP Library
-###Contact: olk.zaytsev@gmail.com
+###Contact: oleksandr.zaitsev@inria.fr
 ###Supervisors: Oleksandr Zaytsev
 ###Keywords: Natural Language Processing, Statistics, Data Science
 ###Context
@@ -261,8 +248,8 @@ We need a natural language processing (NLP) library entirely written in Pharo wi
 ***
 
 ##Title: Authoring and exploring scientific models in Pharo
-###Contact: konrad.hinsen@cnrs.fr
-###Supervisors: Konrad Hinsen and Serge Stinckwich
+###Contact: konrad.hinsen@cnrs.fr, serge.stinckwich@gmail.com
+###Supervisors: Konrad Hinsen, Serge Stinckwich
 ###Keywords: scientific models
 ###Context
 Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.
@@ -272,4 +259,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-01T10:52:48.071225+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T10:35:12.921082+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
