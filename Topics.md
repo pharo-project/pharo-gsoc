@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Projectional Editor for Advanced Pharo Debuggers](#title-projectional-editor-for-advanced-pharo-debuggers)
 * [Dependency Graph in the System Browser](#title-dependency-graph-in-the-system-browser)
 * [Better and more refactorings for Pharo](#title-better-and-more-refactorings-for-pharo)
 * [Material Design Lite](#title-material-design-lite)
@@ -15,6 +16,18 @@
 * [Charting library](#title-charting-library)
 * [NLP Library](#title-nlp-library)
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
+
+##Title: Projectional Editor for Advanced Pharo Debuggers
+###Contact: steven.costiou@inria.fr, vincent.aranega@inria.fr
+###Supervisors: Steven Costiou, Vincent Aranega
+###Keywords: Debugging Editor IDE AST
+###Context
+Currently in Pharo, the Abstract Syntax Tree (AST) is generated from the source code, and stored into a cache. Each modification of the source code invalidates the cache and triggers the generation of a new AST object. Every annotation of the AST is lost in the process.
+###Goal
+Projectional editors make possible to edit different representation of the same underlying model. This project aims at building a projectional editor which manipulates an AST model instead of source code. With this tool, it will be possible to maintain a permanent representation of the system as an AST, and to new tools directly based on it, as new debugging tools.
+###Level: Intermediate
+
+***
 
 ##Title: Dependency Graph in the System Browser
 ###Contact: alexandre.bergel@me.com, akevalion@gmail.com
@@ -272,4 +285,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T14:30:51.842428+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T14:56:38.42135+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
