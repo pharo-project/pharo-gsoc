@@ -285,4 +285,4 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T14:56:38.42135+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T16:13:05.476746+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
