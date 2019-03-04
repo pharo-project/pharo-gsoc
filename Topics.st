@@ -14,6 +14,15 @@ don't forget to separate topics as statements with periods
 
 "
 
+PharoTopic new
+    title: 'Dependency Graph in the System Browser';
+    contact: 'alexandre.bergel@me.com, akevalion@gmail.com';
+    supervisors: 'Alexandre Bergel, Milton Mamani';
+    keywords: 'Visualization, Software Engineering, Roassal';
+    context: 'Making the dependencies between software components explicit is known to be efficient at improving the quality of source code. Visualizations are commonly employed to represent dependencies between packages, classes, and methods.';
+    goal: 'This project is about embedding a visualization within Calypso, the Pharo code browser, that represents dependencies between projects, packages, classes, and methods.';
+    level: 'Intermediate';
+    yourself.
 
 PharoTopic new
     title: 'Better and more refactorings for Pharo';
