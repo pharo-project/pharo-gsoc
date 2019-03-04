@@ -128,8 +128,8 @@ The tasks are:
 
 PharoTopic new
 	title: 'New Collections for Pharo';
-	contact: 'juampiboy@gmail.com';
-	supervisors: 'Juan Pablo Sandoval Alcocer';
+	contact: 'juampiboy@gmail.com, stephane.ducasse@inria.fr';
+	supervisors: 'Juan Pablo Sandoval Alcocer, Stéphane Ducasse';
 	keywords: 'Collection DataStructure Benchmarks';
 	context: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
 with around 100 classes. But new collections exist such as BTree, QuadTree, SkipList, Trie, …
@@ -213,7 +213,7 @@ PharoTopic new
 PharoTopic new
 	title: 'DataFrame';
 	contact: 'olk.zaytsev@gmail.com, serge.stinckwich@gmail.com';
-	supervisors: 'Oleksandr Zaytsev and Serge Stinckwich';
+	supervisors: 'Oleksandr Zaytsev, Serge Stinckwich';
 	keywords: 'Data Science, Data Analysis, DataFrame, Tabular Data, Statistics';
 	context: 'DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
@@ -222,8 +222,8 @@ PharoTopic new
 
 PharoTopic new
     title: 'Iceberg UI: Providing a commit graph visualization';
-    contact: 'juampiboy@gmail.com';
-    supervisors: 'Juan Pablo Sandoval Alcocer';
+    contact: 'juampiboy@gmail.com, guillermopolito@gmail.com';
+    supervisors: 'Juan Pablo Sandoval Alcocer, Guillermo Polito';
     keywords: 'commit, visualization, iceberg';
     context: 'Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.';
     goal: 'The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken).';
