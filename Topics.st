@@ -83,7 +83,7 @@ PharoTopic new
 
 PharoTopic new
 	title: 'IPFS for Pharo';
-	contact: 'marcus.denker@inria.fr';
+	contact: 'marcus.denker@inria.fr, pavel.krivanek@gmail.com';
 	supervisors: 'Marcus Denker, Pavel Krivanek';
 	keywords: 'peer to peer file systems';
 	context: ' IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
