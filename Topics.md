@@ -92,7 +92,7 @@ Possible tasks are:
 ***
 
 ##Title: IPFS for Pharo
-###Contact: marcus.denker@inria.fr
+###Contact: marcus.denker@inria.fr, pavel.krivanek@gmail.com
 ###Supervisors: Marcus Denker, Pavel Krivanek
 ###Keywords: peer to peer file systems
 ###Context
@@ -311,4 +311,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T13:09:42.537032+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T14:01:36.065885+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
