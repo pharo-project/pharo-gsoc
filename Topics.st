@@ -259,3 +259,24 @@ PharoTopic new
        goal: 'Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton''s equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.';
        level: 'Intermediate';
        yourself.
+
+ PharoTopic new
+       title: 'Spec Debugging Tools';
+       contact: 'guillermopolito@gmail.com tesonep@gmail.com';
+       supervisors: 'Guillermo Polito, Pablo Tesone';
+       keywords: 'ui debugging';
+       context: 'Spec is a UI framework providing a component model with pluggable backends. This makes sometimes difficult to understand the composition structure and go from the UI to the corresponding code.';
+       goal: 'The goal of this project is to develop several debugging facilities to help understanding Spec UIs. For example, click on a component and go to its code, highlight component boundaries on mouse over.';
+       level: 'Beginner';
+       yourself.
+
+ PharoTopic new
+       title: 'Spec Cassowary Layout';
+       contact: 'tesonep@gmail.com guillermopolito@gmail.com';
+       supervisors: 'Pablo Tesone, Guillermo Polito';
+       keywords: 'ui algorithm';
+       context: 'Spec is a UI framework providing a component model with pluggable backends. The current layouting options provide boxes, panes and grids.';
+       goal: 'The goal of this project is to develop a cassowary layout for Spec using existing constraint solvers. The student will need to define a DSL to describe constraints and define what are the minimal set of constraints components should have.';
+       level: 'Advanced';
+       yourself.
+   
