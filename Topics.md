@@ -44,8 +44,8 @@ This project is about embedding a visualization within Calypso, the Pharo code b
 ***
 
 ##Title: Better and more refactorings for Pharo
-###Contact: christophe.demarey@inria.fr, pablo.tesone@inria.fr
-###Supervisors: Christophe Demarey, Pablo Tesone
+###Contact: christophe.demarey@inria.fr, pablo.tesone@inria.fr, juampiboy@gmail.com
+###Supervisors: Christophe Demarey, Pablo Tesone, Juan Pablo Sandoval A
 ###Keywords: Refactoring IDE
 ###Context
 Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.
@@ -311,4 +311,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T12:34:02.232183+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T13:09:42.537032+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
