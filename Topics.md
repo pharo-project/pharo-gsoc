@@ -93,7 +93,7 @@ Possible tasks are:
 
 ##Title: IPFS for Pharo
 ###Contact: marcus.denker@inria.fr
-###Supervisors: Marcus Denker
+###Supervisors: Marcus Denker, Pavel Krivanek
 ###Keywords: peer to peer file systems
 ###Context
  IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
@@ -311,4 +311,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T09:14:12.331237+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T12:34:02.232183+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
