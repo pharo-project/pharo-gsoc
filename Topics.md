@@ -16,6 +16,8 @@
 * [Charting library](#title-charting-library)
 * [NLP Library](#title-nlp-library)
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
+* [Spec Debugging Tools](#title-spec-debugging-tools)
+* [Spec Cassowary Layout](#title-spec-cassowary-layout)
 
 ##Title: Projectional Editor for Advanced Pharo Debuggers
 ###Contact: steven.costiou@inria.fr, vincent.aranega@inria.fr
@@ -285,4 +287,28 @@ Working with scientific models requires interactive tools, both for authoring ne
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-04T16:28:35.405112+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+##Title: Spec Debugging Tools
+###Contact: guillermopolito@gmail.com tesonep@gmail.com
+###Supervisors: Guillermo Polito, Pablo Tesone
+###Keywords: ui debugging
+###Context
+Spec is a UI framework providing a component model with pluggable backends. This makes sometimes difficult to understand the composition structure and go from the UI to the corresponding code.
+###Goal
+The goal of this project is to develop several debugging facilities to help understanding Spec UIs. For example, click on a component and go to its code, highlight component boundaries on mouse over.
+###Level: Beginner
+
+***
+
+##Title: Spec Cassowary Layout
+###Contact: tesonep@gmail.com guillermopolito@gmail.com
+###Supervisors: Pablo Tesone, Guillermo Polito
+###Keywords: ui algorithm
+###Context
+Spec is a UI framework providing a component model with pluggable backends. The current layouting options provide boxes, panes and grids.
+###Goal
+The goal of this project is to develop a cassowary layout for Spec using existing constraint solvers. The student will need to define a DSL to describe constraints and define what are the minimal set of constraints components should have.
+###Level: Advanced
+
+***
+
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T09:14:12.331237+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
