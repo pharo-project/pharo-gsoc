@@ -30,7 +30,7 @@ When refactoring or rewriting some code, looking at the senders of a message and
 Some experiments have been done already to establish the viability: code (for older Pharo versions) is available on smalltalkhub: StephanEggermont/DeprecationFinder and StephanEggermont/MonticelloProjects';
     goal: 'Analyze the source code of publicly available monticello/tonel packages and determine which classes and methods are used and defined by them (senders/references) (see DeprecationFinder). For Monticello use the history and deduplicate source code versions to reduce the amount of data that needs to be handled (see MonticelloProjects). Apply to projects on smalltalkhub and older repositories. 
 
-Provide a api and a gui so Pharo developers can quickly access this information, and browse global and historic users.'
+Provide a api and a gui so Pharo developers can quickly access this information, and browse global and historic users.';
     level: 'advanced';
     yourself.
 
