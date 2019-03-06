@@ -15,6 +15,26 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+title: 'Closing the Loop';
+contact: 'stephan@legacycode.nl';
+supervisors: 'Stephan Eggermont, Christopher Fuhrman';
+keywords: 'deprecations, adaptability' 
+Context: 'Pharo wants to be able to continue to change and adapt itself to an ever changing environment. In order to do that it needs to become more modular and make currently non-essential code easy to unload and reload on demand. With the in-system tests and CI there currently is a pretty good feedback loop telling Pharo developers when they break existing in-image code.
+
+That feedback loop is much weaker with external code. That code is often not developed in sync with the Pharo development. It is developed against a stable release or against the then current version of the development version. A lot of code is developed in student projects that don't have the continuity that Pharo itself has. Other code is developed for specific customers who are not interested in upgrading it. Even if there are sufficient tests and an automated build for that code, there often is not enough incentive and priority for it to be kept up to date.
+
+Achieving more adaptability and agility for Pharo can be found by making it easier to keep more code up to date, or by making it easier to bring removed code up to date again. This proposal is about the latter.
+
+When refactoring or rewriting some code, looking at the senders of a message and references to a class is one of the basic things to do to get a good understanding of how that code is actually used. Currently that only works in-image. When Pharo was a 32-bit environment that made sense, but with the current support for large images it should be possible to provide that information for all open source smalltalk code, and also to provide historic/version information for it.   
+
+Some experiments have been done already to establish the viability: code (for older Pharo versions) is available on smalltalkhub: StephanEggermont/DeprecationFinder and StephanEggermont/MonticelloProjects';
+goal: 'Analyze the source code of publicly available monticello/tonel packages and determine which classes and methods are used and defined by them (senders/references) (see DeprecationFinder). For Monticello use the history and deduplicate source code versions to reduce the amount of data that needs to be handled (see MonticelloProjects). Apply to projects on smalltalkhub and older repositories. 
+
+Provide a api and a gui so Pharo developers can quickly access this information, and browse global and historic users.'
+level: 'advanced';
+yourself.
+
+PharoTopic new
     title: 'Projectional Editor for Advanced Pharo Debuggers';
     contact: 'steven.costiou@inria.fr, vincent.aranega@inria.fr';
     supervisors: 'Steven Costiou, Vincent Aranega';
