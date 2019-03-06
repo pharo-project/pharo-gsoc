@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Closing the Loop](#title-closing-the-loop)
 * [Projectional Editor for Advanced Pharo Debuggers](#title-projectional-editor-for-advanced-pharo-debuggers)
 * [Dependency Graph in the System Browser](#title-dependency-graph-in-the-system-browser)
 * [Better and more refactorings for Pharo](#title-better-and-more-refactorings-for-pharo)
@@ -18,6 +19,28 @@
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
 * [Spec Debugging Tools](#title-spec-debugging-tools)
 * [Spec Cassowary Layout](#title-spec-cassowary-layout)
+
+##Title: Closing the Loop
+###Contact: stephan@legacycode.nl
+###Supervisors: Stephan Eggermont, Christopher Fuhrman
+###Keywords: deprecations, adaptability
+###Context
+Pharo wants to be able to continue to change and adapt itself to an ever changing environment. In order to do that it needs to become more modular and make currently non-essential code easy to unload and reload on demand. With the in-system tests and CI there currently is a pretty good feedback loop telling Pharo developers when they break existing in-image code.
+
+That feedback loop is much weaker with external code. That code is often not developed in sync with the Pharo development. It is developed against a stable release or against the then current version of the development version. A lot of code is developed in student projects that don't have the continuity that Pharo itself has. Other code is developed for specific customers who are not interested in upgrading it. Even if there are sufficient tests and an automated build for that code, there often is not enough incentive and priority for it to be kept up to date.
+
+Achieving more adaptability and agility for Pharo can be found by making it easier to keep more code up to date, or by making it easier to bring removed code up to date again. This proposal is about the latter.
+
+When refactoring or rewriting some code, looking at the senders of a message and references to a class is one of the basic things to do to get a good understanding of how that code is actually used. Currently that only works in-image. When Pharo was a 32-bit environment that made sense, but with the current support for large images it should be possible to provide that information for all open source smalltalk code, and also to provide historic/version information for it.   
+
+Some experiments have been done already to establish the viability: code (for older Pharo versions) is available on smalltalkhub: StephanEggermont/DeprecationFinder and StephanEggermont/MonticelloProjects
+###Goal
+Analyze the source code of publicly available monticello/tonel packages and determine which classes and methods are used and defined by them (senders/references) (see DeprecationFinder). For Monticello use the history and deduplicate source code versions to reduce the amount of data that needs to be handled (see MonticelloProjects). Apply to projects on smalltalkhub and older repositories. 
+
+Provide a api and a gui so Pharo developers can quickly access this information, and browse global and historic users.
+###Level: advanced
+
+***
 
 ##Title: Projectional Editor for Advanced Pharo Debuggers
 ###Contact: steven.costiou@inria.fr, vincent.aranega@inria.fr
@@ -311,4 +334,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-05T14:01:36.065885+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-06T20:58:40.721438+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
