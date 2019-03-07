@@ -246,7 +246,7 @@ PharoTopic new
     supervisors: 'Juan Pablo Sandoval Alcocer, Guillermo Polito';
     keywords: 'commit, visualization, iceberg';
     context: 'Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.';
-    goal: 'The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken).';
+    goal: 'The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken). Currently, there is a basic, commit graph visualization implemented called https://github.com/tinchodias/hiedra. However, there is many things we can improve on the visualization and the Iceberg UI. For instance, branch colors, filtering, scalability, and many other interactions.';
     level: 'Beginner to Intermediate';
     yourself.
        		
