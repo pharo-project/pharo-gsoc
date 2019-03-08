@@ -15,6 +15,16 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+    title: 'SmartTest, a Test selection tool in a dynamically typed environment';
+    contact: 'anne.etien@inria.fr,nicolas.anquetil@inria.fr';
+    supervisors: 'Anne Etien, Nicolas Anquetil';
+    keywords: 'Test selection, Dynamic analysis, Static analysis';
+    context: 'Currently in Pharo, when the developer modifies code, he/she has to know which tests may have been broken to run them or in doubt run all the tests of the class or the project. In that later case, it can be very long. We would like to introduce in Pharo a test selection tool to help the developer in his/her selection. We already developed SmartTest, such a tool, but it is not useable in practice, since it is too long and too intrusive.';
+    goal: 'Implement some strategies to enhance the performance of the tool. Evaluate these strategies on real cases studies in an a posteriori experiment. Configure and tune the tool. Evaluate the tool on the field by taking advantage of the community. Put it in the Pharo 8 distribution.';
+    level: 'Intermediate';
+    yourself.
+
+PharoTopic new
     title: 'Closing the Loop';
     contact: 'stephan@legacycode.nl';
     supervisors: 'Stephan Eggermont, Christopher Fuhrman';
