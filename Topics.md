@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [Classes and Methods for Spatial Data](#title-classes-and-methods-for-spatial-data)
 * [SmartTest, a Test selection tool in a dynamically typed environment](#title-smarttest-a-test-selection-tool-in-a-dynamically-typed-environment)
 * [Closing the Loop](#title-closing-the-loop)
 * [Projectional Editor for Advanced Pharo Debuggers](#title-projectional-editor-for-advanced-pharo-debuggers)
@@ -20,6 +21,27 @@
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
 * [Spec Debugging Tools](#title-spec-debugging-tools)
 * [Spec Cassowary Layout](#title-spec-cassowary-layout)
+
+##Title: Classes and Methods for Spatial Data
+###Contact: etienne.delay@cirad.fr serge.stinckwich@ird.fr
+###Supervisors: Etienne Delay, Serge Stinckwich
+###Keywords: geography, spatial data, spatial data manipulation,
+geographical grammar
+###Context
+As a title of "the economist" The world’s most
+valuable resource is no longer oil, but data. Nowadays data and
+especially geospatial data become central in our societies. Each one of
+us needs to be able to deal with data and spatial data.
+###Goal
+We propose to explore structure to spatial data finding a
+way to load different types of geospatial data in Pharo. once the data
+is manipulable with our tools the goal is to develop some spatial method
+allowing for users to deal with spatial data. For that we will start
+from tools already existing in Pharo like the packages : Geometry, Shapes, geo-json and Territorial, but also in other programming languages (as R or python) in
+order to implement spatial methods for the community. The main objective will be first to be able to load a geojson file, to visualize it and to basic geometric operations.
+###Level: Beginner or Intermediate
+
+***
 
 ##Title: SmartTest, a Test selection tool in a dynamically typed environment
 ###Contact: anne.etien@inria.fr,nicolas.anquetil@inria.fr
@@ -347,4 +369,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T09:57:30.777283+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T20:15:54.747504+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
