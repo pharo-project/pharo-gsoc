@@ -34,7 +34,7 @@ Implement some strategies to enhance the performance of the tool. Evaluate these
 ***
 
 ##Title: Closing the Loop
-###Contact: stephan@legacycode.nl
+###Contact: stephan@legacycode.nl, christopher.fuhrman@etsmtl.ca
 ###Supervisors: Stephan Eggermont, Christopher Fuhrman
 ###Keywords: deprecations, adaptability
 ###Context
@@ -347,4 +347,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T09:29:14.707487+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T09:57:30.777283+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
