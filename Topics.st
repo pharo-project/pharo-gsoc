@@ -26,7 +26,7 @@ PharoTopic new
 
 PharoTopic new
     title: 'Closing the Loop';
-    contact: 'stephan@legacycode.nl';
+    contact: 'stephan@legacycode.nl, christopher.fuhrman@etsmtl.ca';
     supervisors: 'Stephan Eggermont, Christopher Fuhrman';
     keywords: 'deprecations, adaptability';
     context: 'Pharo wants to be able to continue to change and adapt itself to an ever changing environment. In order to do that it needs to become more modular and make currently non-essential code easy to unload and reload on demand. With the in-system tests and CI there currently is a pretty good feedback loop telling Pharo developers when they break existing in-image code.
