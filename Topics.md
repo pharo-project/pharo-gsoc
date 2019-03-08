@@ -269,7 +269,7 @@ The goal of this project is to introduce new functionality to DataFrame (for exa
 ###Context
 Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.
 ###Goal
-The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken).
+The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken). Currently, there is a basic, commit graph visualization implemented called https://github.com/tinchodias/hiedra. However, there is many things we can improve on the visualization and the Iceberg UI. For instance, branch colors, filtering, scalability, and many other interactions.
 ###Level: Beginner to Intermediate
 
 ***
@@ -334,4 +334,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-06T20:58:40.721438+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T09:25:15.202133+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
