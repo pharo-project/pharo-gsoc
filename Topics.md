@@ -1,5 +1,6 @@
 #Pharo GSOC Topics
 
+* [SmartTest, a Test selection tool in a dynamically typed environment](#title-smarttest-a-test-selection-tool-in-a-dynamically-typed-environment)
 * [Closing the Loop](#title-closing-the-loop)
 * [Projectional Editor for Advanced Pharo Debuggers](#title-projectional-editor-for-advanced-pharo-debuggers)
 * [Dependency Graph in the System Browser](#title-dependency-graph-in-the-system-browser)
@@ -19,6 +20,18 @@
 * [Authoring and exploring scientific models in Pharo](#title-authoring-and-exploring-scientific-models-in-pharo)
 * [Spec Debugging Tools](#title-spec-debugging-tools)
 * [Spec Cassowary Layout](#title-spec-cassowary-layout)
+
+##Title: SmartTest, a Test selection tool in a dynamically typed environment
+###Contact: anne.etien@inria.fr,nicolas.anquetil@inria.fr
+###Supervisors: Anne Etien, Nicolas Anquetil
+###Keywords: Test selection, Dynamic analysis, Static analysis
+###Context
+Currently in Pharo, when the developer modifies code, he/she has to know which tests may have been broken to run them or in doubt run all the tests of the class or the project. In that later case, it can be very long. We would like to introduce in Pharo a test selection tool to help the developer in his/her selection. We already developed SmartTest, such a tool, but it is not useable in practice, since it is too long and too intrusive.
+###Goal
+Implement some strategies to enhance the performance of the tool. Evaluate these strategies on real cases studies in an a posteriori experiment. Configure and tune the tool. Evaluate the tool on the field by taking advantage of the community. Put it in the Pharo 8 distribution.
+###Level: Intermediate
+
+***
 
 ##Title: Closing the Loop
 ###Contact: stephan@legacycode.nl
@@ -334,4 +347,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T09:25:15.202133+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T09:29:14.707487+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
