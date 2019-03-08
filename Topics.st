@@ -15,6 +15,25 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+        title: 'Classes and Methods for Spatial Data';
+        contact: 'etienne.delay@cirad.fr serge.stinckwich@ird.fr';
+        supervisors: 'Etienne Delay, Serge Stinckwich';
+        keywords: 'geography, spatial data, spatial data manipulation,
+geographical grammar';
+        context: 'As a title of "the economist" The world’s most
+valuable resource is no longer oil, but data. Nowadays data and
+especially geospatial data become central in our societies. Each one of
+us needs to be able to deal with data and spatial data.';
+        goal: 'We propose to explore structure to spatial data finding a
+way to load different types of geospatial data in Pharo. once the data
+is manipulable with our tools the goal is to develop some spatial method
+allowing for users to deal with spatial data. For that we will start
+from tools already existing in Pharo like the packages : Geometry, Shapes, geo-json and Territorial, but also in other programming languages (as R or python) in
+order to implement spatial methods for the community. The main objective will be first to be able to load a geojson file, to visualize it and to basic geometric operations.';
+        level: 'Beginner or Intermediate';
+        yourself.
+
+PharoTopic new
     title: 'SmartTest, a Test selection tool in a dynamically typed environment';
     contact: 'anne.etien@inria.fr,nicolas.anquetil@inria.fr';
     supervisors: 'Anne Etien, Nicolas Anquetil';
