@@ -286,8 +286,8 @@ The goal of this project is to redesign the SUnit framework to be extensible. Th
 ***
 
 ##Title: DataFrame
-###Contact: olk.zaytsev@gmail.com, serge.stinckwich@gmail.com
-###Supervisors: Oleksandr Zaytsev, Serge Stinckwich
+###Contact: olk.zaytsev@gmail.com, serge.stinckwich@gmail.com, philippeback@gmail.com
+###Supervisors: Oleksandr Zaytsev, Serge Stinckwich, Philippe Back
 ###Keywords: Data Science, Data Analysis, DataFrame, Tabular Data, Statistics
 ###Context
 DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.
@@ -369,4 +369,4 @@ The goal of this project is to develop a cassowary layout for Spec using existin
 
 ***
 
-<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-08T20:15:54.747504+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
+<img src="http://pharo.org/web/files/pharo-logo-small.png"/><p class="footer">Page last generated on 2019-03-09T14:29:10.666394+00:00 by Pharo5.0 of 16 April 2015 update 50772</p>
