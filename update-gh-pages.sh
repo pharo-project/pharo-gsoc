@@ -1,9 +1,6 @@
 #!/bin/bash
-set -o nounset
-set -o errexit
 
-readonly USER=pharo-project
-readonly REPO=pharo-project-proposals
+set -euo pipefail
 
 setup-git() {
 	cd $HOME
@@ -13,10 +10,13 @@ setup-git() {
 
 
 deploy() {
-	git clone --quiet --branch=gh-pages "git@github.com:$USER/$REPO.git" gh-pages > /dev/null
-	cd gh-pages
-	cp $SMALLTALK_CI_BUILD/Topics.html index.html
-	cp $SMALLTALK_CI_BUILD/Topics.md .
+	local user=pharo-project
+	local repo=pharo-project-proposals
+
+	git clone --quiet --branch=gh-pages "git@github.com:$user/$repo.git" gh-pages > /dev/null
+	pushd gh-pages >/dev/null
+	cp $TRAVIS_BUILD_DIR/Topics.html index.html
+	cp $TRAVIS_BUILD_DIR/style.css style.css
 	git add .
 	git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
 	git push -fq origin gh-pages > /dev/null

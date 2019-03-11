@@ -1,0 +1,48 @@
+body {
+  color:#74706f;
+  font-size:18px;
+  background:#f7f7f7;
+  background-repeat:repeat-x;
+  background-position:top center;
+  background-image:url(http://files.pharo.org/media/pharoBackground.png);
+  font-family:"Myriad Pro","Lucida Grande","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+p { 
+  line-height:1.4em;
+  padding: 1em;
+}
+h1 {
+  font-size:5em;
+  color:#0d64af;
+  color:rgba(13,100,175,0.9);
+  padding:18px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+  font-size:100%;
+  font:inherit;
+  width:100%;
+}
+table td {
+  border:1px solid #ccc;
+  padding:6px 13px;
+}
+table tr {
+  border-top:1px solid #ccc;
+  background-color:#fff;
+}
+span.cn { 
+  font-weight:bold;
+  color:black;
+}
+p.footer { 
+  font-size:0.75em;
+  text-align:center;
+  font-style:italic;
+}
