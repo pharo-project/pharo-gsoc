@@ -1,3 +1,14 @@
+"
+**Example:**
+
+```smalltalk
+	buildDir := '/home/me/pharo-project-proposals'	asFileReference.
+	PharoTopicsPageBuilder new
+		templateFile: buildDir / 'page.html';
+		dataFromFile: buildDir / 'Topics.st';
+		generatePageFile: buildDir / 'Topics.html'
+```
+"
 Class {
 	#name : #PharoTopicsPageBuilder,
 	#superclass : #PharoPeoplePageTool,
