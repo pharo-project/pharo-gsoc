@@ -4,12 +4,9 @@ sudo: false
 os:
   - linux
 
-env:
-  global:
-    secure: "PTuZ5CxHAYX4QTUJqUwMdDzoPwszu8OufQHKxrYVoFNTTQbtlE6b+yBI1cl7he98emlEKwQC5td6ABlO9wHual8clrElfnERrW9xh1KHVVN6+z8DQ6G40bEfYSiJHRBSg2Vu/wkc9F3Hs33dkicFD+RFvd+wIS5HbkuDi9y3y78="
-
 smalltalk:
   - Pharo-5.0
 
 after_success:
+  - ./ssh/ssh.sh
   - ./update-gh-pages.sh

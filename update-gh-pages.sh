@@ -13,7 +13,7 @@ setup-git() {
 
 
 deploy() {
-	git clone --quiet --branch=gh-pages "https://${GH_TOKEN}@github.com/$USER/$REPO.git" gh-pages > /dev/null
+	git clone --quiet --branch=gh-pages "ssh://git@github.com:$USER/$REPO.git" gh-pages > /dev/null
 	cd gh-pages
 	cp $SMALLTALK_CI_BUILD/Topics.html index.html
 	cp $SMALLTALK_CI_BUILD/Topics.md .
