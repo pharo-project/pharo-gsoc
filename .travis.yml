@@ -5,7 +5,7 @@ os:
   - linux
 
 smalltalk:
-  - Pharo-5.0
+  - Pharo-7.0
 
 after_success:
   - source ./.ssh/ssh.sh
