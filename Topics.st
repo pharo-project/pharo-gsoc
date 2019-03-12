@@ -15,6 +15,16 @@ don't forget to separate topics as statements with periods
 "
 
 PharoTopic new
+    title: 'Extension of Iceberg to support Fossil';
+    contact: 'dmason@ryerson.ca, guillermopolito@gmail.com';
+	supervisors: 'Dave Mason, Guillermo Polito';
+    keywords: 'iceberg fossil';
+    context: 'Iceberg is a significant improvement for cooperative development on Pharo. It is intended to support multiple Version Control Systems, but currently only works with Git. Fossil is another VCS that is a more integrated, full feature alternative, particularly well suited to smaller team development.';
+    goal: 'The goal of this project is to add an additional VCS to Iceberg. In addition to making the particular VCS available, dependencies on Git will be exposed and Iceberg will become more generic so that other VCSs, such as Mercurial or SVN, can be more easily added.';
+    level: ' Intermediate or Advanced';
+    yourself.
+
+PharoTopic new
         title: 'Classes and Methods for Spatial Data';
         contact: 'etienne.delay@cirad.fr serge.stinckwich@ird.fr';
         supervisors: 'Etienne Delay, Serge Stinckwich';
