@@ -99,7 +99,7 @@ PharoTopic new
     supervisors: 'Christophe Demarey, Pablo Tesone, Juan Pablo Sandoval A';
     keywords: 'Refactoring IDE';
     context: 'Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.';
-    goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/pharo-project/pharo-project-proposals/blob/master/refactoring.md for a detailed list of tasks.';
+    goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/juliendelplanque/Enjoliveur/issues for a detailed list of tasks.';
     level: 'Beginner';
     yourself
 	
