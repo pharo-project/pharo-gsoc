@@ -8,5 +8,4 @@ smalltalk:
   - Pharo-7.0
 
 after_success:
-  - source ./.ssh/ssh.sh
   - ./update-gh-pages.sh
