@@ -23,7 +23,6 @@ deploy() {
 }
 
 main() {
-	source ./.ssh/ssh.sh
 	setup-git
 	deploy
 }

@@ -7,8 +7,6 @@ os:
 smalltalk:
   - Pharo-7.0
 
-deploy:
-  provider: script
-  script: bash update-gh-pages.sh
-  on:
-    branch: master
+after_success:
+  - source ./.ssh/ssh.sh
+  - ./update-gh-pages.sh
