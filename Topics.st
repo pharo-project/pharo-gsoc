@@ -338,4 +338,14 @@ PharoTopic new
        goal: 'The goal of this project is to develop a cassowary layout for Spec using existing constraint solvers. The student will need to define a DSL to describe constraints and define what are the minimal set of constraints components should have.';
        level: 'Advanced';
        yourself.
+
+PharoTopic new
+       title: '3D CAD scripting using Smalltalk';
+       contact: 'askoh@askoh.com';
+       supervisors: 'Aik-Siong Koh';
+       keywords: '3D CAD Smalltalk scripting'';
+       context: 'Just like Python, Smalltalk is an extremely flexible programming environment to create code. Smalltalk has the best IDE and debugger of any programming environment. https://www.youtube.com/watch?v=1kuoS796vNw 3D CAD and Visualization is the standard way of presenting information nowadays. FreeCAD is an open source CAD system with powerful modeling capabilities and beautiful graphics. https://www.freecadweb.org/ StFreeCAD will be an open source attempt to combine the best of Pharo Smalltalk and FreeCAD. Smalltalk code can drive FreeCAD directly. The project is to embed FreeCAD inside Pharo Smalltalk IDE. https://www.freecadweb.org/wiki/Embedding_FreeCAD';
+       goal: 'Combine the flexibility of Smalltalk with the 3D modeling and visualization of FreeCAD for maximum programming productivity';
+       level: 'Intermediate';
+       yourself.
    
