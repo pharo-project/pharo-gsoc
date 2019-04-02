@@ -345,7 +345,7 @@ PharoTopic new
        supervisors: 'Aik-Siong Koh';
        keywords: '3D CAD Smalltalk scripting'';
        context: 'Just like Python, Smalltalk is an extremely flexible programming environment to create code. Smalltalk has the best IDE and debugger of any programming environment. 3D CAD and Visualization is the standard way of presenting information nowadays. FreeCAD is an open source CAD system with powerful modeling capabilities and beautiful graphics. StFreeCAD will be an open source attempt to combine the best of Pharo Smalltalk and FreeCAD. Smalltalk code can drive FreeCAD directly. The project is to embed FreeCAD inside Pharo Smalltalk IDE.';
-       goal: 'Combine the flexibility of Smalltalk with the 3D modeling and visualization of FreeCAD for maximum programming productivity';
+       goal: 'Combine the flexibility of Smalltalk with the 3D modeling and visualization of FreeCAD for maximum programming productivity.';
        level: 'Intermediate';
        yourself.
    
