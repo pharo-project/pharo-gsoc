@@ -94,18 +94,6 @@ PharoTopic new
     yourself.
 
 PharoTopic new
-    title: 'Better and more refactorings for Pharo';
-    contact: 'christophe.demarey@inria.fr, pablo.tesone@inria.fr, juampiboy@gmail.com';
-    supervisors: 'Christophe Demarey, Pablo Tesone, Juan Pablo Sandoval A';
-    keywords: 'Refactoring IDE';
-    context: 'Smalltalk was the first environment to have such great refactorings that inspired a lot of languages and book authors. Unfortunately, refactoring support lowered in quality and some of them are now missing in Pharo.';
-    goal: 'The goal of this project is to provide Pharo developers a good refactoring support, comparable to modern IDEs like IDEA Intellij. See https://github.com/juliendelplanque/Enjoliveur/issues for a detailed list of tasks.';
-    level: 'Beginner';
-    yourself
-	
-.
-
-PharoTopic new
 	title: 'Material Design Lite';
 	contact: 'cyril (a) ferlicot.me, guillaume.larcheveque (a) gmail.com and yannlesag (a) gmail.com';
 	supervisors: 'Cyril Ferlicot-Delbecque, Guillaume Larchevêque and Yann Lesage';
@@ -258,16 +246,6 @@ PharoTopic new
        $ phlauncher run X';
        level: 'Intermediate';
        yourself.
-
-PharoTopic new
-       title: 'Next Generation Unit Testing';
-       contact: 'guillermopolito@gmail.com, julien.delplanque@inria.fr';
-       supervisors: 'Guillermo Polito, Julien Delplanque';
-       keywords: 'unit testing, parallelization, configuration';
-       context: 'SUnit is the current unit testing framework in Pharo. Building complex applications require new testing capabilities, with an enhanced UI and a clear API that allows new extensions.';
-       goal: 'The goal of this project is to redesign the SUnit framework to be extensible. The extension points and hooks in the framework should allow users to create their own extensions. Moreover, the student will implement extensions for common testing scenarios such as concurrency and parameterized tests.';
-       level: 'Intermediate';
-       yourself.
 	   
 PharoTopic new
 	title: 'DataFrame';
@@ -278,16 +256,6 @@ PharoTopic new
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
 	level: 'Beginner or Intermediate';
 	yourself.
-
-PharoTopic new
-    title: 'Iceberg UI: Providing a commit graph visualization';
-    contact: 'juampiboy@gmail.com, guillermopolito@gmail.com';
-    supervisors: 'Juan Pablo Sandoval Alcocer, Guillermo Polito';
-    keywords: 'commit, visualization, iceberg';
-    context: 'Iceberg provides tools for handling git repositories directly from a Pharo Image.  Besides the facilities provided by Iceberg, there is a lot room for improvement.';
-    goal: 'The goal of this project is to provide a commit graph visualization for improving the commit navigation and comparison, such the ones offered by popular git clients (i.e. GitKraken). Currently, there is a basic, commit graph visualization implemented called https://github.com/tinchodias/hiedra. However, there is many things we can improve on the visualization and the Iceberg UI. For instance, branch colors, filtering, scalability, and many other interactions.';
-    level: 'Beginner to Intermediate';
-    yourself.
        		
  PharoTopic new
        title: 'Charting library';
@@ -317,26 +285,6 @@ PharoTopic new
        context: 'Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.';
        goal: 'Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton''s equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.';
        level: 'Intermediate';
-       yourself.
-
- PharoTopic new
-       title: 'Spec Debugging Tools';
-       contact: 'guillermopolito@gmail.com tesonep@gmail.com';
-       supervisors: 'Guillermo Polito, Pablo Tesone';
-       keywords: 'ui debugging';
-       context: 'Spec is a UI framework providing a component model with pluggable backends. This makes sometimes difficult to understand the composition structure and go from the UI to the corresponding code.';
-       goal: 'The goal of this project is to develop several debugging facilities to help understanding Spec UIs. For example, click on a component and go to its code, highlight component boundaries on mouse over.';
-       level: 'Beginner';
-       yourself.
-
- PharoTopic new
-       title: 'Spec Cassowary Layout';
-       contact: 'tesonep@gmail.com guillermopolito@gmail.com';
-       supervisors: 'Pablo Tesone, Guillermo Polito';
-       keywords: 'ui algorithm';
-       context: 'Spec is a UI framework providing a component model with pluggable backends. The current layouting options provide boxes, panes and grids.';
-       goal: 'The goal of this project is to develop a cassowary layout for Spec using existing constraint solvers. The student will need to define a DSL to describe constraints and define what are the minimal set of constraints components should have.';
-       level: 'Advanced';
        yourself.
 
 PharoTopic new
