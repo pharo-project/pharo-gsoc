@@ -296,3 +296,55 @@ PharoTopic new
        goal: 'Combine the flexibility of Smalltalk with the 3D modeling and visualization of FreeCAD for maximum programming productivity.';
        level: 'Intermediate'; 
        yourself.
+
+PharoTopic new
+       title: 'Generic Data Structures to use in the VM';
+       contact: 'tesonep@gmail.com, guillermopolito@gmail.com';
+       supervisors: 'Pablo Tesone, Guillermo Polito';
+       keywords: 'data structures, c language, transpilation';
+       context: 'Pharo VM is implemented using a Pharo language subset called Slang. This subset allows us to develop the Pharo VM as any other Pharo program. 
+	   By doing so, we can take profit of the power of Pharo and its tools (browsers, refactors, debugger). The VM is simulated and tested as a Pharo program,
+	    once it is ready it is transpiled to C and compiled with a normal C compiler. Not all Pharo idiomatics are present in Slang, but it allows us to develop
+		programs closer to a Pharo program. However, the powerful collection API of Pharo is not available when the program is transpiled to C. 
+		The goal of this topic is to generate a set of common data structures that are possible to translate to C and tested in Pharo. 
+		This data structures (e.g., stack, queue, list, heap, set, dictionary) should be implemented in a way that its translation does not affect the performance of
+		their users. Also, it includes to generate similar structures with different implementation, so the user have the option to use one or the other 
+		(e.g, a list based in an array and a list based in a linked-list).';
+       level: 'Intermediate';
+       yourself.
+
+PharoTopic new
+       title: 'Generating machine code method in the image side';
+       contact: 'guillermopolito@gmail.com, tesonep@gmail.com';
+       supervisors: 'Guillermo Polito, Pablo Tesone';
+       keywords: 'machine code generation, JIT, compilers';
+       context: 'The Pharo VM includes a mechanism to compile methods to machine code on the fly. This mechanism allows the VM to execute the more frequent methods as fast as possible.
+	   This compilation is done on-the-fly during the execution of the program without interaction with the VM. LLVM provides a way of generating machine code using an intermediate representation.
+	   There is an existing binding to use LLVM from Pharo. The objective of this topic is to generate a prototype of an image side compiler that can generate machine code implementations of a given method using LLVM.
+	   This mechanism can be used by the user when knowing exactly the type of the parameters and return type. The idea is to implement a prototype similar to Numba (https://numba.pydata.org/).';
+       level: 'Advance';
+       yourself.
+
+PharoTopic new
+       title: 'Packaging the PharoLauncher using Open Build Service';
+       contact: 'tesonep@gmail.com, guillermopolito@gmail.com';
+       supervisors: 'Pablo Tesone, Guillermo Polito';
+       keywords: 'packaging, build process, cmake, distribution, open build service';
+       context: 'The Pharo Launcher is an application that is directly installed by the users. This application has developed installers for OSX and Windows, although for Linux installation packages only uses a Zip file.
+	   Different Linux distributions have different ways of distributing applications: apt, yum, snap, rpm, etc.
+	   Having an application packaged for each of the distributions requires developing all the processes for each of the distributions.
+	   Open Build Services is a service provided by the comunity of openSUSE to provide a single way of packaging an application to different distributions.
+	   The objective of this topic is to modify the build process of the Pharo Launcher and integrate it with OBS. This objective requires to modify the build process of Pharo Launcher, learn about different build systems, and to implement them in OBS.';
+       level: 'Advance';
+       yourself.
+
+PharoTopic new
+       title: 'Text navigation key-bindings should be aligned with the OS';
+       contact: 'guillermopolito@gmail.com, tesonep@gmail.com,';
+       supervisors: 'Guillermo Polito, Pablo Tesone';
+       keywords: 'text editor, text navigation, key bindings, shortcuts';
+       context: 'Pharo is a powerful IDE; it includes a powerful text editor. This editor present all the classical key navigation features (e.g., going to the beginning of the line, to the end of text, next word, etc). However the key bindings used to navigate the text are specific to Pharo (they are similar to the ones in the current OS but not the exact ones), this produce problems to the new comers and make Pharo a little odd in the look and feel of the current operating system. These set of keys are inherited from historical reasons, and some users are used to them. 
+	   The objective of this topic is to have a configurable set of key bindings for text navigation, depending on the operating system executing Pharo the key bindings will be different. Also, it is important to keep the traditional set of bindings so users can decided what to use.';
+       level: 'Basic';
+       yourself.
+	   
