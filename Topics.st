@@ -159,15 +159,14 @@ access to resources via IPFS.';
 
 PharoTopic new
 	title: 'Improving code completion';
-	contact: 'stephane.ducasse@inria.fr, olk.zaytsev@gmail.com, esteban.lorenzano@inria.fr, juampiboy@gmail.com';
+	contact: 'guillermopolito@gmail.com, olk.zaytsev@gmail.com, esteban.lorenzano@inria.fr, juampiboy@gmail.com';
 	supervisors: 'Stéphane Ducasse, Oleksanrd Zaitsev, Esteban Lorenzano, Juan Pablo Sandoval Alcocer';
 	keywords: 'completion';
 	context: 'Automatic completion is really important. The current code completion already defines some good 
 behavior but it can do better.';
 	goal: 'The goal of the project is to improve the ecompletion infrastructure: 
 The tasks are: 
-(1) study the existing approaches (NOC and NEC), 
-(2) Write some tests to characterize specific behavior, 
+(1) Study the new completion frameworks
 (3) Improve the noise introduced by the Symbol table usage, 
 (4) build more heuristics.';
 	level: 'Intermediate';
@@ -345,6 +344,17 @@ PharoTopic new
        keywords: 'text editor, text navigation, key bindings, shortcuts';
        context: 'Pharo is a powerful IDE; it includes a powerful text editor. This editor present all the classical key navigation features (e.g., going to the beginning of the line, to the end of text, next word, etc). However the key bindings used to navigate the text are specific to Pharo (they are similar to the ones in the current OS but not the exact ones), this produce problems to the new comers and make Pharo a little odd in the look and feel of the current operating system. These set of keys are inherited from historical reasons, and some users are used to them. 
 	   The objective of this topic is to have a configurable set of key bindings for text navigation, depending on the operating system executing Pharo the key bindings will be different. Also, it is important to keep the traditional set of bindings so users can decided what to use.';
+       level: 'Basic';
+       yourself.
+
+
+PharoTopic new
+       title: 'Better code importer';
+       contact: 'stephane.ducasse@inria.fr';
+       supervisors: 'Stephane Ducasse';
+       keywords: 'Code file in/fileout';
+       context: 'Pharo is a powerful IDE. However it needs a way to load easily code fragments writing in tonel format. 
+The idea is to be able to select, load save code and to replace the old changeset.';
        level: 'Basic';
        yourself.
 	   
