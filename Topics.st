@@ -358,3 +358,16 @@ The idea is to be able to select, load save code and to replace the old changese
        level: 'Basic';
        yourself.
 	   
+PharoTopic new
+       title: 'Item Collector App';
+       contact: 'stephane.ducasse@inria.fr';
+       supervisors: 'Stephane Ducasse';
+       keywords: 'items, collector, web, REST, Spec';
+       context: 'Little Description is a description language to manage data.
+We use it to support the collection of games, books, .... 
+The goal of the internship is to improve the support: 
+- adding a webserver,
+- automatic data to bject mapping
+- way to describe automatically data ';
+       level: 'Basic';
+       yourself.
