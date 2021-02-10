@@ -371,3 +371,29 @@ The goal of the internship is to improve the support:
 - way to describe automatically data ';
        level: 'Basic';
        yourself.
+
+
+
+
+PharoTopic new
+    title: 'ROS+ROS2 On Pharo';
+    contact: 'santiago.bragagnolo@inria.fr';
+	supervisors: 'Santiago Bragagnolo';
+    keywords: 'pharo robotics ros ros2';
+    context: 'ROS/ROS2 is a middleware for robotics development open source. It has already more than 10 years, and is starting to seriously move to their version 2. ';
+    goal: 'We have already a large library on the development of ROS1 applications. In this context objective would be to develop the bindings to ROS2 and integrate it into the existing libraries. ';
+    level: ' Intermediate or Advanced';
+    yourself.
+
+
+
+PharoTopic new
+    title: 'Blockchain On Pharo';
+    contact: 'santiago.bragagnolo@inria.fr,';
+	supervisors: 'Santiago Bragagnolo';
+    keywords: 'pharo blockchain ethereum';
+    context: 'Blockchain is a pervasive technology. Interaction with distribtued smart contracts seems to be an unavoidable future. And the future is now. ';
+    goal: 'Pharo counts with a powerful library for interacting with Ethereum network. There are three main possible objectives: 1- enhance the navigation capabilities of Fog 2- Integrate Fog With Moose or 3- Enable new blockchain networks for the library ';
+    level: ' Intermediate or Advanced';
+    yourself.
+
