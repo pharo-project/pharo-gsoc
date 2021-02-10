@@ -1,6 +1,6 @@
 "use strict";
 
-const ideasUrl = 'https://raw.githubusercontent.com/pharo-project/pharo-project-proposals/master/Topics.st';
+const ideasUrl = 'https://raw.githubusercontent.com/olekscode/pharo-gsoc-ideas/master/docs/ideas.json';
 
 function getContentsOfFileFromURL(url) {
   var result = null;
