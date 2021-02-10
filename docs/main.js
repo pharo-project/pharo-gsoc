@@ -15,3 +15,8 @@ function getContentsOfFileFromURL(url) {
   });
   return result;
 }
+
+function getJsonFromURL(url) {
+  var jsonString = getContentsOfFileFromURL(url);
+  return JSON.parse(jsonString);
+}

@@ -3,7 +3,7 @@
     "title": "Extension of Iceberg to support Fossil",
     "supervisors": [
       {
-        "name": "Dave Mason"
+        "name": "Dave Mason",
         "email": "dmason@ryerson.ca"
       },
       {
@@ -34,7 +34,7 @@
     "level": ["Beginner", "Intermediate"]
   },
   {
-    "title": "SmartTest, a Test selection tool in a dynamically typed environment";
+    "title": "SmartTest, a Test selection tool in a dynamically typed environment",
     "supervisors": [
       {
         "name": "Anne Etien",
