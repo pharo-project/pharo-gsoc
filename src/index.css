@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&display=swap');
+
+:root {
+  --page-width: 1000px;
+  --text-font-family: 'Roboto', sans-serif;
+  --header-font-family: 'Merriweather Sans', sans-serif;
+  --text-font-size: 16px;
+  --pharo-blue: #3297d4;
+  --pharo-light-blue: #dcedf7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 900px;
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  position: absolute;
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font-family);
+  color: var(--pharo-blue);
+  text-align: center;
 }

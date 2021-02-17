@@ -15,8 +15,6 @@ const App = () => (
     <div>
       <Navigation />
       
-      <hr />
-
       <Route exact path={ROUTES.LANDING} component={LandingPage} />
       <Route path={ROUTES.IDEAS} component={IdeasPage} />
     </div>
