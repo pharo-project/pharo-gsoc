@@ -30,6 +30,8 @@ class IdeasPage extends React.Component {
     super();
 
     this.ideas = getJsonFromURL(URLS.IDEAS_FILE);
+    this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE);
+
     this.state = {
       ideasToDisplay: this.ideas,
       showDetailedIdeaView: false,
@@ -90,6 +92,7 @@ class IdeasPage extends React.Component {
             <IdeaDetailedView
               show={this.state.showDetailedIdeaView}
               idea={this.state.ideaToShowInDetailedView}
+              supervisors={this.supervisors}
               onClose={this.closeDetailedIdeaView} />
             {ideasHtml}
           </div>

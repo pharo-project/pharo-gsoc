@@ -5,9 +5,11 @@ import lightbulb from './img/lightbulb.png';
 
 const IdeaShortSummary = (props) => (
   <div className="idea-summary" onClick={e => props.onClick(this)}>
-    <img src={lightbulb} alt="lightbulb" />
-    <div className="idea-summary-title">{props.idea.title}</div>
-    <p className="idea-summary-description">{props.idea.goal}</p>
+    <div>
+      <img src={lightbulb} alt="lightbulb" />
+      <p className="idea-summary-title">{props.idea.title}</p>
+    </div>
+    <p className="idea-summary-description">{`Keywords: ${props.idea.keywords.join(', ')}`}</p>
   </div>
 );
 

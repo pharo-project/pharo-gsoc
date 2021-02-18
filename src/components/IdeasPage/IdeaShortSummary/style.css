@@ -1,24 +1,26 @@
 .idea-summary {
   width: 230px;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
   margin: 0 20px 20px 0;
   padding: 18px;
   padding-left: 10px;
   box-shadow: 0 1px 1px 0 rgb(66 66 66 / 8%), 0 1px 3px 1px rgb(66 66 66 / 16%);
   border-radius: 3px;
+  background-color: var(--color-light-gray);
 }
 
 .idea-summary:hover {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-pharo-light-blue);
   box-shadow: 0 1px 3px 1px rgb(66 66 66 / 20%), 0 2px 8px 4px rgb(66 66 66 / 10%);
 }
 
 .idea-summary img {
-  width: 60px;
+  width: 43px;
   float: left;
-  margin-right: 10px;
-  margin-bottom: 16px;
+  margin-right: 7px;
+  margin-bottom: 100%;
+  margin-top: -8px;
 }
 
 .idea-summary-title {

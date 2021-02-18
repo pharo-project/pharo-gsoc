@@ -1,0 +1,17 @@
+.complexity-marker {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+}
+
+.beginner {
+  background-color: #e1f8dc;
+}
+
+.intermediate {
+  background-color: #fef8dd;
+}
+
+.advanced {
+  background-color: #fddfdf;
+}

@@ -14,7 +14,35 @@
 .modal {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 20px 40px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.complexity-markers {
+  display: block;
+  text-align: center;
+}
+
+.complexity-marker {
+  margin-left: 10px;
+  display: inline;
+}
+
+.supervisor-markers {
+  display: block;
+  text-align: center;
+}
+
+.supervisor {
+  margin-left: 10px;
+  display: inline;
 }
