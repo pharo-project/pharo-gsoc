@@ -4,7 +4,7 @@ PharoTopic new
     title: 'The name of your project';
     contact: 'email address';
     supervisors: 'Supervisors names';
-    keywords: 'keywords separated by spaces';
+    keywords: 'keywords separated by commas';
     context: 'a description of the context of the project';
     goal: 'description of the goal';
     level: 'Beginner or Intermediate or Advanced';
@@ -18,7 +18,7 @@ PharoTopic new
     title: 'Extension of Iceberg to support Fossil';
     contact: 'dmason@ryerson.ca, guillermopolito@gmail.com';
 	supervisors: 'Dave Mason, Guillermo Polito';
-    keywords: 'iceberg fossil';
+    keywords: 'iceberg, fossil';
     context: 'Iceberg is a significant improvement for cooperative development on Pharo. It is intended to support multiple Version Control Systems, but currently only works with Git. Fossil is another VCS that is a more integrated, full feature alternative, particularly well suited to smaller team development.';
     goal: 'The goal of this project is to add an additional VCS to Iceberg. In addition to making the particular VCS available, dependencies on Git will be exposed and Iceberg will become more generic so that other VCSs, such as Mercurial or SVN, can be more easily added.';
     level: ' Intermediate or Advanced';
@@ -28,8 +28,7 @@ PharoTopic new
         title: 'Classes and Methods for Spatial Data';
         contact: 'etienne.delay@cirad.fr serge.stinckwich@ird.fr';
         supervisors: 'Etienne Delay, Serge Stinckwich';
-        keywords: 'geography, spatial data, spatial data manipulation,
-geographical grammar';
+        keywords: 'geography, spatial data, spatial data manipulation, geographical grammar';
         context: 'As a title of "the economist" The world’s most
 valuable resource is no longer oil, but data. Nowadays data and
 especially geospatial data become central in our societies. Each one of
@@ -47,7 +46,7 @@ PharoTopic new
     title: 'SmartTest, a Test selection tool in a dynamically typed environment';
     contact: 'anne.etien@inria.fr,nicolas.anquetil@inria.fr';
     supervisors: 'Anne Etien, Nicolas Anquetil';
-    keywords: 'Test selection, Dynamic analysis, Static analysis';
+    keywords: 'test selection, dynamic analysis, static analysis';
     context: 'Currently in Pharo, when the developer modifies code, he/she has to know which tests may have been broken to run them or in doubt run all the tests of the class or the project. In that later case, it can be very long. We would like to introduce in Pharo a test selection tool to help the developer in his/her selection. We already developed SmartTest, such a tool, but it is not useable in practice, since it is too long and too intrusive.';
     goal: 'Implement some strategies to enhance the performance of the tool. Evaluate these strategies on real cases studies in an a posteriori experiment. Configure and tune the tool. Evaluate the tool on the field by taking advantage of the community. Put it in the Pharo 8 distribution.';
     level: 'Intermediate';
@@ -77,7 +76,7 @@ PharoTopic new
     title: 'Projectional Editor for Advanced Pharo Debuggers';
     contact: 'steven.costiou@inria.fr, vincent.aranega@inria.fr';
     supervisors: 'Steven Costiou, Vincent Aranega';
-    keywords: 'Debugging Editor IDE AST';
+    keywords: 'debugging, editor, IDE, AST';
     context: 'Currently in Pharo, the Abstract Syntax Tree (AST) is generated from the source code, and stored into a cache. Each modification of the source code invalidates the cache and triggers the generation of a new AST object. Every annotation of the AST is lost in the process.';
     goal: 'Projectional editors make possible to edit different representation of the same underlying model. This project aims at building a projectional editor which manipulates an AST model instead of source code. With this tool, it will be possible to maintain a permanent representation of the system as an AST, and to new tools directly based on it, as new debugging tools.';
     level: 'Intermediate';
@@ -87,7 +86,7 @@ PharoTopic new
     title: 'Dependency Graph in the System Browser';
     contact: 'alexandre.bergel@me.com, akevalion@gmail.com';
     supervisors: 'Alexandre Bergel, Milton Mamani';
-    keywords: 'Visualization, Software Engineering, Roassal';
+    keywords: 'visualization, software engineering, roassal';
     context: 'Making the dependencies between software components explicit is known to be efficient at improving the quality of source code. Visualizations are commonly employed to represent dependencies between packages, classes, and methods.';
     goal: 'This project is about embedding a visualization within Calypso, the Pharo code browser, that represents dependencies between projects, packages, classes, and methods.';
     level: 'Intermediate';
@@ -115,7 +114,7 @@ PharoTopic new
 	title: 'Hacking Pharo in Your Web Browser';
 	contact: 'luc.fabresse@imt-lille-douai.fr, Damien.pollet@inria.fr';
 	supervisors: 'Luc Fabresse, Damien Pollet';
-	keywords: 'Docker, Virtual machine';
+	keywords: 'docker, virtual machine';
 	context: 'There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.';
 	goal:
 'Possible tasks are:
@@ -132,7 +131,7 @@ PharoTopic new
 	title: 'IPFS for Pharo';
 	contact: 'marcus.denker@inria.fr, pavel.krivanek@gmail.com';
 	supervisors: 'Marcus Denker, Pavel Krivanek';
-	keywords: 'peer to peer file systems';
+	keywords: 'peer to peer, file systems';
 	context: ' IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices 
 with the same system of files. 
 In some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, 
@@ -176,7 +175,7 @@ PharoTopic new
 	title: 'New Collections for Pharo';
 	contact: 'juampiboy@gmail.com, stephane.ducasse@inria.fr';
 	supervisors: 'Juan Pablo Sandoval Alcocer, Stéphane Ducasse';
-	keywords: 'Collection DataStructure Benchmarks';
+	keywords: 'collections, data structures, benchmarks';
 	context: 'Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)
 with around 100 classes. But new collections exist such as BTree, QuadTree, SkipList, Trie, …
 
@@ -215,7 +214,7 @@ PharoTopic new
 	title: 'Enhancing Pillar';
 	contact: 'stephane.ducasse@inria.fr, guillermopolito@gmail.com';
 	supervisors: 'Stéphane Ducasse, Guillermo Polito';
-	keywords: 'Pillar OpenDocument LibreOffice OpenOffice document tree visitor';
+	keywords: 'pillar, OpenDocument, LibreOffice, OpenOffice, document, tree, visitor';
 	context: 'Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P
     illar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects 
     (http://www.smalltalkhub.com/#!/~Pier/Pillar) and most of the pharo books and mooc' ;
@@ -250,7 +249,7 @@ PharoTopic new
 	title: 'DataFrame';
 	contact: 'olk.zaytsev@gmail.com, serge.stinckwich@gmail.com, philippeback@gmail.com';
 	supervisors: 'Oleksandr Zaitsev, Serge Stinckwich, Philippe Back';
-	keywords: 'Data Science, Data Analysis, DataFrame, Tabular Data, Statistics';
+	keywords: 'data science, data analysis, dataframe, tabular data, statistics';
 	context: 'DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.';
 	goal: 'The goal of this project is to introduce new functionality to DataFrame (for example, handling missing values) and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)';
 	level: 'Beginner or Intermediate';
@@ -260,7 +259,7 @@ PharoTopic new
        title: 'Charting library';
        contact: 'cyril@ferlicot.me, julien.delplanque@inria.fr, olk.zaytsev@gmail.com, alexandre.bergel@me.com';
        supervisors: 'Cyril Ferlicot-Delbecque, Julien Delplanque, Oleksandr Zaitsev, Alexandre Bergel';
-       keywords: 'Data Visualization, Data Science, Plotting, Grammar of Graphics';
+       keywords: 'data visualization, data science, plotting, grammar of graphics';
        context: 'In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.';
        goal: 'Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo''s Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.';
        level: 'Intermediate or Advanced';
@@ -270,7 +269,7 @@ PharoTopic new
        title: 'NLP Library';
        contact: 'olk.zaytsev@gmail.com, alexandre.bergel@me.com';
        supervisors: 'Oleksandr Zaitsev, Alexandre Bergel';
-       keywords: 'Natural Language Processing, Statistics, Data Science';
+       keywords: 'natural language processing, statistics, data science';
        context: 'Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.';
        goal: 'We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.';
        level: 'Intermediate or Advanced';
@@ -290,7 +289,7 @@ PharoTopic new
        title: '3D CAD scripting using Smalltalk';
        contact: 'askoh@askoh.com';
        supervisors: 'Aik-Siong Koh';
-       keywords: '3D CAD Smalltalk scripting';
+       keywords: '3D CAD, smalltalk, scripting';
        context: 'Just like Python, Smalltalk is an extremely flexible programming environment to create code. Smalltalk has the best IDE and debugger of any programming environment. 3D CAD and Visualization is the standard way of presenting information nowadays. FreeCAD is an open source CAD system with powerful modeling capabilities and beautiful graphics. StFreeCAD will be an open source attempt to combine the best of Pharo Smalltalk and FreeCAD. Smalltalk code can drive FreeCAD directly. The project is to embed FreeCAD inside Pharo Smalltalk IDE.';
        goal: 'Combine the flexibility of Smalltalk with the 3D modeling and visualization of FreeCAD for maximum programming productivity.';
        level: 'Intermediate'; 
@@ -352,7 +351,7 @@ PharoTopic new
        title: 'Better code importer';
        contact: 'stephane.ducasse@inria.fr';
        supervisors: 'Stéphane Ducasse';
-       keywords: 'Code file in/fileout';
+       keywords: 'code, filein, fileout';
        context: 'Pharo is a powerful IDE. However it needs a way to load easily code fragments writing in tonel format. 
 The idea is to be able to select, load save code and to replace the old changeset.';
        level: 'Basic';
@@ -379,7 +378,7 @@ PharoTopic new
     title: 'ROS+ROS2 On Pharo';
     contact: 'santiago.bragagnolo@inria.fr';
 	supervisors: 'Santiago Bragagnolo';
-    keywords: 'pharo robotics ros ros2';
+    keywords: 'pharo, robotics, ros, ros2';
     context: 'ROS/ROS2 is a middleware for robotics development open source. It has already more than 10 years, and is starting to seriously move to their version 2. ';
     goal: 'We have already a large library on the development of ROS1 applications. In this context objective would be to develop the bindings to ROS2 and integrate it into the existing libraries. ';
     level: ' Intermediate or Advanced';
@@ -391,7 +390,7 @@ PharoTopic new
     title: 'Blockchain On Pharo';
     contact: 'santiago.bragagnolo@inria.fr,';
 	supervisors: 'Santiago Bragagnolo';
-    keywords: 'pharo blockchain ethereum';
+    keywords: 'pharo, blockchain, ethereum';
     context: 'Blockchain is a pervasive technology. Interaction with distribtued smart contracts seems to be an unavoidable future. And the future is now. ';
     goal: 'Pharo counts with a powerful library for interacting with Ethereum network. There are three main possible objectives: 1- enhance the navigation capabilities of Fog 2- Integrate Fog With Moose or 3- Enable new blockchain networks for the library ';
     level: ' Intermediate or Advanced';
