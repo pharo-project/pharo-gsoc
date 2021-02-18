@@ -21,7 +21,7 @@ PharoTopic new
     keywords: 'iceberg, fossil';
     context: 'Iceberg is a significant improvement for cooperative development on Pharo. It is intended to support multiple Version Control Systems, but currently only works with Git. Fossil is another VCS that is a more integrated, full feature alternative, particularly well suited to smaller team development.';
     goal: 'The goal of this project is to add an additional VCS to Iceberg. In addition to making the particular VCS available, dependencies on Git will be exposed and Iceberg will become more generic so that other VCSs, such as Mercurial or SVN, can be more easily added.';
-    level: ' Intermediate or Advanced';
+    level: 'Intermediate or Advanced';
     yourself.
 
 PharoTopic new
@@ -69,7 +69,7 @@ Some experiments have been done already to establish the viability: code (for ol
     goal: 'Analyze the source code of publicly available monticello/tonel packages and determine which classes and methods are used and defined by them (senders/references) (see DeprecationFinder). For Monticello use the history and deduplicate source code versions to reduce the amount of data that needs to be handled (see MonticelloProjects). Apply to projects on smalltalkhub and older repositories. 
 
 Provide a api and a gui so Pharo developers can quickly access this information, and browse global and historic users.';
-    level: 'advanced';
+    level: 'Advanced';
     yourself.
 
 PharoTopic new
@@ -106,7 +106,7 @@ PharoTopic new
 - Writting of documentation
 - Improve integration of custom widgets with javascript
 - Integration with the Willow stack';
-	level: 'Beginner to Intermediate';
+	level: 'Beginner or Intermediate';
 	yourself.
 
 	
@@ -153,7 +153,7 @@ More information:
 the existing server and start to experiment how IPFS can be used with Pharo. 
 For example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide
 access to resources via IPFS.'; 
-	level: 'Normal';
+	level: 'Intermediate';
 	yourself.
 
 PharoTopic new
@@ -320,7 +320,7 @@ PharoTopic new
 	   This compilation is done on-the-fly during the execution of the program without interaction with the VM. LLVM provides a way of generating machine code using an intermediate representation.
 	   There is an existing binding to use LLVM from Pharo. The objective of this topic is to generate a prototype of an image side compiler that can generate machine code implementations of a given method using LLVM.
 	   This mechanism can be used by the user when knowing exactly the type of the parameters and return type. The idea is to implement a prototype similar to Numba (https://numba.pydata.org/).';
-       level: 'Advance';
+       level: 'Advanced';
        yourself.
 
 PharoTopic new
@@ -333,7 +333,7 @@ PharoTopic new
 	   Having an application packaged for each of the distributions requires developing all the processes for each of the distributions.
 	   Open Build Services is a service provided by the comunity of openSUSE to provide a single way of packaging an application to different distributions.
 	   The objective of this topic is to modify the build process of the Pharo Launcher and integrate it with OBS. This objective requires to modify the build process of Pharo Launcher, learn about different build systems, and to implement them in OBS.';
-       level: 'Advance';
+       level: 'Advanced';
        yourself.
 
 PharoTopic new
@@ -343,7 +343,7 @@ PharoTopic new
        keywords: 'text editor, text navigation, key bindings, shortcuts';
        context: 'Pharo is a powerful IDE; it includes a powerful text editor. This editor present all the classical key navigation features (e.g., going to the beginning of the line, to the end of text, next word, etc). However the key bindings used to navigate the text are specific to Pharo (they are similar to the ones in the current OS but not the exact ones), this produce problems to the new comers and make Pharo a little odd in the look and feel of the current operating system. These set of keys are inherited from historical reasons, and some users are used to them. 
 	   The objective of this topic is to have a configurable set of key bindings for text navigation, depending on the operating system executing Pharo the key bindings will be different. Also, it is important to keep the traditional set of bindings so users can decided what to use.';
-       level: 'Basic';
+       level: 'Beginner';
        yourself.
 
 
@@ -354,7 +354,7 @@ PharoTopic new
        keywords: 'code, filein, fileout';
        context: 'Pharo is a powerful IDE. However it needs a way to load easily code fragments writing in tonel format. 
 The idea is to be able to select, load save code and to replace the old changeset.';
-       level: 'Basic';
+       level: 'Beginner';
        yourself.
 	   
 PharoTopic new
@@ -368,7 +368,7 @@ The goal of the internship is to improve the support:
 - adding a webserver,
 - automatic data to bject mapping
 - way to describe automatically data ';
-       level: 'Basic';
+       level: 'Beginner';
        yourself.
 
 
@@ -381,7 +381,7 @@ PharoTopic new
     keywords: 'pharo, robotics, ros, ros2';
     context: 'ROS/ROS2 is a middleware for robotics development open source. It has already more than 10 years, and is starting to seriously move to their version 2. ';
     goal: 'We have already a large library on the development of ROS1 applications. In this context objective would be to develop the bindings to ROS2 and integrate it into the existing libraries. ';
-    level: ' Intermediate or Advanced';
+    level: 'Intermediate or Advanced';
     yourself.
 
 
@@ -393,7 +393,7 @@ PharoTopic new
     keywords: 'pharo, blockchain, ethereum';
     context: 'Blockchain is a pervasive technology. Interaction with distribtued smart contracts seems to be an unavoidable future. And the future is now. ';
     goal: 'Pharo counts with a powerful library for interacting with Ethereum network. There are three main possible objectives: 1- enhance the navigation capabilities of Fog 2- Integrate Fog With Moose or 3- Enable new blockchain networks for the library ';
-    level: ' Intermediate or Advanced';
+    level: 'Intermediate or Advanced';
     yourself.
 
 PharoTopic new
