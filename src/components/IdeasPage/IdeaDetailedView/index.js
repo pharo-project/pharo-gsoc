@@ -31,13 +31,14 @@ class IdeaDetailedView extends React.Component {
         <div className="modal" onClick={this.stopEventPropagation}>
           <h2>{this.props.idea.title}</h2>
 
-          <div className="supervisor-markers">
-            {supervisorMarkers}
-          </div>
-
           <div className="complexity-markers">
             Complexity:
             {complexityMarkers}
+          </div>
+
+          <h4>Supervisors</h4>
+          <div className="supervisor-markers">
+            {supervisorMarkers}
           </div>
 
           <h4>Context</h4>
