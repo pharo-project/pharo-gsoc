@@ -351,7 +351,7 @@ PharoTopic new
 PharoTopic new
        title: 'Better code importer';
        contact: 'stephane.ducasse@inria.fr';
-       supervisors: 'Stephane Ducasse';
+       supervisors: 'Stéphane Ducasse';
        keywords: 'Code file in/fileout';
        context: 'Pharo is a powerful IDE. However it needs a way to load easily code fragments writing in tonel format. 
 The idea is to be able to select, load save code and to replace the old changeset.';
@@ -361,7 +361,7 @@ The idea is to be able to select, load save code and to replace the old changese
 PharoTopic new
        title: 'Item Collector App';
        contact: 'stephane.ducasse@inria.fr';
-       supervisors: 'Stephane Ducasse';
+       supervisors: 'Stéphane Ducasse';
        keywords: 'items, collector, web, REST, Spec';
        context: 'Little Description is a description language to manage data.
 We use it to support the collection of games, books, .... 
