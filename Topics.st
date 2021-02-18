@@ -96,7 +96,7 @@ PharoTopic new
 PharoTopic new
 	title: 'Material Design Lite';
 	contact: 'cyril (a) ferlicot.me, guillaume.larcheveque (a) gmail.com and yannlesag (a) gmail.com';
-	supervisors: 'Cyril Ferlicot-Delbecque, Guillaume Larchevêque and Yann Lesage';
+	supervisors: 'Cyril Ferlicot-Delbecque, Guillaume Larchevêque, Yann Lesage';
 	keywords: 'material design lite, material-ui, seaside, web, components';
 	context: 'Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google''s Material Design guidelines.';
 	goal: 'We have multiple ideas to improve the project. (They are just ideas. Students can choose what they prefer)
