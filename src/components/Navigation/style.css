@@ -1,7 +1,7 @@
 #navbar {
   display: block;
   overflow: visible;
-  border-bottom: 5px solid #f5f5f5;
+  border-bottom: 5px solid var(--color-light-gray);
   /* margin-bottom: 20px; */
 }
 
@@ -29,15 +29,15 @@
 #navbar a {
   display: inline-block;
   padding: 15px 10px;
-  color: var(--pharo-blue);
+  color: var(--color-pharo-blue);
   text-decoration: none;
 }
 
 #navbar a:hover {
-  background-color: var(--pharo-light-blue);
+  background-color: var(--color-pharo-light-blue);
 }
 
 #navbar a:active {
-  background-color: var(--pharo-blue);
+  background-color: var(--color-pharo-blue);
   color: white;
 }

@@ -1,8 +1,8 @@
 .idea-summary {
-  width: 250px;
+  width: 230px;
   height: 200px;
   overflow: hidden;
-  margin: 20px;
+  margin: 0 20px 20px 0;
   padding: 18px;
   padding-left: 10px;
   box-shadow: 0 1px 1px 0 rgb(66 66 66 / 8%), 0 1px 3px 1px rgb(66 66 66 / 16%);
@@ -10,7 +10,7 @@
 }
 
 .idea-summary:hover {
-  background-color: #f5f5f5;
+  background-color: var(--color-light-gray);
   box-shadow: 0 1px 3px 1px rgb(66 66 66 / 20%), 0 2px 8px 4px rgb(66 66 66 / 10%);
 }
 
@@ -32,6 +32,6 @@ p.idea-summary-description {
   max-height: 150px;
   text-overflow: ellipsis;
   overflow: hidden;
-  color: #424242;
+  color: var(--color-dark-gray);
   font-size: var(--text-font-size);
 }
