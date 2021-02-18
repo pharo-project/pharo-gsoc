@@ -36,7 +36,7 @@ class IdeaDetailedView extends React.Component {
             {complexityMarkers}
           </div>
 
-          <h4>Supervisors</h4>
+          <h4>Mentors</h4>
           <div className="supervisor-markers">
             {supervisorMarkers}
           </div>

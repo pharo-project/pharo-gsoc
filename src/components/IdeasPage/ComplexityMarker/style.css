@@ -1,7 +1,7 @@
 .complexity-marker {
-  padding: 8px;
-  border: 1px solid lightgray;
-  border-radius: 6px;
+  padding: 6px;
+  /* border: 1px solid lightgray; */
+  /* border-radius: 6px; */
 }
 
 .beginner {

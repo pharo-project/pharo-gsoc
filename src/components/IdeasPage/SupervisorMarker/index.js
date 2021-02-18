@@ -4,10 +4,12 @@ import './style.css';
 import defaultSupervisorImage from './img/defaultSupervisorImage.png';
 
 const SupervisorMarker = (props) => (
-  <div class="supervisor">
+  <div className="supervisor">
     <img src={defaultSupervisorImage} alt="" />
-    <p>{props.supervisor.name}</p>
-    <a href={`mailto:${props.supervisor.email}`}>{props.supervisor.email}</a>
+    <div className="supervisor-info">
+      <p className="supervisor-name">{props.supervisor.name}</p>
+      <a href={`mailto:${props.supervisor.email}`}>{props.supervisor.email}</a>
+    </div>
   </div>
 );
 

@@ -1,13 +1,22 @@
 .supervisor {
   padding: 8px;
-  border: 1px solid lightgray;
   border-radius: 6px;
-  display: block;
-  width: 250px;
+  width: 330px;
+  text-align: left;
 }
 
 .supervisor img {
   width: 60px;
   border-radius: 100%;
   float: left;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.supervisor-info {
+  display: block;
+}
+
+.supervisor-name {
+  margin: 10px 0 0 0;
 }
