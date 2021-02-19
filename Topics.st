@@ -437,7 +437,7 @@ PharoTopic new
        contact: 'hernan.morales@gmail.com';
        supervisors: 'Hernán Morales';
        keywords: 'gis, geometry';
-       context: 'Pharo has already support of geometric shapes in the Geometry package, but its compatibility with the common architecture of The OpenGIS Consortium's Simple Feature Access (ISO 19125 SWG, https://www.ogc.org/standards/sfa) (SFA) should be revised. This project proposes to add support to the ISO 19125 SWG standard as a Pharo library.';
+       context: 'Pharo has already support of geometric shapes in the Geometry package, but its compatibility with the common architecture of The OpenGIS Consortium''s Simple Feature Access (ISO 19125 SWG, https://www.ogc.org/standards/sfa) (SFA) should be revised. This project proposes to add support to the ISO 19125 SWG standard as a Pharo library.';
        level: 'Beginner';
        yourself.
 
