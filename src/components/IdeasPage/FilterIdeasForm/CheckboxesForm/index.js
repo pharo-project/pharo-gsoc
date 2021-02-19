@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './style.css';
-
 
 class CheckboxesForm extends React.Component {
   constructor(props) {

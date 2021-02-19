@@ -38,23 +38,55 @@ class IdeasPage extends React.Component {
       ideaToShowInDetailedView: null
     };
 
+    this.filters = {
+      selectedLevel: null,
+      selectedKeywords: null,
+      selectedSupervisors: null
+    }
+
+    this.filterLevel = this.filterLevel.bind(this);
     this.filterKeywords = this.filterKeywords.bind(this);
     this.filterSupervisors = this.filterSupervisors.bind(this);
     this.closeDetailedIdeaView = this.closeDetailedIdeaView.bind(this);
   }
 
+  applyFilters() {
+    var filteredIdeas = this.ideas;
+
+    if (this.filters.selectedLevel) {
+      filteredIdeas = filteredIdeas
+        .filter(idea => idea.levels
+          .includes(this.filters.selectedLevel));
+    }
+
+    if (this.filters.selectedKeywords) {
+      filteredIdeas = filteredIdeas
+        .filter(idea => idea.keywords
+          .some(x => this.filters.selectedKeywords.includes(x)));
+    }
+
+    if (this.filters.selectedSupervisors) {
+      filteredIdeas = filteredIdeas
+        .filter(idea => idea.supervisors
+          .some(x => this.filters.selectedSupervisors.includes(x)));
+    }
+
+    this.setState({ideasToDisplay: filteredIdeas});
+  }
+
+  filterLevel(selectedLevel) {
+    this.filters.selectedLevel = selectedLevel;
+    this.applyFilters();
+  }
+
   filterKeywords(selectedKeywords) {
-    this.setState({
-      ideasToDisplay: this.ideas
-        .filter(idea => idea.keywords.some(x => selectedKeywords.includes(x)))
-    });
+    this.filters.selectedKeywords = selectedKeywords;
+    this.applyFilters();
   }
 
   filterSupervisors(selectedSupervisors) {
-    this.setState({
-      ideasToDisplay: this.ideas
-        .filter(idea => idea.supervisors.some(x => selectedSupervisors.includes(x)))
-    });
+    this.filters.selectedSupervisors = selectedSupervisors;
+    this.applyFilters();
   }
 
   showIdea(idea) {
@@ -84,6 +116,7 @@ class IdeasPage extends React.Component {
         <aside>
           <FilterIdeasForm
             ideas={this.ideas}
+            onLevelChange={this.filterLevel}
             onKeywordsChange={this.filterKeywords}
             onSupervisorsChange={this.filterSupervisors} />
         </aside>

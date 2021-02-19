@@ -3,6 +3,7 @@ import React from 'react';
 import './style.css';
 
 import CheckboxesForm from './CheckboxesForm';
+import LevelSelectionForm from './LevelSelectionForm';
 
 
 class FilterIdeasForm extends React.Component {
@@ -15,21 +16,10 @@ class FilterIdeasForm extends React.Component {
   }
 
   render() {
-    const levelsRadiobuttons = this.levels.map(level =>
-      <div key={level}>
-        <label>
-          <input type="radio" id={level} name="level" value={level} />
-          {level}
-        </label>
-      </div>
-    );
-
     return (
       <div>
-        <form>
-          <h3>Level</h3>
-          {levelsRadiobuttons}
-        </form>
+        <LevelSelectionForm
+          onChange={this.props.onLevelChange} />
 
         <CheckboxesForm
           title='Keywords'
