@@ -433,7 +433,7 @@ PharoTopic new
        yourself.
 	  
 PharoTopic new
-       title: 'Support for OpenGIS Consortium's Simple Feature Access (ISO 19125 SWG)';
+       title: 'Support for OpenGIS Consortium''s Simple Feature Access (ISO 19125 SWG)';
        contact: 'hernan.morales@gmail.com';
        supervisors: 'Hernán Morales';
        keywords: 'gis, geometry';
