@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.css';
+
 
 class CheckboxesForm extends React.Component {
   constructor(props) {
@@ -7,12 +9,14 @@ class CheckboxesForm extends React.Component {
     this.items = props.items;
 
     this.state = {
-      selectedItems: this.items
+      selectedItems: this.items,
+      showList: false
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.selectAll = this.selectAll.bind(this);
     this.deselectAll = this.deselectAll.bind(this);
+    this.toggleList = this.toggleList.bind(this);
   }
 
   handleChange(event) {
@@ -51,6 +55,12 @@ class CheckboxesForm extends React.Component {
     return false;
   }
 
+  toggleList() {
+    this.setState({
+      showList: !this.state.showList
+    });
+  }
+
   render() {
     const checkboxes = this.items.map(each =>
       <div key={each}>
@@ -65,14 +75,20 @@ class CheckboxesForm extends React.Component {
       </div>
     );
 
-    return (
-      <form>
-        <h3>{this.props.title}</h3>
+    const collapsibleList = (
+      <div>
         <div className='select-deselect-all'>
           <a href='javascript:void(0)' onClick={this.selectAll}>Select all</a>
           <a href='javascript:void(0)' onClick={this.deselectAll}>Deselect all</a>
         </div>
-          {checkboxes}
+        {checkboxes}
+      </div>
+    );
+
+    return (
+      <form>
+        <h3 onClick={this.toggleList}>{this.props.title}</h3>
+        {this.state.showList ? collapsibleList : null}
       </form>);
   }
 }
