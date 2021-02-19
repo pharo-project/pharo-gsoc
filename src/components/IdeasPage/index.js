@@ -32,6 +32,14 @@ class IdeasPage extends React.Component {
     this.ideas = getJsonFromURL(URLS.IDEAS_FILE);
     this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE);
 
+    this.supervisors = this.supervisors.map(each => ({
+      ...each,
+      pictureUrl:
+        each.github ?
+        getJsonFromURL(`https://api.github.com/users/${each.github}`).avatar_url :
+        null
+    }));
+
     this.state = {
       ideasToDisplay: this.ideas,
       showDetailedIdeaView: false,
