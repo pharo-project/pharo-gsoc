@@ -476,5 +476,84 @@
         "levels" : [
             "Intermediate"
         ]
+    },
+    {
+        "title" : "PCA Methods",
+        "supervisors" : [
+            "Oleksandr Zaitsev",
+            "Hernán Morales"
+        ],
+        "context" : "Write an object-model in Pharo to provide Principal Component Analysis (PCA) variants such as Sparse PCA, Randomized PCA, Incremental PCA and Kernel PCA (Centering).\nThe PolyMath library already provides an implementation of PCA which could be used as basis for extending with.",
+        "goal" : "",
+        "keywords" : [
+            "pca",
+            "sva",
+            "dimensionality reduction"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "libp2p Pharo implementation",
+        "supervisors" : [
+            "Hernán Morales"
+        ],
+        "context" : "\" Libp2p is a modular system of protocols, specifications and libraries that enable the development of peer-to-peer network applications.\". It is the basis of the IPFS Project. This project proposes to write Pharo objects to support the libp2p networking stack. With it users will be able to establish connections between peers over the network, encrypt connections and multiplex to start a node. Also it will enable to discover peers over a public network.",
+        "goal" : "",
+        "keywords" : [
+            "p2p",
+            "networking",
+            "ipfs"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Support for OpenGIS Consortium's Simple Feature Access (ISO 19125 SWG)",
+        "supervisors" : [
+            "Hernán Morales"
+        ],
+        "context" : "Pharo has already support of geometric shapes in the Geometry package, but its compatibility with the common architecture of The OpenGIS Consortium's Simple Feature Access (ISO 19125 SWG, https://www.ogc.org/standards/sfa) (SFA) should be revised. This project proposes to add support to the ISO 19125 SWG standard as a Pharo library.",
+        "goal" : "",
+        "keywords" : [
+            "gis",
+            "geometry"
+        ],
+        "levels" : [
+            "Beginner"
+        ]
+    },
+    {
+        "title" : "Matrix state of the art",
+        "supervisors" : [
+            "Hernán Morales"
+        ],
+        "context" : "During several decades, the Smalltalk community provided multiple open-source Matrix implementations. The goal is to obtain performance metrics from comparing the run-time and space efficency of PMMatrix (PolyMath), AIMatrix (pharo-ai), Array2D (built-in) and other open-sourced matrix implementations for Pharo. The idea is not to include objects like DataFrame, Table, Grids, or non-mathematical tabular-like structures, although compatibility between converting a Matrix to a DataFrame (for example) is a nice to have. It is also expected to obtain a feature-comparison between all the implementations, list missing matrices types or operations, and a recommendation to consolidate a default package to be used for the Pharo community for Matrix operations.",
+        "goal" : "",
+        "keywords" : [
+            "matrix",
+            "vectors",
+            "table"
+        ],
+        "levels" : [
+            "Beginner"
+        ]
+    },
+    {
+        "title" : "FFI Integration of GDAL",
+        "supervisors" : [
+            "Hernán Morales"
+        ],
+        "context" : "GDAL (https://gdal.org/) is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source License by the Open Source Geospatial Foundation. A Pharo binding of GDAL would allow to handle dozens of raster and vector formats currently not supported in the image. The API is well documented and there are other bindings which can be used as reference (Python and Java for example).",
+        "goal" : "",
+        "keywords" : [
+            "gis",
+            "geometry"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
     }
 ]
