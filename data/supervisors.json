@@ -2,193 +2,161 @@
     {
         "name" : "Aik-Siong Koh",
         "email" : "askoh@askoh.com",
-        "description" : "",
-        "picture" : ""
+        "github" : ""
     },
     {
         "name" : "Alexandre Bergel",
         "email" : "alexandre.bergel@me.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "bergel"
     },
     {
         "name" : "Anne Etien",
         "email" : "anne.etien@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : ""
     },
     {
         "name" : "Christophe Demarey",
         "email" : "christophe.demarey@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "demarey"
     },
     {
         "name" : "Christopher Fuhrman",
         "email" : "christopher.fuhrman@etsmtl.ca",
-        "description" : "",
-        "picture" : ""
+        "github" : "fuhrmanator"
     },
     {
         "name" : "Cyril Ferlicot-Delbecque",
         "email" : "cyril@ferlicot.me",
-        "description" : "",
-        "picture" : ""
+        "github" : "jecisc"
     },
     {
         "name" : "Damien Pollet",
         "email" : "Damien.pollet@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "cdlm"
     },
     {
         "name" : "Dave Mason",
         "email" : "dmason@ryerson.ca",
-        "description" : "",
-        "picture" : ""
+        "github" : "dvmason"
     },
     {
         "name" : "Esteban Lorenzano",
         "email" : "esteban.lorenzano@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "estebanlm"
     },
     {
         "name" : "Etienne Delay",
         "email" : "etienne.delay@cirad.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "ElCep"
     },
     {
         "name" : "Gordana Rakic",
         "email" : "goca@dmi.uns.ac.rs",
-        "description" : "",
-        "picture" : ""
+        "github" : ""
     },
     {
         "name" : "Guillaume Larchevêque",
         "email" : "guillaume.larcheveque@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "Larcheveque"
     },
     {
         "name" : "Guillermo Polito",
         "email" : "guillermopolito@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "guillep"
     },
     {
         "name" : "Hernán Morales",
         "email" : "hernan.morales@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "hernanmd"
     },
     {
         "name" : "Juan Pablo Sandoval Alcocer",
         "email" : "juampiboy@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "jpsandoval"
     },
     {
         "name" : "Julien Delplanque",
         "email" : "julien.delplanque@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "juliendelplanque"
     },
     {
         "name" : "Konrad Hinsen",
         "email" : "konrad.hinsen@cnrs.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "khinsen"
     },
     {
         "name" : "Luc Fabresse",
         "email" : "luc.fabresse@imt-lille-douai.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "LucFabresse"
     },
     {
         "name" : "Marcus Denker",
         "email" : "marcus.denker@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "MarcusDenker"
     },
     {
         "name" : "Milton Mamani",
         "email" : "akevalion@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "akevalion"
     },
     {
         "name" : "Nicolas Anquetil",
         "email" : "nicolas.anquetil@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "NicolasAnquetil"
     },
     {
         "name" : "Oleksandr Zaitsev",
         "email" : "olk.zaytsev@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "olekscode"
     },
     {
         "name" : "Pablo Tesone",
         "email" : "tesonep@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "tesonep"
     },
     {
         "name" : "Pavel Krivanek",
         "email" : "pavel.krivanek@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "pavel-krivanek"
     },
     {
         "name" : "Philippe Back",
         "email" : "philippeback@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "philippeback"
     },
     {
         "name" : "Santiago Bragagnolo",
         "email" : "santiago.bragagnolo@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "sbragagnolo"
     },
     {
         "name" : "Serge Stinckwich",
         "email" : "serge.stinckwich@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : "SergeStinckwich"
     },
     {
         "name" : "Stephan Eggermont",
         "email" : "stephan@legacycode.nl",
-        "description" : "",
-        "picture" : ""
+        "github" : "StephanEggermont"
     },
     {
         "name" : "Steven Costiou",
         "email" : "steven.costiou@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "StevenCostiou"
     },
     {
         "name" : "Stéphane Ducasse",
         "email" : "stephane.ducasse@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "Ducasse"
     },
     {
         "name" : "Vincent Aranega",
         "email" : "vincent.aranega@inria.fr",
-        "description" : "",
-        "picture" : ""
+        "github" : "aranega"
     },
     {
         "name" : "Yann Lesage",
         "email" : "yannlesag@gmail.com",
-        "description" : "",
-        "picture" : ""
+        "github" : ""
     }
 ]
