@@ -465,10 +465,10 @@
             "Gordana Rakic",
             "Pablo Tesone"
         ],
-        "context" : "The objective of this goal is to produce an initial model that represents the Control-Graph-Flow (CFG) of an Pharo application. \nFor doing so, we need to perform an static analysis on the program. The analysis of the program is done traversing Abstract Syntax Tree (AST) of the methods, and class definitions.\nPharo provides a set of existent tools to manipulate and traverse ASTs, and reflective tools to inspect programs in Pharo.\nAlso, there are implementations of required tools to be used or extended (AST interpreters, CFG extraction tools, type inferers (Phineas), etc).\nThis task can be divided in three main points: (1) developing the CFG model, (2) extract the information from the Pharo AST, (3) perform traversal and analyses over it. \nFor extracting the information in the AST and form the CGF, the student should use tools already existent in Pharo (AST interpreters / Type inferer). \nFinally, it can be possible to perform an analysis on the existing information. For example, it is possible to extract the effective classes and methods that are covered by a given test; or calculate the dependencies between classes and methods.\nThis topic provides an oportunity of working on the metalevel of programs, the student will learn how to get information from an existing program, and how to reflect about it. \nThese tools and abilities are basic when working with programming languages, refactorings, tools, etc.",
+        "context" : "The objective is to produce an initial model that represents the Control-Graph-Flow (CFG) of an Pharo application. \nFor doing so, we need to perform an static analysis on the program. The analysis of the program is done traversing Abstract Syntax Tree (AST) of the methods, and class definitions.\nPharo provides a set of existent tools to manipulate and traverse ASTs, and reflective tools to inspect programs in Pharo.\nAlso, there are implementations of required tools to be used or extended (AST interpreters, CFG extraction tools, type inferers (Phineas), etc).\nThis task can be divided in three main points: (1) developing the CFG model, (2) extract the information from the Pharo AST, (3) perform traversal and analyses over it. \nFor extracting the information in the AST and form the CGF, the student should use tools already existent in Pharo (AST interpreters / Type inferer). \nFinally, it can be possible to perform an analysis on the existing information. For example, it is possible to extract the effective classes and methods that are covered by a given test; or calculate the dependencies between classes and methods.\nThis topic provides an oportunity of working on the metalevel of programs, the student will learn how to get information from an existing program, and how to reflect about it. \nThese tools and abilities are basic when working with programming languages, refactorings, tools, etc.",
         "goal" : "",
         "keywords" : [
-            "control-graph-flow",
+            "control flow",
             "ast",
             "tests",
             "software analysis"
@@ -551,6 +551,23 @@
         "keywords" : [
             "gis",
             "geometry"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Flow analyses in Pharo",
+        "supervisors" : [
+            "Nicolas Anquetil",
+            "Gordana Rakic"
+        ],
+        "context" : "Data and control flow analysis is an important support to various programing activities such as restructuring of the code, debugging, and testing. The basic idea of control flow analysis is to have a graph representing the pieces of code (e.g. expressions, statements, blocks, methods, or whole program) and illustrating the possible order and conditions of their execution. Data flow analysis shows how a given data is created, used and modified in the code. By applying basic algorithms one can derive def-use and use-def chains of variables, program slices,  static single assignment form, etc. Flow extraction relies with, but also intervene in, type inference computation.",
+        "goal" : "Implement basic data flow and control flow, static analyses, algorithms in the context of Pharo (which is not statically typed). Hopefully, more advanced analyses (see above) could be implemented from the basic algorithms.",
+        "keywords" : [
+            "control flow",
+            "data flow",
+            "static analysis"
         ],
         "levels" : [
             "Intermediate"
