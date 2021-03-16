@@ -414,6 +414,21 @@ These tools and abilities are basic when working with programming languages, ref
        yourself.
 
 PharoTopic new
+	title: 'Flow analyses in Pharo';
+        contact: 'nicolas.anquetil@inria.fr, gordana.rakic@dmi.uns.ac.rs';
+        supervisors: 'Nicolas Anquetil, Gordana Rakic';
+        keywords: 'Contro flow, data flow, static analysis';
+        context: 'Data and control flow analysis is an important support to various programing activities such as restructuring of the code, debugging, and testing.
+The basic idea of control flow analysis is to have a graph representing the pieces of code (e.g. expressions, statements, blocks, methods, or whole program) and illustrating the possible order and conditions of their execution.
+Data flow analysis shows how a given data is created, used and modified in the code.
+By applying basic algorithms one can derive def-use and use-def chains of variables, program slices,  static single assignment form, etc.
+Flow extraction relies with, but also intervene in, type inference computation.';
+        goal: 'Implement basic data flow and control flow, static analyses, algorithms in the context of Pharo (which is not statically typed). Hopefully, more advanced analyses (see above) could be implemented from the basic algorithms.';
+        level: 'Intermediate';
+        yourself.
+
+
+PharoTopic new
        title: 'PCA Methods';
        contact: 'oleksandr.zaitsev@inria.fr, hernan.morales@gmail.com';
        supervisors: 'Oleksandr Zaitsev, Hernán Morales';
