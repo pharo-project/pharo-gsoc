@@ -1,22 +1,5 @@
 [
     {
-        "title" : "Extension of Iceberg to support Fossil",
-        "supervisors" : [
-            "Dave Mason",
-            "Guillermo Polito"
-        ],
-        "context" : "Iceberg is a significant improvement for cooperative development on Pharo. It is intended to support multiple Version Control Systems, but currently only works with Git. Fossil is another VCS that is a more integrated, full feature alternative, particularly well suited to smaller team development.",
-        "goal" : "The goal of this project is to add an additional VCS to Iceberg. In addition to making the particular VCS available, dependencies on Git will be exposed and Iceberg will become more generic so that other VCSs, such as Mercurial or SVN, can be more easily added.",
-        "keywords" : [
-            "iceberg",
-            "fossil"
-        ],
-        "levels" : [
-            "Intermediate",
-            "Advanced"
-        ]
-    },
-    {
         "title" : "Classes and Methods for Spatial Data",
         "supervisors" : [
             "Etienne Delay",
@@ -32,23 +15,6 @@
         ],
         "levels" : [
             "Beginner",
-            "Intermediate"
-        ]
-    },
-    {
-        "title" : "SmartTest, a Test selection tool in a dynamically typed environment",
-        "supervisors" : [
-            "Anne Etien",
-            "Nicolas Anquetil"
-        ],
-        "context" : "Currently in Pharo, when the developer modifies code, he/she has to know which tests may have been broken to run them or in doubt run all the tests of the class or the project. In that later case, it can be very long. We would like to introduce in Pharo a test selection tool to help the developer in his/her selection. We already developed SmartTest, such a tool, but it is not useable in practice, since it is too long and too intrusive.",
-        "goal" : "Implement some strategies to enhance the performance of the tool. Evaluate these strategies on real cases studies in an a posteriori experiment. Configure and tune the tool. Evaluate the tool on the field by taking advantage of the community. Put it in the Pharo 8 distribution.",
-        "keywords" : [
-            "test selection",
-            "dynamic analysis",
-            "static analysis"
-        ],
-        "levels" : [
             "Intermediate"
         ]
     },
@@ -98,43 +64,6 @@
             "visualization",
             "software engineering",
             "roassal"
-        ],
-        "levels" : [
-            "Intermediate"
-        ]
-    },
-    {
-        "title" : "Material Design Lite",
-        "supervisors" : [
-            "Cyril Ferlicot-Delbecque",
-            "Guillaume Larchevêque",
-            "Yann Lesage"
-        ],
-        "context" : "Materia Design Lite (https://github.com/DuneSt/MaterialDesignLite) is a set of web components for the Seaside framework based on Google's Material Design guidelines.",
-        "goal" : "We have multiple ideas to improve the project. (They are just ideas. Students can choose what they prefer)\n- Improve the brigde with the meta-description framework that is Magritte\n- Add new widgets such as TreeTables, Miller Columns, etc with tests and demos\n- Add functional tests with Parasol (Selenium integration for Seaside)\n- Creation of a tutorial on how to create a simple Seaside/MDL application\n- Writting of documentation\n- Improve integration of custom widgets with javascript\n- Integration with the Willow stack",
-        "keywords" : [
-            "material design lite",
-            "material-ui",
-            "seaside",
-            "web",
-            "components"
-        ],
-        "levels" : [
-            "Beginner",
-            "Intermediate"
-        ]
-    },
-    {
-        "title" : "Hacking Pharo in Your Web Browser",
-        "supervisors" : [
-            "Luc Fabresse",
-            "Damien Pollet"
-        ],
-        "context" : "There is a need to be able to execute Pharo code through a web page. It implies sending code to the server-side for execution. However this execution should not expose the file system and machine resources. The idea of this problem is to run Pharo in a container and expose it in a web application. Such an isolated  infrastructure could be useful for experimenting with Pharo trhough a Web page.",
-        "goal" : "Possible tasks are:\n- Have a look at http://www.tech.io / https://www.pythonanywhere.com / http://jupyter.org\n- Learn Docker\n- Make a first version\n- Build a little webfront end.",
-        "keywords" : [
-            "docker",
-            "virtual machine"
         ],
         "levels" : [
             "Intermediate"
@@ -246,60 +175,6 @@
         ],
         "levels" : [
             "Beginner",
-            "Intermediate"
-        ]
-    },
-    {
-        "title" : "Charting library",
-        "supervisors" : [
-            "Cyril Ferlicot-Delbecque",
-            "Julien Delplanque",
-            "Oleksandr Zaitsev",
-            "Alexandre Bergel"
-        ],
-        "context" : "In recent years community has been showing great interest in doing scientific computing or data analysis, as well as building machine learning applications in Pharo. Data is central in all those fields. Visualizing data in charts is very important for understanding it and presenting the results. Even though Roassal can be used for plotting data, it has a very generic API and makes even the most simple charts very complicated. Other tools like MatplotLibBridge or ChartJS are just connectors to external libraries which create static images and do not allow us to use some of the most valuable features of Pharo environment, such as live inspection and debugging.",
-        "goal" : "Build an easy-to-use framework for visualizing data with charts, similar to matplotlib in Python or ggplot2 in R. This tool should have the flexible API based on the Grammar of Graphics. It can be built on top of Pharo's Geometry library and should be able to use different backends such as Morphic or Bloc interchangeably.",
-        "keywords" : [
-            "data visualization",
-            "data science",
-            "plotting",
-            "grammar of graphics"
-        ],
-        "levels" : [
-            "Intermediate",
-            "Advanced"
-        ]
-    },
-    {
-        "title" : "NLP Library",
-        "supervisors" : [
-            "Oleksandr Zaitsev",
-            "Alexandre Bergel"
-        ],
-        "context" : "Ongoing research that is being done around analysing messages from Discord and letters from mailing lists, exploring commit messages, and performing static analysis of source code is based on simple but irreplaceable algorithms of natural language processing that tokenize text into words, perform stemming and lemmatization of words, count occurrences of words in text etc.",
-        "goal" : "We need a natural language processing (NLP) library entirely written in Pharo with functionality similar to NLTK or Spacy: part of speech (PoS) tagging, named entity recognition (NER), lemmatization, stemming, word sense disambiguation, tf-idf, n-grams, various metrics etc.",
-        "keywords" : [
-            "natural language processing",
-            "statistics",
-            "data science"
-        ],
-        "levels" : [
-            "Intermediate",
-            "Advanced"
-        ]
-    },
-    {
-        "title" : "Authoring and exploring scientific models in Pharo",
-        "supervisors" : [
-            "Konrad Hinsen",
-            "Serge Stinckwich"
-        ],
-        "context" : "Scientific research increasingly relies on computational models, but these models are usually not reified in a way that permits sharing and processing them with computational tools. Natural language summaries are incomplete and imprecise, whereas implementations in software are complex and not portable. The digital scientific notation Leibniz (https://github.com/khinsen/leibniz) aims at reifying computational models as specifications rather than implementations.",
-        "goal" : "Working with scientific models requires interactive tools, both for authoring new models and exploring existing ones. The Pharo live object environment is an excellent basis for developing a suitable interactive workbench. Many individual steps can contribute to such a development: implementing well-known examples from various scientific domains (e.g. Newton's equations for celestial mechanics or the Lotka-Volterra equations for population dynamics), extensions to Pharo development tools (inspector, debugger, browser, ...) for handling models formulated in Leibniz, etc.",
-        "keywords" : [
-            "scientific models"
-        ],
-        "levels" : [
             "Intermediate"
         ]
     },
