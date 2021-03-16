@@ -400,8 +400,8 @@ PharoTopic new
        title: 'Using CFG to analyze tests';
        contact: 'goca@dmi.uns.ac.rs, tesonep@gmail.com';
        supervisors: 'Gordana Rakic, Pablo Tesone';
-       keywords: 'control-graph-flow, ast, tests, software analysis';
-       context: 'The objective of this goal is to produce an initial model that represents the Control-Graph-Flow (CFG) of an Pharo application. 
+       keywords: 'control-flow graph, ast, tests, software analysis';
+       context: 'The objective is to produce an initial model that represents the Control-Graph-Flow (CFG) of an Pharo application. 
 For doing so, we need to perform an static analysis on the program. The analysis of the program is done traversing Abstract Syntax Tree (AST) of the methods, and class definitions.
 Pharo provides a set of existent tools to manipulate and traverse ASTs, and reflective tools to inspect programs in Pharo.
 Also, there are implementations of required tools to be used or extended (AST interpreters, CFG extraction tools, type inferers (Phineas), etc).
