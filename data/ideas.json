@@ -88,7 +88,9 @@
     {
         "title" : "Improving code completion",
         "supervisors" : [
-            "Guillermo Polito"
+            "Guillermo Polito",
+            "Juan Pablo Sandoval",
+            "Evelyn Cusi Lopez"
         ],
         "context" : "Automatic completion is really important. The current code completion already defines some good \nbehavior but it can do better.",
         "goal" : "The goal of the project is to improve the ecompletion infrastructure: \nThe tasks are: \n(1) Study the new completion frameworks\n(3) Improve the noise introduced by the Symbol table usage, \n(4) build more heuristics.",
@@ -104,6 +106,7 @@
         "title" : "New Collections for Pharo",
         "supervisors" : [
             "Juan Pablo Sandoval Alcocer",
+            "Evelyn Cusi Lopez",
             "Stéphane Ducasse"
         ],
         "context" : "Pharo contains a large set of collections (See http://books.pharo.org/ PharoByExample Collections chapter)\nwith around 100 classes. But new collections exist such as BTree, QuadTree, SkipList, Trie, …\n\nContainers is an existing effort to gather many of the existing collection developed individually and externally to Pharo into a single umbrella. The idea is to create a modular collection library for Pharo users. Containers’s goals is to develop new efficient, well-tested, well documented collections. \nContainers contains already Tree, Grid, SkipList, LinkedList, OrderedDictionary but there is a need to revisit them. \n\nFinally Pharo 6.0 comes with two powerful primitives: new object immutability primitives as well as ephemerons [Hayes97].\n\nWith such important primitives two tasks can be performed: \n\t- design new weak collections taking advantage of ephemerons.\n\t- revisit and design new concurrent collections taking advantage of immutability.\n\tLinks:\n- Camillo Bruni master contains a chapter on how to benchmark for collections http://scg.unibe.ch/archive/masters/Brun11a.pdf\n- http://source.lukas-renggli.ch/container started to implement some new collections for Pharo.\n- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2010/lecture-notes/",
@@ -282,7 +285,9 @@
     {
         "title" : "Item Collector App",
         "supervisors" : [
-            "Stéphane Ducasse"
+            "Stéphane Ducasse",
+            "Juan Pablo Sandoval",
+            "Evelyn Cusi Lopez"
         ],
         "context" : "Little Description is a description language to manage data.\nWe use it to support the collection of games, books, .... \nThe goal of the internship is to improve the support: \n- adding a webserver,\n- automatic data to bject mapping\n- way to describe automatically data",
         "goal" : "",
