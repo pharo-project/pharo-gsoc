@@ -17,7 +17,7 @@ const App = () => (
     <div>
       <Navigation />
 
-      <Route exact path={ROUTES.LANDING} component={LandingPage} />
+      <Route exact path={ROUTES.LANDING} component={CallForStudentsPage} />
       <Route path={ROUTES.IDEAS} component={IdeasPage} />
       <Route path={ROUTES.MENTORS} component={MentorsPage} />
       <Route path={ROUTES.CALL_FOR_STUDENTS} component={CallForStudentsPage} />

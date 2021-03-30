@@ -17,9 +17,10 @@ const Navigation = () => (
         <li>
           <Link to={ROUTES.MENTORS}>Mentors</Link>
         </li>
-        <li>
+ <!--	<li>
           <Link to={ROUTES.CALL_FOR_STUDENTS}>Call for Students</Link>
         </li>
+-->
       </ul>
     </div>
   </div>
