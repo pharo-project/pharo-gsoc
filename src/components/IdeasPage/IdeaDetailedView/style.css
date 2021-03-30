@@ -19,11 +19,11 @@
   width: 50%; /* Could be more or less, depending on screen size */
 }
 
-h2 {
+.IdeaDetailedView h2 {
   text-align: center;
 }
 
-h4 {
+.IdeaDetailedView h4 {
   margin-bottom: 10px;
 }
 

@@ -32,13 +32,14 @@ class IdeasPage extends React.Component {
     this.ideas = getJsonFromURL(URLS.IDEAS_FILE);
     this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE);
 
-    this.supervisors = this.supervisors.map(each => ({
-      ...each,
-      pictureUrl:
-        each.github ?
-        getJsonFromURL(`https://api.github.com/users/${each.github}`).avatar_url :
-        null
-    }));
+    this.supervisors = this.supervisors.map(each => {
+      const githubUser = each.github ?
+        getJsonFromURL(`https://api.github.com/users/${each.github}`) :
+        null;
+
+      const picture = githubUser ? githubUser.avatar_url : null;
+      return { ...each, pictureUrl: picture };
+    });
 
     this.state = {
       ideasToDisplay: this.ideas,
@@ -119,7 +120,7 @@ class IdeasPage extends React.Component {
     );
 
     return (
-      <main>
+      <div class="container ideas-container">
         <h1>Project Ideas</h1>
         <aside>
           <FilterIdeasForm
@@ -138,7 +139,7 @@ class IdeasPage extends React.Component {
             {ideasHtml}
           </div>
         </article>
-      </main>
+      </div>
     );
   }
 }

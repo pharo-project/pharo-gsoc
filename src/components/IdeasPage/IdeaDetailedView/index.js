@@ -27,7 +27,7 @@ class IdeaDetailedView extends React.Component {
     );
 
     return (
-      <div className="modal-background" onClick={this.props.onClose}>
+      <div className="IdeaDetailedView modal-background" onClick={this.props.onClose}>
         <div className="modal" onClick={this.stopEventPropagation}>
           <h2>{this.props.idea.title}</h2>
 

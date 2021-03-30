@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CallForStudentsPage = () => (
-<div>
+<div class="container">
 <h1>Google Summer of Code 2021: Call for Students</h1>
 
 <p>Dear students,</p>

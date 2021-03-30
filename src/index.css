@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&display=swap');
 
 :root {
-  --page-width: 1100px;
+  --page-width: 1000px;
   --text-font-family: 'Roboto', sans-serif;
   --header-font-family: 'Merriweather Sans', sans-serif;
-  --text-font-size: 16px;
+  --text-font-size: 1.1rem;
   --color-pharo-blue: #3297d4;
   --color-pharo-light-blue: #dcedf7;
   --color-dark-gray: #616161;
@@ -21,18 +21,33 @@ body {
 }
 
 main {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 25px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--header-font-family);
   color: var(--color-pharo-blue);
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 h1 {
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
+}
+
+.container {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+
+li, p {
+  letter-spacing: .010em;
+  line-height: 1.6em;
+}
+
+li {
+  margin-bottom: 0.4rem;
 }
