@@ -88,7 +88,9 @@
     {
         "title" : "Improving code completion",
         "supervisors" : [
-            "Guillermo Polito"
+            "Guillermo Polito",
+            "Juan Pablo Sandoval",
+            "Evelyn Cusi Lopez"
         ],
         "context" : "Automatic completion is really important. The current code completion already defines some good \nbehavior but it can do better.",
         "goal" : "The goal of the project is to improve the ecompletion infrastructure: \nThe tasks are: \n(1) Study the new completion frameworks\n(3) Improve the noise introduced by the Symbol table usage, \n(4) build more heuristics.",
@@ -283,7 +285,9 @@
     {
         "title" : "Item Collector App",
         "supervisors" : [
-            "Stéphane Ducasse"
+            "Stéphane Ducasse",
+            "Juan Pablo Sandoval",
+            "Evelyn Cusi Lopez"
         ],
         "context" : "Little Description is a description language to manage data.\nWe use it to support the collection of games, books, .... \nThe goal of the internship is to improve the support: \n- adding a webserver,\n- automatic data to bject mapping\n- way to describe automatically data",
         "goal" : "",
