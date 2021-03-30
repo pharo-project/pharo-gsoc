@@ -72,6 +72,75 @@ const CallForStudentsPage = () => (
 
 <p>Be proactive - <b>do not wait to be told what to do</b>. Your mentors are here to answer your questions, help you get unstuck, make sure that you are on track. But they will not give you step-by-step instructions or make decisions for you. Show us that you can take the initiative in your own hands and work independently even when your mentors are not there to help you (although we will try to make sure that they always are). Show us that you have been working on some projects outside the classroom, especially projects that you did "for fun".</p>
 
+<h2>5. How to apply?</h2>
+
+<p>To <a href="https://summerofcode.withgoogle.com/student-signup/">apply for Google Summer of Code</a>, you must:</p>
+
+<ol>
+  <li>Accept the terms of the Student Participant Agreement</li>
+  <li>Submit Proof of Enrollment</li>
+  <li>Submit a Project Proposal</li>
+</ol>
+
+<p><b>The application period is March 29, 18:00 UTC - April 13, 18:00 UTC</b>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of Google Summer of Code 2021</a>.</p>
+
+<h3>5.1. Proof of enrollment</h3>
+
+<p>Carefully read <a href="https://developers.google.com/open-source/gsoc/help/proof-of-enrollment">what is considered a valid proof of enrollment</a>.</p>
+
+<h3>5.2. Writing a project proposal</h3>
+
+<ul>
+  <li>Take a look at the <a href="https://gsoc.pharo.org/ideas">list of ideas</a> proposed by the Pharo Community. You can take any one of these topics or suggest your own. However, you must make sure that:</li>
+  <ul>
+    <li>There are at least two mentors in the community willing to work with you on the proposed project. So get in touch with mentors early and discuss your ideas with them.</li>
+    <li>The proposed project is interesting and relevant to the community. All projects in our list of ideas were selected by the community and represent something we want to have in Pharo. So if you propose your own project, make sure to discuss your idea on the mailing list and Discord and see if people need it.</li>
+  </ul>
+  <li>Follow the <a href="https://google.github.io/gsocguides/student/writing-a-proposal#the-basics">instructions for writing a project proposal</a>.</li>
+  <li>As an example, take a look at <a href="https://drive.google.com/drive/folders/1oAmutbsbOCHLvdkQleVDvYtHZs9OxhMR?usp=sharing">project proposals that were accepted by Pharo Consortium in previous years</a>.</li>
+  <li>Don’t write your project proposal alone. As soon as you have the first draft (no matter how bad you think it is), send it to the mentors and preferably to the mailing list and the dedicated channel on Discord. High-quality proposals are written iteratively: <i>draft - get feedback - update - get feedback - update ...</i></li>
+  <li>Submit your proposal early; you can update your draft on the GSoC website later. But be careful not to miss the deadline.</li>
+</ul>
+
+<h2>6. What will be the main responsibilities of accepted students?</h2>
+
+<p>Accepted students have the responsibilities to:</p>
+
+<ul>
+  <li>Follow the plan declared in your project proposal.</li>
+  <li>Submit daily reports of your progress to our mailing list (what did you do today, what do you plan to do tomorrow, what problems or questions do you have)</li>
+  <li>Write a blog post every week to document your work and report your progress to the community.</li>
+  <li>Regularly communicate with your mentors and the broader community.</li>
+  <li>Ask for help when something is preventing you from achieving a goal.</li>
+  <li>Re-evaluate work scope when you are significantly ahead of expectations</li>
+  <li>Inform when work capacity will be reduced, as early as possible (e.g., family, health, other work)</li>
+</ul>
+
+<p>Read more about <a href="https://developers.google.com/open-source/gsoc/help/responsibilities">student responsibilities</a>.</p>
+
+<h2>7. Conclusion</h2>
+
+<p>You can read the following blog posts written by students who have completed the Google Summer of Code with Pharo Consortium in previous years:</p>
+
+<ul>
+  <li>Oleksandr Zaytsev, <a href="https://medium.com/@i.oleks/how-to-apply-for-google-summer-of-code-95c1bfcd41a5">How to Apply to Google Summer of Code</a></li>
+  <li>Myroslava Romaniuk, <a href="https://medium.com/@myroslavarm/experiencing-google-summer-of-code-2017-4ccf16790c9e">Experiencing Google Summer of Code 2017</a></li>
+  <li>Rajula Vineet Reddy, <a href="https://vineetreddy.wordpress.com/2017/08/28/google-summer-of-code-2017-final-report-pharo-consortium-rajula-vineet-reddy/?fbclid=IwAR0i5NW8zUY3MPeSTrY5BktYlqJe06LZvj_FfBfWMaB_rx2WOfMg_sbIaY4">Google Summer of Code 2017 Final Report – Pharo Consortium</a></li>
+  <li>Rajula Vineet Reddy, <a href="https://vineetreddy.wordpress.com/2018/01/14/google-summer-of-code-all-the-whats-hows-whys/?fbclid=IwAR11UyBQ4s1W4qRngIJzJXdjimc48NGzQJy8DcKDpfe-DlfAbA-YmqbAbB8">Google Summer of Code – All the What’s, How’s & Why’s</a></li>
+  <li>Nina Medić and Smiljana Knežev, <a href="https://pharokeepers.github.io/">Pharokeepers in GSoC 2019</a></li>
+</ul>
+
+<p>We are looking forward to great talent joining our organisation this summer.</p>
+
+<p>Warm Regards, Pharo Organisation Admins:</p>
+
+<ul>
+  <li>Oleksandr Zaytsev &#60;<a href="mailto:olk.zaytsev@gmail.com">olk.zaytsev@gmail.com</a>&#62;</li>
+  <li>Serge Stinckwich &#60;<a href="mailto:serge.stinckwich@gmail.com">serge.stinckwich@gmail.com</a>&#62;</li>
+  <li>Juan Pablo Sandoval Alcocer &#60;<a href="mailto:juampiboy@gmail.com">juampiboy@gmail.com</a>&#62;</li>
+  <li>Gordana Rakić &#60;<a href="mailto:goca.rakic@gmail.com">goca.rakic@gmail.com</a>&#62;</li>
+</ul>
+
 </div>
 );
 
