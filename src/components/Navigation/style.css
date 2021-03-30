@@ -1,12 +1,19 @@
 #navbar {
-  display: block;
+  display: flex;
   overflow: visible;
   border-bottom: 5px solid var(--color-light-gray);
   /* margin-bottom: 20px; */
 }
 
+#navbar img {
+  display: inline;
+  height: 33px;
+  vertical-align: middle;
+  padding-right: 17px;
+}
+
 #navbar-buttons {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); */
   margin: 0 auto;
   text-align: center;
   font-family: var(--text-font-family);
@@ -18,26 +25,23 @@
 }
 
 #navbar li {
-  /* position: relative; */
   display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 15px;
   text-decoration: none;
-  /* float: left; */
 }
 
-#navbar a {
+a.navbar-button {
   display: inline-block;
-  padding: 15px 10px;
+  padding: 15px 14px;
   color: var(--color-pharo-blue);
   text-decoration: none;
 }
 
-#navbar a:hover {
+a:hover.navbar-button {
   background-color: var(--color-pharo-light-blue);
 }
 
-#navbar a:active {
+a:active.navbar-button {
   background-color: var(--color-pharo-blue);
   color: white;
 }

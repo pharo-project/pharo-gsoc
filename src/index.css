@@ -51,3 +51,7 @@ li, p {
 li {
   margin-bottom: 0.4rem;
 }
+
+a {
+  color: var(--color-pharo-blue);
+}
