@@ -90,7 +90,9 @@
     {
         "title": "Improving DrTest",
         "supervisors": [
-            "Stéphane Ducasse"
+            "Stéphane Ducasse",
+            "Aless Hosry",
+            "Iona Thomas"
         ],
         "context": "DrTests is a Pharo tool that we use to run several tests cases at once.\nIt is very useful when developping because we have the power to run a selected scope of tests from different packages to control the situation of the tests.",
         "goal": "The goal is to improve DrTests, add more features to have a new version to it that will be the default Test Runner of Pharo.",
@@ -353,7 +355,8 @@
     {
         "title": "Better code importer",
         "supervisors": [
-            "Stéphane Ducasse"
+            "Stéphane Ducasse",
+            "Aless Hosry"
         ],
         "context": "Pharo is a powerful IDE. However it needs a way to load easily code fragments writing in tonel format. \nThe idea is to be able to select, load save code and to replace the old changeset.",
         "goal": "",
@@ -367,7 +370,8 @@
     {
         "title": "Improving ProfStef tutorial",
         "supervisors": [
-            "Stéphane Ducasse"
+            "Stéphane Ducasse",
+            "Iona Thomas"
         ],
         "context": "ProfStef is an in-image tutorial that is available in a Pharo image.\nIt has all the things that are necessary for learning Pharo syntax.",
         "goal": "We want to have a more in-depth tutorial which can cover more than the basics of Pharo.\nTo have more learning resources availables inside the Pharo image.",
