@@ -109,6 +109,7 @@
         "title" : "DataFrame",
         "supervisors" : [
             "Oleksandr Zaitsev",
+            "Sebastian Jordan",
             "Serge Stinckwich",
             "Philippe Back"
         ],
@@ -349,6 +350,25 @@
         ],
         "levels" : [
             "Beginner"
+        ]
+    },
+    {
+        "title" : "Linter for Moose",
+        "supervisors" : [
+            "Anne Etien",
+            "Nicolas Anquetil"
+        ],
+        "context" : "Moose is a software analysis platform (https://modularmoose.org/). It allows to create tools to analyse, refactor, debug programs in “any” language. \nThis project will aim at building a linter for Moose: a tool that allows user to create new rules to check programs a bit like SonarQube or PMD.\nThis rules can be either paradigm specific but language independent, language specific, company specific or project specific.\nThe rules are a set of conditions that can be written using a query and that are composed.\nThis linter will rely on existing tool such as the query browser allowing to query models. But it will also propose (i) some recommendations to correct the rule violations and (ii) some visualisations for example to show which classes violates a given rule, or considering all the rules whose classes violate each of them and those violating several.",
+        "goal" : "",
+        "keywords" : [
+            "tools",
+            "transformation rules",
+            "code recommendations",
+            "code visualisations"
+        ],
+        "levels" : [
+            "Beginner",
+            "Intermediate"
         ]
     }
 ]

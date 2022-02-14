@@ -25,31 +25,6 @@
         "github" : "fuhrmanator"
     },
     {
-        "name" : "Cyril Ferlicot-Delbecque",
-        "email" : "cyril@ferlicot.me",
-        "github" : "jecisc"
-    },
-    {
-        "name" : "Damien Pollet",
-        "email" : "Damien.pollet@inria.fr",
-        "github" : "cdlm"
-    },
-    {
-        "name" : "Dave Mason",
-        "email" : "dmason@ryerson.ca",
-        "github" : "dvmason"
-    },
-    {
-        "name" : "Esteban Lorenzano",
-        "email" : "esteban.lorenzano@inria.fr",
-        "github" : "estebanlm"
-    },
-    {
-        "name" : "Etienne Delay",
-        "email" : "etienne.delay@cirad.fr",
-        "github" : "ElCep"
-    },
-    {
         "name" : "Evelyn Cusi Lopez",
         "email" : "cusi.evelyn@gmail.com",
         "github" : "Lin777"
@@ -58,11 +33,6 @@
         "name" : "Gordana Rakic",
         "email" : "goca@dmi.uns.ac.rs",
         "github" : ""
-    },
-    {
-        "name" : "Guillaume Larchevêque",
-        "email" : "guillaume.larcheveque@gmail.com",
-        "github" : "Larcheveque"
     },
     {
         "name" : "Guillermo Polito",
@@ -78,26 +48,6 @@
         "name" : "Juan Pablo Sandoval Alcocer",
         "email" : "juampiboy@gmail.com",
         "github" : "jpsandoval"
-    },
-    {
-        "name" : "Julien Delplanque",
-        "email" : "julien.delplanque@inria.fr",
-        "github" : "juliendelplanque"
-    },
-    {
-        "name" : "Konrad Hinsen",
-        "email" : "konrad.hinsen@cnrs.fr",
-        "github" : "khinsen"
-    },
-    {
-        "name" : "Luc Fabresse",
-        "email" : "luc.fabresse@imt-lille-douai.fr",
-        "github" : "LucFabresse"
-    },
-    {
-        "name" : "Marcus Denker",
-        "email" : "marcus.denker@inria.fr",
-        "github" : "MarcusDenker"
     },
     {
         "name" : "Milton Mamani",
@@ -120,11 +70,6 @@
         "github" : "tesonep"
     },
     {
-        "name" : "Pavel Krivanek",
-        "email" : "pavel.krivanek@gmail.com",
-        "github" : "pavel-krivanek"
-    },
-    {
         "name" : "Philippe Back",
         "email" : "philippeback@gmail.com",
         "github" : "philippeback"
@@ -145,24 +90,9 @@
         "github" : "StephanEggermont"
     },
     {
-        "name" : "Steven Costiou",
-        "email" : "steven.costiou@inria.fr",
-        "github" : "StevenCostiou"
-    },
-    {
         "name" : "Stéphane Ducasse",
         "email" : "stephane.ducasse@inria.fr",
         "github" : "Ducasse"
-    },
-    {
-        "name" : "Vincent Aranega",
-        "email" : "vincent.aranega@inria.fr",
-        "github" : "aranega"
-    },
-    {
-        "name" : "Yann Lesage",
-        "email" : "yannlesag@gmail.com",
-        "github" : ""
     },
     {
         "name" : "Sebastian Jordan",
