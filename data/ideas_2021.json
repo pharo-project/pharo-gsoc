@@ -1,5 +1,24 @@
 [
     {
+        "title" : "Classes and Methods for Spatial Data",
+        "supervisors" : [
+            "Etienne Delay",
+            "Serge Stinckwich"
+        ],
+        "context" : "As a title of \"the economist\" The world’s most\nvaluable resource is no longer oil, but data. Nowadays data and\nespecially geospatial data become central in our societies. Each one of\nus needs to be able to deal with data and spatial data.",
+        "goal" : "We propose to explore structure to spatial data finding a\nway to load different types of geospatial data in Pharo. once the data\nis manipulable with our tools the goal is to develop some spatial method\nallowing for users to deal with spatial data. For that we will start\nfrom tools already existing in Pharo like the packages : Geometry, Shapes, geo-json and Territorial, but also in other programming languages (as R or python) in\norder to implement spatial methods for the community. The main objective will be first to be able to load a geojson file, to visualize it and to basic geometric operations.",
+        "keywords" : [
+            "geography",
+            "spatial data",
+            "spatial data manipulation",
+            "geographical grammar"
+        ],
+        "levels" : [
+            "Beginner",
+            "Intermediate"
+        ]
+    },
+    {
         "title" : "Closing the Loop",
         "supervisors" : [
             "Stephan Eggermont",
@@ -16,10 +35,28 @@
         ]
     },
     {
+        "title" : "Projectional Editor for Advanced Pharo Debuggers",
+        "supervisors" : [
+            "Steven Costiou",
+            "Vincent Aranega"
+        ],
+        "context" : "Currently in Pharo, the Abstract Syntax Tree (AST) is generated from the source code, and stored into a cache. Each modification of the source code invalidates the cache and triggers the generation of a new AST object. Every annotation of the AST is lost in the process.",
+        "goal" : "Projectional editors make possible to edit different representation of the same underlying model. This project aims at building a projectional editor which manipulates an AST model instead of source code. With this tool, it will be possible to maintain a permanent representation of the system as an AST, and to new tools directly based on it, as new debugging tools.",
+        "keywords" : [
+            "debugging",
+            "editor",
+            "ide",
+            "ast"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
         "title" : "Dependency Graph in the System Browser",
         "supervisors" : [
-            "Milton Mamani",
-            "Alexandre Bergel"
+            "Alexandre Bergel",
+            "Milton Mamani"
         ],
         "context" : "Making the dependencies between software components explicit is known to be efficient at improving the quality of source code. Visualizations are commonly employed to represent dependencies between packages, classes, and methods.",
         "goal" : "This project is about embedding a visualization within Calypso, the Pharo code browser, that represents dependencies between projects, packages, classes, and methods.",
@@ -27,6 +64,22 @@
             "visualization",
             "software engineering",
             "roassal"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "IPFS for Pharo",
+        "supervisors" : [
+            "Marcus Denker",
+            "Pavel Krivanek"
+        ],
+        "context" : "IPFS is a peer-to-peer distributed file system that seeks to connect all computing devices \nwith the same system of files. \nIn some ways, IPFS is similar to the Web, but IPFS could be seen as a single BitTorrent swarm, \nexchanging objects within one Git repository. \nIn other words, IPFS provides a high throughput content-addressed block storage model, with content-addressed hyperlinks. \nThis forms a generalized Merkle DAG, a data structure upon which one can build versioned file systems, blockchains, \nand even a Permanent Web. \nIPFS combines a distributed hashtable, an incentivized block exchange, and a self-certifying namespace. \nIPFS has no single point of failure, and nodes do not need to trust each other.\nIPFS right now is implemented as a server process in Go and allows the global file system to be mounted as a user \nspace filesystem. In addition, the server provides an API.\nA real integration of IPFS with Pharo would require a complete implementation of IPFS in Pharo \n(projects are already in early stages to implement it in JavaScript and Python).\nBut the client API allows us already now to do experiments and assess the usefulness of IPFS in the context of Pharo. \nMore information:\n\thttps://ipfs.io",
+        "goal" : "The goal of this Project is to implement a IPFS client library using the API to communicate with \nthe existing server and start to experiment how IPFS can be used with Pharo. \nFor example, extend the launcher to load images via IPFS, distribute the files of smalltalkhub or provide\naccess to resources via IPFS.",
+        "keywords" : [
+            "peer to peer",
+            "file systems"
         ],
         "levels" : [
             "Intermediate"
@@ -157,6 +210,23 @@
         ],
         "levels" : [
             "Intermediate"
+        ]
+    },
+    {
+        "title" : "Generating machine code method in the image side",
+        "supervisors" : [
+            "Guillermo Polito",
+            "Pablo Tesone"
+        ],
+        "context" : "The Pharo VM includes a mechanism to compile methods to machine code on the fly. This mechanism allows the VM to execute the more frequent methods as fast as possible.\n\t   This compilation is done on-the-fly during the execution of the program without interaction with the VM. LLVM provides a way of generating machine code using an intermediate representation.\n\t   There is an existing binding to use LLVM from Pharo. The objective of this topic is to generate a prototype of an image side compiler that can generate machine code implementations of a given method using LLVM.\n\t   This mechanism can be used by the user when knowing exactly the type of the parameters and return type. The idea is to implement a prototype similar to Numba (https://numba.pydata.org/).",
+        "goal" : "",
+        "keywords" : [
+            "machine code generation",
+            "jit",
+            "compilers"
+        ],
+        "levels" : [
+            "Advanced"
         ]
     },
     {
@@ -319,19 +389,66 @@
         ]
     },
     {
-        "title" : "Improving DrTest",
+        "title" : "Support for OpenGIS Consortium's Simple Feature Access (ISO 19125 SWG)",
         "supervisors" : [
-            "Stéphane Ducasse"
+            "Hernán Morales"
         ],
-        "context" : "DrTests is a Pharo tool that we use to run several tests cases at once.\nIt is very useful when developping because we have the power to run a selected scope of tests from different packages to control the situation of the tests.",
-        "goal" : "The goal is to improve DrTests, add more features to have a new version to it that will be the default Test Runner of Pharo.",
+        "context" : "Pharo has already support of geometric shapes in the Geometry package, but its compatibility with the common architecture of The OpenGIS Consortium's Simple Feature Access (ISO 19125 SWG, https://www.ogc.org/standards/sfa) (SFA) should be revised. This project proposes to add support to the ISO 19125 SWG standard as a Pharo library.",
+        "goal" : "",
         "keywords" : [
-            "unit tests",
-            "tools",
-            "test runner"
+            "gis",
+            "geometry"
         ],
         "levels" : [
             "Beginner"
+        ]
+    },
+    {
+        "title" : "Matrix state of the art",
+        "supervisors" : [
+            "Hernán Morales"
+        ],
+        "context" : "During several decades, the Smalltalk community provided multiple open-source Matrix implementations. The goal is to obtain performance metrics from comparing the run-time and space efficency of PMMatrix (PolyMath), AIMatrix (pharo-ai), Array2D (built-in) and other open-sourced matrix implementations for Pharo. The idea is not to include objects like DataFrame, Table, Grids, or non-mathematical tabular-like structures, although compatibility between converting a Matrix to a DataFrame (for example) is a nice to have. It is also expected to obtain a feature-comparison between all the implementations, list missing matrices types or operations, and a recommendation to consolidate a default package to be used for the Pharo community for Matrix operations.",
+        "goal" : "",
+        "keywords" : [
+            "matrix",
+            "vectors",
+            "table"
+        ],
+        "levels" : [
+            "Beginner"
+        ]
+    },
+    {
+        "title" : "FFI Integration of GDAL",
+        "supervisors" : [
+            "Hernán Morales"
+        ],
+        "context" : "GDAL (https://gdal.org/) is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source License by the Open Source Geospatial Foundation. A Pharo binding of GDAL would allow to handle dozens of raster and vector formats currently not supported in the image. The API is well documented and there are other bindings which can be used as reference (Python and Java for example).",
+        "goal" : "",
+        "keywords" : [
+            "gis",
+            "geometry"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Flow analyses in Pharo",
+        "supervisors" : [
+            "Nicolas Anquetil",
+            "Gordana Rakic"
+        ],
+        "context" : "Data and control flow analysis is an important support to various programing activities such as restructuring of the code, debugging, and testing. The basic idea of control flow analysis is to have a graph representing the pieces of code (e.g. expressions, statements, blocks, methods, or whole program) and illustrating the possible order and conditions of their execution. Data flow analysis shows how a given data is created, used and modified in the code. By applying basic algorithms one can derive def-use and use-def chains of variables, program slices,  static single assignment form, etc. Flow extraction relies with, but also intervene in, type inference computation.",
+        "goal" : "Implement basic data flow and control flow, static analyses, algorithms in the context of Pharo (which is not statically typed). Hopefully, more advanced analyses (see above) could be implemented from the basic algorithms.",
+        "keywords" : [
+            "control flow",
+            "data flow",
+            "static analysis"
+        ],
+        "levels" : [
+            "Intermediate"
         ]
     }
 ]
