@@ -345,7 +345,7 @@
             "PDF"
         ],
         "levels" : [
-            "Beginner"
+            "Intermediate"
         ]
     },
     {
@@ -406,9 +406,9 @@
     {
         "title" : "Machine Learning for (SmallLint) Quality Rules Profile",
         "supervisors" : [
-            "Sebastian Jordan",
             "Oleksandr Zaitsev",
-            "Stéphane Ducasse"
+            "Stéphane Ducasse",
+            "Sebastian Jordan"
         ],
         "context" : "The idea is to use the Pharo-Ai/Machine learnign algorithms that are already available (https://github.com/pharo-ai/wiki) for detecting automatically transformations rules for improving the quality of the code.",
         "goal" : "",
@@ -416,6 +416,42 @@
             "ai",
             "machine learning",
             "tansformation rules"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Gaussian Mixture Model - Unsupervised learning",
+        "supervisors" : [
+            "Sebastian Jordan",
+            "Oleksandr Zaitsev"
+        ],
+        "context" : "In Pharo-AI (https://github.com/pharo-ai/wiki), we have implemented the Gaussian Mixture Model clustering algorithm.\n The algorithm is well-written but there are some tunes that have to be done to have a first realese/stable version of it.",
+        "goal" : "To have a first stable release of the clustering, unsupervised machine learning algorithm: Gaussian Mixture Model",
+        "keywords" : [
+            "ai",
+            "machine learning",
+            "clustering",
+            "unsupervised learning"
+        ],
+        "levels" : [
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Decision Tree Models",
+        "supervisors" : [
+            "Sebastian Jordan",
+            "Oleksandr Zaitsev"
+        ],
+        "context" : "In Pharo-AI (https://github.com/pharo-ai/wiki), we have implemented a model for decision trees.\nWe want to tune this algorithm that we have to release a stable version that will be available to the public.",
+        "goal" : "To have a first stable release of the classification machine learning algorithm: Decision Tree Model",
+        "keywords" : [
+            "ai",
+            "machine learning",
+            "classification",
+            "decision tree"
         ],
         "levels" : [
             "Intermediate"
