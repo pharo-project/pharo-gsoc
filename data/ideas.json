@@ -131,7 +131,7 @@
         "supervisors" : [
             "Aik-Siong Koh"
         ],
-        "context" : "Just like Python, Smalltalk is an extremely flexible programming environment to create code. Smalltalk has the best IDE and debugger of any programming environment. 3D CAD and Visualization is the standard way of presenting information nowadays. FreeCAD is an open source CAD system with powerful modeling capabilities and beautiful graphics. StFreeCAD will be an open source attempt to combine the best of Pharo Smalltalk and FreeCAD. Smalltalk code can drive FreeCAD directly. The project is to embed FreeCAD inside Pharo Smalltalk IDE.",
+        "context" : "Just like Python, Smalltalk is an extremely flexible programming environment to create code. Smalltalk has the best IDE and debugger of any programming environment. 3D CAD and visualization is the standard way of presenting information nowadays expecially in Metaverse. FreeCAD and PythonOCC are open source CAD systems with powerful modeling capabilities and beautiful graphics. Both FreeCAD and PythonOCC use the  OpenCASCADE Technology (OCCT) which contains the 2D/3D modeling kernel of CAD technology. StOCC will be an open source attempt to combine the best of Pharo Smalltalk and OCCT. The knowledge gained will be used to improve StFreeCAD which uses Smalltalk code to drive FreeCAD directly. This project is to embed FreeCAD inside Pharo Smalltalk IDE.",
         "goal" : "Combine the flexibility of Smalltalk with the 3D modeling and visualization of FreeCAD for maximum programming productivity.",
         "keywords" : [
             "3d cad",
