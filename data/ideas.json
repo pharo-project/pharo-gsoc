@@ -214,20 +214,16 @@
         ]
     },
     {
-        "title" : "Item Collector App",
+        "title" : "Improving ProfStef tutorial",
         "supervisors" : [
-            "Stéphane Ducasse",
-            "Juan Pablo Sandoval",
-            "Evelyn Cusi Lopez"
+            "Stéphane Ducasse"
         ],
-        "context" : "Little Description is a description language to manage data.\nWe use it to support the collection of games, books, .... \nThe goal of the internship is to improve the support: \n- adding a webserver,\n- automatic data to bject mapping\n- way to describe automatically data",
-        "goal" : "",
+        "context" : "ProfStef is an in-image tutorial that is available in a Pharo image.\nIt has all the things that are necessary for learning Pharo syntax.",
+        "goal" : "We want to have a more in-depth tutorial which can cover more than the basics of Pharo.\nTo have more learning resources availables inside the Pharo image.",
         "keywords" : [
-            "items",
-            "collector",
-            "web",
-            "rest",
-            "spec"
+            "tutorial",
+            "tools",
+            "pharo"
         ],
         "levels" : [
             "Beginner"
@@ -387,6 +383,41 @@
         ],
         "levels" : [
             "Beginner",
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Implementing A* graph algorithm",
+        "supervisors" : [
+            "Sebastian Jordan"
+        ],
+        "context" : "Currently, in pharo-ai (https://github.com/pharo-ai/wiki) we have implemented several graphs algorithms.\nWe have a released working version of our graphs library.\nWe want to realse a second version and for that we would like to implement the A* algorithm.\nThe A* algorithm is one of the most well-know algorithms for space state search.\nThat is widely used in AI algorithms for doing smart searches.",
+        "goal" : "To have a working version of the A* algorithm for using it for smart searches.",
+        "keywords" : [
+            "ai",
+            "graphs algorithms",
+            "state space search"
+        ],
+        "levels" : [
+            "Beginner",
+            "Intermediate"
+        ]
+    },
+    {
+        "title" : "Machine Learning for (SmallLint) Quality Rules Profile",
+        "supervisors" : [
+            "Sebastian Jordan",
+            "Oleksandr Zaitsev",
+            "Stéphane Ducasse"
+        ],
+        "context" : "The idea is to use the Pharo-Ai/Machine learnign algorithms that are already available (https://github.com/pharo-ai/wiki) for detecting automatically transformations rules for improving the quality of the code.",
+        "goal" : "",
+        "keywords" : [
+            "ai",
+            "machine learning",
+            "tansformation rules"
+        ],
+        "levels" : [
             "Intermediate"
         ]
     }
