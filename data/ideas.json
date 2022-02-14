@@ -76,13 +76,9 @@
         "context" : "Pillar is a markup syntax that is easy to use and learn. This markup syntax generates a document tree. P\n    illar can export to HTML, LaTeX (to produce PDFs) and Markdown. Pillar has already been used in several projects \n    (http://www.smalltalkhub.com/#!/~Pier/Pillar) and most of the pharo books and mooc",
         "goal" : "The goal of the project is to do help in the development of the new iteration of Pillar. Previous development effort introduced a better \n    architecture but there are still some points to improve. \n    - Documenting certain classes\n    - Improving the archetype design\n    - Separating command-line into object configurators and command-line\n    - Producing a new version of ectastic http://guillep.github.io/ecstatic/ that uses the lastest version of pillar. \n    - One subgoal of this project is to add the standard OpenDocument export format (used by LibreOffice and OpenDocument).",
         "keywords" : [
-            "pillar",
             "opendocument",
             "libreoffice",
-            "openoffice",
-            "document",
-            "tree",
-            "visitor"
+            "document"
         ],
         "levels" : [
             "Beginner"
@@ -170,7 +166,6 @@
         "context" : "The Pharo Launcher is an application that is directly installed by the users. This application has developed installers for OSX and Windows, although for Linux installation packages only uses a Zip file.\n\t   Different Linux distributions have different ways of distributing applications: apt, yum, snap, rpm, etc.\n\t   Having an application packaged for each of the distributions requires developing all the processes for each of the distributions.\n\t   Open Build Services is a service provided by the comunity of openSUSE to provide a single way of packaging an application to different distributions.\n\t   The objective of this topic is to modify the build process of the Pharo Launcher and integrate it with OBS. This objective requires to modify the build process of Pharo Launcher, learn about different build systems, and to implement them in OBS.",
         "goal" : "",
         "keywords" : [
-            "packaging",
             "build process",
             "cmake",
             "distribution",
@@ -206,9 +201,7 @@
         "context" : "Pharo is a powerful IDE. However it needs a way to load easily code fragments writing in tonel format. \nThe idea is to be able to select, load save code and to replace the old changeset.",
         "goal" : "",
         "keywords" : [
-            "code",
-            "filein",
-            "fileout"
+            "code importer"
         ],
         "levels" : [
             "Beginner"
@@ -222,7 +215,6 @@
         "context" : "ProfStef is an in-image tutorial that is available in a Pharo image.\nIt has all the things that are necessary for learning Pharo syntax.",
         "goal" : "We want to have a more in-depth tutorial which can cover more than the basics of Pharo.\nTo have more learning resources availables inside the Pharo image.",
         "keywords" : [
-            "tutorial",
             "tools",
             "pharo"
         ],
