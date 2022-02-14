@@ -92,7 +92,8 @@
         "title" : "Pharo Launcher command line interface",
         "supervisors" : [
             "Guillermo Polito",
-            "Christophe Demarey"
+            "Christophe Demarey",
+            "David Bajger"
         ],
         "context" : "The pharo launcher is an application that allows the management of pharo images. In a \"docker style\", you can download images from templates, install them, list your installed images, and launch them. All this is done through a visual user interface in a desktop application.",
         "goal" : "The goal of this project is to implement a command line interface for the Pharo launcher, to be able to manipulate it on servers as we do with docker. For example:\n       \n       $ phlauncher list\n       $ phlauncher templates\n       $ phlauncher install X\n       $ phlauncher run X",
