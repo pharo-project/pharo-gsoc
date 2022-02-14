@@ -51,7 +51,6 @@
             "statistics"
         ],
         "levels": [
-            "Beginner",
             "Intermediate"
         ]
     },
@@ -101,7 +100,8 @@
             "test runner"
         ],
         "levels": [
-            "Beginner"
+            "Beginner",
+            "Intermediate"
         ]
     },
     {
@@ -119,12 +119,11 @@
             "code visualisations"
         ],
         "levels": [
-            "Beginner",
             "Intermediate"
         ]
     },
     {
-        "title": "Implementing K-Means++ algorithm",
+        "title": "Implementing K-Means++ - Clustering Algorithms",
         "supervisors": [
             "Sebastian Jordan",
             "Oleksandr Zaitsev"
@@ -138,12 +137,11 @@
             "clustering"
         ],
         "levels": [
-            "Beginner",
             "Intermediate"
         ]
     },
     {
-        "title": "Implementing A* graph algorithm",
+        "title": "Implementing A* - Graph Algorithms",
         "supervisors": [
             "Sebastian Jordan"
         ],
@@ -155,7 +153,6 @@
             "state space search"
         ],
         "levels": [
-            "Beginner",
             "Intermediate"
         ]
     },
@@ -178,7 +175,7 @@
         ]
     },
     {
-        "title": "Gaussian Mixture Model - Unsupervised learning",
+        "title": "Gaussian Mixture Model - Clustering Algorithms",
         "supervisors": [
             "Sebastian Jordan",
             "Oleksandr Zaitsev"
