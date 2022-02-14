@@ -12,7 +12,7 @@
     {
         "name" : "Anne Etien",
         "email" : "anne.etien@inria.fr",
-        "github" : ""
+        "github" : "anneetien"
     },
     {
         "name" : "Christophe Demarey",
@@ -32,7 +32,7 @@
     {
         "name" : "Gordana Rakic",
         "email" : "goca@dmi.uns.ac.rs",
-        "github" : ""
+        "github" : "gocko"
     },
     {
         "name" : "Guillermo Polito",
@@ -98,5 +98,10 @@
         "name" : "Sebastian Jordan",
         "email" : "sebastian.jordan@inria.fr",
         "github" : "jordanmontt"
+    },
+    {
+        "name" : "David Bajger",
+        "email" : "bajger@gmail.com",
+        "github" : "Bajger"
     }
 ]

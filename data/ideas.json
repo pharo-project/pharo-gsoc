@@ -370,5 +370,24 @@
             "Beginner",
             "Intermediate"
         ]
+    },
+    {
+        "title" : "Implementing K-Means++ algorithm",
+        "supervisors" : [
+            "Sebastian Jordan",
+            "Oleksandr Zaitsev"
+        ],
+        "context" : "Currently, in pharo-ai (https://github.com/pharo-ai/wiki) we have implemented the K-Means algorithm for unsupervised learning.\nNow, we would like to implement the K-Means++ variation.\nThis variation allows to choose more efficiently the centroids of the clustering to have better results.",
+        "goal" : "To have a working implementation of the K-Means++ algorithms and to release it as the default implementation of K-Means for Pharo-AI.",
+        "keywords" : [
+            "ai",
+            "machine learning",
+            "unsupervised learning",
+            "clustering"
+        ],
+        "levels" : [
+            "Beginner",
+            "Intermediate"
+        ]
     }
 ]
