@@ -333,5 +333,21 @@
         "levels" : [
             "Beginner"
         ]
+    },
+    {
+        "title" : "Migrating PDF-Talk to Pharo",
+        "supervisors" : [
+            "Stéphane Ducasse"
+        ],
+        "context" : "PDFT alk is a library for reading and writing PDF files.\nPDF files can be opened and all PDF objects are available as Smalltalk objects, which can be manipulated in any way you like. Likewise, any Smalltalk PDF object (net) can be written out as conforming PDF file.\nMore info in https://wiki.pdftalk.de/doku.php",
+        "goal" : "To have a first version of PDF Talk running in Pharo Smalltalk.\n ",
+        "keywords" : [
+            "unit tests",
+            "tools",
+            "test runner"
+        ],
+        "levels" : [
+            "Beginner"
+        ]
     }
 ]
