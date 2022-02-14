@@ -163,5 +163,10 @@
         "name" : "Yann Lesage",
         "email" : "yannlesag@gmail.com",
         "github" : ""
+    },
+    {
+        "name" : "Sebastian Jordan",
+        "email" : "sebastian.jordan@inria.fr",
+        "github" : "jordanmontt"
     }
 ]
