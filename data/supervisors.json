@@ -1,107 +1,107 @@
 [
     {
-        "name" : "Aik-Siong Koh",
-        "email" : "askoh@askoh.com",
-        "github" : ""
+        "name": "Aik-Siong Koh",
+        "email": "askoh@askoh.com",
+        "github": ""
     },
     {
-        "name" : "Alexandre Bergel",
-        "email" : "alexandre.bergel@me.com",
-        "github" : "bergel"
+        "name": "Alexandre Bergel",
+        "email": "alexandre.bergel@me.com",
+        "github": "bergel"
     },
     {
-        "name" : "Anne Etien",
-        "email" : "anne.etien@inria.fr",
-        "github" : "anneetien"
+        "name": "Anne Etien",
+        "email": "anne.etien@inria.fr",
+        "github": "anneetien"
     },
     {
-        "name" : "Christophe Demarey",
-        "email" : "christophe.demarey@inria.fr",
-        "github" : "demarey"
+        "name": "Christophe Demarey",
+        "email": "christophe.demarey@inria.fr",
+        "github": "demarey"
     },
     {
-        "name" : "Christopher Fuhrman",
-        "email" : "christopher.fuhrman@etsmtl.ca",
-        "github" : "fuhrmanator"
+        "name": "Christopher Fuhrman",
+        "email": "christopher.fuhrman@etsmtl.ca",
+        "github": "fuhrmanator"
     },
     {
-        "name" : "Evelyn Cusi Lopez",
-        "email" : "cusi.evelyn@gmail.com",
-        "github" : "Lin777"
+        "name": "David Bajger",
+        "email": "bajger@gmail.com",
+        "github": "Bajger"
     },
     {
-        "name" : "Gordana Rakic",
-        "email" : "goca@dmi.uns.ac.rs",
-        "github" : "gocko"
+        "name": "Evelyn Cusi Lopez",
+        "email": "cusi.evelyn@gmail.com",
+        "github": "Lin777"
     },
     {
-        "name" : "Guillermo Polito",
-        "email" : "guillermopolito@gmail.com",
-        "github" : "guillep"
+        "name": "Gordana Rakic",
+        "email": "goca@dmi.uns.ac.rs",
+        "github": "gocko"
     },
     {
-        "name" : "Hernán Morales",
-        "email" : "hernan.morales@gmail.com",
-        "github" : "hernanmd"
+        "name": "Guillermo Polito",
+        "email": "guillermopolito@gmail.com",
+        "github": "guillep"
     },
     {
-        "name" : "Juan Pablo Sandoval Alcocer",
-        "email" : "juampiboy@gmail.com",
-        "github" : "jpsandoval"
+        "name": "Hernán Morales",
+        "email": "hernan.morales@gmail.com",
+        "github": "hernanmd"
     },
     {
-        "name" : "Milton Mamani",
-        "email" : "akevalion@gmail.com",
-        "github" : "akevalion"
+        "name": "Juan Pablo Sandoval Alcocer",
+        "email": "juampiboy@gmail.com",
+        "github": "jpsandoval"
     },
     {
-        "name" : "Nicolas Anquetil",
-        "email" : "nicolas.anquetil@inria.fr",
-        "github" : "NicolasAnquetil"
+        "name": "Milton Mamani",
+        "email": "akevalion@gmail.com",
+        "github": "akevalion"
     },
     {
-        "name" : "Oleksandr Zaitsev",
-        "email" : "olk.zaytsev@gmail.com",
-        "github" : "olekscode"
+        "name": "Nicolas Anquetil",
+        "email": "nicolas.anquetil@inria.fr",
+        "github": "NicolasAnquetil"
     },
     {
-        "name" : "Pablo Tesone",
-        "email" : "tesonep@gmail.com",
-        "github" : "tesonep"
+        "name": "Oleksandr Zaitsev",
+        "email": "olk.zaytsev@gmail.com",
+        "github": "olekscode"
     },
     {
-        "name" : "Philippe Back",
-        "email" : "philippeback@gmail.com",
-        "github" : "philippeback"
+        "name": "Pablo Tesone",
+        "email": "tesonep@gmail.com",
+        "github": "tesonep"
     },
     {
-        "name" : "Santiago Bragagnolo",
-        "email" : "santiago.bragagnolo@inria.fr",
-        "github" : "sbragagnolo"
+        "name": "Philippe Back",
+        "email": "philippeback@gmail.com",
+        "github": "philippeback"
     },
     {
-        "name" : "Serge Stinckwich",
-        "email" : "serge.stinckwich@gmail.com",
-        "github" : "SergeStinckwich"
+        "name": "Santiago Bragagnolo",
+        "email": "santiago.bragagnolo@inria.fr",
+        "github": "sbragagnolo"
     },
     {
-        "name" : "Stephan Eggermont",
-        "email" : "stephan@legacycode.nl",
-        "github" : "StephanEggermont"
+        "name": "Sebastian Jordan",
+        "email": "sebastian.jordan@inria.fr",
+        "github": "jordanmontt"
     },
     {
-        "name" : "Stéphane Ducasse",
-        "email" : "stephane.ducasse@inria.fr",
-        "github" : "Ducasse"
+        "name": "Serge Stinckwich",
+        "email": "serge.stinckwich@gmail.com",
+        "github": "SergeStinckwich"
     },
     {
-        "name" : "Sebastian Jordan",
-        "email" : "sebastian.jordan@inria.fr",
-        "github" : "jordanmontt"
+        "name": "Stephan Eggermont",
+        "email": "stephan@legacycode.nl",
+        "github": "StephanEggermont"
     },
     {
-        "name" : "David Bajger",
-        "email" : "bajger@gmail.com",
-        "github" : "Bajger"
+        "name": "Stéphane Ducasse",
+        "email": "stephane.ducasse@inria.fr",
+        "github": "Ducasse"
     }
 ]
