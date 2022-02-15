@@ -1,21 +1,5 @@
 [
     {
-        "title": "Pharo Input Method Editor Support",
-        "supervisors": [
-            "Guille Polito",
-            "Tomohiro Oda"
-        ],
-        "context": "Input Method Editors(IME) are important components for accessibility, specially in non-occidental countries. They allow the input of non aphabetic characters such as japanese or chinese.",
-        "goal": "The goal of this project is to extend Pharo's IDE with IME support, completing the original efforts done in Pharo 9 https://github.com/tomooda/PharoIM/",
-        "keywords": [
-            "event management",
-            "accessibility"
-        ],
-        "levels": [
-            "Beginner"
-        ]
-    },
-    {
         "title": "Dependency Graph in the System Browser",
         "supervisors": [
             "Milton Mamani",
@@ -120,6 +104,22 @@
         "levels": [
             "Beginner",
             "Intermediate"
+        ]
+    },
+    {
+        "title": "Pharo Input Method Editor Support",
+        "supervisors": [
+            "Guille Polito",
+            "Tomohiro Oda"
+        ],
+        "context": "Input Method Editors(IME) are important components for accessibility, specially in non-occidental countries. They allow the input of non aphabetic characters such as japanese or chinese.",
+        "goal": "The goal of this project is to extend Pharo's IDE with IME support, completing the original efforts done in Pharo 9 https://github.com/tomooda/PharoIM/",
+        "keywords": [
+            "event management",
+            "accessibility"
+        ],
+        "levels": [
+            "Beginner"
         ]
     },
     {
