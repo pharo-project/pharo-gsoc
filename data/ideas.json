@@ -20,7 +20,7 @@
         "title": "Improving code completion",
         "supervisors": [
             "Guillermo Polito",
-            "Juan Pablo Sandoval",
+            "Juan Pablo Sandoval Alcocer",
             "Evelyn Cusi Lopez"
         ],
         "context": "Automatic completion is really important. The current code completion already defines some good \nbehavior but it can do better.",
