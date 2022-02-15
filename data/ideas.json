@@ -109,7 +109,7 @@
     {
         "title": "Pharo Input Method Editor Support",
         "supervisors": [
-            "Guille Polito",
+            "Guillermo Polito",
             "Tomohiro Oda"
         ],
         "context": "Input Method Editors(IME) are important components for accessibility, specially in non-occidental countries. They allow the input of non aphabetic characters such as japanese or chinese.",
