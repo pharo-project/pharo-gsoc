@@ -123,7 +123,7 @@ const CallForStudentsPage = () => (
     <p>You can read the following blog posts written by students who have completed the Google Summer of Code with Pharo Consortium in previous years:</p>
 
     <ul>
-      <li>Balaji D, <a href="https://balaji612141526.wordpress.com/2021/06/21/gsoc-2021-with-pharo/"> GSoC 2021 final report: Statistical Data Analysis in Pharo using DataFrame</a></li>
+      <li>Balaji G, <a href="https://balaji612141526.wordpress.com/2021/06/21/gsoc-2021-with-pharo/"> GSoC 2021 final report: Statistical Data Analysis in Pharo using DataFrame</a></li>
       <li>Laurine Dargaud, <a href="https://gsoc.ldargaud.fr/final-evaluation"> GSoC 2021: Spatial data in Pharo</a></li>
       <li>Alejandra Cossio, <a href="https://alecossioch.github.io/gsoc21/">Refining Code Critics: My GSoC 2021 project</a></li>
       <li>Oleksandr Zaytsev, <a href="https://medium.com/@i.oleks/how-to-apply-for-google-summer-of-code-95c1bfcd41a5">How to Apply to Google Summer of Code</a></li>
