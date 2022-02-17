@@ -33,9 +33,13 @@ class IdeasPage extends React.Component {
     this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE);
 
     this.supervisors = this.supervisors.map(each => {
-      const githubUser = each.github ?
+      // Commented out because it is very slow :(
+
+      /*const githubUser = each.github ?
         getJsonFromURL(`https://api.github.com/users/${each.github}`) :
-        null;
+        null;*/
+
+      const githubUser = null;
 
       const picture = githubUser ? githubUser.avatar_url : null;
       return { ...each, pictureUrl: picture };
