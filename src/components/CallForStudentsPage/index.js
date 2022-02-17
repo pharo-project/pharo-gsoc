@@ -2,22 +2,27 @@ import React from 'react';
 
 const CallForStudentsPage = () => (
   <div class="container">
-    <h1>Google Summer of Code 2021: Call for Students</h1>
+    <h1>Google Summer of Code 2022: Call for Students</h1>
 
     <p>Dear students,</p>
 
-    <p>We are happy to announce that once again, Pharo Consortium is looking for smart and enthusiastic students to work with us during Google Summer of Code 2021. In the following sections, we explain the program requirements and provide a detailed description of the application process. This text is based on the <a href="https://summerofcode.withgoogle.com/rules/">Google Summer of Code 2021 Program Rules</a>. We strongly suggest that you read the original rules. In case of any disagreement between this document and the Rules, the Rules should prevail.</p>
+    <p>We are happy to announce that once again, Pharo Consortium is looking for smart and enthusiastic students to work with us during Google Summer of Code 2022. In the following sections, we explain the program requirements and provide a detailed description of the application process. This text is based on the <a href="https://summerofcode.withgoogle.com/rules/">Google Summer of Code 2022 Program Rules</a>. We strongly suggest that you read the original rules. In case of any disagreement between this document and the Rules, the Rules should prevail.</p>
 
     <p>If you have any additional questions, feel free to send an email to any of the organizers listed at the bottom of this page.</p>
 
     <h2>1. What is GSoC?</h2>
 
-    <p>Google Summer of Code (GSoC) is a global program focused on introducing students to open source software development. Students work on a 2-month programming project with an open-source organization during their break from university. You can read more about the program on its <a href="https://summerofcode.withgoogle.com/">official website</a>. We want to emphasize the following:</p>
+    <p>Google Summer of Code (GSoC) is a global program focused on introducing students to open source software development. Students work on programming project with an open-source organization during their break from university for 12+ weeks. You can read more about the program on its <a href="https://summerofcode.withgoogle.com/">official website</a>. We want to emphasize the following:</p>
 
     <ul>
-      <li>The program's active part starts on May 17 and ends on August 31, when the results are announced.</li>
-      <li>The first month of the program (May 17 - June 7) is called the community bonding period. During this time, you will be introduced to our community, get comfortable with our communication channels (Discord and mailing lists), get to know your mentors, prepare a detailed timeline for the summer, etc.</li>
-      <li>The coding phase begins on June 7 and ends on August 16. During this time, you will be working on your projects, regularly communicating with your mentors, writing blog posts, etc.</li>
+      <li>The program's active part starts on May 20.</li>
+      <li>The first month of the program (May 20 - June 12) is called the community bonding period. During this time, you will be introduced to our community, get comfortable with our communication channels (Discord and mailing lists), get to know your mentors, prepare a detailed timeline for the summer, etc.</li>
+      <li>The standard coding phase begins on June 13 and ends on September 12. During this time, you will be working on your projects, regularly communicating with your mentors, writing blog posts, etc.</li>
+	  <li>After the end of the standard coding phase, contributors with the extended timeline continue coding while the ones with standard timeline emter the evaluation phase<\li>
+	  <ul>
+		<li>For the contiributors with the standard timeline, the following week Septemebr 13 to 19 is reserved for evalution by mentors which results with initial results announcements.<\li>
+		<li>For the contributoros with the extended timeline, the coding period continues in period September 12 - November 13, which is followed by submission of final product (November 21) and mentor reporting (November 28).
+	  <\ul>
       <li>During its active part, GSoC should be treated as a full-time job. If you have more than a few hours a week of extra commitments, you probably should skip GSoC; it is unlikely that you will be successful. In any case, be completely clear about outside time commitments as part of your proposal.</li>
       <li>Accepted students will be receiving a stipend (payment) from Google at the end of each month. <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">Stipend amounts</a> are calculated based on your location.</li>
     </ul>
@@ -39,7 +44,6 @@ const CallForStudentsPage = () => (
 
     <ul>
       <li><b>eighteen (18) years of age or older</b> upon registration for the program;</li>
-      <li><b>enrolled into a post-secondary academic program</b>, as of the acceptance date or have graduated from the program between December 1, 2020, and acceptance date or has been accepted into a post-secondary academic program that begins by October 1, 2021;</li>
       <li>eligible to work in the country in which they reside for the duration of the program;</li>
       <li>not an Organization Administrator or Mentor in the program.</li>
     </ul>
@@ -82,13 +86,9 @@ const CallForStudentsPage = () => (
       <li>Submit a Project Proposal</li>
     </ol>
 
-    <p><b>The application period is March 29, 18:00 UTC - April 13, 18:00 UTC</b>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of Google Summer of Code 2021</a>.</p>
+    <p><b>The application period is April 4, 18:00 UTC - April 19, 18:00 UTC</b>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of Google Summer of Code 2022</a>.</p>
 
-    <h3>5.1. Proof of enrollment</h3>
-
-    <p>Carefully read <a href="https://developers.google.com/open-source/gsoc/help/proof-of-enrollment">what is considered a valid proof of enrollment</a>.</p>
-
-    <h3>5.2. Writing a project proposal</h3>
+	<h3>5.1. Writing a project proposal</h3>
 
     <ul>
       <li>Take a look at the <a href="https://gsoc.pharo.org/ideas">list of ideas</a> proposed by the Pharo Community. You can take any one of these topics or suggest your own. However, you must make sure that:</li>
