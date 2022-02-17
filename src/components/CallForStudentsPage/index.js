@@ -18,11 +18,11 @@ const CallForStudentsPage = () => (
       <li>The program's active part starts on May 20.</li>
       <li>The first month of the program (May 20 - June 12) is called the community bonding period. During this time, you will be introduced to our community, get comfortable with our communication channels (Discord and mailing lists), get to know your mentors, prepare a detailed timeline for the summer, etc.</li>
       <li>The standard coding phase begins on June 13 and ends on September 12. During this time, you will be working on your projects, regularly communicating with your mentors, writing blog posts, etc.</li>
-	  <li>After the end of the standard coding phase, contributors with the extended timeline continue coding while the ones with standard timeline emter the evaluation phase<\li>
+	  <li>After the end of the standard coding phase, contributors with the extended timeline continue coding while the ones with standard timeline emter the evaluation phase</li>
 	  <ul>
-		<li>For the contiributors with the standard timeline, the following week Septemebr 13 to 19 is reserved for evalution by mentors which results with initial results announcements.<\li>
-		<li>For the contributoros with the extended timeline, the coding period continues in period September 12 - November 13, which is followed by submission of final product (November 21) and mentor reporting (November 28).
-	  <\ul>
+		<li>For the contiributors with the standard timeline, the following week Septemebr 13 to 19 is reserved for evalution by mentors which results with initial results announcements.</li>
+		<li>For the contributoros with the extended timeline, the coding period continues in period September 12 - November 13, which is followed by submission of final product (November 21) and mentor reporting (November 28).</li>
+	  </ul>
       <li>During its active part, GSoC should be treated as a full-time job. If you have more than a few hours a week of extra commitments, you probably should skip GSoC; it is unlikely that you will be successful. In any case, be completely clear about outside time commitments as part of your proposal.</li>
       <li>Accepted students will be receiving a stipend (payment) from Google at the end of each month. <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">Stipend amounts</a> are calculated based on your location.</li>
     </ul>
