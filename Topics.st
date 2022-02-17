@@ -475,3 +475,15 @@ PharoTopic new
        level: 'Intermediate';
        yourself.
 
+
+PharoTopic new
+       title: 'Building object-centric debuggers';
+       contact: 'steven.costiou@inria.fr, juanpablo.sandoval@ing.puc.cl';
+       supervisors: 'Steven Costiu and Juan Pablo Sandoval';
+       keywords: 'debugging, poo';
+       context: 'The objective of this internship is to identify and to evaluate the debugging scenarios that are the most likely to benefit from object-centric debugging. The intern will interrogate real developers about object-centric debugging scenarios, then implement prototypes and evaluate them empirically with developers to validate these scenarios.';
+       level: 'Intermediate';
+       yourself.
+
+
+
