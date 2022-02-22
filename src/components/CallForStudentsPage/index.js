@@ -44,10 +44,12 @@ const CallForStudentsPage = () => (
 
     <ul>
       <li><b>eighteen (18) years of age or older</b> upon registration for the program;</li>
-      <li>eligible to work in the country in which they reside for the duration of the program;</li>
+      <li>an open source beginner</li>
+	  <li>eligible to work in the country in which they reside for the duration of the program;</li>
+	  <li>a resident of a country not currently embargoed by the United States</li>
       <li>not an Organization Administrator or Mentor in the program.</li>
     </ul>
-
+	
     <h3>3.1. Strongly preferred by Pharo Consortium</h3>
 
     <ul>
@@ -78,11 +80,10 @@ const CallForStudentsPage = () => (
 
     <h2>5. How to apply?</h2>
 
-    <p>To <a href="https://summerofcode.withgoogle.com/student-signup/">apply for Google Summer of Code</a>, you must:</p>
+    <p>To <a href="https://summerofcode.withgoogle.com/get-started">apply for Google Summer of Code</a>, you must:</p>
 
     <ol>
       <li>Accept the terms of the Student Participant Agreement</li>
-      <li>Submit Proof of Enrollment</li>
       <li>Submit a Project Proposal</li>
     </ol>
 
