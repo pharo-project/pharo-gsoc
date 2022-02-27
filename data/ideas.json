@@ -483,7 +483,7 @@
         "levels": [
             "Intermediate"
         ]
-    }
+    },
 	{
         "title": "Code clone detection in MOOSE",
         "supervisors": [
@@ -501,7 +501,7 @@
         "levels": [
             "Intermediate"
         ]
-    }
+    },
 	{
         "title": "Code clones manipulationa and visualization in MOOSE",
         "supervisors": [
