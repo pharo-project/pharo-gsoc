@@ -501,5 +501,22 @@
         "levels": [
             "Intermediate"
         ]
+    },
+	{
+        "title": "Code clones manipulationa and visualization in MOOSE",
+        "supervisors": [
+            "Nicolas Anquetil",
+            "Gordana Rakic"
+        ],
+        "context": "Code clones detection techniques provide users with a immense set of differently structured  information about detected clones where searching and usage of these information become difficult and requires further proccessing. Therefore a good representation and visualization of clone information may increase usefullness of clone detection for software developement and maintenance.\n \n Project size: Medium size [175 hours]",
+        "goal": "Create a clone meta-model, implement clone processing and vizualization techniques.",
+        "keywords": [
+            "tools",
+            "code clones",
+            "visualisations"
+        ],
+        "levels": [
+            "Intermediate"
+        ]
     }
 ]
