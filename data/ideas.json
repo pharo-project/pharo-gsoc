@@ -483,40 +483,5 @@
         "levels": [
             "Intermediate"
         ]
-    },
-	{
-        "title": "Code clone detection in MOOSE",
-        "supervisors": [
-            "Nicolas Anquetil",
-            "Gordana Rakic",
-			"Santiago Bragagnolo"
-        ],
-        "context": "Code clones are well known issue in software development and maintenance. Their detection is standardly an initial step in their refactoring, while lately it supports their maintenance and manipulation. A contemporary sotware analyses platform as MOOSE must support efficient and scalable clone detection and manipulation. \n \n Project size: Medium size [175 hours]",
-        "goal": "Implement selected clone detection algorithms applicable independently of programming language and peferably for multilingual projects.",
-        "keywords": [
-            "tools",
-            "code clones",
-            "clone detection"
-        ],
-        "levels": [
-            "Intermediate"
-        ]
-    },
-	{
-        "title": "Code clones manipulationa and visualization in MOOSE",
-        "supervisors": [
-            "Nicolas Anquetil",
-            "Gordana Rakic",
-        ],
-        "context": "Code clones detection techniques provide users with a immense set of differently structured  information about detected clones where searching and usage of these information become difficult and requires further proccessing. Therefore a good representation and visualization of clone information may increase usefullness of clone detection for software developement and maintenance.\n \n Project size: Medium size [175 hours]",
-        "goal": "Create a clone meta-model, implement clone processing and vizualization techniques.",
-        "keywords": [
-            "tools",
-            "code clones",
-            "visualisations"
-        ],
-        "levels": [
-            "Intermediate"
-        ]
     }
 ]
