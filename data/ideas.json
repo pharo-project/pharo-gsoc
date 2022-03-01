@@ -34,6 +34,25 @@
         ]
     },
     {
+        "title": "Classes and Methods for Spatial Data",
+        "supervisors": [
+            "Etienne Delay",
+            "Norbert Hartl",
+            "Serge Stinckwich"
+        ],
+        "context": "As a title of 'the economist' the worlds most valuable resource is no longer oil, but data. Nowadays data and especially geospatial data become central in our societies. Each one of us needs to be able to deal with data and spatial data. \n \n Project size: Medium size [175 hours]",
+        "goal": "We propose to explore structure to spatial data finding a way to handle different types of geospatial data in pharo. The goal is to develop some spatial method allowing for users to deal with spatial data according to the recommendations of the [OGS](https://www.ogc.org/standards/sfa) (mostly methods for testing spatial relations between geometric objects).  For that we will start from tools already developed last year by [Laurine Dargaud](https://gsoc.ldargaud.fr/accueil) during 2021 GSoC. ",
+        "keywords": [
+            "geography",
+            "spatial data",
+            "spatial data manipulation",
+            "geographical grammar"
+        ],
+        "levels": [
+            "Intermediate"
+        ]
+    },
+    {
         "title": "DataFrame",
         "supervisors": [
             "Oleksandr Zaitsev",
@@ -484,12 +503,12 @@
             "Intermediate"
         ]
     },
-	{
+    {
         "title": "Code clone detection in MOOSE",
         "supervisors": [
             "Nicolas Anquetil",
             "Gordana Rakic",
-			"Santiago Bragagnolo"
+            "Santiago Bragagnolo"
         ],
         "context": "Code clones are well known issue in software development and maintenance. Their detection is standardly an initial step in their refactoring, while lately it supports their maintenance and manipulation. A contemporary sotware analyses platform as MOOSE must support efficient and scalable clone detection and manipulation. \n \n Project size: Medium size [175 hours]",
         "goal": "Implement selected clone detection algorithms applicable independently of programming language and peferably for multilingual projects.",
@@ -502,7 +521,7 @@
             "Intermediate"
         ]
     },
-	{
+    {
         "title": "Code clones manipulation and visualization in MOOSE",
         "supervisors": [
             "Nicolas Anquetil",

@@ -35,6 +35,11 @@
         "github": "Bajger"
     },
     {
+        "name" : "Etienne Delay",
+        "email" : "etienne.delay@cirad.fr",
+        "github" : "ElCep"
+    },
+    {
         "name": "Evelyn Cusi Lopez",
         "email": "cusi.evelyn@gmail.com",
         "github": "Lin777"
@@ -73,6 +78,11 @@
         "name": "Nicolas Anquetil",
         "email": "nicolas.anquetil@inria.fr",
         "github": "NicolasAnquetil"
+    },
+    {
+        "name": "Norbert Hartl",
+        "email": "norbert@hartl.name",
+        "github": "noha"
     },
     {
         "name": "Oleksandr Zaitsev",
