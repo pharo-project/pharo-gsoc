@@ -1,4 +1,6 @@
-export const LANDING = '/';
-export const IDEAS = '/ideas';
-export const MENTORS = '/mentors';
-export const CALL_FOR_STUDENTS = '/call-for-students';
+const PREFIX = '/pharo-gsoc-2023';
+
+export const LANDING = PREFIX + '/';
+export const IDEAS = PREFIX + '/ideas';
+export const MENTORS = PREFIX + '/mentors';
+export const CALL_FOR_STUDENTS = PREFIX + '/call-for-students';
