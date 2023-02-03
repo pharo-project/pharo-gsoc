@@ -1,6 +1,6 @@
 import React from "react"
 import logo from '../../img/logo-big.png';
-import { Modal } from "@material-ui/core"
+import { Dialog } from "@material-ui/core"
 
 export default function IdeaModal({ open, onClose, idea, translations }) {
 
@@ -10,7 +10,9 @@ export default function IdeaModal({ open, onClose, idea, translations }) {
   const t = buildTranslate(translations)
 
   return (
-    <Modal
+    <Dialog
+      scroll="paper"
+      maxWidth="md"
       open={open}
       onClose={onClose}
       aria-labelledby={title}
@@ -20,7 +22,7 @@ export default function IdeaModal({ open, onClose, idea, translations }) {
         <h2>
           {title}
           <img
-            src={img || logo }
+            src={img || logo}
             alt={title}
           />
         </h2>
@@ -54,7 +56,7 @@ export default function IdeaModal({ open, onClose, idea, translations }) {
           &nbsp;<span role="img" aria-label="arrow">⬅️</span>
         </span>
       </div>
-    </Modal>
+    </Dialog>
   )
 }
 

@@ -22,6 +22,20 @@ article {
 }
 
 
+.modal {
+  background-color: #fefefe;
+  margin: 1% auto;
+  border-radius: 5px;
+  border: 1px transparent;
+  width: 93%; 
+}
+
+.MuiDialog-paper {
+  margin: 12px !important;
+  position: relative;
+  overflow-y: auto;
+}
+
 .ideasGrid {
   display: flex;
   justify-content: space-between;

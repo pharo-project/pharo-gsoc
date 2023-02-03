@@ -11,14 +11,6 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px 40px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
 .IdeaDetailedView h2 {
   text-align: center;
 }
