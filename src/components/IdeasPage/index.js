@@ -1,36 +1,35 @@
-import $ from "jquery";
-import React from 'react';
-import * as URLS from '../../constants/urls';
-import IdeaCard from './IdeaCard';
-import IdeaModal from './IdeaModal';
-import IdeasGrid from './IdeasGrid';
-import IdeaShortSummary from './IdeaShortSummary';
-import './style.css';
+import $ from "jquery"
+import React from 'react'
+import * as URLS from '../../constants/urls'
+import IdeaCard from './IdeaCard'
+import IdeaModal from './IdeaModal'
+import IdeasGrid from './IdeasGrid'
+import './style.css'
 
 
 const getContentsOfFileFromURL = url => {
-  var result = null;
+  var result = null
   $.ajax({
     url: url,
     type: 'get',
     dataType: 'text',
     async: false,
     success: function (data) {
-      result = data;
+      result = data
     }
-  });
-  return result;
+  })
+  return result
 }
 
 const getJsonFromURL = url =>
-  JSON.parse(getContentsOfFileFromURL(url));
+  JSON.parse(getContentsOfFileFromURL(url))
 
 class IdeasPage extends React.Component {
   constructor() {
-    super();
+    super()
 
-    this.ideas = getJsonFromURL(URLS.IDEAS_FILE);
-    this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE);
+    this.ideas = getJsonFromURL(URLS.IDEAS_FILE)
+    this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE)
 
     // this.supervisors = this.supervisors
     // .map(each => {
@@ -38,19 +37,19 @@ class IdeasPage extends React.Component {
 
     //   /*const githubUser = each.github ?
     //     getJsonFromURL(`https://api.github.com/users/${each.github}`) :
-    //     null;*/
+    //     null*/
 
-    //   const githubUser = null;
+    //   const githubUser = null
 
-    //   const picture = githubUser ? githubUser.avatar_url : null;
-    //   return { ...each, pictureUrl: picture };
-    // });
+    //   const picture = githubUser ? githubUser.avatar_url : null
+    //   return { ...each, pictureUrl: picture }
+    // })
 
     this.state = {
       ideasToDisplay: this.ideas,
       showDetailedIdeaView: false,
       ideaToShowInDetailedView: null
-    };
+    }
 
   }
 
@@ -58,23 +57,16 @@ class IdeasPage extends React.Component {
     this.setState({
       showDetailedIdeaView: true,
       ideaToShowInDetailedView: idea
-    });
+    })
   }
 
   closeDetailedIdeaView() {
     this.setState({
       showDetailedIdeaView: false
-    });
+    })
   }
 
   render() {
-    const ideasHtml = this.state.ideasToDisplay.map(idea =>
-      <IdeaShortSummary
-        key={idea.title}
-        idea={idea}
-        onClick={e => this.showIdea(idea)} />
-    );
-
     return (
       <div class="container">
         <h1>Project Ideas</h1>
@@ -102,7 +94,7 @@ class IdeasPage extends React.Component {
           translations={translationsEN}
         />
       </div>
-    );
+    )
   }
 }
 
@@ -131,4 +123,4 @@ const translationsEN = {
   'Advanced': 'Advanced',
 }
 
-export default IdeasPage;
+export default IdeasPage

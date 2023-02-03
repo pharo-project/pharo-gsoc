@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom';
 
 import Navigation from '../Navigation';
-import LandingPage from '../LandingPage';
 import IdeasPage from '../IdeasPage';
 import MentorsPage from '../MentorsPage';
 import CallForStudentsPage from '../CallForStudentsPage';

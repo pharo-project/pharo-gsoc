@@ -1,9 +1,11 @@
-import React from "react";
+import React from "react"
 
-export default function ({ children }) {
+function IdeasGrid({ children }) {
   return (
     <div className={"ideasGrid"}>
       {children}
     </div>
-  );
+  )
 }
+
+export default IdeasGrid
