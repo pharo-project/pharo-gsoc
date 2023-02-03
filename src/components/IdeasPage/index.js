@@ -1,11 +1,11 @@
-import React from 'react';
 import $ from "jquery";
-
-import './style.css';
-import IdeaShortSummary from './IdeaShortSummary';
-import IdeaDetailedView from './IdeaDetailedView';
-import FilterIdeasForm from './FilterIdeasForm';
+import React from 'react';
 import * as URLS from '../../constants/urls';
+import IdeaCard from './IdeaCard';
+import IdeaModal from './IdeaModal';
+import IdeasGrid from './IdeasGrid';
+import IdeaShortSummary from './IdeaShortSummary';
+import './style.css';
 
 
 const getContentsOfFileFromURL = url => {
@@ -15,7 +15,7 @@ const getContentsOfFileFromURL = url => {
     type: 'get',
     dataType: 'text',
     async: false,
-    success: function(data) {
+    success: function (data) {
       result = data;
     }
   });
@@ -32,18 +32,19 @@ class IdeasPage extends React.Component {
     this.ideas = getJsonFromURL(URLS.IDEAS_FILE);
     this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE);
 
-    this.supervisors = this.supervisors.map(each => {
-      // Commented out because it is very slow :(
+    // this.supervisors = this.supervisors
+    // .map(each => {
+    //   // Commented out because it is very slow :(
 
-      /*const githubUser = each.github ?
-        getJsonFromURL(`https://api.github.com/users/${each.github}`) :
-        null;*/
+    //   /*const githubUser = each.github ?
+    //     getJsonFromURL(`https://api.github.com/users/${each.github}`) :
+    //     null;*/
 
-      const githubUser = null;
+    //   const githubUser = null;
 
-      const picture = githubUser ? githubUser.avatar_url : null;
-      return { ...each, pictureUrl: picture };
-    });
+    //   const picture = githubUser ? githubUser.avatar_url : null;
+    //   return { ...each, pictureUrl: picture };
+    // });
 
     this.state = {
       ideasToDisplay: this.ideas,
@@ -51,55 +52,6 @@ class IdeasPage extends React.Component {
       ideaToShowInDetailedView: null
     };
 
-    this.filters = {
-      selectedLevel: null,
-      selectedKeywords: null,
-      selectedSupervisors: null
-    }
-
-    this.filterLevel = this.filterLevel.bind(this);
-    this.filterKeywords = this.filterKeywords.bind(this);
-    this.filterSupervisors = this.filterSupervisors.bind(this);
-    this.closeDetailedIdeaView = this.closeDetailedIdeaView.bind(this);
-  }
-
-  applyFilters() {
-    var filteredIdeas = this.ideas;
-
-    if (this.filters.selectedLevel) {
-      filteredIdeas = filteredIdeas
-        .filter(idea => idea.levels
-          .includes(this.filters.selectedLevel));
-    }
-
-    if (this.filters.selectedKeywords) {
-      filteredIdeas = filteredIdeas
-        .filter(idea => idea.keywords
-          .some(x => this.filters.selectedKeywords.includes(x)));
-    }
-
-    if (this.filters.selectedSupervisors) {
-      filteredIdeas = filteredIdeas
-        .filter(idea => idea.supervisors
-          .some(x => this.filters.selectedSupervisors.includes(x)));
-    }
-
-    this.setState({ideasToDisplay: filteredIdeas});
-  }
-
-  filterLevel(selectedLevel) {
-    this.filters.selectedLevel = selectedLevel;
-    this.applyFilters();
-  }
-
-  filterKeywords(selectedKeywords) {
-    this.filters.selectedKeywords = selectedKeywords;
-    this.applyFilters();
-  }
-
-  filterSupervisors(selectedSupervisors) {
-    this.filters.selectedSupervisors = selectedSupervisors;
-    this.applyFilters();
   }
 
   showIdea(idea) {
@@ -124,28 +76,59 @@ class IdeasPage extends React.Component {
     );
 
     return (
-      <div class="container ideas-container">
+      <div class="container">
         <h1>Project Ideas</h1>
-        <aside>
-          <FilterIdeasForm
-            ideas={this.ideas}
-            onLevelChange={this.filterLevel}
-            onKeywordsChange={this.filterKeywords}
-            onSupervisorsChange={this.filterSupervisors} />
-        </aside>
-        <article>
-          <div className="ideas">
-            <IdeaDetailedView
-              show={this.state.showDetailedIdeaView}
-              idea={this.state.ideaToShowInDetailedView}
-              supervisors={this.supervisors}
-              onClose={this.closeDetailedIdeaView} />
-            {ideasHtml}
-          </div>
-        </article>
+        {
+          chunk(this.ideas, 5).map((chunk, i) =>
+            <IdeasGrid key={i}>
+              {
+                chunk.map((idea, i) =>
+                  <IdeaCard
+                    key={i}
+                    projectLogo={idea.img}
+                    projectName={idea.title}
+                    projectDescription={idea.goal}
+                    onClick={() => this.showIdea(idea)}
+                  />
+                )
+              }
+            </IdeasGrid>
+          )
+        }
+        <IdeaModal
+          open={this.state.showDetailedIdeaView}
+          onClose={() => this.closeDetailedIdeaView()}
+          idea={this.state.ideaToShowInDetailedView}
+          translations={translationsEN}
+        />
       </div>
     );
   }
+}
+
+export function chunk(list, n) {
+  const copy = Array.from(list)
+  const result = []
+  while (copy.length) {
+    result.push(copy.splice(0, n))
+  }
+  return result
+}
+
+const translationsEN = {
+  'context': 'Context',
+  'goal': 'Goal',
+  'mentors': 'Mentors',
+  'look': 'Look this project in',
+  'skills': 'Skills',
+  'required': 'Required',
+  'preferred': 'Preferred',
+  'timeSize': 'Size',
+  'expectedTime': '175 ~ 350 hour.',
+  'difficulty': 'Difficulty',
+  'Beginner': 'Beginner',
+  'Intermediate': 'Intermediate',
+  'Advanced': 'Advanced',
 }
 
 export default IdeasPage;

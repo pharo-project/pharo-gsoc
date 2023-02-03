@@ -20,3 +20,86 @@ article {
   float: right;
   width: 75%;
 }
+
+
+.ideasGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ideaCard {
+  background: #f7f7fa;
+  border: 1px solid #e3e2ef;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px -4px rgba(70, 70, 130, 0.3);
+  border-radius: 8px;
+  padding: 0.8rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 1%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.ideaCard:hover {
+  box-shadow: 0 10px 20px -10px rgba(70, 70, 130, 0.5);
+}
+.ideaCard:nth-child(1),
+.ideaCard:nth-child(2) {
+  flex-grow: 2;
+  flex-basis: 48%;
+}
+
+.ideaCard:nth-child(3),
+.ideaCard:nth-child(4),
+.ideaCard:nth-child(5) {
+  flex-grow: 2;
+  flex-basis: 30%;
+}
+.header {
+  background: #ffffff;
+  border: 1px solid #e3e2ef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 1.6rem;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+}
+.header a {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.projectLogo img {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 8px;
+}
+.projectDescription {
+  padding: 0.8rem 1.6rem 1.6rem;
+}
+
+@media screen and (max-width: 800px) {
+  .ideaCard {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin: 0 -1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  .ideaCard:nth-child(n) {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .projectDescription {
+    padding: 0 0.8rem;
+    font-size: 1.4rem;
+  }
+  .projectLogo {
+    margin-bottom: 0rem;
+  }
+  .header {
+    text-align: center;
+  }
+}
