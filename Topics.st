@@ -475,7 +475,6 @@ PharoTopic new
        level: 'Intermediate';
        yourself.
 
-
 PharoTopic new
        title: 'Building object-centric debuggers';
        contact: 'steven.costiou@inria.fr, juanpablo.sandoval@ing.puc.cl';
@@ -485,5 +484,22 @@ PharoTopic new
        level: 'Intermediate';
        yourself.
 
-
-
+PharoTopic new
+	title: 'Code clone detection in MOOSE';
+	contact: 'nicolas.anquetil@inria.fr, gordana.rakic@dmi.uns.ac.rs, santiago.bragagnolo@inria.fr';
+	supervisors: 'Nicolas Anquetil, Gordana Rakic, Santiago Bragagnolo;
+	keywords: 'Code clones';
+	context: 'Code clones are well known issue in software development and maintenance. Their detection is standardly an initial step in their refactoring, while lately it supports their maintenance and manipulation. A contemporary sotware analyses platform as MOOSE must support efficient and scalable clone detection and manipulation.';
+	goal: 'Implement selected clone detection algorithms applicable independently of programming language and peferably for multilingual projects.';
+	level: 'Intermediate';
+	yourself.
+	
+PharoTopic new
+	title: 'Code clones manipulationa and visualization in MOOSE';
+	contact: 'nicolas.anquetil@inria.fr, gordana.rakic@dmi.uns.ac.rs';
+	supervisors: 'Nicolas Anquetil, Gordana Rakic;
+	keywords: 'Code clones';
+	context: 'Code clones detection techniques provide users with a immense set of differently structured  information about detected clones where searching and usage of these information become difficult and requires further proccessing. Therefore a good representation and visualization of clone information may increase usefullness of clone detection for software developement and maintenance.';
+	goal: 'Create a clone meta-model, implement clone processing and vizualization techniques.';
+	level: 'Intermediate';
+	yourself.
