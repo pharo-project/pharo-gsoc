@@ -1,4 +1,6 @@
+import { Checkbox, FormControlLabel } from '@material-ui/core';
 import React from 'react';
+import FilterGroup from '../FilterGroup';
 
 
 class CheckboxesForm extends React.Component {
@@ -12,13 +14,13 @@ class CheckboxesForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleAllChange = this.handleAllChange.bind(this);
     this.selectAll = this.selectAll.bind(this);
     this.deselectAll = this.deselectAll.bind(this);
     this.toggleList = this.toggleList.bind(this);
   }
 
-  handleChange(event) {
-    const item = event.target.name;
+  handleChange(event, item) {
     const isChecked = event.target.checked;
 
     const newSelectedItems = [...this.state.selectedItems]
@@ -33,6 +35,16 @@ class CheckboxesForm extends React.Component {
     });
 
     this.props.onChange(newSelectedItems);
+  }
+
+  handleAllChange(event) {
+    const isChecked = event.target.checked;
+
+    if (isChecked) {
+      this.selectAll();
+    } else {
+      this.deselectAll();
+    }
   }
 
   selectAll() {
@@ -61,33 +73,37 @@ class CheckboxesForm extends React.Component {
 
   render() {
     const checkboxes = this.items.map(each =>
-      <div key={each}>
-        <label>
-          <input
-            type="checkbox"
-            name={each}
-            onChange={this.handleChange}
-            checked={this.state.selectedItems.includes(each)} />
-          {each}
-        </label>
-      </div>
+      <FormControlLabel
+        label={each}
+        control={<Checkbox
+          onChange={e => this.handleChange(e, each)}
+          checked={this.state.selectedItems.includes(each)}
+        />}
+      />
     );
 
     const collapsibleList = (
       <div>
-        <div className='select-deselect-all'>
-          <a href='javascript:void(0)' onClick={this.selectAll}>Select all</a>
-          <a href='javascript:void(0)' onClick={this.deselectAll}>Deselect all</a>
-        </div>
+        <FormControlLabel
+          label="All"
+          control={
+            <Checkbox
+              checked={this.items.length === this.state.selectedItems.length}
+              indeterminate={this.state.selectedItems.length > 0 && this.state.selectedItems.length < this.items.length}
+              onChange={this.handleAllChange}
+            />
+          }
+        />
+        <br />
         {checkboxes}
       </div>
     );
 
     return (
-      <form>
-        <h3 onClick={this.toggleList}>{this.props.title}</h3>
-        {this.state.showList ? collapsibleList : null}
-      </form>);
+      <FilterGroup title={this.props.title}>
+        {collapsibleList}
+      </FilterGroup>
+    );
   }
 }
 

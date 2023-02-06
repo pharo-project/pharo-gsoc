@@ -1,6 +1,7 @@
 import $ from "jquery"
 import React from 'react'
 import * as URLS from '../../constants/urls'
+import FilterIdeasForm from "./FilterIdeasForm"
 import IdeaCard from './IdeaCard'
 import IdeaModal from './IdeaModal'
 import IdeasGrid from './IdeasGrid'
@@ -48,8 +49,19 @@ class IdeasPage extends React.Component {
     this.state = {
       ideasToDisplay: this.ideas,
       showDetailedIdeaView: false,
-      ideaToShowInDetailedView: null
+      ideaToShowInDetailedView: null,
+      filters: {
+        selectedLevel: null,
+        selectedKeywords: null,
+        selectedSupervisors: null
+      }
     }
+
+
+    this.filterLevel = this.filterLevel.bind(this);
+    this.filterKeywords = this.filterKeywords.bind(this);
+    this.filterSupervisors = this.filterSupervisors.bind(this);
+    this.closeDetailedIdeaView = this.closeDetailedIdeaView.bind(this);
 
   }
 
@@ -66,12 +78,55 @@ class IdeasPage extends React.Component {
     })
   }
 
+  applyFilters(filters) {
+    var filteredIdeas = this.ideas;
+
+    if (filters.selectedLevel) {
+      filteredIdeas = filteredIdeas
+        .filter(idea => idea.levels
+          .includes(filters.selectedLevel));
+    }
+
+    if (filters.selectedKeywords) {
+      filteredIdeas = filteredIdeas
+        .filter(idea => idea.keywords
+          .some(x => filters.selectedKeywords.includes(x)));
+    }
+
+    if (filters.selectedSupervisors) {
+      filteredIdeas = filteredIdeas
+        .filter(idea => idea.supervisors
+          .some(x => filters.selectedSupervisors.includes(x)));
+    }
+
+    this.setState({ ideasToDisplay: filteredIdeas, filters });
+  }
+
+  filterLevel(selectedLevel) {
+    this.applyFilters({ ...this.state.filters, selectedLevel: selectedLevel });
+  }
+
+  filterKeywords(selectedKeywords) {
+    this.applyFilters({ ...this.state.filters, selectedKeywords: selectedKeywords });
+  }
+
+  filterSupervisors(selectedSupervisors) {
+    this.applyFilters({ ...this.state.filters, selectedSupervisors: selectedSupervisors });
+  }
+
   render() {
     return (
       <div class="container">
         <h1>Project Ideas</h1>
+        <aside>
+          <FilterIdeasForm
+            ideas={this.ideas}
+            onLevelChange={this.filterLevel}
+            onKeywordsChange={this.filterKeywords}
+            onSupervisorsChange={this.filterSupervisors} />
+        </aside>
         {
-          chunk(this.ideas, 5).map((chunk, i) =>
+          chunk(this.state.ideasToDisplay, 5).map((chunk, i) =>
             <IdeasGrid key={i}>
               {
                 chunk.map((idea, i) =>

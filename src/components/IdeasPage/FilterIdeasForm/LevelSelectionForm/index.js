@@ -1,59 +1,59 @@
-import React from 'react';
+import { FormControl, FormControlLabel, Radio, RadioGroup } from '@material-ui/core'
+import React from 'react'
+import FilterGroup from '../FilterGroup'
 
 
 class LevelSelectionForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.ALL_LEVELS = 'All Levels';
+    this.ALL_LEVELS = 'All Levels'
 
     this.levels = [
       this.ALL_LEVELS,
       'Beginner',
       'Intermediate',
       'Advanced'
-    ];
+    ]
 
     this.state = {
       selectedLevel: this.ALL_LEVELS
-    };
+    }
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(event) {
-    const newSelectedLevel = event.target.value;
+    const newSelectedLevel = event.target.value
 
     this.setState({
       selectedLevel: newSelectedLevel
-    });
+    })
 
     this.props.onChange(
       newSelectedLevel === this.ALL_LEVELS ? null : newSelectedLevel
-    );
+    )
   }
 
   render() {
     const radiobuttons = this.levels.map(level =>
-      <div key={level}>
-        <label>
-          <input
-            type="radio"
-            value={level}
-            onChange={this.handleChange}
-            checked={this.state.selectedLevel === level} />
-          {level}
-        </label>
-      </div>
-    );
+      <FormControlLabel key={level} value={level} control={<Radio />} label={level} />
+    )
 
     return (
-      <form>
-        <h3>Level</h3>
-        {radiobuttons}
-      </form>
-    );
+      <FilterGroup title="Level">
+        <FormControl>
+          <RadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            defaultValue={this.ALL_LEVELS}
+            onChange={this.handleChange}
+          >
+            {radiobuttons}
+          </RadioGroup>
+        </FormControl>
+      </FilterGroup>
+    )
   }
 }
 
-export default LevelSelectionForm;
+export default LevelSelectionForm
