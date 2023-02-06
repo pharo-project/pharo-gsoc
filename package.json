@@ -1,6 +1,6 @@
 {
   "name": "pharo-gsoc-ideas",
-  "homepage": "https://palumbon.github.io/pharo-gsoc-2023",
+  "homepage": "http://pharo-project.github.io/pharo-gsoc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,4 +1,4 @@
-const PREFIX = '/pharo-gsoc-2023';
+const PREFIX = '/pharo-gsoc';
 
 export const LANDING = PREFIX + '/';
 export const IDEAS = PREFIX + '/ideas';

@@ -1,2 +1,4 @@
-export const IDEAS_FILE = 'https://raw.githubusercontent.com/olekscode/pharo-gsoc-ideas/master/data/ideas.json';
-export const SUPERVISORS_FILE = 'https://raw.githubusercontent.com/olekscode/pharo-gsoc-ideas/master/data/supervisors.json';
+const REPO = 'https://raw.githubusercontent.com/pharo-project/pharo-gsoc'
+
+export const IDEAS_FILE = REPO + '/master/data/ideas.json';
+export const SUPERVISORS_FILE = REPO + '/master/data/supervisors.json';
