@@ -67,7 +67,7 @@ function buildTranslate(translations) {
   return (key) => translations[key] || `Missing translation for ${key}`
 }
 
-const diffcultyEmoji = {
+export const diffcultyEmoji = {
   'Easy': '😊',
   'Medium': '😉',
   'Hard': '🙃',

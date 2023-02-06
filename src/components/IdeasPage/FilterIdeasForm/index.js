@@ -10,7 +10,6 @@ class FilterIdeasForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.levels = [...new Set(this.props.ideas.map(idea => idea.levels).flat())].sort();
     this.supervisors = [...new Set(this.props.ideas.map(idea => idea.supervisors).flat())].sort();
     this.keywords = [...new Set(this.props.ideas.map(idea => idea.keywords).flat())].sort();
   }

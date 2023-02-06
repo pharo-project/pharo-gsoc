@@ -1,7 +1,7 @@
 import { FormControl, FormControlLabel, Radio, RadioGroup } from '@material-ui/core'
 import React from 'react'
+import { diffcultyEmoji } from '../../IdeaModal'
 import FilterGroup from '../FilterGroup'
-
 
 class LevelSelectionForm extends React.Component {
   constructor(props) {
@@ -11,9 +11,7 @@ class LevelSelectionForm extends React.Component {
 
     this.levels = [
       this.ALL_LEVELS,
-      'Beginner',
-      'Intermediate',
-      'Advanced'
+      ...Object.keys(diffcultyEmoji)
     ]
 
     this.state = {

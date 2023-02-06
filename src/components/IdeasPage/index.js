@@ -83,8 +83,7 @@ class IdeasPage extends React.Component {
 
     if (filters.selectedLevel) {
       filteredIdeas = filteredIdeas
-        .filter(idea => idea.levels
-          .includes(filters.selectedLevel));
+        .filter(idea => idea.difficulty === filters.selectedLevel);
     }
 
     if (filters.selectedKeywords) {
