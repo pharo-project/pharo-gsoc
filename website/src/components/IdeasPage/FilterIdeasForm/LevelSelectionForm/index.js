@@ -1,4 +1,4 @@
-import { FormControl, FormControlLabel, Radio, RadioGroup } from '@material-ui/core'
+import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material'
 import React from 'react'
 import { diffcultyEmoji } from '../../IdeaModal'
 import FilterGroup from '../FilterGroup'

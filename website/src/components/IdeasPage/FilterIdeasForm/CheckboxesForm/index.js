@@ -1,4 +1,4 @@
-import { Checkbox, FormControlLabel } from '@material-ui/core';
+import { Checkbox, FormControlLabel } from '@mui/material';
 import React from 'react';
 import FilterGroup from '../FilterGroup';
 
@@ -74,6 +74,7 @@ class CheckboxesForm extends React.Component {
   render() {
     const checkboxes = this.items.map(each =>
       <FormControlLabel
+        key={each}
         label={each}
         control={<Checkbox
           onChange={e => this.handleChange(e, each)}

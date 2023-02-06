@@ -1,4 +1,4 @@
-import { Dialog } from "@material-ui/core"
+import { Dialog } from "@mui/material"
 import React from "react"
 import * as URLS from '../../constants/urls'
 import logo from '../../img/logo-big.png'

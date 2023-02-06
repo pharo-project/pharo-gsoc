@@ -14,10 +14,10 @@ const Navigation = () => (
           <Link to={ROUTES.LANDING}><img src={logo} alt='' /></Link>
         </li>
         <li>
-          <Link class="navbar-button" to={ROUTES.LANDING}>Home</Link>
+          <Link className="navbar-button" to={ROUTES.LANDING}>Home</Link>
         </li>
         <li>
-          <Link class="navbar-button" to={ROUTES.IDEAS}>Project Ideas</Link>
+          <Link className="navbar-button" to={ROUTES.IDEAS}>Project Ideas</Link>
         </li>
       </ul>
     </div>

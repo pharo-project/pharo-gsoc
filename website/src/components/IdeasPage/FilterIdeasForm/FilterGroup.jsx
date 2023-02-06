@@ -1,4 +1,4 @@
-import { Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core'
+import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import React from 'react'
 
 function FilterGroup({ title, children }) {

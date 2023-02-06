@@ -115,7 +115,7 @@ class IdeasPage extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <h1>Project Ideas</h1>
         <aside>
           <FilterIdeasForm

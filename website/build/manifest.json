@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pharo GSoC",
+  "name": "Google Summer of Code with Pharo",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "pharo-logo-small.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "100x34"
     },
     {
-      "src": "logo512.png",
+      "src": "pharo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "471x155"
     }
   ],
   "start_url": ".",
