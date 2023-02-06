@@ -13,15 +13,17 @@ export default function IdeaCard({
   return (
     <div id={projectName.replace(/\W/g, '_')} className={"ideaCard"} onClick={onClick}>
       <div className={"header"}>
-        <div className={"projectLogo"}>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <img
-              src={projectLogo ? URLS.IMAGE_FOLDER + '/' + projectLogo : logo}
-              alt={projectName}
-              className={"projectLogo"}
-            />
-          </a>
-        </div>
+        {projectLogo &&
+          <div className={"projectLogo"}>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <img
+                src={projectLogo ? URLS.IMAGE_FOLDER + '/' + projectLogo : logo}
+                alt={projectName}
+                className={"projectLogo"}
+              />
+            </a>
+          </div>
+        }
         <div className={"projectName"}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             {projectName}

@@ -70,6 +70,7 @@ article {
   margin: 1%;
   transition: all 0.3s ease-in-out;
   position: relative;
+  cursor: pointer;
 }
 .ideaCard:hover {
   box-shadow: 0 10px 20px -10px rgba(70, 70, 130, 0.5);
@@ -92,7 +93,7 @@ article {
   box-sizing: border-box;
   border-radius: 8px;
   padding: 1.6rem;
-  min-height: 18rem;
+  min-height: 12rem;
   display: flex;
   flex-direction: column;
 }
