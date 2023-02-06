@@ -30,7 +30,7 @@ class IdeasPage extends React.Component {
     super()
 
     this.ideas = getJsonFromURL(URLS.IDEAS_FILE)
-    this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE)
+    // this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE)
 
     // this.supervisors = this.supervisors
     // .map(each => {
@@ -173,9 +173,9 @@ const translationsEN = {
   'timeSize': 'Size',
   'expectedTime': '175 ~ 350 hour.',
   'difficulty': 'Difficulty',
-  'Beginner': 'Beginner',
-  'Intermediate': 'Intermediate',
-  'Advanced': 'Advanced',
+  'Easy': 'Easy',
+  'Medium': 'Medium',
+  'Hard': 'Hard',
 }
 
 export default IdeasPage

@@ -1,5 +1,6 @@
-import React from "react";
-import logo from '../../img/logo-big.png';
+import React from "react"
+import * as URLS from '../../constants/urls'
+import logo from '../../img/logo-big.png'
 
 export default function IdeaCard({
   projectName,
@@ -15,7 +16,7 @@ export default function IdeaCard({
         <div className={"projectLogo"}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <img
-              src={projectLogo || logo}
+              src={projectLogo ? URLS.IMAGE_FOLDER + '/' + projectLogo : logo}
               alt={projectName}
               className={"projectLogo"}
             />
@@ -30,5 +31,5 @@ export default function IdeaCard({
       <p className={"projectDescription"}>{projectDescription}</p>
       <div className={"projectDescription"}>{children}</div>
     </div>
-  );
+  )
 }

@@ -30,6 +30,22 @@ article {
   width: 93%; 
 }
 
+.header-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title-modal {
+  max-width: 70%;
+}
+
+.img-modal {
+  width: 30%;
+  object-fit: cover;
+}
+
 .MuiDialog-paper {
   margin: 12px !important;
   position: relative;

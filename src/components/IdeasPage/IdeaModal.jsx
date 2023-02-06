@@ -1,12 +1,13 @@
-import React from "react"
-import logo from '../../img/logo-big.png';
 import { Dialog } from "@material-ui/core"
+import React from "react"
+import * as URLS from '../../constants/urls'
+import logo from '../../img/logo-big.png'
 
 export default function IdeaModal({ open, onClose, idea, translations }) {
 
-  if (!idea) return null;
+  if (!idea) return null
 
-  const { title, context, img, goal, url, supervisors, skills, levels } = idea
+  const { title, description, img, goal, url, supervisors, skills, size, difficulty } = idea
   const t = buildTranslate(translations)
 
   return (
@@ -16,45 +17,47 @@ export default function IdeaModal({ open, onClose, idea, translations }) {
       open={open}
       onClose={onClose}
       aria-labelledby={title}
-      aria-describedby={context + goal}
+      aria-describedby={description + goal}
     >
-      <div className={"modal"}>
-        <h2>
-          {title}
+      <div className="modal">
+        <div className="header-modal">
+          <h1 className="title-modal">{title}</h1>
           <img
-            src={img || logo}
+            className="img-modal"
+            src={img ? URLS.IMAGE_FOLDER + '/' + img : logo}
             alt={title}
           />
-        </h2>
+        </div>
 
         <h3>{t('context')}</h3>
-        <p>{context}</p>
+        <p>{description}</p>
 
         <h3>{t('goal')}</h3>
         <p>{goal}</p>
 
         <h3>{t('skills')}</h3>
-        <p><b>{t('required')}</b>: {skills?.required}</p>
-        <p><b>{t('preferred')}</b>: {skills?.preferred}</p>
+        <p><i>{t('required')}:</i> {skills?.required}</p>
+        <p><i>{t('preferred')}:</i> {skills?.preferred}</p>
 
         <h3>{t('timeSize')}</h3>
-        <p>{t('expectedTime')}</p>
+        <p>{size}</p>
 
         <h3>{t('difficulty')}</h3>
-        {levels.map(level =>
-          <p>{t(level)} <span role="img" aria-label="emoji">{diffcultyEmoji[level]}</span></p>)}
+        <p>{t(difficulty)} <span role="img" aria-label="emoji">{diffcultyEmoji[difficulty]}</span></p>
 
         <h3>{t('mentors')}</h3>
         {supervisors?.map((mentor, i) => <p key={i}>{mentor}</p>)}
 
-        <br /><br />
+        {url && <>
+          <br /><br />
+          <span>
+            <span role="img" aria-label="arrow">➡️</span>&nbsp;
+            {t('look')} &nbsp;
+            <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+            &nbsp;<span role="img" aria-label="arrow">⬅️</span>
+          </span>
+        </>}
 
-        <span>
-          <span role="img" aria-label="arrow">➡️</span>&nbsp;
-          {t('look')} &nbsp;
-          <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
-          &nbsp;<span role="img" aria-label="arrow">⬅️</span>
-        </span>
       </div>
     </Dialog>
   )
@@ -65,7 +68,7 @@ function buildTranslate(translations) {
 }
 
 const diffcultyEmoji = {
-  'Beginner': '😊',
-  'Intermediate': '😉',
-  'Advanced': '🙃',
+  'Easy': '😊',
+  'Medium': '😉',
+  'Hard': '🙃',
 }

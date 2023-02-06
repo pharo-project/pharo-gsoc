@@ -1,4 +1,9 @@
 const REPO = 'https://raw.githubusercontent.com/pharo-project/pharo-gsoc'
 
-export const IDEAS_FILE = REPO + '/master/data/ideas.json';
-export const SUPERVISORS_FILE = REPO + '/master/data/supervisors.json';
+const BRANCH = 'master'
+
+export const BASE = REPO + '/' + BRANCH + '/data'
+
+export const IDEAS_FILE = BASE + '/ideas.json';
+export const SUPERVISORS_FILE = BASE + '/supervisors.json';
+export const IMAGE_FOLDER = BASE + '/img';
