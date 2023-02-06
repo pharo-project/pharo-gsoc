@@ -1,7 +1,7 @@
 [
     {
         "title": "Extending a visualization (Class Blueprint)",
-        "img": "",
+        "img": "nour-blueprint.png",
         "supervisors": [
             "Nour Jihene Agouf", "Milton Mamani"
         ],
@@ -10,33 +10,119 @@
         "keywords": [
             "Software Analysis", "Software Visualization", "Software Comprehension"
         ],
-        "level": [
-            "Advanced"
-        ],
-        "size": "",
+        "size": "Medium",
+        "difficulty": "Medium",
         "skills": {
             "required": [ "Pharo", "Moose" ],
             "preferred": [ "Roassal" ]
         }
     },
     {
-        "title": "",
-        "img": "",
+        "title": "Sequence Viewer/Editor",
+        "img": "hernan-dna.jpg",
         "supervisors": [
-            
+            "Hernan Morales", "Oleksandr Zaitsev"
         ],
-        "description": "",
-        "goal": "",
+        "description": "Implement a viewer/editor of nucleic acid or protein sequences. The viewer is used to visualize, search and analyze sequences and it should adapt its view interface depending on the sequence type. The editor features allows to modify, create, and annotate sequences. External tools could be linked to the editor to streamline a multi-step bioinformatics analysis such as MSA (Multiple Sequence Alignment), ORF finders, consensus sequence visualization, identification of homologous protein or nucleotide sequences, restriction enzyme finders, etc. The BioSmalltalk library already provides a basic language toolkit to start working with biological sequences in Pharo.",
+        "goal": "The viewer/editor will establish a baseline tool to address many common workflows at biological sequences, facilitating connections with bioinformatics tools from Pharo",
         "keywords": [
-            
+            "Bioinformatics", "Sequence Analysis", "Sequence Alignments"
         ],
-        "level": [
-            ""
-        ],
-        "size": "",
+        "size": "Large",
+        "difficulty": "Hard",
         "skills": {
-            "required": [],
-            "preferred": []
+            "required": [ "Bioinformatics" ],
+            "preferred": [ "Spec2", "FFI" ]
         }
     },
+    {
+        "title": "Better Ecompletion for Pharo using AI",
+        "img": "",
+        "supervisors": [
+            "Stephane Ducasse", "Guillermo Polito"
+        ],
+        "description": "The goal of this project is to experiment with machine learning in the context of the automatic code completion of Pharo.",
+        "goal": "To achieve this goal the student will\n- study Byte Pair encoder https://youtu.be/HEikzVL-lZU\n- enhance the naive implementation available at https://github.com/Ducasse/BytePairEncoder\n- study the extensible completion Framework in Pharo\n\nHe will then run some experience building “characters” (a character in BPE can be the concatenation of multiple character)\nusing various Pharo information:\n- only the method signature\n- taking into account all the method bodies of Pharo method.\n\nBased on these databases of sequences the student will build some simple benchmarchs to be able to evaluate \nthe best strategies. He will use some industrial case studies to identify key configurations of the completion frameworks.\n\nOther tokenizers may be studied as well\n- Unigram Tokenization: https://youtu.be/TGZfZVuF9Yc \n- WordPiece Tokenization: https://youtu.be/qpv6ms_t_1A",
+        "keywords": [
+            "AI", "Machine Learning", "NLP", "Completion"
+        ],
+        "size": "Medium",
+        "difficulty": "Medium",
+        "skills": {
+            "required": [ "Pharo", "Communication skills" ],
+            "preferred": [ ]
+        }
+    },
+    {
+        "title": "A lightweigth Microdown-based Blog engine",
+        "img": "",
+        "supervisors": [
+            "Stephane Ducasse"
+        ],
+        "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
+        "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the Pharo Weekly blog https://pharoweekly.wordpress.com/\nIn a second iteration a search component will be developed.",
+        "keywords": [
+            "Microdown", "HTML", "Blog"
+        ],
+        "size": "Medium",
+        "difficulty": "Medium",
+        "skills": {
+            "required": [ "Pharo", "Communication skills" ],
+            "preferred": [ ]
+        }
+    },
+    {
+        "title": "A Pharo User-Interface Builder",
+        "img": "hernan-builder.jpg",
+        "supervisors": [
+            "Hernan Morales", "Sebastian Jordan"
+        ],
+        "description": "Implement a designer application to develop graphical user interfaces (GUI) in Pharo. This will allow Pharo developers to build product functionality and focus on design instead of writing repetitive UI code and manually composing the UI layout. Widgets will be selected and dragged from a components tree, customized on a style pane, and the UI code will be generated. The tool will use Spec 2 (a framework in Pharo for describing user interfaces), and PCG (a Pharo Code Generator which allows AST manipulation). The emmited source code should be used to rebuild the user interface, including generation of event triggers, in the designer.",
+        "goal": "The GUI designer will be able to recreate UI designs from generated code, for post-edition and re-generation.",
+        "keywords": [
+            "UI", "Design", "Builder"
+        ],
+        "size": "Large",
+        "difficulty": "Hard",
+        "skills": {
+            "required": [ "Pharo", "AST" ],
+            "preferred": [ "Code Generation", "AST Manipulation" ]
+        }
+    },
+    {
+        "title": "DDS Binding for Pharo",
+        "img": "",
+        "supervisors": [
+            "Santiago Bragagnolo"
+        ],
+        "description": "ROS 2 is taking over the ROS Project. With this, many of our robotic implementations in Pharo will become obsolete. ROS2 uses an entirely different means of communication from ROS1. To enable ROS2 robotic development in Pharo, we need to provide bindings to at least one Data Delivery Service (DDS) system used by ROS. The project includes quickly analysing the three DDS vendors supported by ROS: eProsima, Eclipse Cyclone and Gurum Networks. Choose one of them, and implement the required bindings in Pharo to enable the communication.",
+        "goal": "- A Pharo binding library to at least one DDS implementation\n- Tests",
+        "keywords": [
+            "DDS", "ROS", "Pharo", "Robotics"
+        ],
+        "size": "Medium",
+        "difficulty": "Medium",
+        "skills": {
+            "required": [ "Network", "FFI", "Pharo", "TDD" ],
+            "preferred": [ "ROS", "Distributed System Programming" ]
+        }
+    },
+    {
+        "title": "Agent Model with Penality for Front-Running",
+        "img": "hernan-abm.jpg",
+        "supervisors": [
+            "Hernan Morales", "Sebastian Jordan"
+        ],
+        "description": "This project involves creating a virtual marketplace where users can create and trade digital assets using smart contracts, with penalties for front-running or other forms of market manipulation. An algorithm could recognize when market manipulation is occurring, and the developed model will help to detect patterns of abnormal trading activities and impose punishments accordingly, such as account suspensions or financial penalties for offenders engaging in front-running practices. It also could introduce a “reputation score” feature to reward users who are more compliant with the rules and penalize those who break them. CORMAS (A platofrm for COmmon-pool Resources and Multi-Agent Simulations in Pharo) could be used to speed up developement.",
+        "goal": "We hope that the student learns to simulate models of economic agents using an appropriate development platform such as CORMAS",
+        "keywords": [
+            "ABM", "Agent-based Simulation", "DEX", "Front-running", "Smart Contracts", "Trading"
+        ],
+        "size": "Large",
+        "difficulty": "Hard",
+        "skills": {
+            "required": [ "Pharo" ],
+            "preferred": [ "Agent-Based Modeling", "Descentralized Exchanges" ]
+        }
+    }
 ]
