@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/pharo-gsoc/static/css/main.69475850.chunk.css",
+    "main.js": "/pharo-gsoc/static/js/main.40350f39.chunk.js",
+    "main.js.map": "/pharo-gsoc/static/js/main.40350f39.chunk.js.map",
+    "runtime-main.js": "/pharo-gsoc/static/js/runtime-main.21f9596c.js",
+    "runtime-main.js.map": "/pharo-gsoc/static/js/runtime-main.21f9596c.js.map",
+    "static/js/2.76f1f04c.chunk.js": "/pharo-gsoc/static/js/2.76f1f04c.chunk.js",
+    "static/js/2.76f1f04c.chunk.js.map": "/pharo-gsoc/static/js/2.76f1f04c.chunk.js.map",
+    "index.html": "/pharo-gsoc/index.html",
+    "static/css/main.69475850.chunk.css.map": "/pharo-gsoc/static/css/main.69475850.chunk.css.map",
+    "static/js/2.76f1f04c.chunk.js.LICENSE.txt": "/pharo-gsoc/static/js/2.76f1f04c.chunk.js.LICENSE.txt",
+    "static/media/logo-big.c3b909a6.png": "/pharo-gsoc/static/media/logo-big.c3b909a6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21f9596c.js",
+    "static/js/2.76f1f04c.chunk.js",
+    "static/css/main.69475850.chunk.css",
+    "static/js/main.40350f39.chunk.js"
+  ]
+}
