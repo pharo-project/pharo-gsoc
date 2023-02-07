@@ -71,6 +71,8 @@ article {
   transition: all 0.3s ease-in-out;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 .ideaCard:hover {
   box-shadow: 0 10px 20px -10px rgba(70, 70, 130, 0.5);
@@ -97,10 +99,10 @@ article {
   display: flex;
   flex-direction: column;
 }
-.header a {
+.projectName {
+  color: var(--color-pharo-blue);
   font-size: 1.5rem;
   font-weight: 600;
-  text-decoration: none;
 }
 .projectLogo img {
   aspect-ratio: 16 / 9;
