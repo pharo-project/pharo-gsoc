@@ -2,8 +2,10 @@ import { Dialog } from "@mui/material"
 import React from "react"
 import * as URLS from '../../constants/urls'
 import logo from '../../img/logo-big.png'
+import SupervisorMarker from './SupervisorMarker';
 
-export default function IdeaModal({ open, onClose, idea, translations }) {
+
+export default function IdeaModal({ open, onClose, idea, supervisorsData, translations }) {
 
   if (!idea) return null
 
@@ -46,7 +48,9 @@ export default function IdeaModal({ open, onClose, idea, translations }) {
         <p>{t(difficulty)} <span role="img" aria-label="emoji">{diffcultyEmoji[difficulty]}</span></p>
 
         <h3>{t('mentors')}</h3>
-        {supervisors?.map((mentor, i) => <p key={i}>{mentor}</p>)}
+        {supervisors?.map((mentor, i) => <p key={i}>{
+          <SupervisorMarker supervisor={supervisorsData.find(each => each.name === mentor)} />
+        }</p>)}
 
         {url && <>
           <br /><br />

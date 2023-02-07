@@ -25,26 +25,27 @@ const getContentsOfFileFromURL = url => {
 const getJsonFromURL = url =>
   JSON.parse(getContentsOfFileFromURL(url))
 
+
+
 class IdeasPage extends React.Component {
   constructor() {
     super()
 
     this.ideas = getJsonFromURL(URLS.IDEAS_FILE)
-    // this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE)
+    this.supervisors = getJsonFromURL(URLS.SUPERVISORS_FILE)
 
-    // this.supervisors = this.supervisors
-    // .map(each => {
-    //   // Commented out because it is very slow :(
+    this.supervisors = this.supervisors.map(each => {
+      // Commented out because it is very slow :(
 
-    //   /*const githubUser = each.github ?
-    //     getJsonFromURL(`https://api.github.com/users/${each.github}`) :
-    //     null*/
+      /*const githubUser = each.github ?
+        getJsonFromURL(`https://api.github.com/users/${each.github}`) :
+        null*/
 
-    //   const githubUser = null
+      const githubUser = null
 
-    //   const picture = githubUser ? githubUser.avatar_url : null
-    //   return { ...each, pictureUrl: picture }
-    // })
+      const picture = githubUser ? githubUser.avatar_url : null
+      return { ...each, pictureUrl: picture }
+    })
 
     this.state = {
       ideasToDisplay: this.ideas,
@@ -145,6 +146,7 @@ class IdeasPage extends React.Component {
           open={this.state.showDetailedIdeaView}
           onClose={() => this.closeDetailedIdeaView()}
           idea={this.state.ideaToShowInDetailedView}
+          supervisorsData={this.supervisors}
           translations={translationsEN}
         />
       </div>
