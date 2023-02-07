@@ -1,0 +1,36 @@
+table {
+  display: table;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  box-sizing: inherit;
+  border-collapse: separate;
+}
+
+tbody {
+  box-sizing: inherit;
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  box-sizing: inherit;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 1.2rem 1.5rem;
+  padding-left: 0;
+}
+
+.ideaTable {
+  max-width: 30rem;
+}

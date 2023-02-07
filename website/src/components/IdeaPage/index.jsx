@@ -59,14 +59,14 @@ supervisorsData = supervisorsData.map(each => {
 })
 
 const translationsEN = {
-  'context': 'Context',
-  'goal': 'Goal',
+  'context': 'Description',
+  'goal': 'Expected outcome',
   'mentors': 'Mentors',
   'look': 'Look this project in',
   'skills': 'Skills',
-  'required': 'Required',
-  'preferred': 'Preferred',
-  'timeSize': 'Size',
+  'required': 'Required skills',
+  'preferred': 'Preferred skills',
+  'timeSize': 'Project size',
   'expectedTime': '175 ~ 350 hour.',
   'difficulty': 'Difficulty',
   'Easy': 'Easy',
@@ -99,7 +99,28 @@ export default function IdeaPage() {
         <h3>{t('goal')}</h3>
         <p>{goal}</p>
 
-        <h3>{t('skills')}</h3>
+        <table class="ideaTable">
+          <tbody>
+            <tr>
+              <td>{t('required')}</td>
+              <td>{skills?.required}</td>
+            </tr>
+            <tr>
+              <td>{t('preferred')}</td>
+              <td>{skills?.preferred}</td>
+            </tr>
+            <tr>
+              <td>{t('timeSize')}</td>
+              <td>{size}</td>
+            </tr>
+            <tr>
+              <td>{t('difficulty')}</td>
+              <td>{t(difficulty)} <span role="img" aria-label="emoji">{diffcultyEmoji[difficulty]}</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        {/* <h3>{t('skills')}</h3>
         <p><i>{t('required')}:</i> {skills?.required}</p>
         <p><i>{t('preferred')}:</i> {skills?.preferred}</p>
 
@@ -107,7 +128,7 @@ export default function IdeaPage() {
         <p>{size}</p>
 
         <h3>{t('difficulty')}</h3>
-        <p>{t(difficulty)} <span role="img" aria-label="emoji">{diffcultyEmoji[difficulty]}</span></p>
+        <p>{t(difficulty)} <span role="img" aria-label="emoji">{diffcultyEmoji[difficulty]}</span></p> */}
 
         <h3>{t('mentors')}</h3>
         {supervisors?.map((mentor, i) => <div key={i}>{
