@@ -7,7 +7,7 @@ export default function IdeaCard({
   children,
 }) {
   const { id, title, description, img, goal, url, supervisors, skills, size, difficulty } = idea;
-  const link = 'idea/' + id;
+  const link = id;
 
   return (
     <div id={title.replace(/\W/g, '_')} className={"ideaCard"}>
