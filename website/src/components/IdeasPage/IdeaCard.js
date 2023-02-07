@@ -2,6 +2,23 @@ import React from "react"
 import * as URLS from '../../constants/urls'
 import logo from '../../img/logo-big.png'
 
+const shorten = (text, maxlength) => {
+  if (text.length <= maxlength) return text;
+
+  const singleLineText = text.replace(/\s/g, " ");
+  const words = singleLineText.split(" ");
+
+  var count = 0;
+  var sum = 0;
+
+  while (sum <= maxlength)
+    sum += words[count++].length;
+
+  var shortened = words.slice(0, count-1).join(" ");
+
+  return shortened + " (...)";
+}
+
 export default function IdeaCard({
   idea,
   children,
@@ -29,7 +46,7 @@ export default function IdeaCard({
           </a>
         </div>
       </div>
-      <p className={"projectDescription"}>{description}</p>
+      <p className={"projectDescription"}>{shorten(description, 100)}</p>
       <div className={"projectDescription"}>{children}</div>
     </div>
   )

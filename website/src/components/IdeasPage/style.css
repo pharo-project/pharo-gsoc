@@ -98,15 +98,19 @@ article {
   flex-direction: column;
 }
 .header a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  text-decoration: none;
 }
 .projectLogo img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   width: 100%;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
   border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
 .projectDescription {
   padding: 0.8rem 1.6rem 1.6rem;
