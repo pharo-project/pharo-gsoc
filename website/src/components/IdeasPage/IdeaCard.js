@@ -3,34 +3,33 @@ import * as URLS from '../../constants/urls'
 import logo from '../../img/logo-big.png'
 
 export default function IdeaCard({
-  projectName,
-  projectDescription,
-  projectLogo,
-  link,
-  onClick,
+  idea,
   children,
 }) {
+  const { id, title, description, img, goal, url, supervisors, skills, size, difficulty } = idea;
+  const link = 'idea/' + id;
+
   return (
-    <div id={projectName.replace(/\W/g, '_')} className={"ideaCard"} onClick={onClick}>
+    <div id={title.replace(/\W/g, '_')} className={"ideaCard"}>
       <div className={"header"}>
-        {projectLogo &&
+        {img &&
           <div className={"projectLogo"}>
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <a href={link}>
               <img
-                src={projectLogo ? URLS.IMAGE_FOLDER + '/' + projectLogo : logo}
-                alt={projectName}
+                src={img ? URLS.IMAGE_FOLDER + '/' + img : logo}
+                alt={title}
                 className={"projectLogo"}
               />
             </a>
           </div>
         }
         <div className={"projectName"}>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            {projectName}
+          <a href={link}>
+            {title}
           </a>
         </div>
       </div>
-      <p className={"projectDescription"}>{projectDescription}</p>
+      <p className={"projectDescription"}>{description}</p>
       <div className={"projectDescription"}>{children}</div>
     </div>
   )

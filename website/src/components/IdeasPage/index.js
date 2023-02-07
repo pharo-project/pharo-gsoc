@@ -3,7 +3,6 @@ import React from 'react'
 import * as URLS from '../../constants/urls'
 import FilterIdeasForm from "./FilterIdeasForm"
 import IdeaCard from './IdeaCard'
-import IdeaModal from './IdeaModal'
 import IdeasGrid from './IdeasGrid'
 import './style.css'
 
@@ -24,7 +23,6 @@ const getContentsOfFileFromURL = url => {
 
 const getJsonFromURL = url =>
   JSON.parse(getContentsOfFileFromURL(url))
-
 
 
 class IdeasPage extends React.Component {
@@ -49,8 +47,6 @@ class IdeasPage extends React.Component {
 
     this.state = {
       ideasToDisplay: this.ideas,
-      showDetailedIdeaView: false,
-      ideaToShowInDetailedView: null,
       filters: {
         selectedLevel: null,
         selectedKeywords: null,
@@ -62,21 +58,7 @@ class IdeasPage extends React.Component {
     this.filterLevel = this.filterLevel.bind(this);
     this.filterKeywords = this.filterKeywords.bind(this);
     this.filterSupervisors = this.filterSupervisors.bind(this);
-    this.closeDetailedIdeaView = this.closeDetailedIdeaView.bind(this);
 
-  }
-
-  showIdea(idea) {
-    this.setState({
-      showDetailedIdeaView: true,
-      ideaToShowInDetailedView: idea
-    })
-  }
-
-  closeDetailedIdeaView() {
-    this.setState({
-      showDetailedIdeaView: false
-    })
   }
 
   applyFilters(filters) {
@@ -129,26 +111,16 @@ class IdeasPage extends React.Component {
           chunk(this.state.ideasToDisplay, 5).map((chunk, i) =>
             <IdeasGrid key={i}>
               {
-                chunk.map((idea, i) =>
+                chunk.map((idea) =>
                   <IdeaCard
-                    key={i}
-                    projectLogo={idea.img}
-                    projectName={idea.title}
-                    projectDescription={idea.goal}
-                    onClick={() => this.showIdea(idea)}
+                    key={idea.id}
+                    idea={idea}
                   />
                 )
               }
             </IdeasGrid>
           )
         }
-        <IdeaModal
-          open={this.state.showDetailedIdeaView}
-          onClose={() => this.closeDetailedIdeaView()}
-          idea={this.state.ideaToShowInDetailedView}
-          supervisorsData={this.supervisors}
-          translations={translationsEN}
-        />
       </div>
     )
   }

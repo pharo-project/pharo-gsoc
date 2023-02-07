@@ -7,6 +7,7 @@ import {
 
 import Navigation from '../Navigation';
 import IdeasPage from '../IdeasPage';
+import IdeaPage from '../IdeaPage';
 import MentorsPage from '../MentorsPage';
 import CallForStudentsPage from '../CallForStudentsPage';
 
@@ -18,9 +19,10 @@ const App = () => (
       <Navigation />
       <Routes>
         <Route exact path={ROUTES.LANDING} element={ <CallForStudentsPage/> } />
-        <Route path={ROUTES.IDEAS} element={ <IdeasPage/> } />
-        <Route path={ROUTES.MENTORS} element={ <MentorsPage/> } />
-        <Route path={ROUTES.CALL_FOR_STUDENTS} element={ <CallForStudentsPage/> } />
+        <Route exact path={ROUTES.IDEAS} element={ <IdeasPage/> } />
+        <Route exact path={ROUTES.MENTORS} element={ <MentorsPage/> } />
+        <Route exact path={ROUTES.CALL_FOR_STUDENTS} element={ <CallForStudentsPage/> } />
+        <Route exact path={'/idea/:id'} element={ <IdeaPage/>} />
       </Routes>
     </div>
   </Router>

@@ -1,6 +1,6 @@
 import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material'
 import React from 'react'
-import { diffcultyEmoji } from '../../IdeaModal'
+import { diffcultyEmoji } from '../../../IdeaPage'
 import FilterGroup from '../FilterGroup'
 
 class LevelSelectionForm extends React.Component {
