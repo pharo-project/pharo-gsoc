@@ -4,7 +4,7 @@
     "img": "nour-blueprint.png",
     "supervisors": [
       "Nour Jihene Agouf",
-      "Milton Mamani"
+      "Milton Mamani Torres"
     ],
     "description": "Class Blueprint is an interactive visualization for class analysis. The visualization is implemented under the Moose platform using Roassal for the implementation of graphical elements. The visualization displays class views independently from their hierarchies.",
     "goal": "Displaying a view of more than one visualization.",
