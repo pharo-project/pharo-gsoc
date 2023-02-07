@@ -96,6 +96,10 @@ class IdeasPage extends React.Component {
     this.applyFilters({ ...this.state.filters, selectedSupervisors: selectedSupervisors });
   }
 
+  componentDidMount() {
+    document.title = "Pharo GSoC: Project Ideas";
+  }
+
   render() {
     return (
       <div className="container">

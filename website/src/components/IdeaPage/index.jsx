@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from "react";
 import { useParams } from 'react-router-dom';
 
 import './style.css';
@@ -74,13 +74,18 @@ const translationsEN = {
   'Hard': 'Hard',
 }
 
+
 export default function IdeaPage() {
 
   let { id } = useParams();
 
   var idea = loadIdea(id);
-  const { title, description, img, goal, url, supervisors, skills, size, difficulty } = idea
-  const t = buildTranslate(translationsEN)
+  const { title, description, img, goal, url, supervisors, skills, size, difficulty } = idea;
+  const t = buildTranslate(translationsEN);
+
+  useEffect(() => {
+    document.title = title;  
+  }, []);
 
   return (
       <div className="container">
