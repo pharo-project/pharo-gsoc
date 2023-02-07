@@ -1,128 +1,345 @@
 [
-    {
-        "title": "Extending a visualization (Class Blueprint)",
-        "img": "nour-blueprint.png",
-        "supervisors": [
-            "Nour Jihene Agouf", "Milton Mamani"
-        ],
-        "description": "Class Blueprint is an interactive visualization for class analysis. The visualization is implemented under the Moose platform using Roassal for the implementation of graphical elements. The visualization displays class views independently from their hierarchies.",
-        "goal": "Displaying a view of more than one visualization.",
-        "keywords": [
-            "Software Analysis", "Software Visualization", "Software Comprehension"
-        ],
-        "size": "Medium",
-        "difficulty": "Medium",
-        "skills": {
-            "required": [ "Pharo", "Moose" ],
-            "preferred": [ "Roassal" ]
-        }
-    },
-    {
-        "title": "Sequence Viewer/Editor",
-        "img": "hernan-dna.jpg",
-        "supervisors": [
-            "Hernan Morales", "Oleksandr Zaitsev"
-        ],
-        "description": "Implement a viewer/editor of nucleic acid or protein sequences. The viewer is used to visualize, search and analyze sequences and it should adapt its view interface depending on the sequence type. The editor features allows to modify, create, and annotate sequences. External tools could be linked to the editor to streamline a multi-step bioinformatics analysis such as MSA (Multiple Sequence Alignment), ORF finders, consensus sequence visualization, identification of homologous protein or nucleotide sequences, restriction enzyme finders, etc. The BioSmalltalk library already provides a basic language toolkit to start working with biological sequences in Pharo.",
-        "goal": "The viewer/editor will establish a baseline tool to address many common workflows at biological sequences, facilitating connections with bioinformatics tools from Pharo",
-        "keywords": [
-            "Bioinformatics", "Sequence Analysis", "Sequence Alignments"
-        ],
-        "size": "Large",
-        "difficulty": "Hard",
-        "skills": {
-            "required": [ "Bioinformatics" ],
-            "preferred": [ "Spec2", "FFI" ]
-        }
-    },
-    {
-        "title": "Better Ecompletion for Pharo using AI",
-        "img": "",
-        "supervisors": [
-            "Stephane Ducasse", "Guillermo Polito"
-        ],
-        "description": "The goal of this project is to experiment with machine learning in the context of the automatic code completion of Pharo.",
-        "goal": "To achieve this goal the student will\n- study Byte Pair encoder https://youtu.be/HEikzVL-lZU\n- enhance the naive implementation available at https://github.com/Ducasse/BytePairEncoder\n- study the extensible completion Framework in Pharo\n\nHe will then run some experience building “characters” (a character in BPE can be the concatenation of multiple character)\nusing various Pharo information:\n- only the method signature\n- taking into account all the method bodies of Pharo method.\n\nBased on these databases of sequences the student will build some simple benchmarchs to be able to evaluate \nthe best strategies. He will use some industrial case studies to identify key configurations of the completion frameworks.\n\nOther tokenizers may be studied as well\n- Unigram Tokenization: https://youtu.be/TGZfZVuF9Yc \n- WordPiece Tokenization: https://youtu.be/qpv6ms_t_1A",
-        "keywords": [
-            "AI", "Machine Learning", "NLP", "Completion"
-        ],
-        "size": "Medium",
-        "difficulty": "Medium",
-        "skills": {
-            "required": [ "Pharo", "Communication skills" ],
-            "preferred": [ ]
-        }
-    },
-    {
-        "title": "A lightweigth Microdown-based Blog engine",
-        "img": "",
-        "supervisors": [
-            "Stephane Ducasse"
-        ],
-        "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
-        "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the Pharo Weekly blog https://pharoweekly.wordpress.com/\nIn a second iteration a search component will be developed.",
-        "keywords": [
-            "Microdown", "HTML", "Blog"
-        ],
-        "size": "Medium",
-        "difficulty": "Medium",
-        "skills": {
-            "required": [ "Pharo", "Communication skills" ],
-            "preferred": [ ]
-        }
-    },
-    {
-        "title": "A Pharo User-Interface Builder",
-        "img": "hernan-builder.jpg",
-        "supervisors": [
-            "Hernan Morales", "Sebastian Jordan"
-        ],
-        "description": "Implement a designer application to develop graphical user interfaces (GUI) in Pharo. This will allow Pharo developers to build product functionality and focus on design instead of writing repetitive UI code and manually composing the UI layout. Widgets will be selected and dragged from a components tree, customized on a style pane, and the UI code will be generated. The tool will use Spec 2 (a framework in Pharo for describing user interfaces), and PCG (a Pharo Code Generator which allows AST manipulation). The emmited source code should be used to rebuild the user interface, including generation of event triggers, in the designer.",
-        "goal": "The GUI designer will be able to recreate UI designs from generated code, for post-edition and re-generation.",
-        "keywords": [
-            "UI", "Design", "Builder"
-        ],
-        "size": "Large",
-        "difficulty": "Hard",
-        "skills": {
-            "required": [ "Pharo", "AST" ],
-            "preferred": [ "Code Generation", "AST Manipulation" ]
-        }
-    },
-    {
-        "title": "DDS Binding for Pharo",
-        "img": "",
-        "supervisors": [
-            "Santiago Bragagnolo"
-        ],
-        "description": "ROS 2 is taking over the ROS Project. With this, many of our robotic implementations in Pharo will become obsolete. ROS2 uses an entirely different means of communication from ROS1. To enable ROS2 robotic development in Pharo, we need to provide bindings to at least one Data Delivery Service (DDS) system used by ROS. The project includes quickly analysing the three DDS vendors supported by ROS: eProsima, Eclipse Cyclone and Gurum Networks. Choose one of them, and implement the required bindings in Pharo to enable the communication.",
-        "goal": "- A Pharo binding library to at least one DDS implementation\n- Tests",
-        "keywords": [
-            "DDS", "ROS", "Pharo", "Robotics"
-        ],
-        "size": "Medium",
-        "difficulty": "Medium",
-        "skills": {
-            "required": [ "Network", "FFI", "Pharo", "TDD" ],
-            "preferred": [ "ROS", "Distributed System Programming" ]
-        }
-    },
-    {
-        "title": "Agent Model with Penality for Front-Running",
-        "img": "hernan-abm.jpg",
-        "supervisors": [
-            "Hernan Morales", "Sebastian Jordan"
-        ],
-        "description": "This project involves creating a virtual marketplace where users can create and trade digital assets using smart contracts, with penalties for front-running or other forms of market manipulation. An algorithm could recognize when market manipulation is occurring, and the developed model will help to detect patterns of abnormal trading activities and impose punishments accordingly, such as account suspensions or financial penalties for offenders engaging in front-running practices. It also could introduce a “reputation score” feature to reward users who are more compliant with the rules and penalize those who break them. CORMAS (A platofrm for COmmon-pool Resources and Multi-Agent Simulations in Pharo) could be used to speed up developement.",
-        "goal": "We hope that the student learns to simulate models of economic agents using an appropriate development platform such as CORMAS",
-        "keywords": [
-            "ABM", "Agent-based Simulation", "DEX", "Front-running", "Smart Contracts", "Trading"
-        ],
-        "size": "Large",
-        "difficulty": "Hard",
-        "skills": {
-            "required": [ "Pharo" ],
-            "preferred": [ "Agent-Based Modeling", "Descentralized Exchanges" ]
-        }
+  {
+    "title": "Extending a visualization (Class Blueprint)",
+    "img": "nour-blueprint.png",
+    "supervisors": [
+      "Nour Jihene Agouf",
+      "Milton Mamani"
+    ],
+    "description": "Class Blueprint is an interactive visualization for class analysis. The visualization is implemented under the Moose platform using Roassal for the implementation of graphical elements. The visualization displays class views independently from their hierarchies.",
+    "goal": "Displaying a view of more than one visualization.",
+    "keywords": [
+      "Software Analysis", "Software Visualization", "Software Comprehension"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "Pharo", "Moose" ],
+      "preferred": [ "Roassal" ]
     }
+  },
+  {
+    "title": "Sequence Viewer/Editor",
+    "img": "hernan-dna.jpg",
+    "supervisors": [
+      "Hernan Morales",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "Implement a viewer/editor of nucleic acid or protein sequences. The viewer is used to visualize, search and analyze sequences and it should adapt its view interface depending on the sequence type. The editor features allows to modify, create, and annotate sequences. External tools could be linked to the editor to streamline a multi-step bioinformatics analysis such as MSA (Multiple Sequence Alignment), ORF finders, consensus sequence visualization, identification of homologous protein or nucleotide sequences, restriction enzyme finders, etc. The BioSmalltalk library already provides a basic language toolkit to start working with biological sequences in Pharo.",
+    "goal": "The viewer/editor will establish a baseline tool to address many common workflows at biological sequences, facilitating connections with bioinformatics tools from Pharo",
+    "keywords": [
+      "Bioinformatics", "Sequence Analysis", "Sequence Alignments"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [ "Bioinformatics" ],
+      "preferred": [ "Spec2", "FFI" ]
+    }
+  },
+  {
+    "title": "Better Ecompletion for Pharo using AI",
+    "img": "",
+    "supervisors": [
+      "Stephane Ducasse",
+      "Guillermo Polito"
+    ],
+    "description": "The goal of this project is to experiment with machine learning in the context of the automatic code completion of Pharo.",
+    "goal": "To achieve this goal the student will\n- study Byte Pair encoder https://youtu.be/HEikzVL-lZU\n- enhance the naive implementation available at https://github.com/Ducasse/BytePairEncoder\n- study the extensible completion Framework in Pharo\n\nHe will then run some experience building “characters” (a character in BPE can be the concatenation of multiple character)\nusing various Pharo information:\n- only the method signature\n- taking into account all the method bodies of Pharo method.\n\nBased on these databases of sequences the student will build some simple benchmarchs to be able to evaluate \nthe best strategies. He will use some industrial case studies to identify key configurations of the completion frameworks.\n\nOther tokenizers may be studied as well\n- Unigram Tokenization: https://youtu.be/TGZfZVuF9Yc \n- WordPiece Tokenization: https://youtu.be/qpv6ms_t_1A",
+    "keywords": [
+      "AI", "Machine Learning", "NLP", "Completion"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "Pharo", "Communication skills" ],
+      "preferred": [ ]
+    }
+  },
+  {
+    "title": "A lightweigth Microdown-based Blog engine",
+    "img": "",
+    "supervisors": [
+      "Stephane Ducasse"
+    ],
+    "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
+    "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the Pharo Weekly blog https://pharoweekly.wordpress.com/\nIn a second iteration a search component will be developed.",
+    "keywords": [
+      "Microdown", "HTML", "Blog"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "Pharo", "Communication skills" ],
+      "preferred": [ ]
+    }
+  },
+  {
+    "title": "A Pharo User-Interface Builder",
+    "img": "hernan-builder.jpg",
+    "supervisors": [
+      "Hernan Morales",
+      "Sebastian Jordan"
+    ],
+    "description": "Implement a designer application to develop graphical user interfaces (GUI) in Pharo. This will allow Pharo developers to build product functionality and focus on design instead of writing repetitive UI code and manually composing the UI layout. Widgets will be selected and dragged from a components tree, customized on a style pane, and the UI code will be generated. The tool will use Spec 2 (a framework in Pharo for describing user interfaces), and PCG (a Pharo Code Generator which allows AST manipulation). The emmited source code should be used to rebuild the user interface, including generation of event triggers, in the designer.",
+    "goal": "The GUI designer will be able to recreate UI designs from generated code, for post-edition and re-generation.",
+    "keywords": [
+      "UI", "Design", "Builder"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [ "Pharo", "AST" ],
+      "preferred": [ "Code Generation", "AST Manipulation" ]
+    }
+  },
+  {
+    "title": "DDS Binding for Pharo",
+    "img": "",
+    "supervisors": [
+      "Santiago Bragagnolo"
+    ],
+    "description": "ROS 2 is taking over the ROS Project. With this, many of our robotic implementations in Pharo will become obsolete. ROS2 uses an entirely different means of communication from ROS1. To enable ROS2 robotic development in Pharo, we need to provide bindings to at least one Data Delivery Service (DDS) system used by ROS. The project includes quickly analysing the three DDS vendors supported by ROS: eProsima, Eclipse Cyclone and Gurum Networks. Choose one of them, and implement the required bindings in Pharo to enable the communication.",
+    "goal": "- A Pharo binding library to at least one DDS implementation\n- Tests",
+    "keywords": [
+      "DDS", "ROS", "Pharo", "Robotics"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "Network", "FFI", "Pharo", "TDD" ],
+      "preferred": [ "ROS", "Distributed System Programming" ]
+    }
+  },
+  {
+    "title": "Agent Model with Penality for Front-Running",
+    "img": "hernan-abm.jpg",
+    "supervisors": [
+      "Hernan Morales",
+      "Sebastian Jordan"
+    ],
+    "description": "This project involves creating a virtual marketplace where users can create and trade digital assets using smart contracts, with penalties for front-running or other forms of market manipulation. An algorithm could recognize when market manipulation is occurring, and the developed model will help to detect patterns of abnormal trading activities and impose punishments accordingly, such as account suspensions or financial penalties for offenders engaging in front-running practices. It also could introduce a “reputation score” feature to reward users who are more compliant with the rules and penalize those who break them. CORMAS (A platofrm for COmmon-pool Resources and Multi-Agent Simulations in Pharo) could be used to speed up developement.",
+    "goal": "We hope that the student learns to simulate models of economic agents using an appropriate development platform such as CORMAS",
+    "keywords": [
+      "ABM", "Agent-based Simulation", "DEX", "Front-running", "Smart Contracts", "Trading"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [ "Pharo" ],
+      "preferred": [ "Agent-Based Modeling", "Descentralized Exchanges" ]
+    }
+  },
+  {
+    "title": "Improving Test Coverage Visualization Tools",
+    "img": "juanpablo-coverage.png",
+    "supervisors": [
+      "Juan Pablo Sandoval",
+      "Alison Fernandez",
+      "Geraldine Galindo"
+    ],
+    "description": "This projects targets to improve the Pharo test coverage tool by (i) providing a visual support to display the code coverage and (ii) improving the usability of the tool.\n\n\n",
+    "goal": "(a) a visual reusable component that shows the code coverage of a Pharo method; (b) integrate this component with the standard Pharo testing tool; (c) fix and improve a number of components of the Pharo testing tool to improve their usability.",
+    "keywords": [
+      "Testing",
+      "Code Coverage",
+      "UI"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "OOP" ],
+      "preferred":[ "Spec2" ]
+    }
+  },
+  {
+    "title": "Emacs-LSP in Pharo",
+    "img": "nicolas-ide.png",
+    "supervisors": [
+      "Nicolas Anquetil",
+      "Benoit Verhaeghe"
+    ],
+    "description": "The Language Server Protocol (LSP) defines the protocol used between an editor or IDE and a language server that provides language features like auto complete or rule violations (see picture). There is an initial implementation of LSP in Pharo. We are looking at making it work with the Eclipse SLP client plugin. This will involve straightening the existing SLP implementation (writing tests) and understand how Eclipse SLP plugin work.",
+    "goal": "- A better SLP implementation in Pharo (more robust, with tests)\n- a better comprehension of how Eclipse SLP plugin works and what can be done with it",
+    "keywords": [
+      "Language Server Protocol", "Pharo", "Eclipse"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP", "Meta Programming", "Eclipse Plugin"
+      ],
+      "preferred": [
+        "Pharo"
+      ]
+    }
+  },
+  {
+    "title": "Chart library for pharo",
+    "img": "milton-chart.png",
+    "supervisors": [
+      "Milton Mamani Torres"
+    ],
+    "description": "Charts like scatter plot, bar plot, histogram, line plot and combined plots are essential for any ecosystem. You have to create a nice usable readable and extensible chart library that users of Pharo can use it for their projects, replacing the chart library of Roassal3-Charts  ",
+    "goal": " 1.- Student will contribute with Pharo ecosystem. 2.- A chart library that people can use and extent",
+    "keywords": [
+      "Chart",
+      "Roassal",
+      "Data Visualization",
+      "Plots"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Desire to Learn"
+      ]
+    }
+  },
+  {
+    "title": "Refactoring Improvements",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "This project is to improve the refactoring support in its model and GUI.\nThis includes cleaning up unwanted dependencies (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2264), redesigning the changes log model (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3165), redesigning the changes factory (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3173)",
+    "goal": "A new GUI workflow using less pop-up chains for the more common refactorings:\n - rename\n - push\/pull up\/down\n - inline\/replace senders\n - add\/remove argument\n\nFix issues: \n- https:\/\/github.com\/pharo-project\/pharo\/issues\/2264\n- https:\/\/github.com\/pharo-project\/pharo\/issues\/3165\n- https:\/\/github.com\/pharo-project\/pharo\/issues\/3173",
+    "keywords": [
+      "Refactoring",
+      "Redesign",
+      "GUI Workflow"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "GUI Design",
+        "Refactoring"
+      ],
+      "preferred": [
+        "OOP"
+      ]
+    }
+  },
+  {
+    "title": "Better Serialization Support",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require much manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
+    "goal": "- Replace the storeOn mechanism with STON literal serialization (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3319)\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures",
+    "keywords": [
+      "Serialization"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP"
+      ],
+      "preferred": []
+    }
+  },
+  {
+    "title": "IDE improvements",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "Improve several IDE and text editor capabilities, such as shortcut navigation, text drag n drop, better parenthesis support, and autocompletion.",
+    "goal": "- Add text drag n drop support (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2634)\n- Enhance parenthesis support (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2635)\n- Allow enabling\/disabling tools and shortcuts (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2649)\n- Add autocompletion hooks (see Autocompletion hooks: https:\/\/github.com\/pharo-project\/pharo\/issues\/3177)\n- Enhance dependency analyser precision (see Dependency analyser precision: https:\/\/github.com\/pharo-project\/pharo\/issues\/3470)\n",
+    "keywords": [
+      "IDE",
+      "Tooling",
+      "Text Editor",
+      "Autocompletion"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP",
+        "Code Analysis"
+      ],
+      "preferred": []
+    }
+  },
+  {
+    "title": "Improve Standard Library APIs",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "The objective of this project is to improve the Pharo standard library.\nThis project includes low-level improvements in arithmetics, color APIs and collections.\nSuch changes will be backed up by benchmarks to show no performance improvements are introduced.",
+    "goal": "We expect at least fixes in the following aras:\n- Collections should use better default sorting algorithms (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2866)\n- Improve Color API (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3264)\n- Speeding up arithmetics (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3322)\n- Redesign Collection cancelled methods (see https:\/\/github.com\/pharo-project\/pharo\/issues\/4113)",
+    "keywords": [
+      "Redesign",
+      "Optimisation",
+      "Standard Library"
+    ],
+    "size": "Medium",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "OOP",
+        "Refactoring"
+      ],
+      "preferred": []
+    }
+  },
+  {
+    "title": "System and Security Improvements",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "The objective of the project is to improve system integration in standard libraries.\nFor example, the system's locale support could be improved to access the system's language, text encoding, number and date formatting. Similar improvements could be brought to sockets, zip files, downloads.",
+    "goal": "We expect to solve the following issues:\n- Checksums of downloads: https:\/\/github.com\/pharo-project\/pharo\/issues\/3391\n- Locale redesign: https:\/\/github.com\/pharo-project\/pharo\/issues\/3844\n- Unix sockets: https:\/\/github.com\/pharo-project\/pharo\/issues\/4046\n- Bootstrap improvements: https:\/\/github.com\/pharo-project\/pharo\/issues\/4269",
+    "keywords": [
+      "System Integration",
+      "Low-level"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Encodings",
+        "Foreign Function Interface"
+      ],
+      "preferred": [ 
+        "OOP"
+      ]
+    }
+  },
+  {
+    "title": "Slang VM Transpiler",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito",
+      "Pablo Tesone"
+    ],
+    "description": "The objective of this project is to bring general improvements in the Pharo-to-C transpiler and VM generation framework, named Slang. Slang supports type inference, inlinings, and simple optimisations such as constant folding and propagation. Most of Slang is implemented through AST manipulations and later dumped as C code.",
+    "goal": "The objective of this project is to fix some of the open issues tagged as `slang` in the pharo-vm repository (see https:\/\/github.com\/pharo-project\/pharo-vm):\n\n - Fixes in dispatch table translations (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/234)\n- asSymbol can be sent only to contants (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/236)\n- Inline does not always work with subexpressions (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/241)\n- Improve the declaration of nested structures (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/242)\n- Inlines do not respect type annotations (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/244)\n- Improve binary selector translation (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/246)\n- Improve variable localisation (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/247)\n- Improve variable renaming (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/429)\n- Improve block inlining (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/430)\n- Improve block argument inlining (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/432)\n- Improve translation of struct accesses inside assertions (https:\/\/github.com\/pharo-project\/pharo-vm\/issues\/458)",
+    "keywords": [
+      "Transpilation",
+      "Compilation"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Compilers"
+      ],
+      "preferred": [
+        "OOP"
+      ]
+    }
+  }
 ]
