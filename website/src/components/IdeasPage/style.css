@@ -93,7 +93,7 @@ article {
   box-sizing: border-box;
   border-radius: 8px;
   padding: 1.6rem;
-  min-height: 12rem;
+  /* min-height: 12rem; */
   display: flex;
   flex-direction: column;
 }
@@ -116,7 +116,7 @@ article {
   .ideaCard {
     flex-grow: 1;
     flex-basis: 100%;
-    margin: 0 -1.6rem;
+    margin: 1 -1.6rem;
     margin-bottom: 0.8rem;
   }
   .ideaCard:nth-child(n) {
@@ -132,5 +132,9 @@ article {
   }
   .header {
     text-align: center;
+  }
+  aside { 
+    float: none;
+    width: 100%; 
   }
 }
