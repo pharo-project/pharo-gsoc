@@ -103,11 +103,11 @@ export default function IdeaPage() {
           <tbody>
             <tr>
               <td>{t('required')}</td>
-              <td>{skills?.required}</td>
+              <td>{skills?.required.join(', ')}</td>
             </tr>
             <tr>
               <td>{t('preferred')}</td>
-              <td>{skills?.preferred}</td>
+              <td>{skills?.preferred.join(', ')}</td>
             </tr>
             <tr>
               <td>{t('timeSize')}</td>

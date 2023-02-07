@@ -99,7 +99,8 @@ class IdeasPage extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1>Project Ideas</h1>
+        <h1>Pharo GSoC Project Ideas</h1>
+        <p>Below is the list of project ideas that were proposed by the Pharo community. You can apply to any of those projects by sending an email to one of its mentors. Do not hesitate to propose your own idea but make sure that there is at least one mentor in the community who would agree to supervise you.</p>
         <aside>
           <FilterIdeasForm
             ideas={this.ideas}
