@@ -1,5 +1,6 @@
 [
   {
+    "id": "class-blueprint",
     "title": "Extending a visualization (Class Blueprint)",
     "img": "nour-blueprint.png",
     "supervisors": [
@@ -19,6 +20,7 @@
     }
   },
   {
+    "id": "sequence-editor",
     "title": "Sequence Viewer/Editor",
     "img": "hernan-dna.jpg",
     "supervisors": [
@@ -38,6 +40,7 @@
     }
   },
   {
+    "id": "ecompletion",
     "title": "Better Ecompletion for Pharo using AI",
     "img": "",
     "supervisors": [
@@ -57,6 +60,7 @@
     }
   },
   {
+    "id": "microdown-blog",
     "title": "A lightweigth Microdown-based Blog engine",
     "img": "",
     "supervisors": [
@@ -75,6 +79,7 @@
     }
   },
   {
+    "id": "ui-builder",
     "title": "A Pharo User-Interface Builder",
     "img": "hernan-builder.jpg",
     "supervisors": [
@@ -94,6 +99,7 @@
     }
   },
   {
+    "id": "dds-binding",
     "title": "DDS Binding for Pharo",
     "img": "",
     "supervisors": [
@@ -112,6 +118,7 @@
     }
   },
   {
+    "id": "front-running-abm",
     "title": "Agent Model with Penality for Front-Running",
     "img": "hernan-abm.jpg",
     "supervisors": [
@@ -131,6 +138,7 @@
     }
   },
   {
+    "id": "test-coverage-visualization",
     "title": "Improving Test Coverage Visualization Tools",
     "img": "juanpablo-coverage.png",
     "supervisors": [
@@ -153,6 +161,7 @@
     }
   },
   {
+    "id": "emacs-lsp",
     "title": "Emacs-LSP in Pharo",
     "img": "nicolas-ide.png",
     "supervisors": [
@@ -176,6 +185,7 @@
     }
   },
   {
+    "id": "chart-library",
     "title": "Chart library for pharo",
     "img": "milton-chart.png",
     "supervisors": [
@@ -201,6 +211,7 @@
     }
   },
   {
+    "id": "refactoring",
     "title": "Refactoring Improvements",
     "img": "",
     "supervisors": [
@@ -226,6 +237,7 @@
     }
   },
   {
+    "id": "serialization",
     "title": "Better Serialization Support",
     "img": "",
     "supervisors": [
@@ -247,6 +259,7 @@
     }
   },
   {
+    "id": "ide-improvements",
     "title": "IDE improvements",
     "img": "",
     "supervisors": [
@@ -272,6 +285,7 @@
     }
   },
   {
+    "id": "standard-library-api",
     "title": "Improve Standard Library APIs",
     "img": "",
     "supervisors": [
@@ -295,6 +309,7 @@
     }
   },
   {
+    "id": "system-and-security",
     "title": "System and Security Improvements",
     "img": "",
     "supervisors": [
@@ -319,6 +334,7 @@
     }
   },
   {
+    "id": "slang-vm-transpiler",
     "title": "Slang VM Transpiler",
     "img": "",
     "supervisors": [
