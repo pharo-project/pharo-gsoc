@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto&display=swap');
 
 :root {
-  --page-width: 100rem;
+  --page-width: 60rem;
   --text-font-family: 'Roboto', sans-serif;
   --header-font-family: 'Merriweather Sans', sans-serif;
   --text-font-size: 1.1rem;
