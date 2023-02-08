@@ -247,7 +247,7 @@
       "Guillermo Polito"
     ],
     "description": "Improve several IDE and text editor capabilities, such as shortcut navigation, text drag n drop, better parenthesis support, and autocompletion.",
-    "goal": "- Add text drag n drop support (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2634)\n- Enhance parenthesis support (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2635)\n- Allow enabling\/disabling tools and shortcuts (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2649)\n- Add autocompletion hooks (see Autocompletion hooks: https:\/\/github.com\/pharo-project\/pharo\/issues\/3177)\n- Enhance dependency analyser precision (see Dependency analyser precision: https:\/\/github.com\/pharo-project\/pharo\/issues\/3470)\n",
+    "goal": "- Add text drag n drop support (see [pharo #2634](https://github.com/pharo-project/pharo/issues/2634))\n- Enhance parenthesis support (see [pharo #2635](https://github.com/pharo-project/pharo/issues/2635))\n- Allow enabling\/disabling tools and shortcuts (see [pharo #2649](https://github.com/pharo-project/pharo/issues/2649))\n- Add autocompletion hooks (see Autocompletion hooks: [pharo #3177](https://github.com/pharo-project/pharo/issues/3177))\n- Enhance dependency analyser precision (see Dependency analyser precision: [pharo #3470](https://github.com/pharo-project/pharo/issues/3470)).",
     "keywords": [
       "IDE",
       "Tooling",
