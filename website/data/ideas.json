@@ -126,8 +126,8 @@
       "Alison Fernandez",
       "Geraldine Galindo"
     ],
-    "description": "This projects targets to improve the Pharo test coverage tool by (i) providing a visual support to display the code coverage and (ii) improving the usability of the tool.\n\n\n",
-    "goal": "(a) a visual reusable component that shows the code coverage of a Pharo method; (b) integrate this component with the standard Pharo testing tool; (c) fix and improve a number of components of the Pharo testing tool to improve their usability.",
+    "description": "This projects targets to improve the Pharo test coverage tool by\n1. providing a visual support to display the code coverage and\n2. improving the usability of the tool.\n\n\n",
+    "goal": "- A visual reusable component that shows the code coverage of a Pharo method;\n- Integrate this component with the standard Pharo testing tool;\n- Fix and improve a number of components of the Pharo testing tool to improve their usability.",
     "keywords": [
       "Testing",
       "Code Coverage",
