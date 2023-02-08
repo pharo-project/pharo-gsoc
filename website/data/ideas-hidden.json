@@ -52,5 +52,25 @@
         "Machine Learing"
       ]
     }
+  },
+  {
+    "id": "front-running-abm",
+    "title": "Agent Model with Penality for Front-Running",
+    "img": "hernan-abm.jpg",
+    "supervisors": [
+      "Hernan Morales",
+      "Sebastian Jordan"
+    ],
+    "description": "This project involves creating a virtual marketplace where users can create and trade digital assets using smart contracts, with penalties for front-running or other forms of market manipulation. An algorithm could recognize when market manipulation is occurring, and the developed model will help to detect patterns of abnormal trading activities and impose punishments accordingly, such as account suspensions or financial penalties for offenders engaging in front-running practices. It also could introduce a “reputation score” feature to reward users who are more compliant with the rules and penalize those who break them. CORMAS (A platofrm for COmmon-pool Resources and Multi-Agent Simulations in Pharo) could be used to speed up developement.",
+    "goal": "We hope that the student learns to simulate models of economic agents using an appropriate development platform such as CORMAS",
+    "keywords": [
+      "ABM", "Agent-based Simulation", "DEX", "Front-running", "Smart Contracts", "Trading"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [ "Pharo" ],
+      "preferred": [ "Agent-Based Modeling", "Descentralized Exchanges" ]
+    }
   }
 ]
