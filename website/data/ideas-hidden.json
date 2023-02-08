@@ -1,0 +1,56 @@
+[
+  {
+    "id": "water-quality",
+    "title": "Water quality index and internet of things",
+    "img": "etienne-water.jpg",
+    "supervisors": [
+      "Etienne Delay",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "We want to implement a water quality sensor platform for the lake of Gui\u00e8rs in Senegal with Pharo-IoT. The data will be collected by probes. The objective is to develop tools to interact on the fly on how data is collected, aggregated and stored, as the needs of the local population evolve to provide them with co-constructed indicators on water quality.",
+    "goal": "a prototype for piloting a data collection station",
+    "keywords": [
+      "IoT",
+      "Water Quality",
+      "Stakolders"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "IoT"
+      ]
+    }
+  },
+  {
+    "id": "object-detection",
+    "title": "Object detection for hybrid serious games",
+    "img": "etienne-cv.jpg",
+    "supervisors": [
+      "Etienne Delay",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "We wish to investigate the possibilities offered by the new applications related to the detection of objects and movement by carrying a prototype of participative simulation in the field of the hybrid simulation between computer model and physical game. It will be a question of detecting various objects by means of an \"Azure Kinect\" from Pharo to update a model based on agents",
+    "goal": "A DSL allowing interaction between Pharo and Azure Kinect,  a working prototype of this DSL",
+    "keywords":[
+      "Computer Vision",
+      "Machine Learning",
+      "AI",
+      "Data Science"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Open CV",
+        "Machine Learing"
+      ]
+    }
+  }
+]
