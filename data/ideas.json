@@ -1,45 +1,5 @@
 [
   {
-    "id": "class-blueprint",
-    "title": "Extending a visualization (Class Blueprint)",
-    "img": "nour-blueprint.png",
-    "supervisors": [
-      "Nour Jihene Agouf",
-      "Milton Mamani Torres"
-    ],
-    "description": "Class Blueprint is an interactive visualization for class analysis. The visualization is implemented under the Moose platform using Roassal for the implementation of graphical elements. The visualization displays class views independently from their hierarchies.",
-    "goal": "Displaying a view of more than one visualization.",
-    "keywords": [
-      "Software Analysis", "Software Visualization", "Software Comprehension"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [ "Pharo", "Moose" ],
-      "preferred": [ "Roassal" ]
-    }
-  },
-  {
-    "id": "sequence-editor",
-    "title": "Sequence Viewer/Editor",
-    "img": "hernan-dna.jpg",
-    "supervisors": [
-      "Hernan Morales",
-      "Oleksandr Zaitsev"
-    ],
-    "description": "Implement a viewer/editor of nucleic acid or protein sequences. The viewer is used to visualize, search and analyze sequences and it should adapt its view interface depending on the sequence type. The editor features allows to modify, create, and annotate sequences. External tools could be linked to the editor to streamline a multi-step bioinformatics analysis such as MSA (Multiple Sequence Alignment), ORF finders, consensus sequence visualization, identification of homologous protein or nucleotide sequences, restriction enzyme finders, etc. The BioSmalltalk library already provides a basic language toolkit to start working with biological sequences in Pharo.",
-    "goal": "The viewer/editor will establish a baseline tool to address many common workflows at biological sequences, facilitating connections with bioinformatics tools from Pharo",
-    "keywords": [
-      "Bioinformatics", "Sequence Analysis", "Sequence Alignments"
-    ],
-    "size": "Large",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [ "Bioinformatics" ],
-      "preferred": [ "Spec2", "FFI" ]
-    }
-  },
-  {
     "id": "ecompletion",
     "title": "Better Code Completion for Pharo using AI",
     "img": "",
@@ -60,22 +20,31 @@
     }
   },
   {
-    "id": "microdown-blog",
-    "title": "A lightweigth Microdown-based Blog engine",
-    "img": "",
+    "id": "polymath-architecture",
+    "title": "Improve the architecture of PolyMath",
+    "img": "cyril-polymath.png",
     "supervisors": [
-      "Stephane Ducasse"
+      "Cyril Ferlicot-Delbecque",
+      "Oleksandr Zaitsev"
     ],
-    "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
-    "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the [Pharo Weekly blog](https://pharoweekly.wordpress.com/)\nIn a second iteration a search component will be developed.",
+    "description": "PolyMath is a mathematical library in Pharo that implements various algorithms and data structure for algebra, matrix-vector operations, numerical analysis, differential equations, etc. It is similar to  NumPy and SciPy in Python or SciRuby in Ruby. \n\nThe goal of this project is to improve the overall quality of the PolyMath library in term of architecture and API. This includes improving the internal dependencies of PolyMath to make it more modular, proposing a more intuitive and unified API for the existing algorithms.\n\nStudents will also be encouraged to implement new algorithms for PolyMath or to create tutorials and blog posts for the existing ones. The PolyMath library has a very dynamic community so students will receive a lot of feedback and guidance to help them complete this project.",
+    "goal": "- A more modular system\n- Cleaner dependencies\n- Improved API\n- Documentation\n- New algebra algorithms",
     "keywords": [
-      "Microdown", "HTML", "Blog"
+      "Math",
+      "Algebra",
+      "Infrastructure",
+      "API"
     ],
     "size": "Medium",
     "difficulty": "Medium",
     "skills": {
-      "required": [ "Pharo", "Communication skills" ],
-      "preferred": [ ]
+      "required": [
+        "OOP",
+        "Pharo"
+      ],
+      "preferred": [
+        "Be comfortable with math"
+      ]
     }
   },
   {
@@ -341,34 +310,6 @@
     }
   },
   {
-    "id": "polymath-architecture",
-    "title": "Improve the architecture of PolyMath",
-    "img": "cyril-polymath.png",
-    "supervisors": [
-      "Cyril Ferlicot-Delbecque",
-      "Oleksandr Zaitsev"
-    ],
-    "description": "PolyMath is a mathematical library in Pharo that implements various algorithms and data structure for algebra, matrix-vector operations, numerical analysis, differential equations, etc. It is similar to  NumPy and SciPy in Python or SciRuby in Ruby. \n\nThe goal of this project is to improve the overall quality of the PolyMath library in term of architecture and API. This includes improving the internal dependencies of PolyMath to make it more modular, proposing a more intuitive and unified API for the existing algorithms.\n\nStudents will also be encouraged to implement new algorithms for PolyMath or to create tutorials and blog posts for the existing ones. The PolyMath library has a very dynamic community so students will receive a lot of feedback and guidance to help them complete this project.",
-    "goal": "- A more modular system\n- Cleaner dependencies\n- Improved API\n- Documentation\n- New algebra algorithms",
-    "keywords": [
-      "Math",
-      "Algebra",
-      "Infrastructure",
-      "API"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "OOP",
-        "Pharo"
-      ],
-      "preferred": [
-        "Be comfortable with math"
-      ]
-    }
-  },
-  {
     "id": "spatial-data",
     "title": "Classes and Methods for Spatial Data manipulation",
     "img": "etienne-gis.jpg",
@@ -391,6 +332,65 @@
       "preferred": [
         "GIS"
       ]
+    }
+  },
+  {
+    "id": "microdown-blog",
+    "title": "A lightweigth Microdown-based Blog engine",
+    "img": "",
+    "supervisors": [
+      "Stephane Ducasse"
+    ],
+    "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
+    "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the [Pharo Weekly blog](https://pharoweekly.wordpress.com/)\nIn a second iteration a search component will be developed.",
+    "keywords": [
+      "Microdown", "HTML", "Blog"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "Pharo", "Communication skills" ],
+      "preferred": [ ]
+    }
+  },
+  {
+    "id": "sequence-editor",
+    "title": "Sequence Viewer/Editor",
+    "img": "hernan-dna.jpg",
+    "supervisors": [
+      "Hernan Morales",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "Implement a viewer/editor of nucleic acid or protein sequences. The viewer is used to visualize, search and analyze sequences and it should adapt its view interface depending on the sequence type. The editor features allows to modify, create, and annotate sequences. External tools could be linked to the editor to streamline a multi-step bioinformatics analysis such as MSA (Multiple Sequence Alignment), ORF finders, consensus sequence visualization, identification of homologous protein or nucleotide sequences, restriction enzyme finders, etc. The BioSmalltalk library already provides a basic language toolkit to start working with biological sequences in Pharo.",
+    "goal": "The viewer/editor will establish a baseline tool to address many common workflows at biological sequences, facilitating connections with bioinformatics tools from Pharo",
+    "keywords": [
+      "Bioinformatics", "Sequence Analysis", "Sequence Alignments"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [ "Bioinformatics" ],
+      "preferred": [ "Spec2", "FFI" ]
+    }
+  },
+  {
+    "id": "class-blueprint",
+    "title": "Extending a visualization (Class Blueprint)",
+    "img": "nour-blueprint.png",
+    "supervisors": [
+      "Nour Jihene Agouf",
+      "Milton Mamani Torres"
+    ],
+    "description": "Class Blueprint is an interactive visualization for class analysis. The visualization is implemented under the Moose platform using Roassal for the implementation of graphical elements. The visualization displays class views independently from their hierarchies.",
+    "goal": "Displaying a view of more than one visualization.",
+    "keywords": [
+      "Software Analysis", "Software Visualization", "Software Comprehension"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [ "Pharo", "Moose" ],
+      "preferred": [ "Roassal" ]
     }
   }
 ]
