@@ -298,7 +298,7 @@
       "Guillermo Polito"
     ],
     "description": "The objective of the project is to improve system integration in standard libraries.\nFor example, the system's locale support could be improved to access the system's language, text encoding, number and date formatting. Similar improvements could be brought to sockets, zip files, downloads.",
-    "goal": "We expect to solve the following issues:\n- Checksums of downloads: https:\/\/github.com\/pharo-project\/pharo\/issues\/3391\n- Locale redesign: https:\/\/github.com\/pharo-project\/pharo\/issues\/3844\n- Unix sockets: https:\/\/github.com\/pharo-project\/pharo\/issues\/4046\n- Bootstrap improvements: https:\/\/github.com\/pharo-project\/pharo\/issues\/4269",
+    "goal": "We expect to solve the following issues:\n- Checksums of downloads: [pharo #3391](https://github.com/pharo-project/pharo/issues/3391)\n- Locale redesign: [pharo #3844](https://github.com/pharo-project/pharo/issues/3844)\n- Unix sockets: [pharo #4046](https://github.com/pharo-project/pharo/issues/4046)\n- Bootstrap improvements: [pharo #4269](https://github.com/pharo-project/pharo/issues/4269)",
     "keywords": [
       "System Integration",
       "Low-level"
