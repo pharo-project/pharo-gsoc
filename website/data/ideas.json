@@ -195,7 +195,8 @@
     "title": "Refactoring Improvements",
     "img": "",
     "supervisors": [
-      "Guillermo Polito"
+      "Guillermo Polito",
+      "Sebastian Jordan"
     ],
     "description": "This project is to improve the refactoring support in its model and GUI.\nThis includes cleaning up unwanted dependencies (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2264), redesigning the changes log model (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3165), redesigning the changes factory (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3173)",
     "goal": "A new GUI workflow using less pop-up chains for the more common refactorings:\n - rename\n - push\/pull up\/down\n - inline\/replace senders\n - add\/remove argument\n\nFix issues: \n- https:\/\/github.com\/pharo-project\/pharo\/issues\/2264\n- https:\/\/github.com\/pharo-project\/pharo\/issues\/3165\n- https:\/\/github.com\/pharo-project\/pharo\/issues\/3173",
@@ -269,7 +270,8 @@
     "title": "Improve Standard Library APIs",
     "img": "",
     "supervisors": [
-      "Guillermo Polito"
+      "Guillermo Polito",
+      "Sebastian Jordan"
     ],
     "description": "The objective of this project is to improve the Pharo standard library.\nThis project includes low-level improvements in arithmetics, color APIs and collections.\nSuch changes will be backed up by benchmarks to show no performance improvements are introduced.",
     "goal": "We expect at least fixes in the following aras:\n- Collections should use better default sorting algorithms (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2866)\n- Improve Color API (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3264)\n- Speeding up arithmetics (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3322)\n- Redesign Collection cancelled methods (see https:\/\/github.com\/pharo-project\/pharo\/issues\/4113)",
