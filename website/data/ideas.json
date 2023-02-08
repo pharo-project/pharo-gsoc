@@ -41,7 +41,7 @@
   },
   {
     "id": "ecompletion",
-    "title": "Better Ecompletion for Pharo using AI",
+    "title": "Better Code Completion for Pharo using AI",
     "img": "",
     "supervisors": [
       "Stephane Ducasse",
@@ -67,7 +67,7 @@
       "Stephane Ducasse"
     ],
     "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
-    "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the Pharo Weekly blog https://pharoweekly.wordpress.com/\nIn a second iteration a search component will be developed.",
+    "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the [Pharo Weekly blog](https://pharoweekly.wordpress.com/)\nIn a second iteration a search component will be developed.",
     "keywords": [
       "Microdown", "HTML", "Blog"
     ],
