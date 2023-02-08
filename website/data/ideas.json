@@ -172,7 +172,7 @@
       "Milton Mamani Torres"
     ],
     "description": "Charts like scatter plot, bar plot, histogram, line plot and combined plots are essential for any ecosystem. You have to create a nice usable readable and extensible chart library that users of Pharo can use it for their projects, replacing the chart library of Roassal3-Charts  ",
-    "goal": " 1.- Student will contribute with Pharo ecosystem. 2.- A chart library that people can use and extent",
+    "goal": "- Student will contribute with Pharo ecosystem.\n- A chart library that people can use and extend",
     "keywords": [
       "Chart",
       "Roassal",
@@ -198,8 +198,8 @@
       "Guillermo Polito",
       "Sebastian Jordan"
     ],
-    "description": "This project is to improve the refactoring support in its model and GUI.\nThis includes cleaning up unwanted dependencies (see https:\/\/github.com\/pharo-project\/pharo\/issues\/2264), redesigning the changes log model (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3165), redesigning the changes factory (see https:\/\/github.com\/pharo-project\/pharo\/issues\/3173)",
-    "goal": "A new GUI workflow using less pop-up chains for the more common refactorings:\n - rename\n - push\/pull up\/down\n - inline\/replace senders\n - add\/remove argument\n\nFix issues: \n- https:\/\/github.com\/pharo-project\/pharo\/issues\/2264\n- https:\/\/github.com\/pharo-project\/pharo\/issues\/3165\n- https:\/\/github.com\/pharo-project\/pharo\/issues\/3173",
+    "description": "This project is to improve the refactoring support in its model and GUI.\nThis includes cleaning up unwanted dependencies (see [pharo #2264](https://github.com/pharo-project/pharo/issues/2264)), redesigning the changes log model (see [pharo #3165](https://github.com/pharo-project/pharo/issues/3165)), redesigning the changes factory (see [pharo #3173](https://github.com/pharo-project/pharo/issues/3173))",
+    "goal": "A new GUI workflow using less pop-up chains for the more common refactorings:\n - rename\n - push\/pull up\/down\n - inline\/replace senders\n - add\/remove argument\n\nFix issues: \n- [pharo #2264](https://github.com/pharo-project/pharo/issues/2264)\n- [pharo #3165](https://github.com/pharo-project/pharo/issues/3165)\n- [pharo #3173](https://github.com/pharo-project/pharo/issues/3173)",
     "keywords": [
       "Refactoring",
       "Redesign",
