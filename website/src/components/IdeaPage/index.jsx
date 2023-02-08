@@ -1,6 +1,14 @@
 import React, { useEffect} from "react";
 import { useParams } from 'react-router-dom';
 
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
+import math from 'remark-math';
+import Tex from '@matejmazur/react-katex';
+import 'katex/dist/katex.min.css';
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 import './style.css';
 
 import $ from "jquery"
@@ -87,6 +95,14 @@ export default function IdeaPage() {
     document.title = title;  
   }, []);
 
+  const renderers = {
+    inlineMath: ({value}) => <Tex math={value} />,
+    math: ({value}) => <Tex block math={value} />,
+    code: ({language, value}) => {
+      return <SyntaxHighlighter style={prism} language={language ? language.toLowerCase() : language} children={value} />
+    }
+  };
+
   return (
       <div className="container">
         <div className="header-modal">
@@ -99,10 +115,10 @@ export default function IdeaPage() {
         </div>
 
         <h3>{t('context')}</h3>
-        <p>{description}</p>
+        <p><ReactMarkdown plugins={[math,gfm]} renderers={renderers} children={description} /></p>
 
         <h3>{t('goal')}</h3>
-        <p>{goal}</p>
+        <p><ReactMarkdown plugins={[math,gfm]} renderers={renderers} children={goal} /></p>
 
         <table class="ideaTable">
           <tbody>
