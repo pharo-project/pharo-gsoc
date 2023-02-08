@@ -26,34 +26,6 @@
     }
   },
   {
-    "id": "object-detection",
-    "title": "Object detection for hybrid serious games",
-    "img": "etienne-cv.jpg",
-    "supervisors": [
-      "Etienne Delay",
-      "Oleksandr Zaitsev"
-    ],
-    "description": "We wish to investigate the possibilities offered by the new applications related to the detection of objects and movement by carrying a prototype of participative simulation in the field of the hybrid simulation between computer model and physical game. It will be a question of detecting various objects by means of an \"Azure Kinect\" from Pharo to update a model based on agents",
-    "goal": "A DSL allowing interaction between Pharo and Azure Kinect,  a working prototype of this DSL",
-    "keywords":[
-      "Computer Vision",
-      "Machine Learning",
-      "AI",
-      "Data Science"
-    ],
-    "size": "Large",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [
-        "Pharo"
-      ],
-      "preferred": [
-        "Open CV",
-        "Machine Learing"
-      ]
-    }
-  },
-  {
     "id": "front-running-abm",
     "title": "Agent Model with Penality for Front-Running",
     "img": "hernan-abm.jpg",
