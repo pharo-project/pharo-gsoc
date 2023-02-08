@@ -430,5 +430,114 @@
         "oop"
       ]
     }
+  },
+  {
+    "title":"Improve the architecture of PolyMath",
+    "img":"https:\/\/drive.google.com\/open?id=1DbDMKZU4HXlhml2jnlHeRd9xBBnyPKWM",
+    "supervisors":[
+      "Cyril Ferlicot-Delbecque (cyril@ferlicot.me)",
+      "Oleksandr Zaitsev (olk.zaytsev@gmail.com)"
+    ],
+    "description":"PolyMath is a mathematical library in Pharo that implements various algorithms and data structure for algebra, matrix-vector operations, numerical analysis, differential equations, etc. It is similar to  NumPy and SciPy in Python or SciRuby in Ruby. \n\nThe goal of this project is to improve the overall quality of the PolyMath library in term of architecture and API. This includes improving the internal dependencies of PolyMath to make it more modular, proposing a more intuitive and unified API for the existing algorithms.\n\nStudents will also be encouraged to implement new algorithms for PolyMath or to create tutorials and blog posts for the existing ones. The PolyMath library has a very dynamic community so students will receive a lot of feedback and guidance to help them complete this project.",
+    "goal":"- A more modular system\n- Cleaner dependencies\n- Improved API\n- Documentation\n- New algebra algorithms",
+    "keywords":[
+      "math",
+      "algebra",
+      "infrastructure",
+      "API"
+    ],
+    "size":"Medium",
+    "difficulty":"Medium",
+    "required_skills":"OOP, Pharo",
+    "preferred_skills":"Be comfortable with math",
+    "skills":{
+      "required":[
+        "OOP",
+        "Pharo"
+      ],
+      "preferred":[
+        "Be comfortable with math"
+      ]
+    }
+  },
+  {
+    "title":"Object detection for hybrid serious games",
+    "img":"https:\/\/drive.google.com\/open?id=1PXn3hYhwZT6RUEWpnAVHhmckg5_ZqimV",
+    "supervisors":[
+      "Etienne Delay etienne.delay@cirad.fr"
+    ],
+    "description":"We wish to investigate the possibilities offered by the new applications related to the detection of objects and movement by carrying a prototype of participative simulation in the field of the hybrid simulation between computer model and physical game. It will be a question of detecting various objects by means of an \"Azure Kinect\" from Pharo to update a model based on agents",
+    "goal":"A DSL allowing interaction between Pharo and Azure Kinect,  a working prototype of this DSL",
+    "keywords":[
+      "Computer Vision",
+      "machine learning",
+      "AI",
+      "data science"
+    ],
+    "size":"Large",
+    "difficulty":"Hard",
+    "required_skills":"Pharo",
+    "preferred_skills":"Open CV, Machine learing",
+    "skills":{
+      "required":[
+        "Pharo"
+      ],
+      "preferred":[
+        "Open CV",
+        "Machine learing"
+      ]
+    }
+  },
+  {
+    "title":"Classes and Methods for Spatial Data manipulation",
+    "img":"https:\/\/drive.google.com\/open?id=1ML73paIVpPe8k-GCbZrt3Gaj0SNu8_HC",
+    "supervisors":[
+      "Etienne Delay etienne.delay@cirad.fr"
+    ],
+    "description":"We propose to explore structure to spatial data finding a way to handle different types of geospatial data in pharo. Once the data is manipulable with our tools the goal is to develop some spatial method allowing for users to deal with spatial data. For that we will start from tools already existing in pharo like the packages : geometry, shapes, geo-json and territorial, but also in other programming languages (as r or python) in order to implement spatial methods for the community. The main objective will be first to be able to load a geojson file, to visualize it and to basic geometric operations.",
+    "goal":"DSL compatible with OGS standar for spatial data manipulation",
+    "keywords":[
+      "simple feature",
+      "GIS",
+      "spatial"
+    ],
+    "size":"Large",
+    "difficulty":"Medium",
+    "required_skills":"Pharo dev.",
+    "preferred_skills":"GIS",
+    "skills":{
+      "required":[
+        "Pharo dev."
+      ],
+      "preferred":[
+        "GIS"
+      ]
+    }
+  },
+  {
+    "title":"water quality index and internet of things",
+    "img":"https:\/\/drive.google.com\/open?id=1-kMt74MUwRtz0Sbu1VKdP3yQmucdmyS4",
+    "supervisors":[
+      "Etienne Delay etienne.delay@cirad.fr"
+    ],
+    "description":"We want to implement a water quality sensor platform for the lake of Gui\u00e8rs in Senegal with Pharo-IoT. The data will be collected by probes. The objective is to develop tools to interact on the fly on how data is collected, aggregated and stored, as the needs of the local population evolve to provide them with co-constructed indicators on water quality.",
+    "goal":"a prototype for piloting a data collection station",
+    "keywords":[
+      "IoT",
+      "water quality",
+      "stakolders"
+    ],
+    "size":"Large",
+    "difficulty":"Medium",
+    "required_skills":"Pharo dev.",
+    "preferred_skills":"IoT",
+    "skills":{
+      "required":[
+        "Pharo dev."
+      ],
+      "preferred":[
+        "IoT"
+      ]
+    }
   }
 ]
