@@ -2,7 +2,7 @@
   {
     "id": "serialization",
     "title": "Better Serialization Support",
-    "img": "",
+    "img": "guille-serialization.jpeg",
     "supervisors": [
       "Guillermo Polito"
     ],
@@ -24,7 +24,7 @@
   {
     "id": "ecompletion",
     "title": "Better Code Completion for Pharo using AI",
-    "img": "",
+    "img": "guille-completion.jpeg",
     "supervisors": [
       "Stephane Ducasse",
       "Guillermo Polito"
@@ -146,7 +146,7 @@
   {
     "id": "dds-binding",
     "title": "DDS Binding for Pharo",
-    "img": "",
+    "img": "santi-dds.jpeg",
     "supervisors": [
       "Santiago Bragagnolo"
     ],
