@@ -1,5 +1,27 @@
 [
   {
+    "id": "serialization",
+    "title": "Better Serialization Support",
+    "img": "",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require a lot of manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
+    "goal": "- Replace the storeOn mechanism with STON literal serialization (see [pharo #3319](https://github.com/pharo-project/pharo/issues/3319))\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures",
+    "keywords": [
+      "Serialization"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP"
+      ],
+      "preferred": []
+    }
+  },
+  {
     "id": "ecompletion",
     "title": "Better Code Completion for Pharo using AI",
     "img": "",
@@ -48,6 +70,34 @@
     }
   },
   {
+    "id": "object-detection",
+    "title": "Enhancing Cormas with Computer Vision",
+    "img": "etienne-cv.jpg",
+    "supervisors": [
+      "Etienne Delay",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "[Cormas](https://github.com/cormas/cormas) is a modeling and multi-agent simulation platform implemented in Pharo and dedicated for management of renewable natural resources. The novelty of Cormas is in its orientation towards the [Compaion Modelling](https://www.commod.org/) which suggests the development of interactive games that facilitate the collaborative exploration of scenarios by scientists and local stakeholders.\n\nThe goal of this project is to enhance the interactive functionality of Cormas by building a computer vision system for detecting tangible objects such as board game pieces. Such a system would permit people to play a [serious game](https://en.wikipedia.org/wiki/Serious_game) on a physical board and have a camera detect the movement of pieces and automatically update the Cormas model. The game could then be stored, replayed, interacted with, and analysed using the functionality that is already provided by the Cormas platform.\n\nObject detection can be implemented based on the smartphone camera or with a more advanced dedicated tool such as [Azure Kinect](https://azure.microsoft.com/en-us/products/kinect-dk/). Adaptation of Cormas platform for receiving live input from real world is a very important aspect of this project.",
+    "goal": "- Implement and test the API in Cormas for positioning agents on the spatial grid\n- Implement a prototype of an object detection system using computer vision\n- Connect the implemented object detection system to Cormas\n- Implement calibration and board initialization",
+    "keywords":[
+      "Computer Vision",
+      "Machine Learning",
+      "AI",
+      "Agent-Based Modeling"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Pharo", "Machine Learing"
+      ],
+      "preferred": [
+        "Open CV",
+        "Cormas"
+      ]
+    }
+  },
+  {
     "id": "ui-builder",
     "title": "A Pharo User-Interface Builder",
     "img": "hernan-builder.jpg",
@@ -65,6 +115,32 @@
     "skills": {
       "required": [ "Pharo", "AST" ],
       "preferred": [ "Code Generation", "AST Manipulation" ]
+    }
+  },
+  {
+    "id": "chart-library",
+    "title": "Chart library for pharo",
+    "img": "milton-chart.png",
+    "supervisors": [
+      "Milton Mamani Torres"
+    ],
+    "description": "Charts like scatter plot, bar plot, histogram, line plot and combined plots are essential for any ecosystem. You have to create a nice usable readable and extensible chart library that users of Pharo can use it for their projects, replacing the chart library of Roassal3-Charts  ",
+    "goal": "- Student will contribute with Pharo ecosystem.\n- A chart library that people can use and extend",
+    "keywords": [
+      "Chart",
+      "Roassal",
+      "Data Visualization",
+      "Plots"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Desire to Learn"
+      ]
     }
   },
   {
@@ -134,32 +210,6 @@
     }
   },
   {
-    "id": "chart-library",
-    "title": "Chart library for pharo",
-    "img": "milton-chart.png",
-    "supervisors": [
-      "Milton Mamani Torres"
-    ],
-    "description": "Charts like scatter plot, bar plot, histogram, line plot and combined plots are essential for any ecosystem. You have to create a nice usable readable and extensible chart library that users of Pharo can use it for their projects, replacing the chart library of Roassal3-Charts  ",
-    "goal": "- Student will contribute with Pharo ecosystem.\n- A chart library that people can use and extend",
-    "keywords": [
-      "Chart",
-      "Roassal",
-      "Data Visualization",
-      "Plots"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo"
-      ],
-      "preferred": [
-        "Desire to Learn"
-      ]
-    }
-  },
-  {
     "id": "refactoring",
     "title": "Refactoring Improvements",
     "img": "",
@@ -184,28 +234,6 @@
       "preferred": [
         "OOP"
       ]
-    }
-  },
-  {
-    "id": "serialization",
-    "title": "Better Serialization Support",
-    "img": "",
-    "supervisors": [
-      "Guillermo Polito"
-    ],
-    "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require a lot of manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
-    "goal": "- Replace the storeOn mechanism with STON literal serialization (see [pharo #3319](https://github.com/pharo-project/pharo/issues/3319))\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures",
-    "keywords": [
-      "Serialization"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Refactoring",
-        "OOP"
-      ],
-      "preferred": []
     }
   },
   {
