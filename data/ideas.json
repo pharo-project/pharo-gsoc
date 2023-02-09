@@ -186,8 +186,8 @@
     }
   },
   {
-    "id": "emacs-lsp",
-    "title": "Emacs-LSP in Pharo",
+    "id": "eclipse-lsp",
+    "title": "Eclipse-LSP in Pharo",
     "img": "nicolas-ide.png",
     "supervisors": [
       "Nicolas Anquetil",
