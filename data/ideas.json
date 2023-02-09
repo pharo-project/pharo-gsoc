@@ -212,7 +212,7 @@
   {
     "id": "refactoring",
     "title": "Refactoring Improvements",
-    "img": "",
+    "img": "guille-refactoring.png",
     "supervisors": [
       "Guillermo Polito",
       "Sebastian Jordan"
@@ -239,7 +239,7 @@
   {
     "id": "ide-improvements",
     "title": "IDE improvements",
-    "img": "",
+    "img": "guille-ide.jpeg",
     "supervisors": [
       "Guillermo Polito"
     ],
@@ -265,7 +265,7 @@
   {
     "id": "standard-library-api",
     "title": "Improve Standard Library APIs",
-    "img": "",
+    "img": "guille-library.jpeg",
     "supervisors": [
       "Guillermo Polito",
       "Sebastian Jordan"
@@ -290,7 +290,7 @@
   {
     "id": "system-and-security",
     "title": "System and Security Improvements",
-    "img": "",
+    "img": "guille-security.jpeg",
     "supervisors": [
       "Guillermo Polito"
     ],
@@ -315,7 +315,7 @@
   {
     "id": "slang-vm-transpiler",
     "title": "Slang VM Transpiler",
-    "img": "",
+    "img": "guille-slang.png",
     "supervisors": [
       "Guillermo Polito",
       "Pablo Tesone"
@@ -365,7 +365,7 @@
   {
     "id": "microdown-blog",
     "title": "A lightweigth Microdown-based Blog engine",
-    "img": "",
+    "img": "stef-blog.jpeg",
     "supervisors": [
       "Stephane Ducasse"
     ],
