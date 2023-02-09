@@ -105,10 +105,10 @@ export default function IdeaPage() {
 
   return (
       <div className="container">
-        <div className="header-modal">
-          <h1 className="title-modal">{title}</h1>
+        <div className="idea-header">
+          <h1 className="idea-title">{title}</h1>
           <img
-            className="img-modal"
+            className="idea-img"
             src={img ? URLS.IMAGE_FOLDER + '/' + img : logo}
             alt={title}
           />
@@ -120,7 +120,7 @@ export default function IdeaPage() {
         <h3>{t('goal')}</h3>
         <p><ReactMarkdown plugins={[math,gfm]} renderers={renderers} children={goal} /></p>
 
-        <table class="ideaTable">
+        <table class="idea-table">
           <tbody>
             <tr>
               <td>{t('required')}</td>

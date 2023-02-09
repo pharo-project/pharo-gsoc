@@ -31,6 +31,31 @@ td {
   padding-left: 0;
 }
 
-.ideaTable {
+.idea-table {
   max-width: 40rem;
+}
+
+.modal {
+  background-color: #fefefe;
+  margin: 1% auto;
+  border-radius: 5px;
+  border: 1px transparent;
+  width: 93%; 
+}
+
+.idea-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.idea-title {
+  max-width: 70%;
+}
+
+.idea-img {
+  max-width: 50%;
+  object-fit: cover;
 }

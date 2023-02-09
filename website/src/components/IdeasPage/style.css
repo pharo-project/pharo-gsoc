@@ -21,31 +21,6 @@ article {
   width: 75%;
 }
 
-
-.modal {
-  background-color: #fefefe;
-  margin: 1% auto;
-  border-radius: 5px;
-  border: 1px transparent;
-  width: 93%; 
-}
-
-.header-modal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-.title-modal {
-  max-width: 70%;
-}
-
-.img-modal {
-  width: 30%;
-  object-fit: cover;
-}
-
 .MuiDialog-paper {
   margin: 12px !important;
   position: relative;
