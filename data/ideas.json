@@ -22,7 +22,7 @@
     }
   },
   {
-    "id": "ecompletion",
+    "id": "code-completion",
     "title": "Better Code Completion for Pharo using AI",
     "img": "guille-completion.jpeg",
     "supervisors": [
