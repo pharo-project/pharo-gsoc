@@ -584,5 +584,57 @@
         "Having done a Pharo plugin"
       ]
     }
+  },
+  {
+    "id": "graph-libraries-integration",
+    "title": "Graph libraries Integration and redesign",
+    "img": "paris-graph.png",
+    "supervisors": [
+      "Gordana Rakic",
+      "Sebastian Jordan"
+    ],
+    "description": "There is a graph library in Pharo implemented within PharoAI https://github.com/pharo-ai/graph-algorithms. This library provides a user with several basic graph algorithms. Separately, a graph layouting library  has implemented basic layout algorithms https://github.com/medicka/graPharo. Redesign of these libraries and their consolidation, including adding new layout algorithms  is very significant for faster progress of different Pharo projects, especially PharoAI. Finally, we would like to implement new graph theory algorithms to add them to the library.",
+    "goal": "To provide a solid and validated API for those libraries. That API should accept any kind of Object that represents a graph.",
+    "keywords": [
+      "Graphs Algorithm",
+      "Libraries",
+      "API"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Graph theory knowledge"
+      ]
+    }
+  },
+  {
+    "id": "complex-network-library",
+    "title": "Complex network library on top of  PharoAI graph library",
+    "img": "neuralnetwork.jpg",
+    "supervisors": [
+      "Gordana Rakic",
+      "Sebastian Jordan"
+    ],
+    "description": "To complement to the basic graph theory algorithm that we have, we would like to implement complex networks in Pharo. For that, we will use as a base the existing graph library in Pharo.",
+    "goal": "An implementation of complex network library on top of  PharoAI graph library  https://github.com/pharo-ai/graph-algorithms",
+    "keywords": [
+      "Graphs Algorithm",
+      "Libraries",
+      "API"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Graph theory knowledge"
+      ]
+    }
   }
 ]
