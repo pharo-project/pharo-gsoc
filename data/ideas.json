@@ -508,7 +508,7 @@
     "title": "DrTests",
     "img": "drtests.jpeg",
     "supervisors": [
-      "Stéphane Ducasse",
+      "Stephane Ducasse",
       "Iona Thomas"
     ],
     "description": "DrTests is a Pharo tool that we use to run several tests cases at once.\nIt is very useful when developping because we have the power to run a selected scope of tests from different packages to control the situation of the tests.",
