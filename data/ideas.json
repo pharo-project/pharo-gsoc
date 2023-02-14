@@ -610,5 +610,31 @@
         "Graph theory knowledge"
       ]
     }
+  },
+  {
+    "id": "complex-network-library",
+    "title": "Complex network library on top of  PharoAI graph library",
+    "img": "neuralnetwork.jpg",
+    "supervisors": [
+      "Gordana Rakic",
+      "Sebastian Jordan"
+    ],
+    "description": "To complement to the basic graph theory algorithm that we have, we would like to implement complex networks in Pharo. For that, we will use as a base the existing graph library in Pharo.",
+    "goal": "An implementation of complex network library on top of  PharoAI graph library  https://github.com/pharo-ai/graph-algorithms",
+    "keywords": [
+      "Graphs Algorithm",
+      "Libraries",
+      "API"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Graph theory knowledge"
+      ]
+    }
   }
 ]
