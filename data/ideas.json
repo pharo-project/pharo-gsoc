@@ -553,5 +553,36 @@
       ],
       "preferred": []
     }
+  },
+  {
+    "id": "tensor-flow-plugin",
+    "title": "TensorFlow Plugin",
+    "img": "tensorflow.png",
+    "supervisors": [
+      "Sebastian Sastre",
+      "Sebastian Jordan",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "Lets make a TensoFlow plugin (not FFI) for Pharo and unblock Pharo AI possibilities by putting it among the ones at the top of the AI pyramid! It will be C TensoFlow used by C our plugin by our C VM using the GPU silicon at its fullest. A path to mine GPU power in the most efficient way in the Smalltalk friendly and powerful way. No other bridges needed. Then all the algebra and AI Smalltalk libraries would be able to use TensoFlow like a boss.",
+    "goal": "All the primitives to the TensorFlow API having at least 1 unit test for quality assurance would be the definition of done.",
+    "keywords": [
+      "Artificial Intelligence",
+      "TensorFlow",
+      "Machine Learning",
+      "GPU"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Basic C",
+        "Familiarity with how the Pharo VM is created",
+        "Familiarity with Slang",
+        "Communication skills"
+      ],
+      "preferred": [
+        "Having done a Pharo plugin"
+      ]
+    }
   }
 ]
