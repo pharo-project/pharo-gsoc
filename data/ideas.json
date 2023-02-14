@@ -481,7 +481,7 @@
     "supervisors": [
       "Oleksandr Zaitsev",
       "Sebastian Jordan",
-      "Cyril Ferlicot",
+      "Cyril Ferlicot-Delbecque",
       "Serge Stinckwich"
     ],
     "description": "DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.",
@@ -535,7 +535,7 @@
     "supervisors": [
       "Oleksandr Zaitsev",
       "Sebastian Jordan",
-      "Cyril Ferlicot"
+      "Cyril Ferlicot-Delbecque"
     ],
     "description": "Write an object-model in Pharo to provide Principal Component Analysis (PCA) variants such as Sparse PCA, Randomized PCA, Incremental PCA and Kernel PCA (Centering).\nThe PolyMath library already provides an implementation of PCA which could be used as basis for extending with.",
     "goal": "Having a solid library for doing principal component analysis",
