@@ -506,6 +506,7 @@
   {
     "id": "dr-tests",
     "title": "DrTests",
+    "img": "drtests.jpeg",
     "supervisors": [
       "Stéphane Ducasse",
       "Iona Thomas"
@@ -530,6 +531,7 @@
   {
     "id": "pca-methods",
     "title": "PCA Methods",
+    "img": "pca.png",
     "supervisors": [
       "Oleksandr Zaitsev",
       "Sebastian Jordan",
