@@ -656,7 +656,7 @@
     "difficulty": "Medium",
     "skills": {
       "required": [
-       	"OOP"
+       	"OOP",
        	"Pharo",
         "Communication skills"
       ],
@@ -666,7 +666,6 @@
       ]
     }
   },
-    
   {
     "id": "MOOSECloneVisualisation",
     "title": "Code clones manipulation and visualization in MOOSE",
@@ -686,7 +685,7 @@
     "difficulty": "Medium",
     "skills": {
       "required": [
-       	"OOP"
+       	"OOP",
        	"Pharo",
         "Communication skills"
       ],
