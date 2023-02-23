@@ -479,9 +479,9 @@
     "title": "DataFrame",
     "img": "dataframe.png",
     "supervisors": [
+      "Cyril Ferlicot-Delbecque",
       "Oleksandr Zaitsev",
       "Sebastian Jordan",
-      "Cyril Ferlicot-Delbecque",
       "Serge Stinckwich"
     ],
     "description": "DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.",
@@ -532,9 +532,9 @@
     "title": "PCA Methods",
     "img": "pca.png",
     "supervisors": [
+      "Cyril Ferlicot-Delbecque",
       "Oleksandr Zaitsev",
-      "Sebastian Jordan",
-      "Cyril Ferlicot-Delbecque"
+      "Sebastian Jordan"
     ],
     "description": "Write an object-model in Pharo to provide Principal Component Analysis (PCA) variants such as Sparse PCA, Randomized PCA, Incremental PCA and Kernel PCA (Centering).\nThe PolyMath library already provides an implementation of PCA which could be used as basis for extending with.",
     "goal": "Having a solid library for doing principal component analysis",
@@ -559,8 +559,7 @@
     "img": "tensorflow.png",
     "supervisors": [
       "Sebastian Sastre",
-      "Sebastian Jordan",
-      "Oleksandr Zaitsev"
+      "Sebastian Jordan"
     ],
     "description": "Lets make a TensoFlow plugin (not FFI) for Pharo and unblock Pharo AI possibilities by putting it among the ones at the top of the AI pyramid! It will be C TensoFlow used by C our plugin by our C VM using the GPU silicon at its fullest. A path to mine GPU power in the most efficient way in the Smalltalk friendly and powerful way. No other bridges needed. Then all the algebra and AI Smalltalk libraries would be able to use TensoFlow like a boss.",
     "goal": "All the primitives to the TensorFlow API having at least 1 unit test for quality assurance would be the definition of done.",
