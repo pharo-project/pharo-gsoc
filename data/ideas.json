@@ -508,8 +508,7 @@
     "title": "DrTests",
     "img": "drtests.jpeg",
     "supervisors": [
-      "Stephane Ducasse",
-      "Iona Thomas"
+      "Stephane Ducasse"
     ],
     "description": "DrTests is a Pharo tool that we use to run several tests cases at once.\nIt is very useful when developping because we have the power to run a selected scope of tests from different packages to control the situation of the tests.",
     "goal": "The goal is to improve DrTests, add more features to have a new version to it that will be the default Test Runner of Pharo.",
@@ -637,32 +636,33 @@
       ]
     }
   },
-      {
+  {
     "id": "MOOSEClones",
     "title": "Code clone detection in MOOSE",
     "img": "gordana-clones.jpg",
     "supervisors": [
-     	"Nicolas Anquetil",
-        "Gordana Rakic",
-        "Santiago Bragagnolo"],
+      "Nicolas Anquetil",
+      "Gordana Rakic",
+      "Santiago Bragagnolo"
+    ],
     "description": "Code clones are well known issue in software development and maintenance. Their detection is standardly an initial step in their refactoring, while lately it supports their maintenance and manipulation. A contemporary sotware analyses platform as MOOSE must support efficient and scalable clone detection and manipulation.",
     "goal": "Implement selected clone detection algorithms applicable independently of programming language and peferably for multilingual projects.",
     "keywords": [
-    	"tools",
-        "code clones",
-        "clone detection"
+      "tools",
+      "code clones",
+      "clone detection"
     ],
     "size": "Medium",
     "difficulty": "Medium",
     "skills": {
       "required": [
-       	"OOP",
-       	"Pharo",
+        "OOP",
+        "Pharo",
         "Communication skills"
       ],
       "preferred": [
-      	"Intermediate representation",
-      	"meta-modeling"
+        "Intermediate representation",
+        "meta-modeling"
       ]
     }
   },
@@ -671,26 +671,26 @@
     "title": "Code clones manipulation and visualization in MOOSE",
     "img": "gordana-visual-clones.png",
     "supervisors": [
-      	"Nicolas Anquetil",
-        "Gordana Rakic"
+      "Nicolas Anquetil",
+      "Gordana Rakic"
     ],
     "description": "Code clones detection techniques provide users with a immense set of differently structured  information about detected clones where searching and usage of these information become difficult and requires further proccessing. Therefore a good representation and visualization of clone information may increase usefullness of clone detection for software developement and maintenance.",
     "goal": "Create a clone meta-model, implement clone processing and vizualization techniques.",
     "keywords": [
-      	"tools",
-        "code clones",
-        "visualisations"
+      "tools",
+      "code clones",
+      "visualisations"
     ],
     "size": "Medium",
     "difficulty": "Medium",
     "skills": {
       "required": [
-       	"OOP",
-       	"Pharo",
+        "OOP",
+        "Pharo",
         "Communication skills"
       ],
       "preferred": [
-      	"meta-modeling"
+        "meta-modeling"
       ]
     }
   }
