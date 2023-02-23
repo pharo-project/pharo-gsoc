@@ -4,7 +4,8 @@
     "title": "Better Serialization Support",
     "img": "guille-serialization.jpeg",
     "supervisors": [
-      "Guillermo Polito"
+      "Guillermo Polito",
+      "Sebastian Jordan"
     ],
     "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require a lot of manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
     "goal": "- Replace the storeOn mechanism with STON literal serialization (see [pharo #3319](https://github.com/pharo-project/pharo/issues/3319))\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures",
@@ -137,7 +138,9 @@
     "title": "Chart library for pharo",
     "img": "milton-chart.png",
     "supervisors": [
-      "Milton Mamani Torres"
+      "Milton Mamani Torres",
+      "Oleksandr Zaitsev",
+      "Sebastian Jordan"
     ],
     "description": "Charts like scatter plot, bar plot, histogram, line plot and combined plots are essential for any ecosystem. You have to create a nice usable readable and extensible chart library that users of Pharo can use it for their projects, replacing the chart library of Roassal3-Charts  ",
     "goal": "- Student will contribute with Pharo ecosystem.\n- A chart library that people can use and extend",
@@ -326,7 +329,8 @@
     "title": "System and Security Improvements",
     "img": "guille-security.jpeg",
     "supervisors": [
-      "Guillermo Polito"
+      "Guillermo Polito",
+      "Sebastian Jordan"
     ],
     "description": "The objective of the project is to improve system integration in standard libraries.\nFor example, the system's locale support could be improved to access the system's language, text encoding, number and date formatting. Similar improvements could be brought to sockets, zip files, downloads.",
     "goal": "We expect to solve the following issues:\n- Checksums of downloads: [pharo #3391](https://github.com/pharo-project/pharo/issues/3391)\n- Locale redesign: [pharo #3844](https://github.com/pharo-project/pharo/issues/3844)\n- Unix sockets: [pharo #4046](https://github.com/pharo-project/pharo/issues/4046)\n- Bootstrap improvements: [pharo #4269](https://github.com/pharo-project/pharo/issues/4269)",
@@ -401,7 +405,8 @@
     "title": "A lightweigth Microdown-based Blog engine",
     "img": "stef-blog.jpeg",
     "supervisors": [
-      "Stephane Ducasse"
+      "Stephane Ducasse",
+      "Sebastian Jordan"
     ],
     "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
     "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the [Pharo Weekly blog](https://pharoweekly.wordpress.com/)\nIn a second iteration a search component will be developed.",
