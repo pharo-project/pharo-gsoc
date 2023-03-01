@@ -252,7 +252,8 @@
     "img": "guille-refactoring.png",
     "supervisors": [
       "Guillermo Polito",
-      "Sebastian Jordan"
+      "Sebastian Jordan",
+      "Nahuel Palumbo"
     ],
     "description": "This project is to improve the refactoring support in its model and GUI.\nThis includes cleaning up unwanted dependencies (see [pharo #2264](https://github.com/pharo-project/pharo/issues/2264)), redesigning the changes log model (see [pharo #3165](https://github.com/pharo-project/pharo/issues/3165)), redesigning the changes factory (see [pharo #3173](https://github.com/pharo-project/pharo/issues/3173))",
     "goal": "A new GUI workflow using less pop-up chains for the more common refactorings:\n - rename\n - push\/pull up\/down\n - inline\/replace senders\n - add\/remove argument\n\nFix issues: \n- [pharo #2264](https://github.com/pharo-project/pharo/issues/2264)\n- [pharo #3165](https://github.com/pharo-project/pharo/issues/3165)\n- [pharo #3173](https://github.com/pharo-project/pharo/issues/3173)",
@@ -278,7 +279,8 @@
     "title": "IDE improvements",
     "img": "guille-ide.jpeg",
     "supervisors": [
-      "Guillermo Polito"
+      "Guillermo Polito",
+      "Nahuel Palumbo"
     ],
     "description": "Improve several IDE and text editor capabilities, such as shortcut navigation, text drag n drop, better parenthesis support, and autocompletion.",
     "goal": "- Add text drag n drop support (see [pharo #2634](https://github.com/pharo-project/pharo/issues/2634))\n- Enhance parenthesis support (see [pharo #2635](https://github.com/pharo-project/pharo/issues/2635))\n- Allow enabling\/disabling tools and shortcuts (see [pharo #2649](https://github.com/pharo-project/pharo/issues/2649))\n- Add autocompletion hooks (see Autocompletion hooks: [pharo #3177](https://github.com/pharo-project/pharo/issues/3177))\n- Enhance dependency analyser precision (see Dependency analyser precision: [pharo #3470](https://github.com/pharo-project/pharo/issues/3470)).",
@@ -352,11 +354,12 @@
   },
   {
     "id": "slang-vm-transpiler",
-    "title": "Slang VM Transpiler",
+    "title": "Pharo-to-C VM Transpiler",
     "img": "guille-slang.png",
     "supervisors": [
       "Guillermo Polito",
-      "Pablo Tesone"
+      "Pablo Tesone",
+      "Nahuel Palumbo"
     ],
     "description": "The objective of this project is to bring general improvements in the Pharo-to-C transpiler and VM generation framework, named Slang. Slang supports type inference, inlinings, and simple optimisations such as constant folding and propagation. Most of Slang is implemented through AST manipulations and later dumped as C code.",
     "goal": "The objective of this project is to fix some of the open issues tagged as `slang` in the [pharo-vm repository](https://github.com/pharo-project/pharo-vm):\n\n - Fixes in dispatch table translations ([pharo-vm #234](https://github.com/pharo-project/pharo-vm/issues/234))\n- asSymbol can be sent only to contants ([pharo-vm #236](https://github.com/pharo-project/pharo-vm/issues/236))\n- Inline does not always work with subexpressions ([pharo-vm #241](https://github.com/pharo-project/pharo-vm/issues/241))\n- Improve the declaration of nested structures ([pharo-vm #242](https://github.com/pharo-project/pharo-vm/issues/242))\n- Inlines do not respect type annotations ([pharo-vm #244](https://github.com/pharo-project/pharo-vm/issues/244))\n- Improve binary selector translation ([pharo-vm #246](https://github.com/pharo-project/pharo-vm/issues/246))\n- Improve variable localisation ([pharo-vm #247](https://github.com/pharo-project/pharo-vm/issues/247))\n- Improve variable renaming ([pharo-vm #429](https://github.com/pharo-project/pharo-vm/issues/429))\n- Improve block inlining ([pharo-vm #430](https://github.com/pharo-project/pharo-vm/issues/430))\n- Improve block argument inlining ([pharo-vm #432](https://github.com/pharo-project/pharo-vm/issues/432))\n- Improve translation of struct accesses inside assertions ([pharo-vm #458](https://github.com/pharo-project/pharo-vm/issues/458))",
@@ -372,6 +375,59 @@
       ],
       "preferred": [
         "OOP"
+      ]
+    }
+  },
+  {
+    "id": "druid-optimisation",
+    "title": "Optimisations for a Meta-Compiler",
+    "img": "nahue-druid.png",
+    "supervisors": [
+      "Nahuel Palumbo",
+      "Sebastian Jordan",
+      "Hernan Morales"
+    ],
+    "description": "This project has the objective of improving the optimisation capabilities of the Druid meta-compiler. Druid is a meta-compiler that generates Just-In-Time Compiler code from an Interpreter definition. It performs an abstract meta-interpretation to generate an SSA-based Intermediate Representation (IR); this IR is optimised and used to generate machine code. With Druid, language implementors can define their interpreters and generate a JIT Compiler from them.",
+    "goal": "Implement some optimisation over Druid's IR, such as Dead Store Elimination, Class Hierarchy Analysis, and Arithmetic Operations Transformation. It is possible also to improve any already implemented optimisations such as Inline, Global Value Numbering, Loop Invariant Code Motion, etc.",
+    "keywords": [
+      "Optimisation",
+      "SSA",
+      "Compilation"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP"
+      ],
+      "preferred": [
+        "Compilers"
+      ]
+    }
+  },
+  {
+    "id": "pharo-optimisation",
+    "title": "Optimising Pharo Compiler",
+    "img": "nahue-opt-pharo.png",
+    "supervisors": [
+      "Nahuel Palumbo",
+      "Sebastian Jordan"
+    ],
+    "description": "This is an experiment to inline Pharo methods at the bytecode level. The idea is to collect information about the methods that are called for some message sends and recompile the sender method inlining the callees. The main goal is to reduce the number of method calls in the VM and improve performance.",
+    "goal": "Generate optimised bytecode for Collection's methods. It means developing a type system to collect the type info from PICs, and recompile the methods with an optimising compiler (WIP). We also want to measure the performance of this strategy.",
+    "keywords": [
+      "Optimisation",
+      "Inline",
+      "Compilation"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "OOP"
+      ],
+      "preferred": [
+        "Compilers"
       ]
     }
   },
@@ -513,7 +569,8 @@
     "title": "DrTests",
     "img": "drtests.jpeg",
     "supervisors": [
-      "Stephane Ducasse"
+      "Stephane Ducasse",
+      "Nahuel Palumbo"
     ],
     "description": "DrTests is a Pharo tool that we use to run several tests cases at once.\nIt is very useful when developping because we have the power to run a selected scope of tests from different packages to control the situation of the tests.",
     "goal": "The goal is to improve DrTests, add more features to have a new version to it that will be the default Test Runner of Pharo.",
