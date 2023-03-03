@@ -750,8 +750,8 @@
     }
   },
   {
-    "id": "SYZYGIEAPharoPortOfTidalCyc",
-    "title": "SYZYGIE - A Pharo port of Tidal Cyc",
+    "id": "SYZYGIEAPharoPortOfTidalCycles",
+    "title": "SYZYGIE - A Pharo port of Tidal Cycles",
     "img": "domenico.jpg",
     "supervisors": [
       "Domenico Cipriani",
