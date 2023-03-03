@@ -39,7 +39,7 @@
     "name": "Sebastian Jordan",
     "email": "sebastian.jordan@inria.fr",
     "github": "jordanmontt",
-    "img": ""
+    "img": "https://avatars.githubusercontent.com/u/33934979?v=4"
   },
   {
     "name": "Santiago Bragagnolo",
@@ -148,5 +148,11 @@
     "email": "nahuel.palumbo@inria.fr",
     "github": "PalumboN",
     "img": ""
-  }
+  },
+  {
+    "name": "Domenico Cipriani",
+    "email": "mspgate@googlemail.com",
+    "github": "lucretiomsp",
+    "img": ""
+}
 ]
