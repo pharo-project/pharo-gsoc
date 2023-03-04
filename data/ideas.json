@@ -356,7 +356,8 @@
     "supervisors": [
       "Guillermo Polito",
       "Pablo Tesone",
-      "Nahuel Palumbo"
+      "Nahuel Palumbo",
+      "Sebastian Jordan"
     ],
     "description": "The objective of this project is to bring general improvements in the Pharo-to-C transpiler and VM generation framework, named Slang. Slang supports type inference, inlinings, and simple optimisations such as constant folding and propagation. Most of Slang is implemented through AST manipulations and later dumped as C code.",
     "goal": "The objective of this project is to fix some of the open issues tagged as `slang` in the [pharo-vm repository](https://github.com/pharo-project/pharo-vm):\n\n - Fixes in dispatch table translations ([pharo-vm #234](https://github.com/pharo-project/pharo-vm/issues/234))\n- asSymbol can be sent only to contants ([pharo-vm #236](https://github.com/pharo-project/pharo-vm/issues/236))\n- Inline does not always work with subexpressions ([pharo-vm #241](https://github.com/pharo-project/pharo-vm/issues/241))\n- Improve the declaration of nested structures ([pharo-vm #242](https://github.com/pharo-project/pharo-vm/issues/242))\n- Inlines do not respect type annotations ([pharo-vm #244](https://github.com/pharo-project/pharo-vm/issues/244))\n- Improve binary selector translation ([pharo-vm #246](https://github.com/pharo-project/pharo-vm/issues/246))\n- Improve variable localisation ([pharo-vm #247](https://github.com/pharo-project/pharo-vm/issues/247))\n- Improve variable renaming ([pharo-vm #429](https://github.com/pharo-project/pharo-vm/issues/429))\n- Improve block inlining ([pharo-vm #430](https://github.com/pharo-project/pharo-vm/issues/430))\n- Improve block argument inlining ([pharo-vm #432](https://github.com/pharo-project/pharo-vm/issues/432))\n- Improve translation of struct accesses inside assertions ([pharo-vm #458](https://github.com/pharo-project/pharo-vm/issues/458))",
