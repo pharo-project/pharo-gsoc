@@ -775,5 +775,35 @@
         "In addition of a good knowledge of Pharo, a basic knowledge of Haskell/Python/Javascript is preferred (to be able to refer to the codebase of TidalCycles/Vortex/Strudel"
       ]
     }
+  },
+  {
+    "id": "VirtualIoTDevices",
+    "title": "Virtual Devices for PharoThings",
+    "img": "gordana-iot.jpg",
+    "supervisors": [
+      "Oleksandr Zaitsev",
+      "Gordana Rakic"
+    ],
+    "description": "PharoThings implements communication with a connected physical hardware or with a remote one through TelePharo when the local hardware is not available. This makes PharoThings strongly dependent on physical hardware. Elimination of this dependency might be very useful  for learning and testing purposes, while it is possible by simulation of hardware response by random actions of virtual objects playing hardware roles.",
+    "goal": "Design and implement solution that provides higher availability of remote devices through TelePharo by inclusion of virtual devises when physical ones are not present.",
+    "keywords": [
+      "IoT",
+      "TelePharo",
+      "PharoThings"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP",
+        "Pharo",
+        "IoT",
+        "Communication skills"
+      ],
+      "preferred": [
+        "PharoThings",
+        "TelePharo"
+      ]
+    }
   }
 ]
