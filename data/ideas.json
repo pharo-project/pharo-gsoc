@@ -755,7 +755,6 @@
     "title": "SYZYGIE - A Pharo port of Tidal Cycles",
     "img": "domenico.jpg",
     "supervisors": [
-      "Domenico Cipriani",
       "Nahuel Palumbo"
     ],
     "description": "Live coding, sometimes referred to as on-the-fly programming,  is an increasingly popular creative  technique for performing electronic music and arts  centred on the writing code in public and the use of interactive programming in an improvised way. [TidalCycles](https://tidalcycles.org) is the most popular live coding environment for improvising music with algorithmic patterns. Developed in 2009, it is a domain specific language embedded in Haskell which uses to generate sounds the SuperDirt engine for [SuperCollider](https://supercollider.github.io), communicating with it via the OpenSoundControl protocol; in the recent years several non-Haskell projects has focused on porting TidalCycles features, the two most successful being Vortex (for Python ) and Strudel (for Javascript) Syzygie is a package intended to port to Pharo the mini-notation for sequences used by TidalCycles, that in turn is inspired by Bernard Bel’s [Bol Processor](https://bolprocessor.org).",
