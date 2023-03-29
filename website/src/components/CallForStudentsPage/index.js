@@ -31,8 +31,8 @@ export default function CallForStudentsPage() {
         <li>After the end of the standard coding phase, contributors with standard timeline enter the evaluation phase. The following week August 29 to September 4 is reserved for evaluation by mentors which results with initial results announcements <code>(September 5)</code>.</li>
         <li>Contributors with the extended timeline, continue coding in period September 4 - November 6, which is followed by submission of final product (November 6) and mentor reporting <code>(November 13)</code>.</li>
         <li>During its active part, GSoC should be treated as a full-time job. If you have more than a few hours a week of extra commitments, you probably should skip GSoC; it is unlikely that you will be successful. In any case, be completely clear about outside time commitments as part of your proposal.</li>
-        <li>Accepted students will be receiving a stipend (payment) from Google at the end of each month. <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">Stipend amounts</a> are calculated based on your residency country during the program and the length of the program (standard or extended).</li>
-        <li>GSoC participants are considered as independent developer paid by stipend, and they are not employed by Google or by GSoC Organization.</li>
+        <li>Accepted students will be receiving a stipend (payment) from Google in two parts: <code>45% on July 14 and 55% on September 5</code>. Stipend amounts are calculated based on your residency country during the program and the length of the program (standard or extended). Check the info on <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">the website</a>.</li>
+        <li>GSoC participants are considered independent developers paid by a stipend and are not employed by Google or GSoC Organization.</li>
       </ul>
 
       <h2>2. What is Pharo?</h2>
