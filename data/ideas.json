@@ -615,10 +615,11 @@
   {
     "id": "FaultLocation",
     "title": "Fault Location DrTest Plugin",
-    "img": "",
+    "img": "fault-location.jpg",
     "supervisors": [
       "Juan Pablo Sandoval",
-      "Geraldine Galindo Gutierrez", "Kevin Cespedez"
+      "Geraldine Galindo",
+      "Kevin Cespedez"
     ],
     "description": "In this project, the student will implement two or three different fault location algorithms, for this, it will also be necessary to implement a matrix coverage. Then we will integrate the fault location algorithms in the DrTest UI tool, and of course to Pharo itself.",
     "goal": "The goal is implement a plugin for DrTest that implements two or three fault location state-of-the-art algorithms.",
