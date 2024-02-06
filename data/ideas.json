@@ -564,7 +564,7 @@
       "Guillermo Polito"
     ],
     "description": "This project aims at adding JIT compiler support for common FFI calls, to accelerate calls and marshalling",
-    "goal": "Profile FFI libraries to know what are the most used FFI call signatures\n Refactor the cogit JIT compiler to detect FFI callout code\n Introduce backend specific code for common call signatures in x86-64 and ARM64",
+    "goal": "Profile FFI libraries to know what are the most used FFI call signatures; Refactor the cogit JIT compiler to detect FFI callout code; Introduce backend specific code for common call signatures in x86-64 and ARM64",
     "keywords": [
       "compilation",
       "jit compilation",
