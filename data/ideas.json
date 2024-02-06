@@ -243,7 +243,8 @@
     "title": "Optimisations for a Meta-Compiler",
     "img": "nahue-druid.png",
     "supervisors": [
-      "Nahuel Palumbo"
+      "Nahuel Palumbo",
+      "Guillermo Polito"
     ],
     "description": "This project has the objective of improving the optimisation capabilities of the Druid meta-compiler. Druid is a meta-compiler that generates Just-In-Time Compiler code from an Interpreter definition. It performs an abstract meta-interpretation to generate an SSA-based Intermediate Representation (IR); this IR is optimised and used to generate machine code. With Druid, language implementors can define their interpreters and generate a JIT Compiler from them.",
     "goal": "Implement some optimisation over Druid's IR, such as Dead Store Elimination, Class Hierarchy Analysis, and Arithmetic Operations Transformation. It is possible also to improve any already implemented optimisations such as Inline, Global Value Numbering, Loop Invariant Code Motion, etc.",
