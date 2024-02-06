@@ -556,7 +556,32 @@
       ]
     }
   },
-
+  {
+    "id": "ffi",
+    "title": "Accelerate FFI calls through JIT compilation",
+    "img": "guille-ffi.jpg",
+    "supervisors": [
+      "Guillermo Polito"
+    ],
+    "description": "This project aims at adding JIT compiler support for common FFI calls, to accelerate calls and marshalling",
+    "goal": "Profile FFI libraries to know what are the most used FFI call signatures; Refactor the cogit JIT compiler to detect FFI callout code; Introduce backend specific code for common call signatures in x86-64 and ARM64",
+    "keywords": [
+      "compilation",
+      "jit compilation",
+      "library integration",
+      "ffi"
+    ],
+    "size": "Medium",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "compilers",
+        "OOP",
+        "assembly"
+      ],
+      "preferred": []
+    }
+  },
   {
     "id": "CFGInTesting",
     "title": "Using CFG to analyze tests",
