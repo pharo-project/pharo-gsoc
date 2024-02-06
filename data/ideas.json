@@ -572,7 +572,7 @@
       "ffi"
     ],
     "size": "Medium",
-    "difficulty": "High",
+    "difficulty": "Hard",
     "skills": {
       "required": [
         "compilers",
