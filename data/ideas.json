@@ -162,34 +162,6 @@
     }
   },
   {
-    "id": "refactoring",
-    "title": "Refactoring Improvements",
-    "img": "guille-refactoring.png",
-    "supervisors": [
-      "Guillermo Polito",
-      "Nahuel Palumbo",
-      "Sebastian Jordan"
-    ],
-    "description": "This project is to improve the refactoring support in its model and GUI.\nThis includes cleaning up unwanted dependencies (see [pharo #2264](https://github.com/pharo-project/pharo/issues/2264)), redesigning the changes log model (see [pharo #3165](https://github.com/pharo-project/pharo/issues/3165)), redesigning the changes factory (see [pharo #3173](https://github.com/pharo-project/pharo/issues/3173))",
-    "goal": "A new GUI workflow using less pop-up chains for the more common refactorings:\n - rename\n - push\/pull up\/down\n - inline\/replace senders\n - add\/remove argument\n\nFix issues: \n- [pharo #2264](https://github.com/pharo-project/pharo/issues/2264)\n- [pharo #3165](https://github.com/pharo-project/pharo/issues/3165)\n- [pharo #3173](https://github.com/pharo-project/pharo/issues/3173)",
-    "keywords": [
-      "Refactoring",
-      "Redesign",
-      "GUI Workflow"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "GUI Design",
-        "Refactoring"
-      ],
-      "preferred": [
-        "OOP"
-      ]
-    }
-  },
-  {
     "id": "ide-improvements",
     "title": "IDE improvements",
     "img": "guille-ide.jpeg",
