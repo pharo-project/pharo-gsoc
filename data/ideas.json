@@ -133,33 +133,6 @@
     }
   },
   {
-    "id": "chart-library",
-    "title": "Chart library for pharo",
-    "img": "milton-chart.png",
-    "supervisors": [
-      "Milton Mamani Torres",
-      "Oleksandr Zaitsev"
-    ],
-    "description": "Charts like scatter plot, bar plot, histogram, line plot and combined plots are essential for any ecosystem. You have to create a nice usable readable and extensible chart library that users of Pharo can use it for their projects, replacing the chart library of Roassal3-Charts  ",
-    "goal": "- Student will contribute with Pharo ecosystem.\n- A chart library that people can use and extend",
-    "keywords": [
-      "Chart",
-      "Roassal",
-      "Data Visualization",
-      "Plots"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo"
-      ],
-      "preferred": [
-        "Desire to Learn"
-      ]
-    }
-  },
-  {
     "id": "dds-binding",
     "title": "DDS Binding for Pharo",
     "img": "santi-dds.jpeg",
