@@ -381,8 +381,7 @@
     "title": "Optimising Pharo Compiler",
     "img": "nahue-opt-pharo.png",
     "supervisors": [
-      "Nahuel Palumbo",
-      "Sebastian Jordan"
+      "Nahuel Palumbo"
     ],
     "description": "This is an experiment to inline Pharo methods at the bytecode level. The idea is to collect information about the methods that are called for some message sends and recompile the sender method inlining the callees. The main goal is to reduce the number of method calls in the VM and improve performance.",
     "goal": "Generate optimised bytecode for Collection's methods. It means developing a type system to collect the type info from PICs, and recompile the methods with an optimising compiler (WIP). We also want to measure the performance of this strategy.",
