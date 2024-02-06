@@ -501,34 +501,6 @@
     }
   },
   {
-    "id": "MOOSECloneVisualisation",
-    "title": "Code clones manipulation and visualization in MOOSE",
-    "img": "gordana-visual-clones.png",
-    "supervisors": [
-      "Nicolas Anquetil",
-      "Gordana Rakic"
-    ],
-    "description": "Code clones detection techniques provide users with a immense set of differently structured  information about detected clones where searching and usage of these information become difficult and requires further proccessing. Therefore a good representation and visualization of clone information may increase usefullness of clone detection for software developement and maintenance.",
-    "goal": "Create a clone meta-model, implement clone processing and vizualization techniques.",
-    "keywords": [
-      "tools",
-      "code clones",
-      "visualisations"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "OOP",
-        "Pharo",
-        "Communication skills"
-      ],
-      "preferred": [
-        "meta-modeling"
-      ]
-    }
-  },
-  {
     "id": "SYZYGIEAPharoPortOfTidalCycles",
     "title": "SYZYGIE - A Pharo port of Tidal Cycles",
     "img": "domenico.jpg",
