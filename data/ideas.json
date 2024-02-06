@@ -1,5 +1,31 @@
 [
   {
+    "id": "connect4MiniMax",
+    "title": "Connect 4 game with AI",
+    "img": "connect4.png",
+    "supervisors": [
+      "Sebastian Jordan"
+    ],
+    "description": "This project aims to develop a connect 4 game with an AI algorithm to play against humans. We will test the algorithm by playing humans vs. AI to see who wins. The first part will be building the GUI of the game using Bloc (https://github.com/pharo-graphics/bloc). Then, we will develop the AI algorithm that can play the game. The algorithm is alpha-beta-pruning (https://en.wikipedia.org/wiki/Alpha-beta_pruning)",
+    "goal": "Build a connect 4 game with a graphical user interface that is playable. Develop the alpha-beta pruning AI algorithm to play the game against humans.",
+    "keywords": [
+      "AI",
+      "game-theory",
+      "Bloc",
+      "games"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Communication skills",
+        "OOP",
+        "Pharo"
+      ],
+      "preferred": ["Basic AI knowledge"]
+    }
+  },
+  {
     "id": "serialization",
     "title": "Better Serialization Support",
     "img": "guille-serialization.jpeg",
