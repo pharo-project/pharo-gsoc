@@ -240,6 +240,32 @@
     }
   },
   {
+    "id": "data-structures-and-algorythms",
+    "title": "Implementation of standard data stractures and algorythms",
+    "img": "gordana-trees.jpeg",
+    "supervisors": [
+      "Gordana Rakic",
+      "Stephane Ducasse"
+    ],
+    "description":"Support for data structures such as various kinds of lists and trees are weakly supported in Pharo, while the ones that are implemented are not wel designed which makes maintenance and extensions more difficult. A nice data structures desing with a stable and reflective API together with corresponding algorythem implementatin are the main task in this project idea."
+    "goal":"The mian goal is to create a felxible and extensible data structures design and to implement at least some of basic lists such as (double-)linked lists, a heap, a stack, a buffer, and some of basic trees e.g. a binary tree, a binary search tree, a self-balancing tree, an AVL, a red-black, or a B-tree.  
+     "keywords": [
+      "Design",
+      "API",
+      "Data Structures"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP",
+        "Data structure and algorythms"
+      ],
+      "preferred": []
+    }
+    
+  },
+  {
     "id": "system-and-security",
     "title": "System and Security Improvements",
     "img": "guille-security.jpeg",
