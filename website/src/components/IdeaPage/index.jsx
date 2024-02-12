@@ -51,6 +51,12 @@ export const diffcultyEmoji = {
   'Hard': '🙃',
 }
 
+export const projectSizeHours = {
+  'Small': '(90 hours)',
+  'Medium': '(175 hours)',
+  'Large': '(350 hours)',
+}
+
 var supervisorsData = getJsonFromURL(URLS.SUPERVISORS_FILE)
 
 supervisorsData = supervisorsData.map(each => {
@@ -132,7 +138,7 @@ export default function IdeaPage() {
             </tr>
             <tr>
               <td>{t('timeSize')}</td>
-              <td>{size}</td>
+              <td>{size} <span aria-label="emoji">{projectSizeHours[size]}</span> </td>
             </tr>
             <tr>
               <td>{t('difficulty')}</td>
