@@ -3,12 +3,20 @@ import * as ROUTES from '../../constants/routes';
 
 export default function CallForStudentsPage() {
   useEffect(() => {
-    document.title = "Pharo GSoC";  
+    document.title = "Pharo GSoC";
   }, []);
 
-  return(
+  return (
     <div className="container">
-      <h1>Google Summer of Code 2024: Call for Students</h1>
+      <h1>Google Summer of Code <s>2024</s> 2025: Call for Students</h1>
+
+      {/* This a note. Remove this block for next year, 2025, GSCO edition. */}
+      <hr size="4" width="100%" color="black" />
+      <h2>Important note: </h2>
+      Unfortunately, we didn't make it into the GSOC '24 edition this time. However, we're not discouraged. We're already gearing up to come back even stronger in 2025! 💪
+      <p>In the meantime, we encourage students to consider other exciting opportunities and refrain from applying for this year's GSOC. Let's regroup and aim for success next year!</p>
+      <hr size="4" width="100%" color="black" />
+      {/* Remove until here */}
 
       <p>Dear students,</p>
 
@@ -56,7 +64,7 @@ export default function CallForStudentsPage() {
         <li>eligible to work in the country in which they reside for the duration of the program.</li>
       </ul>
 
-      
+
       <p>while applicants must <strong>not</strong> be</p>
 
       <ul>
