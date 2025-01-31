@@ -671,5 +671,65 @@
         "Dynamic Analysis"
       ]
     }
+  },
+  {
+    "id": "LLMInterface",
+    "title": "A Seamless interface between LLMs and Pharo",
+    "img": "PharoLLMsInterface.png",
+    "supervisors": [
+      "Balša Šarenac"
+    ],
+    "description": "This project aims to create an intuitive interface between Pharo and large language models (LLMs). By integrating Pharo with LLMs, developers can leverage AI-powered assistance, automation, and natural language processing (NLP) while maintaining Pharo’s unique live programming environment. Perfect project to get familiar with Pharo and different development techniques while enabling its users to experience LLMs in one of the best live environments!",
+    "goal": "The goal is to implement native UI interface that will interact with various LLM providers. Users should be able to chat with chosen type of LLM, and create custom actions that will send code to LLMs to make modifications on them.",
+    "keywords": [
+      "AI",
+      "LLM",
+      "UI",
+      "IDE",
+      "Code improvements"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP",
+        "Communication skills"
+      ],
+      "preferred": [
+        "AI",
+        "Pharo"
+      ]
+    }
+  },
+  {
+    "id": "PharoRefactoringEngine",
+    "title": "Enhancing Pharo’s Refactoring Engine for a Smarter Development Experience",
+    "img": "PharoRefactoringEngine.png",
+    "supervisors": [
+      "Balša Šarenac"
+    ],
+    "description": "One of its key strengths is its powerful development environment, which includes an advanced refactoring engine. Originally pioneered in Smalltalk, the refactoring engine plays a crucial role in maintaining code quality, improving design, and enhancing developer productivity. This proposal aims to improve Pharo’s refactoring engine by addressing usability, migrating to modern tools, and extending its capabilities with additional refactorings. By refining the refactoring workflow, this project will ensure a smoother experience for developers while keeping Pharo’s tooling at the forefront of modern software engineering practices. Ideal project to learn a lot about Pharo, ASTs, desgin, refactorings, software engineering in general!",
+    "goal": "The goals include: streamlining user experience, migration to new tools and architecture, analysis and implementation of existing refactorings and improved testing.",
+    "keywords": [
+      "Refactoring Engine",
+      "Design",
+      "UX",
+      "Software engineering",
+      "Architecture"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP",
+        "Pharo",
+        "Debugging",
+        "Communication skills"
+      ],
+      "preferred": [
+        "Testing",
+        "Reflection"
+      ]
+    }
   }
 ]
