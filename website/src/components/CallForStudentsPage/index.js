@@ -8,19 +8,11 @@ export default function CallForStudentsPage() {
 
   return (
     <div className="container">
-      <h1>Google Summer of Code <s>2024</s> 2025: Call for Students</h1>
-
-      {/* This a note. Remove this block for next year, 2025, GSCO edition. */}
-      <hr size="4" width="100%" color="black" />
-      <h2>Important note: </h2>
-      Unfortunately, we didn't make it into the GSOC '24 edition this time. However, we're not discouraged. We're already gearing up to come back even stronger in 2025! 💪
-      <p>In the meantime, we encourage students to consider other exciting opportunities and refrain from applying for this year's GSOC. Let's regroup and aim for success next year!</p>
-      <hr size="4" width="100%" color="black" />
-      {/* Remove until here */}
+      <h1><mark>Google Summer of Code 2025: Call for Students</mark></h1>
 
       <p>Dear students,</p>
 
-      <p>We are happy to announce that once again, Pharo Consortium is looking for smart and enthusiastic students to work with us during Google Summer of Code 2024. In the following sections, we explain the program requirements and provide a detailed description of the application process. This text is based on the <a href="https://summerofcode.withgoogle.com/rules/">Google Summer of Code 2024 Program Rules</a>. We strongly suggest that you read the original rules. In case of any disagreement between this document and the Rules, the Rules should prevail.</p>
+      <p>We are happy to announce that Pharo Consortium is planning to participate in Google Summer of Code 2025, and we are looking for smart and enthusiastic students to work with us during the program. In the following sections, we explain the program requirements and provide a detailed description of the application process. This text is based on the <a href="https://summerofcode.withgoogle.com/rules/">Google Summer of Code 2025 Program Rules</a>. We strongly suggest that you read the original rules. In case of any disagreement between this document and the Rules, the Rules should prevail.</p>
 
       <p>If you have any additional questions, feel free to send an email to any of the organizers listed at the bottom of this page.</p>
 
@@ -31,15 +23,15 @@ export default function CallForStudentsPage() {
       <ul>
         <li>The length of time allowed to complete a project can range from 10 weeks to 22 weeks.</li>
         <li>The standard length will be 12 weeks, while it can be extended.</li>
-        <li>The active part of the program starts on <code>May 1</code> for everybody.</li>
-        <li>The first period of the program <code>(May 1 - May 26)</code> is called the community bonding period. During this time, you will be introduced to our community, get comfortable with our communication channels (Discord and mailing lists), get to know your mentors, prepare a detailed timeline for the summer, etc.</li>
-        <li>The coding period begins on <code>May 27</code> for everybody.</li>
+        <li>The active part of the program starts on <code>May 8</code> for everybody.</li>
+        <li>The first period of the program <code>(May 8 - June 1)</code> is called the community bonding period. During this time, you will be introduced to our community, get comfortable with our communication channels (Discord and mailing lists), get to know your mentors, prepare a detailed timeline for the summer, etc.</li>
+        <li>The coding period begins on <code>June 2</code> for everybody.</li>
         <li>During the coding period you will be working on your projects, regularly communicating with your mentors, writing blog posts, etc.</li>
-        <li>Standard coding period ends on <code>August 26</code>.</li>
-        <li>After the end of the standard coding phase, contributors with standard timeline enter the evaluation phase. The following week August 26 to September 2 is reserved for evaluation by mentors which results with initial results announcements <code>(September 3)</code>.</li>
-        <li>Contributors with the extended timeline, continue coding in period September 3 - November 4, which is followed by submission of final product (November 4) and mentor reporting <code>(November 11)</code>.</li>
+        <li>Standard coding period ends on <code>August 25</code>.</li>
+        <li>After the end of the standard coding phase, contributors with standard timeline enter the evaluation phase. The following week August 25 to September 1 is reserved for evaluation by mentors which results with initial results announcements <code>(September 1 - September 8)</code>.</li>
+        <li>Contributors with the extended timeline, continue coding in period September 1 - November 9, which is followed by submission of final product (November 10) and mentor reporting <code>(November 17)</code>.</li>
         <li>During its active part, GSoC should be treated as a full-time job. If you have more than a few hours a week of extra commitments, you probably should skip GSoC; it is unlikely that you will be successful. In any case, be completely clear about outside time commitments as part of your proposal.</li>
-        <li>Accepted students will be receiving a stipend (payment) from Google in two parts: <code>45% on July 15 and 55% on September 3</code>. Stipend amounts are calculated based on your residency country during the program and the length of the program (standard or extended). Check the info on <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">the website</a>.</li>
+        <li>Accepted students will be receiving a stipend (payment) from Google in two parts: <code>45% on July 18 and 55% on September 9</code>. Stipend amounts are calculated based on your residency country during the program and the length of the program (standard or extended). Check the info on <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">the website</a>.</li>
         <li>GSoC participants are considered independent developers paid by a stipend and are not employed by Google or GSoC Organization.</li>
       </ul>
 
@@ -114,7 +106,7 @@ export default function CallForStudentsPage() {
         <li>Submit a Project Proposal</li>
       </ol>
 
-      <p><b>The application period is <code>March 20, 18:00 UTC - April 4, 18:00 UTC</code></b>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of Google Summer of Code 2024
+      <p><b>The application period is <code>March 24, 18:00 UTC - April 8, 18:00 UTC</code></b>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of Google Summer of Code 2025.
       </a>.</p>
 
       <h3>5.1. Writing a project proposal</h3>
