@@ -50,37 +50,10 @@
     }
   },
   {
-    "id": "code-completion",
-    "title": "Better Code Completion for Pharo using AI",
-    "img": "guille-completion.jpeg",
-    "supervisors": [
-      "Stephane Ducasse",
-      "Guillermo Polito"
-    ],
-    "description": "The goal of this project is to experiment with machine learning in the context of the automatic code completion of Pharo.",
-    "goal": "To achieve this goal the student will\n- study [Byte Pair encoder](https://youtu.be/HEikzVL-lZU)\n- enhance the [naive implementation](https://github.com/Ducasse/BytePairEncoder)\n- study the extensible completion Framework in Pharo\n\nHe will then run some experiments building “characters” (a character in BPE can be the concatenation of multiple character)\nusing various Pharo information:\n- only the method signature\n- taking into account all the method bodies of Pharo method.\n\nBased on these databases of sequences the student will build some simple benchmarchs to be able to evaluate \nthe best strategies. He will use some industrial case studies to identify key configurations of the completion frameworks.\n\nOther tokenizers may be studied as well\n- [Unigram Tokenization](https://youtu.be/TGZfZVuF9Yc) \n- [WordPiece Tokenization](https://youtu.be/qpv6ms_t_1A)",
-    "keywords": [
-      "AI",
-      "Machine Learning",
-      "NLP",
-      "Completion"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo",
-        "Communication skills"
-      ],
-      "preferred": []
-    }
-  },
-  {
     "id": "polymath-architecture",
     "title": "Improve the architecture of PolyMath",
     "img": "cyril-polymath.png",
     "supervisors": [
-      "Cyril Ferlicot-Delbecque",
       "Oleksandr Zaitsev"
     ],
     "description": "PolyMath is a mathematical library in Pharo that implements various algorithms and data structure for algebra, matrix-vector operations, numerical analysis, differential equations, etc. It is similar to  NumPy and SciPy in Python or SciRuby in Ruby. \n\nThe goal of this project is to improve the overall quality of the PolyMath library in term of architecture and API. This includes improving the internal dependencies of PolyMath to make it more modular, proposing a more intuitive and unified API for the existing algorithms.\n\nStudents will also be encouraged to implement new algorithms for PolyMath or to create tutorials and blog posts for the existing ones. The PolyMath library has a very dynamic community so students will receive a lot of feedback and guidance to help them complete this project.",
@@ -108,8 +81,8 @@
     "title": "A Pharo User-Interface Builder",
     "img": "hernan-builder.jpg",
     "supervisors": [
-      "Hernan Morales",
-      "Sebastian Jordan"
+      "Sebastian Jordan",
+      "Nahuel Palumbo"
     ],
     "description": "Implement a designer application to develop graphical user interfaces (GUI) in Pharo. This will allow Pharo developers to build product functionality and focus on design instead of writing repetitive UI code and manually composing the UI layout. Widgets will be selected and dragged from a components tree, customized on a style pane, and the UI code will be generated. The tool will use Spec 2 (a framework in Pharo for describing user interfaces), and PCG (a Pharo Code Generator which allows AST manipulation). The emmited source code should be used to rebuild the user interface, including generation of event triggers, in the designer.",
     "goal": "The GUI designer will be able to recreate UI designs from generated code, for post-edition and re-generation.",
@@ -128,36 +101,6 @@
       "preferred": [
         "Code Generation",
         "AST Manipulation"
-      ]
-    }
-  },
-  {
-    "id": "dds-binding",
-    "title": "DDS Binding for Pharo",
-    "img": "santi-dds.jpeg",
-    "supervisors": [
-      "Santiago Bragagnolo"
-    ],
-    "description": "ROS 2 is taking over the ROS Project. With this, many of our robotic implementations in Pharo will become obsolete. ROS2 uses an entirely different means of communication from ROS1. To enable ROS2 robotic development in Pharo, we need to provide bindings to at least one Data Delivery Service (DDS) system used by ROS. The project includes quickly analysing the three DDS vendors supported by ROS: eProsima, Eclipse Cyclone and Gurum Networks. Choose one of them, and implement the required bindings in Pharo to enable the communication.",
-    "goal": "- A Pharo binding library to at least one DDS implementation\n- Tests",
-    "keywords": [
-      "DDS",
-      "ROS",
-      "Pharo",
-      "Robotics"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Network",
-        "FFI",
-        "Pharo",
-        "TDD"
-      ],
-      "preferred": [
-        "ROS",
-        "Distributed System Programming"
       ]
     }
   },
@@ -191,29 +134,60 @@
   },
   {
     "id": "ide-improvements",
-    "title": "IDE improvements",
+    "title": "Improve IDE-UI features",
     "img": "guille-ide.jpeg",
     "supervisors": [
       "Guillermo Polito",
       "Nahuel Palumbo"
     ],
-    "description": "Improve several IDE and text editor capabilities, such as shortcut navigation, text drag n drop, better parenthesis support, and autocompletion.",
-    "goal": "- Add text drag n drop support (see [pharo #2634](https://github.com/pharo-project/pharo/issues/2634))\n- Enhance parenthesis support (see [pharo #2635](https://github.com/pharo-project/pharo/issues/2635))\n- Allow enabling\/disabling tools and shortcuts (see [pharo #2649](https://github.com/pharo-project/pharo/issues/2649))\n- Add autocompletion hooks (see Autocompletion hooks: [pharo #3177](https://github.com/pharo-project/pharo/issues/3177))\n- Enhance dependency analyser precision (see Dependency analyser precision: [pharo #3470](https://github.com/pharo-project/pharo/issues/3470)).",
+    "description": "Improve several IDE capabilities to improve UX for development, such as shortcut navigation, autocompletion features, menu options, and others present tools like dependency analyser.",
+    "goal": "- Allow enabling\/disabling tools and shortcuts (see [pharo #2649](https://github.com/pharo-project/pharo/issues/2649))\n- Add autocompletion hooks (see Autocompletion hooks: [pharo #3177](https://github.com/pharo-project/pharo/issues/3177))\n- Enhance dependency analyser precision (see Dependency analyser precision: [pharo #3470](https://github.com/pharo-project/pharo/issues/3470)).",
+    "keywords": [
+      "IDE",
+      "Tooling",
+      "Autocompletion",
+      "UI"
+    ],
+    "size": "Medium",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Pharo",
+        "OOP",
+        "Code Analysis"
+      ],
+      "preferred": [
+        "UI/UX"
+      ]
+    }
+  },
+  {
+    "id": "code-text-improvements",
+    "title": "Improve coding UX",
+    "img": "palu-ide.jpeg",
+    "supervisors": [
+      "Gabriel Darbord",
+      "Nahuel Palumbo"
+    ],
+    "description": "Improve the text editor capabilities for coding. It includes text drag n drop, better parenthesis support, and multiple selection.",
+    "goal": "- Support multi-cursor/selection (see [pharo #17788](https://github.com/pharo-project/pharo/issues/17788))\n- Add text drag n drop support (see [pharo #2634](https://github.com/pharo-project/pharo/issues/2634))\n- Enhance parenthesis support (see [pharo #2635](https://github.com/pharo-project/pharo/issues/2635)).",
     "keywords": [
       "IDE",
       "Tooling",
       "Text Editor",
-      "Autocompletion"
+      "Coding"
     ],
-    "size": "Large",
+    "size": "Medium",
     "difficulty": "Hard",
     "skills": {
       "required": [
-        "Refactoring",
         "OOP",
+        "Debugging",
         "Code Analysis"
       ],
-      "preferred": []
+      "preferred": [
+        "UI/UX"
+      ]
     }
   },
   {
@@ -393,38 +367,10 @@
     }
   },
   {
-    "id": "sequence-editor",
-    "title": "Sequence Viewer/Editor",
-    "img": "hernan-dna.jpg",
-    "supervisors": [
-      "Hernan Morales",
-      "Oleksandr Zaitsev"
-    ],
-    "description": "Implement a viewer/editor of nucleic acid or protein sequences. The viewer is used to visualize, search and analyze sequences and it should adapt its view interface depending on the sequence type. The editor features allows to modify, create, and annotate sequences. External tools could be linked to the editor to streamline a multi-step bioinformatics analysis such as MSA (Multiple Sequence Alignment), ORF finders, consensus sequence visualization, identification of homologous protein or nucleotide sequences, restriction enzyme finders, etc. The BioSmalltalk library already provides a basic language toolkit to start working with biological sequences in Pharo.",
-    "goal": "The viewer/editor will establish a baseline tool to address many common workflows at biological sequences, facilitating connections with bioinformatics tools from Pharo",
-    "keywords": [
-      "Bioinformatics",
-      "Sequence Analysis",
-      "Sequence Alignments"
-    ],
-    "size": "Large",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [
-        "Bioinformatics"
-      ],
-      "preferred": [
-        "Spec2",
-        "FFI"
-      ]
-    }
-  },
-  {
     "id": "data-frame",
     "title": "DataFrame",
     "img": "dataframe.png",
     "supervisors": [
-      "Cyril Ferlicot-Delbecque",
       "Oleksandr Zaitsev",
       "Serge Stinckwich"
     ],
@@ -477,7 +423,6 @@
     "title": "PCA Methods",
     "img": "pca.png",
     "supervisors": [
-      "Cyril Ferlicot-Delbecque",
       "Oleksandr Zaitsev"
     ],
     "description": "Write an object-model in Pharo to provide Principal Component Analysis (PCA) variants such as Sparse PCA, Randomized PCA, Incremental PCA and Kernel PCA (Centering).\nThe PolyMath library already provides an implementation of PCA which could be used as basis for extending with.",
