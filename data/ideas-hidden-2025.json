@@ -236,5 +236,109 @@
           ],
           "preferred": []
         }
+      },
+      {
+        "id": "system-and-security",
+        "title": "System and Security Improvements",
+        "img": "guille-security.jpeg",
+        "supervisors": [
+          "Guillermo Polito"
+        ],
+        "description": "The objective of the project is to improve system integration in standard libraries.\nFor example, the system's locale support could be improved to access the system's language, text encoding, number and date formatting. Similar improvements could be brought to sockets, zip files, downloads.",
+        "goal": "We expect to solve the following issues:\n- Checksums of downloads: [pharo #3391](https://github.com/pharo-project/pharo/issues/3391)\n- Locale redesign: [pharo #3844](https://github.com/pharo-project/pharo/issues/3844)\n- Unix sockets: [pharo #4046](https://github.com/pharo-project/pharo/issues/4046)\n- Bootstrap improvements: [pharo #4269](https://github.com/pharo-project/pharo/issues/4269)",
+        "keywords": [
+          "System Integration",
+          "Low-level"
+        ],
+        "size": "Large",
+        "difficulty": "Hard",
+        "skills": {
+          "required": [
+            "Encodings",
+            "Foreign Function Interface"
+          ],
+          "preferred": [
+            "OOP"
+          ]
+        }
+      },
+      {
+        "id": "standard-library-api",
+        "title": "Improve Standard Library APIs",
+        "img": "guille-library.jpeg",
+        "supervisors": [
+          "Guillermo Polito",
+          "Sebastian Jordan"
+        ],
+        "description": "The objective of this project is to improve the Pharo standard library.\nThis project includes low-level improvements in arithmetics, color APIs and collections.\nSuch changes will be backed up by benchmarks to show no performance improvements are introduced.",
+        "goal": "We expect at least fixes in the following aras:\n- Collections should use better default sorting algorithms (see [pharo #2866](https://github.com/pharo-project/pharo/issues/2866))\n- Improve Color API (see [pharo #3264](https://github.com/pharo-project/pharo/issues/3264))\n- Speeding up arithmetics (see [pharo #3322](https://github.com/pharo-project/pharo/issues/3322))\n- Redesign Collection cancelled methods (see [pharo #4113](https://github.com/pharo-project/pharo/issues/4113))",
+        "keywords": [
+          "Redesign",
+          "Optimisation",
+          "Standard Library"
+        ],
+        "size": "Medium",
+        "difficulty": "Hard",
+        "skills": {
+          "required": [
+            "OOP",
+            "Refactoring"
+          ],
+          "preferred": []
+        }
+      },
+      {
+        "id": "dr-tests",
+        "title": "DrTests",
+        "img": "drtests.jpeg",
+        "supervisors": [
+          "Stephane Ducasse",
+          "Sebastian Jordan"
+        ],
+        "description": "DrTests is a Pharo tool that we use to run several tests cases at once.\nIt is very useful when developping because we have the power to run a selected scope of tests from different packages to control the situation of the tests.",
+        "goal": "The goal is to improve DrTests, add more features to have a new version to it that will be the default Test Runner of Pharo.",
+        "keywords": [
+          "unit tests",
+          "tools",
+          "test runner"
+        ],
+        "size": "Medium",
+        "difficulty": "Medium",
+        "skills": {
+          "required": [
+            "Pharo",
+            "Communication skills"
+          ],
+          "preferred": []
+        }
+      },
+      {
+        "id": "ide-improvements",
+        "title": "Improve IDE-UI features",
+        "img": "guille-ide.jpeg",
+        "supervisors": [
+          "Guillermo Polito",
+          "Nahuel Palumbo"
+        ],
+        "description": "Improve several IDE capabilities to improve UX for development, such as shortcut navigation, autocompletion features, menu options, and others present tools like dependency analyser.",
+        "goal": "- Allow enabling\/disabling tools and shortcuts (see [pharo #2649](https://github.com/pharo-project/pharo/issues/2649))\n- Add autocompletion hooks (see Autocompletion hooks: [pharo #3177](https://github.com/pharo-project/pharo/issues/3177))\n- Enhance dependency analyser precision (see Dependency analyser precision: [pharo #3470](https://github.com/pharo-project/pharo/issues/3470)).",
+        "keywords": [
+          "IDE",
+          "Tooling",
+          "Autocompletion",
+          "UI"
+        ],
+        "size": "Medium",
+        "difficulty": "Hard",
+        "skills": {
+          "required": [
+            "Pharo",
+            "OOP",
+            "Code Analysis"
+          ],
+          "preferred": [
+            "UI/UX"
+          ]
+        }
       }
 ]
