@@ -30,34 +30,6 @@
     }
   },
   {
-    "id": "connect4MiniMax",
-    "title": "Connect 4 game with AI",
-    "img": "connect4.png",
-    "supervisors": [
-      "Sebastian Jordan"
-    ],
-    "description": "This project aims to develop a connect 4 game with an AI algorithm to play against humans. We will test the algorithm by playing humans vs. AI to see who wins. The first part will be building the GUI of the game using Bloc (https://github.com/pharo-graphics/bloc). Then, we will develop the AI algorithm that can play the game. The algorithm is alpha-beta-pruning (https://en.wikipedia.org/wiki/Alpha-beta_pruning)",
-    "goal": "Build a connect 4 game with a graphical user interface that is playable. Develop the alpha-beta pruning AI algorithm to play the game against humans.",
-    "keywords": [
-      "AI",
-      "game-theory",
-      "Bloc",
-      "games"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Communication skills",
-        "OOP",
-        "Pharo"
-      ],
-      "preferred": [
-        "Basic AI knowledge"
-      ]
-    }
-  },
-  {
     "id": "serialization",
     "title": "Better Serialization Support",
     "img": "guille-serialization.jpeg",
@@ -78,61 +50,6 @@
         "OOP"
       ],
       "preferred": []
-    }
-  },
-  {
-    "id": "polymath-architecture",
-    "title": "Improve the architecture of PolyMath",
-    "img": "cyril-polymath.png",
-    "supervisors": [
-      "Oleksandr Zaitsev"
-    ],
-    "description": "PolyMath is a mathematical library in Pharo that implements various algorithms and data structure for algebra, matrix-vector operations, numerical analysis, differential equations, etc. It is similar to  NumPy and SciPy in Python or SciRuby in Ruby. \n\nThe goal of this project is to improve the overall quality of the PolyMath library in term of architecture and API. This includes improving the internal dependencies of PolyMath to make it more modular, proposing a more intuitive and unified API for the existing algorithms.\n\nStudents will also be encouraged to implement new algorithms for PolyMath or to create tutorials and blog posts for the existing ones. The PolyMath library has a very dynamic community so students will receive a lot of feedback and guidance to help them complete this project.",
-    "goal": "- A more modular system\n- Cleaner dependencies\n- Improved API\n- Documentation\n- New algebra algorithms",
-    "keywords": [
-      "Math",
-      "Algebra",
-      "Infrastructure",
-      "API"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "OOP",
-        "Pharo"
-      ],
-      "preferred": [
-        "Be comfortable with math"
-      ]
-    }
-  },
-  {
-    "id": "ui-builder",
-    "title": "A Pharo User-Interface Builder",
-    "img": "hernan-builder.jpg",
-    "supervisors": [
-      "Sebastian Jordan",
-      "Nahuel Palumbo"
-    ],
-    "description": "Implement a designer application to develop graphical user interfaces (GUI) in Pharo. This will allow Pharo developers to build product functionality and focus on design instead of writing repetitive UI code and manually composing the UI layout. Widgets will be selected and dragged from a components tree, customized on a style pane, and the UI code will be generated. The tool will use Spec 2 (a framework in Pharo for describing user interfaces), and PCG (a Pharo Code Generator which allows AST manipulation). The emmited source code should be used to rebuild the user interface, including generation of event triggers, in the designer.",
-    "goal": "The GUI designer will be able to recreate UI designs from generated code, for post-edition and re-generation.",
-    "keywords": [
-      "UI",
-      "Design",
-      "Builder"
-    ],
-    "size": "Large",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [
-        "Pharo",
-        "AST"
-      ],
-      "preferred": [
-        "Code Generation",
-        "AST Manipulation"
-      ]
     }
   },
   {
@@ -349,82 +266,6 @@
     }
   },
   {
-    "id": "spatial-data",
-    "title": "Classes and Methods for Spatial Data manipulation",
-    "img": "etienne-gis.jpg",
-    "supervisors": [
-      "Etienne Delay"
-    ],
-    "description": "We propose to explore structure to spatial data finding a way to handle different types of geospatial data in pharo. Once the data is manipulable with our tools the goal is to develop some spatial method allowing for users to deal with spatial data. For that we will start from tools already existing in pharo like the packages : geometry, shapes, geo-json and territorial, but also in other programming languages (as r or python) in order to implement spatial methods for the community. The main objective will be first to be able to load a geojson file, to visualize it and to basic geometric operations.",
-    "goal": "DSL compatible with OGS standar for spatial data manipulation",
-    "keywords": [
-      "Simple Feature",
-      "GIS",
-      "Spatial"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo"
-      ],
-      "preferred": [
-        "GIS"
-      ]
-    }
-  },
-  {
-    "id": "microdown-blog",
-    "title": "A lightweigth Microdown-based Blog engine",
-    "img": "stef-blog.jpeg",
-    "supervisors": [
-      "Stephane Ducasse"
-    ],
-    "description": "With Pharo 11, Microdown is now used to write books, slides, render class comments, render documentation. It is becoming a central piece for Pharo documents and documentations. The next step is to support the definition of blog. This way Pharo will be able to navigate and display another important source of information within Pharo: its own blogs. The astute reader may wonder why not using other systems for building blog because we have to have the full control on a simple blog engine that we can just deploy with Pharo. ",
-    "goal": "The student will:\n- study microdown, its visitors\n- study the export to HTML \n- build some logic to summarise a blog post, a monthly sorting of blog post, a full post display\n\nWe will test this blog engine on the [Pharo Weekly blog](https://pharoweekly.wordpress.com/)\nIn a second iteration a search component will be developed.",
-    "keywords": [
-      "Microdown",
-      "HTML",
-      "Blog"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo",
-        "Communication skills"
-      ],
-      "preferred": []
-    }
-  },
-  {
-    "id": "data-frame",
-    "title": "DataFrame",
-    "img": "dataframe.png",
-    "supervisors": [
-      "Oleksandr Zaitsev",
-      "Serge Stinckwich"
-    ],
-    "description": "DataFrame was introduced to Pharo during the GSoC 2017 (https://github.com/PolyMathOrg/DataFrame). The work on DataFrame continued and many new features were introduced by different contributors. However, it is still a work in progress and a huge portion of functionality that can be found in other data frame packages (e.g. R, pandas) is missing.",
-    "goal": "The goal of this project is to introduce new functionality to DataFrame and write examples of applying DataFrame to real problems of Data Science (one can reproduce examples from pandas and scikit-learn documentation, as well as some examples from R-bloggers)",
-    "keywords": [
-      "data science",
-      "data analysis",
-      "dataframe",
-      "tabular data",
-      "statistics"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo",
-        "Communication skills"
-      ],
-      "preferred": []
-    }
-  },
-  {
     "id": "dr-tests",
     "title": "DrTests",
     "img": "drtests.jpeg",
@@ -447,60 +288,6 @@
         "Communication skills"
       ],
       "preferred": []
-    }
-  },
-  {
-    "id": "pca-methods",
-    "title": "PCA Methods",
-    "img": "pca.png",
-    "supervisors": [
-      "Oleksandr Zaitsev"
-    ],
-    "description": "Write an object-model in Pharo to provide Principal Component Analysis (PCA) variants such as Sparse PCA, Randomized PCA, Incremental PCA and Kernel PCA (Centering).\nThe PolyMath library already provides an implementation of PCA which could be used as basis for extending with.",
-    "goal": "Having a solid library for doing principal component analysis",
-    "keywords": [
-      "pca",
-      "sva",
-      "dimensionality reduction"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo",
-        "Communication skills"
-      ],
-      "preferred": []
-    }
-  },
-  {
-    "id": "tensor-flow-plugin",
-    "title": "TensorFlow Plugin",
-    "img": "tensorflow.png",
-    "supervisors": [
-      "Sebastian Sastre",
-      "Sebastian Jordan"
-    ],
-    "description": "Lets make a TensoFlow plugin (not FFI) for Pharo and unblock Pharo AI possibilities by putting it among the ones at the top of the AI pyramid! It will be C TensoFlow used by C our plugin by our C VM using the GPU silicon at its fullest. A path to mine GPU power in the most efficient way in the Smalltalk friendly and powerful way. No other bridges needed. Then all the algebra and AI Smalltalk libraries would be able to use TensoFlow like a boss.",
-    "goal": "All the primitives to the TensorFlow API having at least 1 unit test for quality assurance would be the definition of done.",
-    "keywords": [
-      "Artificial Intelligence",
-      "TensorFlow",
-      "Machine Learning",
-      "GPU"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Basic C",
-        "Familiarity with how the Pharo VM is created",
-        "Familiarity with Slang",
-        "Communication skills"
-      ],
-      "preferred": [
-        "Having done a Pharo plugin"
-      ]
     }
   },
   {
@@ -531,32 +318,6 @@
         "PharoThings",
         "TelePharo"
       ]
-    }
-  },
-  {
-    "id": "ffi",
-    "title": "Accelerate FFI calls through JIT compilation",
-    "img": "guille-ffi.jpg",
-    "supervisors": [
-      "Guillermo Polito"
-    ],
-    "description": "This project aims at adding JIT compiler support for common FFI calls, to accelerate calls and marshalling",
-    "goal": "Profile FFI libraries to know what are the most used FFI call signatures; Refactor the cogit JIT compiler to detect FFI callout code; Introduce backend specific code for common call signatures in x86-64 and ARM64",
-    "keywords": [
-      "compilation",
-      "jit compilation",
-      "library integration",
-      "ffi"
-    ],
-    "size": "Medium",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [
-        "compilers",
-        "OOP",
-        "assembly"
-      ],
-      "preferred": []
     }
   },
   {
@@ -623,8 +384,7 @@
     "img": "fault-location.jpg",
     "supervisors": [
       "Juan Pablo Sandoval",
-      "Geraldine Galindo",
-      "Kevin Cespedez"
+      "Sebastian Jordan"
     ],
     "description": "In this project, the student will implement two or three different fault location algorithms, for this, it will also be necessary to implement a matrix coverage. Then we will integrate the fault location algorithms in the DrTest UI tool, and of course to Pharo itself.",
     "goal": "The goal is implement a plugin for DrTest that implements two or three fault location state-of-the-art algorithms.",
