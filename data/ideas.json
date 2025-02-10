@@ -32,7 +32,8 @@
     "title": "Better Serialization Support",
     "img": "guille-serialization.jpeg",
     "supervisors": [
-      "Guillermo Polito"
+      "Guillermo Polito",
+      "Nahuel Palumbo"
     ],
     "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require a lot of manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
     "goal": "- Replace the storeOn mechanism with STON literal serialization (see [pharo #3319](https://github.com/pharo-project/pharo/issues/3319))\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures\n- Improve the performance of Fuel serialization with an improved identity hash table",
@@ -164,7 +165,7 @@
   {
     "id": "code-text-improvements",
     "title": "Improve coding UX",
-    "img": "palu-ide.jpeg",
+    "img": "palu-text.png",
     "supervisors": [
       "Gabriel Darbord",
       "Nahuel Palumbo"
@@ -674,6 +675,139 @@
       "preferred": [
         "Testing",
         "Reflection"
+      ]
+    }
+  },
+  {
+    "id": "pam",
+    "title": "A text-to-speech (TTS) tool for Pharo",
+    "img": "dome-pam.jpeg",
+    "supervisors": [
+      "Domenico Cipriani",
+      "Nahuel Palumbo"
+    ],
+    "description": "The project, named PAM (Pharo Automated Mouth), is inspired by the JavaScript/Web Audio adaptation of SAM (Software Automated Mouth) for the Commodore 64.\n\n This tool is designed to enhance Pharo’s accessibility, making the environment more inclusive for users who rely on speech synthesis. Additionally, we aim to achieve significantly improved audio clarity and intelligibility compared to SAM. \n\n PAM will consist of two core components:\n- A reciter that processes input text, converting it into a phonemic and prosodic representation.\n- A Digital Signal Processor (DSP) that translates these articulation traits into real-time audio.\n\nExpected Outcomes\n- A parser for English text, implemented using PetitParser2.\n- A DSP written in Phausto, offering a selection of four different voice types.\n- A well-documented tool with a modular design, allowing for easy extension to other natural languages.\n- This project aims to provide a robust and extensible TTS solution for Pharo, significantly improving speech synthesis quality while fostering accessibility.",
+    "goal": "The goal of this project is to develop a text-to-speech (TTS) tool for Pharo, leveraging Phausto's formant and subtractive synthesis capabilities as the audio backend.",
+    "keywords": [
+      "Sound",
+      "Phausto",
+      "TTS"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP",
+        "Autodidact",
+        "Communication skills"
+      ],
+      "preferred": [
+        "Sound synthesis"
+      ]
+    }
+  },
+  {
+    "id": "fiber",
+    "title": "Improve the Green threads / Fiber",
+    "img": "guille-fiber.png",
+    "supervisors": [
+      "Guillermo Polito",
+      "Pablo Tesone"
+    ],
+    "description": "Pharo currently implements Green Threads / Fiber through the Process class. However, certain edge cases exhibit undefined behavior. This project aims to thoroughly test these cases, document the current implementation, identify potential bugs, and work towards fixing them to ensure a more robust and reliable concurrency model.",
+    "goal": "Improve the implementation of Green threads / Fiber in Pharo:\n- Find and test border cases\n- Find bugs and fix them.",
+    "keywords": [
+      "green thread",
+      "fiber"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP"
+      ],
+      "preferred": []
+    }
+  },
+  {
+    "id": "reg-aloc-jit",
+    "title": "Enhance Register Allocation at Control Flow Merge Points During JIT Compilation",
+    "img": "guille-reg-aloc-jit.png",
+    "supervisors": [
+      "Guillermo Polito",
+      "Nahuel Palumbo"
+    ],
+    "description": "The JIT compiler in the Pharo VM uses an Abstract Interpreter to translate Pharo methods into machine code. This interpreter applies optimizations to minimize stack access during register allocation.\n\nCurrently, the implementation maintains a single abstract state per method, even across branches. As a result, the JIT compiler must handle this constraint explicitly, leading to complex and hard-to-understand code when managing control flow merges.\n\nThis project aims to extend the register allocation mechanism to support multiple abstract states, enabling better handling of control flow merge points and improving both code clarity and performance.",
+    "goal": "Expand the register allocation strategy to effectively manage multiple abstract states at control flow merge points, simplifying JIT compilation and improving optimization potential.",
+    "keywords": [
+      "jit compiler",
+      "register allocation",
+      "abstract interpretation"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP"
+      ],
+      "preferred": [
+        "Compilers"
+      ]
+    }
+  },
+  {
+    "id": "slang-separate",
+    "title": "Enhance Slang with Separate Compilation",
+    "img": "guille-slang-separate.png",
+    "supervisors": [
+      "Guillermo Polito",
+      "Nahuel Palumbo"
+    ],
+    "description": "Slang is a framework for writing Virtual Machines in Smalltalk and compiling them to C for performance reasons. It translates selected Smalltalk classes and methods into C code.\n\nCurrently, the generated C code is merged into a few large files, making it difficult to read and manage. This project aims to introduce separate compilation by generating multiple C files—potentially one per class or hierarchy—resulting in smaller, more modular, and more readable code.",
+    "goal": "Implement separate compilation in Slang to generate multiple C files, improving readability, maintainability, and compilation efficiency.",
+    "keywords": [
+      "slang",
+      "c code",
+      "separate compilation"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP",
+        "C"
+      ],
+      "preferred": []
+    }
+  },
+  {
+    "id": "object-pointers",
+    "title": "Eliminate Object Pointers in JIT-Compiled Code for Better GC Performance",
+    "img": "guille-object-pointers.jpg",
+    "supervisors": [
+      "Guillermo Polito",
+      "Nahuel Palumbo"
+    ],
+    "description": "In the Pharo VM, JIT compilation embeds object pointers directly into compiled machine code. These pointers must be visited during garbage collection to properly manage memory.\n\nCurrently, the Garbage Collector must traverse and disassemble the compiled machine code to locate these pointers, introducing a performance overhead. This project aims to modify both the JIT compiler and the Garbage Collector to use a separate structure—an object-pointer table—to store and access object references efficiently.",
+    "goal": "Optimize garbage collection by removing object pointers from JIT-generated machine code. This includes:\n- Identifying where the JIT compiler embeds object pointers.\n- Modifying the JIT compiler to store object references in an object-pointer table instead of inline in the machine code.\n- Updating the Garbage Collector to traverse the object-pointer table instead of disassembling machine code.\n\nThis approach reduces GC overhead, improving performance and simplifying memory management in the Pharo VM.",
+    "keywords": [
+      "object pointers",
+      "jit compiler",
+      "garbage collection"
+    ],
+    "size": "Medium",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Refactoring",
+        "OOP"
+      ],
+      "preferred": [
+        "Compilers",
+        "Garbage Collection"
       ]
     }
   }
