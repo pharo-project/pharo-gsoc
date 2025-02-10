@@ -2,7 +2,7 @@
    {
     "id": "dockerScratchDeployments",
     "title": "Pharo VM running as Docker Scratch image",
-    "img": "connect4.png",
+    "img": "dockervm.png",
     "supervisors": [
       "Tim Mackinnon",
       "Guillermo Polito?"
