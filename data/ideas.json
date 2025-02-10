@@ -1,4 +1,37 @@
 [
+   {
+    "id": "dockerScratchDeployments",
+    "title": "Pharo VM running as Docker Scratch image",
+    "img": "connect4.png",
+    "supervisors": [
+      "Tim Mackinnon",
+      "Guillermo Polito?"
+    ],
+    "description": "This project aims to enable an efficient deployment mechanism for Pharo applications, where they run in a Docker scratch (layer 0) image without any operating system dependency or overhead. Being able to run pharo in an efficient docker image
+     simplifies deployment particularly in the web space where docker images are becoming a defacto standard. Pharo is quite unique as its possible to run without any file io dependencies in a self contained manner that matches scratch image requirements. 
+     The smaller size of a scratch image also means improved resource management and also reduces secuirty risks inherent with operating system overhead that isn't needed for many classes of pharo application, particularly web based ones.
+     The student will need to study the hello world docker scratch example and then figure out how to statically compile the vm, necessary plugins and image so that no dynamic operating system dependencies are needed for execution.",
+    "goal": "Have a pharo vm+image run in a docker scratch image where there is no operating system dependency or overhead",
+    "keywords": [
+      "docker",
+      "deployment",
+      "security"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Docker",
+        "VM",
+        "CI/CD",
+        "C",
+        "Pharo"
+      ],
+      "preferred": [
+        "Web Applications"
+      ]
+    }
+  },
   {
     "id": "connect4MiniMax",
     "title": "Connect 4 game with AI",
@@ -675,6 +708,157 @@
       "preferred": [
         "Testing",
         "Reflection"
+      ]
+    }
+  },
+  {
+    "id": "game-tiles",
+    "title": "Adding Game Tiles and Sprites to Cormas",
+    "img": "game-tiles.png",
+    "supervisors": [
+      "Milton Mamani Torres",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "The current version of Cormas allows us to visualize the space and agents in the simulation using colors and geometric shapes (circles, rectangles, etc.). In this project, we want to add support for custom tilesets like the ones that are used in computer games. This would allow us to greatly improve the visual capabilities of Cormas by using custom pixel art. In Pharo, we already have support for sprites, which means that we know how to implement this project technically and can guide GSoC contributor in this. This project will require a lot of creativity because we expect contributor to propos a nice API and to build a collection of game tiles that can be used in Cormas.",
+    "goal": "- Add support for pixel art tilesets to Cormas\n- Propose a collection of default tiles and the methods for loading custom ones\n- Propose an API for configuring Cormas model to use a given tileset\n- Implement some of our existing models with tiles, and demonstrate them through videos and blog posts",
+    "keywords": [
+      "Visualization",
+      "Agent-base modelling",
+      "Games",
+      "Tilesets",
+      "Sprites",
+      "Pixel art"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo",
+        "Object-oriented programming"
+      ],
+      "preferred": [
+        "Visualization",
+        "Art",
+        "Gaming"
+      ]
+    }
+  },
+  {
+    "id": "sound-effects",
+    "title": "Sound Effect Library for Agent-Based Simulations",
+    "img": "domenico-sound.jpeg",
+    "supervisors": [
+      "Domenico Cipriani",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "In Pharo, there is a library for generating and synthesizing music. We want to use it to add sound effects to Cormas simulations. It will start with simple sound effects, for example, when a cow says Mooo or when walking of a grass makes a sound. Then we will explore to which extent a simulation can be perceived through sound. Can different scenarios (high energy / low energy) sound differntly? Can sounds help us understand simulations better? This is an innovative project that can have an important impact in the field participatory simulations by making our tools more accessible and more intuitive for people with disabilities and for the local stakeholders who do not have a technical background.",
+    "goal": "- Create simple sound effects in Pharo and release them as a library\n- Assign those sound effects to actions and events in Cormas simulations\n- Build an API for manipulating sounds in Cormas\n- Explore the patterns that emerge is a simulation through sound effects",
+    "keywords": [
+      "Music",
+      "Agent-base modelling",
+      "Sound"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo",
+        "Object-oriented programming"
+      ],
+      "preferred": [
+        "Cormas",
+        "C"
+      ]
+    }
+  },
+  {
+    "id": "moose-cormas",
+    "title": "Analysing Cormas Code with Moose",
+    "img": "nicolas-moose.png",
+    "supervisors": [
+      "Nicolas Anquetil",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "[Moose](https://moosetechnology.org/) is a platform for software and data analysis implemented in Pharo. It provides an extensive toolkit for exploring the source code of a given project, find code defects, bad practices, etc. Cormas is a legacy software system that has been in development for more than 25 years. It has been migrated from one dialect of Smalltalk to another, it has been maintained by different people with different levels of expertise and different programming practices. As such, Cormas is a very interesting case study for code analysis. Using Moose, we can detect dead code (methods that are no longer used), split god classes and methods (the ones that are clearly too large), reorganize packages to reduce coupling, improve test coverage. All this information can be extremely valuable for Cormas development and it can also contribute to the improvement of Moose platform.",
+    "goal": "- Learn to use Moose (we have detailed guides and tutorials)\n- Load the source code of Cormas into Moose\n- Perform various analyses and build visualizations\n- Report the findings to the Cormas community\n- Improve the source code of Cormas",
+    "keywords": [
+      "Code analysis",
+      "Code comprehension",
+      "Visualizations",
+      "Programming"
+    ],
+    "size": "Medium",
+    "difficulty": "Easy",
+    "skills": {
+      "required": [
+        "Pharo",
+        "Object-oriented programming"
+      ],
+      "preferred": [
+        "Cormas",
+        "Moose"
+      ]
+    }
+  },
+  {
+    "id": "object-detection",
+    "title": "Computer Vision for Game Piece Detection",
+    "img": "computer-vision.png",
+    "supervisors": [
+      "Etienne Delay",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "The goal of this project is to enhance the interactive functionality of Cormas by building a computer vision system for detecting tangible objects such as board game pieces. Such a system would permit people to play a [serious game](https://en.wikipedia.org/wiki/Serious_game) on a physical board and have a camera detect the movement of pieces and automatically update the Cormas model. The game could then be stored, replayed, interacted with, and analysed using Cormas.\n\nObject detection can be implemented based on the smartphone camera or with a more advanced dedicated tool such as [Azure Kinect](https://azure.microsoft.com/en-us/products/kinect-dk/). Adaptation of Cormas platform for receiving live input from real world is a very important aspect of this project.",
+    "goal": "- Implement and test the API in Cormas for positioning agents on the spatial grid\n- Implement a prototype of an object detection system using computer vision\n- Connect the implemented object detection system to Cormas\n- Implement calibration and board initialization",
+    "keywords": [
+      "Computer Vision",
+      "Machine Learning",
+      "AI",
+      "Agent-Based Modeling"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Machine Learing",
+        "Computer Vision"
+      ],
+      "preferred": [
+        "Pharo",
+        "Python",
+        "PyTorch",
+        "YOLO",
+        "Open CV"
+      ]
+    }
+  },
+  {
+    "id": "hexagonal-cells",
+    "title": "Adding Hexagonal Cells to Cormas Pharo",
+    "img": "hexagonal-cells.png",
+    "supervisors": [
+      "Milton Mamani Torres",
+      "Oleksandr Zaitsev"
+    ],
+    "description": "In VisualWorks version of Cormas, we had a good support for hexagonal cells. In the current version of Cormas that we have in Pharo, we can only use square cells. The goal of this project is therefore to (re-)implement the hexagonal grid. The contribution of this project can also be submitted to [Roassal3](https://github.com/pharo-graphics/Roassal) visualization library. We would like to take inspiration from this article: [Hexagonal Grids from Red Blob Games](https://www.redblobgames.com/grids/hexagons/) to implement the hexagonal geometry in Roassal and use it to enhance the spatial model of Cormas.",
+    "goal": "- Implement hexagonal grid layout in Roassal based on the article cited above\n- Use hexagonal layout to add hexagonal cells to the spatial model of Cormas\n- Experiemnt with the possibility of dynamically switching between square and hexagonal grids in the simulation\n- Experiment with other types of grids, for example, triangular",
+    "keywords": [
+      "Computer Graphics",
+      "Geometry",
+      "Grids",
+      "Hexagonal Cells"
+    ],
+    "size": "Large",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "Pharo",
+        "Object-Oriented Programming"
+      ],
+      "preferred": [
+        "Computer Graphics",
+        "Geometry",
+        "Roassal"
       ]
     }
   },
