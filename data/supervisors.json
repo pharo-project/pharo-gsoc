@@ -60,6 +60,12 @@
     "img": ""
   },
   {
+    "name": "Gabriel Darbord",
+    "email" : "gabriel.darbord@inria.fr",
+    "github": "Gabriel-Darbord",
+    "img":""
+  },
+  {
     "name": "Geraldine Galindo",
     "email": "g3.wth17@gmail.com",
     "github": "GeraldineGalindo",
@@ -171,6 +177,12 @@
     "name": "Balša Šarenac",
     "email": "balsasarenac@uns.ac.rs",
     "github": "balsa-sarenac",
+    "img": ""
+  },
+  {
+    "name": "Tim Mackinnon",
+    "email": "",
+    "github": "macta",
     "img": ""
   }
 ]
