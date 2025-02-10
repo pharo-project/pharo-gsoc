@@ -8,7 +8,7 @@ export default function CallForStudentsPage() {
 
   return (
     <div className="container">
-      <h1><mark>Google Summer of Code 2025: Call for Students</mark></h1>
+      <h1>Google Summer of Code 2025: Call for Students</h1>
 
       <p>Dear students,</p>
 
