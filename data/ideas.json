@@ -1,5 +1,26 @@
 [
    {
+    "id": "Phizura",
+    "title": "Phizura: Live Music Coding!",
+    "img": "phizura.jpg",
+    "supervisors": ["Sebastian Jordan", "Domenico Cipriani"],
+    "description": "Phizura is a cool music recording project that uses the Coypu package in Pharo to help DJs create and play music live. Coypu is a set of tools designed for programming music on-the-fly, originally made for SymbolicSound Kyma but compatible with any OSC-enabled app and MIDI hardware. It features a user-friendly syntax inspired by TidalCycles, making it easy to interact with music software. By capturing the commands and timing of their performances, Phizura will turn these into easy-to-read code. This means DJs can record their sets and reproduce them later, making it a fun way to document their creativity!",
+    "goal": "The goal of Phizura is to build a system that lets DJs record and replay their live performances through generated code. Students will get hands-on experience with music programming while creating something exciting and useful. Phizura will help them explore new ways to make and share music!",
+    "keywords": ["live music" , "recorder" , "instrumentation"],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Basic OOP",
+        "Unit tests",
+        "Pharo"
+      ],
+      "preferred": [
+        "Object oriented programming"
+      ]
+    }
+   },
+   {
     "id": "dockerScratchDeployments",
     "title": "Pharo VM running as Docker Scratch image",
     "img": "dockervm.png",
