@@ -132,14 +132,14 @@
   },
   {
     "id": "pharo-optimisation",
-    "title": "Optimising Pharo Compiler",
+    "title": "Optimizing the Pharo Compiler with Bytecode-Level Inlining",
     "img": "nahue-opt-pharo.png",
     "supervisors": [
       "Nahuel Palumbo",
       "Pablo Tesone"
     ],
-    "description": "This is an experiment to inline Pharo methods at the bytecode level. The idea is to collect information about the methods that are called for some message sends and recompile the sender method inlining the callees. The main goal is to reduce the number of method calls in the VM and improve performance.",
-    "goal": "Generate optimised bytecode for Collection's methods. It means developing a type system to collect the type info from PICs, and recompile the methods with an optimising compiler (WIP). We also want to measure the performance of this strategy.",
+    "description": "This project explores inlining Pharo methods at the bytecode level to improve performance. The approach involves gathering runtime information about method calls and recompiling the sender method with inlined callees. By reducing the number of method calls in the VM, this optimization aims to enhance execution speed.",
+    "goal": "Optimize bytecode generation for Collection methods by:\n- Developing a type system to gather type information at runtime.\n- Extending the experimental optimizing compiler to use collected types for inlining message sends.\n- Tracking inlined methods to ensure automatic recompilation when modified.\n\nThis experiment seeks to refine Pharo’s compilation strategy, leveraging method inlining for better performance while maintaining flexibility in dynamic code updates.",
     "keywords": [
       "Optimisation",
       "Inline",
