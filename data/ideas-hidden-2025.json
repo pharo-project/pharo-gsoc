@@ -340,5 +340,33 @@
             "UI/UX"
           ]
         }
+      },
+      {
+        "id": "eclipse-lsp",
+        "title": "Eclipse-LSP in Pharo",
+        "img": "nicolas-ide.png",
+        "supervisors": [
+          "Nicolas Anquetil",
+          "Benoit Verhaeghe"
+        ],
+        "description": "The Language Server Protocol (LSP) defines the protocol used between an editor or IDE and a language server that provides language features like auto complete or rule violations (see picture). There is an initial implementation of LSP in Pharo. We are looking at making it work with the Eclipse SLP client plugin. This will involve straightening the existing SLP implementation (writing tests) and understand how Eclipse SLP plugin work.",
+        "goal": "- A better SLP implementation in Pharo (more robust, with tests)\n- a better comprehension of how Eclipse SLP plugin works and what can be done with it",
+        "keywords": [
+          "Language Server Protocol",
+          "Pharo",
+          "Eclipse"
+        ],
+        "size": "Medium",
+        "difficulty": "Medium",
+        "skills": {
+          "required": [
+            "OOP",
+            "Meta Programming",
+            "Eclipse Plugin"
+          ],
+          "preferred": [
+            "Pharo"
+          ]
+        }
       }
 ]
