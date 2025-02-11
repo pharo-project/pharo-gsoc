@@ -25,7 +25,8 @@
     "title": "Pharo VM running as Docker Scratch image",
     "img": "dockervm.png",
     "supervisors": [
-      "Tim Mackinnon"
+      "Tim Mackinnon",
+      "Sebastian Jordan"
     ],
     "description": "This project aims to enable an efficient deployment mechanism for Pharo applications, where they run in a Docker scratch (layer 0) image without any operating system dependency or overhead. Being able to run pharo in an efficient docker image simplifies deployment particularly in the web space where docker images are becoming a defacto standard. Pharo is quite unique as its possible to run without any file io dependencies in a self contained manner that matches scratch image requirements. The smaller size of a scratch image also means improved resource management and also reduces secuirty risks inherent with operating system overhead that isn't needed for many classes of pharo application, particularly web based ones. The student will need to study the hello world docker scratch example and then figure out how to statically compile the vm, necessary plugins and image so that no dynamic operating system dependencies are needed for execution.",
     "goal": "Have a pharo vm+image run in a docker scratch image where there is no operating system dependency or overhead",
@@ -47,29 +48,6 @@
       "preferred": [
         "Web Applications"
       ]
-    }
-  },
-  {
-    "id": "serialization",
-    "title": "Better Serialization Support",
-    "img": "guille-serialization.jpeg",
-    "supervisors": [
-      "Guillermo Polito",
-      "Nahuel Palumbo"
-    ],
-    "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require a lot of manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
-    "goal": "- Replace the storeOn mechanism with STON literal serialization (see [pharo #3319](https://github.com/pharo-project/pharo/issues/3319))\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures\n- Improve the performance of Fuel serialization with an improved identity hash table",
-    "keywords": [
-      "Serialization"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Refactoring",
-        "OOP"
-      ],
-      "preferred": []
     }
   },
   {

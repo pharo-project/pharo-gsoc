@@ -368,5 +368,28 @@
             "Pharo"
           ]
         }
+      },
+      {
+        "id": "serialization",
+        "title": "Better Serialization Support",
+        "img": "guille-serialization.jpeg",
+        "supervisors": [
+          "Guillermo Polito",
+          "Nahuel Palumbo"
+        ],
+        "description": "This project aims at redesigning the textual and binary serialization support. Pharo has several textual serialization mechanisms (printOn, displayOn, storeOn, STON), and pickle binary format using Fuel.  Some of them are non-working or require a lot of manual work, and some of them are inefficient. Most of them repeat some code and can be replaced with another.",
+        "goal": "- Replace the storeOn mechanism with STON literal serialization (see [pharo #3319](https://github.com/pharo-project/pharo/issues/3319))\n- Review the displayOn mechanism\n- Improve the printOn mechanism to not block on long print strings\n- Improve serialization of methods and block closures\n- Improve the performance of Fuel serialization with an improved identity hash table",
+        "keywords": [
+          "Serialization"
+        ],
+        "size": "Medium",
+        "difficulty": "Medium",
+        "skills": {
+          "required": [
+            "Refactoring",
+            "OOP"
+          ],
+          "preferred": []
+        }
       }
 ]
