@@ -118,7 +118,7 @@ export default function CallForStudentsPage() {
           <li>The proposed project is interesting and relevant to the community. All projects in our list of ideas were selected by the community and represent something we want to have in Pharo. So if you propose your own project, make sure to discuss your idea on the mailing list and Discord and see if people need it.</li>
         </ul>
         <li>Follow the <a href="https://google.github.io/gsocguides/student/writing-a-proposal#the-basics">instructions for writing a project proposal</a>.</li>
-        <li>As an example, take a look at <a href="https://drive.google.com/drive/folders/1oAmutbsbOCHLvdkQleVDvYtHZs9OxhMR?usp=sharing">project proposals that were accepted by Pharo Consortium in previous years</a>.</li>
+        <li>As an example, take a look at <a href="https://drive.google.com/drive/folders/1_-VJ0YXBfUsELWTzekWYqHf0fFpYHdq7?usp=sharing)">project proposals that were accepted by Pharo Consortium in previous years</a>.</li>
         <li>Don’t write your project proposal alone. As soon as you have the first draft (no matter how bad you think it is), send it to the mentors and preferably to the mailing list and the dedicated channel on Discord. High-quality proposals are written iteratively: <i>draft - get feedback - update - get feedback - update ...</i></li>
         <li>Submit your proposal early; you can update your draft on the GSoC website later. But be careful not to miss the <a href="https://developers.google.com/open-source/gsoc/timeline">deadline</a>.</li>
       </ul>
