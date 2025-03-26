@@ -619,5 +619,33 @@
         "Garbage Collection"
       ]
     }
+  },
+  {
+    "id": "chess-game-bloc",
+    "title": "Chess Game with AI",
+    "img": "chess.jpg",
+    "supervisors": ["Sebastian Jordan"],
+    "description": "Develop a chess game with an AI bot player using the [Bloc framework](https://github.com/pharo-graphics/bloc) for the UI.\n Design and build the game architecture, then develop the AI algorithm using advanced strategies to challenge human players.\n Optionally, integrate with the LiChess API for daily chess puzzles and additional features. Squeak chess implementation can be used as a reference.",
+    "goal": "The goal is to create a feature-rich chess game with a user-friendly graphical interface and a challenging AI opponent. This project will provide hands-on experience in game development, UI design, API call integration and AI algorithm implementation.",
+    "keywords": [
+      "AI",
+      "Games",
+      "Bloc",
+      "Chess"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Communication skills",
+        "OOP",
+        "Pharo"
+      ],
+      "preferred": [
+        "AI and Machine Learning",
+        "Software Architecture and Design Patterns",
+        "API Integration"
+      ]
+    }
   }
 ]
