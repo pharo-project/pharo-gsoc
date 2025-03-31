@@ -310,7 +310,7 @@
     "img": "PharoRefactoringEngine.png",
     "supervisors": [
       "Balša Šarenac",
-      "Stéphane Ducasse".
+      "Stéphane Ducasse",
       "Juan Pablo Sandoval"
     ],
     "description": "One of its key strengths is its powerful development environment, which includes an advanced refactoring engine. Originally pioneered in Smalltalk, the refactoring engine plays a crucial role in maintaining code quality, improving design, and enhancing developer productivity. This proposal aims to improve Pharo’s refactoring engine by addressing usability, migrating to modern tools, and extending its capabilities with additional refactorings. By refining the refactoring workflow, this project will ensure a smoother experience for developers while keeping Pharo’s tooling at the forefront of modern software engineering practices. Ideal project to learn a lot about Pharo, ASTs, desgin, refactorings, software engineering in general!",
