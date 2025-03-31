@@ -648,4 +648,32 @@
       ]
     }
   }
+   ,
+  {
+    "id": "microdown",
+    "title": "Better support for web elements in Foliage/Microdown",
+    "img": "MicrodownFoliage.jpg",
+    "supervisors": ["Stéphane Ducasse"],
+    "description": "Improve the web support of Foliage and Microdown  [Foliage](https://github.com/Ducasse/Foliage) / [Microdown](https://github.com/pillar-markup/Microdown).",
+    "goal": "The goal is to create a feature-rich chess game with a user-friendly graphical interface and a challenging AI opponent. This project will provide hands-on experience in game development, UI design, API call integration and AI algorithm implementation.",
+    "keywords": [
+      "Document model",
+      "Markup",
+      "Web",
+      "Static generation"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Communication skills",
+        "OOP",
+        "Pharo"
+      ],
+      "preferred": [
+        "Visitor, Builder, and other patterns",
+        "OO Design"
+      ]
+    }
+  }
 ]
