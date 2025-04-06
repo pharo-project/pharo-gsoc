@@ -676,5 +676,33 @@
         "OO Design"
       ]
     }
+      ,
+  {
+    "id": "CforMoose",
+    "title": "C support for Moose",
+    "img": "Moose.jpg",
+    "supervisors": ["Stéphane Ducasse"],
+    "description": "The idea is to define a Moose plugin to support the analysis of C code.",
+    "goal": "The goal of the project is to extend the ![moose platform](https://modularmoose.org) to support C program analysis. The student will work on using a C Parser either SmaCC or TreeSitter. He will also define on a FAMIX metamodel definition for C. Then he will work on an importer (a program that given a C AST) will generate a FAMIX model for C.
+     The student will work one CPP is applied to the code.",
+    "keywords": [
+      "Moose model",
+      "C",
+      "FAMIX",
+      "Static analysis"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Communication skills",
+        "OOP",
+        "Pharo"
+      ],
+      "preferred": [
+        "Visitor, Builder, and other patterns",
+        "OO Design"
+      ]
+    }
   }
 ]
