@@ -50,35 +50,6 @@
     }
   },
   {
-    "id": "code-text-improvements",
-    "title": "Improve coding UX",
-    "img": "palu-text.png",
-    "supervisors": [
-      "Gabriel Darbord",
-      "Nahuel Palumbo"
-    ],
-    "description": "Improve the text editor capabilities for coding. It includes text drag n drop, better parenthesis support, and multiple selection.",
-    "goal": "- Support multi-cursor/selection (see [pharo #17788](https://github.com/pharo-project/pharo/issues/17788))\n- Add text drag n drop support (see [pharo #2634](https://github.com/pharo-project/pharo/issues/2634))\n- Enhance parenthesis support (see [pharo #2635](https://github.com/pharo-project/pharo/issues/2635)).",
-    "keywords": [
-      "IDE",
-      "Tooling",
-      "Text Editor",
-      "Coding"
-    ],
-    "size": "Medium",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [
-        "OOP",
-        "Debugging",
-        "Code Analysis"
-      ],
-      "preferred": [
-        "UI/UX"
-      ]
-    }
-  },
-  {
     "id": "data-structures-and-algorithms",
     "title": "Implementation of standard data structures and algorithms",
     "img": "gordana-trees.png",
@@ -106,13 +77,13 @@
   },
   {
     "id": "druid-optimisation",
-    "title": "Optimisations for a Meta-Compiler",
+    "title": "Compiler Optimizations in SSA form",
     "img": "nahue-druid.png",
     "supervisors": [
       "Nahuel Palumbo",
       "Guillermo Polito"
     ],
-    "description": "This project has the objective of improving the optimisation capabilities of the Druid meta-compiler. Druid is a meta-compiler that generates Just-In-Time Compiler code from an Interpreter definition. It performs an abstract meta-interpretation to generate an SSA-based Intermediate Representation (IR); this IR is optimised and used to generate machine code. With Druid, language implementors can define their interpreters and generate a JIT Compiler from them.",
+    "description": "Druid is a metacompiler to generate a Just-In-Time Compiler in the Pharo VM. With Druid, language implementors can define their interpreters and generate a JIT Compiler from them. It uses an SSA-based Intermediate Representation (IR) to apply optimizations.",
     "goal": "Implement some optimisation over Druid's IR, such as Dead Store Elimination, Class Hierarchy Analysis, and Arithmetic Operations Transformation. It is possible also to improve any already implemented optimisations such as Inline, Global Value Numbering, Loop Invariant Code Motion, etc.",
     "keywords": [
       "Optimisation",
@@ -132,14 +103,14 @@
   },
   {
     "id": "pharo-optimisation",
-    "title": "Optimizing the Pharo Compiler with Bytecode-Level Inlining",
+    "title": "Optimizing the Pharo Compiler at Bytecode-Level",
     "img": "nahue-opt-pharo.png",
     "supervisors": [
       "Nahuel Palumbo",
       "Pablo Tesone"
     ],
-    "description": "This project explores inlining Pharo methods at the bytecode level to improve performance. The approach involves gathering runtime information about method calls and recompiling the sender method with inlined callees. By reducing the number of method calls in the VM, this optimization aims to enhance execution speed.",
-    "goal": "Optimize bytecode generation for Collection methods by:\n- Developing a type system to gather type information at runtime.\n- Extending the experimental optimizing compiler to use collected types for inlining message sends.\n- Tracking inlined methods to ensure automatic recompilation when modified.\n\nThis experiment seeks to refine Pharo’s compilation strategy, leveraging method inlining for better performance while maintaining flexibility in dynamic code updates.",
+    "description": "This project explores the implementation of an optimizing compiler for Pharo bytecode. It uses the Druid's SSA-based intermediate representation to apply optimizations and generate efficient bytecode from source code. These optimizations involve inlinings, constant folding, dead code eliminations, etc. We want to improve already implemented optimizations, such as improve the heuristics to guide inlinings, as well as implement new specific ones, eg. optimize access variables from outer contexts. By reducing the work of the VM, we aim to enhance execution speed of executed programs.",
+    "goal": "- Developing a type system to guide the inlining of message sends.\n- Optimize access to outer context variables.\n- Develop a recompilation strategy to move to production.\n\nThis experiment seeks to refine Pharo’s compilation strategy, leveraging method inlining for better performance while maintaining flexibility in dynamic code updates.",
     "keywords": [
       "Optimisation",
       "Inline",
