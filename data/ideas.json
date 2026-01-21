@@ -279,7 +279,6 @@
     "title": "A Seamless interface between LLMs and Pharo",
     "img": "PharoLLMsInterface.png",
     "supervisors": [
-      "Balša Šarenac",
       "Omar Abedelkader"
     ],
     "description": "This project aims to create an intuitive interface between Pharo and large language models (LLMs). By integrating Pharo with LLMs, developers can leverage AI-powered assistance, automation, and natural language processing (NLP) while maintaining Pharo’s unique live programming environment. Perfect project to get familiar with Pharo and different development techniques while enabling its users to experience LLMs in one of the best live environments!",
