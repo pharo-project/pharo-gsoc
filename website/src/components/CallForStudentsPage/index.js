@@ -3,36 +3,34 @@ import * as ROUTES from '../../constants/routes';
 
 export default function CallForStudentsPage() {
   useEffect(() => {
-    document.title = "Pharo GSoC";
+    document.title = "Pharo GSoC 2026";
   }, []);
 
   return (
     <div className="container">
-      <h1>Google Summer of Code 2025: Call for Students</h1>
+      <h1>Google Summer of Code 2026: Call for Students</h1>
 
       <p>Dear students,</p>
 
-      <p>We are happy to announce that Pharo Consortium is planning to participate in Google Summer of Code 2025, and we are looking for smart and enthusiastic students to work with us during the program. In the following sections, we explain the program requirements and provide a detailed description of the application process. This text is based on the <a href="https://summerofcode.withgoogle.com/rules/">Google Summer of Code 2025 Program Rules</a>. We strongly suggest that you read the original rules. In case of any disagreement between this document and the Rules, the Rules should prevail.</p>
+      <p>We are happy to announce that Pharo Consortium is planning to participate in Google Summer of Code 2026, and we are looking for smart and enthusiastic students to work with us during the program. In the following sections, we explain the program requirements and provide a detailed description of the application process. This text is based on the <a href="https://summerofcode.withgoogle.com/rules/">Google Summer of Code 2026 Program Rules</a>. We strongly suggest that you read the original rules. In case of any disagreement between this document and the Rules, the Rules should prevail.</p>
 
       <p>If you have any additional questions, feel free to send an email to any of the organizers listed at the bottom of this page.</p>
 
       <h2>1. What is GSoC?</h2>
 
-      <p>Google Summer of Code (GSoC) is a global program focused on introducing students to open source software development. Students work on programming project with an open-source organization during their break from university for 12+ weeks. You can read more about the program on its <a href="https://summerofcode.withgoogle.com/">official website</a>. We want to emphasize the following:</p>
+      <p>Google Summer of Code (GSoC) is a global program focused on introducing students and open source beginners to open source software development. Students work on programming projects with an open-source organization during their break from university for 12+ weeks. You can read more about the program on its <a href="https://summerofcode.withgoogle.com/">official website</a>. We want to emphasize the following:</p>
 
       <ul>
-        <li>The length of time allowed to complete a project can range from 10 weeks to 22 weeks.</li>
-        <li>The standard length will be 12 weeks, while it can be extended.</li>
-        <li>The active part of the program starts on <code>May 8</code> for everybody.</li>
-        <li>The first period of the program <code>(May 8 - June 1)</code> is called the community bonding period. During this time, you will be introduced to our community, get comfortable with our communication channels (Discord and mailing lists), get to know your mentors, prepare a detailed timeline for the summer, etc.</li>
-        <li>The coding period begins on <code>June 2</code> for everybody.</li>
-        <li>During the coding period you will be working on your projects, regularly communicating with your mentors, writing blog posts, etc.</li>
-        <li>Standard coding period ends on <code>August 25</code>.</li>
-        <li>After the end of the standard coding phase, contributors with standard timeline enter the evaluation phase. The following week August 25 to September 1 is reserved for evaluation by mentors which results with initial results announcements <code>(September 1 - September 8)</code>.</li>
-        <li>Contributors with the extended timeline, continue coding in period September 1 - November 9, which is followed by submission of final product (November 10) and mentor reporting <code>(November 17)</code>.</li>
+        <li><a href="https://developers.google.com/open-source/gsoc/timeline">Program timeline</a> includes a community bonding period, coding phase, and evaluation period. </li>
+        <li>Potential GSoC contributors discuss application ideas with mentoring organizations from <code>February 19 - March 15</code>.</li>
+        <li>The contributors application period is <code>March 16 - March 31</code>.</li>
+        <li>Accepted contributors are announced on <code>April 30</code>. </li>
+        <li>A community bonding period follows announcement (early May) while coding officially starts on <code>May 25</code>. </li>
+        <li>The standard 12-week coding period runs through mid-August, with final deliverables and evaluations completed in late August. </li>
+        <li>Extended timelines may continue through November for longer projects. </li>
+
         <li>During its active part, GSoC should be treated as a full-time job. If you have more than a few hours a week of extra commitments, you probably should skip GSoC; it is unlikely that you will be successful. In any case, be completely clear about outside time commitments as part of your proposal.</li>
         <li>Accepted students will be receiving a stipend (payment) from Google in two parts: <code>45% on July 18 and 55% on September 9</code>. Stipend amounts are calculated based on your residency country during the program and the length of the program (standard or extended). Check the info on <a href="https://developers.google.com/open-source/gsoc/help/student-stipends">the website</a>.</li>
-        <li>GSoC participants are considered independent developers paid by a stipend and are not employed by Google or GSoC Organization.</li>
       </ul>
 
       <h2>2. What is Pharo?</h2>
@@ -46,33 +44,28 @@ export default function CallForStudentsPage() {
 
       <h2>3. Eligibility criteria</h2>
 
-      <p>To apply for Google Summer of Code with Pharo Consortium, you must satisfy the Eligibility Criteria for students found in the corresponding section of the <a href="https://summerofcode.withgoogle.com/rules/">Program Rules</a>.</p>
-
-      <p>We want to emphasize that every applicant must be:</p>
+      <p>To apply for Google Summer of Code with Pharo Consortium, you must satisfy the eligibility criteria found in the <a href="https://summerofcode.withgoogle.com/rules/">Program Rules</a>. Key points include:</p>
 
       <ul>
         <li><strong>eighteen (18) years of age or older</strong> upon registration for the program.</li>
-        <li>an open source beginner or a student.</li>
-        <li>eligible to work in the country in which they reside for the duration of the program.</li>
+        <li>An open source beginner or student.</li>
+        <li>Eligible to work in the country in which you reside for the duration of the program.</li>
       </ul>
 
-
-      <p>while applicants must <strong>not</strong> be</p>
+      <p>Applicants must <strong>not</strong> be:</p>
 
       <ul>
-        <li>a resident of a country currently embargoed by the United States.</li>
-        <li>contractor of Google or its affiliate.</li>
-        <li>contractor of the Mentoring Organization or its affiliates.</li>
-        <li>an Organization Administrator or Mentor in the program.</li>
+        <li>A resident of a country currently embargoed by the United States.</li>
+        <li>A contractor of Google or its affiliate.</li>
+        <li>An Organization Administrator or Mentor in the program.</li>
       </ul>
-
 
       <h3>3.1. Strongly preferred by Pharo Consortium</h3>
 
       <ul>
         <li>Good knowledge of OOP.</li>
-        <li>Basic idea about Pharo & Smalltalk syntax and ongoing projects.</li>
-        <li>Experience with Pharo & Smalltalk.</li>
+        <li>Basic familiarity with Pharo & Smalltalk.</li>
+        <li>Experience with Pharo & Smalltalk is a plus.</li>
       </ul>
 
       <h2>4. Before applying (how to increase your chances of being accepted)</h2>
@@ -99,17 +92,16 @@ export default function CallForStudentsPage() {
 
       <h2>5. How to apply?</h2>
 
-      <p>To <a href="https://summerofcode.withgoogle.com/get-started">apply for Google Summer of Code</a>, you must:</p>
+      <p>To <a href="https://summerofcode.withgoogle.com/get-started">apply for Google Summer of Code 2026</a>, you must:</p>
 
       <ol>
         <li>Accept the terms of the Student Participant Agreement</li>
         <li>Submit a Project Proposal</li>
       </ol>
 
-      <p><b>The application period is <code>March 24, 18:00 UTC - April 8, 18:00 UTC</code></b>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of Google Summer of Code 2025.
-      </a>.</p>
+      <p><strong>The application period is <code>March 16 - March 31 (18:00 UTC)</code></strong>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">official GSoC timeline</a> for more details. }</p>
 
-      <h3>5.1. Writing a project proposal</h3>
+           <h3>5.1. Writing a project proposal</h3>
 
       <ul>
         <li>Take a look at the <a href={ROUTES.IDEAS}>list of ideas</a> proposed by the Pharo Community. You can take any one of these topics or suggest your own. However, you must make sure that:</li>
@@ -125,14 +117,11 @@ export default function CallForStudentsPage() {
 
       <h2>6. What will be the main responsibilities of accepted students?</h2>
 
-      <p>Accepted students have the responsibilities to:</p>
-
       <ul>
-        <li>Follow the plan declared in your project proposal.</li>
-        <li>Submit daily reports of your progress to our mailing list (what did you do today, what do you plan to do tomorrow, what problems or questions do you have).</li>
-        <li>Write a blog post every week to document your work and report your progress to the community.</li>
-        <li>Regularly communicate with your mentors and the broader community.</li>
-        <li>Ask for help when something is preventing you from achieving a goal.</li>
+        <li>Follow the plan in your project proposal.</li>
+        <li>Communicate regularly with mentors and community.</li>
+        <li>Submit progress reports and blog posts throughout the summer.</li>
+         <li>Ask for help when something is preventing you from achieving a goal.</li>
         <li>Re-evaluate work scope when you are significantly ahead of expectations.</li>
         <li>Inform when work capacity will be reduced, as early as possible (e.g., family, health, other work).</li>
       </ul>
@@ -140,6 +129,8 @@ export default function CallForStudentsPage() {
       <p>Read more about <a href="https://developers.google.com/open-source/gsoc/help/responsibilities">student responsibilities</a>.</p>
 
       <h2>7. Conclusion</h2>
+
+      <p>We look forward to great talent joining our organisation this summer. Stay tuned for project ideas and start preparing early!</p>
 
       <p>You can read the following blog posts written by students who have completed the Google Summer of Code with Pharo Consortium in previous years:</p>
 
@@ -153,8 +144,6 @@ export default function CallForStudentsPage() {
         <li>Rajula Vineet Reddy, <a href="https://vineetreddy.wordpress.com/2018/01/14/google-summer-of-code-all-the-whats-hows-whys/?fbclid=IwAR11UyBQ4s1W4qRngIJzJXdjimc48NGzQJy8DcKDpfe-DlfAbA-YmqbAbB8">Google Summer of Code – All the What’s, How’s & Why’s</a></li>
         <li>Nina Medić and Smiljana Knežev, <a href="https://pharokeepers.github.io/">Pharokeepers in GSoC 2019</a></li>
       </ul>
-
-      <p>We are looking forward to great talent joining our organisation this summer.</p>
 
       <p>Warm Regards, Pharo Organisation Admins:</p>
 
