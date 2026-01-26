@@ -245,36 +245,36 @@
       ]
     }
   },
-  {
-    "id": "LLMInterface",
-    "title": "A Seamless interface between LLMs and Pharo",
-    "img": "PharoLLMsInterface.png",
-    "supervisors": [
-      "Balša Šarenac",
-      "Omar Abedelkader"
+{
+  "id": "ChatPharo",
+  "title": "ChatPharo: Bringing LLMs to Live Programming",
+  "img": "PharoLLMsInterface.png",
+  "supervisors": [
+    "Omar AbedelKader"
+  ],
+  "description": "This project focuses on improving and extending an existing interface between Pharo and large language models (LLMs). The current integration already allows interaction with LLMs within Pharo’s live programming environment; the proposed work aims to refine the interface, enhance usability, expand functionality, and improve developer workflows. By building on this foundation, developers can better leverage AI-powered assistance, automation, and natural language interaction while preserving Pharo’s unique live programming experience.",
+  "goal": "The goal is to enhance the native UI interface that interacts with various LLM providers. Users should be able to chat with selected LLMs more effectively and define custom actions that send code to LLMs for analysis, transformation, or modification.",
+  "keywords": [
+    "AI",
+    "LLM",
+    "UI",
+    "IDE",
+    "Code improvements"
+  ],
+  "size": "Medium",
+  "difficulty": "Medium",
+  "skills": {
+    "required": [
+      "OOP",
+      "Communication skills",
+      "AI"
     ],
-    "description": "This project aims to create an intuitive interface between Pharo and large language models (LLMs). By integrating Pharo with LLMs, developers can leverage AI-powered assistance, automation, and natural language processing (NLP) while maintaining Pharo’s unique live programming environment. Perfect project to get familiar with Pharo and different development techniques while enabling its users to experience LLMs in one of the best live environments!",
-    "goal": "The goal is to implement native UI interface that will interact with various LLM providers. Users should be able to chat with chosen type of LLM, and create custom actions that will send code to LLMs to make modifications on them.",
-    "keywords": [
+    "preferred": [
       "AI",
-      "LLM",
-      "UI",
-      "IDE",
-      "Code improvements"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "OOP",
-        "Communication skills"
-      ],
-      "preferred": [
-        "AI",
-        "Pharo"
-      ]
-    }
-  },
+      "Pharo"
+    ]
+  }
+},
   {
     "id": "PharoRefactoringEngine",
     "title": "Enhancing Pharo’s Refactoring Engine for a Smarter Development Experience",
