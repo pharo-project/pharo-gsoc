@@ -1,26 +1,5 @@
 [
    {
-    "id": "Phizura",
-    "title": "Phizura: Live Music Coding!",
-    "img": "phizura.jpg",
-    "supervisors": ["Sebastian Jordan", "Domenico Cipriani"],
-    "description": "Phizura is a cool music recording project that uses the Coypu package in Pharo to help DJs create and play music live. Coypu is a set of tools designed for programming music on-the-fly, originally made for SymbolicSound Kyma but compatible with any OSC-enabled app and MIDI hardware. It features a user-friendly syntax inspired by TidalCycles, making it easy to interact with music software. By capturing the commands and timing of their performances, Phizura will turn these into easy-to-read code. This means DJs can record their sets and reproduce them later, making it a fun way to document their creativity!",
-    "goal": "The goal of Phizura is to build a system that lets DJs record and replay their live performances through generated code. Students will get hands-on experience with music programming while creating something exciting and useful. Phizura will help them explore new ways to make and share music!",
-    "keywords": ["live music" , "recorder" , "instrumentation"],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Basic OOP",
-        "Unit tests",
-        "Pharo"
-      ],
-      "preferred": [
-        "Object oriented programming"
-      ]
-    }
-   },
-   {
     "id": "dockerScratchDeployments",
     "title": "Pharo VM running as Docker Scratch image",
     "img": "dockervm.png",
@@ -51,19 +30,20 @@
   },
   {
     "id": "data-structures-and-algorithms",
-    "title": "Implementation of standard data structures and algorithms",
+    "title": "Implementation of data structures and algorithms",
     "img": "gordana-trees.png",
     "supervisors": [
+      "Sebastian Jordan",
       "Gordana Rakic",
-      "Stéphane Ducasse",
-      "Sebastian Jordan"
+      "Stéphane Ducasse"
     ],
-    "description": "Support for data structures such as various kinds of lists and trees are weakly supported in Pharo, while the ones that are implemented are not wel designed which makes maintenance and extensions more difficult. A nice data structures design with a stable and reflective API together with corresponding algorithms implementation are the main task in this project idea.",
-    "goal": "The main goal is to create a flexible and extensible data structures design and to implement at least some of basic lists such as (double-)linked lists, a heap, a stack, a buffer, and some of basic trees e.g. a binary tree, a binary search tree, a self-balancing tree, an AVL, a red-black, or a B-tree.",
+    "description": "Pharo has a vast implementationg of data structures such as various kinds of lists, trees and graphs. It also has a vast collection of graph algorithms, pattern matching algorithms, string matching, and others. The idea of this project is to improve the data structures and algorithms by adding new ones or optimizing the current ones. The project can take several directions, depending on the student's interests. For more information check or implementations on GitHub. github.com/pharo-ai/graph-algorithms https://github.com/pharo-containers https://github.com/pharo-ai/ ",
+    "goal": "The main goal is to create solid data structures and algorithms. The implementations should always be benchmarked to measure the performance and of course it must have sounding tests.",
     "keywords": [
-      "Design",
-      "API",
-      "Data Structures"
+      "Data Structures",
+      "Algorithms",
+      "Graphs",
+      "Machine learning"
     ],
     "size": "Large",
     "difficulty": "Medium",
@@ -220,8 +200,7 @@
     "title": "Fault Location DrTest Plugin",
     "img": "fault-location.jpg",
     "supervisors": [
-      "Juan Pablo Sandoval",
-      "Sebastian Jordan"
+      "Juan Pablo Sandoval"
     ],
     "description": "In this project, the student will implement two or three different fault location algorithms, for this, it will also be necessary to implement a matrix coverage. Then we will integrate the fault location algorithms in the DrTest UI tool, and of course to Pharo itself.",
     "goal": "The goal is implement a plugin for DrTest that implements two or three fault location state-of-the-art algorithms.",
@@ -473,35 +452,6 @@
       ]
     }
   },
-  {
-    "id": "chess-game-bloc",
-    "title": "Chess Game with AI",
-    "img": "chess.jpg",
-    "supervisors": ["Sebastian Jordan"],
-    "description": "Develop a chess game with an AI bot player using the [Bloc framework](https://github.com/pharo-graphics/bloc) for the UI.\n Design and build the game architecture, then develop the AI algorithm using advanced strategies to challenge human players.\n Optionally, integrate with the LiChess API for daily chess puzzles and additional features. Squeak chess implementation can be used as a reference.",
-    "goal": "The goal is to create a feature-rich chess game with a user-friendly graphical interface and a challenging AI opponent. This project will provide hands-on experience in game development, UI design, API call integration and AI algorithm implementation.",
-    "keywords": [
-      "AI",
-      "Games",
-      "Bloc",
-      "Chess"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Communication skills",
-        "OOP",
-        "Pharo"
-      ],
-      "preferred": [
-        "AI and Machine Learning",
-        "Software Architecture and Design Patterns",
-        "API Integration"
-      ]
-    }
-  }
-   ,
   {
     "id": "microdown",
     "title": "Better support for web elements in Foliage/Microdown",
