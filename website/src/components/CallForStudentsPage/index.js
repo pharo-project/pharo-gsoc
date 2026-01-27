@@ -99,7 +99,7 @@ export default function CallForStudentsPage() {
         <li>Submit a Project Proposal</li>
       </ol>
 
-      <p><strong>The application period is <code>March 16 - March 31 (18:00 UTC)</code></strong>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">official GSoC timeline</a> for more details. }</p>
+      <p><strong>The application period is <code>March 16 - March 31 (18:00 UTC)</code></strong>. Be sure to check the complete <a href="https://developers.google.com/open-source/gsoc/timeline">official GSoC timeline</a> for more details.</p>
 
            <h3>5.1. Writing a project proposal</h3>
 
@@ -149,10 +149,11 @@ export default function CallForStudentsPage() {
 
       <ul>
         <li>Sebastian Jordan &#60;<a href="mailto:sebastian.jordan@inria.fr">sebastian.jordan@inria.fr</a>&#62;</li>
+        <li>Nahuel Palumbo &#60;<a href="mailto:nahuel.palumbo@gmail.com">nahuel.palumbo@gmail.com</a>&#62;</li>
+        <li>Gordana Rakić &#60;<a href="mailto:goca.rakic@gmail.com">goca.rakic@gmail.com</a>&#62;</li>
         <li>Oleksandr Zaytsev &#60;<a href="mailto:olk.zaytsev@gmail.com">olk.zaytsev@gmail.com</a>&#62;</li>
         <li>Serge Stinckwich &#60;<a href="mailto:serge.stinckwich@gmail.com">serge.stinckwich@gmail.com</a>&#62;</li>
-        <li>Juan Pablo Sandoval Alcocer &#60;<a href="mailto:juampiboy@gmail.com">juampiboy@gmail.com</a>&#62;</li>
-        <li>Gordana Rakić &#60;<a href="mailto:goca.rakic@gmail.com">goca.rakic@gmail.com</a>&#62;</li>
+        <li>Juan Pablo Sandoval Alcocer &#60;<a href="mailto:juampiboy@gmail.com">juampiboy@gmail.com</a>&#62;</li>      
       </ul>
 
     </div>
