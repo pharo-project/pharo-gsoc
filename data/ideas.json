@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "dockerScratchDeployments",
     "title": "Pharo VM running as Docker Scratch image",
     "img": "dockervm.png",
@@ -224,36 +224,36 @@
       ]
     }
   },
-{
-  "id": "ChatPharo",
-  "title": "ChatPharo: Bringing LLMs to Live Programming",
-  "img": "PharoLLMsInterface.png",
-  "supervisors": [
-    "Omar AbedelKader"
-  ],
-  "description": "This project focuses on improving and extending an existing interface between Pharo and large language models (LLMs). The current integration already allows interaction with LLMs within Pharo’s live programming environment; the proposed work aims to refine the interface, enhance usability, expand functionality, and improve developer workflows. By building on this foundation, developers can better leverage AI-powered assistance, automation, and natural language interaction while preserving Pharo’s unique live programming experience.",
-  "goal": "The goal is to enhance the native UI interface that interacts with various LLM providers. Users should be able to chat with selected LLMs more effectively and define custom actions that send code to LLMs for analysis, transformation, or modification.",
-  "keywords": [
-    "AI",
-    "LLM",
-    "UI",
-    "IDE",
-    "Code improvements"
-  ],
-  "size": "Medium",
-  "difficulty": "Medium",
-  "skills": {
-    "required": [
-      "OOP",
-      "Communication skills",
-      "AI"
+  {
+    "id": "ChatPharo",
+    "title": "ChatPharo: Bringing LLMs to Live Programming",
+    "img": "PharoLLMsInterface.png",
+    "supervisors": [
+      "Omar Abedelkader"
     ],
-    "preferred": [
+    "description": "This project focuses on improving and extending an existing interface between Pharo and large language models (LLMs). The current integration already allows interaction with LLMs within Pharo’s live programming environment; the proposed work aims to refine the interface, enhance usability, expand functionality, and improve developer workflows. By building on this foundation, developers can better leverage AI-powered assistance, automation, and natural language interaction while preserving Pharo’s unique live programming experience.",
+    "goal": "The goal is to enhance the native UI interface that interacts with various LLM providers. Users should be able to chat with selected LLMs more effectively and define custom actions that send code to LLMs for analysis, transformation, or modification.",
+    "keywords": [
       "AI",
-      "Pharo"
-    ]
-  }
-},
+      "LLM",
+      "UI",
+      "IDE",
+      "Code improvements"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "OOP",
+        "Communication skills",
+        "AI"
+      ],
+      "preferred": [
+        "AI",
+        "Pharo"
+      ]
+    }
+  },
   {
     "id": "PharoRefactoringEngine",
     "title": "Enhancing Pharo’s Refactoring Engine for a Smarter Development Experience",
@@ -456,7 +456,9 @@
     "id": "microdown",
     "title": "Better support for web elements in Foliage/Microdown",
     "img": "MicrodownFoliage.jpg",
-    "supervisors": ["Stéphane Ducasse"],
+    "supervisors": [
+      "Stéphane Ducasse"
+    ],
     "description": "Improve the web support of Foliage and Microdown  [Foliage](https://github.com/Ducasse/Foliage) / [Microdown](https://github.com/pillar-markup/Microdown).",
     "goal": "The goal is to extend Microdown and Foliage to support new kinds of components for static websites deployed in Foliage. Examples are shown in the screenshot: list of book descriptions. Other examples are list of publication. Microdown is easily extensible because it has been designed for this kind of scenario.",
     "keywords": [
@@ -478,13 +480,15 @@
         "OO Design"
       ]
     }
-  }
-      ,
+  },
   {
     "id": "CforMoose",
     "title": "C support for Moose",
     "img": "Moose.jpg",
-    "supervisors": ["Stéphane Ducasse", "Nicolas Anquetil"],
+    "supervisors": [
+      "Stéphane Ducasse",
+      "Nicolas Anquetil"
+    ],
     "description": "The idea is to define a Moose plugin to support the analysis of C code.",
     "goal": "The goal of the project is to extend the ![moose platform](https://modularmoose.org) to support C program analysis. The student will work on using a C Parser either SmaCC or TreeSitter. He will also define on a FAMIX metamodel definition for C. Then he will work on an importer (a program that given a C AST) will generate a FAMIX model for C. The student will work one CPP is applied to the code.",
     "keywords": [
