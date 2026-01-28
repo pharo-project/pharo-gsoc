@@ -1,4 +1,32 @@
 [
+   {
+    "id": "GenericAST4Moose",
+    "title": "A generic AST for Moose",
+    "img": "Moose.jpg",
+    "supervisors": ["Nicolas Anquetil"],
+    "description": "The idea is to define a generic meta-model for ASTs",
+      "goal": "The ![moose platform](https://modularmoose.org) uses meta-models to represent programs. FAST (Famix-AST) is the familly of meta-models for AST in Moose. It represents the source code with a very fine level of details. Currently Moose as FAST  meta-models for Java, Fortran-77, Fortran-2008, and Pharo. There is ongoing work for TypeScript and Python. The goal of the project is to define generic AST concepts that will allow to easily create new langage specific AST meta-models that would work with all Moose tools.",
+    "keywords": [
+	"Moose",
+	"meta-models",
+	"AST",
+	"FAMIX",
+	"Static analysis"
+    ],
+      "size": "Large",
+      "difficulty": "Medium",
+      "skills": {
+	  "required": [
+              "Communication skills",
+              "OOP",
+              "Pharo"
+	  ],
+	  "preferred": [
+              "Visitor, Builder, and other patterns",
+              "OO Design"
+	  ]
+      }
+  },
   {
     "id": "dockerScratchDeployments",
     "title": "Pharo VM running as Docker Scratch image",
