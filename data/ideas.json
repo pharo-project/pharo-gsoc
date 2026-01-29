@@ -510,5 +510,38 @@
         "OO Design"
       ]
     }
+  },
+
+   {
+  "id": "Pharo54",
+  "title": "A DJ Application with Phausto and Bloc",
+  "img": "pharo54.png",
+  "supervisors": [
+    "Domenico Cipriani",
+    "Sebastian Jordan Montaño"
+  ],
+  "description": "Develop a DJ application in Pharo using Phausto for audio playback, filters, and effects, and Bloc for the user interface.",
+  "goal": "Phausto is a Pharo library API that enables sound synthesis and digital signal processing (DSP) by embedding Faust. It can be used to play back audio files as well as to build audio filters and effects. By using Bloc to design the user interface, a modern DJ application can be developed, including features such as reading audio file metadata and organizing tracks into playlists. Additional features such as BPM detection, synchronization, and quantization can be implemented using Pharo core classes and methods.",
+  "keywords": [
+    "Pharo",
+    "Phausto",
+    "Bloc",
+    "Music",
+    "UX Design"
+  ],
+  "size": "Large",
+  "difficulty": "Medium",
+  "skills": {
+    "required": [
+      "Pharo"
+    ],
+    "preferred": [
+      "Phausto",
+      "Bloc",
+      "Sound synthesis and DSP programming",
+      "UX Design"
+    ]
   }
+}
+
 ]
