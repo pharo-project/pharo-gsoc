@@ -36,13 +36,23 @@
     "description": "This project involves creating a virtual marketplace where users can create and trade digital assets using smart contracts, with penalties for front-running or other forms of market manipulation. An algorithm could recognize when market manipulation is occurring, and the developed model will help to detect patterns of abnormal trading activities and impose punishments accordingly, such as account suspensions or financial penalties for offenders engaging in front-running practices. It also could introduce a “reputation score” feature to reward users who are more compliant with the rules and penalize those who break them. CORMAS (A platofrm for COmmon-pool Resources and Multi-Agent Simulations in Pharo) could be used to speed up developement.",
     "goal": "We hope that the student learns to simulate models of economic agents using an appropriate development platform such as CORMAS",
     "keywords": [
-      "ABM", "Agent-based Simulation", "DEX", "Front-running", "Smart Contracts", "Trading"
+      "ABM",
+      "Agent-based Simulation",
+      "DEX",
+      "Front-running",
+      "Smart Contracts",
+      "Trading"
     ],
     "size": "Large",
     "difficulty": "Hard",
     "skills": {
-      "required": [ "Pharo" ],
-      "preferred": [ "Agent-Based Modeling", "Descentralized Exchanges" ]
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Agent-Based Modeling",
+        "Descentralized Exchanges"
+      ]
     }
   },
   {
@@ -94,6 +104,63 @@
       "preferred": [
         "Music theory",
         "In addition of a good knowledge of Pharo, a basic knowledge of Haskell/Python/Javascript is preferred (to be able to refer to the codebase of TidalCycles/Vortex/Strudel"
+      ]
+    }
+  },
+  {
+    "id": "dockerScratchDeployments",
+    "title": "Pharo VM running as Docker Scratch image",
+    "img": "dockervm.png",
+    "supervisors": [
+      "Tim Mackinnon"
+    ],
+    "description": "This project aims to enable an efficient deployment mechanism for Pharo applications, where they run in a Docker scratch (layer 0) image without any operating system dependency or overhead. Being able to run pharo in an efficient docker image simplifies deployment particularly in the web space where docker images are becoming a defacto standard. Pharo is quite unique as its possible to run without any file io dependencies in a self contained manner that matches scratch image requirements. The smaller size of a scratch image also means improved resource management and also reduces secuirty risks inherent with operating system overhead that isn't needed for many classes of pharo application, particularly web based ones. The student will need to study the hello world docker scratch example and then figure out how to statically compile the vm, necessary plugins and image so that no dynamic operating system dependencies are needed for execution.",
+    "goal": "Have a pharo vm+image run in a docker scratch image where there is no operating system dependency or overhead",
+    "keywords": [
+      "docker",
+      "deployment",
+      "security"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Docker",
+        "VM",
+        "CI/CD",
+        "C",
+        "Pharo"
+      ],
+      "preferred": [
+        "Web Applications"
+      ]
+    }
+  },
+    {
+    "id": "MOP",
+    "title": "Meta-Object Protocol for Object-Centric Debugging Tools Implementation",
+    "img": "",
+    "supervisors": [
+      "Steven Costiou",
+      "Valentin Bourcier"
+    ],
+    "description": "In this project, the student will start for a MOP prototype, improve the MOP design, extend it, test it, and apply it to the implementation of object-centric debuggers.",
+    "goal": "Design and implement a meta-object protocol for building object-centric debugging tools.",
+    "keywords": [
+      "Object-Centric Debugging",
+      "Reflection"
+    ],
+    "size": "Medium",
+    "difficulty": "Hard",
+    "skills": {
+      "required": [
+        "OOP",
+        "Debugging",
+        "Reflection",
+        "Communication skills"
+      ],
+      "preferred": [
+        "Reflection"
       ]
     }
   }

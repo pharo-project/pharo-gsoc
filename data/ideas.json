@@ -30,35 +30,6 @@
     }
   },
   {
-    "id": "dockerScratchDeployments",
-    "title": "Pharo VM running as Docker Scratch image",
-    "img": "dockervm.png",
-    "supervisors": [
-      "Tim Mackinnon"
-    ],
-    "description": "This project aims to enable an efficient deployment mechanism for Pharo applications, where they run in a Docker scratch (layer 0) image without any operating system dependency or overhead. Being able to run pharo in an efficient docker image simplifies deployment particularly in the web space where docker images are becoming a defacto standard. Pharo is quite unique as its possible to run without any file io dependencies in a self contained manner that matches scratch image requirements. The smaller size of a scratch image also means improved resource management and also reduces secuirty risks inherent with operating system overhead that isn't needed for many classes of pharo application, particularly web based ones. The student will need to study the hello world docker scratch example and then figure out how to statically compile the vm, necessary plugins and image so that no dynamic operating system dependencies are needed for execution.",
-    "goal": "Have a pharo vm+image run in a docker scratch image where there is no operating system dependency or overhead",
-    "keywords": [
-      "docker",
-      "deployment",
-      "security"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Docker",
-        "VM",
-        "CI/CD",
-        "C",
-        "Pharo"
-      ],
-      "preferred": [
-        "Web Applications"
-      ]
-    }
-  },
-  {
     "id": "data-structures-and-algorithms",
     "title": "Algorithms, data structures and graphs",
     "img": "gordana-trees.png",
@@ -194,34 +165,6 @@
       "preferred": [
         "Testing",
         "Type Inference"
-      ]
-    }
-  },
-  {
-    "id": "MOP",
-    "title": "Meta-Object Protocol for Object-Centric Debugging Tools Implementation",
-    "img": "",
-    "supervisors": [
-      "Steven Costiou",
-      "Valentin Bourcier"
-    ],
-    "description": "In this project, the student will start for a MOP prototype, improve the MOP design, extend it, test it, and apply it to the implementation of object-centric debuggers.",
-    "goal": "Design and implement a meta-object protocol for building object-centric debugging tools.",
-    "keywords": [
-      "Object-Centric Debugging",
-      "Reflection"
-    ],
-    "size": "Medium",
-    "difficulty": "Hard",
-    "skills": {
-      "required": [
-        "OOP",
-        "Debugging",
-        "Reflection",
-        "Communication skills"
-      ],
-      "preferred": [
-        "Reflection"
       ]
     }
   },
@@ -401,6 +344,65 @@
     }
   },
   {
+    "id": "Pharo54",
+    "title": "A DJ Application with Phausto and Bloc",
+    "img": "pharo54.jpg",
+    "supervisors": [
+      "Domenico Cipriani",
+      "Sebastian Jordan"
+    ],
+    "description": "Develop a DJ application in Pharo using Phausto for audio playback, filters, and effects, and Bloc for the user interface.",
+    "goal": "Phausto is a Pharo library API that enables sound synthesis and digital signal processing (DSP) by embedding Faust. It can be used to play back audio files as well as to build audio filters and effects. By using Bloc to design the user interface, a modern DJ application can be developed, including features such as reading audio file metadata and organizing tracks into playlists. Additional features such as BPM detection, synchronization, and quantization can be implemented using Pharo core classes and methods.",
+    "keywords": [
+      "Pharo",
+      "Phausto",
+      "Bloc",
+      "Music",
+      "UX Design"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo"
+      ],
+      "preferred": [
+        "Phausto",
+        "Bloc",
+        "Sound synthesis and DSP programming",
+        "UX Design"
+      ]
+    }
+  },
+  {
+    "id": "Phuck",
+    "title": "ChucK inside Pharo",
+    "img": "phuck.png",
+    "supervisors": [
+      "Domenico Cipriani, Nahuel Palumbo"
+    ],
+    "description": "Implement an API to run the ChucK virtual machine directly from Pharo, allowing users to write and execute ChucK programs within the Pharo IDE. ChucK is a programming language for real-time sound synthesis and music creation, providing precise control over timing and audio generation. The ChucK VM has already been embedded into major platforms such as Unity, Unreal Engine, and TouchDesigner, demonstrating its versatility and integration potential. As part of this project, develop a Pharo playground to manage audio multithreading, enabling efficient concurrent audio processing, and include a custom syntax highlighter for ChucK code",
+    "keywords": [
+      "Pharo",
+      "ChucK",
+      "Music",
+      "Synthesis",
+      "Live Coding"
+    ],
+    "size": "Large",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Pharo",
+        "ChucK"
+      ],
+      "preferred": [
+        "Audio Programming",
+        "C/C++"
+      ]
+    }
+  },
+  {
     "id": "slang-separate",
     "title": "Enhance Slang with Separate Compilation",
     "img": "guille-slang-separate.png",
@@ -510,37 +512,6 @@
       "preferred": [
         "Visitor, Builder, and other patterns",
         "OO Design"
-      ]
-    }
-  },
-  {
-    "id": "Pharo54",
-    "title": "A DJ Application with Phausto and Bloc",
-    "img": "pharo54.jpg",
-    "supervisors": [
-      "Domenico Cipriani",
-      "Sebastian Jordan"
-    ],
-    "description": "Develop a DJ application in Pharo using Phausto for audio playback, filters, and effects, and Bloc for the user interface.",
-    "goal": "Phausto is a Pharo library API that enables sound synthesis and digital signal processing (DSP) by embedding Faust. It can be used to play back audio files as well as to build audio filters and effects. By using Bloc to design the user interface, a modern DJ application can be developed, including features such as reading audio file metadata and organizing tracks into playlists. Additional features such as BPM detection, synchronization, and quantization can be implemented using Pharo core classes and methods.",
-    "keywords": [
-      "Pharo",
-      "Phausto",
-      "Bloc",
-      "Music",
-      "UX Design"
-    ],
-    "size": "Large",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "Pharo"
-      ],
-      "preferred": [
-        "Phausto",
-        "Bloc",
-        "Sound synthesis and DSP programming",
-        "UX Design"
       ]
     }
   }
