@@ -109,66 +109,6 @@
     }
   },
   {
-    "id": "VirtualIoTDevices",
-    "title": "Virtual Devices for PharoThings",
-    "img": "gordana-iot.jpg",
-    "supervisors": [
-      "Oleksandr Zaitsev",
-      "Gordana Rakic"
-    ],
-    "description": "PharoThings implements communication with a connected physical hardware or with a remote one through TelePharo when the local hardware is not available. This makes PharoThings strongly dependent on physical hardware. Elimination of this dependency might be very useful  for learning and testing purposes, while it is possible by simulation of hardware response by random actions of virtual objects playing hardware roles.",
-    "goal": "Design and implement solution that provides higher availability of remote devices through TelePharo by inclusion of virtual devises when physical ones are not present.",
-    "keywords": [
-      "IoT",
-      "TelePharo",
-      "PharoThings"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "OOP",
-        "Pharo",
-        "IoT",
-        "Communication skills"
-      ],
-      "preferred": [
-        "PharoThings",
-        "TelePharo"
-      ]
-    }
-  },
-  {
-    "id": "CFGInTesting",
-    "title": "Using CFG to analyze tests",
-    "img": "gordana-cfg.jpg",
-    "supervisors": [
-      "Pablo Tesone",
-      "Gordana Rakic"
-    ],
-    "description": "To produce an initial model that represents the Control-Graph-Flow (CFG) of an Pharo application, including application tests, we need to perform an static analysis on the program. The analysis of the program is done traversing Abstract Syntax Tree (AST) of the methods, and class definitions. Pharo provides a set of existent tools to manipulate and traverse ASTs, and reflective tools to inspect programs in Pharo. Also, there are implementations of required tools to be used or extended (AST interpreters, CFG extraction tools, type inferers (Phineas), etc). This task can be divided in three main points: (1) developing the CFG model, (2) extract the information from the Pharo AST, (3) perform traversal and analyses over it. For extracting the information in the AST and form the CGF, the student should use tools already existent in Pharo (AST interpreters/Type inferer). Finally, it can be possible to perform an analysis on the existing information. For example, it is possible to extract the effective classes and methods that are covered by a given test; or calculate the dependencies between classes and methods. This topic provides an oportunity of working on the meta-level of programs, while the student will learn how to get information from an existing program, and how to reflect about it. These tools and abilities are basic when working with programming languages, refactorings, tools, etc.",
-    "goal": "Create the CFG model and design and implement solution that traverses the AST and builds the CFG extracts the information from the Pharo AST, performs traversal and analyses over it, orimarily analysis of tests.",
-    "keywords": [
-      "Abstract Syntax Tree (AST)",
-      "Control-Flow Graph (CFG)",
-      "Static Analysis",
-      "Software Testing"
-    ],
-    "size": "Medium",
-    "difficulty": "Medium",
-    "skills": {
-      "required": [
-        "OOP",
-        "Pharo",
-        "Communication skills"
-      ],
-      "preferred": [
-        "Testing",
-        "Type Inference"
-      ]
-    }
-  },
-  {
     "id": "FaultLocation",
     "title": "Fault Location DrTest Plugin",
     "img": "fault-location.jpg",
