@@ -288,7 +288,6 @@
     "title": "A DJ Application with Phausto and Bloc",
     "img": "pharo54.jpg",
     "supervisors": [
-      "Domenico Cipriani",
       "Sebastian Jordan"
     ],
     "description": "Develop a DJ application in Pharo using Phausto for audio playback, filters, and effects, and Bloc for the user interface.",
@@ -319,7 +318,6 @@
     "title": "ChucK inside Pharo",
     "img": "phuck.png",
     "supervisors": [
-      "Domenico Cipriani", 
       "Nahuel Palumbo"
     ],
     "description": "Implement an API to run the ChucK virtual machine directly from Pharo, allowing users to write and execute ChucK programs within the Pharo IDE. ChucK is a programming language for real-time sound synthesis and music creation, providing precise control over timing and audio generation. The ChucK VM has already been embedded into major platforms such as Unity, Unreal Engine, and TouchDesigner, demonstrating its versatility and integration potential. As part of this project, develop a Pharo playground to manage audio multithreading, enabling efficient concurrent audio processing, and include a custom syntax highlighter for ChucK code",
