@@ -1,5 +1,34 @@
 [
   {
+    "id": "LibPanel",
+    "title": "A libPanel-like Layout for Bloc/TOPLO",
+    "img": "libPanel.jpg",
+    "supervisors": [
+      "Stéphane Ducasse and Martin Dias"
+    ],
+    "description": "LibPanel is a nice library to place windows in GTK. It is based on several places: two columns on the left and right. In between on the top and bottom we get two rows and in the middle a space can accept another element. The goal of this project is to implement a variant in plain Pharo code for the Bloc/Toplo graphical system.",
+    "goal": "The goal is to be able to interactively place (drag and drop) ToInnerWindow instances within the panel places. It should support splitting of columns/rows, hiding/showing places.",
+    "keywords": [
+      "UI",
+      "Windowing manager",
+      "Bloc",
+      "Toplo"
+    ],
+    "size": "Medium",
+    "difficulty": "Medium",
+    "skills": {
+      "required": [
+        "Graphical love",
+        "UX",
+        "Pharo"
+      ],
+      "preferred": [
+        "OOD Design",
+        "Delegation"
+      ]
+    }
+  },
+  {
     "id": "GenericAST4Moose",
     "title": "A generic AST for Moose",
     "img": "Moose.jpg",
