@@ -61,9 +61,9 @@
   },
   {
     "name": "Gabriel Darbord",
-    "email" : "gabriel.darbord@inria.fr",
+    "email": "gabriel.darbord@inria.fr",
     "github": "Gabriel-Darbord",
-    "img":""
+    "img": ""
   },
   {
     "name": "Geraldine Galindo",
@@ -189,6 +189,12 @@
     "name": "Omar AbedelKader",
     "email": "omar.abedelkader@inria.fr",
     "github": "omarabedelkader",
+    "img": ""
+  },
+  {
+    "name": "Martin Dias",
+    "email": "tinchodias@gmail.com",
+    "github": "tinchodias",
     "img": ""
   }
 ]
