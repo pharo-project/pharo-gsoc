@@ -239,7 +239,8 @@
     "supervisors": [
       "Balša Šarenac",
       "Stéphane Ducasse",
-      "Juan Pablo Sandoval"
+      "Juan Pablo Sandoval",
+      "Gordana Rakić"
     ],
     "description": "Pharo is known for its highly interactive and immersive development environment, where tools are integral to the programming experience. The refactoring engine enables developers to safely evolve code and improve design. However, its user interface and interaction model have developed organically over time, resulting in fragmented workflows, excessive pop-ups, and limited feedback during refactoring operations.\nThis project aims to streamline the UI/UX of Pharo's refactoring engine by unifying interaction patterns, reducing disruptive dialogs, and introducing immediate, context-aware feedback. A key focus will be on enabling live previews for intra-method refactorings, allowing developers to see the effects of transformations before applying them. By centralizing refactoring interactions and enhancing usability, the project seeks to make refactoring more fluid, predictable, and aligned with modern developer experience standards. This is an ideal project to explore Pharo's tool ecosystem, UI frameworks, and human-centered design in software engineering.",
     "goal": "The goals include: analyze the current refactoring UI/UX, reduce disruptive elements, design a unified interaction model, validate usability improvements and test.",
