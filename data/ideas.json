@@ -67,7 +67,8 @@
     "supervisors": [
       "Sebastian Jordan",
       "Gordana Rakic",
-      "Stéphane Ducasse"
+      "Stéphane Ducasse",
+      "Viren Varma"
     ],
     "description": "Pharo has a vast implementationg of data structures such as various kinds of lists, trees and graphs. It also has a vast collection of graph algorithms, pattern matching algorithms, string matching, and others. The idea of this project is to improve the data structures and algorithms by adding new ones or optimizing the current ones. The project can take several directions, depending on the student's interests. For more information check or implementations on GitHub. github.com/pharo-ai/graph-algorithms https://github.com/pharo-containers https://github.com/pharo-ai/ ",
     "goal": "The main goal is to create solid data structures and algorithms. The implementations should always be benchmarked to measure the performance and of course it must have sounding tests.",
@@ -355,7 +356,9 @@
     "title": "A DJ Application with Phausto and Bloc",
     "img": "pharo54.jpg",
     "supervisors": [
-      "Sebastian Jordan"
+      "Sebastian Jordan",
+      "Domenico Cipriani",
+      "Nahuel Palumbo"
     ],
     "description": "Develop a DJ application in Pharo using Phausto for audio playback, filters, and effects, and Bloc for the user interface.",
     "goal": "Phausto is a Pharo library API that enables sound synthesis and digital signal processing (DSP) by embedding Faust. It can be used to play back audio files as well as to build audio filters and effects. By using Bloc to design the user interface, a modern DJ application can be developed, including features such as reading audio file metadata and organizing tracks into playlists. Additional features such as BPM detection, synchronization, and quantization can be implemented using Pharo core classes and methods.",
