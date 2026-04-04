@@ -67,7 +67,6 @@
     "supervisors": [
       "Sebastian Jordan",
       "Gordana Rakic",
-      "Stéphane Ducasse",
       "Viren Varma"
     ],
     "description": "Pharo has a vast implementationg of data structures such as various kinds of lists, trees and graphs. It also has a vast collection of graph algorithms, pattern matching algorithms, string matching, and others. The idea of this project is to improve the data structures and algorithms by adding new ones or optimizing the current ones. The project can take several directions, depending on the student's interests. For more information check or implementations on GitHub. github.com/pharo-ai/graph-algorithms https://github.com/pharo-containers https://github.com/pharo-ai/ ",
